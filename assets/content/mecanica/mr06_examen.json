@@ -1,0 +1,174 @@
+{
+  "id": "mr06-examen",
+  "title": "Preparación para el examen",
+  "description": "Estrategias, errores típicos y bancos de práctica",
+  "lessons": [
+    {
+      "id": "l01-estrategia",
+      "title": "Estrategia para resolver problemas de energía y vibraciones",
+      "summary": "Qué hacer primero, cómo organizar el desarrollo y errores típicos.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo de problema",
+            "Herramienta",
+            "Primer paso"
+          ],
+          "rows": [
+            [
+              "Velocidad en una posición",
+              "Trabajo y energía / conservación",
+              "Elegir posiciones 1 y 2 y el NR"
+            ],
+            [
+              "Equilibrio y estabilidad",
+              "V(x), V', V''",
+              "Escribir V en función de UNA coordenada"
+            ],
+            [
+              "Regiones de movimiento, puntos de retorno",
+              "Diagrama V(x) y línea E",
+              "Calcular E con las condiciones iniciales"
+            ],
+            [
+              "Oscilación libre",
+              "EDO o método de energía",
+              "Calcular ωn"
+            ],
+            [
+              "Oscilación con fricción seca",
+              "EDO por tramos + energía",
+              "Calcular Δ = μmg/k y ωn"
+            ],
+            [
+              "Oscilación viscosa",
+              "ζ, ωd, δ",
+              "Calcular cc y ζ"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Errores típicos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Usar la posición en lugar de la **deformación** del resorte.",
+            "Olvidar el signo del trabajo de la fricción o calcularlo con el desplazamiento en vez de la distancia.",
+            "No verificar que las raíces de V = E estén dentro del tramo o del dominio físico (la barra, el recorrido).",
+            "Confundir «fuerza nula» con «rapidez nula».",
+            "Con fricción de Coulomb: centrar las oscilaciones en x = 0 en vez de ±Δ, o creer que el período cambia.",
+            "Dar como «pérdida de energía» la diferencia de amplitudes en lugar de ½k(x² − x²).",
+            "Dibujar envolventes exponenciales para fricción seca."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "quiz",
+          "question": "Para saber si un equilibrio es estable se usa:",
+          "options": [
+            "V'(x) = 0",
+            "El signo de V''(x)",
+            "E = V",
+            "T = 0"
+          ],
+          "correct": 1,
+          "explanation": "V'' > 0: mínimo (estable); V'' < 0: máximo (inestable)."
+        },
+        {
+          "type": "quiz",
+          "question": "En un punto de retorno, ¿qué es cero?",
+          "options": [
+            "La fuerza",
+            "La energía total",
+            "La energía cinética",
+            "La energía potencial"
+          ],
+          "correct": 2,
+          "explanation": "V = E → **T = 0**."
+        },
+        {
+          "type": "quiz",
+          "question": "Al calcular el trabajo del resorte se usa:",
+          "options": [
+            "La posición del bloque",
+            "La deformación del resorte",
+            "La longitud libre",
+            "La masa"
+          ],
+          "correct": 1,
+          "explanation": "½k(s₂² − s₁²), con s = **deformación**."
+        }
+      ]
+    },
+    {
+      "id": "l02-practica-mixta",
+      "title": "Práctica mixta",
+      "summary": "Diagramas de energía y fricción de Coulomb, con laboratorios.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "interactive",
+          "widget": "potential_diagram",
+          "title": "Diagramas de energía (5 sistemas)"
+        },
+        {
+          "type": "interactive",
+          "widget": "coulomb_trainer",
+          "title": "Problemas de fricción de Coulomb (ilimitados)"
+        },
+        {
+          "type": "quiz",
+          "question": "Un resorte (k = 100 N/m) con un bloque de 2 kg tiene E = 4 J. ¿Puntos de retorno y rapidez máxima?",
+          "options": [
+            "±0,283 m y 2 m/s",
+            "±0,4 m y 2 m/s",
+            "±0,283 m y 4 m/s",
+            "±0,2 m y 1,41 m/s"
+          ],
+          "correct": 0,
+          "explanation": "½·100·x² = 4 → x = ±0,283 m. vmáx = √(2·4/2) = **2 m/s** en x = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Un bloque se suelta con x₀ = 5Δ. ¿Cuántos semiciclos cumple y dónde para?",
+          "options": [
+            "2, en x = +Δ",
+            "2, en x = −Δ",
+            "3, en x = −Δ",
+            "5, en x = 0"
+          ],
+          "correct": 0,
+          "explanation": "Amplitudes: 5Δ → 3Δ → Δ. Tras **2 semiciclos** la amplitud es Δ (no vence la fricción): se detiene en x = **+Δ** (n par → lado inicial)."
+        },
+        {
+          "type": "quiz",
+          "question": "Un bloque con fricción de Coulomb parte de x₀ = 6Δ. ¿Dónde para?",
+          "options": [
+            "En x = +Δ tras 3 semiciclos",
+            "En x = −2Δ tras 2 semiciclos",
+            "En x = 0 tras 3 semiciclos",
+            "En x = −Δ tras 5 semiciclos"
+          ],
+          "correct": 2,
+          "explanation": "6Δ → 4Δ → 2Δ → 0: tras 3 semiciclos la amplitud es 0: se detiene en **x = 0** (caso particular)."
+        },
+        {
+          "type": "quiz",
+          "question": "Para V(x) = 2x² (J), m = 1 kg y E = 8 J, ¿puntos de retorno?",
+          "options": [
+            "±1 m",
+            "±2 m",
+            "±4 m",
+            "±√8 m"
+          ],
+          "correct": 1,
+          "explanation": "2x² = 8 → x = **±2 m**."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,615 @@
+{
+  "id": "gm02-topografia",
+  "title": "Topografía: planimetría y altimetría",
+  "description": "Levantamientos, equipos, puntos, azimuts, poligonales, nivelación y áreas",
+  "lessons": [
+    {
+      "id": "l01-topografia",
+      "title": "Topografía, planimetría y altimetría",
+      "summary": "Qué estudia cada una y tipos de levantamiento.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Ciencia que determina la **posición relativa de puntos** de la superficie terrestre y los representa en un plano, en áreas lo bastante pequeñas como para considerar la Tierra plana.",
+          "title": "Topografía"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Rama",
+            "Estudia",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "**Planimetría**",
+              "Posición **horizontal** (E, N): distancias, ángulos, azimuts",
+              "Plano en planta: linderos, vías, estructuras, ríos"
+            ],
+            [
+              "**Altimetría**",
+              "Posición **vertical** (cotas, desniveles)",
+              "Perfiles, curvas de nivel"
+            ],
+            [
+              "**Taquimetría**",
+              "Ambas a la vez (con estación total)",
+              "Plano topográfico completo"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Levantamiento",
+            "Para qué"
+          ],
+          "rows": [
+            [
+              "Topográfico",
+              "Conocer la forma del terreno antes de diseñar"
+            ],
+            [
+              "Planimétrico",
+              "Representar en planta la ubicación de elementos y linderos"
+            ],
+            [
+              "De obra / replanteo",
+              "Llevar al terreno lo diseñado"
+            ],
+            [
+              "As-built",
+              "Registrar lo realmente construido"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En tu trabajo de la **captación de agua** se levantan los elementos (muros, rejilla, desarenador, cauce, orillas, tuberías) y el terreno: la **planimetría** muestra su posición en planta, y con las cotas se generan curvas y perfiles."
+        },
+        {
+          "type": "quiz",
+          "question": "Un plano que muestra en planta los linderos y estructuras, sin curvas de nivel, es:",
+          "options": [
+            "Altimétrico",
+            "Planimétrico",
+            "Un perfil",
+            "Una sección"
+          ],
+          "correct": 1,
+          "explanation": "Solo posición horizontal → **planimétrico**."
+        },
+        {
+          "type": "quiz",
+          "question": "La planimetría representa:",
+          "options": [
+            "Solo las alturas",
+            "La proyección horizontal de los elementos del terreno",
+            "El subsuelo",
+            "Los volúmenes"
+          ],
+          "correct": 1,
+          "explanation": "Planimetría = **posición en planta**; altimetría = alturas."
+        }
+      ]
+    },
+    {
+      "id": "l02-equipos",
+      "title": "Equipos de medición",
+      "summary": "Estación total, GNSS, nivel, dron y escáner láser.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Equipo",
+            "Mide",
+            "Precisión típica",
+            "Uso"
+          ],
+          "rows": [
+            [
+              "**Estación total**",
+              "Ángulos horizontales y verticales + distancia (con prisma o sin él); calcula E, N, Z",
+              "Milímetros a pocos cm",
+              "Levantamientos de detalle, replanteo"
+            ],
+            [
+              "**GNSS (GPS) RTK**",
+              "Posición por satélite con corrección en tiempo real",
+              "1 – 3 cm",
+              "Puntos de control, levantamientos abiertos"
+            ],
+            [
+              "**GNSS de navegación (celular)**",
+              "Posición aproximada",
+              "3 – 10 m",
+              "Ubicación general, nunca para diseño"
+            ],
+            [
+              "**Nivel**",
+              "Desniveles con mira vertical",
+              "Milímetros",
+              "Nivelación de precisión, alcantarillado"
+            ],
+            [
+              "**Dron (fotogrametría)**",
+              "Fotografías → nube de puntos, ortofoto, MDS",
+              "Centímetros (con puntos de control)",
+              "Áreas grandes, ortofotos"
+            ],
+            [
+              "**Escáner láser / LiDAR**",
+              "Millones de puntos",
+              "Milímetros a cm",
+              "Estructuras, vegetación densa (LiDAR aéreo)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Se instala sobre un punto de coordenadas conocidas, se orienta hacia otro punto conocido (o un azimut) y mide hacia el prisma: ángulo horizontal (→ azimut), ángulo vertical y distancia inclinada. Con ellos calcula las coordenadas del punto observado.",
+          "title": "Cómo trabaja una estación total"
+        },
+        {
+          "type": "quiz",
+          "question": "Para replantear con precisión milimétrica los ejes de una estructura, conviene usar:",
+          "options": [
+            "GPS del celular",
+            "Estación total",
+            "Ortofoto de dron",
+            "Carta del IGM"
+          ],
+          "correct": 1,
+          "explanation": "La **estación total** da precisión de milímetros en distancias cortas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué equipo mide ángulos y distancias electrónicamente?",
+          "options": [
+            "Nivel",
+            "Estación total",
+            "Brújula",
+            "Jalón"
+          ],
+          "correct": 1,
+          "explanation": "La **estación total** combina teodolito y distanciómetro."
+        },
+        {
+          "type": "quiz",
+          "question": "El nivel se usa para:",
+          "options": [
+            "Medir ángulos horizontales",
+            "Determinar desniveles con precisión",
+            "Medir coordenadas GNSS",
+            "Tomar fotos"
+          ],
+          "correct": 1,
+          "explanation": "Nivelación geométrica: **desniveles**."
+        }
+      ]
+    },
+    {
+      "id": "l03-puntos",
+      "title": "Puntos topográficos y codificación",
+      "summary": "Formato PNEZD, códigos de campo y para qué sirven.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El producto básico de un levantamiento es una **lista de puntos**, cada uno con número, coordenadas y una descripción que indica qué es."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Campo",
+            "Significado",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "P",
+              "Número de punto",
+              "125"
+            ],
+            [
+              "N",
+              "Norte (m)",
+              "9679823,451"
+            ],
+            [
+              "E",
+              "Este (m)",
+              "721450,118"
+            ],
+            [
+              "Z",
+              "Cota (m)",
+              "2581,334"
+            ],
+            [
+              "D",
+              "Descripción o código",
+              "BORDE-RIO"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Los códigos de campo (BR = borde de río, EJE, MURO, TN = terreno natural, ARB = árbol, POSTE…) permiten luego: agrupar los puntos, dibujarlos con símbolos y, sobre todo, **unir automáticamente los puntos que forman líneas de quiebre** (breaklines). Un buen código en campo ahorra horas de oficina.",
+          "title": "Por qué importan los códigos"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Los puntos de un mismo elemento lineal (borde de un muro, orilla de un río) deben levantarse **en orden** y con el **mismo código**, para poder unirlos como polilíneas."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "125,9679823.451,721450.118,2581.334,BR\n126,9679825.902,721455.770,2581.210,BR\n127,9679830.115,721448.003,2582.880,TN"
+        },
+        {
+          "type": "quiz",
+          "question": "En el formato PNEZD, la «D» corresponde a:",
+          "options": [
+            "La distancia",
+            "La descripción o código del punto",
+            "La dirección",
+            "El datum"
+          ],
+          "correct": 1,
+          "explanation": "P = punto, N = norte, E = este, Z = cota, **D = descripción**."
+        },
+        {
+          "type": "quiz",
+          "question": "En el formato PNEZD, la D significa:",
+          "options": [
+            "Distancia",
+            "Descripción (código)",
+            "Dirección",
+            "Datum"
+          ],
+          "correct": 1,
+          "explanation": "Punto, Norte, Este, cota Z, **Descripción**."
+        }
+      ]
+    },
+    {
+      "id": "l04-azimut",
+      "title": "Azimut, rumbo y cálculo de coordenadas",
+      "summary": "Proyecciones de un lado, cálculo de coordenadas y distancia/azimut entre puntos.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Ángulo horizontal medido desde el **norte, en sentido horario**, de 0° a 360°. El **rumbo** es el ángulo agudo desde el N o el S hacia el E o el O (N 35° E). El **contraazimut** es el azimut ± 180°.",
+          "title": "Azimut y rumbo"
+        },
+        {
+          "type": "formula",
+          "expression": "ΔN = d · cos(Az)        ΔE = d · sen(Az)",
+          "caption": "Proyecciones de un lado de longitud horizontal d y azimut Az."
+        },
+        {
+          "type": "formula",
+          "expression": "N₂ = N₁ + ΔN        E₂ = E₁ + ΔE",
+          "caption": "Coordenadas del punto siguiente."
+        },
+        {
+          "type": "formula",
+          "expression": "d = √(ΔE² + ΔN²)        Az = arctan(ΔE / ΔN)  (corrigiendo el cuadrante)",
+          "caption": "Problema inverso: distancia y azimut entre dos puntos."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "ΔE",
+            "ΔN",
+            "Cuadrante",
+            "Az = "
+          ],
+          "rows": [
+            [
+              "+",
+              "+",
+              "NE",
+              "arctan(ΔE/ΔN)"
+            ],
+            [
+              "+",
+              "−",
+              "SE",
+              "180° − |arctan|"
+            ],
+            [
+              "−",
+              "−",
+              "SO",
+              "180° + |arctan|"
+            ],
+            [
+              "−",
+              "+",
+              "NO",
+              "360° − |arctan|"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Desde el punto A (E 1000, N 2000) se mide un lado de 50 m con azimut 90°. ¿Coordenadas de B?",
+          "options": [
+            "E 1050, N 2000",
+            "E 1000, N 2050",
+            "E 950, N 2000",
+            "E 1050, N 2050"
+          ],
+          "correct": 0,
+          "explanation": "ΔN = 50·cos 90° = 0; ΔE = 50·sen 90° = 50 → **E 1050, N 2000**."
+        },
+        {
+          "type": "quiz",
+          "question": "De A (E 500, N 500) a B (E 530, N 460). ¿Distancia y azimut?",
+          "options": [
+            "50 m; 143,13°",
+            "50 m; 36,87°",
+            "70 m; 143,13°",
+            "50 m; 216,87°"
+          ],
+          "correct": 0,
+          "explanation": "ΔE = +30, ΔN = −40 → d = 50 m. arctan(30/40) = 36,87°; cuadrante SE → Az = 180 − 36,87 = **143,13°**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un lado de 100 m con azimut 90°. ¿ΔE y ΔN?",
+          "options": [
+            "ΔE = 0, ΔN = 100",
+            "ΔE = 100, ΔN = 0",
+            "ΔE = 70,7, ΔN = 70,7",
+            "ΔE = −100, ΔN = 0"
+          ],
+          "correct": 1,
+          "explanation": "ΔE = d·sen Az = **100**; ΔN = d·cos Az = **0**."
+        }
+      ]
+    },
+    {
+      "id": "l05-poligonal",
+      "title": "Poligonales y compensación",
+      "summary": "Poligonal abierta y cerrada, error de cierre, precisión y método de Bowditch.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Sucesión de líneas (lados) cuyas longitudes y direcciones se miden, para dar coordenadas a sus vértices, que sirven de apoyo al levantamiento de detalles. **Cerrada:** vuelve al punto inicial (o termina en un punto conocido) y permite comprobar errores. **Abierta:** no se puede comprobar.",
+          "title": "Poligonal"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Cierre angular:** en una poligonal cerrada de n lados, la suma de ángulos internos debe ser (n − 2)·180°. La diferencia es el error angular, que se reparte entre los ángulos.",
+            "Se calculan los **azimuts** de los lados y sus **proyecciones** ΔN y ΔE.",
+            "**Cierre lineal:** en una poligonal cerrada ΣΔN y ΣΔE deberían ser 0. Lo que sobra es el error.",
+            "**Error lineal:** e = √(ΣΔN² + ΣΔE²). **Precisión:** 1 : (perímetro / e).",
+            "**Compensación de Bowditch:** cada proyección se corrige en proporción a la longitud de su lado.",
+            "Con las proyecciones corregidas se calculan las **coordenadas** de los vértices."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "formula",
+          "expression": "Corrección ΔN de un lado = − ΣΔN · (lado / perímetro)",
+          "caption": "Igual para ΔE con ΣΔE."
+        },
+        {
+          "type": "interactive",
+          "widget": "traverse",
+          "title": "Laboratorio: poligonal cerrada de 5 lados"
+        },
+        {
+          "type": "quiz",
+          "question": "Una poligonal de 400 m de perímetro tiene un error lineal de cierre de 0,08 m. ¿Precisión?",
+          "options": [
+            "1:500",
+            "1:3200",
+            "1:5000",
+            "1:32 000"
+          ],
+          "correct": 2,
+          "explanation": "400 / 0,08 = 5000 → **1:5000**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuánto debe sumar el ángulo interno total de una poligonal cerrada de 6 lados?",
+          "options": [
+            "540°",
+            "720°",
+            "900°",
+            "1080°"
+          ],
+          "correct": 1,
+          "explanation": "(n − 2)·180° = 4 · 180° = **720°**."
+        },
+        {
+          "type": "quiz",
+          "question": "En el método de Bowditch, la corrección de cada lado es proporcional a:",
+          "options": [
+            "Su azimut",
+            "Su longitud",
+            "Su cota",
+            "El número de vértices"
+          ],
+          "correct": 1,
+          "explanation": "Se reparte el error de cierre **según la longitud** de cada lado."
+        }
+      ]
+    },
+    {
+      "id": "l06-nivelacion",
+      "title": "Nivelación y cotas",
+      "summary": "Nivelación geométrica, BM, cota instrumental y desniveles.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Determinación del **desnivel** entre puntos. La geométrica (con nivel y mira) es la más precisa; la trigonométrica la hace la estación total con el ángulo vertical.",
+          "title": "Nivelación"
+        },
+        {
+          "type": "formula",
+          "expression": "Cota del instrumento (Ci) = Cota conocida + Lectura atrás (vista atrás)"
+        },
+        {
+          "type": "formula",
+          "expression": "Cota del punto = Ci − Lectura adelante (vista adelante)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "BM (banco de marca)",
+              "Punto de cota conocida y estable"
+            ],
+            [
+              "Vista atrás (V+)",
+              "Lectura sobre un punto de cota conocida"
+            ],
+            [
+              "Vista adelante (V−)",
+              "Lectura sobre el punto cuya cota se busca"
+            ],
+            [
+              "Punto de cambio",
+              "Punto donde se lee adelante y luego atrás al mover el nivel"
+            ],
+            [
+              "Error de cierre",
+              "Diferencia al volver al BM de partida (nivelación cerrada)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "BM = 2580,000 m. Lectura atrás 1,452 → Ci = 2581,452. Lectura adelante en A = 0,875 → cota A = 2581,452 − 0,875 = **2580,577 m**."
+        },
+        {
+          "type": "quiz",
+          "question": "Ci = 2600,500 m y la lectura adelante en un punto es 2,250 m. ¿Cota del punto?",
+          "options": [
+            "2602,750 m",
+            "2598,250 m",
+            "2600,500 m",
+            "2597,250 m"
+          ],
+          "correct": 1,
+          "explanation": "2600,500 − 2,250 = **2598,250 m**."
+        },
+        {
+          "type": "quiz",
+          "question": "Cota de BM = 100,00 m, lectura atrás 1,50 m, lectura adelante 0,80 m. ¿Cota del punto?",
+          "options": [
+            "100,70 m",
+            "99,30 m",
+            "102,30 m",
+            "101,50 m"
+          ],
+          "correct": 0,
+          "explanation": "Cota instrumental = 101,50; cota = 101,50 − 0,80 = **100,70 m**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un BM (banco de marca) es:",
+          "options": [
+            "Un punto de cota conocida y estable",
+            "Un equipo",
+            "Una curva de nivel",
+            "Un error"
+          ],
+          "correct": 0,
+          "explanation": "Referencia de **cota** para nivelar."
+        }
+      ]
+    },
+    {
+      "id": "l07-areas",
+      "title": "Áreas y volúmenes",
+      "summary": "Área por coordenadas (Gauss) y volúmenes de movimiento de tierras.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "A = ½ · |Σ (Eᵢ · Nᵢ₊₁ − Eᵢ₊₁ · Nᵢ)|",
+          "caption": "Fórmula de Gauss (del «zapato» o de los productos cruzados), con los vértices en orden."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Vértices (0,0), (40,0), (40,30), (0,30): Σ = 0·0 − 40·0 + 40·30 − 40·0 + 40·30 − 0·30 + 0·0 − 0·30 = 2400 → A = ½·2400 = **1200 m²** (40 × 30)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Método de volumen",
+            "Fórmula",
+            "Uso"
+          ],
+          "rows": [
+            [
+              "Áreas medias",
+              "V = (A₁ + A₂)/2 · L",
+              "Secciones transversales de vías y canales"
+            ],
+            [
+              "Prismoidal",
+              "V = L/6 · (A₁ + 4Am + A₂)",
+              "Más exacto"
+            ],
+            [
+              "Superficie a superficie (Civil 3D)",
+              "Diferencia entre dos modelos TIN",
+              "Volúmenes de corte y relleno"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Dos secciones de corte de 12 m² y 18 m² separadas 20 m. ¿Volumen por áreas medias?",
+          "options": [
+            "150 m³",
+            "300 m³",
+            "360 m³",
+            "600 m³"
+          ],
+          "correct": 1,
+          "explanation": "(12 + 18)/2 × 20 = 15 × 20 = **300 m³**."
+        },
+        {
+          "type": "quiz",
+          "question": "Área por coordenadas del triángulo (0,0), (10,0), (0,10):",
+          "options": [
+            "100 m²",
+            "50 m²",
+            "20 m²",
+            "10 m²"
+          ],
+          "correct": 1,
+          "explanation": "Fórmula de Gauss: ½|0·0 − 10·0 + 10·10 − 0·0 + 0·0 − 0·10| = **50 m²**."
+        }
+      ]
+    }
+  ]
+}

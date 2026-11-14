@@ -1,0 +1,521 @@
+{
+  "id": "gm01-fundamentos",
+  "title": "Fundamentos de geomática y cartografía",
+  "description": "Coordenadas, proyecciones, escalas, mapas y curvas de nivel",
+  "lessons": [
+    {
+      "id": "l01-geomatica",
+      "title": "¿Qué es la geomática?",
+      "summary": "Disciplinas que la forman y para qué la usa el ingeniero civil.",
+      "minutes": 6,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Conjunto de ciencias y técnicas para **capturar, procesar, analizar y representar información geográfica** (con posición en la Tierra). Integra topografía, geodesia, cartografía, fotogrametría, teledetección y sistemas de información geográfica (SIG).",
+          "title": "Geomática"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Disciplina",
+            "Qué hace",
+            "Herramientas"
+          ],
+          "rows": [
+            [
+              "Topografía",
+              "Mide y representa terrenos pequeños con gran detalle",
+              "Estación total, nivel, GNSS"
+            ],
+            [
+              "Geodesia",
+              "Estudia la forma de la Tierra y define los sistemas de referencia",
+              "Redes geodésicas, GNSS"
+            ],
+            [
+              "Cartografía",
+              "Elabora mapas",
+              "SIG, diseño cartográfico"
+            ],
+            [
+              "Fotogrametría",
+              "Obtiene medidas a partir de fotografías",
+              "Drones, cámaras aéreas"
+            ],
+            [
+              "Teledetección",
+              "Analiza imágenes satelitales",
+              "Satélites (Sentinel, Landsat)"
+            ],
+            [
+              "SIG",
+              "Almacena, analiza y cruza capas de información",
+              "ArcGIS (ArcMap, ArcGIS Pro), QGIS"
+            ],
+            [
+              "CAD / BIM de infraestructura",
+              "Diseña sobre el terreno modelado",
+              "Civil 3D"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Toda obra empieza con geomática: el **levantamiento topográfico** del sitio, el **modelo del terreno** para diseñar, el estudio de la **cuenca** que aporta agua a una alcantarilla o captación, y el **replanteo** para construir lo diseñado en el lugar exacto."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué disciplina de la geomática obtiene medidas a partir de fotografías?",
+          "options": [
+            "Geodesia",
+            "Fotogrametría",
+            "Topografía",
+            "Cartografía"
+          ],
+          "correct": 1,
+          "explanation": "La **fotogrametría** reconstruye el terreno a partir de fotos con traslape (hoy, sobre todo con drones)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué disciplina obtiene medidas a partir de fotografías?",
+          "options": [
+            "Geodesia",
+            "Fotogrametría",
+            "Cartografía",
+            "Topografía"
+          ],
+          "correct": 1,
+          "explanation": "**Fotogrametría**: aérea o con dron."
+        }
+      ]
+    },
+    {
+      "id": "l02-coordenadas",
+      "title": "Coordenadas, datum y proyección UTM",
+      "summary": "Coordenadas geográficas y planas, WGS84, SIRGAS y la zona UTM 17S.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Para ubicar un punto en la Tierra se necesita un **sistema de referencia**: una forma matemática de la Tierra y un origen."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "**Elipsoide**",
+              "Forma matemática que aproxima la Tierra (achatada en los polos). Ej.: WGS84, GRS80"
+            ],
+            [
+              "**Geoide**",
+              "Superficie equipotencial que coincide con el nivel medio del mar; es irregular. Las cotas topográficas (msnm) se miden respecto a él"
+            ],
+            [
+              "**Datum**",
+              "Elipsoide + su posición respecto a la Tierra. Ej.: WGS84, SIRGAS (sistema geocéntrico de las Américas, usado oficialmente en el Ecuador)"
+            ],
+            [
+              "**Coordenadas geográficas**",
+              "Latitud (φ, ±90° desde el ecuador) y longitud (λ, ±180° desde Greenwich), en grados"
+            ],
+            [
+              "**Proyección**",
+              "Transformación del elipsoide curvo a un plano, para medir en metros. Siempre introduce alguna deformación"
+            ],
+            [
+              "**Coordenadas planas (UTM)**",
+              "Este (E) y Norte (N) en metros, en una zona de la proyección"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "La Tierra se divide en **60 zonas de 6°** de longitud. En cada una se usa una proyección cilíndrica transversal. El **Este** tiene un falso origen de 500 000 m en el meridiano central; en el hemisferio sur el **Norte** se mide con un falso origen de 10 000 000 m en el ecuador.",
+          "title": "Proyección UTM (Universal Transversal de Mercator)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "El Ecuador continental está casi toda en la **zona 17 Sur** (Galápagos en la 15 S y una franja oriental en la 18 S). Cuenca está cerca de E ≈ 721 000 m, N ≈ 9 680 000 m. Ese Norte cercano a 10 millones indica que estamos un poco al sur del ecuador.",
+          "title": "El Ecuador"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Antes de trabajar, verifica **siempre** que todas las capas estén en el **mismo sistema de coordenadas** (p. ej. WGS 1984 UTM Zone 17S, EPSG 32717, o el sistema SIRGAS que pida el proyecto). Mezclar sistemas desplaza los datos decenas o cientos de metros."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Las **cotas** de un GPS (GNSS) son alturas **elipsoidales**; las de un plano topográfico son **ortométricas** (sobre el nivel del mar). La diferencia es la ondulación del geoide, que en el Ecuador puede ser de decenas de metros: se corrige con un modelo de geoide.",
+          "title": "Altura elipsoidal y altura ortométrica"
+        },
+        {
+          "type": "quiz",
+          "question": "Un punto tiene coordenadas E = 721 450 m, N = 9 679 820 m. ¿En qué sistema están?",
+          "options": [
+            "Geográficas",
+            "UTM, hemisferio sur",
+            "UTM, hemisferio norte",
+            "Locales arbitrarias"
+          ],
+          "correct": 1,
+          "explanation": "Metros con un Norte cercano a 10 000 000 → **UTM del hemisferio sur** (falso Norte de 10 000 000 m)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué un plano de ArcMap y uno de Civil 3D pueden no coincidir aunque sean del mismo sitio?",
+          "options": [
+            "Porque usan distinta escala",
+            "Porque pueden estar en distintos sistemas de coordenadas o datum",
+            "Porque ArcMap no usa coordenadas",
+            "Porque Civil 3D solo trabaja en 2D"
+          ],
+          "correct": 1,
+          "explanation": "Si un archivo está en WGS84 UTM 17S y otro en coordenadas locales (o en geográficas), aparecerán desplazados: hay que **definir y proyectar** al mismo sistema."
+        },
+        {
+          "type": "quiz",
+          "question": "¿En qué zona UTM está la mayor parte del Ecuador continental?",
+          "options": [
+            "17S",
+            "18N",
+            "15S",
+            "19S"
+          ],
+          "correct": 0,
+          "explanation": "La mayor parte del país está en la **zona 17 sur** (17S)."
+        },
+        {
+          "type": "quiz",
+          "question": "Las coordenadas UTM se expresan en:",
+          "options": [
+            "Grados",
+            "Metros (Este y Norte)",
+            "Radianes",
+            "Pies"
+          ],
+          "correct": 1,
+          "explanation": "Son coordenadas **planas en metros**."
+        }
+      ]
+    },
+    {
+      "id": "l03-escalas",
+      "title": "Escalas",
+      "summary": "Escala numérica y gráfica, precisión gráfica y escalas típicas.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Relación entre una distancia en el mapa y la distancia real: **E = distancia en el mapa / distancia real**. 1:1000 significa que 1 cm en el plano equivale a 1000 cm = 10 m en el terreno.",
+          "title": "Escala"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Escala",
+            "1 cm del plano equivale a",
+            "Uso típico"
+          ],
+          "rows": [
+            [
+              "1:200 – 1:500",
+              "2 – 5 m",
+              "Detalles constructivos, captaciones, obras pequeñas"
+            ],
+            [
+              "1:1000",
+              "10 m",
+              "Levantamientos de lotes, planimetrías"
+            ],
+            [
+              "1:5000",
+              "50 m",
+              "Planificación urbana, anteproyectos viales"
+            ],
+            [
+              "1:25 000 – 1:50 000",
+              "250 – 500 m",
+              "Cartas topográficas del IGM, cuencas"
+            ],
+            [
+              "1:250 000",
+              "2,5 km",
+              "Mapas regionales"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Es el menor tamaño que se puede dibujar o leer en un plano, ≈ **0,2 mm**. Multiplicado por el denominador de la escala da el error mínimo en el terreno: a 1:1000, 0,2 mm × 1000 = 20 cm. Por eso no tiene sentido levantar con precisión milimétrica para un plano 1:50 000.",
+          "title": "Precisión gráfica"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La **escala gráfica** (barra) sigue siendo válida si el plano se amplía o se reduce al imprimir; la numérica no. Incluye siempre la gráfica en tus láminas."
+        },
+        {
+          "type": "quiz",
+          "question": "En un plano a escala 1:2000, dos puntos están a 6,5 cm. ¿Cuál es la distancia real?",
+          "options": [
+            "13 m",
+            "130 m",
+            "65 m",
+            "1300 m"
+          ],
+          "correct": 1,
+          "explanation": "6,5 cm × 2000 = 13 000 cm = **130 m**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el error mínimo representable en una carta 1:50 000 (precisión gráfica 0,2 mm)?",
+          "options": [
+            "0,2 m",
+            "1 m",
+            "10 m",
+            "100 m"
+          ],
+          "correct": 2,
+          "explanation": "0,2 mm × 50 000 = 10 000 mm = **10 m**."
+        },
+        {
+          "type": "quiz",
+          "question": "En un mapa 1:25 000, 4 cm en el papel equivalen a:",
+          "options": [
+            "100 m",
+            "1 km",
+            "250 m",
+            "10 km"
+          ],
+          "correct": 1,
+          "explanation": "4 cm × 25 000 = 100 000 cm = **1 km**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es una escala más grande?",
+          "options": [
+            "1:50 000",
+            "1:1000",
+            "1:250 000",
+            "1:100 000"
+          ],
+          "correct": 1,
+          "explanation": "Escala grande = denominador pequeño: **1:1000** (más detalle)."
+        }
+      ]
+    },
+    {
+      "id": "l04-mapas",
+      "title": "Mapas: tipos y elementos",
+      "summary": "Topográfico, temático, ortofotomapa; elementos obligatorios de una lámina.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Qué muestra"
+          ],
+          "rows": [
+            [
+              "Topográfico",
+              "Relieve (curvas de nivel), ríos, vías, poblados"
+            ],
+            [
+              "Planimétrico",
+              "Solo la posición horizontal de los elementos, sin relieve"
+            ],
+            [
+              "Temático",
+              "Un tema sobre una base: pendientes, suelos, uso del suelo, geología"
+            ],
+            [
+              "Ortofotomapa",
+              "Ortofoto con información vectorial encima"
+            ],
+            [
+              "Catastral",
+              "Predios y sus límites"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Elementos de un mapa o lámina"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Título** del mapa y del proyecto.",
+            "**Área de dibujo** (el mapa en sí).",
+            "**Leyenda** con todos los símbolos y colores usados.",
+            "**Escala** numérica y gráfica.",
+            "**Norte** (flecha).",
+            "**Grilla o cuadrícula de coordenadas** con sus valores.",
+            "**Sistema de referencia** (p. ej. WGS84 UTM 17S).",
+            "**Mapa de ubicación** (dónde está el área en la provincia o el país).",
+            "**Membrete o cajetín**: autor, docente, institución, fecha, número de lámina, fuentes de datos."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En una lámina profesional la información de la leyenda y del membrete es tan importante como el dibujo: un plano sin escala, sin norte o sin sistema de coordenadas no se puede usar en obra."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué elemento permite que un mapa siga siendo medible aunque se imprima a otro tamaño?",
+          "options": [
+            "La escala numérica",
+            "La escala gráfica",
+            "El norte",
+            "La leyenda"
+          ],
+          "correct": 1,
+          "explanation": "La **barra de escala** se amplía o reduce junto con el dibujo."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué elemento NO es obligatorio en una lámina?",
+          "options": [
+            "Norte",
+            "Escala",
+            "Leyenda",
+            "Fotografía del autor"
+          ],
+          "correct": 3,
+          "explanation": "Norte, escala, leyenda, sistema de coordenadas, cajetín: sí. Fotografía: no."
+        },
+        {
+          "type": "quiz",
+          "question": "Un ortofotomapa es:",
+          "options": [
+            "Un mapa sin imagen",
+            "Una ortofoto con elementos cartográficos (curvas, rótulos, grilla)",
+            "Un perfil",
+            "Un modelo 3D"
+          ],
+          "correct": 1,
+          "explanation": "Combina la **imagen corregida** con información de mapa."
+        }
+      ]
+    },
+    {
+      "id": "l05-curvas",
+      "title": "Curvas de nivel",
+      "summary": "Equidistancia, propiedades y cómo leer el relieve.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Línea que une puntos de **igual cota** (elevación). Es la intersección del terreno con planos horizontales separados una distancia constante: la **equidistancia**.",
+          "title": "Curva de nivel"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "Equidistancia",
+              "Diferencia de cota entre curvas consecutivas (p. ej. 1 m, 5 m, 20 m según la escala)"
+            ],
+            [
+              "Curva índice (maestra)",
+              "Cada 5 curvas, más gruesa y con su cota escrita"
+            ],
+            [
+              "Curva intermedia",
+              "Las de entre las índices, más finas"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Propiedades (¡preguntas de examen!)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Todas las curvas **se cierran** sobre sí mismas, dentro o fuera del plano.",
+            "Dos curvas **no se cruzan** (salvo en un voladizo o una cueva).",
+            "Curvas **juntas** = pendiente fuerte; **separadas** = pendiente suave; equidistantes = pendiente uniforme.",
+            "En un **valle o quebrada** las curvas forman una «V» que **apunta hacia aguas arriba** (hacia cotas mayores).",
+            "En una **divisoria o cresta** la «V» apunta hacia cotas **menores**.",
+            "El agua corre **perpendicular** a las curvas, por la línea de máxima pendiente.",
+            "Curvas cerradas con cotas crecientes hacia el centro = **cerro**; decrecientes = **depresión**."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "interactive",
+          "widget": "slope_calc",
+          "title": "Calcula la pendiente entre dos curvas"
+        },
+        {
+          "type": "quiz",
+          "question": "En un mapa, las curvas forman «V» que apuntan hacia cotas mayores. ¿Qué representan?",
+          "options": [
+            "Una cresta o divisoria",
+            "Un valle o quebrada",
+            "Una meseta",
+            "Una depresión cerrada"
+          ],
+          "correct": 1,
+          "explanation": "En los **valles** la «V» apunta **aguas arriba**, hacia las cotas mayores. Es clave para trazar a mano la divisoria de una cuenca."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el agua de lluvia corre perpendicular a las curvas de nivel?",
+          "options": [
+            "Porque sigue la línea de máxima pendiente",
+            "Porque las curvas son horizontales",
+            "Porque así está dibujado",
+            "Porque sigue al norte"
+          ],
+          "correct": 0,
+          "explanation": "El agua baja por donde la pendiente es máxima, que es **perpendicular** a las curvas."
+        },
+        {
+          "type": "quiz",
+          "question": "Curvas de nivel muy juntas indican:",
+          "options": [
+            "Terreno plano",
+            "Pendiente fuerte",
+            "Un río",
+            "Error del mapa"
+          ],
+          "correct": 1,
+          "explanation": "Mismo desnivel en menos distancia: **pendiente fuerte**."
+        },
+        {
+          "type": "quiz",
+          "question": "En un valle, las curvas de nivel forman una V que apunta:",
+          "options": [
+            "Hacia abajo (aguas abajo)",
+            "Hacia arriba (aguas arriba)",
+            "Al norte",
+            "No forman V"
+          ],
+          "correct": 1,
+          "explanation": "En los cauces la V apunta **aguas arriba**; en las divisorias, aguas abajo."
+        }
+      ]
+    }
+  ]
+}

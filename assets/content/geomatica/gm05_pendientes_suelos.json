@@ -1,0 +1,451 @@
+{
+  "id": "gm05-pendientes-suelos",
+  "title": "Pendientes y suelos",
+  "description": "Pendiente, mapas de pendientes, textura del suelo y su relación con la escorrentía",
+  "lessons": [
+    {
+      "id": "l01-pendiente",
+      "title": "La pendiente",
+      "summary": "Porcentaje, grados, relación H:V y cálculo con curvas de nivel.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Inclinación del terreno respecto a la horizontal. **Pendiente (%) = desnivel / distancia horizontal × 100**. En grados: α = arctan(desnivel / distancia).",
+          "title": "Pendiente"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Porcentaje",
+            "Grados",
+            "Talud H:V"
+          ],
+          "rows": [
+            [
+              "10 %",
+              "5,7°",
+              "10 : 1"
+            ],
+            [
+              "25 %",
+              "14,0°",
+              "4 : 1"
+            ],
+            [
+              "50 %",
+              "26,6°",
+              "2 : 1"
+            ],
+            [
+              "100 %",
+              "45°",
+              "1 : 1"
+            ],
+            [
+              "173 %",
+              "60°",
+              "0,58 : 1"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "slope_calc",
+          "title": "Calculadora de pendientes"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La pendiente controla la **velocidad de escorrentía**, la **erosión**, la **estabilidad de taludes**, el diseño de **vías** (pendientes máximas) y de **canales y tuberías** (pendiente mínima para que no se sedimenten)."
+        },
+        {
+          "type": "quiz",
+          "question": "Una pendiente del 100 % equivale a:",
+          "options": [
+            "90°",
+            "45°",
+            "100°",
+            "60°"
+          ],
+          "correct": 1,
+          "explanation": "tan α = 1 → α = **45°**."
+        },
+        {
+          "type": "quiz",
+          "question": "Entre dos curvas con equidistancia 2 m hay 40 m de distancia horizontal. ¿Pendiente?",
+          "options": [
+            "2 %",
+            "5 %",
+            "20 %",
+            "50 %"
+          ],
+          "correct": 1,
+          "explanation": "2 / 40 × 100 = **5 %**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un desnivel de 5 m en 50 m horizontales es una pendiente de:",
+          "options": [
+            "5 %",
+            "10 %",
+            "50 %",
+            "1 %"
+          ],
+          "correct": 1,
+          "explanation": "5/50 × 100 = **10 %**."
+        }
+      ]
+    },
+    {
+      "id": "l02-mapa-pendientes",
+      "title": "Mapas de pendientes",
+      "summary": "Cómo se calculan en un SIG y cómo se clasifican.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En un SIG la pendiente se calcula **celda por celda** sobre el MDE: para cada celda se usan las cotas de sus 8 vecinas para estimar el plano que mejor se ajusta y su inclinación máxima."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Rango (%)",
+            "Clase (orientativa)",
+            "Implicación"
+          ],
+          "rows": [
+            [
+              "0 – 5",
+              "Plano a casi plano",
+              "Encharcamiento posible; fácil construcción"
+            ],
+            [
+              "5 – 12",
+              "Suave",
+              "Apto para la mayoría de usos"
+            ],
+            [
+              "12 – 25",
+              "Moderado",
+              "Erosión moderada; vías con curvas"
+            ],
+            [
+              "25 – 50",
+              "Fuerte",
+              "Riesgo de erosión y deslizamientos"
+            ],
+            [
+              "50 – 70",
+              "Muy fuerte",
+              "Restricciones a la construcción"
+            ],
+            [
+              "> 70",
+              "Escarpado",
+              "Zonas de protección"
+            ]
+          ],
+          "caption": "Los rangos varían según la institución o la norma usada; usa los que pida tu docente."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Asegúrate de que el MDE esté en coordenadas **proyectadas en metros** (UTM). Si está en grados geográficos, la pendiente sale absurda, porque mezcla grados en la horizontal con metros en la vertical (en ArcMap se corrige con el «Z factor»)."
+        },
+        {
+          "type": "quiz",
+          "question": "Calculas pendientes de un MDE en coordenadas geográficas (grados) y salen casi todas de 90°. ¿Qué pasó?",
+          "options": [
+            "El terreno es vertical",
+            "Las unidades horizontales (grados) y verticales (m) no coinciden: hay que proyectar el MDE a UTM",
+            "Falta hacer Fill",
+            "La resolución es muy fina"
+          ],
+          "correct": 1,
+          "explanation": "Proyecta el MDE a **UTM** (o usa el Z factor) antes de calcular la pendiente."
+        },
+        {
+          "type": "quiz",
+          "question": "En un SIG, la pendiente de cada celda se calcula a partir de:",
+          "options": [
+            "Sus 8 vecinas en el MDE",
+            "Solo su cota",
+            "La ortofoto",
+            "Los puntos GNSS"
+          ],
+          "correct": 0,
+          "explanation": "Se usa una ventana de **3 × 3 celdas**."
+        }
+      ]
+    },
+    {
+      "id": "l03-textura",
+      "title": "Textura del suelo",
+      "summary": "Arena, limo y arcilla; triángulo textural USDA.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Proporción en peso de **arena, limo y arcilla** en la fracción fina del suelo (menor de 2 mm). Es una propiedad estable que controla la infiltración, la retención de agua y el comportamiento mecánico.",
+          "title": "Textura"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Fracción (USDA)",
+            "Tamaño",
+            "Al tacto"
+          ],
+          "rows": [
+            [
+              "Arena",
+              "2 – 0,05 mm",
+              "Áspera, granos visibles"
+            ],
+            [
+              "Limo",
+              "0,05 – 0,002 mm",
+              "Suave como harina o talco"
+            ],
+            [
+              "Arcilla",
+              "< 0,002 mm",
+              "Pegajosa y plástica cuando está húmeda"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "soil_texture",
+          "title": "Triángulo de texturas USDA"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Ubica el % de arena en la base, el de arcilla en el lado izquierdo y el de limo en el derecho; el punto donde se cruzan las tres líneas cae en una de las **12 clases**: arena, arena franca, franco arenoso, franco, franco limoso, limo, franco arcillo arenoso, franco arcilloso, franco arcillo limoso, arcilla arenosa, arcilla limosa y arcilla.",
+          "title": "Cómo se usa el triángulo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En geotecnia (ingeniería civil) los suelos se clasifican con el **SUCS** (Sistema Unificado: GW, SP, ML, CH…) o la **AASHTO**, con límites de tamaño distintos (la arena va de 4,75 a 0,075 mm). La textura USDA se usa sobre todo en **agronomía e hidrología**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un suelo tiene 20 % de arena, 30 % de limo y 50 % de arcilla. Su clase textural es:",
+          "options": [
+            "Franco",
+            "Arcilla",
+            "Franco limoso",
+            "Arena franca"
+          ],
+          "correct": 1,
+          "explanation": "Con 50 % de arcilla y menos de 40 % de limo y 45 % de arena → **arcilla**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué textura tiene MAYOR infiltración?",
+          "options": [
+            "Arcilla",
+            "Franco arcilloso",
+            "Arena franca",
+            "Arcilla limosa"
+          ],
+          "correct": 2,
+          "explanation": "Las texturas **gruesas** (arena, arena franca) tienen poros grandes y alta infiltración."
+        },
+        {
+          "type": "quiz",
+          "question": "Un suelo con 40 % de arena, 40 % de limo y 20 % de arcilla es:",
+          "options": [
+            "Arenoso",
+            "Franco",
+            "Arcilloso",
+            "Limoso"
+          ],
+          "correct": 1,
+          "explanation": "En el triángulo USDA cae en la clase **franco**."
+        },
+        {
+          "type": "quiz",
+          "question": "La arcilla, según USDA, tiene partículas menores que:",
+          "options": [
+            "2 mm",
+            "0,05 mm",
+            "0,002 mm",
+            "0,5 mm"
+          ],
+          "correct": 2,
+          "explanation": "Arcilla < **0,002 mm**; limo 0,002–0,05; arena 0,05–2 mm."
+        }
+      ]
+    },
+    {
+      "id": "l04-metodos",
+      "title": "Determinar la textura",
+      "summary": "Método al tacto, del hidrómetro (Bouyoucos) y granulometría.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Método",
+            "En qué consiste",
+            "Precisión"
+          ],
+          "rows": [
+            [
+              "**Al tacto (campo)**",
+              "Humedecer una muestra, amasarla y formar una cinta entre los dedos: más larga y plástica = más arcilla; áspera = arena; sedosa = limo",
+              "Aproximada"
+            ],
+            [
+              "**Hidrómetro de Bouyoucos**",
+              "Dispersar el suelo en agua y medir la densidad de la suspensión a distintos tiempos (ley de Stokes: las partículas grandes sedimentan antes)",
+              "Buena"
+            ],
+            [
+              "**Pipeta**",
+              "Tomar muestras a una profundidad y tiempo dados",
+              "Muy buena"
+            ],
+            [
+              "**Tamizado + sedimentación**",
+              "Tamices para la arena y sedimentación para limo y arcilla (granulometría completa)",
+              "Completa"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "v = g · (ρs − ρw) · D² / (18 · η)",
+          "caption": "Ley de Stokes: la velocidad de caída crece con el cuadrado del diámetro D."
+        },
+        {
+          "type": "quiz",
+          "question": "En el método del hidrómetro, ¿por qué la arena se separa primero?",
+          "options": [
+            "Porque es más liviana",
+            "Porque, según Stokes, la velocidad de sedimentación crece con el cuadrado del diámetro",
+            "Porque se disuelve",
+            "Porque flota"
+          ],
+          "correct": 1,
+          "explanation": "Partículas más grandes caen mucho más rápido: v ∝ D²."
+        },
+        {
+          "type": "quiz",
+          "question": "El método del hidrómetro (Bouyoucos) se basa en:",
+          "options": [
+            "La velocidad de sedimentación de las partículas (ley de Stokes)",
+            "El tamizado",
+            "El color",
+            "El tacto"
+          ],
+          "correct": 0,
+          "explanation": "Las partículas grandes sedimentan primero."
+        },
+        {
+          "type": "quiz",
+          "question": "Al tacto, un suelo que forma una cinta larga y pegajosa tiene mucha:",
+          "options": [
+            "Arena",
+            "Arcilla",
+            "Grava",
+            "Materia orgánica"
+          ],
+          "correct": 1,
+          "explanation": "La **arcilla** es plástica y pegajosa."
+        }
+      ]
+    },
+    {
+      "id": "l05-hidrologia-suelos",
+      "title": "Suelo, cobertura y escorrentía",
+      "summary": "Grupos hidrológicos SCS y número de curva (CN).",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El método del Servicio de Conservación de Suelos (SCS, hoy NRCS) estima cuánta lluvia se convierte en escorrentía con un **número de curva (CN)** de 30 a 100, según el **grupo hidrológico** del suelo y la **cobertura** (bosque, pastos, cultivos, urbano). Más CN = más escorrentía.",
+          "title": "Método del número de curva"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Grupo",
+            "Infiltración",
+            "Texturas típicas"
+          ],
+          "rows": [
+            [
+              "A",
+              "Alta: escorrentía baja",
+              "Arenas, arenas francas"
+            ],
+            [
+              "B",
+              "Moderada",
+              "Francos, francos limosos"
+            ],
+            [
+              "C",
+              "Lenta",
+              "Francos arcillo arenosos, suelos con capa que impide el drenaje"
+            ],
+            [
+              "D",
+              "Muy lenta: escorrentía alta",
+              "Arcillas, suelos poco profundos sobre roca, nivel freático alto"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Para dimensionar una alcantarilla o el aliviadero de una captación se necesita el **caudal de crecida** de la cuenca: área, pendiente, tiempo de concentración, tipo de suelo y cobertura. En ArcMap se cruzan los mapas de suelos y de cobertura para obtener el CN ponderado de la cuenca."
+        },
+        {
+          "type": "quiz",
+          "question": "Una cuenca con suelos arcillosos (grupo D) y urbanizada tendrá un CN:",
+          "options": [
+            "Bajo (≈ 30)",
+            "Alto (≈ 90)",
+            "Igual a 0",
+            "Igual al de un bosque arenoso"
+          ],
+          "correct": 1,
+          "explanation": "Suelos D + superficies impermeables → **mucha escorrentía**, CN alto."
+        },
+        {
+          "type": "quiz",
+          "question": "Un suelo del grupo hidrológico D tiene:",
+          "options": [
+            "Alta infiltración",
+            "Muy baja infiltración y alta escorrentía",
+            "Infiltración media",
+            "Sin escorrentía"
+          ],
+          "correct": 1,
+          "explanation": "Grupo D: arcillosos, **alto potencial de escorrentía**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un número de curva (CN) mayor significa:",
+          "options": [
+            "Menor escorrentía",
+            "Mayor escorrentía",
+            "Más vegetación",
+            "Más arena"
+          ],
+          "correct": 1,
+          "explanation": "CN alto → más **escorrentía** (CN = 100 impermeable)."
+        }
+      ]
+    }
+  ]
+}

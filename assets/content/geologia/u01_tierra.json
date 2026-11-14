@@ -1,0 +1,321 @@
+{
+  "id": "u01-tierra",
+  "title": "La Tierra: origen y estructura",
+  "description": "Capítulo 1 · Formación y constitución del globo terrestre",
+  "lessons": [
+    {
+      "id": "l01-geologia",
+      "title": "La Geología y sus ramas",
+      "summary": "Qué estudia la Geología, sus disciplinas y por qué le importa al ingeniero civil.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Geología",
+          "text": "Ciencia que estudia el **origen (génesis), historia, composición, estructura y forma** de la Tierra, y los procesos que la modifican: la **geodinámica interna** (sismos, volcanes, tectónica) y la **geodinámica externa** (erosión, meteorización, sedimentación)."
+        },
+        { "type": "text", "text": "El escocés **James Hutton (1726–1797)** es considerado el fundador de la geología moderna. Su gran idea: la Tierra **no es un cuerpo estático**; cambia continuamente, en la superficie y en profundidad, mediante procesos lentos que siguen actuando hoy." },
+        { "type": "heading", "text": "Las ramas de la Geología" },
+        {
+          "type": "table",
+          "headers": ["Rama", "Estudia"],
+          "rows": [
+            ["Cristalografía", "Los cristales y sus propiedades"],
+            ["Mineralogía", "Los minerales"],
+            ["Petrografía", "Las rocas (descripción y clasificación)"],
+            ["Geotectónica", "Volcanes, terremotos y tectónica; se relaciona con Mecánica de rocas e Ingeniería geológica"],
+            ["Geología histórica", "Clima, fenómenos dinámicos, fauna y flora del pasado"],
+            ["Paleontología", "Los fósiles, para reconstruir la sucesión de la vida"],
+            ["Geomorfología", "Descripción y origen del relieve"],
+            ["Hidrogeología", "Las aguas subterráneas"],
+            ["Sedimentología", "Generación, transporte y depósito de sedimentos"],
+            ["Geofísica", "La Tierra desde la física (ondas sísmicas, gravedad, magnetismo)"]
+          ]
+        },
+        { "type": "heading", "text": "Rocas: materiales heterogéneos y anisótropos" },
+        { "type": "text", "text": "Las **rocas** son agregados naturales de uno o más minerales unidos por fuertes enlaces cohesivos. Algunas son blandas y fáciles de deformar; otras, duras y rígidas. Su composición y propiedades son muy variables." },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Heterogéneo y anisótropo",
+          "text": "**Heterogéneo:** sus propiedades cambian de un punto a otro. **Anisótropo:** sus propiedades cambian según la **dirección** en que se mide o ensaya (por ejemplo, una pizarra resiste distinto paralela o perpendicular a sus láminas)."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El hormigón y el acero se fabrican con propiedades controladas; el terreno, no. Por eso toda obra civil empieza con un estudio geológico: el ingeniero debe adaptarse a un material natural, heterogéneo y anisótropo, que no eligió."
+        },
+        {
+          "type": "quiz",
+          "question": "Un macizo rocoso resiste más cuando se carga perpendicular a sus estratos que paralelo a ellos. Esto significa que es:",
+          "options": ["Homogéneo", "Isótropo", "Anisótropo", "Amorfo"],
+          "correct": 2,
+          "explanation": "Si la propiedad (aquí la resistencia) depende de la **dirección** de ensayo, el material es **anisótropo**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué rama estudia las aguas subterráneas, clave para diseñar pozos y drenajes?",
+          "options": ["Sedimentología", "Hidrogeología", "Geomorfología", "Petrografía"],
+          "correct": 1,
+          "explanation": "La **Hidrogeología** estudia el agua subterránea: su origen, movimiento y aprovechamiento."
+        }
+      ]
+    },
+    {
+      "id": "l02-origen",
+      "title": "Origen del universo y de la Tierra",
+      "summary": "Big Bang, edad de la Tierra y cómo se formó a partir de planetesimales.",
+      "minutes": 8,
+      "blocks": [
+        { "type": "heading", "text": "El Big Bang" },
+        { "type": "text", "text": "La teoría más aceptada sobre el origen del universo es el **Big Bang**: el punto inicial en que se formaron la materia, el espacio y el tiempo, hace unos **13 800 millones de años (Ma)**. Ese inicio es una **singularidad**: los modelos físicos pueden acercarse a él, pero no llegar." },
+        {
+          "type": "list",
+          "items": [
+            "La física actual (relatividad de Einstein) describe el universo desde el **tiempo de Planck**, ≈ 10⁻⁴³ s después de la gran explosión.",
+            "Unos **400 000 años** después se formaron los primeros átomos estables.",
+            "Toda la materia que existe, incluidos nosotros, proviene de los primeros instantes del Big Bang."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "¿Quién propuso la teoría?",
+          "text": "En la década de 1920, **Edwin Hubble** descubrió que las demás galaxias se alejan de nosotros: el universo se expande. El sacerdote belga **Georges Lemaître** razonó que, si se expande, en el pasado debió estar concentrado en un **«átomo primordial»**. Así nació la teoría, apoyada también en la relatividad de **Einstein**."
+        },
+        { "type": "heading", "text": "La formación de la Tierra" },
+        { "type": "text", "text": "La Tierra tiene unos **4600 Ma**. Las rocas más antiguas conocidas, en el norte de Quebec (Canadá), tienen unos **4280 Ma**." },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Acreción:** la Tierra primitiva creció por la colisión y fusión de fragmentos rocosos llamados **planetesimales**.",
+            "**Calentamiento:** por la desintegración radiactiva, la creciente presión interna y el bombardeo de partículas, el planeta llegó a fundirse: era una masa en fusión.",
+            "**Enfriamiento:** al enfriarse la capa externa aparecieron los primeros continentes. La corteza primitiva fue probablemente **basáltica**.",
+            "**Atmósfera:** la atmósfera actual se formó mucho después, quizá dentro de los últimos 1000 Ma."
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué edad aproximada tiene la Tierra?",
+          "options": ["13 800 Ma", "4600 Ma", "4280 Ma", "225 Ma"],
+          "correct": 1,
+          "explanation": "La Tierra tiene ≈ **4600 Ma**. 13 800 Ma es la edad del universo, 4280 Ma la de las rocas más antiguas conocidas y 225 Ma la de Pangea."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué observación llevó a pensar que el universo tuvo un inicio?",
+          "options": [
+            "Que la Tierra tiene un núcleo de hierro",
+            "Que las galaxias se alejan unas de otras (el universo se expande)",
+            "Que existen rocas de 4280 Ma",
+            "Que la corteza primitiva fue basáltica"
+          ],
+          "correct": 1,
+          "explanation": "Hubble observó que las galaxias se alejan. Si el universo se expande, retrocediendo en el tiempo todo estuvo concentrado en un punto: el **átomo primordial** de Lemaître."
+        }
+      ]
+    },
+    {
+      "id": "l03-composicion",
+      "title": "Estructura interna por composición",
+      "summary": "Atmósfera, hidrosfera, corteza, manto y núcleo: profundidades, densidades y estados.",
+      "minutes": 10,
+      "blocks": [
+        { "type": "text", "text": "Según su **composición química**, la Tierra se divide en capas concéntricas. Las más densas se hundieron hacia el centro cuando el planeta estaba fundido (diferenciación)." },
+        {
+          "type": "list",
+          "items": [
+            "**Atmósfera:** N ≈ 78 %, O ≈ 20 %, CO₂ y gases nobles ≈ 1 %.",
+            "**Hidrosfera:** mares 98 %, hielo 1,87 %, agua dulce 0,13 %."
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "earth_layers",
+          "title": "Viaje al centro de la Tierra"
+        },
+        {
+          "type": "table",
+          "headers": ["Capa", "Profundidad (km)", "Densidad (g/cm³)", "Estado"],
+          "rows": [
+            ["Corteza oceánica", "≈ 0 – 7", "≈ 3,0", "Sólido"],
+            ["Corteza continental", "≈ 0 – 35/40 (> 70 bajo cordilleras)", "≈ 2,7", "Sólido"],
+            ["Manto superior", "40 – 660", "3 – 4", "Sólido con zonas fundidas"],
+            ["Manto inferior", "660 – 2900", "4 – 6", "Sólido"],
+            ["Núcleo externo", "2900 – 5120", "6 – 11", "**Líquido**"],
+            ["Núcleo interno", "5120 – 6371", "12 – 13,6", "**Sólido**"]
+          ],
+          "caption": "Valores aproximados según el capítulo 1 de clase."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "El núcleo",
+          "text": "Tiene un radio de ≈ 3500 km, **mayor que el planeta Marte**. Antes se lo llamaba **«Nife»** por su riqueza en **ní**quel y **fe**rro (hierro). El núcleo externo es líquido y sus corrientes eléctricas generan el **campo magnético** terrestre; el interno es sólido, a más de 6000 °C, porque la enorme presión impide que se funda."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La densidad **aumenta con la profundidad**: de ≈ 2,7 g/cm³ en la corteza continental a más de 13 g/cm³ en el núcleo interno. La densidad media de la Tierra (≈ 5,5 g/cm³) es mucho mayor que la de las rocas superficiales: prueba de que el interior es más denso."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la única capa que se encuentra en estado líquido?",
+          "options": ["Astenosfera", "Manto inferior", "Núcleo externo", "Núcleo interno"],
+          "correct": 2,
+          "explanation": "El **núcleo externo** es hierro líquido. La astenosfera es plástica (con una pequeña fracción fundida), pero no líquida."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el núcleo interno es sólido si está más caliente que el núcleo externo?",
+          "options": [
+            "Porque está hecho de silicatos",
+            "Porque la presión es tan grande que impide la fusión",
+            "Porque se enfrió primero",
+            "Porque no contiene hierro"
+          ],
+          "correct": 1,
+          "explanation": "La temperatura de fusión aumenta con la presión. En el centro de la Tierra la **presión** es tan alta que el hierro permanece sólido aun a más de 6000 °C."
+        }
+      ]
+    },
+    {
+      "id": "l04-fisicas",
+      "title": "Capas por propiedades físicas y calor interno",
+      "summary": "Litosfera, astenosfera y mesosfera; cómo conocemos el interior y de dónde sale su calor.",
+      "minutes": 9,
+      "blocks": [
+        { "type": "text", "text": "Si en vez de la composición miramos la **resistencia mecánica** (cómo se comporta el material), la Tierra se divide en cinco capas: **litosfera, astenosfera, mesosfera, núcleo externo y núcleo interno**." },
+        {
+          "type": "table",
+          "headers": ["Capa", "Comportamiento", "Detalle"],
+          "rows": [
+            ["Litosfera", "Rígida", "Corteza + parte externa del manto. ≈ 100 km (hasta 250 km bajo continentes antiguos)"],
+            ["Astenosfera", "Blanda, plástica", "Manto superior hasta ≈ 660 km. Pequeña porción fundida: la litosfera se desliza sobre ella"],
+            ["Mesosfera", "Rígida por presión", "Manto inferior (660 – 2900 km)"],
+            ["Núcleo externo", "Líquido", "2900 – 5120 km"],
+            ["Núcleo interno", "Sólido", "5120 – 6371 km"]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "No confundas los dos criterios: la **corteza** es una capa de composición; la **litosfera** es una capa mecánica que incluye la corteza **y** la parte superior del manto."
+        },
+        { "type": "heading", "text": "¿Cómo conocemos el interior?" },
+        { "type": "text", "text": "La perforación más profunda, el **pozo superprofundo de Kola** (Rusia, desde 1970), solo llegó a **12 262 m**: ¡menos del 0,2 % del radio terrestre! Todo lo demás se deduce indirectamente:" },
+        {
+          "type": "list",
+          "items": [
+            "El estudio de las **ondas sísmicas** (cambian de velocidad y dirección al pasar de una capa a otra).",
+            "La variación de la **temperatura**: gradiente geotérmico ≈ **3 °C cada 100 m** (≈ 1 °C cada 33 m).",
+            "La variación de **presión y densidad**.",
+            "Las **anomalías de la gravedad**."
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "T(z) ≈ T₀ + 0,03 · z",
+          "caption": "T₀: temperatura en superficie (°C); z: profundidad (m). Válido solo en la corteza superior."
+        },
+        { "type": "heading", "text": "El calor interno" },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Calor liberado por el **impacto de partículas** durante la formación de la Tierra.",
+            "Calor emitido cuando el hierro **cristalizó** para formar el núcleo interno.",
+            "Calor de la **desintegración radiactiva** de isótopos inestables."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Solo la **desintegración radiactiva** sigue activa, y es menos intensa que en el pasado. La Tierra emite al espacio más calor del que genera: **se enfría lenta pero continuamente**."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El gradiente geotérmico importa en túneles profundos: a 1500 m bajo una montaña la roca puede superar los 50 °C, lo que obliga a ventilar y refrigerar."
+        },
+        {
+          "type": "quiz",
+          "question": "Con un gradiente de 3 °C/100 m y 15 °C en superficie, ¿qué temperatura tendría la roca a 2 km de profundidad?",
+          "options": ["21 °C", "45 °C", "75 °C", "615 °C"],
+          "correct": 2,
+          "explanation": "T = 15 + 0,03 · 2000 = 15 + 60 = **75 °C**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué propiedad de la astenosfera permite que las placas se muevan?",
+          "options": [
+            "Es líquida como el núcleo externo",
+            "Es blanda y plástica, con una pequeña porción fundida",
+            "Es más densa que el núcleo",
+            "Es rígida y frágil"
+          ],
+          "correct": 1,
+          "explanation": "La astenosfera es **dúctil y plástica**: separa mecánicamente a la litosfera del manto inferior y le permite desplazarse."
+        }
+      ]
+    },
+    {
+      "id": "l05-isostasia",
+      "title": "Isostasia",
+      "summary": "Por qué las montañas tienen raíces: el equilibrio gravitacional de la corteza.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Isostasia",
+          "text": "Del griego «igual modo de estar». Es el **equilibrio gravitacional** de la corteza, que **flota** sobre un sustrato más denso y semifluido (el manto). A cierta profundidad, llamada **nivel de compensación**, el peso de las columnas de roca es el mismo en todas partes."
+        },
+        { "type": "heading", "text": "Un problema topográfico" },
+        { "type": "text", "text": "Hacia 1850, los topógrafos del Gran Proyecto Trigonométrico de la India (dirigido por Andrew Waugh, sucesor de **George Everest**) esperaban que la enorme masa del Himalaya desviara sus **plomadas**. Pero las desviaba **mucho menos** de lo calculado. Un siglo antes, **Pierre Bouguer** había notado lo mismo en los Andes. La explicación: bajo las montañas hay una **raíz** de roca menos densa que el manto, que compensa su masa. El término «isostasia» lo introdujo **Clarence Dutton en 1882**." },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Coloca bloques de madera de distinta altura en una piscina: los más altos sobresalen más, pero también **se hunden más**. Igual ocurre con la corteza: bajo las grandes cordilleras, el límite inferior de la litosfera es más profundo."
+        },
+        {
+          "type": "interactive",
+          "widget": "isostasy",
+          "title": "Laboratorio: la raíz de una cordillera"
+        },
+        {
+          "type": "formula",
+          "expression": "r = h · ρc / (ρm − ρc)",
+          "caption": "Modelo de Airy. r: raíz; h: altura del relieve; ρc y ρm: densidades de corteza y manto."
+        },
+        { "type": "text", "text": "Cuando el equilibrio se rompe aparecen **fuerzas verticales** que tienden a restaurarlo, con lentos ascensos y descensos de los continentes. Lo perturban la **erosión**, la **sedimentación**, el **vulcanismo**, las **glaciaciones** y los **movimientos tectónicos**." },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La isostasia explica el relieve del planeta: los continentes son menos densos que el manto y que la corteza oceánica, por eso «flotan» más alto."
+        },
+        {
+          "type": "quiz",
+          "question": "Una meseta se eleva h = 3 km. Con ρc = 2,7 g/cm³ y ρm = 3,3 g/cm³, ¿qué raíz tiene según el modelo de Airy?",
+          "options": ["2,5 km", "4,5 km", "13,5 km", "16,5 km"],
+          "correct": 2,
+          "explanation": "r = 3 · 2,7 / (3,3 − 2,7) = 8,1 / 0,6 = **13,5 km**. Por cada km de relieve hay 4,5 km de raíz."
+        },
+        {
+          "type": "quiz",
+          "question": "Si una cordillera se erosiona y pierde altura, ¿qué ocurre por isostasia?",
+          "options": [
+            "Se hunde todavía más",
+            "Se eleva lentamente (rebote isostático)",
+            "No pasa nada",
+            "Se convierte en corteza oceánica"
+          ],
+          "correct": 1,
+          "explanation": "Al perder masa, la columna pesa menos y el manto la empuja hacia arriba: **rebote isostático**. Lo mismo ocurre cuando se derrite un casquete glaciar."
+        }
+      ]
+    }
+  ]
+}

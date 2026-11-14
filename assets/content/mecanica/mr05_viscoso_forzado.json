@@ -1,0 +1,266 @@
+{
+  "id": "mr05-viscoso-forzado",
+  "title": "Amortiguamiento viscoso y vibraciones forzadas",
+  "description": "Factor de amortiguamiento, casos, decremento logarítmico, resonancia y factor de amplificación",
+  "lessons": [
+    {
+      "id": "l01-viscoso",
+      "title": "Vibración libre con amortiguamiento viscoso",
+      "summary": "EDO, ζ, los tres casos y solución subamortiguada.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "m·ẍ + c·ẋ + k·x = 0",
+          "caption": "Amortiguador viscoso: fuerza c·ẋ, opuesta y proporcional a la velocidad."
+        },
+        {
+          "type": "formula",
+          "expression": "cc = 2·m·ωn = 2·√(k·m)        ζ = c / cc",
+          "caption": "Coeficiente de amortiguamiento crítico y factor de amortiguamiento."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Caso",
+            "ζ",
+            "Raíces",
+            "Comportamiento"
+          ],
+          "rows": [
+            [
+              "Sobreamortiguado",
+              "> 1",
+              "Reales y distintas",
+              "Vuelve al equilibrio sin oscilar, lentamente"
+            ],
+            [
+              "Crítico",
+              "= 1",
+              "Reales iguales",
+              "Vuelve lo más rápido posible sin oscilar"
+            ],
+            [
+              "Subamortiguado",
+              "< 1",
+              "Complejas",
+              "Oscila con amplitud decreciente exponencial"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "x(t) = A·e^(−ζ·ωn·t)·sen(ωd·t + φ)        ωd = ωn·√(1 − ζ²)",
+          "caption": "Solución subamortiguada."
+        },
+        {
+          "type": "interactive",
+          "widget": "viscous_oscillator",
+          "title": "Laboratorio: amortiguamiento viscoso"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Las estructuras civiles tienen ζ ≈ 2 – 5 % (hormigón ≈ 5 %). Los disipadores sísmicos aumentan ζ para reducir la respuesta ante sismos."
+        },
+        {
+          "type": "quiz",
+          "question": "m = 10 kg, k = 1000 N/m, c = 40 N·s/m. ¿ζ?",
+          "options": [
+            "0,02",
+            "0,2",
+            "0,4",
+            "2"
+          ],
+          "correct": 1,
+          "explanation": "cc = 2√(1000·10) = 200 N·s/m → ζ = 40/200 = **0,2** (subamortiguado)."
+        },
+        {
+          "type": "quiz",
+          "question": "m = 5 kg, k = 500 N/m. ¿Coeficiente de amortiguamiento crítico cc?",
+          "options": [
+            "50 N·s/m",
+            "100 N·s/m",
+            "1000 N·s/m",
+            "10 N·s/m"
+          ],
+          "correct": 1,
+          "explanation": "cc = 2√(km) = 2√2500 = **100 N·s/m**."
+        },
+        {
+          "type": "quiz",
+          "question": "Con ζ = 0,1 y ωn = 10 rad/s, ¿ωd?",
+          "options": [
+            "10 rad/s",
+            "9,95 rad/s",
+            "9 rad/s",
+            "1 rad/s"
+          ],
+          "correct": 1,
+          "explanation": "ωd = 10·√(1 − 0,01) = **9,95 rad/s** (casi igual a ωn para ζ pequeño)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué caso regresa al equilibrio más rápido sin oscilar?",
+          "options": [
+            "Sobreamortiguado",
+            "Crítico",
+            "Subamortiguado",
+            "Sin amortiguamiento"
+          ],
+          "correct": 1,
+          "explanation": "El amortiguamiento **crítico** (ζ = 1)."
+        }
+      ]
+    },
+    {
+      "id": "l02-decremento",
+      "title": "Decremento logarítmico",
+      "summary": "Medir el amortiguamiento a partir de la gráfica.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "δ = ln(x₁/x₂) = 2πζ / √(1 − ζ²)        δ = (1/N)·ln(x₀/xN)",
+          "caption": "x₁ y x₂: picos sucesivos; xN: pico N ciclos después."
+        },
+        {
+          "type": "formula",
+          "expression": "ζ = δ / √(4π² + δ²)",
+          "caption": "Despeje."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "La amplitud baja de 50 mm a 20 mm en 4 ciclos: δ = ln(50/20)/4 = 0,229 → ζ = 0,229/√(4π² + 0,229²) = **0,0364** (3,6 %)."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos picos sucesivos miden 10 mm y 8 mm. ¿δ?",
+          "options": [
+            "0,223",
+            "0,8",
+            "1,25",
+            "0,0355"
+          ],
+          "correct": 0,
+          "explanation": "δ = ln(10/8) = **0,223** → ζ ≈ 0,0355."
+        },
+        {
+          "type": "quiz",
+          "question": "Con ζ = 0,1, ¿decremento logarítmico?",
+          "options": [
+            "0,1",
+            "0,628",
+            "0,631",
+            "6,28"
+          ],
+          "correct": 2,
+          "explanation": "δ = 2π·0,1/√(1 − 0,01) = **0,631**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué mide el decremento logarítmico?",
+          "options": [
+            "La frecuencia",
+            "Cuánto decrece la amplitud por ciclo (en escala logarítmica)",
+            "La energía inicial",
+            "El desfase"
+          ],
+          "correct": 1,
+          "explanation": "δ = ln(xn/xn+1): relaciona picos sucesivos."
+        }
+      ]
+    },
+    {
+      "id": "l03-forzada",
+      "title": "Vibraciones forzadas y resonancia",
+      "summary": "Respuesta estacionaria, factor de amplificación y desfase.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "m·ẍ + c·ẋ + k·x = F₀·sen(ω·t)",
+          "caption": "Fuerza armónica de frecuencia ω."
+        },
+        {
+          "type": "formula",
+          "expression": "X = (F₀/k) · MF        MF = 1 / √((1 − r²)² + (2ζr)²)        r = ω/ωn",
+          "caption": "Amplitud de la respuesta estacionaria."
+        },
+        {
+          "type": "formula",
+          "expression": "tan φ = 2ζr / (1 − r²)",
+          "caption": "Desfase entre la fuerza y la respuesta."
+        },
+        {
+          "type": "text",
+          "text": "La respuesta total = transitoria (homogénea, que se amortigua) + estacionaria (particular, que permanece)."
+        },
+        {
+          "type": "interactive",
+          "widget": "forced_vibration",
+          "title": "Curva de resonancia"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "**Resonancia:** si la frecuencia de la excitación (máquina, viento, sismo, paso de personas) coincide con la natural, la amplitud se amplifica ≈ 1/(2ζ) veces. Por eso se diseñan estructuras con frecuencias alejadas de las de excitación, y se aíslan máquinas con r > √2."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "m = 50 kg, k = 20 000 N/m (ωn = 20 rad/s), F₀ = 100 N, ω = 15 rad/s, ζ = 0,05: r = 0,75; MF = 1/√((1 − 0,5625)² + 0,075²) = 2,25; X = 2,25 · 100/20 000 = **11,3 mm**."
+        },
+        {
+          "type": "quiz",
+          "question": "Con ζ = 0,05, ¿cuánto vale aproximadamente MF en resonancia (r = 1)?",
+          "options": [
+            "1",
+            "5",
+            "10",
+            "20"
+          ],
+          "correct": 2,
+          "explanation": "MF = 1/(2ζ) = 1/0,1 = **10**."
+        },
+        {
+          "type": "quiz",
+          "question": "Si ω ≪ ωn (r → 0), el factor de amplificación tiende a:",
+          "options": [
+            "0",
+            "1",
+            "1/(2ζ)",
+            "Infinito"
+          ],
+          "correct": 1,
+          "explanation": "MF = 1/√((1 − 0)² + 0) = **1**: respuesta casi estática."
+        },
+        {
+          "type": "quiz",
+          "question": "Si ω ≫ ωn (r grande), la amplitud:",
+          "options": [
+            "Crece sin límite",
+            "Tiende a cero",
+            "Es igual a F₀/k",
+            "No depende de r"
+          ],
+          "correct": 1,
+          "explanation": "MF ≈ 1/r² → **0**: el sistema no alcanza a seguir la fuerza."
+        },
+        {
+          "type": "quiz",
+          "question": "En resonancia (r = 1), el desfase entre fuerza y respuesta es:",
+          "options": [
+            "0°",
+            "45°",
+            "90°",
+            "180°"
+          ],
+          "correct": 2,
+          "explanation": "tan φ = 2ζ/0 → φ = **90°**."
+        }
+      ]
+    }
+  ]
+}

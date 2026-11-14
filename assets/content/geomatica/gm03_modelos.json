@@ -1,0 +1,465 @@
+{
+  "id": "gm03-modelos",
+  "title": "Modelos del terreno y ortofotos",
+  "description": "Nube de puntos, TIN, breaklines, boundary, MDE/MDT/MDS y fotogrametría",
+  "lessons": [
+    {
+      "id": "l01-tin",
+      "title": "De los puntos a la superficie: TIN",
+      "summary": "Cómo se forma una superficie triangulada y por qué los triángulos importan.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Red de **triángulos** cuyos vértices son los puntos levantados. Se construye con la **triangulación de Delaunay** (triángulos lo más «gordos» posible). Dentro de cada triángulo el terreno se supone **plano**: así se interpolan cotas y se trazan curvas de nivel.",
+          "title": "TIN (red irregular de triángulos)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Modelo",
+            "Estructura",
+            "Ventajas",
+            "Dónde"
+          ],
+          "rows": [
+            [
+              "**TIN**",
+              "Triángulos irregulares (vector)",
+              "Respeta exactamente los puntos y las líneas de quiebre; densidad variable",
+              "Civil 3D, levantamientos topográficos"
+            ],
+            [
+              "**Ráster (grid)**",
+              "Celdas cuadradas de igual tamaño, cada una con una cota",
+              "Fácil de analizar (pendiente, hidrología); grandes áreas",
+              "ArcMap/ArcGIS, QGIS, MDE satelitales"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si solo se triangulan puntos, el programa puede unir puntos «a través» de un muro, del fondo de un río o de un borde de vía, creando triángulos que **no existen** en la realidad. Para evitarlo se usan las **breaklines**."
+        },
+        {
+          "type": "quiz",
+          "question": "Dentro de cada triángulo de un TIN, el terreno se considera:",
+          "options": [
+            "Curvo",
+            "Plano",
+            "Vertical",
+            "Sin cota"
+          ],
+          "correct": 1,
+          "explanation": "Cada triángulo es una **cara plana**: las cotas intermedias se interpolan linealmente."
+        },
+        {
+          "type": "quiz",
+          "question": "En un TIN, la superficie se forma con:",
+          "options": [
+            "Cuadrados regulares",
+            "Triángulos que unen los puntos medidos",
+            "Círculos",
+            "Curvas"
+          ],
+          "correct": 1,
+          "explanation": "**Triangulated Irregular Network**: triángulos de Delaunay."
+        },
+        {
+          "type": "quiz",
+          "question": "Un triángulo largo y delgado que cruza un cauce puede:",
+          "options": [
+            "Mejorar el modelo",
+            "Generar curvas de nivel erróneas (falso relieve)",
+            "No afectar",
+            "Borrar puntos"
+          ],
+          "correct": 1,
+          "explanation": "Por eso se usan **breaklines**."
+        }
+      ]
+    },
+    {
+      "id": "l02-breaklines",
+      "title": "Breaklines (líneas de quiebre)",
+      "summary": "Qué son, dónde se colocan y tipos.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Línea que marca un **cambio brusco de pendiente** del terreno. Obliga a la triangulación a que **ningún triángulo la cruce**: los lados de los triángulos siguen la línea. Así el modelo respeta bordes, cauces y estructuras.",
+          "title": "Breakline"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Dónde colocarlas",
+            "Por qué"
+          ],
+          "rows": [
+            [
+              "Bordes y fondo de cauces, quebradas y canales",
+              "Para que el río no se «rellene» y el fondo quede bien definido"
+            ],
+            [
+              "Cabeza y pie de taludes",
+              "Cambio de pendiente fuerte"
+            ],
+            [
+              "Bordes de vía, cunetas, bordillos",
+              "Superficies construidas"
+            ],
+            [
+              "Coronación y pie de muros",
+              "Cambio vertical"
+            ],
+            [
+              "Crestas y divisorias",
+              "Forma del relieve"
+            ],
+            [
+              "Contorno de estructuras (tanques, desarenadores)",
+              "Que el terreno no atraviese la estructura"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo (Civil 3D)",
+            "Uso"
+          ],
+          "rows": [
+            [
+              "Estándar (standard)",
+              "Polilínea 3D cuyos vértices tienen cota (lo normal: unir puntos levantados)"
+            ],
+            [
+              "Proximidad (proximity)",
+              "Polilínea 2D; toma las cotas de los puntos más cercanos"
+            ],
+            [
+              "Muro (wall)",
+              "Cambio vertical: cota arriba y abajo"
+            ],
+            [
+              "No destructiva (non-destructive)",
+              "Añade vértices donde cruza los triángulos sin borrar los existentes"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En tu planimetría de la **captación**: breaklines en el borde del cauce, el fondo del río, el muro de la captación, la rejilla y el desarenador. Así las curvas de nivel se cortan correctamente en las estructuras en lugar de atravesarlas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué hace una breakline en una superficie TIN?",
+          "options": [
+            "Borra puntos",
+            "Impide que los triángulos la crucen, respetando el cambio de pendiente",
+            "Cambia el sistema de coordenadas",
+            "Dibuja las curvas índice"
+          ],
+          "correct": 1,
+          "explanation": "Los lados de los triángulos siguen la breakline: el modelo respeta el quiebre del terreno."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde NO tiene sentido una breakline?",
+          "options": [
+            "En el pie de un talud",
+            "En el fondo de una quebrada",
+            "En medio de un potrero de pendiente uniforme",
+            "En el borde de una vía"
+          ],
+          "correct": 2,
+          "explanation": "En una pendiente uniforme no hay quiebre: la triangulación normal basta."
+        }
+      ]
+    },
+    {
+      "id": "l03-boundary",
+      "title": "Boundary (contorno de la superficie)",
+      "summary": "Contornos exterior, de ocultación y de recorte.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Polígono que **limita** la superficie. Sin él, la triangulación une los puntos más exteriores con triángulos largos y delgados que inventan terreno donde no se midió.",
+          "title": "Boundary"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Efecto"
+          ],
+          "rows": [
+            [
+              "**Exterior (outer)**",
+              "Define el borde de la superficie: fuera de él no hay triángulos"
+            ],
+            [
+              "**Ocultación (hide)**",
+              "Crea un «hueco»: edificios, el interior de un tanque, una laguna"
+            ],
+            [
+              "**Visualización (show)**",
+              "Vuelve a mostrar una zona dentro de un hueco"
+            ],
+            [
+              "**Recorte de datos (data clip)**",
+              "Ignora los datos que se agreguen fuera de él"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Dibuja el boundary siguiendo el **límite real de lo levantado**. Un boundary más grande que la nube de puntos no agrega información; uno más pequeño recorta datos válidos."
+        },
+        {
+          "type": "quiz",
+          "question": "Quieres que la superficie no muestre curvas de nivel dentro de un tanque de hormigón. Usas un boundary de tipo:",
+          "options": [
+            "Exterior",
+            "Ocultación (hide)",
+            "Recorte",
+            "Ninguno"
+          ],
+          "correct": 1,
+          "explanation": "El boundary de **ocultación** abre un hueco en la superficie."
+        },
+        {
+          "type": "quiz",
+          "question": "Un boundary de ocultación (hide) sirve para:",
+          "options": [
+            "Borrar puntos",
+            "Ocultar una zona de la superficie, como un edificio o una laguna",
+            "Agregar cotas",
+            "Proyectar"
+          ],
+          "correct": 1,
+          "explanation": "Crea un **hueco** en la superficie."
+        },
+        {
+          "type": "quiz",
+          "question": "El boundary exterior evita:",
+          "options": [
+            "Triángulos falsos fuera de la zona levantada",
+            "Las curvas de nivel",
+            "Los puntos",
+            "La ortofoto"
+          ],
+          "correct": 0,
+          "explanation": "Recorta los triángulos largos del borde."
+        }
+      ]
+    },
+    {
+      "id": "l04-mde",
+      "title": "MDE, MDT, MDS y modelos ráster",
+      "summary": "Diferencias, resolución y fuentes de datos.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Modelo",
+            "Representa",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "**MDE** (modelo digital de elevaciones)",
+              "Término general para cualquier modelo de cotas",
+              "Hidrología, pendientes"
+            ],
+            [
+              "**MDT** (del terreno)",
+              "Solo el suelo desnudo (sin árboles ni edificios)",
+              "Diseño, cuencas, curvas de nivel"
+            ],
+            [
+              "**MDS** (de superficie)",
+              "La superficie con todo lo que está encima: copas de árboles, techos",
+              "Ortorrectificación, alturas de vegetación"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Tamaño del lado de cada celda del ráster (p. ej. 30 m, 12,5 m, 5 m, 1 m). Una celda de 30 m promedia todo lo que hay dentro de 900 m²: sirve para cuencas grandes, pero no para una obra pequeña.",
+          "title": "Resolución espacial"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Fuente",
+            "Resolución aprox.",
+            "Uso"
+          ],
+          "rows": [
+            [
+              "SRTM (NASA)",
+              "30 m",
+              "Cuencas grandes, gratuita"
+            ],
+            [
+              "Copernicus DEM",
+              "30 m",
+              "Alternativa global gratuita"
+            ],
+            [
+              "ALOS PALSAR (corregido)",
+              "12,5 m",
+              "Cuencas medianas"
+            ],
+            [
+              "Cartografía del IGM (curvas 1:50 000 y 1:25 000)",
+              "Equidistancia 20 – 40 m / 10 m",
+              "Base oficial"
+            ],
+            [
+              "Ortofotos y MDT de proyectos nacionales (p. ej. SIGTIERRAS)",
+              "Metros o menos",
+              "Detalle predial y rural"
+            ],
+            [
+              "Levantamiento propio (estación, GNSS, dron)",
+              "Centímetros",
+              "Diseño de la obra"
+            ]
+          ],
+          "caption": "Verifica la disponibilidad actual de cada fuente en su geoportal."
+        },
+        {
+          "type": "quiz",
+          "question": "Para calcular el área de una cuenca de 300 km² basta con un MDE de:",
+          "options": [
+            "1 cm de resolución",
+            "30 m de resolución",
+            "Una ortofoto",
+            "Un solo punto GNSS"
+          ],
+          "correct": 1,
+          "explanation": "A escala de cuenca grande, un MDE de **30 m** (SRTM, Copernicus) es adecuado."
+        },
+        {
+          "type": "quiz",
+          "question": "Para el diseño de una cuneta necesitas el:",
+          "options": [
+            "MDS",
+            "MDT de alta resolución",
+            "Mapa geológico 1:250 000",
+            "MDE de 90 m"
+          ],
+          "correct": 1,
+          "explanation": "El **terreno desnudo** y con detalle de centímetros."
+        },
+        {
+          "type": "quiz",
+          "question": "La diferencia entre MDS y MDT es que el MDS incluye:",
+          "options": [
+            "Solo el suelo",
+            "Vegetación y edificios",
+            "Las curvas",
+            "Nada"
+          ],
+          "correct": 1,
+          "explanation": "MDS = superficie con **objetos**; MDT = terreno desnudo."
+        }
+      ]
+    },
+    {
+      "id": "l05-ortofoto",
+      "title": "Ortofoto y fotogrametría con dron",
+      "summary": "Qué es una ortofoto, GSD, traslapes, puntos de control y procesamiento.",
+      "minutes": 11,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Imagen aérea **corregida geométricamente** (ortorrectificada) para eliminar las deformaciones causadas por el relieve y la inclinación de la cámara. Tiene **escala uniforme**: se pueden medir distancias y áreas sobre ella como en un mapa.",
+          "title": "Ortofoto"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "En una foto aérea normal, lo que está más alto (un cerro, un edificio) aparece desplazado hacia afuera y la escala cambia según la cota. La ortorrectificación usa un **MDE** y la posición de la cámara para reproyectar cada píxel a su posición real en planta.",
+          "title": "Foto aérea vs. ortofoto"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Tamaño del terreno que representa un píxel (p. ej. 2 cm/píxel). Depende de la **altura de vuelo**, la **distancia focal** y el tamaño del sensor: a más altura, mayor GSD (menos detalle).",
+          "title": "GSD (distancia de muestreo en el terreno)"
+        },
+        {
+          "type": "heading",
+          "text": "Flujo de trabajo con dron"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Planificar el vuelo:** área, altura, GSD buscado y **traslapes** (frontal ≈ 75 – 80 %, lateral ≈ 65 – 70 %).",
+            "Colocar y medir con GNSS **puntos de control (GCP)** distribuidos en el área, y puntos de chequeo.",
+            "Volar (automáticamente) y revisar las fotos.",
+            "**Procesar** (Agisoft Metashape, Pix4D, WebODM…): alineación de fotos → nube de puntos densa → MDS → MDT (filtrando vegetación) → **ortomosaico**.",
+            "Controlar la precisión con los puntos de chequeo.",
+            "Exportar: ortofoto (GeoTIFF), MDT, curvas de nivel, nube de puntos a Civil 3D o ArcGIS."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Sobre una ortofoto en Civil 3D o ArcMap se pueden **digitalizar** bordes de río, caminos y estructuras (planimetría), y verificar el levantamiento con estación total."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué diferencia a una ortofoto de una foto aérea normal?",
+          "options": [
+            "La ortofoto es en blanco y negro",
+            "La ortofoto está corregida de las deformaciones del relieve y tiene escala uniforme",
+            "La ortofoto no tiene coordenadas",
+            "La ortofoto es una imagen satelital"
+          ],
+          "correct": 1,
+          "explanation": "La **ortorrectificación** elimina el desplazamiento por relieve y por inclinación: se puede medir sobre ella."
+        },
+        {
+          "type": "quiz",
+          "question": "Si el dron vuela más alto con la misma cámara, el GSD:",
+          "options": [
+            "Disminuye (más detalle)",
+            "Aumenta (menos detalle)",
+            "No cambia",
+            "Se vuelve cero"
+          ],
+          "correct": 1,
+          "explanation": "Cada píxel cubre más terreno: el **GSD aumenta**."
+        },
+        {
+          "type": "quiz",
+          "question": "El GSD de una ortofoto es:",
+          "options": [
+            "El tamaño del píxel en el terreno",
+            "El número de fotos",
+            "La altura del vuelo",
+            "El traslape"
+          ],
+          "correct": 0,
+          "explanation": "**Ground Sample Distance**: cuánto terreno cubre un píxel."
+        }
+      ]
+    }
+  ]
+}

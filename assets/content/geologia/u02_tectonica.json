@@ -1,0 +1,404 @@
+{
+  "id": "u02-tectonica",
+  "title": "Tectónica de placas",
+  "description": "Capítulo 1 · Placas, límites, continentes y fondo oceánico",
+  "lessons": [
+    {
+      "id": "l01-placas",
+      "title": "La teoría de la tectónica de placas",
+      "summary": "De Pangea a las placas actuales: qué son, de qué tipo y por qué se mueven.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Tectónica de placas",
+          "text": "Teoría que explica la **estructura y la dinámica** de la superficie terrestre: la litosfera está dividida en **placas rígidas** que se desplazan sobre la astenosfera."
+        },
+        {
+          "type": "text",
+          "text": "Hace unos **225 Ma** todas las tierras emergidas formaban un solo supercontinente, **Pangea** («todas las tierras», en griego), que se fragmentó hasta dar los continentes actuales. La idea de la deriva continental se aceptó a mediados de la **década de 1960**."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "¿Qué mueve las placas?",
+          "text": "Se piensa que son las **corrientes de convección** en el manto, en la **astenosfera**: el material caliente asciende, se desplaza bajo la litosfera, se enfría y desciende. La astenosfera se comporta como un fluido en escalas de miles de años; la fuente de calor es el interior terrestre."
+        },
+        {
+          "type": "heading",
+          "text": "Dos tipos de placa"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "Oceánica",
+            "Continental"
+          ],
+          "rows": [
+            [
+              "Material",
+              "Homogéneo, basáltico",
+              "Heterogéneo (mixto)"
+            ],
+            [
+              "Densidad media",
+              "≈ 3,0 g/cm³",
+              "≈ 2,7 g/cm³"
+            ],
+            [
+              "Espesor de corteza",
+              "≈ 7 km",
+              "35 – 70 km"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Existen **14 placas mayores** y unas **45 secundarias**. Entre las principales: Sudamericana, Norteamericana, Euroasiática, Africana, Antártica, Indoaustraliana, del Pacífico, de **Nazca**, de **Cocos**, del **Caribe**, Arábiga, Filipina, Escocesa y Juan de Fuca."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El Ecuador está sobre la **placa Sudamericana**, justo donde la **placa de Nazca** se hunde bajo ella. Esa convergencia explica los Andes, nuestros volcanes y la alta amenaza sísmica que obliga a diseñar con la Norma Ecuatoriana de la Construcción (NEC)."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "¿Por qué los límites están donde están?",
+          "text": "Al mapear los terremotos se vio que se concentran en **franjas estrechas y bien definidas**. La mayoría resulta del movimiento de las placas donde chocan o se rozan: esas franjas **son** los límites de placas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué en una convergencia oceánica–continental se hunde la placa oceánica?",
+          "options": [
+            "Porque es más gruesa",
+            "Porque es más densa (≈ 3,0 frente a ≈ 2,7 g/cm³)",
+            "Porque es más antigua que todo continente",
+            "Porque es líquida"
+          ],
+          "correct": 1,
+          "explanation": "La corteza oceánica, basáltica, es **más densa**; la continental, más ligera, «flota» y no se hunde."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué placa subduce bajo la Sudamericana frente a las costas del Ecuador?",
+          "options": [
+            "Placa de Cocos",
+            "Placa del Caribe",
+            "Placa de Nazca",
+            "Placa del Pacífico"
+          ],
+          "correct": 2,
+          "explanation": "La **placa de Nazca** se hunde bajo la Sudamericana a lo largo de la fosa frente a la costa del Ecuador."
+        }
+      ]
+    },
+    {
+      "id": "l02-limites",
+      "title": "Tipos de límites de placas",
+      "summary": "Divergentes, convergentes y transformantes: qué ocurre en cada uno.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Según cómo se mueven las placas entre sí, los límites son de tres tipos. Los convergentes se subdividen según el tipo de placas que chocan."
+        },
+        {
+          "type": "interactive",
+          "widget": "plate_boundaries",
+          "title": "Explora los límites de placas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Límite",
+            "Movimiento",
+            "Corteza",
+            "Rasgos típicos"
+          ],
+          "rows": [
+            [
+              "Divergente",
+              "Se separan",
+              "Se crea (constructivo)",
+              "Dorsal, rift, vulcanismo basáltico"
+            ],
+            [
+              "Convergente",
+              "Chocan",
+              "Se destruye (destructivo)",
+              "Fosa, arco volcánico, cordillera"
+            ],
+            [
+              "Transformante",
+              "Se deslizan lateralmente",
+              "Ni se crea ni se destruye (conservativo)",
+              "Falla de desgarre, sismos superficiales"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Convergencias: **oceánica–continental** → subducción, fosa y arco volcánico continental (Andes). **Oceánica–oceánica** → arco de islas (Japón). **Continental–continental** → colisión y grandes cordilleras (Himalaya)."
+        },
+        {
+          "type": "quiz",
+          "question": "La falla de San Andrés, entre las placas del Pacífico y Norteamericana, es un límite:",
+          "options": [
+            "Divergente",
+            "Convergente",
+            "Transformante",
+            "De subducción"
+          ],
+          "correct": 2,
+          "explanation": "Allí las placas solo se **deslizan horizontalmente** una junto a la otra: límite **transformante**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué tipo de límite forma un arco de islas como Japón?",
+          "options": [
+            "Oceánica–oceánica",
+            "Continental–continental",
+            "Divergente",
+            "Transformante"
+          ],
+          "correct": 0,
+          "explanation": "Cuando dos placas **oceánicas** convergen, una subduce bajo la otra y el vulcanismo forma un **arco de islas**."
+        }
+      ]
+    },
+    {
+      "id": "l03-subduccion",
+      "title": "Subducción y colisión continental",
+      "summary": "Fosas, arcos volcánicos, antearco, trasarco y formación de cordilleras.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Zona de subducción",
+          "text": "Lugar donde una placa oceánica, más densa, se **hunde bajo otra placa** y desciende hacia la astenosfera."
+        },
+        {
+          "type": "text",
+          "text": "La litosfera oceánica nace caliente en la dorsal. Al alejarse **se enfría, se engrosa y se vuelve más densa**: tras unos **15 Ma** ya es más densa que la astenosfera que la sostiene, y tiende a hundirse. En el Pacífico occidental hay litosfera oceánica de **≈ 180 Ma**, la más gruesa y densa de los océanos actuales; allí las placas subducen con ángulos cercanos a **90°**."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Fosa oceánica",
+          "text": "Depresión alargada del fondo marino donde la placa se dobla para hundirse; puede alcanzar **≈ 11 km** de profundidad."
+        },
+        {
+          "type": "heading",
+          "text": "Las cuatro regiones de una zona de subducción"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Fosa oceánica**, donde la placa se dobla y desciende.",
+            "**Antearco**: región entre la fosa y el arco volcánico.",
+            "**Arco volcánico**, formado sobre la placa que queda arriba (cabalgante).",
+            "**Trasarco**: región al otro lado del arco, opuesta a la fosa."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Todas las zonas de subducción tienen estas estructuras, pero varían mucho a lo largo de una misma zona y entre zonas distintas."
+        },
+        {
+          "type": "heading",
+          "text": "Colisión continental"
+        },
+        {
+          "type": "text",
+          "text": "Cuando chocan dos placas **continentales**, ninguna se hunde mucho porque ambas son poco densas. La corteza se pliega, se fractura, se engrosa y se eleva. La **orogenia alpina** (choque de África con Europa y de la India con Asia en los últimos ≈ 60 Ma) formó los Pirineos, los Alpes, los Cárpatos, los Zagros y el **Himalaya**, la cordillera más alta, con el **Everest (8848 m s.n.m.)**."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Orogenia",
+          "text": "Conjunto de procesos (plegamiento, fallamiento, levantamiento) que forman una cordillera."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En el Ecuador vivimos sobre el **arco volcánico** de una zona de subducción (los Andes). Por eso: sismos de distinta profundidad, volcanes activos, rocas muy fracturadas y laderas inestables, que condicionan carreteras, presas y túneles."
+        },
+        {
+          "type": "quiz",
+          "question": "En una zona de subducción, ¿qué región se ubica entre la fosa y el arco volcánico?",
+          "options": [
+            "Trasarco",
+            "Antearco",
+            "Dorsal",
+            "Rift"
+          ],
+          "correct": 1,
+          "explanation": "El **antearco** está entre la fosa y el arco; el **trasarco**, del otro lado del arco."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué la litosfera oceánica antigua subduce con más facilidad?",
+          "options": [
+            "Porque se calienta con la edad",
+            "Porque al enfriarse se engrosa y se vuelve más densa que la astenosfera",
+            "Porque se vuelve continental",
+            "Porque pierde agua y flota"
+          ],
+          "correct": 1,
+          "explanation": "Con la edad la litosfera oceánica **se enfría y se densifica**; tras ≈ 15 Ma es más densa que la astenosfera y tiende a hundirse."
+        }
+      ]
+    },
+    {
+      "id": "l04-divergencia",
+      "title": "Dorsales y fallas transformantes",
+      "summary": "Cómo nace la corteza oceánica y cómo se deslizan lateralmente las placas.",
+      "minutes": 6,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Límites divergentes"
+        },
+        {
+          "type": "text",
+          "text": "Cuando dos placas se separan, el magma asciende y forma nueva corteza. En el océano esto crea una **dorsal**, una cordillera submarina con un **rift** (valle central) en su eje. En un continente, la separación empieza como un **valle de rift** que, con el tiempo, puede inundarse y convertirse en un nuevo océano."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "La **dorsal mesoatlántica** va del océano Ártico hasta el sur de África. Allí se separan las placas Norteamericana y Euroasiática ≈ **2,5 cm por año**. En **Islandia** la dorsal sale a la superficie."
+        },
+        {
+          "type": "heading",
+          "text": "Límites transformantes"
+        },
+        {
+          "type": "text",
+          "text": "Las placas se **deslizan horizontalmente** una junto a la otra, sin crear ni destruir corteza. El ejemplo clásico es la **falla de San Andrés** (≈ 1286 km), en el oeste de Norteamérica, entre las placas del Pacífico y Norteamericana."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Una obra lineal (carretera, canal, oleoducto) que cruza una falla activa puede quedar **desplazada lateralmente** en un sismo. Se diseñan tramos flexibles o se evita el cruce."
+        },
+        {
+          "type": "quiz",
+          "question": "Si dos placas se separan 2,5 cm por año, ¿cuánto se alejan en 1 millón de años?",
+          "options": [
+            "2,5 m",
+            "250 m",
+            "25 km",
+            "2500 km"
+          ],
+          "correct": 2,
+          "explanation": "2,5 cm/año × 1 000 000 años = 2 500 000 cm = **25 km**. Lento a escala humana, enorme a escala geológica."
+        },
+        {
+          "type": "quiz",
+          "question": "En una dorsal oceánica, la corteza más joven está:",
+          "options": [
+            "En los bordes del océano",
+            "En el eje de la dorsal",
+            "En las fosas",
+            "En los continentes"
+          ],
+          "correct": 1,
+          "explanation": "Se crea en el **eje** y envejece al alejarse."
+        }
+      ]
+    },
+    {
+      "id": "l05-continentes-oceanos",
+      "title": "Continentes y fondo oceánico",
+      "summary": "Cratones, escudos, cinturones montañosos y el relieve del fondo marino.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Los continentes"
+        },
+        {
+          "type": "text",
+          "text": "Sus rasgos se agrupan en dos categorías: **áreas extensas, planas y estables**, erosionadas casi hasta el nivel del mar, y **cinturones montañosos** de rocas deformadas, jóvenes (formados en los últimos ≈ 100 Ma)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Unidad",
+            "Descripción"
+          ],
+          "rows": [
+            [
+              "Cratón",
+              "Interior estable del continente, casi sin cambios en los últimos ≈ 600 Ma o más"
+            ],
+            [
+              "Escudo",
+              "Parte del cratón: regiones llanas de rocas cristalinas deformadas de 1000 a 4000 Ma"
+            ],
+            [
+              "Plataforma estable",
+              "Parte del cratón donde las rocas deformadas están cubiertas por una capa fina de rocas sedimentarias"
+            ],
+            [
+              "Cinturón montañoso",
+              "Rocas deformadas recientemente; cordilleras jóvenes como los Andes"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "El fondo oceánico"
+        },
+        {
+          "type": "text",
+          "text": "Se ha cartografiado con **sónar** (ecosonda y sonar de haz múltiple), que mide la profundidad por el tiempo de ida y vuelta del sonido. Hay tres grandes unidades: **márgenes continentales**, **cuencas oceánicas profundas** y **dorsales**. Las cuencas oceánicas ocupan ≈ 60 % de la superficie terrestre y los continentes ≈ 40 % (si se toma el talud como límite)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Plataforma continental:** superficie suavemente inclinada que continúa el continente bajo el mar.",
+            "**Talud continental:** pendiente empinada que baja hasta el fondo profundo. Es el **verdadero límite** entre continente y cuenca oceánica, **no** la línea de costa.",
+            "**Pie de talud:** donde no hay fosa, acumulación gruesa de sedimentos que bajaron desde la plataforma, con pendiente más suave."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Márgenes activos y pasivos",
+          "text": "Un margen **activo** coincide con un límite de placas activo (con fosa, sismos y volcanes), como la costa del Ecuador. Un margen **pasivo** no está en un borde de placa; tiene una plataforma ancha y un pie de talud desarrollado, como la costa atlántica de Sudamérica."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde está el límite real entre un continente y la cuenca oceánica profunda?",
+          "options": [
+            "En la línea de costa",
+            "En el talud continental",
+            "En la dorsal",
+            "En la plataforma continental"
+          ],
+          "correct": 1,
+          "explanation": "El límite está en el **talud continental**: la plataforma, aunque sumergida, sigue siendo parte del continente."
+        },
+        {
+          "type": "quiz",
+          "question": "La costa del Ecuador, frente a una zona de subducción, es un margen:",
+          "options": [
+            "Pasivo",
+            "Activo",
+            "Cratónico",
+            "Divergente"
+          ],
+          "correct": 1,
+          "explanation": "Está sobre un límite de placas convergente con fosa, sismos y volcanes: es un margen **activo**."
+        }
+      ]
+    }
+  ]
+}

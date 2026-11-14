@@ -1,0 +1,415 @@
+{
+  "id": "u04-mapas",
+  "title": "Mapas geológicos",
+  "description": "Capítulo 6 · Litoestratigrafía, unidades, mapas y perfiles",
+  "lessons": [
+    {
+      "id": "l01-litoestratigrafia",
+      "title": "Litoestratigrafía y geocronología",
+      "summary": "Estratigrafía, litología, litoestratigrafía y las unidades del tiempo geológico.",
+      "minutes": 6,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Disciplina",
+            "Estudia"
+          ],
+          "rows": [
+            [
+              "Estratigrafía",
+              "La disposición de los estratos o capas"
+            ],
+            [
+              "Litología",
+              "La composición de las rocas"
+            ],
+            [
+              "Litoestratigrafía",
+              "Los cuerpos de roca según sus características litológicas y sus relaciones geométricas, **sin considerar los fósiles**"
+            ],
+            [
+              "Geocronología",
+              "La edad y la sucesión cronológica de los acontecimientos geológicos"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Principio de superposición",
+          "text": "En una secuencia de estratos no deformada, **las capas de abajo son más antiguas** que las de arriba. Es la base para ordenar los acontecimientos en el tiempo."
+        },
+        {
+          "type": "heading",
+          "text": "Unidades geocronológicas"
+        },
+        {
+          "type": "text",
+          "text": "Son unidades de tiempo discretas, continuas y sucesivas que forman una escala de toda la historia de la Tierra. De mayor a menor:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Eón** (p. ej., Fanerozoico)",
+            "**Era** (p. ej., Cenozoico)",
+            "**Período** (p. ej., Cuaternario)",
+            "**Época** (p. ej., Holoceno)",
+            "**Edad**"
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el orden correcto de las unidades geocronológicas, de mayor a menor?",
+          "options": [
+            "Era – Eón – Período – Época – Edad",
+            "Eón – Era – Período – Época – Edad",
+            "Eón – Período – Era – Edad – Época",
+            "Edad – Época – Período – Era – Eón"
+          ],
+          "correct": 1,
+          "explanation": "**Eón > Era > Período > Época > Edad.**"
+        },
+        {
+          "type": "quiz",
+          "question": "La litoestratigrafía define sus unidades por:",
+          "options": [
+            "Los fósiles que contienen",
+            "Las características litológicas observables",
+            "Su edad absoluta",
+            "Su magnetismo"
+          ],
+          "correct": 1,
+          "explanation": "Se basa en la **litología** (composición y estructura de las rocas), sin considerar fósiles."
+        }
+      ]
+    },
+    {
+      "id": "l02-discontinuidades",
+      "title": "Discontinuidades estratigráficas",
+      "summary": "Discordancia angular, disconformidad, paraconformidad e inconformidad.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Una **discontinuidad** es una superficie que separa rocas de edades distintas y representa un **vacío en el registro**: un tiempo en que no hubo depósito o en que se erosionaron capas."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Rocas de abajo",
+            "Cómo se reconoce"
+          ],
+          "rows": [
+            [
+              "**Discordancia angular**",
+              "Estratos inclinados o plegados y erosionados",
+              "Las capas de arriba se apoyan formando un ángulo con las de abajo"
+            ],
+            [
+              "**Disconformidad**",
+              "Estratos paralelos a los de arriba",
+              "Superficie de erosión irregular y visible entre ellos"
+            ],
+            [
+              "**Paraconformidad**",
+              "Estratos paralelos a los de arriba",
+              "Contacto que parece normal; el vacío solo se detecta por la edad (p. ej., fósiles)"
+            ],
+            [
+              "**Inconformidad**",
+              "Rocas ígneas o metamórficas más antiguas",
+              "Estratos sedimentarios más jóvenes sobre ellas"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "El **Gran Cañón del Colorado** muestra varias a la vez: inconformidad entre el granito precámbrico y los estratos, discordancia angular sobre el Grupo Unkar inclinado, y disconformidades y paraconformidades entre formaciones paleozoicas."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Una discontinuidad suele separar materiales de resistencia y permeabilidad muy distintas: puede ser un plano de **deslizamiento** en un talud o una vía de **filtración** bajo una presa."
+        },
+        {
+          "type": "quiz",
+          "question": "Areniscas horizontales se apoyan directamente sobre un granito. Es una:",
+          "options": [
+            "Discordancia angular",
+            "Disconformidad",
+            "Paraconformidad",
+            "Inconformidad"
+          ],
+          "correct": 3,
+          "explanation": "Sedimentarias más jóvenes sobre roca **ígnea o metamórfica** = **inconformidad**."
+        },
+        {
+          "type": "quiz",
+          "question": "Estratos plegados y erosionados, cubiertos por capas horizontales. Es una:",
+          "options": [
+            "Discordancia angular",
+            "Paraconformidad",
+            "Inconformidad",
+            "Disconformidad"
+          ],
+          "correct": 0,
+          "explanation": "Hay un **ángulo** entre las capas de abajo y las de arriba: **discordancia angular**."
+        }
+      ]
+    },
+    {
+      "id": "l03-unidades",
+      "title": "Unidades litoestratigráficas",
+      "summary": "Grupo, formación, miembro, capa y flujo: la jerarquía que se dibuja en los mapas.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Unidad litoestratigráfica",
+          "text": "Masa de roca definida por sus **propiedades litológicas** y sus **relaciones estratigráficas**. Puede estar formada por rocas ígneas, metamórficas o sedimentarias y se reconoce por sus características físicas observables. Son las **unidades básicas de los mapas geológicos**."
+        },
+        {
+          "type": "interactive",
+          "widget": "strat_column",
+          "title": "Columna estratigráfica interactiva"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Unidad",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "**Grupo**",
+              "Unidad de rango superior: dos o más formaciones asociadas y continuas"
+            ],
+            [
+              "**Formación**",
+              "Unidad formal **principal**: cuerpo de roca con propiedades litológicas comunes que lo diferencian de los adyacentes; se puede cartografiar; espesor de metros a kilómetros"
+            ],
+            [
+              "**Miembro**",
+              "Subdivisión de una formación, con propiedades que la distinguen de las partes adyacentes"
+            ],
+            [
+              "**Capa**",
+              "Unidad de menor jerarquía; se distingue de las de arriba y abajo; espesor de milímetros a pocos metros"
+            ],
+            [
+              "**Flujo**",
+              "Cuerpo volcánico extrusivo, caracterizado por su textura y composición"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "También hay unidades menores: **lenguas, lentes, domos de sal, vetas, acuíferos**, entre otras."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Jerarquía: **Grupo > Formación > Miembro > Capa.** La formación es la unidad que normalmente aparece en un mapa geológico."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la unidad litoestratigráfica principal, la que normalmente se cartografía?",
+          "options": [
+            "Grupo",
+            "Formación",
+            "Miembro",
+            "Capa"
+          ],
+          "correct": 1,
+          "explanation": "La **formación** es la unidad formal primaria y la base de los mapas geológicos."
+        },
+        {
+          "type": "quiz",
+          "question": "Un grupo está formado por:",
+          "options": [
+            "Dos o más miembros",
+            "Dos o más formaciones asociadas",
+            "Una sola capa gruesa",
+            "Varios flujos de lava"
+          ],
+          "correct": 1,
+          "explanation": "El **grupo** reúne **dos o más formaciones** asociadas y continuas."
+        }
+      ]
+    },
+    {
+      "id": "l04-mapa-perfil",
+      "title": "Mapa y perfil geológico",
+      "summary": "Cómo se lee un mapa geológico-geotécnico y qué muestra un perfil.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Mapa geológico",
+          "text": "Representación en **planta** de las unidades geológicas que afloran en una zona, sobre una base topográfica, con sus contactos, estructuras (fallas, pliegues, rumbo y buzamiento) y una **leyenda** que describe cada unidad."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Unidades** de color, cada una con un **símbolo** (por ejemplo, Qc para depósitos coluviales o la abreviatura de una formación).",
+            "**Leyenda** con la descripción de cada unidad.",
+            "**Contactos** entre unidades y **estructuras**: fallas, pliegues, orientación de las capas.",
+            "**Norte, escala, coordenadas** y ubicación de los perfiles."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Mapas geológico-geotécnicos"
+        },
+        {
+          "type": "text",
+          "text": "En ingeniería, cada unidad se describe además por su comportamiento como material de construcción o de cimentación. Ejemplos de unidades de los mapas de clase:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Unidad",
+            "Descripción geotécnica típica"
+          ],
+          "rows": [
+            [
+              "Depósito antrópico",
+              "Material puesto por el ser humano (rellenos para plataformas); compacidad variable"
+            ],
+            [
+              "Depósito coluvial",
+              "Bloques y gravas angulosas en matriz limo-arcillosa, caídos por gravedad desde las laderas; compacidad media a suelta"
+            ],
+            [
+              "Depósito aluvial",
+              "Gravas y arenas redondeadas transportadas por ríos, con bolones"
+            ],
+            [
+              "Depósito fluvioglaciar",
+              "Sedimentos de origen glaciar retrabajados por el agua"
+            ],
+            [
+              "Formación rocosa",
+              "Roca con su grado de fracturamiento, meteorización y resistencia (calidad geomecánica)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Perfil geológico",
+          "text": "**Corte vertical** del terreno a lo largo de una línea trazada en el mapa. Muestra cómo se disponen las unidades en profundidad: espesores, contactos, fallas y pliegues."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Para una cantera, un túnel o una presa se trazan varias **secciones transversales**, como las de clase: permiten estimar volúmenes de material aprovechable, profundidad de la roca sana y zonas débiles."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué representa un perfil geológico?",
+          "options": [
+            "La vista en planta de las unidades",
+            "Un corte vertical del terreno a lo largo de una línea del mapa",
+            "La columna de un solo sondeo",
+            "La escala de tiempo geológico"
+          ],
+          "correct": 1,
+          "explanation": "El perfil es un **corte vertical** a lo largo de una línea del mapa; el mapa es la vista en **planta**."
+        },
+        {
+          "type": "quiz",
+          "question": "Bloques angulosos en matriz limo-arcillosa al pie de una ladera corresponden a un depósito:",
+          "options": [
+            "Aluvial",
+            "Coluvial",
+            "Antrópico",
+            "Fluvioglaciar"
+          ],
+          "correct": 1,
+          "explanation": "Material **anguloso** caído por gravedad desde la ladera = **coluvial**. El aluvial, transportado por ríos, tiene clastos **redondeados**."
+        }
+      ]
+    },
+    {
+      "id": "l05-regional-local",
+      "title": "Geología regional y local",
+      "summary": "Dos escalas de estudio y para qué sirve cada una en una obra.",
+      "minutes": 6,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Geología regional",
+            "Geología local"
+          ],
+          "rows": [
+            [
+              "Grandes extensiones",
+              "Áreas específicas y pequeñas"
+            ],
+            [
+              "Evolución geológica de una región",
+              "Características geológicas de un sitio"
+            ],
+            [
+              "Visión general",
+              "Información detallada"
+            ],
+            [
+              "Tectónica, recursos, historia geológica",
+              "Rocas, suelos, estructuras, geomorfología y riesgos del terreno"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "La geología regional permite",
+          "text": "Conocer la historia geológica de una zona, identificar recursos minerales y energéticos, comprender sismos, erupciones y deslizamientos, y aportar a la **planificación territorial** y la **prevención de riesgos**."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "La geología local permite",
+          "text": "Saber si un terreno es **adecuado para una obra** (presa, túnel, edificio), reconocer zonas propensas a deslizamientos y dar información para los **estudios geotécnicos y ambientales**."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Un proyecto empieza con la geología **regional** (¿hay fallas activas o volcanes cerca?, ¿qué formaciones hay?) y termina con la **local**, a detalle, con sondeos y ensayos en el sitio exacto de la obra."
+        },
+        {
+          "type": "quiz",
+          "question": "Para decidir dónde ubicar el eje de una presa en un valle concreto, ¿qué escala de estudio es la decisiva?",
+          "options": [
+            "Geología regional",
+            "Geología local",
+            "Geocronología",
+            "Ninguna"
+          ],
+          "correct": 1,
+          "explanation": "La ubicación exacta exige información **detallada del sitio**: geología **local** (apoyada en el marco regional)."
+        },
+        {
+          "type": "quiz",
+          "question": "Para el diseño de la cimentación de un puente se necesita principalmente geología:",
+          "options": [
+            "Regional",
+            "Local (de detalle)",
+            "Planetaria",
+            "Ninguna"
+          ],
+          "correct": 1,
+          "explanation": "La **local** da el detalle del sitio."
+        }
+      ]
+    }
+  ]
+}

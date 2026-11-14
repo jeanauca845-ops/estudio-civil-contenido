@@ -1,0 +1,693 @@
+{
+  "id": "gm07-arcmap",
+  "title": "ArcMap: cuencas, pendientes y mapas",
+  "description": "Delimitación de cuencas paso a paso, mapas de pendientes y diseño del mapa (con equivalencias en ArcGIS Pro y QGIS)",
+  "lessons": [
+    {
+      "id": "l01-interfaz",
+      "title": "ArcMap: conceptos e interfaz",
+      "summary": "Vector y ráster, shapefile y geodatabase, ArcCatalog, ArcToolbox y extensiones.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Esri retiró ArcGIS Desktop (ArcMap) el **1 de marzo de 2026**: si lo tienes instalado sigue funcionando, pero ya no recibe actualizaciones ni soporte. Su reemplazo es **ArcGIS Pro**; la alternativa gratuita es **QGIS**. Las herramientas y el flujo de trabajo de esta unidad son los mismos en los tres."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Modelo de datos",
+            "Qué es",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "**Vector**",
+              "Puntos, líneas y polígonos con una tabla de atributos",
+              "Pozos, ríos, límite de la cuenca, predios"
+            ],
+            [
+              "**Ráster**",
+              "Cuadrícula de celdas con un valor",
+              "MDE, ortofoto, mapa de pendientes"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Formato",
+            "Descripción"
+          ],
+          "rows": [
+            [
+              "**Shapefile (.shp)**",
+              "Vector. Son varios archivos juntos (.shp, .shx, .dbf, .prj): nunca copies solo el .shp"
+            ],
+            [
+              "**File Geodatabase (.gdb)**",
+              "Carpeta que guarda capas vectoriales y ráster; recomendada"
+            ],
+            [
+              "**GeoTIFF (.tif)**",
+              "Ráster con georreferencia"
+            ],
+            [
+              "**.mxd**",
+              "Documento de mapa de ArcMap (guarda la composición, no los datos)"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Ventana / herramienta",
+            "Para qué"
+          ],
+          "rows": [
+            [
+              "**Table of Contents** (Tabla de contenido)",
+              "Lista de capas; el orden define qué se dibuja encima"
+            ],
+            [
+              "**ArcCatalog / Catalog**",
+              "Administrar carpetas, crear shapefiles y geodatabases, ver sistemas de coordenadas"
+            ],
+            [
+              "**ArcToolbox**",
+              "Todas las herramientas de geoprocesamiento"
+            ],
+            [
+              "**Customize → Extensions**",
+              "Activar **Spatial Analyst** (imprescindible para cuencas y pendientes)"
+            ],
+            [
+              "**Geoprocessing → Environments**",
+              "Espacio de trabajo, extensión, tamaño de celda, máscara"
+            ],
+            [
+              "**Data View / Layout View**",
+              "Vista para trabajar / vista para diseñar el mapa final"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si una herramienta de Spatial Analyst da error de licencia, activa la extensión en **Customize → Extensions → Spatial Analyst**."
+        },
+        {
+          "type": "quiz",
+          "question": "Copiaste solo el archivo cuenca.shp a otro computador y no abre. ¿Por qué?",
+          "options": [
+            "Porque el shapefile está dañado",
+            "Porque un shapefile necesita también sus archivos .shx, .dbf y .prj",
+            "Porque ArcMap no lee .shp",
+            "Porque falta la ortofoto"
+          ],
+          "correct": 1,
+          "explanation": "El shapefile es un **conjunto de archivos** con el mismo nombre: hay que copiarlos todos."
+        },
+        {
+          "type": "quiz",
+          "question": "Un ráster almacena la información en:",
+          "options": [
+            "Puntos, líneas y polígonos",
+            "Una malla de celdas (píxeles) con valores",
+            "Tablas de Excel",
+            "Texto"
+          ],
+          "correct": 1,
+          "explanation": "Ráster = **celdas**; vector = geometrías."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué extensión de ArcMap se necesita para las herramientas hidrológicas?",
+          "options": [
+            "3D Analyst",
+            "Spatial Analyst",
+            "Network Analyst",
+            "Geostatistical Analyst"
+          ],
+          "correct": 1,
+          "explanation": "Hydrology está en **Spatial Analyst**."
+        }
+      ]
+    },
+    {
+      "id": "l02-preparar",
+      "title": "Preparar los datos",
+      "summary": "Fuentes de datos, sistema de coordenadas, proyectar, recortar y mosaicos.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Necesitas",
+            "Fuente posible"
+          ],
+          "rows": [
+            [
+              "MDE",
+              "SRTM o Copernicus (30 m), ALOS PALSAR (12,5 m), MDT de proyectos nacionales, levantamiento propio"
+            ],
+            [
+              "Cartografía base (ríos, vías, curvas)",
+              "Geoportal del IGM (escalas 1:50 000 y 1:25 000)"
+            ],
+            [
+              "Ortofotos",
+              "Geoportales nacionales (p. ej. SIGTIERRAS), vuelo propio con dron"
+            ],
+            [
+              "Suelos y cobertura",
+              "Geoportales del MAG y del ministerio del ambiente"
+            ],
+            [
+              "Lluvias y caudales",
+              "INAMHI"
+            ]
+          ],
+          "caption": "Verifica en cada geoportal la disponibilidad y la escala de los datos."
+        },
+        {
+          "type": "heading",
+          "text": "Sistema de coordenadas"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Revisa el sistema de cada capa: clic derecho → **Properties → Source** (o Layer Properties → Coordinate System).",
+            "Si una capa **no tiene** sistema definido pero sabes cuál es: **Data Management Tools → Projections and Transformations → Define Projection** (solo «etiqueta», no mueve los datos).",
+            "Si está en **otro** sistema: **Project** (vector) o **Project Raster** (ráster) hacia WGS 1984 UTM Zone 17S. Para un MDE usa remuestreo **Bilinear** y un tamaño de celda razonable.",
+            "Define el sistema del **Data Frame** (marco de datos): View → Data Frame Properties → Coordinate System."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Define Projection** no transforma: solo dice qué sistema tienen los datos. **Project** sí transforma las coordenadas. Usar Define Projection para «cambiar» de sistema es un error frecuente que deja los datos en el lugar equivocado."
+        },
+        {
+          "type": "heading",
+          "text": "Recortar y unir"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Mosaic To New Raster** (Data Management → Raster → Raster Dataset): une varios tiles del MDE.",
+            "**Extract by Mask** (Spatial Analyst → Extraction): recorta el MDE con un polígono un poco mayor que la zona de estudio (deja margen para que la cuenca no quede cortada).",
+            "**Clip** (Analysis Tools → Extract): recorta capas vectoriales."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "quiz",
+          "question": "Tu MDE está en geográficas (grados) y lo necesitas en UTM 17S. ¿Qué herramienta usas?",
+          "options": [
+            "Define Projection",
+            "Project Raster",
+            "Clip",
+            "Fill"
+          ],
+          "correct": 1,
+          "explanation": "**Project Raster** transforma realmente las coordenadas. Define Projection solo asignaría una etiqueta."
+        },
+        {
+          "type": "quiz",
+          "question": "Antes de delimitar una cuenca, el MDE debe estar:",
+          "options": [
+            "En coordenadas geográficas",
+            "Proyectado en coordenadas planas (p. ej. UTM 17S)",
+            "En formato PDF",
+            "Sin cotas"
+          ],
+          "correct": 1,
+          "explanation": "Las áreas y longitudes se calculan en **metros**."
+        }
+      ]
+    },
+    {
+      "id": "l03-cuenca",
+      "title": "Delimitar una cuenca paso a paso",
+      "summary": "Fill → Flow Direction → Flow Accumulation → red → Snap Pour Point → Watershed.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Todas estas herramientas están en **ArcToolbox → Spatial Analyst Tools → Hydrology** (en ArcGIS Pro, en la misma caja de herramientas; en QGIS, con los algoritmos de GRASS/SAGA). Primero entiende qué hace cada una con el laboratorio:"
+        },
+        {
+          "type": "interactive",
+          "widget": "d8_watershed",
+          "title": "Simulador: así delimita ArcMap una cuenca"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Paso",
+            "Herramienta",
+            "Entrada → salida",
+            "Qué hace"
+          ],
+          "rows": [
+            [
+              "1",
+              "**Fill**",
+              "MDE → MDE-fill",
+              "Rellena sumideros (depresiones falsas) para que el agua siempre tenga salida"
+            ],
+            [
+              "2",
+              "**Flow Direction**",
+              "MDE-fill → fdir",
+              "Asigna a cada celda la dirección D8 de mayor pendiente (1, 2, 4… 128)"
+            ],
+            [
+              "3",
+              "**Flow Accumulation**",
+              "fdir → facc",
+              "Cuenta cuántas celdas drenan a cada celda"
+            ],
+            [
+              "4",
+              "**Con** o **Raster Calculator**",
+              "facc → red",
+              "Define los cauces: celdas con facc mayor que un umbral (p. ej. «facc» > 1000)"
+            ],
+            [
+              "5",
+              "**Stream Order** (opcional)",
+              "red + fdir → orden",
+              "Orden de Strahler de cada tramo"
+            ],
+            [
+              "6",
+              "**Stream to Feature**",
+              "red + fdir → ríos.shp",
+              "Convierte la red a líneas vectoriales"
+            ],
+            [
+              "7",
+              "Crear el punto de salida",
+              "—",
+              "Shapefile de puntos con un punto sobre el cauce, en el sitio de interés"
+            ],
+            [
+              "8",
+              "**Snap Pour Point**",
+              "punto + facc → punto-aj",
+              "Mueve el punto a la celda de mayor acumulación cercana (distancia de ajuste: 2 – 5 celdas)"
+            ],
+            [
+              "9",
+              "**Watershed**",
+              "fdir + punto-aj → cuenca",
+              "Ráster de la cuenca: todas las celdas que drenan al punto"
+            ],
+            [
+              "10",
+              "**Raster to Polygon**",
+              "cuenca → cuenca.shp",
+              "Convierte la cuenca a polígono (Conversion Tools → From Raster)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Errores comunes:** 1) no hacer Fill (red cortada); 2) usar en Watershed el MDE en lugar de **Flow Direction**; 3) el punto de salida fuera del cauce, sin Snap Pour Point (resulta una cuenca diminuta); 4) MDE recortado demasiado justo (la cuenca queda cortada en el borde); 5) MDE sin proyectar."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Con un MDE de 30 m cada celda mide 900 m². Un umbral de 1000 celdas define cauces que drenan al menos 0,9 km². Prueba varios umbrales hasta que la red se parezca a los ríos de la cartografía.",
+          "title": "Elegir el umbral"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué entrada necesita la herramienta Watershed además del punto de salida?",
+          "options": [
+            "El MDE original",
+            "El ráster de Flow Direction",
+            "El ráster de Flow Accumulation",
+            "El mapa de pendientes"
+          ],
+          "correct": 1,
+          "explanation": "Watershed sigue las **direcciones de flujo** desde cada celda: necesita el ráster **Flow Direction**."
+        },
+        {
+          "type": "quiz",
+          "question": "Tu cuenca salió de unas pocas celdas. ¿La causa más probable?",
+          "options": [
+            "El umbral de la red es muy alto",
+            "El punto de salida no estaba sobre el cauce (faltó Snap Pour Point)",
+            "Faltó el mapa de suelos",
+            "La escala del mapa"
+          ],
+          "correct": 1,
+          "explanation": "Si el punto cae al lado del cauce, solo drenan a él unas pocas celdas: usa **Snap Pour Point**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Para qué sirve Fill?",
+          "options": [
+            "Para rellenar los sumideros del MDE y que el flujo no se interrumpa",
+            "Para colorear el mapa",
+            "Para proyectar el ráster",
+            "Para calcular el área"
+          ],
+          "correct": 0,
+          "explanation": "Los sumideros (errores o depresiones) atrapan el flujo; **Fill** los rellena."
+        },
+        {
+          "type": "quiz",
+          "question": "En D8, una celda cuyo flujo va al sur recibe el código:",
+          "options": [
+            "1",
+            "2",
+            "4",
+            "8"
+          ],
+          "correct": 2,
+          "explanation": "E=1, SE=2, **S=4**, SO=8, O=16, NO=32, N=64, NE=128."
+        }
+      ]
+    },
+    {
+      "id": "l04-parametros",
+      "title": "Calcular los parámetros de la cuenca",
+      "summary": "Área, perímetro, longitud del cauce, cotas y pendiente media con ArcMap.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Parámetro",
+            "Cómo obtenerlo en ArcMap"
+          ],
+          "rows": [
+            [
+              "Área y perímetro",
+              "Tabla de atributos del polígono → Add Field (tipo Double) → clic derecho → **Calculate Geometry** (Area en km², Perimeter en km). El polígono debe estar en UTM"
+            ],
+            [
+              "Cotas mín., máx. y media",
+              "**Zonal Statistics as Table** (Spatial Analyst → Zonal) con la cuenca como zona y el MDE como valor"
+            ],
+            [
+              "Red y longitud de cauces",
+              "Extract by Mask de la red con la cuenca → Stream to Feature → Calculate Geometry (Length) → suma total = Lt"
+            ],
+            [
+              "Longitud del cauce principal",
+              "Seleccionar los tramos del cauce principal y sumar sus longitudes (o la herramienta **Flow Length**)"
+            ],
+            [
+              "Pendiente media de la cuenca",
+              "Slope del MDE → Zonal Statistics (MEAN) con la cuenca"
+            ],
+            [
+              "Orden de la cuenca",
+              "Stream Order en la salida"
+            ],
+            [
+              "Curva hipsométrica",
+              "Reclassify del MDE por rangos de cota → área de cada rango → % acumulado"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "basin_morphometry",
+          "title": "Introduce tus resultados de ArcMap"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Con estos parámetros calculas Kc, Kf, Dd y el tiempo de concentración: la base del estudio hidrológico de una captación, una alcantarilla o un puente."
+        },
+        {
+          "type": "quiz",
+          "question": "Para obtener la elevación media de la cuenca a partir del MDE se usa:",
+          "options": [
+            "Calculate Geometry",
+            "Zonal Statistics as Table",
+            "Fill",
+            "Define Projection"
+          ],
+          "correct": 1,
+          "explanation": "**Zonal Statistics** calcula estadísticos (media, mínimo, máximo) del MDE dentro de la cuenca."
+        },
+        {
+          "type": "quiz",
+          "question": "El área de la cuenca en ArcMap se obtiene de:",
+          "options": [
+            "La tabla de atributos del polígono (Calculate Geometry)",
+            "El Layout",
+            "La ortofoto",
+            "Flow Direction"
+          ],
+          "correct": 0,
+          "explanation": "Con el polígono de la cuenca y **Calculate Geometry**."
+        }
+      ]
+    },
+    {
+      "id": "l05-pendientes-mapas",
+      "title": "Mapas de pendientes y de relieve",
+      "summary": "Slope, Reclassify, Aspect, Hillshade y Contour.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Herramienta (Spatial Analyst → Surface / Reclass)",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "**Slope**",
+              "Pendiente de cada celda, en **grados** o **porcentaje (PERCENT RISE)**"
+            ],
+            [
+              "**Reclassify**",
+              "Agrupa los valores en clases (0–5, 5–12, 12–25…) con un código por clase"
+            ],
+            [
+              "**Aspect**",
+              "Orientación de la ladera (hacia dónde mira: N, NE…)"
+            ],
+            [
+              "**Hillshade**",
+              "Sombreado del relieve; se pone debajo con transparencia para dar efecto 3D"
+            ],
+            [
+              "**Contour**",
+              "Curvas de nivel vectoriales a partir del MDE, con la equidistancia indicada"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Slope** sobre el MDE (o el MDE recortado con la cuenca), salida en porcentaje.",
+            "**Reclassify:** botón Classify → método **Manual**, escribe los límites de tus rangos y asigna valores 1, 2, 3…",
+            "Opcional: **Raster to Polygon** para obtener el área de cada clase (Calculate Geometry) y hacer una tabla de distribución de pendientes.",
+            "Simbología: colores de verde (suave) a rojo (escarpado), con la leyenda escrita en %.",
+            "Pon el **Hillshade** debajo con 50 – 60 % de transparencia."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "quiz",
+          "question": "Para que el mapa de pendientes tenga clases como «0–5 %, 5–12 %…» se usa:",
+          "options": [
+            "Hillshade",
+            "Reclassify",
+            "Aspect",
+            "Fill"
+          ],
+          "correct": 1,
+          "explanation": "**Reclassify** convierte valores continuos en clases."
+        },
+        {
+          "type": "quiz",
+          "question": "El Hillshade se usa para:",
+          "options": [
+            "Calcular el área",
+            "Dar efecto visual de relieve al mapa",
+            "Rellenar sumideros",
+            "Proyectar el MDE"
+          ],
+          "correct": 1,
+          "explanation": "Simula la iluminación del relieve: es **visual**."
+        },
+        {
+          "type": "quiz",
+          "question": "Reclassify se usa para:",
+          "options": [
+            "Agrupar valores continuos en clases (p. ej. rangos de pendiente)",
+            "Rellenar sumideros",
+            "Cambiar el datum",
+            "Exportar"
+          ],
+          "correct": 0,
+          "explanation": "Pasa de valores continuos a **clases**."
+        }
+      ]
+    },
+    {
+      "id": "l06-layout",
+      "title": "El mapa final (Layout)",
+      "summary": "Composición, elementos, grilla y exportación.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Pasa a **Layout View** y elige el tamaño del papel (File → Page and Print Setup).",
+            "Ajusta el **Data Frame** y fija una **escala** redonda (1:25 000, 1:50 000).",
+            "**Insert → Legend, North Arrow, Scale Bar, Scale Text, Title, Text**.",
+            "Grilla de coordenadas: Data Frame Properties → **Grids → New Grid → Measured Grid** (en metros UTM) o Graticule (en grados).",
+            "Agrega un **mapa de ubicación** (Insert → Data Frame) con la provincia o el país.",
+            "Membrete: autor, docente, materia, fecha, sistema de referencia, fuentes de los datos.",
+            "**File → Export Map** a PDF o JPG con 300 dpi."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Una lámina de cuenca suele incluir: límite de la cuenca, red de drenaje con su orden, punto de salida, curvas de nivel o hillshade, toponimia (ríos, poblados), cuadro con los parámetros morfométricos y la ubicación."
+        },
+        {
+          "type": "quiz",
+          "question": "Una grilla en metros UTM se agrega con:",
+          "options": [
+            "Graticule",
+            "Measured Grid",
+            "Hillshade",
+            "Reclassify"
+          ],
+          "correct": 1,
+          "explanation": "**Measured Grid** usa unidades del sistema proyectado (m); Graticule usa latitud y longitud."
+        },
+        {
+          "type": "quiz",
+          "question": "Para entregar el mapa final se trabaja en:",
+          "options": [
+            "Data View",
+            "Layout View",
+            "ArcCatalog",
+            "Toolbox"
+          ],
+          "correct": 1,
+          "explanation": "**Layout View**: composición con norte, escala, leyenda y grilla."
+        }
+      ]
+    },
+    {
+      "id": "l07-equivalencias",
+      "title": "Equivalencias: ArcMap, ArcGIS Pro, QGIS y Civil 3D",
+      "summary": "Las mismas herramientas en otros programas y el intercambio de datos.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tarea",
+            "ArcMap / ArcGIS Pro",
+            "QGIS",
+            "Civil 3D"
+          ],
+          "rows": [
+            [
+              "Rellenar sumideros",
+              "Fill",
+              "r.fill.dir (GRASS) / Fill sinks (SAGA)",
+              "—"
+            ],
+            [
+              "Dirección y acumulación de flujo",
+              "Flow Direction / Flow Accumulation",
+              "r.watershed (GRASS)",
+              "—"
+            ],
+            [
+              "Delimitar cuenca",
+              "Watershed",
+              "r.water.outlet (GRASS)",
+              "Análisis Watersheds de la superficie"
+            ],
+            [
+              "Pendientes",
+              "Slope",
+              "Raster → Analysis → Slope",
+              "Análisis Slopes"
+            ],
+            [
+              "Curvas de nivel",
+              "Contour",
+              "Raster → Extraction → Contour",
+              "Estilo de superficie"
+            ],
+            [
+              "Proyectar",
+              "Project / Project Raster",
+              "Reproyectar capa / Warp",
+              "Drawing Settings + transformación"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Intercambio",
+            "Cómo"
+          ],
+          "rows": [
+            [
+              "De Civil 3D a ArcMap",
+              "Exportar a SHP (MAPEXPORT o Output → Export to SDF/SHP) o exportar la superficie como DEM (ExportSurfaceToDEM)"
+            ],
+            [
+              "De ArcMap a Civil 3D",
+              "Importar SHP (MAPIMPORT) o crear una superficie desde un DEM (From DEM)"
+            ],
+            [
+              "Ortofotos",
+              "GeoTIFF: se insertan georreferenciadas en ambos (en Civil 3D, MAPIINSERT)"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Para llevar el límite de la cuenca de ArcMap a Civil 3D usarías:",
+          "options": [
+            "MAPIMPORT del shapefile",
+            "Copiar y pegar la pantalla",
+            "Fill",
+            "Flow Accumulation"
+          ],
+          "correct": 0,
+          "explanation": "**MAPIMPORT** importa el shapefile con sus coordenadas (ambos en el mismo sistema)."
+        },
+        {
+          "type": "quiz",
+          "question": "En QGIS, una herramienta equivalente para delimitar cuencas es:",
+          "options": [
+            "r.watershed (GRASS) o las herramientas de SAGA",
+            "Print Layout",
+            "Georeferenciador",
+            "No existe"
+          ],
+          "correct": 0,
+          "explanation": "QGIS ofrece GRASS y SAGA para hidrología."
+        }
+      ]
+    }
+  ]
+}

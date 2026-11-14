@@ -1,0 +1,2518 @@
+{
+  "id": "q01b-cuantica",
+  "title": "Mecánica cuántica y configuración electrónica",
+  "description": "Unidad 2 (parte 2): los cuatro números cuánticos, orbitales s p d f, notación cuántica, configuración electrónica, Moeller, excepciones, valencia y Lewis",
+  "lessons": [
+    {
+      "id": "l01-schrodinger",
+      "title": "El electrón y los números cuánticos",
+      "summary": "Schrödinger, la función de onda y para qué sirven los cuatro números cuánticos.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El electrón es más ligero que el protón y el neutrón, tiene carga negativa y un **comportamiento dual** (partícula y onda). Para describirlo, **Erwin Schrödinger** (1926) planteó una ecuación de onda:"
+        },
+        {
+          "type": "formula",
+          "expression": "−(h²/8π²m)·(∂²ψ/∂x² + ∂²ψ/∂y² + ∂²ψ/∂z²) + Vψ = Eψ",
+          "caption": "Ecuación de Schrödinger. ψ es la función de onda; h, la constante de Planck; m, la masa del electrón; V, la energía potencial; E, la energía total."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para describir la región de **mayor probabilidad** de encontrar un electrón se utiliza una **función de onda (ψ)**, cuya solución define los **orbitales atómicos**.",
+          "title": "Del electrón al orbital"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Para describir las características de los electrones en un átomo y su posición en los orbitales usamos **CUATRO NÚMEROS CUÁNTICOS**: n, ℓ, mℓ y ms. Los tres primeros (n, ℓ y mℓ) **describen el orbital**: el espacio donde es probable encontrar al electrón. El cuarto (ms) **describe el comportamiento del electrón** (su espín).",
+          "title": "Números cuánticos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Número cuántico",
+            "Nombre",
+            "Qué indica",
+            "Valores"
+          ],
+          "rows": [
+            [
+              "n",
+              "Principal",
+              "Nivel principal de energía y tamaño general del orbital",
+              "1, 2, 3, … (1 a 7 en átomos conocidos)"
+            ],
+            [
+              "ℓ",
+              "Secundario o azimutal",
+              "Subnivel; está relacionado con la forma del orbital",
+              "0, 1, …, n − 1"
+            ],
+            [
+              "mℓ",
+              "Magnético",
+              "Orientación espacial del orbital",
+              "−ℓ, …, 0, …, +ℓ"
+            ],
+            [
+              "ms",
+              "Espín",
+              "Espín del electrón",
+              "+½ o −½"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Analogía de dirección postal: n es la ciudad (nivel), ℓ el barrio (subnivel), mℓ la casa (orbital) y ms la persona dentro de la casa (en cada casa caben solo dos, con espín opuesto).",
+          "title": "Para recordarlo"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos números cuánticos describen a un electrón?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "7"
+          ],
+          "correct": 2,
+          "explanation": "n, ℓ, mℓ y ms."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué números cuánticos describen el orbital?",
+          "options": [
+            "n, ℓ y mℓ",
+            "Solo n",
+            "ms y n",
+            "Los cuatro"
+          ],
+          "correct": 0,
+          "explanation": "ms describe al electrón, no al orbital."
+        },
+        {
+          "type": "quiz",
+          "question": "La función de onda ψ sirve para:",
+          "options": [
+            "Calcular la masa del átomo",
+            "Describir la región de mayor probabilidad de encontrar al electrón (orbitales)",
+            "Medir la carga del núcleo",
+            "Contar neutrones"
+          ],
+          "correct": 1,
+          "explanation": "Su solución define los orbitales atómicos."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién planteó la ecuación de onda del electrón?",
+          "options": [
+            "Bohr",
+            "Schrödinger",
+            "Dalton",
+            "Pauli"
+          ],
+          "correct": 1,
+          "explanation": "**Erwin Schrödinger**, 1926."
+        }
+      ]
+    },
+    {
+      "id": "l02-principal",
+      "title": "Número cuántico principal (n)",
+      "summary": "Niveles de energía, capas K, L, M, N, transiciones electrónicas y capacidad 2n².",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Indica el **nivel de energía** o **capa electrónica** en la que se encuentra el electrón.",
+          "title": "Número cuántico principal n"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toma valores enteros positivos: **n = 1, 2, 3, …** (en los átomos conocidos, de 1 a 7).",
+            "A mayor valor de n, **mayor es la energía** del nivel.",
+            "A mayor n, **mayor es la distancia promedio** del electrón al núcleo (el nivel es más grande).",
+            "A mayor n, mayor es la energía que necesita el electrón para estar en ese nivel (**menor atracción con el núcleo**)."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Nivel (n)",
+            "Nombre de la capa",
+            "Energía relativa",
+            "Tamaño (distancia promedio)"
+          ],
+          "rows": [
+            [
+              "1",
+              "K",
+              "Más baja",
+              "Más pequeña"
+            ],
+            [
+              "2",
+              "L",
+              "Mayor que n = 1",
+              "Mayor que n = 1"
+            ],
+            [
+              "3",
+              "M",
+              "Mayor que n = 2",
+              "Mayor que n = 2"
+            ],
+            [
+              "4",
+              "N",
+              "Mayor que n = 3",
+              "Mayor que n = 3"
+            ],
+            [
+              "5",
+              "O",
+              "…",
+              "…"
+            ],
+            [
+              "6",
+              "P",
+              "…",
+              "…"
+            ],
+            [
+              "7",
+              "Q",
+              "Más alta",
+              "Más grande"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Transiciones electrónicas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Proceso",
+            "Qué ocurre",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "**Absorbe energía**",
+              "El electrón pasa a un nivel de mayor energía (estado excitado)",
+              "n = 1 → n = 4"
+            ],
+            [
+              "**Emite energía**",
+              "El electrón regresa a un nivel de menor energía y libera la diferencia como luz (fotón)",
+              "n = 4 → n = 1"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Esta emisión de luz es la base de los **ensayos a la llama** y de la **espectroscopía**: cada elemento emite colores característicos (Na amarillo, Cu verde-azulado, Sr rojo). Así se analiza la composición química de cementos, aguas y suelos (absorción atómica, fluorescencia de rayos X)."
+        },
+        {
+          "type": "heading",
+          "text": "Capacidad máxima de cada nivel"
+        },
+        {
+          "type": "formula",
+          "expression": "Electrones máximos por nivel = 2n²",
+          "caption": "Donde n es el valor del número cuántico principal (1 a 7)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Nivel n",
+            "Cálculo",
+            "Electrones máximos"
+          ],
+          "rows": [
+            [
+              "1",
+              "2(1)²",
+              "2"
+            ],
+            [
+              "2",
+              "2(2)²",
+              "8"
+            ],
+            [
+              "3",
+              "2(3)²",
+              "18"
+            ],
+            [
+              "4",
+              "2(4)²",
+              "32"
+            ],
+            [
+              "5",
+              "2(5)²",
+              "50"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La fórmula 2n² da la capacidad teórica del nivel. En los átomos reales los niveles 5, 6 y 7 nunca llegan a llenarse (el máximo real de un nivel es 32)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones caben como máximo en el nivel n = 3?",
+          "options": [
+            "8",
+            "18",
+            "32",
+            "9"
+          ],
+          "correct": 1,
+          "explanation": "2·3² = **18**."
+        },
+        {
+          "type": "quiz",
+          "question": "Al aumentar n:",
+          "options": [
+            "La energía del nivel disminuye",
+            "El electrón está más cerca del núcleo",
+            "Aumentan la energía y la distancia al núcleo",
+            "No cambia nada"
+          ],
+          "correct": 2,
+          "explanation": "Mayor n → mayor energía y mayor tamaño."
+        },
+        {
+          "type": "quiz",
+          "question": "Cuando un electrón pasa de n = 4 a n = 1:",
+          "options": [
+            "Absorbe energía",
+            "Emite energía",
+            "Pierde masa",
+            "Cambia de átomo"
+          ],
+          "correct": 1,
+          "explanation": "Regresa a menor energía: **emite** (luz)."
+        },
+        {
+          "type": "quiz",
+          "question": "La capa L corresponde a:",
+          "options": [
+            "n = 1",
+            "n = 2",
+            "n = 3",
+            "n = 4"
+          ],
+          "correct": 1,
+          "explanation": "K = 1, **L = 2**, M = 3, N = 4."
+        },
+        {
+          "type": "quiz",
+          "question": "Capacidad máxima del nivel 4:",
+          "options": [
+            "16",
+            "18",
+            "32",
+            "50"
+          ],
+          "correct": 2,
+          "explanation": "2·4² = **32**."
+        }
+      ]
+    },
+    {
+      "id": "l03-secundario",
+      "title": "Número cuántico secundario (ℓ)",
+      "summary": "Subniveles s, p, d, f, su forma, su energía y cuáles existen en cada nivel.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "También se conoce como **número cuántico azimutal**. Describe el **subnivel de energía** y la **forma general del orbital**.",
+          "title": "Número cuántico secundario ℓ"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Depende del número cuántico principal (n).",
+            "Sus valores posibles son **ℓ = 0, 1, 2, …, (n − 1)**.",
+            "Cada valor de ℓ define un **subnivel**.",
+            "Correspondencia: ℓ = 0 → s; ℓ = 1 → p; ℓ = 2 → d; ℓ = 3 → f."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Valor de ℓ",
+            "Subnivel",
+            "Nombre de origen",
+            "Forma general",
+            "Electrones máximos 2(2ℓ + 1)"
+          ],
+          "rows": [
+            [
+              "0",
+              "s",
+              "sharp (nítido)",
+              "Esférica",
+              "2"
+            ],
+            [
+              "1",
+              "p",
+              "principal",
+              "Bilobular (dos lóbulos)",
+              "6"
+            ],
+            [
+              "2",
+              "d",
+              "diffuse (difuso)",
+              "Trébol (4 lóbulos)",
+              "10"
+            ],
+            [
+              "3",
+              "f",
+              "fundamental",
+              "Compleja",
+              "14"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Subniveles permitidos en cada nivel"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Nivel (n)",
+            "Valores posibles de ℓ (0 a n − 1)",
+            "Subniveles"
+          ],
+          "rows": [
+            [
+              "1",
+              "0",
+              "1s"
+            ],
+            [
+              "2",
+              "0, 1",
+              "2s, 2p"
+            ],
+            [
+              "3",
+              "0, 1, 2",
+              "3s, 3p, 3d"
+            ],
+            [
+              "4",
+              "0, 1, 2, 3",
+              "4s, 4p, 4d, 4f"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "n",
+            "Orbital",
+            "ℓ",
+            "N.º de electrones 2(2ℓ + 1)"
+          ],
+          "rows": [
+            [
+              "1",
+              "s",
+              "0",
+              "2"
+            ],
+            [
+              "2",
+              "s",
+              "0",
+              "2"
+            ],
+            [
+              "2",
+              "p",
+              "1",
+              "6"
+            ],
+            [
+              "3",
+              "s",
+              "0",
+              "2"
+            ],
+            [
+              "3",
+              "p",
+              "1",
+              "6"
+            ],
+            [
+              "3",
+              "d",
+              "2",
+              "10"
+            ],
+            [
+              "4",
+              "s",
+              "0",
+              "2"
+            ],
+            [
+              "4",
+              "p",
+              "1",
+              "6"
+            ],
+            [
+              "4",
+              "d",
+              "2",
+              "10"
+            ],
+            [
+              "4",
+              "f",
+              "3",
+              "14"
+            ]
+          ],
+          "caption": "Fíjate: la suma por nivel da 2, 8, 18 y 32 = 2n²"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La forma del orbital altera la energía del electrón: dentro de un mismo nivel, **s < p < d < f**. La energía de un electrón depende de su número cuántico **principal y secundario** (de ahí sale la regla n + ℓ del orden de llenado).",
+          "title": "Subnivel de energía"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "La **microscopía de fotoionización** permitió obtener imágenes reales de los orbitales del átomo de hidrógeno, rotuladas (n, ℓ, m): (2,0,0) y (3,0,0) son esféricas; (2,1,0) y (3,1,0) bilobulares; (3,2,0), (3,2,1), (4,3,0) y (4,3,1) muestran las formas de los orbitales d y f. Las formas teóricas se confirmaron experimentalmente.",
+          "title": "Los orbitales se pueden «ver»"
+        },
+        {
+          "type": "quiz",
+          "question": "Si n = 3, ¿qué valores puede tomar ℓ?",
+          "options": [
+            "0, 1, 2, 3",
+            "0, 1, 2",
+            "1, 2, 3",
+            "Solo 3"
+          ],
+          "correct": 1,
+          "explanation": "ℓ = 0 hasta n − 1 = **0, 1, 2**."
+        },
+        {
+          "type": "quiz",
+          "question": "ℓ = 2 corresponde al subnivel:",
+          "options": [
+            "s",
+            "p",
+            "d",
+            "f"
+          ],
+          "correct": 2,
+          "explanation": "0 s, 1 p, **2 d**, 3 f."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Existe el subnivel 2d?",
+          "options": [
+            "Sí",
+            "No: en n = 2, ℓ solo puede ser 0 o 1",
+            "Solo en metales",
+            "Solo en iones"
+          ],
+          "correct": 1,
+          "explanation": "d requiere ℓ = 2 ≤ n − 1 → n ≥ 3."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué forma tiene un orbital s?",
+          "options": [
+            "Bilobular",
+            "Esférica",
+            "Trébol",
+            "Compleja"
+          ],
+          "correct": 1,
+          "explanation": "**Esférica**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones caben en un subnivel f?",
+          "options": [
+            "6",
+            "10",
+            "14",
+            "18"
+          ],
+          "correct": 2,
+          "explanation": "2(2·3 + 1) = **14**."
+        },
+        {
+          "type": "quiz",
+          "question": "En un mismo nivel, ¿qué subnivel tiene mayor energía?",
+          "options": [
+            "s",
+            "p",
+            "d",
+            "f"
+          ],
+          "correct": 3,
+          "explanation": "s < p < d < **f**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿De qué números cuánticos depende la energía de un electrón en un átomo con varios electrones?",
+          "options": [
+            "Solo de n",
+            "De n y ℓ",
+            "Solo de ms",
+            "De mℓ"
+          ],
+          "correct": 1,
+          "explanation": "Del principal y del secundario."
+        }
+      ]
+    },
+    {
+      "id": "l04-magnetico",
+      "title": "Número cuántico magnético (mℓ) y los orbitales",
+      "summary": "Orientación espacial; cuántos orbitales s, p, d y f hay y desde qué nivel existen.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Indica la **orientación espacial del orbital** dentro de un subnivel.",
+          "title": "Número cuántico magnético mℓ"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Depende del número cuántico secundario (ℓ).",
+            "Sus valores van desde **−ℓ hasta +ℓ**, incluyendo 0.",
+            "Cada valor de mℓ representa **un orbital** del subnivel.",
+            "No cambia la forma del orbital; la forma la determina ℓ."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Subnivel",
+            "ℓ",
+            "Valores de mℓ",
+            "Número de orbitales",
+            "Electrones máximos"
+          ],
+          "rows": [
+            [
+              "s",
+              "0",
+              "0",
+              "1",
+              "2"
+            ],
+            [
+              "p",
+              "1",
+              "−1, 0, +1",
+              "3",
+              "6"
+            ],
+            [
+              "d",
+              "2",
+              "−2, −1, 0, +1, +2",
+              "5",
+              "10"
+            ],
+            [
+              "f",
+              "3",
+              "−3, −2, −1, 0, +1, +2, +3",
+              "7",
+              "14"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Número de orbitales del subnivel = 2ℓ + 1        Número de orbitales del nivel = n²"
+        },
+        {
+          "type": "heading",
+          "text": "Los orbitales uno por uno"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Orbital",
+            "Cuántos hay",
+            "Desde qué nivel",
+            "Forma y orientación"
+          ],
+          "rows": [
+            [
+              "**s**",
+              "1 por nivel",
+              "Desde el nivel 1 hasta el 7",
+              "Esférico. No son órbitas planas: son **esferas concéntricas** de tamaño creciente (1s < 2s < 3s)"
+            ],
+            [
+              "**p**",
+              "3",
+              "Desde el nivel 2",
+              "Simetría de esfera achatada (dos lóbulos); la orientación la da el eje cartesiano: **px, py y pz**"
+            ],
+            [
+              "**d**",
+              "5",
+              "Desde el nivel 3",
+              "Forma de trébol (4 lóbulos), salvo dz², que es un doble lóbulo con un anillo"
+            ],
+            [
+              "**f**",
+              "7",
+              "Desde el nivel 4",
+              "Formas complejas con muchos lóbulos"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Nivel 1: un orbital s. Nivel 2: un orbital s y tres orbitales p (4 orbitales = 2²). Nivel 3: 1 s + 3 p + 5 d = 9 orbitales (3²).",
+          "title": "Cuenta de orbitales"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Nivel",
+            "Subnivel ℓ",
+            "Tipo",
+            "Número de orbitales",
+            "Orientaciones mℓ",
+            "Electrones máximo"
+          ],
+          "rows": [
+            [
+              "1",
+              "0",
+              "s",
+              "1",
+              "0",
+              "2"
+            ],
+            [
+              "2",
+              "0",
+              "s",
+              "1",
+              "0",
+              "2"
+            ],
+            [
+              "2",
+              "1",
+              "p",
+              "3",
+              "−1, 0, +1",
+              "6"
+            ],
+            [
+              "3",
+              "0",
+              "s",
+              "1",
+              "0",
+              "2"
+            ],
+            [
+              "3",
+              "1",
+              "p",
+              "3",
+              "−1, 0, +1",
+              "6"
+            ],
+            [
+              "3",
+              "2",
+              "d",
+              "5",
+              "−2, −1, 0, +1, +2",
+              "10"
+            ],
+            [
+              "4",
+              "0",
+              "s",
+              "1",
+              "0",
+              "2"
+            ],
+            [
+              "4",
+              "1",
+              "p",
+              "3",
+              "−1, 0, +1",
+              "6"
+            ],
+            [
+              "4",
+              "2",
+              "d",
+              "5",
+              "−2 … +2",
+              "10"
+            ],
+            [
+              "4",
+              "3",
+              "f",
+              "7",
+              "−3 … +3",
+              "14"
+            ]
+          ],
+          "caption": "Tabla resumen de clase"
+        },
+        {
+          "type": "interactive",
+          "widget": "quantum_numbers",
+          "title": "Prueba combinaciones de n, ℓ, mℓ y ms"
+        },
+        {
+          "type": "quiz",
+          "question": "Si ℓ = 2, ¿qué valores toma mℓ?",
+          "options": [
+            "0, 1, 2",
+            "−1, 0, +1",
+            "−2, −1, 0, +1, +2",
+            "−2, +2"
+          ],
+          "correct": 2,
+          "explanation": "De −ℓ a +ℓ: **5 valores**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos orbitales p hay en un nivel?",
+          "options": [
+            "1",
+            "3",
+            "5",
+            "7"
+          ],
+          "correct": 1,
+          "explanation": "mℓ = −1, 0, +1: **px, py, pz**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Desde qué nivel existen los orbitales d?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "explanation": "Requieren ℓ = 2 → **n ≥ 3**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos orbitales hay en total en el nivel n = 4?",
+          "options": [
+            "4",
+            "8",
+            "16",
+            "32"
+          ],
+          "correct": 2,
+          "explanation": "n² = **16** (1 + 3 + 5 + 7)."
+        },
+        {
+          "type": "quiz",
+          "question": "El número cuántico magnético determina:",
+          "options": [
+            "La forma del orbital",
+            "La orientación espacial del orbital",
+            "El espín",
+            "El tamaño del nivel"
+          ],
+          "correct": 1,
+          "explanation": "La forma la da ℓ; la orientación, **mℓ**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos orbitales f existen en un subnivel f?",
+          "options": [
+            "3",
+            "5",
+            "7",
+            "14"
+          ],
+          "correct": 2,
+          "explanation": "2·3 + 1 = **7** (14 es el número de electrones)."
+        }
+      ]
+    },
+    {
+      "id": "l05-espin",
+      "title": "Número cuántico de espín (ms) y resumen",
+      "summary": "Espín +½ y −½, principio de exclusión de Pauli y los cuatro números juntos.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Indica la **orientación del espín intrínseco** del electrón.",
+          "title": "Número cuántico de espín ms"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Describe una propiedad intrínseca del electrón llamada **espín**.",
+            "Para un electrón, ms solo puede tomar **dos valores: +½ y −½**.",
+            "Se suele representar como **↑** (+½, spin up) y **↓** (−½, spin down).",
+            "En un mismo orbital pueden ubicarse **máximo 2 electrones**, y deben tener **espines opuestos** (principio de exclusión de Pauli).",
+            "No determina la forma ni la orientación del orbital: **describe al electrón, no al orbital**.",
+            "El espín **no** debe interpretarse como una rotación clásica literal de una esfera; es una propiedad cuántica intrínseca."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Partícula",
+            "Símbolo",
+            "Valor de ms",
+            "Representación"
+          ],
+          "rows": [
+            [
+              "Electrón",
+              "ms",
+              "+½",
+              "↑ (spin up)"
+            ],
+            [
+              "Electrón",
+              "ms",
+              "−½",
+              "↓ (spin down)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un orbital con 2 electrones se dibuja como una caja con **↑↓**: espines opuestos, máximo 2 electrones por orbital.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "Los números cuánticos describen el estado del electrón"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Número",
+            "Nombre",
+            "Indica"
+          ],
+          "rows": [
+            [
+              "n",
+              "Principal",
+              "El nivel principal de energía y el tamaño general del orbital"
+            ],
+            [
+              "ℓ",
+              "Secundario o azimutal",
+              "El subnivel; está relacionado con la forma del orbital"
+            ],
+            [
+              "mℓ",
+              "Magnético",
+              "La orientación espacial del orbital"
+            ],
+            [
+              "ms",
+              "Espín",
+              "El espín del electrón"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El espín es el origen del **magnetismo**: en el hierro, el níquel y el cobalto muchos electrones desapareados alinean sus espines (ferromagnetismo). Por eso un imán se pega al acero de refuerzo y por eso existe la prueba con imán para distinguir acero al carbono de acero inoxidable austenítico."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué valores puede tener ms?",
+          "options": [
+            "0 y 1",
+            "+½ y −½",
+            "−1, 0, +1",
+            "Cualquier número"
+          ],
+          "correct": 1,
+          "explanation": "Solo **+½ y −½**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones caben como máximo en un orbital?",
+          "options": [
+            "1",
+            "2",
+            "6",
+            "8"
+          ],
+          "correct": 1,
+          "explanation": "Pauli: **2**, con espines opuestos."
+        },
+        {
+          "type": "quiz",
+          "question": "El espín describe:",
+          "options": [
+            "Al orbital",
+            "Al electrón",
+            "Al núcleo",
+            "Al nivel"
+          ],
+          "correct": 1,
+          "explanation": "Es una propiedad del **electrón**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Es correcto decir que el espín es el electrón girando como una pelota?",
+          "options": [
+            "Sí, literalmente",
+            "No: es una propiedad cuántica intrínseca",
+            "Solo en el hidrógeno",
+            "Solo para ms = +½"
+          ],
+          "correct": 1,
+          "explanation": "No es una rotación clásica."
+        }
+      ]
+    },
+    {
+      "id": "l06-notacion",
+      "title": "Notación cuántica y ejercicios",
+      "summary": "Leer 3p¹; hallar los números cuánticos del último electrón; combinaciones permitidas.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es una **forma abreviada** de representar la distribución de los electrones de un átomo, indicando su **nivel de energía**, su **subnivel** y el **número de electrones** en ese subnivel.",
+          "title": "Notación cuántica"
+        },
+        {
+          "type": "formula",
+          "expression": "n ℓ ˣ   →   3p¹",
+          "caption": "El coeficiente es el nivel (n), la letra es el subnivel (ℓ) y el superíndice es el número de electrones (x)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parte",
+            "En 3p¹",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "n = 3",
+              "3",
+              "Tercer nivel de energía"
+            ],
+            [
+              "ℓ = 1",
+              "p",
+              "Subnivel p (bilobular)"
+            ],
+            [
+              "x = 1",
+              "¹",
+              "Un electrón en el subnivel p del nivel 3"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Cómo hallar los números cuánticos del último electrón"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Convención de la clase:** los orbitales de un subnivel se llenan en orden de mℓ = −ℓ, …, 0, …, +ℓ. Primero se coloca **un electrón ↑ (+½) en cada orbital** (regla de Hund) y luego se completan con **↓ (−½)** empezando otra vez por mℓ = −ℓ.",
+          "title": "Convención"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Del término (por ejemplo 4f¹¹) lee **n** (4) y **ℓ** (f → 3).",
+            "Dibuja las cajas del subnivel: 2ℓ + 1 orbitales con mℓ desde −ℓ hasta +ℓ.",
+            "Coloca los electrones: primero todos ↑ de izquierda a derecha; luego los ↓ desde la izquierda.",
+            "El último electrón colocado da **mℓ** (la caja donde quedó) y **ms** (+½ si es ↑, −½ si es ↓)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Último término",
+            "Cajas (mℓ)",
+            "Dónde queda el último electrón",
+            "Números (n, ℓ, mℓ, ms)"
+          ],
+          "rows": [
+            [
+              "4f¹¹",
+              "−3 −2 −1 0 +1 +2 +3",
+              "7 ↑ y 4 ↓: el 11.º es ↓ en mℓ = 0",
+              "**(4, 3, 0, −½)**"
+            ],
+            [
+              "5d⁶",
+              "−2 −1 0 +1 +2",
+              "5 ↑ y 1 ↓: el 6.º es ↓ en mℓ = −2",
+              "**(5, 2, −2, −½)**"
+            ],
+            [
+              "3p³",
+              "−1 0 +1",
+              "3 ↑: el 3.º en mℓ = +1",
+              "**(3, 1, +1, +½)**"
+            ],
+            [
+              "2p⁴",
+              "−1 0 +1",
+              "3 ↑ y 1 ↓: ↓ en mℓ = −1",
+              "(2, 1, −1, −½)"
+            ],
+            [
+              "3d⁷",
+              "−2 −1 0 +1 +2",
+              "5 ↑ y 2 ↓: ↓ en mℓ = −1",
+              "(3, 2, −1, −½)"
+            ],
+            [
+              "4s¹",
+              "0",
+              "↑ en mℓ = 0",
+              "(4, 0, 0, +½)"
+            ],
+            [
+              "4f³",
+              "−3 … +3",
+              "3 ↑: el 3.º en mℓ = −1",
+              "(4, 3, −1, +½)"
+            ],
+            [
+              "5p⁶",
+              "−1 0 +1",
+              "lleno: el 6.º es ↓ en mℓ = +1",
+              "(5, 1, +1, −½)"
+            ],
+            [
+              "3d¹⁰",
+              "−2 … +2",
+              "lleno: el 10.º es ↓ en mℓ = +2",
+              "(3, 2, +2, −½)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En la diapositiva de solución aparece «3p⁴» por un error de tipeo, pero la respuesta (3, 1, +1, +½) corresponde a **3p³**, que es lo que preguntaba el ejercicio. Para 3p⁴ sería (3, 1, −1, −½).",
+          "title": "Ojo con la diapositiva"
+        },
+        {
+          "type": "heading",
+          "text": "¿Qué combinaciones están permitidas?"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Reglas: **n = 1, 2, 3, …**; **ℓ = 0 hasta n − 1**; **mℓ = −ℓ … 0 … +ℓ**; **ms = +½ o −½**.",
+          "title": "Recuerde"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Combinación (n, ℓ, mℓ, ms)",
+            "¿Permitida?",
+            "Razón"
+          ],
+          "rows": [
+            [
+              "{4, 3, 2, +½}",
+              "✓ Sí",
+              "Válida (4f, mℓ = 2 está entre −3 y +3)"
+            ],
+            [
+              "{3, 3, 0, −½}",
+              "✗ No",
+              "ℓ no puede ser 3 si n = 3 (máximo n − 1 = 2)"
+            ],
+            [
+              "{2, 1, −1, −½}",
+              "✓ Sí",
+              "Válida (2p)"
+            ],
+            [
+              "{4, 2, 3, +½}",
+              "✗ No",
+              "Si ℓ = 2, mℓ va de −2 a +2"
+            ],
+            [
+              "{5, 1, 0, +½}",
+              "✓ Sí",
+              "Válida (5p)"
+            ],
+            [
+              "{3, 2, −2, 1}",
+              "✗ No",
+              "ms solo puede ser +½ o −½"
+            ],
+            [
+              "{1, 0, 0, −½}",
+              "✓ Sí",
+              "Válida (segundo electrón del 1s)"
+            ],
+            [
+              "{0, 0, 0, +½}",
+              "✗ No",
+              "n no puede ser 0"
+            ],
+            [
+              "{2, 2, 0, +½}",
+              "✗ No",
+              "ℓ = 2 exige n ≥ 3"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "quantum_numbers",
+          "title": "Laboratorio: valida combinaciones y entrena el último electrón"
+        },
+        {
+          "type": "interactive",
+          "widget": "electron_config",
+          "title": "Laboratorio: configuración y números cuánticos de cualquier elemento",
+          "params": {
+            "z": 26
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Números cuánticos del último electrón de 3p⁵:",
+          "options": [
+            "(3, 1, −1, −½)",
+            "(3, 1, 0, −½)",
+            "(3, 1, +1, +½)",
+            "(3, 2, 0, −½)"
+          ],
+          "correct": 1,
+          "explanation": "3 ↑ y 2 ↓: el 5.º es ↓ en mℓ = 0 → **(3, 1, 0, −½)**."
+        },
+        {
+          "type": "quiz",
+          "question": "Números cuánticos del último electrón de 4d¹:",
+          "options": [
+            "(4, 2, −2, +½)",
+            "(4, 2, 0, +½)",
+            "(4, 1, −1, +½)",
+            "(4, 2, +2, +½)"
+          ],
+          "correct": 0,
+          "explanation": "Primer electrón ↑ en mℓ = −2."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál combinación NO está permitida?",
+          "options": [
+            "{2, 1, 0, +½}",
+            "{3, 2, 1, −½}",
+            "{2, 2, 1, +½}",
+            "{1, 0, 0, +½}"
+          ],
+          "correct": 2,
+          "explanation": "ℓ = 2 no puede darse con n = 2."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál combinación NO está permitida?",
+          "options": [
+            "{4, 0, 0, −½}",
+            "{3, 1, −2, +½}",
+            "{5, 3, −3, +½}",
+            "{2, 0, 0, +½}"
+          ],
+          "correct": 1,
+          "explanation": "Con ℓ = 1, mℓ solo puede ser −1, 0, +1."
+        },
+        {
+          "type": "quiz",
+          "question": "En la notación 4d⁷, el número 7 indica:",
+          "options": [
+            "El nivel",
+            "El subnivel",
+            "El número de electrones en ese subnivel",
+            "El número de orbitales"
+          ],
+          "correct": 2,
+          "explanation": "Superíndice = electrones."
+        },
+        {
+          "type": "quiz",
+          "question": "Números cuánticos del último electrón de 5d⁶:",
+          "options": [
+            "(5, 2, −2, −½)",
+            "(5, 2, +1, +½)",
+            "(5, 2, 0, −½)",
+            "(6, 2, −2, −½)"
+          ],
+          "correct": 0,
+          "explanation": "Solución de clase: 5 ↑, el 6.º ↓ en mℓ = −2."
+        },
+        {
+          "type": "quiz",
+          "question": "Números cuánticos del último electrón de 4f¹¹:",
+          "options": [
+            "(4, 3, +3, +½)",
+            "(4, 3, 0, −½)",
+            "(4, 3, −3, −½)",
+            "(4, 2, 0, −½)"
+          ],
+          "correct": 1,
+          "explanation": "Solución de clase."
+        }
+      ]
+    },
+    {
+      "id": "l07-configuracion",
+      "title": "Configuración electrónica: definición y reglas",
+      "summary": "Para qué sirve; Aufbau, Pauli y Hund; el sodio electrón por electrón.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la forma de **distribuir los electrones** de un átomo en **niveles, subniveles y orbitales**.",
+          "title": "Configuración electrónica"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Permite saber **cómo están organizados** los electrones en el átomo.",
+            "Ayuda a identificar los **electrones de valencia** (los del último nivel de energía).",
+            "Con esa información se puede anticipar el **comportamiento químico** del elemento.",
+            "Sirve para entender su **reactividad**, el **tipo de enlaces** que puede formar y su **carga iónica** más frecuente."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Na: **1s² 2s² 2p⁶ 3s¹** → 1 electrón de valencia. Por eso el sodio tiende a **perder 1 electrón** y formar **Na⁺**. En resumen: la configuración electrónica relaciona la estructura del átomo con sus propiedades químicas.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "Reglas de construcción"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Regla",
+            "Enunciado",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "1. **Principio de mínima energía (Aufbau)**",
+              "Los electrones ocupan primero los orbitales de **menor energía**",
+              "Se llena primero 1s, luego 2s, después 2p, 3s, 3p, etc."
+            ],
+            [
+              "2. **Principio de exclusión de Pauli**",
+              "Cada orbital puede alojar **como máximo 2 electrones**, y deben tener **espines opuestos**",
+              "Un orbital 1s puede tener 2 electrones: ↑↓"
+            ],
+            [
+              "3. **Regla de Hund** (máxima multiplicidad)",
+              "En orbitales de **igual energía**, los electrones se distribuyen **primero uno por orbital con espines paralelos**; luego se aparean",
+              "2p³: ↑ ↑ ↑ (no ↑↓ ↑ ○). 2p⁴: ↑↓ ↑ ↑"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Hund tiene sentido físico: los electrones se repelen, así que prefieren estar en orbitales distintos antes de compartir uno.",
+          "title": "¿Por qué Hund?"
+        },
+        {
+          "type": "heading",
+          "text": "Sodio (Na): números cuánticos de cada electrón"
+        },
+        {
+          "type": "text",
+          "text": "Z = 11 → 11 electrones; configuración 1s² 2s² 2p⁶ 3s¹. Para determinar los números cuánticos del sodio hay que analizar, **uno por uno**, sus 11 electrones:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Electrón",
+            "Subnivel",
+            "n",
+            "ℓ",
+            "mℓ",
+            "ms"
+          ],
+          "rows": [
+            [
+              "1",
+              "1s",
+              "1",
+              "0",
+              "0",
+              "+½"
+            ],
+            [
+              "2",
+              "1s",
+              "1",
+              "0",
+              "0",
+              "−½"
+            ],
+            [
+              "3",
+              "2s",
+              "2",
+              "0",
+              "0",
+              "+½"
+            ],
+            [
+              "4",
+              "2s",
+              "2",
+              "0",
+              "0",
+              "−½"
+            ],
+            [
+              "5",
+              "2p",
+              "2",
+              "1",
+              "−1",
+              "+½"
+            ],
+            [
+              "6",
+              "2p",
+              "2",
+              "1",
+              "0",
+              "+½"
+            ],
+            [
+              "7",
+              "2p",
+              "2",
+              "1",
+              "+1",
+              "+½"
+            ],
+            [
+              "8",
+              "2p",
+              "2",
+              "1",
+              "−1",
+              "−½"
+            ],
+            [
+              "9",
+              "2p",
+              "2",
+              "1",
+              "0",
+              "−½"
+            ],
+            [
+              "10",
+              "2p",
+              "2",
+              "1",
+              "+1",
+              "−½"
+            ],
+            [
+              "11",
+              "3s",
+              "3",
+              "0",
+              "0",
+              "+½"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Subnivel",
+            "Diagrama de orbitales",
+            "Electrones"
+          ],
+          "rows": [
+            [
+              "1s²",
+              "↑↓",
+              "1 – 2"
+            ],
+            [
+              "2s²",
+              "↑↓",
+              "3 – 4"
+            ],
+            [
+              "2p⁶",
+              "↑↓ ↑↓ ↑↓",
+              "5 – 10"
+            ],
+            [
+              "3s¹",
+              "↑",
+              "11"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Ningún par de electrones del sodio tiene los cuatro números iguales: eso es exactamente lo que exige el principio de exclusión de Pauli."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué regla dice que en orbitales de igual energía los electrones primero se colocan solos con espines paralelos?",
+          "options": [
+            "Aufbau",
+            "Pauli",
+            "Hund",
+            "Moeller"
+          ],
+          "correct": 2,
+          "explanation": "**Regla de Hund**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál diagrama de 2p³ es correcto?",
+          "options": [
+            "↑↓ ↑ ○",
+            "↑ ↑ ↑",
+            "↑↓ ↓ ○",
+            "↑ ↓ ↑"
+          ],
+          "correct": 1,
+          "explanation": "Hund: uno por orbital, espines paralelos."
+        },
+        {
+          "type": "quiz",
+          "question": "Números cuánticos del electrón 8 del sodio:",
+          "options": [
+            "(2, 1, +1, +½)",
+            "(2, 1, −1, −½)",
+            "(3, 0, 0, +½)",
+            "(2, 0, 0, −½)"
+          ],
+          "correct": 1,
+          "explanation": "Primer ↓ del 2p, en mℓ = −1."
+        },
+        {
+          "type": "quiz",
+          "question": "El principio de Aufbau establece que:",
+          "options": [
+            "Dos electrones no pueden tener los cuatro números iguales",
+            "Los electrones ocupan primero los orbitales de menor energía",
+            "Los electrones se aparean al final",
+            "El núcleo atrae a los electrones"
+          ],
+          "correct": 1,
+          "explanation": "Mínima energía."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el sodio forma Na⁺?",
+          "options": [
+            "Porque gana 1 electrón",
+            "Porque pierde su único electrón de valencia (3s¹)",
+            "Porque pierde un protón",
+            "Porque tiene 8 electrones de valencia"
+          ],
+          "correct": 1,
+          "explanation": "Al perderlo queda con la configuración del neón."
+        }
+      ]
+    },
+    {
+      "id": "l08-moeller",
+      "title": "Diagrama de Moeller y regla n + ℓ",
+      "summary": "Orden de llenado, configuración completa y abreviada, ejercicios resueltos e iones.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Diagrama de Moeller (regla de las diagonales)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Existen **7 niveles** de energía.",
+            "Orbital **s** desde el 1.er nivel; **p** desde el 2.º; **d** desde el 3.º; **f** desde el 4.º.",
+            "Energía: **s < p < d < f**. Capacidad: s², p⁶, d¹⁰, f¹⁴.",
+            "Se lee siguiendo flechas diagonales de arriba a la derecha hacia abajo a la izquierda."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "formula",
+          "expression": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d¹⁰ 7p⁶",
+          "caption": "Orden de llenado (118 electrones)."
+        },
+        {
+          "type": "heading",
+          "text": "¿Por qué el 4s se llena antes que el 3d? Regla n + ℓ"
+        },
+        {
+          "type": "text",
+          "text": "La energía de un subnivel se estima con **n + ℓ**: se llena primero el de **menor n + ℓ**; si empatan, va primero el de **menor n**."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Subnivel",
+            "n + ℓ",
+            "Valor"
+          ],
+          "rows": [
+            [
+              "1s",
+              "1 + 0",
+              "1"
+            ],
+            [
+              "2s",
+              "2 + 0",
+              "2"
+            ],
+            [
+              "2p",
+              "2 + 1",
+              "3"
+            ],
+            [
+              "3s",
+              "3 + 0",
+              "3"
+            ],
+            [
+              "3p",
+              "3 + 1",
+              "4"
+            ],
+            [
+              "4s",
+              "4 + 0",
+              "4"
+            ],
+            [
+              "3d",
+              "3 + 2",
+              "5"
+            ],
+            [
+              "4p",
+              "4 + 1",
+              "5"
+            ],
+            [
+              "5s",
+              "5 + 0",
+              "5"
+            ],
+            [
+              "4d",
+              "4 + 2",
+              "6"
+            ],
+            [
+              "5p",
+              "5 + 1",
+              "6"
+            ],
+            [
+              "6s",
+              "6 + 0",
+              "6"
+            ],
+            [
+              "4f",
+              "4 + 3",
+              "7"
+            ],
+            [
+              "5d",
+              "5 + 2",
+              "7"
+            ],
+            [
+              "6p",
+              "6 + 1",
+              "7"
+            ],
+            [
+              "7s",
+              "7 + 0",
+              "7"
+            ],
+            [
+              "5f",
+              "5 + 3",
+              "8"
+            ],
+            [
+              "6d",
+              "6 + 2",
+              "8"
+            ],
+            [
+              "7p",
+              "7 + 1",
+              "8"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "3d tiene n + ℓ = 5 y 4s tiene 4: por eso **4s se llena antes que 3d**, aunque su n sea mayor. 3p (4) y 4s (4) empatan: va primero 3p (menor n).",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "Actividad de clase: configuración completa"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Identifique el número atómico (Z).",
+            "Determine el número total de electrones (recuerde: anión = gana electrones; catión = pierde electrones).",
+            "Aplique el orden de llenado del diagrama de Moeller.",
+            "Escriba la configuración electrónica completa.",
+            "Verifique que la suma de electrones sea correcta."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Especie",
+            "e⁻ totales",
+            "Configuración electrónica completa"
+          ],
+          "rows": [
+            [
+              "Na",
+              "11",
+              "1s² 2s² 2p⁶ 3s¹"
+            ],
+            [
+              "Si",
+              "14",
+              "1s² 2s² 2p⁶ 3s² 3p²"
+            ],
+            [
+              "S",
+              "16",
+              "1s² 2s² 2p⁶ 3s² 3p⁴"
+            ],
+            [
+              "Cl⁻",
+              "18",
+              "1s² 2s² 2p⁶ 3s² 3p⁶"
+            ],
+            [
+              "K",
+              "19",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹"
+            ],
+            [
+              "P",
+              "15",
+              "1s² 2s² 2p⁶ 3s² 3p³"
+            ],
+            [
+              "N³⁻",
+              "10",
+              "1s² 2s² 2p⁶"
+            ],
+            [
+              "Ca²⁺",
+              "18",
+              "1s² 2s² 2p⁶ 3s² 3p⁶"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Más configuraciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Z",
+            "Configuración"
+          ],
+          "rows": [
+            [
+              "C",
+              "6",
+              "1s² 2s² 2p²"
+            ],
+            [
+              "O",
+              "8",
+              "1s² 2s² 2p⁴"
+            ],
+            [
+              "Al",
+              "13",
+              "1s² 2s² 2p⁶ 3s² 3p¹"
+            ],
+            [
+              "Ca",
+              "20",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ 4s²"
+            ],
+            [
+              "Fe",
+              "26",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶"
+            ],
+            [
+              "Zn",
+              "30",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰"
+            ],
+            [
+              "Br",
+              "35",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁵"
+            ],
+            [
+              "Sn",
+              "50",
+              "[Kr] 5s² 4d¹⁰ 5p²"
+            ],
+            [
+              "Pb",
+              "82",
+              "[Xe] 6s² 4f¹⁴ 5d¹⁰ 6p²"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Configuración abreviada (de kernel)"
+        },
+        {
+          "type": "text",
+          "text": "Se escribe el **gas noble anterior** entre corchetes y luego solo los electrones que faltan: He (2), Ne (10), Ar (18), Kr (36), Xe (54), Rn (86)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Completa",
+            "Abreviada"
+          ],
+          "rows": [
+            [
+              "Na",
+              "1s² 2s² 2p⁶ 3s¹",
+              "[Ne] 3s¹"
+            ],
+            [
+              "Cl",
+              "1s² 2s² 2p⁶ 3s² 3p⁵",
+              "[Ne] 3s² 3p⁵"
+            ],
+            [
+              "Ca",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ 4s²",
+              "[Ar] 4s²"
+            ],
+            [
+              "Fe",
+              "… 4s² 3d⁶",
+              "[Ar] 4s² 3d⁶"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Iones de metales de transición"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Al formar cationes, los metales de transición pierden **primero los electrones del nivel más externo (ns)** y después los (n−1)d. Fe: [Ar] 4s² 3d⁶ → **Fe²⁺: [Ar] 3d⁶** → **Fe³⁺: [Ar] 3d⁵**. (No es [Ar] 4s² 3d⁴.)",
+          "title": "Cuidado"
+        },
+        {
+          "type": "interactive",
+          "widget": "electron_config",
+          "title": "Comprueba cualquier configuración",
+          "params": {
+            "z": 17
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué subnivel se llena después de 4s?",
+          "options": [
+            "4p",
+            "3d",
+            "4d",
+            "5s"
+          ],
+          "correct": 1,
+          "explanation": "Orden de Moeller: … 4s → **3d** → 4p."
+        },
+        {
+          "type": "quiz",
+          "question": "Configuración del K (Z = 19):",
+          "options": [
+            "1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹",
+            "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹",
+            "1s² 2s² 2p⁶ 3s² 3p⁷",
+            "1s² 2s² 2p⁶ 3s² 3p⁵ 4s²"
+          ],
+          "correct": 1,
+          "explanation": "4s (n + ℓ = 4) antes que 3d (5)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones tiene el N³⁻?",
+          "options": [
+            "7",
+            "4",
+            "10",
+            "3"
+          ],
+          "correct": 2,
+          "explanation": "7 + 3 = **10** → 1s² 2s² 2p⁶."
+        },
+        {
+          "type": "quiz",
+          "question": "Valor de n + ℓ para 5d:",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "correct": 2,
+          "explanation": "5 + 2 = **7**."
+        },
+        {
+          "type": "quiz",
+          "question": "Configuración abreviada del cloro:",
+          "options": [
+            "[Ne] 3s² 3p⁵",
+            "[Ar] 3p⁵",
+            "[He] 3s² 3p⁵",
+            "[Ne] 3p⁷"
+          ],
+          "correct": 0,
+          "explanation": "Ne tiene 10; faltan 7: 3s² 3p⁵."
+        },
+        {
+          "type": "quiz",
+          "question": "Configuración del Fe²⁺:",
+          "options": [
+            "[Ar] 4s² 3d⁴",
+            "[Ar] 3d⁶",
+            "[Ar] 4s¹ 3d⁵",
+            "[Ar] 4s² 3d⁶"
+          ],
+          "correct": 1,
+          "explanation": "Pierde los 2 electrones del 4s."
+        },
+        {
+          "type": "quiz",
+          "question": "El Ca²⁺ tiene la misma configuración que:",
+          "options": [
+            "El Ca",
+            "El Ar",
+            "El K",
+            "El Ne"
+          ],
+          "correct": 1,
+          "explanation": "18 electrones: 1s² 2s² 2p⁶ 3s² 3p⁶ = **argón**."
+        }
+      ]
+    },
+    {
+      "id": "l09-excepciones",
+      "title": "Elementos que no cumplen la configuración",
+      "summary": "Cromo y cobre: d⁴ → d⁵ y d⁹ → d¹⁰; otras excepciones (tarea de clase).",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Se reconocen porque su configuración (átomo neutro) **terminaría en d⁴ o d⁹**. Sus configuraciones verdaderas terminan en **d⁵ y d¹⁰** respectivamente, porque **un electrón del último subnivel s se traslada al subnivel d incompleto**.",
+          "title": "Excepciones a Moeller"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Según Moeller (INCORRECTO)",
+            "Real (CORRECTO)"
+          ],
+          "rows": [
+            [
+              "**Cromo** (Z = 24)",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁴",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ **4s¹ 3d⁵**"
+            ],
+            [
+              "**Cobre** (Z = 29)",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁹",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ **4s¹ 3d¹⁰**"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un subnivel d **semilleno (d⁵)** o **lleno (d¹⁰)** es especialmente estable: los electrones quedan distribuidos de forma simétrica y la repulsión entre ellos es menor. Como 4s y 3d tienen energías muy parecidas, «sale a cuenta» mover un electrón del 4s al 3d.",
+          "title": "¿Por qué?"
+        },
+        {
+          "type": "heading",
+          "text": "Tarea de clase: otros elementos que no cumplen el esquema"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Z",
+            "Según Moeller",
+            "Configuración real",
+            "Patrón"
+          ],
+          "rows": [
+            [
+              "Cromo (Cr)",
+              "24",
+              "[Ar] 4s² 3d⁴",
+              "[Ar] 4s¹ 3d⁵",
+              "d⁴ → d⁵"
+            ],
+            [
+              "Cobre (Cu)",
+              "29",
+              "[Ar] 4s² 3d⁹",
+              "[Ar] 4s¹ 3d¹⁰",
+              "d⁹ → d¹⁰"
+            ],
+            [
+              "Molibdeno (Mo)",
+              "42",
+              "[Kr] 5s² 4d⁴",
+              "[Kr] 5s¹ 4d⁵",
+              "d⁴ → d⁵ (misma columna que Cr)"
+            ],
+            [
+              "Plata (Ag)",
+              "47",
+              "[Kr] 5s² 4d⁹",
+              "[Kr] 5s¹ 4d¹⁰",
+              "d⁹ → d¹⁰ (misma columna que Cu)"
+            ],
+            [
+              "Oro (Au)",
+              "79",
+              "[Xe] 6s² 4f¹⁴ 5d⁹",
+              "[Xe] 6s¹ 4f¹⁴ 5d¹⁰",
+              "d⁹ → d¹⁰"
+            ],
+            [
+              "Niobio (Nb)",
+              "41",
+              "[Kr] 5s² 4d³",
+              "[Kr] 5s¹ 4d⁴",
+              "Irregular"
+            ],
+            [
+              "Rutenio (Ru)",
+              "44",
+              "[Kr] 5s² 4d⁶",
+              "[Kr] 5s¹ 4d⁷",
+              "Irregular"
+            ],
+            [
+              "Rodio (Rh)",
+              "45",
+              "[Kr] 5s² 4d⁷",
+              "[Kr] 5s¹ 4d⁸",
+              "Irregular"
+            ],
+            [
+              "Paladio (Pd)",
+              "46",
+              "[Kr] 5s² 4d⁸",
+              "[Kr] 4d¹⁰",
+              "Pasan los dos s al d"
+            ],
+            [
+              "Platino (Pt)",
+              "78",
+              "[Xe] 6s² 4f¹⁴ 5d⁸",
+              "[Xe] 6s¹ 4f¹⁴ 5d⁹",
+              "Irregular"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "También hay excepciones en lantánidos y actínidos (La, Ce, Gd, Ac, Th, U…), donde un electrón ocupa 5d o 6d en lugar de f. Para el examen, las que más se piden son **Cr, Cu, Mo, Ag y Au**."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El cromo da al acero inoxidable su resistencia a la corrosión (≥ 10,5 % Cr forma una capa pasiva de Cr₂O₃); el cobre, gracias a su 4s¹ muy móvil, es el conductor eléctrico por excelencia en las instalaciones de una edificación."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la configuración real del cobre?",
+          "options": [
+            "[Ar] 4s² 3d⁹",
+            "[Ar] 4s¹ 3d¹⁰",
+            "[Ar] 3d¹¹",
+            "[Ar] 4s² 3d¹⁰"
+          ],
+          "correct": 1,
+          "explanation": "d⁹ → **d¹⁰**: un electrón del 4s pasa al 3d."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la configuración real del cromo?",
+          "options": [
+            "[Ar] 4s² 3d⁴",
+            "[Ar] 4s¹ 3d⁵",
+            "[Ar] 3d⁶",
+            "[Ar] 4s⁰ 3d⁶"
+          ],
+          "correct": 1,
+          "explanation": "d⁴ → **d⁵** (semilleno)."
+        },
+        {
+          "type": "quiz",
+          "question": "Se reconoce una posible excepción cuando la configuración terminaría en:",
+          "options": [
+            "d¹ o d²",
+            "d⁴ o d⁹",
+            "p³ o p⁶",
+            "s¹ o s²"
+          ],
+          "correct": 1,
+          "explanation": "d⁴ y d⁹."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué elemento sigue el mismo patrón que el cobre?",
+          "options": [
+            "Hierro",
+            "Plata",
+            "Cromo",
+            "Zinc"
+          ],
+          "correct": 1,
+          "explanation": "Ag: [Kr] 5s¹ 4d¹⁰ (misma columna)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué es favorable la configuración d⁵?",
+          "options": [
+            "Porque tiene más protones",
+            "Porque un subnivel semilleno es especialmente estable",
+            "Porque pierde masa",
+            "Porque se vuelve un gas noble"
+          ],
+          "correct": 1,
+          "explanation": "Semilleno (d⁵) o lleno (d¹⁰) = mayor estabilidad."
+        }
+      ]
+    },
+    {
+      "id": "l10-valencia",
+      "title": "Electrones de valencia y estructura de Lewis",
+      "summary": "Capa de valencia, Lewis de los representativos, octeto y ejemplos F, Ne, O, Ar y K.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Se encuentran en los **niveles de energía más externos** (mayores) de un átomo. Son los **responsables de las interacciones químicas**: la formación de enlaces, la reactividad y las propiedades químicas del elemento.",
+          "title": "Electrones de valencia"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "1s² 2s² 2p⁶ **3s² 3p³** → **5 electrones en el nivel más alto** (n = 3, la capa de valencia). Es el fósforo.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "text",
+          "text": "Se constituyen moléculas cuando los átomos se unen e intercambian (o comparten) electrones de valencia, de tal modo que toda la molécula tenga el nivel de energía superior completo."
+        },
+        {
+          "type": "heading",
+          "text": "Estructura de Lewis"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Modelo que permite ilustrar la **distribución más probable de los electrones de valencia**, con la idea de conseguir que todos los átomos involucrados cumplan la **regla del octeto**. Se escribe el **símbolo del elemento** y alrededor, con **puntos**, sus **electrones de valencia** (ejemplo: C con 4 puntos).",
+          "title": "Estructura de Lewis"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Grupo",
+            "1 (IA)",
+            "2 (IIA)",
+            "13 (IIIA)",
+            "14 (IVA)",
+            "15 (VA)",
+            "16 (VIA)",
+            "17 (VIIA)",
+            "18 (VIIIA)"
+          ],
+          "rows": [
+            [
+              "e⁻ de valencia",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8 (He: 2)"
+            ],
+            [
+              "Ejemplos",
+              "H, Li, Na, K, Rb, Cs",
+              "Be, Mg, Ca, Sr, Ba",
+              "B, Al, Ga, In, Tl",
+              "C, Si, Ge, Sn, Pb",
+              "N, P, As, Sb, Bi",
+              "O, S, Se, Te, Po",
+              "F, Cl, Br, I, At",
+              "He, Ne, Ar, Kr, Xe, Rn"
+            ],
+            [
+              "Lewis",
+              "X·",
+              "·X·",
+              "3 puntos solos",
+              "4 puntos solos",
+              "1 par + 3 solos",
+              "2 pares + 2 solos",
+              "3 pares + 1 solo",
+              "4 pares"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En los elementos representativos (grupos 1, 2 y 13–18), el número de electrones de valencia coincide con la **última cifra del número de grupo** (grupo 15 → 5)."
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplos de clase"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Configuración",
+            "Valencia",
+            "Lewis",
+            "Situación"
+          ],
+          "rows": [
+            [
+              "F (9 p⁺, 9 e⁻)",
+              "1s² **2s² 2p⁵**",
+              "7",
+              ":F· con 3 pares y 1 solitario",
+              "Le falta 1 para el octeto"
+            ],
+            [
+              "Ne",
+              "1s² **2s² 2p⁶**",
+              "8",
+              ":Ne: con 4 pares",
+              "**Octeto** (gas noble)"
+            ],
+            [
+              "O",
+              "1s² **2s² 2p⁴**",
+              "6",
+              "·O· con 2 pares y 2 solitarios",
+              "Incompleto: le faltan 2"
+            ],
+            [
+              "Ar",
+              "1s² 2s² 2p⁶ **3s² 3p⁶**",
+              "8",
+              ":Ar: con 4 pares",
+              "**Octeto**"
+            ],
+            [
+              "K",
+              "1s² 2s² 2p⁶ 3s² 3p⁶ **4s¹**",
+              "1",
+              "K·",
+              "Pierde el 4s¹ y queda [K]⁺ con el octeto del nivel 3"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Los **gases nobles** (He, Ne, Ar, Kr, Xe, Rn, Og) ya tienen su capa de valencia completa (octeto; el He, dueto). Por eso casi no reaccionan, y los demás átomos «buscan» parecerse a ellos ganando, perdiendo o compartiendo electrones.",
+          "title": "El octeto"
+        },
+        {
+          "type": "heading",
+          "text": "Valencia y estados de oxidación"
+        },
+        {
+          "type": "text",
+          "text": "La **valencia** es la capacidad de combinación de un elemento (cuántos electrones puede ceder, ganar o compartir). En la práctica se usan los **estados de oxidación** más comunes:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Estados de oxidación comunes",
+            "Elemento",
+            "Estados de oxidación comunes"
+          ],
+          "rows": [
+            [
+              "H",
+              "+1 (−1 en hidruros)",
+              "O",
+              "−2 (−1 en peróxidos)"
+            ],
+            [
+              "Li, Na, K",
+              "+1",
+              "F",
+              "−1"
+            ],
+            [
+              "Be, Mg, Ca, Ba",
+              "+2",
+              "Cl, Br, I",
+              "−1, +1, +3, +5, +7"
+            ],
+            [
+              "Al, B",
+              "+3",
+              "S",
+              "−2, +4, +6"
+            ],
+            [
+              "C",
+              "+2, +4, −4",
+              "N",
+              "−3, +1, +2, +3, +4, +5"
+            ],
+            [
+              "Si",
+              "+4",
+              "P",
+              "−3, +3, +5"
+            ],
+            [
+              "Fe, Co, Ni",
+              "+2, +3",
+              "Cu",
+              "+1, +2"
+            ],
+            [
+              "Zn",
+              "+2",
+              "Ag",
+              "+1"
+            ],
+            [
+              "Au",
+              "+1, +3",
+              "Hg",
+              "+1, +2"
+            ],
+            [
+              "Sn, Pb",
+              "+2, +4",
+              "Cr",
+              "+2, +3, +6"
+            ],
+            [
+              "Mn",
+              "+2, +3, +4, +6, +7",
+              "Ti",
+              "+2, +3, +4"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones de valencia tiene el oxígeno?",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "correct": 2,
+          "explanation": "2s² 2p⁴ → **6**."
+        },
+        {
+          "type": "quiz",
+          "question": "El fósforo (1s² 2s² 2p⁶ 3s² 3p³) tiene:",
+          "options": [
+            "3 electrones de valencia",
+            "5 electrones de valencia",
+            "15 electrones de valencia",
+            "2 electrones de valencia"
+          ],
+          "correct": 1,
+          "explanation": "Nivel 3: 2 + 3 = **5**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué elemento ya cumple el octeto?",
+          "options": [
+            "F",
+            "O",
+            "Ar",
+            "K"
+          ],
+          "correct": 2,
+          "explanation": "Gas noble: 3s² 3p⁶."
+        },
+        {
+          "type": "quiz",
+          "question": "La estructura de Lewis representa:",
+          "options": [
+            "Todos los electrones",
+            "Los electrones de valencia con puntos",
+            "Los protones",
+            "Los neutrones"
+          ],
+          "correct": 1,
+          "explanation": "Solo los de **valencia**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones de valencia tiene un elemento del grupo 17?",
+          "options": [
+            "1",
+            "7",
+            "17",
+            "8"
+          ],
+          "correct": 1,
+          "explanation": "Grupo 17 → **7**."
+        },
+        {
+          "type": "quiz",
+          "question": "El potasio alcanza la configuración de gas noble:",
+          "options": [
+            "Ganando 7 electrones",
+            "Perdiendo su electrón 4s¹",
+            "Compartiendo 1 electrón",
+            "No puede"
+          ],
+          "correct": 1,
+          "explanation": "K⁺ queda como el argón."
+        },
+        {
+          "type": "quiz",
+          "question": "Estados de oxidación comunes del hierro:",
+          "options": [
+            "+1",
+            "+2 y +3",
+            "−2",
+            "+4 y +6"
+          ],
+          "correct": 1,
+          "explanation": "Fe²⁺ (ferroso) y Fe³⁺ (férrico)."
+        }
+      ]
+    }
+  ]
+}

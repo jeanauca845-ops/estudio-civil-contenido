@@ -1,0 +1,433 @@
+{
+  "id": "c09-repaso",
+  "title": "Formulario y preparación para el examen",
+  "description": "Resumen de todas las fórmulas, errores típicos y práctica mixta",
+  "lessons": [
+    {
+      "id": "l01-formulario",
+      "title": "Formulario completo de Cálculo 1",
+      "summary": "Todo en una sola página para repasar antes del examen.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tema",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Recta",
+              "y − y₁ = m(x − x₁);  m = (y₂ − y₁)/(x₂ − x₁)"
+            ],
+            [
+              "Cuadrática",
+              "x = [−b ± √(b² − 4ac)]/(2a);  vértice x = −b/(2a)"
+            ],
+            [
+              "Logaritmos",
+              "ln(ab) = ln a + ln b;  ln(a/b) = ln a − ln b;  ln aⁿ = n ln a"
+            ],
+            [
+              "Trigonometría",
+              "sen² + cos² = 1;  sen 2x = 2 sen x cos x;  cos 2x = cos² − sen²"
+            ],
+            [
+              "Límites notables",
+              "sen x/x → 1;  (1 − cos x)/x → 0;  (1 + 1/x)ˣ → e;  (eˣ − 1)/x → 1"
+            ],
+            [
+              "Continuidad",
+              "f(a) existe, lím f existe, lím f = f(a)"
+            ],
+            [
+              "Definición de derivada",
+              "f′(x) = lím (h→0) [f(x + h) − f(x)]/h"
+            ],
+            [
+              "Potencia",
+              "(xⁿ)′ = n xⁿ⁻¹"
+            ],
+            [
+              "Producto / cociente",
+              "(fg)′ = f′g + fg′;  (f/g)′ = (f′g − fg′)/g²"
+            ],
+            [
+              "Cadena",
+              "[f(g(x))]′ = f′(g(x))·g′(x)"
+            ],
+            [
+              "Exp / log",
+              "(eᵘ)′ = eᵘu′;  (aᵘ)′ = aᵘ ln a·u′;  (ln u)′ = u′/u"
+            ],
+            [
+              "Trig",
+              "(sen u)′ = cos u·u′;  (cos u)′ = −sen u·u′;  (tan u)′ = sec²u·u′"
+            ],
+            [
+              "Trig inversas",
+              "(arcsen u)′ = u′/√(1 − u²);  (arctan u)′ = u′/(1 + u²)"
+            ],
+            [
+              "Implícita",
+              "Derivar todo respecto a x; cada término con y lleva y′; despejar y′"
+            ],
+            [
+              "Tangente",
+              "y − f(a) = f′(a)(x − a)"
+            ],
+            [
+              "Extremos",
+              "f′ = 0 o no existe; f″ > 0 mínimo, f″ < 0 máximo"
+            ],
+            [
+              "Valor medio",
+              "f′(c) = [f(b) − f(a)]/(b − a)"
+            ],
+            [
+              "L'Hôpital",
+              "0/0 o ∞/∞: lím f/g = lím f′/g′"
+            ],
+            [
+              "Diferencial",
+              "dy = f′(x)dx;  L(x) = f(a) + f′(a)(x − a)"
+            ],
+            [
+              "Newton",
+              "xₙ₊₁ = xₙ − f(xₙ)/f′(xₙ)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l02-errores",
+      "title": "Los 15 errores más comunes",
+      "summary": "Lo que más hace perder puntos en los exámenes de Cálculo 1.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Error",
+            "Correcto"
+          ],
+          "rows": [
+            [
+              "(a + b)² = a² + b²",
+              "(a + b)² = a² + 2ab + b²"
+            ],
+            [
+              "√(a + b) = √a + √b",
+              "No se separa"
+            ],
+            [
+              "(x + 3)/3 = x (tachar sumandos)",
+              "Solo se cancelan factores"
+            ],
+            [
+              "−3² = 9",
+              "−3² = −9; (−3)² = 9"
+            ],
+            [
+              "ln(a + b) = ln a + ln b",
+              "No existe esa propiedad"
+            ],
+            [
+              "0/0 = 0 o 1",
+              "Es una indeterminación: simplificar"
+            ],
+            [
+              "Dividir entre x al resolver",
+              "Factorizar: se pierde x = 0"
+            ],
+            [
+              "Multiplicar una inecuación por algo con x",
+              "Usar tabla de signos"
+            ],
+            [
+              "(sen 5x)′ = cos 5x",
+              "5 cos 5x (falta la cadena)"
+            ],
+            [
+              "(fg)′ = f′g′",
+              "f′g + fg′"
+            ],
+            [
+              "(f/g)′ = f′/g′",
+              "(f′g − fg′)/g²"
+            ],
+            [
+              "(y²)′ = 2y en implícita",
+              "2y·y′"
+            ],
+            [
+              "Reemplazar números antes de derivar en razones relacionadas",
+              "Derivar primero, sustituir después"
+            ],
+            [
+              "Olvidar los extremos del intervalo al buscar el máximo absoluto",
+              "Evaluar también f(a) y f(b)"
+            ],
+            [
+              "Usar L'Hôpital sin verificar 0/0 o ∞/∞",
+              "Sustituir primero siempre"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "(x + 2)² =",
+          "options": [
+            "x² + 4",
+            "x² + 4x + 4",
+            "x² + 2x + 4",
+            "2x + 4"
+          ],
+          "correct": 1,
+          "explanation": "Producto notable."
+        },
+        {
+          "type": "quiz",
+          "question": "En derivación implícita, (y²)′ =",
+          "options": [
+            "2y",
+            "2y·y′",
+            "y′²",
+            "2x"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        }
+      ]
+    },
+    {
+      "id": "l03-practica",
+      "title": "Práctica mixta tipo examen",
+      "summary": "Preguntas de todas las unidades.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Responde sin mirar las lecciones. Las que falles irán al **Repaso**. Para un simulacro con tiempo, usa el botón **Examen** de la materia."
+        },
+        {
+          "type": "quiz",
+          "question": "Dominio de f(x) = √(x − 1)/(x − 3):",
+          "options": [
+            "[1, +∞)",
+            "[1, 3) ∪ (3, +∞)",
+            "(1, 3)",
+            "ℝ − {3}"
+          ],
+          "correct": 1,
+          "explanation": "Raíz ≥ 0 y denominador ≠ 0."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→4) (x² − 16)/(x − 4) =",
+          "options": [
+            "0",
+            "4",
+            "8",
+            "16"
+          ],
+          "correct": 2,
+          "explanation": "(x + 4) → 8."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→∞) (2x² + 3)/(5x² − x) =",
+          "options": [
+            "2/5",
+            "0",
+            "∞",
+            "3"
+          ],
+          "correct": 0,
+          "explanation": "Mismo grado."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) sen(7x)/(2x) =",
+          "options": [
+            "7",
+            "7/2",
+            "2/7",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "(7/2)·sen 7x/(7x)."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = { x + 2 si x < 1; kx² si x ≥ 1 } es continua si k =",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "0"
+          ],
+          "correct": 2,
+          "explanation": "3 = k."
+        },
+        {
+          "type": "quiz",
+          "question": "(x³ eˣ)′ =",
+          "options": [
+            "3x² eˣ",
+            "x²eˣ(3 + x)",
+            "x³eˣ",
+            "3x²eˣ − x³eˣ"
+          ],
+          "correct": 1,
+          "explanation": "Producto y factor común."
+        },
+        {
+          "type": "quiz",
+          "question": "[ln(x² + 1)]′ =",
+          "options": [
+            "1/(x² + 1)",
+            "2x/(x² + 1)",
+            "2x ln x",
+            "x/(x² + 1)"
+          ],
+          "correct": 1,
+          "explanation": "u′/u."
+        },
+        {
+          "type": "quiz",
+          "question": "[cos(3x²)]′ =",
+          "options": [
+            "−sen(3x²)",
+            "−6x sen(3x²)",
+            "6x sen(3x²)",
+            "−3 sen(x²)"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        },
+        {
+          "type": "quiz",
+          "question": "Para xy + y² = 7, y′ =",
+          "options": [
+            "−y/(x + 2y)",
+            "y/(x + 2y)",
+            "−x/2y",
+            "−(x + y)/y"
+          ],
+          "correct": 0,
+          "explanation": "y + xy′ + 2yy′ = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Tangente a y = eˣ en x = 0:",
+          "options": [
+            "y = x",
+            "y = x + 1",
+            "y = ex",
+            "y = 1"
+          ],
+          "correct": 1,
+          "explanation": "Punto (0, 1), m = 1."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = x³ − 3x² tiene un máximo local en:",
+          "options": [
+            "x = 0",
+            "x = 2",
+            "x = 1",
+            "x = 3"
+          ],
+          "correct": 0,
+          "explanation": "f′ = 3x(x − 2): + a − en 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Inflexión de f(x) = x³ − 3x²:",
+          "options": [
+            "x = 0",
+            "x = 1",
+            "x = 2",
+            "No tiene"
+          ],
+          "correct": 1,
+          "explanation": "f″ = 6x − 6."
+        },
+        {
+          "type": "quiz",
+          "question": "Un globo esférico: si dr/dt = 2 cm/s, cuando r = 3 cm, dV/dt =",
+          "options": [
+            "72π cm³/s",
+            "36π cm³/s",
+            "24π cm³/s",
+            "12π cm³/s"
+          ],
+          "correct": 0,
+          "explanation": "4π·9·2."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) (eˣ − 1)/sen x =",
+          "options": [
+            "0",
+            "1",
+            "e",
+            "∞"
+          ],
+          "correct": 1,
+          "explanation": "L'Hôpital: eˣ/cos x → 1."
+        },
+        {
+          "type": "quiz",
+          "question": "c del TVM para f(x) = x³ en [0, 3]:",
+          "options": [
+            "√3",
+            "3",
+            "1",
+            "9"
+          ],
+          "correct": 0,
+          "explanation": "3c² = 27/3 = 9."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos números con suma 10 y suma de cuadrados mínima:",
+          "options": [
+            "5 y 5",
+            "0 y 10",
+            "4 y 6",
+            "3 y 7"
+          ],
+          "correct": 0,
+          "explanation": "x² + (10 − x)² → x = 5."
+        },
+        {
+          "type": "quiz",
+          "question": "Aproximación lineal de ∛8,3:",
+          "options": [
+            "2,025",
+            "2,05",
+            "2,1",
+            "2,0"
+          ],
+          "correct": 0,
+          "explanation": "2 + (1/12)(0,3)."
+        },
+        {
+          "type": "quiz",
+          "question": "(xˣ)′ =",
+          "options": [
+            "x·xˣ⁻¹",
+            "xˣ ln x",
+            "xˣ(ln x + 1)",
+            "xˣ"
+          ],
+          "correct": 2,
+          "explanation": "Derivación logarítmica."
+        }
+      ]
+    }
+  ]
+}

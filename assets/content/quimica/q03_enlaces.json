@@ -1,0 +1,1868 @@
+{
+  "id": "q03-enlaces",
+  "title": "Enlaces químicos",
+  "description": "Por qué se unen los átomos, Lewis y octeto, enlace iónico, covalente (simple, doble, triple; polar, apolar, coordinado), metálico, teoría de bandas y semiconductores",
+  "lessons": [
+    {
+      "id": "l01-por-que",
+      "title": "¿Por qué se unen los átomos?",
+      "summary": "Fuerzas intramoleculares, liberación de energía, atracción y repulsión, longitud de enlace.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Antes de empezar, dos conceptos de la unidad anterior: **electronegatividad** = capacidad para atraer electrones durante la formación de enlaces (aumenta hacia la derecha y hacia arriba); **electrones de valencia** = electrones que se encuentran en el último nivel de energía de un átomo.",
+          "title": "Repaso"
+        },
+        {
+          "type": "heading",
+          "text": "¿Qué mantiene unidos a los átomos?"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Un **conjunto de fuerzas atractivas** llamadas **fuerzas intramoleculares** (dentro de la molécula o del cristal). **Los electrones más externos (de valencia) son los responsables de esa unión.**",
+          "title": "Enlace químico"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Los átomos se unen entre sí **solo si al hacerlo liberan energía** (el sistema unido es más estable que los átomos separados). Esa reducción de energía se debe a la interacción entre **iones de cargas opuestas** o entre **los núcleos y los pares de electrones de enlace**."
+        },
+        {
+          "type": "text",
+          "text": "Mediante esta unión se busca una **estabilidad energética** basada en la **regla del octeto** (o del dueto):"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Configuración",
+            "e⁻ de valencia",
+            "Grupo"
+          ],
+          "rows": [
+            [
+              "N (Z = 7)",
+              "1s² 2s² 2p³",
+              "5",
+              "VA"
+            ],
+            [
+              "Cl (Z = 17)",
+              "[Ne] 3s² 3p⁵",
+              "7",
+              "VIIA"
+            ],
+            [
+              "Ca (Z = 20)",
+              "[Ar] 4s²",
+              "2",
+              "IIA"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "¿Qué ocurre cuando dos átomos se acercan?"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Interacción",
+            "Entre",
+            "Efecto"
+          ],
+          "rows": [
+            [
+              "**Atracción**",
+              "Núcleo (+) de un átomo con los electrones (−) del otro",
+              "Acerca los átomos"
+            ],
+            [
+              "**Repulsión**",
+              "Nube electrónica con nube electrónica, y núcleo con núcleo",
+              "Aleja los átomos"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "**No se forma enlace:** la repulsión es mayor que la atracción.",
+            "**Se forma enlace:** la fuerza neta de atracción es igual a la fuerza neta de repulsión entre los dos átomos: se igualan y se cancelan mutuamente."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Distancia de **equilibrio** donde atracción y repulsión se balancean: **energía mínima y máxima estabilidad** (distancia ideal = enlace estable).",
+          "title": "Longitud de enlace"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si se grafica la energía frente a la distancia entre dos átomos, la curva baja (atracción) hasta un mínimo y luego sube bruscamente (repulsión). El mínimo marca la **longitud de enlace**, y su profundidad, la **energía de enlace** (lo que cuesta romperlo). Ejemplo H–H: 74 pm y 436 kJ/mol. Es el mismo razonamiento de los diagramas de energía potencial de Mecánica.",
+          "title": "La curva de energía"
+        },
+        {
+          "type": "quiz",
+          "question": "Los átomos se unen solo si:",
+          "options": [
+            "Absorben energía",
+            "Liberan energía",
+            "Pierden protones",
+            "Son del mismo elemento"
+          ],
+          "correct": 1,
+          "explanation": "El enlace hace al sistema más estable: **libera** energía."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quiénes son responsables del enlace?",
+          "options": [
+            "Los protones",
+            "Los neutrones",
+            "Los electrones más externos (de valencia)",
+            "Los electrones 1s"
+          ],
+          "correct": 2,
+          "explanation": "Los de **valencia**."
+        },
+        {
+          "type": "quiz",
+          "question": "La longitud de enlace corresponde a la distancia donde:",
+          "options": [
+            "La repulsión es máxima",
+            "Atracción y repulsión se balancean (energía mínima)",
+            "Los núcleos se tocan",
+            "No hay interacción"
+          ],
+          "correct": 1,
+          "explanation": "Mínimo de energía."
+        },
+        {
+          "type": "quiz",
+          "question": "Las fuerzas que mantienen unidos los átomos dentro de una molécula se llaman:",
+          "options": [
+            "Intermoleculares",
+            "Intramoleculares",
+            "Nucleares",
+            "Gravitatorias"
+          ],
+          "correct": 1,
+          "explanation": "**Intra** = dentro."
+        },
+        {
+          "type": "quiz",
+          "question": "No se forma enlace cuando:",
+          "options": [
+            "La atracción iguala a la repulsión",
+            "La repulsión es mayor que la atracción",
+            "Los átomos liberan energía",
+            "Hay electrones de valencia"
+          ],
+          "correct": 1,
+          "explanation": "Definición de clase."
+        }
+      ]
+    },
+    {
+      "id": "l02-lewis-octeto",
+      "title": "Estructura de Lewis y regla del octeto",
+      "summary": "Notación de puntos, octeto de Lewis, dueto, cuarteto, sexteto y octeto expandido; cómo dibujar moléculas.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Los átomos se representan con su **símbolo** y alrededor de ellos se colocan los **electrones de valencia mediante puntos** (de 1 a 8). La cantidad de puntos depende del grupo.",
+          "title": "Estructura de Lewis"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Grupo",
+            "1",
+            "2",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "rows": [
+            [
+              "e⁻ de valencia",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            [
+              "Lewis",
+              "·H, ·Li, ·Na",
+              "·Be·, ·Mg·",
+              "·B·, ·Al· (3 puntos)",
+              "·C·, ·Si· (4 puntos)",
+              "N: 1 par + 3 solos (5)",
+              "O: 2 pares + 2 solos (6)",
+              "F: 3 pares + 1 solo (7)",
+              ":Ne: (8; He: 2)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Propuesta por **Gilbert Lewis**: los átomos se unen tratando de adquirir en su último nivel de energía una **configuración electrónica estable de 8 electrones** (como los gases nobles). Aunque otros elementos se estabilizan con **2 (dueto)** o con **4 electrones (cuarteto)**.",
+          "title": "Regla del octeto"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Caso",
+            "Electrones alrededor",
+            "Elementos",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "**Dueto**",
+              "2",
+              "Hidrógeno, helio",
+              "H₂: dos átomos de H se unen para formar hidrógeno gaseoso (H–H)"
+            ],
+            [
+              "**Cuarteto**",
+              "4",
+              "Berilio",
+              "BeCl₂: el Be queda con 4 electrones"
+            ],
+            [
+              "**Sexteto**",
+              "6",
+              "Boro",
+              "BF₃: el B queda con 6 electrones (octeto incompleto)"
+            ],
+            [
+              "**Octeto**",
+              "8",
+              "Elementos representativos del bloque s y p",
+              "CH₄, H₂O, NH₃, CO₂"
+            ],
+            [
+              "**Más de 8** (octeto expandido)",
+              "10 o 12",
+              "Fósforo, azufre, cloro, xenón (periodo 3 en adelante: tienen orbitales d disponibles)",
+              "PCl₅ (10), SF₆ (12), XeF₄ (12)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Metanol, CH₃OH: el C central se une a 3 H y al O; el O se une al C y a un H y conserva **2 pares libres**. Cuenta: C tiene 4 enlaces (8 e⁻), O tiene 2 enlaces + 2 pares (8 e⁻), cada H tiene 1 enlace (2 e⁻).",
+          "title": "Lewis del metanol"
+        },
+        {
+          "type": "heading",
+          "text": "Cómo dibujar una estructura de Lewis paso a paso"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Suma los electrones de valencia de todos los átomos (suma 1 por cada carga negativa y resta 1 por cada positiva).",
+            "Elige el **átomo central**: normalmente el menos electronegativo (nunca el H; el H siempre va en los extremos).",
+            "Une cada átomo externo al central con un enlace simple (cada enlace = 2 electrones).",
+            "Completa el **octeto de los átomos de alrededor** con pares libres.",
+            "Coloca los electrones sobrantes en el átomo central.",
+            "Si el central no completa el octeto, forma enlaces dobles o triples usando pares libres de los vecinos (o es una excepción)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "CO₂: electrones = 4 + 2·6 = 16. Esqueleto O–C–O (4 e⁻) → quedan 12, que completan los octetos de los O (6 + 6). El C solo tendría 4: se forman dos dobles enlaces → **O=C=O**, con 2 pares libres en cada O.",
+          "title": "Ejemplo: CO₂"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En las estructuras de Lewis es importante representar **tanto los enlaces como los electrones libres**. Cada enlace covalente se forma al compartir **dos electrones**. Se prioriza el octeto de los átomos de alrededor; si el átomo central no cumple el octeto, puede ser una **excepción** o necesitar **enlaces coordinados**.",
+          "title": "Notas importantes de clase"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones de valencia tiene el nitrógeno en su Lewis?",
+          "options": [
+            "3",
+            "5",
+            "7",
+            "8"
+          ],
+          "correct": 1,
+          "explanation": "Grupo 15: **5 puntos**."
+        },
+        {
+          "type": "quiz",
+          "question": "El hidrógeno se estabiliza con:",
+          "options": [
+            "Octeto",
+            "Dueto (2 electrones)",
+            "Cuarteto",
+            "Sexteto"
+          ],
+          "correct": 1,
+          "explanation": "Como el helio."
+        },
+        {
+          "type": "quiz",
+          "question": "El boro en el BF₃ queda con:",
+          "options": [
+            "Un octeto",
+            "Un sexteto",
+            "Un dueto",
+            "Diez electrones"
+          ],
+          "correct": 1,
+          "explanation": "Octeto incompleto: **sexteto**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué elemento puede tener octeto expandido?",
+          "options": [
+            "Carbono",
+            "Azufre",
+            "Hidrógeno",
+            "Berilio"
+          ],
+          "correct": 1,
+          "explanation": "Periodo 3: S en SF₆ tiene 12."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién propuso la regla del octeto?",
+          "options": [
+            "Mendeléiev",
+            "Gilbert Lewis",
+            "Bohr",
+            "Pauling"
+          ],
+          "correct": 1,
+          "explanation": "**Gilbert Lewis**."
+        },
+        {
+          "type": "quiz",
+          "question": "Total de electrones de valencia para dibujar el CO₂:",
+          "options": [
+            "12",
+            "16",
+            "18",
+            "22"
+          ],
+          "correct": 1,
+          "explanation": "4 + 6 + 6 = **16**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué átomo NUNCA es el central?",
+          "options": [
+            "Carbono",
+            "Hidrógeno",
+            "Nitrógeno",
+            "Azufre"
+          ],
+          "correct": 1,
+          "explanation": "El H solo forma un enlace."
+        }
+      ]
+    },
+    {
+      "id": "l03-tipos-dEN",
+      "title": "Tipos de enlace y diferencia de electronegatividad",
+      "summary": "Iónico, covalente y metálico; cómo decidir con ΔEN.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Entre",
+            "Qué pasa con los electrones"
+          ],
+          "rows": [
+            [
+              "1. **Iónico**",
+              "Metal + no metal",
+              "Se **transfieren** (uno gana, otro pierde)"
+            ],
+            [
+              "2. **Covalente**",
+              "No metales",
+              "Se **comparten** en pares"
+            ],
+            [
+              "3. **Metálico**",
+              "Metales",
+              "Quedan **deslocalizados** en un mar de electrones"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "ΔEN = |EN(A) − EN(B)|",
+          "caption": "Diferencia de electronegatividad entre los dos átomos (escala de Pauling)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "ΔEN",
+            "Tipo de enlace",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "0 a < 0,4",
+              "Covalente **no polar** (apolar)",
+              "H₂ (0), Cl₂ (0), C–H (0,35)"
+            ],
+            [
+              "0,4 a < 1,7",
+              "Covalente **polar**",
+              "H–Cl (0,9), H–O (1,24), C–O (1,0)"
+            ],
+            [
+              "≥ 1,7",
+              "**Iónico**",
+              "NaCl (2,23), LiF (3,0), NaF (3,1)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "ΔEN pequeña → mayor carácter **covalente**; ΔEN grande → mayor carácter **iónico**. El límite de 1,7 es aproximado: es una transición gradual, no un corte exacto (el enlace con ΔEN = 1,7 tiene ≈ 50 % de carácter iónico)."
+        },
+        {
+          "type": "interactive",
+          "widget": "bond_type",
+          "title": "Laboratorio: tipo de enlace según ΔEN"
+        },
+        {
+          "type": "quiz",
+          "question": "Un enlace entre un metal y un no metal suele ser:",
+          "options": [
+            "Covalente",
+            "Iónico",
+            "Metálico",
+            "Apolar"
+          ],
+          "correct": 1,
+          "explanation": "Transferencia de electrones."
+        },
+        {
+          "type": "quiz",
+          "question": "ΔEN del H–Cl (2,1 y 3,0):",
+          "options": [
+            "0,9: covalente polar",
+            "0,9: iónico",
+            "5,1: iónico",
+            "0: apolar"
+          ],
+          "correct": 0,
+          "explanation": "3,0 − 2,1 = **0,9**."
+        },
+        {
+          "type": "quiz",
+          "question": "Con ΔEN = 2,5 el enlace es:",
+          "options": [
+            "Apolar",
+            "Polar",
+            "Iónico",
+            "Metálico"
+          ],
+          "correct": 2,
+          "explanation": "≥ 1,7 → **iónico**."
+        },
+        {
+          "type": "quiz",
+          "question": "El enlace en un trozo de cobre es:",
+          "options": [
+            "Iónico",
+            "Covalente",
+            "Metálico",
+            "Dativo"
+          ],
+          "correct": 2,
+          "explanation": "Entre átomos metálicos."
+        },
+        {
+          "type": "quiz",
+          "question": "El enlace C–H (2,55 y 2,20) se considera:",
+          "options": [
+            "Iónico",
+            "Covalente polar",
+            "Covalente apolar",
+            "Metálico"
+          ],
+          "correct": 2,
+          "explanation": "ΔEN = 0,35 < 0,4."
+        }
+      ]
+    },
+    {
+      "id": "l04-ionico",
+      "title": "Enlace iónico",
+      "summary": "Definición, mecanismo, donantes y receptores, LiF, NaCl, Na₂O, redes cristalinas y propiedades.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Aspecto",
+            "Descripción"
+          ],
+          "rows": [
+            [
+              "**Definición**",
+              "Unión química resultante de la **atracción electrostática** entre **iones con cargas opuestas** (positivo y negativo)"
+            ],
+            [
+              "**El mecanismo**",
+              "Existe una **transferencia total de electrones**. No se comparten: un átomo «gana» y otro «pierde»"
+            ],
+            [
+              "**ΔEN**",
+              "ΔEN pequeña → mayor carácter covalente; ΔEN grande → mayor carácter iónico. Normalmente **ΔEN ≥ 1,7**"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Rol",
+            "Quiénes",
+            "Electronegatividad",
+            "Qué hacen"
+          ],
+          "rows": [
+            [
+              "«**Donantes**»",
+              "Metales (grupos IA o IIA)",
+              "Baja",
+              "Tienden a ceder electrones para convertirse en **cationes (+)**"
+            ],
+            [
+              "«**Receptores**»",
+              "No metales (grupos VIA o VIIA)",
+              "Alta",
+              "Captan electrones para convertirse en **aniones (−)**"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Proceso de transferencia: fluoruro de litio (LiF)"
+        },
+        {
+          "type": "text",
+          "text": "El átomo de litio (Z = 3, 1s² 2s¹) entrega su único electrón de valencia (2s) al átomo de flúor (Z = 9, 1s² 2s² 2p⁵)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Catión litio (Li⁺):** estable, con la configuración del gas noble helio (1s²).",
+            "**Anión fluoruro (F⁻):** estable, completa su octeto (1s² 2s² 2p⁶).",
+            "**Conclusión:** ambos quedan fuertemente unidos por la atracción de sus cargas opuestas.",
+            "El litio tiene EN 1,0 y el flúor 4,0: la diferencia es **3,0** → enlace iónico con transferencia electrónica."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Cloruro de sodio (NaCl)"
+        },
+        {
+          "type": "text",
+          "text": "Na (EN 0,93) frente a Cl (EN 3,16): el «imán» del cloro es mucho más fuerte. El Na cede su electrón 3s¹ → **Na⁺ (catión)**; el Cl lo recibe → **Cl⁻ (anión)**. ΔEN = 2,23."
+        },
+        {
+          "type": "heading",
+          "text": "Óxido de sodio (Na₂O)"
+        },
+        {
+          "type": "text",
+          "text": "El oxígeno necesita **2 electrones** y cada sodio solo puede ceder **1**: hacen falta **dos sodios**. Resultado: 2 Na⁺ + O²⁻ → **Na₂O**. Las cargas totales se compensan (+2 − 2 = 0)."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La fórmula de un compuesto iónico se obtiene **cruzando las cargas**: Al³⁺ y O²⁻ → **Al₂O₃**; Ca²⁺ y Cl⁻ → **CaCl₂**; Mg²⁺ y O²⁻ → **MgO** (se simplifica).",
+          "title": "Fórmula por cruce de cargas"
+        },
+        {
+          "type": "heading",
+          "text": "Propiedades físicas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Descripción"
+          ],
+          "rows": [
+            [
+              "**Estructura ordenada**",
+              "No forman moléculas simples; se organizan en **redes cristalinas tridimensionales** altamente ordenadas. Ejemplos: cloruro de cesio (CsCl), sulfuro de zinc (ZnS), fluoruro de calcio (CaF₂)"
+            ],
+            [
+              "**Estado físico**",
+              "Siempre **sólidos** a temperatura ambiente (25 °C)"
+            ],
+            [
+              "**Puntos de fusión y ebullición**",
+              "**Muy altos**: se requiere una enorme cantidad de energía térmica para vencer las poderosas fuerzas electrostáticas que mantienen unida la red cristalina (NaCl funde a 801 °C)"
+            ],
+            [
+              "**Conductividad térmica**",
+              "A pesar de su gran estabilidad, son **malos conductores del calor** en estado sólido"
+            ],
+            [
+              "**Conductividad eléctrica en estado sólido**",
+              "**No conducen.** Los iones están vibrando en posiciones fijas dentro de la red y no pueden fluir"
+            ],
+            [
+              "**Fundidos o en disolución**",
+              "**Conducen de forma excelente**: al disolverse en agua o derretirse, la red se rompe y los iones se mueven libremente transportando la carga eléctrica"
+            ],
+            [
+              "Otras",
+              "Duros pero frágiles (al desplazar un plano, chocan iones de igual carga y el cristal se parte); muchos son solubles en agua"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Experimento de clase: una batería, un foco y dos electrodos en un vaso. Con **agua destilada** el foco no enciende; al disolver sal, los iones Na⁺ y Cl⁻ transportan la corriente y el foco se enciende.",
+          "title": "Experimento"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Los iones disueltos en el agua de amasado y de curado (cloruros, sulfatos) afectan al hormigón: los **cloruros** rompen la capa pasiva del acero de refuerzo y lo corroen; los **sulfatos** atacan al cemento. Por eso las normas limitan su contenido en el agua y los agregados."
+        },
+        {
+          "type": "quiz",
+          "question": "En el enlace iónico los electrones:",
+          "options": [
+            "Se comparten",
+            "Se transfieren totalmente",
+            "Se deslocalizan",
+            "No participan"
+          ],
+          "correct": 1,
+          "explanation": "Uno gana y otro pierde."
+        },
+        {
+          "type": "quiz",
+          "question": "ΔEN del LiF:",
+          "options": [
+            "1,0",
+            "3,0",
+            "4,0",
+            "5,0"
+          ],
+          "correct": 1,
+          "explanation": "4,0 − 1,0 = **3,0**."
+        },
+        {
+          "type": "quiz",
+          "question": "El Li⁺ queda con la configuración de:",
+          "options": [
+            "Neón",
+            "Helio",
+            "Argón",
+            "Hidrógeno"
+          ],
+          "correct": 1,
+          "explanation": "1s²: **helio**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el óxido de sodio es Na₂O?",
+          "options": [
+            "Porque el O cede 2 electrones",
+            "Porque el O necesita 2 electrones y cada Na cede 1",
+            "Porque el Na tiene 2 de valencia",
+            "Por casualidad"
+          ],
+          "correct": 1,
+          "explanation": "2 Na⁺ compensan un O²⁻."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Conduce la electricidad el NaCl sólido?",
+          "options": [
+            "Sí",
+            "No: sus iones están fijos en la red",
+            "Solo si está frío",
+            "Solo con luz"
+          ],
+          "correct": 1,
+          "explanation": "Conduce fundido o disuelto."
+        },
+        {
+          "type": "quiz",
+          "question": "Los compuestos iónicos tienen puntos de fusión:",
+          "options": [
+            "Muy bajos",
+            "Muy altos",
+            "Iguales a los covalentes",
+            "No funden"
+          ],
+          "correct": 1,
+          "explanation": "Hay que vencer la red cristalina."
+        },
+        {
+          "type": "quiz",
+          "question": "Fórmula del compuesto entre Al³⁺ y O²⁻:",
+          "options": [
+            "AlO",
+            "Al₂O₃",
+            "Al₃O₂",
+            "AlO₂"
+          ],
+          "correct": 1,
+          "explanation": "Cruce de cargas: **Al₂O₃** (+6 − 6 = 0)."
+        },
+        {
+          "type": "quiz",
+          "question": "Los metales del grupo IA en un enlace iónico son:",
+          "options": [
+            "Receptores",
+            "Donantes",
+            "Neutros",
+            "Aniones"
+          ],
+          "correct": 1,
+          "explanation": "Ceden electrones → cationes."
+        }
+      ]
+    },
+    {
+      "id": "l05-covalente",
+      "title": "Enlace covalente: fundamentos, tipos y propiedades",
+      "summary": "Compartición de pares, Cl₂, enlaces simple, doble y triple, Lewis de moléculas y propiedades.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Unión química que mantiene unidos a los átomos mediante la interacción de sus electrones. Se forma por la **COMPARTICIÓN** de uno o más **pares de electrones** entre dos átomos. Es la base estructural de la mayoría de los compuestos químicos en la naturaleza.",
+          "title": "Enlace covalente"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Aspecto",
+            "Descripción"
+          ],
+          "rows": [
+            [
+              "**Estabilidad**",
+              "Al compartir electrones, ambos átomos adquieren la estructura electrónica estable de un **gas noble**"
+            ],
+            [
+              "**Naturaleza**",
+              "Se forma generalmente entre elementos **no metálicos** (o no metal y metaloide)"
+            ],
+            [
+              "**Electronegatividad**",
+              "La diferencia entre los átomos es **muy pequeña o nula: ΔEN < 1,7**"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Cada cloro tiene **7 electrones de valencia**: por separado no cumplen la regla del octeto. Al formar un enlace **compartiendo dos electrones**, cada átomo de cloro queda rodeado de **8**: :Cl–Cl: (Cl₂).",
+          "title": "La molécula de cloro"
+        },
+        {
+          "type": "heading",
+          "text": "Tipos según el número de pares compartidos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Pares compartidos",
+            "Electrones",
+            "Ejemplos",
+            "Longitud y energía"
+          ],
+          "rows": [
+            [
+              "**Simple** (–)",
+              "1",
+              "2",
+              "H₂ (H–H), Cl₂ (Cl–Cl), H₂O (H–O–H), OBr₂ (Br–O–Br)",
+              "El más largo y débil"
+            ],
+            [
+              "**Doble** (=)",
+              "2",
+              "4",
+              "O₂ (O=O), CO₂ (O=C=O), SO (O=S)",
+              "Intermedio"
+            ],
+            [
+              "**Triple** (≡)",
+              "3",
+              "6",
+              "N₂ (:N≡N:, nitrógeno gaseoso), HCN",
+              "El más corto y fuerte"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Más pares compartidos → enlace **más corto y más fuerte**: C–C 154 pm (348 kJ/mol), C=C 134 pm (614 kJ/mol), C≡C 120 pm (839 kJ/mol). El triple enlace del N₂ (945 kJ/mol) explica por qué el nitrógeno del aire es tan poco reactivo.",
+          "title": "Orden de enlace"
+        },
+        {
+          "type": "heading",
+          "text": "Propiedades de los compuestos covalentes"
+        },
+        {
+          "type": "text",
+          "text": "Las sustancias covalentes (como el **agua H₂O**, el **amoníaco NH₃** o el **metano CH₄**) comparten características físicas comunes:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Descripción"
+          ],
+          "rows": [
+            [
+              "**Estado físico**",
+              "En condiciones normales de presión y temperatura (CNPT) pueden presentarse en estado **sólido, líquido o gaseoso**"
+            ],
+            [
+              "**Resistencia térmica**",
+              "En general, las fuerzas **intermoleculares** son débiles, por lo que presentan **bajos puntos de fusión y ebullición** comparados con los iónicos"
+            ],
+            [
+              "**Conductividad**",
+              "Como no hay iones libres ni electrones móviles en su estructura, en general son **excelentes aislantes** de la corriente eléctrica y del calor"
+            ],
+            [
+              "Excepción: **redes covalentes**",
+              "Diamante, cuarzo (SiO₂) y grafito forman redes gigantes: puntos de fusión altísimos (el cuarzo funde a ≈ 1700 °C). El grafito sí conduce"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Cuidado: lo que se rompe al hervir agua NO son los enlaces covalentes O–H (intramoleculares, muy fuertes), sino las fuerzas **intermoleculares** entre moléculas (puentes de hidrógeno)."
+        },
+        {
+          "type": "quiz",
+          "question": "El enlace covalente se forma por:",
+          "options": [
+            "Transferencia de electrones",
+            "Compartición de pares de electrones",
+            "Atracción entre iones",
+            "Electrones deslocalizados"
+          ],
+          "correct": 1,
+          "explanation": "**Compartición**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones comparte un enlace doble?",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "correct": 1,
+          "explanation": "2 pares = **4 electrones**."
+        },
+        {
+          "type": "quiz",
+          "question": "La molécula de N₂ tiene enlace:",
+          "options": [
+            "Simple",
+            "Doble",
+            "Triple",
+            "Iónico"
+          ],
+          "correct": 2,
+          "explanation": ":N≡N:"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es más fuerte?",
+          "options": [
+            "C–C",
+            "C=C",
+            "C≡C",
+            "Todos igual"
+          ],
+          "correct": 2,
+          "explanation": "Más pares = más fuerte y corto."
+        },
+        {
+          "type": "quiz",
+          "question": "En general, los compuestos covalentes moleculares tienen puntos de fusión:",
+          "options": [
+            "Más altos que los iónicos",
+            "Más bajos que los iónicos",
+            "Iguales",
+            "Infinitos"
+          ],
+          "correct": 1,
+          "explanation": "Fuerzas intermoleculares débiles."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el agua pura no conduce bien la electricidad?",
+          "options": [
+            "Porque tiene iones libres",
+            "Porque es covalente: no tiene iones libres ni electrones móviles",
+            "Porque es metálica",
+            "Porque es sólida"
+          ],
+          "correct": 1,
+          "explanation": "Conduce cuando tiene sales disueltas."
+        },
+        {
+          "type": "quiz",
+          "question": "En el Cl₂, cada cloro queda con:",
+          "options": [
+            "7 electrones",
+            "8 electrones",
+            "2 electrones",
+            "14 electrones"
+          ],
+          "correct": 1,
+          "explanation": "Comparte un par: octeto."
+        }
+      ]
+    },
+    {
+      "id": "l06-polar",
+      "title": "Covalente polar y no polar",
+      "summary": "Compartición equitativa o desigual, cargas parciales δ y densidad electrónica.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Según **la forma en que se comparten** los electrones, el enlace covalente puede ser polar, no polar o coordinado."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Aspecto",
+            "Covalente **polar**",
+            "Covalente **no polar** (apolar)"
+          ],
+          "rows": [
+            [
+              "Entre",
+              "**No metales diferentes**",
+              "Átomos del **mismo elemento**, o con electronegatividades **muy similares**"
+            ],
+            [
+              "Compartición",
+              "**Desigual**: el par está más cerca del átomo más electronegativo",
+              "**Equitativa**: el par está en el centro"
+            ],
+            [
+              "Cargas",
+              "Aparecen **cargas parciales**: δ+ en el menos electronegativo y δ− en el más electronegativo",
+              "No hay polos"
+            ],
+            [
+              "ΔEN",
+              "**0,4 – 1,7**",
+              "**< 0,4**"
+            ],
+            [
+              "Ejemplo de clase",
+              "H–Cl: EN H = 2,1; EN Cl = 3,0 → ΔEN ≈ 0,9 (δ+ en H, δ− en Cl)",
+              "H₂: EN H = 2,1 y 2,1 → ΔEN = 0,0"
+            ],
+            [
+              "Otro ejemplo",
+              "H–O: 2,20 y 3,44 → ΔEN = 1,24 (compartición desigual)",
+              "H–C: 2,20 y 2,55 → ΔEN = 0,35 (compartición equitativa)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Se representa por colores: **azul = baja densidad** de electrones (zona δ+) y **rojo = alta densidad** (zona δ−). En el H–O la nube está corrida hacia el oxígeno (rojo).",
+          "title": "Densidad electrónica"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "La letra δ (delta minúscula) significa «carga parcial»: no es una carga completa como en un ion, sino una fracción. En algunas diapositivas se dibuja como σ+ y σ−; significa lo mismo."
+        },
+        {
+          "type": "interactive",
+          "widget": "bond_type",
+          "title": "Compara la polaridad de distintos enlaces"
+        },
+        {
+          "type": "quiz",
+          "question": "En el H–Cl, la carga parcial negativa está en:",
+          "options": [
+            "El H",
+            "El Cl",
+            "Ninguno",
+            "Ambos"
+          ],
+          "correct": 1,
+          "explanation": "El Cl es más electronegativo: **δ−**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un enlace covalente no polar se da entre:",
+          "options": [
+            "Átomos con ΔEN grande",
+            "Átomos del mismo elemento o con EN muy similar",
+            "Un metal y un no metal",
+            "Iones"
+          ],
+          "correct": 1,
+          "explanation": "Compartición equitativa."
+        },
+        {
+          "type": "quiz",
+          "question": "ΔEN del H–O (2,20 y 3,44):",
+          "options": [
+            "0,35",
+            "1,24",
+            "2,0",
+            "5,64"
+          ],
+          "correct": 1,
+          "explanation": "3,44 − 2,20 = **1,24** → polar."
+        },
+        {
+          "type": "quiz",
+          "question": "En un mapa de densidad electrónica, el color rojo indica:",
+          "options": [
+            "Baja densidad (δ+)",
+            "Alta densidad (δ−)",
+            "Un ion positivo",
+            "Ausencia de electrones"
+          ],
+          "correct": 1,
+          "explanation": "Rojo = **alta densidad**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué enlace es covalente polar?",
+          "options": [
+            "H–H",
+            "Cl–Cl",
+            "H–Cl",
+            "O=O"
+          ],
+          "correct": 2,
+          "explanation": "Átomos distintos con ΔEN 0,9: compartición desigual."
+        }
+      ]
+    },
+    {
+      "id": "l07-coordinado",
+      "title": "Enlace covalente coordinado (dativo)",
+      "summary": "Un solo átomo aporta el par: NH₃·BF₃, NH₄⁺ y SO₂; resumen de los cuatro casos.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Llamado también «**dativo**», es un tipo de enlace covalente en el cual **uno de los átomos brinda el par de electrones** para completar el octeto del otro. Se representa con una flecha **A → B** desde el átomo que dona hacia el que recibe.",
+          "title": "Enlace covalente coordinado"
+        },
+        {
+          "type": "heading",
+          "text": "Amoníaco + trifluoruro de boro: NH₃·BF₃"
+        },
+        {
+          "type": "text",
+          "text": "En el **amoníaco (NH₃)** el nitrógeno tiene un **par libre**. En el **trifluoruro de boro (BF₃)** el boro solo tiene **6 electrones** (sexteto). El N dona su par al B: **H₃N→BF₃**, y ahora el B también tiene 8."
+        },
+        {
+          "type": "heading",
+          "text": "Ion amonio: NH₄⁺"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Especie",
+            "Protones",
+            "Electrones",
+            "Carga"
+          ],
+          "rows": [
+            [
+              "Amoníaco (NH₃)",
+              "10",
+              "10",
+              "0"
+            ],
+            [
+              "Ion hidrógeno (H⁺)",
+              "1",
+              "0",
+              "+1"
+            ],
+            [
+              "Ion amonio (NH₄⁺)",
+              "11",
+              "10",
+              "+1"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Explicación:** el H⁺ no aporta electrones. El N comparte un **par libre** para formar el enlace, pero el número total de electrones sigue siendo 10. Como hay **11 protones y 10 electrones**, la especie queda con **carga positiva**. El nuevo enlace N→H es **covalente coordinado o dativo**."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Una vez formado, el enlace coordinado es **indistinguible** de los demás: en el NH₄⁺ los cuatro enlaces N–H son idénticos (geometría tetraédrica). Lo único distinto fue el **origen** de los electrones."
+        },
+        {
+          "type": "heading",
+          "text": "Dióxido de azufre: SO₂"
+        },
+        {
+          "type": "text",
+          "text": "Representación didáctica: **O←S=O**. El azufre forma un enlace doble con un oxígeno y un enlace dativo (S→O) con el otro, al que le dona un par. En la molécula real, los dos enlaces S–O **se equivalen por resonancia** (son intermedios entre simple y doble)."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Otros ejemplos: el ion hidronio H₃O⁺ (H₂O + H⁺), el monóxido de carbono C≡O (uno de los tres pares lo pone el O) y los complejos metálicos como el que da color azul al sulfato de cobre en agua.",
+          "title": "Más ejemplos"
+        },
+        {
+          "type": "heading",
+          "text": "Resumen: cuatro formas de unir átomos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Enlace",
+            "Qué tiene",
+            "Dibujo"
+          ],
+          "rows": [
+            [
+              "**Iónico**",
+              "**Cargas netas** (iones)",
+              "(+) y (−) separados"
+            ],
+            [
+              "**Covalente polar**",
+              "**Cargas parciales** (polos δ+ y δ−)",
+              "Nube corrida hacia un átomo"
+            ],
+            [
+              "**Covalente no polar**",
+              "**No hay polos**",
+              "Nube simétrica"
+            ],
+            [
+              "**Covalente dativo**",
+              "**Un solo átomo aporta** el par compartido",
+              "A : → B"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "En el enlace dativo, el par de electrones lo aporta:",
+          "options": [
+            "Cada átomo un electrón",
+            "Un solo átomo",
+            "El núcleo",
+            "Ningún átomo"
+          ],
+          "correct": 1,
+          "explanation": "Definición."
+        },
+        {
+          "type": "quiz",
+          "question": "En el NH₄⁺, ¿quién dona el par?",
+          "options": [
+            "El H⁺",
+            "El nitrógeno",
+            "Un hidrógeno del NH₃",
+            "Ninguno"
+          ],
+          "correct": 1,
+          "explanation": "El **N** con su par libre."
+        },
+        {
+          "type": "quiz",
+          "question": "El NH₄⁺ tiene:",
+          "options": [
+            "10 protones y 10 electrones",
+            "11 protones y 10 electrones",
+            "11 protones y 11 electrones",
+            "10 protones y 11 electrones"
+          ],
+          "correct": 1,
+          "explanation": "Por eso carga +1."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el BF₃ puede aceptar un par de electrones?",
+          "options": [
+            "Porque el B tiene octeto expandido",
+            "Porque el B solo tiene 6 electrones (sexteto)",
+            "Porque el F es metal",
+            "Porque es iónico"
+          ],
+          "correct": 1,
+          "explanation": "Le faltan 2 para el octeto."
+        },
+        {
+          "type": "quiz",
+          "question": "Una vez formado, el enlace dativo del NH₄⁺:",
+          "options": [
+            "Es más largo que los otros",
+            "Es idéntico a los otros N–H",
+            "Es iónico",
+            "Se rompe solo"
+          ],
+          "correct": 1,
+          "explanation": "Indistinguible."
+        },
+        {
+          "type": "quiz",
+          "question": "En el SO₂ real, los enlaces S–O:",
+          "options": [
+            "Son uno simple y uno doble para siempre",
+            "Se equivalen por resonancia",
+            "Son iónicos",
+            "Son triples"
+          ],
+          "correct": 1,
+          "explanation": "Resonancia."
+        }
+      ]
+    },
+    {
+      "id": "l08-metalico",
+      "title": "Enlace metálico y modelo del electrón libre",
+      "summary": "Nube de electrones deslocalizados y propiedades de los metales.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es **característico de los metales**. Es un enlace **fuerte** que se forma entre elementos de la **misma especie** (o metales entre sí, en las aleaciones), de **electronegatividades bajas y similares**. Se forma una **nube electrónica** con los electrones **deslocalizados**.",
+          "title": "Enlace metálico"
+        },
+        {
+          "type": "heading",
+          "text": "Modelo del electrón libre («mar de electrones»)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cada átomo metálico (por ejemplo, Fe) **libera sus electrones de valencia** y queda como **catión**.",
+            "Los cationes se ordenan en una red cristalina.",
+            "Los electrones liberados forman un «**mar**» que se mueve libremente entre todos los cationes y los mantiene unidos.",
+            "Al aplicar un voltaje, los electrones del mar fluyen en una dirección: hay **corriente eléctrica**."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Explicación con el modelo"
+          ],
+          "rows": [
+            [
+              "La mayoría son **sólidos** a 25 °C (excepto el **mercurio**)",
+              "El enlace es fuerte"
+            ],
+            [
+              "**Buenos conductores** de la electricidad y del calor",
+              "Los electrones libres transportan carga y energía"
+            ],
+            [
+              "En general, **altos puntos de fusión y ebullición**",
+              "Hay que vencer la atracción cationes–mar de electrones (Fe 1538 °C, W 3422 °C)"
+            ],
+            [
+              "**Dúctiles** (hilos) y **maleables** (láminas)",
+              "Las capas de cationes se deslizan sin romperse: el mar de electrones se reacomoda"
+            ],
+            [
+              "**Brillo** característico",
+              "Los electrones libres absorben y reemiten la luz"
+            ],
+            [
+              "Generalmente **insolubles** en cualquier tipo de disolvente",
+              "No hay moléculas ni iones que el disolvente pueda separar"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El acero estructural combina el enlace metálico del hierro con pequeñas cantidades de carbono (< 2 %). La ductilidad del enlace metálico es lo que permite que una estructura de acero se deforme visiblemente y «avise» antes de colapsar."
+        },
+        {
+          "type": "quiz",
+          "question": "El enlace metálico se caracteriza por:",
+          "options": [
+            "Electrones transferidos",
+            "Electrones compartidos en pares fijos",
+            "Una nube de electrones deslocalizados",
+            "Iones aislados"
+          ],
+          "correct": 2,
+          "explanation": "Mar de electrones."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué metal es líquido a 25 °C?",
+          "options": [
+            "Hierro",
+            "Mercurio",
+            "Cobre",
+            "Aluminio"
+          ],
+          "correct": 1,
+          "explanation": "**Mercurio**."
+        },
+        {
+          "type": "quiz",
+          "question": "Los metales son maleables porque:",
+          "options": [
+            "Sus enlaces son iónicos",
+            "Las capas de cationes se deslizan y el mar de electrones se reacomoda",
+            "No tienen electrones",
+            "Son gases"
+          ],
+          "correct": 1,
+          "explanation": "No se rompe la unión."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué conduce la electricidad en un metal?",
+          "options": [
+            "Los protones",
+            "Los electrones libres (deslocalizados)",
+            "Los neutrones",
+            "Los iones negativos"
+          ],
+          "correct": 1,
+          "explanation": "El mar de electrones."
+        },
+        {
+          "type": "quiz",
+          "question": "Los metales en general son:",
+          "options": [
+            "Solubles en agua",
+            "Insolubles en cualquier disolvente",
+            "Gaseosos",
+            "Aislantes"
+          ],
+          "correct": 1,
+          "explanation": "Según la clase."
+        }
+      ]
+    },
+    {
+      "id": "l09-bandas",
+      "title": "Teoría de bandas",
+      "summary": "Banda de valencia, banda de conducción y brecha: conductores, semiconductores y aislantes.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la representación de **cómo los electrones deslocalizados se mueven a través de bandas** por medio de energía suministrada. Nos ayuda a comprender la **capacidad que tienen los compuestos para conducir electricidad**.",
+          "title": "Teoría de bandas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Qué es"
+          ],
+          "rows": [
+            [
+              "**Banda de valencia**",
+              "Conjunto de niveles de energía ocupados por los electrones de valencia (más baja)"
+            ],
+            [
+              "**Banda de conducción**",
+              "Niveles vacíos de mayor energía; un electrón que llega aquí puede moverse por todo el material y conducir"
+            ],
+            [
+              "**Brecha (gap) entre bandas**",
+              "Energía prohibida que separa ambas bandas; hay que suministrarla para que un electrón salte"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Material",
+            "Brecha",
+            "Conducción",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "**Conductores**",
+              "No hay: las bandas se **superponen**",
+              "Excelente",
+              "Metales: Cu, Al, Fe"
+            ],
+            [
+              "**Semiconductores**",
+              "**Pequeña** (≈ 1 eV: Si 1,1 eV, Ge 0,67 eV)",
+              "Intermedia; aumenta con la temperatura o la luz",
+              "Si, Ge, componentes electrónicos"
+            ],
+            [
+              "**Aislantes**",
+              "**Grande** (> 3 eV; diamante 5,5 eV)",
+              "Prácticamente nula",
+              "Plástico, madera, vidrio, cerámica"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "En un **metal**, al subir la temperatura la conducción empeora (los átomos vibran y estorban). En un **semiconductor** mejora, porque más electrones ganan la energía para saltar la brecha. Es una diferencia clave entre ambos.",
+          "title": "Temperatura"
+        },
+        {
+          "type": "quiz",
+          "question": "En un conductor, la banda de valencia y la de conducción:",
+          "options": [
+            "Están muy separadas",
+            "Se superponen",
+            "No existen",
+            "Están separadas por 5 eV"
+          ],
+          "correct": 1,
+          "explanation": "Sin brecha."
+        },
+        {
+          "type": "quiz",
+          "question": "Un aislante tiene una brecha:",
+          "options": [
+            "Nula",
+            "Pequeña",
+            "Grande",
+            "Negativa"
+          ],
+          "correct": 2,
+          "explanation": "Los electrones no pueden saltar."
+        },
+        {
+          "type": "quiz",
+          "question": "La teoría de bandas explica:",
+          "options": [
+            "La masa de los átomos",
+            "La capacidad de los materiales para conducir electricidad",
+            "Los isótopos",
+            "La geometría molecular"
+          ],
+          "correct": 1,
+          "explanation": "Definición de clase."
+        },
+        {
+          "type": "quiz",
+          "question": "Al calentar un semiconductor, su conductividad:",
+          "options": [
+            "Disminuye",
+            "Aumenta",
+            "No cambia",
+            "Se anula"
+          ],
+          "correct": 1,
+          "explanation": "Más electrones saltan la brecha."
+        }
+      ]
+    },
+    {
+      "id": "l10-semiconductores",
+      "title": "Semiconductores intrínsecos y extrínsecos",
+      "summary": "Silicio puro, electrones y huecos; dopaje tipo N y tipo P.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Materiales cuya **conductividad eléctrica es intermedia** entre la de los conductores y los aislantes. Su capacidad para conducir corriente **puede modificarse** por la **temperatura**, la **luz** o la **incorporación controlada de impurezas**. Ejemplos: **silicio (Si)** y **germanio (Ge)**.",
+          "title": "Semiconductores"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Clase",
+            "Qué son"
+          ],
+          "rows": [
+            [
+              "**Intrínsecos**",
+              "Materiales **puros**, sin dopaje intencional"
+            ],
+            [
+              "**Extrínsecos**",
+              "Materiales **dopados** con impurezas controladas: tipo N y tipo P"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Semiconductores intrínsecos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "El silicio tiene **4 electrones de valencia**.",
+            "Cada átomo forma **4 enlaces covalentes** con sus vecinos (cristal).",
+            "En este estado **no hay portadores libres** en cantidad significativa.",
+            "**Cuando recibe energía** (térmica o luminosa), un electrón puede pasar a la **banda de conducción** (electrón libre).",
+            "Al salir deja un **hueco** en la **banda de valencia**.",
+            "Electrones y huecos participan en la conducción eléctrica."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "En un semiconductor puro, la corriente eléctrica se debe al movimiento de **electrones y huecos** generados por excitación térmica o luminosa.",
+          "title": "Conducción intrínseca"
+        },
+        {
+          "type": "heading",
+          "text": "Semiconductores extrínsecos"
+        },
+        {
+          "type": "text",
+          "text": "Su conductividad se modifica al incorporar **pequeñas cantidades de átomos dopantes** a la estructura cristalina de un semiconductor intrínseco (por ejemplo, silicio). Se dice que «se agregan impurezas al material»."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Aspecto",
+            "Detalle"
+          ],
+          "rows": [
+            [
+              "**Objetivo del dopaje**",
+              "Modificar la concentración de portadores de carga; aumentar la conductividad eléctrica; controlar el tipo de portador mayoritario"
+            ],
+            [
+              "**Dopaje**",
+              "Se incorporan átomos de otros elementos en **muy baja concentración** (≈ 10¹³ – 10¹⁸ átomos/cm³). Estos átomos **sustituyen** átomos de la red cristalina del silicio"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Característica",
+            "Tipo N (dopantes donadores)",
+            "Tipo P (dopantes aceptores)"
+          ],
+          "rows": [
+            [
+              "Elementos",
+              "**Grupo V (15)**: fósforo (P), arsénico (As), antimonio (Sb)",
+              "**Grupo III (13)**: boro (B), aluminio (Al), galio (Ga), indio (In)"
+            ],
+            [
+              "Electrones de valencia del dopante",
+              "5",
+              "3"
+            ],
+            [
+              "¿Qué ocurre?",
+              "1) El P tiene 5 electrones de valencia. 2) Forma 4 enlaces covalentes con los Si vecinos. 3) El **quinto electrón** queda débilmente ligado y pasa fácilmente a la banda de conducción. 4) Se genera un **electrón libre** de conducción",
+              "1) El B tiene 3 electrones de valencia. 2) Forma 3 enlaces covalentes con los Si vecinos. 3) **Falta un electrón** para el cuarto enlace: se genera un **hueco (h⁺)** en la banda de valencia. 4) Electrones vecinos pueden ocupar el hueco, que se comporta como un **portador de carga positivo**"
+            ],
+            [
+              "Aporta",
+              "Un **electrón extra**",
+              "Un **hueco**"
+            ],
+            [
+              "Portador mayoritario",
+              "**Electrones**",
+              "**Huecos**"
+            ],
+            [
+              "Portador minoritario",
+              "Huecos",
+              "Electrones"
+            ],
+            [
+              "Conductividad",
+              "Aumenta respecto al intrínseco",
+              "Aumenta respecto al intrínseco"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Ambos materiales siguen siendo eléctricamente neutros**: el dopante trae sus propios protones. «N» y «P» indican el tipo de portador mayoritario, no una carga neta del material."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Para recordar: **N** = **N**egativo (sobran electrones, dopante del grupo V); **P** = **P**ositivo (sobran huecos, dopante del grupo III).",
+          "title": "Mnemotecnia"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Uniendo un material N con uno P se forma una **unión PN**: la base del diodo, el transistor y la **celda solar**. Los paneles fotovoltaicos de una edificación son silicio dopado: la luz crea pares electrón–hueco que la unión PN separa para producir corriente."
+        },
+        {
+          "type": "quiz",
+          "question": "El silicio tiene:",
+          "options": [
+            "3 electrones de valencia",
+            "4 electrones de valencia",
+            "5 electrones de valencia",
+            "8 electrones de valencia"
+          ],
+          "correct": 1,
+          "explanation": "Grupo 14: **4**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un semiconductor tipo N se obtiene dopando con:",
+          "options": [
+            "Boro",
+            "Fósforo",
+            "Aluminio",
+            "Galio"
+          ],
+          "correct": 1,
+          "explanation": "Grupo V (5 e⁻): **P, As, Sb**."
+        },
+        {
+          "type": "quiz",
+          "question": "En un semiconductor tipo P los portadores mayoritarios son:",
+          "options": [
+            "Electrones",
+            "Huecos",
+            "Protones",
+            "Neutrones"
+          ],
+          "correct": 1,
+          "explanation": "El dopante del grupo III deja **huecos**."
+        },
+        {
+          "type": "quiz",
+          "question": "En un semiconductor intrínseco, al recibir energía:",
+          "options": [
+            "No pasa nada",
+            "Se generan pares electrón–hueco",
+            "Se pierden protones",
+            "Se vuelve metal"
+          ],
+          "correct": 1,
+          "explanation": "Conducción intrínseca."
+        },
+        {
+          "type": "quiz",
+          "question": "Un semiconductor dopado tipo N tiene carga neta:",
+          "options": [
+            "Negativa",
+            "Positiva",
+            "Neutra",
+            "Variable"
+          ],
+          "correct": 2,
+          "explanation": "Sigue siendo **neutro**."
+        },
+        {
+          "type": "quiz",
+          "question": "Concentración típica de dopantes:",
+          "options": [
+            "50 %",
+            "≈ 10¹³ – 10¹⁸ átomos/cm³ (muy baja)",
+            "1 átomo por cada 2 de Si",
+            "Igual a la del Si"
+          ],
+          "correct": 1,
+          "explanation": "Muy baja concentración."
+        },
+        {
+          "type": "quiz",
+          "question": "El hueco se comporta como:",
+          "options": [
+            "Una carga negativa",
+            "Un portador de carga positivo",
+            "Un neutrón",
+            "Un protón real"
+          ],
+          "correct": 1,
+          "explanation": "Ausencia de electrón = carga +."
+        }
+      ]
+    },
+    {
+      "id": "l11-comparacion",
+      "title": "Comparación de los tipos de enlace",
+      "summary": "Cuadro resumen: iónico, covalente y metálico.",
+      "minutes": 6,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Característica",
+            "Iónico",
+            "Covalente",
+            "Metálico"
+          ],
+          "rows": [
+            [
+              "Entre",
+              "Metal + no metal",
+              "No metales",
+              "Metales"
+            ],
+            [
+              "ΔEN",
+              "≥ 1,7 (aprox.)",
+              "< 1,7",
+              "Baja y similar"
+            ],
+            [
+              "Electrones",
+              "Transferidos",
+              "Compartidos",
+              "Deslocalizados"
+            ],
+            [
+              "Estructura",
+              "Red cristalina de iones",
+              "Moléculas o redes covalentes",
+              "Red de cationes + mar de e⁻"
+            ],
+            [
+              "Punto de fusión",
+              "Alto",
+              "Bajo (moléculas) / alto (redes)",
+              "Variable, en general alto"
+            ],
+            [
+              "Conductividad",
+              "Solo fundido o disuelto",
+              "Aislante (excepto grafito)",
+              "Buena en sólido"
+            ],
+            [
+              "Estado a 25 °C",
+              "Sólido",
+              "Sólido, líquido o gas",
+              "Sólido (excepto Hg)"
+            ],
+            [
+              "Ejemplos",
+              "NaCl, Li₂O, CaF₂",
+              "H₂O, CO₂, N₂, CH₄",
+              "Cu, Fe, Al"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En los materiales de construcción conviven los tres: el **cemento hidratado** y los minerales de las rocas tienen enlaces iónico-covalentes; el **vidrio** y el cuarzo son redes covalentes Si–O; el **acero** y el **aluminio** son metálicos; el **asfalto** y los **plásticos** son moléculas covalentes unidas por fuerzas intermoleculares."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué tipo de sustancia conduce la electricidad en estado sólido?",
+          "options": [
+            "Iónica",
+            "Covalente molecular",
+            "Metálica",
+            "Ninguna"
+          ],
+          "correct": 2,
+          "explanation": "Electrones libres."
+        },
+        {
+          "type": "quiz",
+          "question": "El cuarzo (SiO₂) tiene un punto de fusión muy alto porque:",
+          "options": [
+            "Es iónico",
+            "Es una red covalente",
+            "Es metálico",
+            "Tiene puentes de hidrógeno"
+          ],
+          "correct": 1,
+          "explanation": "Red covalente gigante."
+        },
+        {
+          "type": "quiz",
+          "question": "Li₂O es un ejemplo de compuesto:",
+          "options": [
+            "Covalente",
+            "Iónico",
+            "Metálico",
+            "Dativo"
+          ],
+          "correct": 1,
+          "explanation": "Metal + no metal."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué sustancia es un aislante, excepto una forma especial?",
+          "options": [
+            "Los metales",
+            "Los covalentes, excepto el grafito",
+            "Los iónicos fundidos",
+            "El mercurio"
+          ],
+          "correct": 1,
+          "explanation": "Grafito: excepción."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,588 @@
+{
+  "id": "f03-cinematica",
+  "title": "Cinemática",
+  "description": "Posición, desplazamiento, velocidad y aceleración; MRU, MRUV, caída libre, movimiento parabólico y circular",
+  "lessons": [
+    {
+      "id": "l01-conceptos",
+      "title": "Conceptos de cinemática",
+      "summary": "Posición, desplazamiento, distancia, rapidez, velocidad media e instantánea, aceleración.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Definición",
+            "Tipo"
+          ],
+          "rows": [
+            [
+              "Posición x",
+              "Dónde está respecto a un origen",
+              "Vector"
+            ],
+            [
+              "Desplazamiento Δx",
+              "x final − x inicial",
+              "Vector"
+            ],
+            [
+              "Distancia recorrida",
+              "Longitud total del camino",
+              "Escalar"
+            ],
+            [
+              "Velocidad media",
+              "v = Δx/Δt",
+              "Vector"
+            ],
+            [
+              "Rapidez media",
+              "distancia/tiempo",
+              "Escalar"
+            ],
+            [
+              "Velocidad instantánea",
+              "v = dx/dt (derivada)",
+              "Vector"
+            ],
+            [
+              "Aceleración",
+              "a = Δv/Δt = dv/dt",
+              "Vector"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Caminas 300 m al este y regresas 100 m al oeste en 5 min. Distancia = 400 m; desplazamiento = 200 m al este. Rapidez media = 400/300 = 1,33 m/s; velocidad media = 200/300 = 0,67 m/s al este.",
+          "title": "Distancia vs desplazamiento"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La velocidad instantánea es la **derivada** de la posición y la aceleración es la derivada de la velocidad. La cinemática es una aplicación directa del cálculo.",
+          "title": "Conexión con Cálculo"
+        },
+        {
+          "type": "quiz",
+          "question": "Una vuelta completa a una pista de 400 m: el desplazamiento es:",
+          "options": [
+            "400 m",
+            "0 m",
+            "200 m",
+            "800 m"
+          ],
+          "correct": 1,
+          "explanation": "Vuelves al punto inicial."
+        },
+        {
+          "type": "quiz",
+          "question": "La aceleración es la razón de cambio de:",
+          "options": [
+            "La posición",
+            "La velocidad",
+            "La distancia",
+            "El tiempo"
+          ],
+          "correct": 1,
+          "explanation": "a = dv/dt."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es escalar?",
+          "options": [
+            "Velocidad",
+            "Rapidez",
+            "Desplazamiento",
+            "Aceleración"
+          ],
+          "correct": 1,
+          "explanation": "Solo magnitud."
+        }
+      ]
+    },
+    {
+      "id": "l02-mru",
+      "title": "Movimiento rectilíneo uniforme (MRU)",
+      "summary": "Velocidad constante, ecuación y gráficas.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "x = x₀ + v·t        (v constante, a = 0)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Gráfica",
+            "Forma",
+            "Qué indica"
+          ],
+          "rows": [
+            [
+              "x vs t",
+              "Recta inclinada",
+              "La pendiente es la velocidad"
+            ],
+            [
+              "v vs t",
+              "Recta horizontal",
+              "El área bajo la recta es el desplazamiento"
+            ],
+            [
+              "a vs t",
+              "Sobre el eje (a = 0)",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Dos buses salen a la vez de ciudades separadas 120 km, uno hacia el otro, a 50 km/h y 70 km/h. Se encuentran cuando 50t + 70t = 120 → t = 1 h, a 50 km de la primera ciudad.",
+          "title": "Problema de encuentro"
+        },
+        {
+          "type": "quiz",
+          "question": "En MRU, la aceleración es:",
+          "options": [
+            "Constante y positiva",
+            "Cero",
+            "Variable",
+            "Igual a g"
+          ],
+          "correct": 1,
+          "explanation": "Velocidad constante."
+        },
+        {
+          "type": "quiz",
+          "question": "Un auto a 20 m/s recorre en 15 s:",
+          "options": [
+            "300 m",
+            "35 m",
+            "1,33 m",
+            "150 m"
+          ],
+          "correct": 0,
+          "explanation": "x = vt."
+        },
+        {
+          "type": "quiz",
+          "question": "En la gráfica x vs t de un MRU, la pendiente es:",
+          "options": [
+            "La aceleración",
+            "La velocidad",
+            "El tiempo",
+            "Cero"
+          ],
+          "correct": 1,
+          "explanation": "Δx/Δt."
+        }
+      ]
+    },
+    {
+      "id": "l03-mruv",
+      "title": "Movimiento rectilíneo uniformemente variado (MRUV)",
+      "summary": "Las cuatro ecuaciones y cómo elegir la correcta.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "v = v₀ + a·t",
+          "caption": "(1) sin x"
+        },
+        {
+          "type": "formula",
+          "expression": "x = x₀ + v₀·t + ½·a·t²",
+          "caption": "(2) sin v"
+        },
+        {
+          "type": "formula",
+          "expression": "v² = v₀² + 2a·(x − x₀)",
+          "caption": "(3) sin t"
+        },
+        {
+          "type": "formula",
+          "expression": "x − x₀ = [(v₀ + v)/2]·t",
+          "caption": "(4) sin a"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Haz una lista de los 5 datos posibles (Δx, v₀, v, a, t). Siempre conoces 3. Elige la ecuación que **no** contiene el dato que no te dan ni te piden.",
+          "title": "Cómo elegir la ecuación"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un auto a 25 m/s frena con a = −5 m/s². ¿Distancia de frenado? Datos: v₀ = 25, v = 0, a = −5; no interesa t → ecuación (3): 0 = 625 + 2(−5)Δx → **Δx = 62,5 m**. Tiempo: 0 = 25 − 5t → t = 5 s.",
+          "title": "Distancia de frenado"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Las distancias de visibilidad de frenado en el diseño de carreteras se calculan con estas ecuaciones (más un tiempo de reacción del conductor ≈ 2,5 s)."
+        },
+        {
+          "type": "quiz",
+          "question": "Un auto parte del reposo con a = 2 m/s². Velocidad a los 5 s:",
+          "options": [
+            "10 m/s",
+            "5 m/s",
+            "2,5 m/s",
+            "25 m/s"
+          ],
+          "correct": 0,
+          "explanation": "v = at."
+        },
+        {
+          "type": "quiz",
+          "question": "Del reposo con a = 3 m/s², distancia en 4 s:",
+          "options": [
+            "12 m",
+            "24 m",
+            "48 m",
+            "6 m"
+          ],
+          "correct": 1,
+          "explanation": "½·3·16."
+        },
+        {
+          "type": "quiz",
+          "question": "Si no te dan ni piden el tiempo, usas:",
+          "options": [
+            "v = v₀ + at",
+            "v² = v₀² + 2aΔx",
+            "x = vt",
+            "x = ½at²"
+          ],
+          "correct": 1,
+          "explanation": "Ecuación sin t."
+        },
+        {
+          "type": "quiz",
+          "question": "Un auto a 20 m/s frena a −4 m/s². Distancia de frenado:",
+          "options": [
+            "50 m",
+            "100 m",
+            "25 m",
+            "80 m"
+          ],
+          "correct": 0,
+          "explanation": "400/8."
+        }
+      ]
+    },
+    {
+      "id": "l04-caida",
+      "title": "Caída libre y lanzamiento vertical",
+      "summary": "MRUV con a = −g.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "g = 9,81 m/s² (hacia abajo)        v = v₀ − g·t        y = y₀ + v₀·t − ½·g·t²        v² = v₀² − 2g·(y − y₀)",
+          "caption": "Eje y hacia arriba positivo."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Resultado clave",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Tiempo de subida",
+              "t = v₀/g"
+            ],
+            [
+              "Altura máxima (sobre el punto de lanzamiento)",
+              "h = v₀²/(2g)"
+            ],
+            [
+              "Velocidad en la cima",
+              "0 (pero a = −g ≠ 0)"
+            ],
+            [
+              "Tiempo de vuelo (vuelve al mismo nivel)",
+              "2v₀/g"
+            ],
+            [
+              "Velocidad al volver al punto de lanzamiento",
+              "−v₀ (misma rapidez, sentido opuesto)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En el punto más alto la **velocidad** es cero pero la **aceleración sigue siendo g**. Si la aceleración fuera cero ahí, el objeto se quedaría flotando.",
+          "title": "Error común"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Se lanza una piedra hacia arriba a 15 m/s desde un puente de 20 m. Altura máxima: 15²/19,62 = 11,47 m sobre el puente. Tiempo hasta el agua: −20 = 15t − 4,905t² → **t = 4,05 s**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "quiz",
+          "question": "En la altura máxima, la aceleración es:",
+          "options": [
+            "0",
+            "9,81 m/s² hacia abajo",
+            "Hacia arriba",
+            "Infinita"
+          ],
+          "correct": 1,
+          "explanation": "Siempre g."
+        },
+        {
+          "type": "quiz",
+          "question": "Altura máxima con v₀ = 19,62 m/s:",
+          "options": [
+            "19,62 m",
+            "9,81 m",
+            "39,24 m",
+            "1 m"
+          ],
+          "correct": 0,
+          "explanation": "v₀²/(2g) = 384,9/19,62."
+        },
+        {
+          "type": "quiz",
+          "question": "Un objeto se suelta desde 45 m (g ≈ 10). Tiempo de caída:",
+          "options": [
+            "3 s",
+            "4,5 s",
+            "9 s",
+            "2 s"
+          ],
+          "correct": 0,
+          "explanation": "45 = 5t²."
+        }
+      ]
+    },
+    {
+      "id": "l05-proyectiles",
+      "title": "Movimiento parabólico (proyectiles)",
+      "summary": "Independencia de los movimientos horizontal (MRU) y vertical (MRUV).",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si disparas una bala horizontalmente y al mismo tiempo dejas caer otra desde la misma altura, **llegan al suelo al mismo tiempo**. El movimiento horizontal no afecta al vertical: se estudian por separado.",
+          "title": "La idea clave"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Eje",
+            "Movimiento",
+            "Ecuaciones"
+          ],
+          "rows": [
+            [
+              "Horizontal x",
+              "MRU (sin aceleración)",
+              "vx = v₀ cos θ;  x = v₀ cos θ · t"
+            ],
+            [
+              "Vertical y",
+              "MRUV con a = −g",
+              "vy = v₀ sen θ − gt;  y = y₀ + v₀ sen θ · t − ½gt²"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Resultado (lanzamiento y llegada al mismo nivel)",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Tiempo de vuelo",
+              "T = 2v₀ sen θ/g"
+            ],
+            [
+              "Altura máxima",
+              "H = (v₀ sen θ)²/(2g)"
+            ],
+            [
+              "Alcance",
+              "R = v₀² sen 2θ/g"
+            ],
+            [
+              "Alcance máximo",
+              "Con θ = 45°"
+            ],
+            [
+              "Ángulos complementarios",
+              "30° y 60° dan el mismo alcance"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "v₀ = 20 m/s, θ = 45°: vx = vy₀ = 14,14 m/s. T = 2·14,14/9,81 = 2,88 s. H = 14,14²/19,62 = 10,2 m. R = 400·1/9,81 = **40,8 m**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "interactive",
+          "widget": "fis_projectile",
+          "title": "Laboratorio de proyectiles"
+        },
+        {
+          "type": "quiz",
+          "question": "En un proyectil, la velocidad horizontal:",
+          "options": [
+            "Aumenta",
+            "Disminuye",
+            "Es constante",
+            "Es cero"
+          ],
+          "correct": 2,
+          "explanation": "MRU en x."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué ángulo da el máximo alcance (mismo nivel)?",
+          "options": [
+            "30°",
+            "45°",
+            "60°",
+            "90°"
+          ],
+          "correct": 1,
+          "explanation": "sen 2θ = 1."
+        },
+        {
+          "type": "quiz",
+          "question": "En el punto más alto, la velocidad del proyectil es:",
+          "options": [
+            "Cero",
+            "Solo horizontal",
+            "Solo vertical",
+            "Máxima"
+          ],
+          "correct": 1,
+          "explanation": "vy = 0, vx sigue."
+        },
+        {
+          "type": "quiz",
+          "question": "Alcance con v₀ = 10 m/s, θ = 45° (g = 10):",
+          "options": [
+            "10 m",
+            "5 m",
+            "20 m",
+            "1 m"
+          ],
+          "correct": 0,
+          "explanation": "100·1/10."
+        }
+      ]
+    },
+    {
+      "id": "l06-circular",
+      "title": "Movimiento circular",
+      "summary": "Período, frecuencia, velocidad angular y aceleración centrípeta.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Magnitud",
+            "Fórmula",
+            "Unidad"
+          ],
+          "rows": [
+            [
+              "Período T",
+              "Tiempo de una vuelta",
+              "s"
+            ],
+            [
+              "Frecuencia f",
+              "f = 1/T",
+              "Hz (vueltas/s)"
+            ],
+            [
+              "Velocidad angular ω",
+              "ω = 2π/T = 2πf",
+              "rad/s"
+            ],
+            [
+              "Velocidad lineal (tangencial)",
+              "v = ω·r",
+              "m/s"
+            ],
+            [
+              "Aceleración centrípeta",
+              "ac = v²/r = ω²r (hacia el centro)",
+              "m/s²"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "En una curva, aunque el velocímetro marque siempre 60 km/h, la **dirección** de la velocidad cambia: hay aceleración (hacia el centro). Por eso sientes que te empuja hacia afuera: tu cuerpo quiere seguir recto.",
+          "title": "Analogía"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El **peralte** de las curvas de carretera se diseña para proveer la fuerza centrípeta m·v²/r. Una curva de radio 100 m a 60 km/h (16,7 m/s) requiere ac = 2,78 m/s²."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Una rueda de 0,3 m de radio gira a 120 rpm: f = 2 Hz; ω = 4π ≈ 12,57 rad/s; v = 3,77 m/s; ac = 47,4 m/s².",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "quiz",
+          "question": "Si T = 0,5 s, f =",
+          "options": [
+            "0,5 Hz",
+            "2 Hz",
+            "5 Hz",
+            "1 Hz"
+          ],
+          "correct": 1,
+          "explanation": "1/T."
+        },
+        {
+          "type": "quiz",
+          "question": "La aceleración centrípeta apunta:",
+          "options": [
+            "Hacia afuera",
+            "Hacia el centro",
+            "Tangente",
+            "Hacia arriba"
+          ],
+          "correct": 1,
+          "explanation": "Centrípeta = busca el centro."
+        },
+        {
+          "type": "quiz",
+          "question": "v = 10 m/s en una curva de r = 50 m: ac =",
+          "options": [
+            "2 m/s²",
+            "5 m/s²",
+            "0,2 m/s²",
+            "500 m/s²"
+          ],
+          "correct": 0,
+          "explanation": "100/50."
+        }
+      ]
+    }
+  ]
+}

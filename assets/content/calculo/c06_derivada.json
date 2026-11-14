@@ -1,0 +1,1754 @@
+{
+  "id": "c06-derivada",
+  "title": "La derivada",
+  "description": "Concepto (tangente y velocidad), definición por límite, notaciones, derivabilidad, reglas de derivación, regla de la cadena, derivadas trigonométricas, exponenciales, logarítmicas, inversas y de orden superior",
+  "lessons": [
+    {
+      "id": "l01-concepto",
+      "title": "¿Qué es la derivada?",
+      "summary": "El problema de la tangente y el de la velocidad instantánea.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Viajas de Cuenca a Azogues (≈ 30 km) en 40 minutos: tu velocidad **promedio** fue 45 km/h. Pero el velocímetro marcó distintas velocidades en cada instante. La **derivada** es lo que marca el velocímetro: la velocidad en un **instante**. Se obtiene calculando velocidades promedio en intervalos de tiempo cada vez más cortos: un **límite**.",
+          "title": "Analogía del velocímetro"
+        },
+        {
+          "type": "heading",
+          "text": "El problema de la recta tangente"
+        },
+        {
+          "type": "text",
+          "text": "Una **recta secante** corta a la curva en dos puntos P y Q. Su pendiente es la razón de cambio promedio:"
+        },
+        {
+          "type": "formula",
+          "expression": "m(sec) = [f(x + h) − f(x)] / h",
+          "caption": "h = distancia horizontal entre P y Q."
+        },
+        {
+          "type": "text",
+          "text": "Si acercamos Q a P (h → 0), la secante gira hasta convertirse en la **recta tangente**: la recta que «roza» la curva en P y tiene su misma inclinación ahí."
+        },
+        {
+          "type": "formula",
+          "expression": "f′(x) = lím (h→0) [f(x + h) − f(x)] / h",
+          "caption": "La derivada = pendiente de la recta tangente = razón de cambio instantánea."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Si f representa…",
+            "f′ representa…",
+            "Unidades"
+          ],
+          "rows": [
+            [
+              "Posición s(t) (m)",
+              "Velocidad v(t)",
+              "m/s"
+            ],
+            [
+              "Velocidad v(t)",
+              "Aceleración",
+              "m/s²"
+            ],
+            [
+              "Volumen de agua V(t) en un tanque",
+              "Caudal de llenado",
+              "m³/s"
+            ],
+            [
+              "Costo C(q) de producir q unidades",
+              "Costo marginal",
+              "$/unidad"
+            ],
+            [
+              "Altura de un terreno y(x)",
+              "Pendiente del terreno",
+              "m/m (×100 = %)"
+            ],
+            [
+              "Deflexión de una viga y(x)",
+              "Giro (pendiente) de la viga",
+              "rad"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si haces zoom muchísimas veces sobre una curva suave en un punto, se ve como una **recta**: esa recta es la tangente, y su pendiente es la derivada. Por eso la Tierra parece plana cuando estás parado en ella.",
+          "title": "Lupa infinita"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_tangent",
+          "title": "De la secante a la tangente: haz h → 0",
+          "params": {
+            "preset": 0
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "La derivada de f en un punto es:",
+          "options": [
+            "El valor de f en ese punto",
+            "La pendiente de la recta tangente en ese punto",
+            "El área bajo f",
+            "El límite de f"
+          ],
+          "correct": 1,
+          "explanation": "Interpretación geométrica."
+        },
+        {
+          "type": "quiz",
+          "question": "Si s(t) es la posición, s′(t) es:",
+          "options": [
+            "La aceleración",
+            "La velocidad",
+            "La distancia total",
+            "El tiempo"
+          ],
+          "correct": 1,
+          "explanation": "Razón de cambio de la posición."
+        },
+        {
+          "type": "quiz",
+          "question": "La pendiente de una secante entre x y x + h es:",
+          "options": [
+            "f(x + h) − f(x)",
+            "[f(x + h) − f(x)]/h",
+            "f(x)/h",
+            "h/[f(x + h) − f(x)]"
+          ],
+          "correct": 1,
+          "explanation": "Δy/Δx."
+        },
+        {
+          "type": "quiz",
+          "question": "Las unidades de la derivada del volumen (m³) respecto al tiempo (s) son:",
+          "options": [
+            "m³",
+            "m³/s",
+            "s/m³",
+            "m/s"
+          ],
+          "correct": 1,
+          "explanation": "Unidades de y entre unidades de x."
+        },
+        {
+          "type": "quiz",
+          "question": "Para pasar de secante a tangente se hace:",
+          "options": [
+            "h → ∞",
+            "h → 0",
+            "h = 1",
+            "x → 0"
+          ],
+          "correct": 1,
+          "explanation": "Q se acerca a P."
+        }
+      ]
+    },
+    {
+      "id": "l02-definicion",
+      "title": "Derivar con la definición",
+      "summary": "Calcular f′ con el límite, paso a paso, para varias funciones.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Escribe f(x + h) (reemplaza cada x por (x + h)).",
+            "Calcula f(x + h) − f(x) y simplifica.",
+            "Divide entre h (debe poder cancelarse una h).",
+            "Toma el límite h → 0."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x². f(x + h) − f(x) = x² + 2xh + h² − x² = 2xh + h². Dividir: 2x + h. Límite: **f′(x) = 2x**.",
+          "title": "Ejemplo 1: x²"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = 3x² − 5x + 2. f(x + h) − f(x) = 3(2xh + h²) − 5h = 6xh + 3h² − 5h. Dividir: 6x + 3h − 5 → **f′(x) = 6x − 5**.",
+          "title": "Ejemplo 2: cuadrática"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = 1/x. [1/(x + h) − 1/x]/h = [(x − (x + h))/(x(x + h))]/h = −h/[h·x(x + h)] = −1/[x(x + h)] → **f′(x) = −1/x²**.",
+          "title": "Ejemplo 3: 1/x"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = √x. [√(x + h) − √x]/h · [√(x + h) + √x]/[√(x + h) + √x] = h/[h(√(x + h) + √x)] → **f′(x) = 1/(2√x)**.",
+          "title": "Ejemplo 4: √x (conjugado)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x³. (x + h)³ − x³ = 3x²h + 3xh² + h³. Dividir entre h: 3x² + 3xh + h² → **f′(x) = 3x²**.",
+          "title": "Ejemplo 5: x³"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = sen x. [sen(x + h) − sen x]/h = [sen x cos h + cos x sen h − sen x]/h = −sen x·(1 − cos h)/h + cos x·(sen h/h) → −sen x·0 + cos x·1 = **cos x**. Usa los dos límites trigonométricos notables.",
+          "title": "Ejemplo 6: sen x"
+        },
+        {
+          "type": "formula",
+          "expression": "f′(a) = lím (x→a) [f(x) − f(a)]/(x − a)",
+          "caption": "Forma alternativa de la definición (derivada en un punto concreto)."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Observa el patrón: x² → 2x, x³ → 3x², x^(1/2) → (1/2)x^(−1/2), x⁻¹ → −x⁻². ¡Es la **regla de la potencia**, que verás en la próxima lección y te ahorrará todo este trabajo!",
+          "title": "Patrón"
+        },
+        {
+          "type": "quiz",
+          "question": "Con la definición, la derivada de f(x) = 5x + 3 es:",
+          "options": [
+            "5x",
+            "5",
+            "3",
+            "8"
+          ],
+          "correct": 1,
+          "explanation": "[5(x + h) + 3 − 5x − 3]/h = 5."
+        },
+        {
+          "type": "quiz",
+          "question": "Al derivar x² con la definición, tras dividir entre h queda:",
+          "options": [
+            "2x + h",
+            "x²",
+            "2x",
+            "h"
+          ],
+          "correct": 0,
+          "explanation": "Luego h → 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Con la definición, (1/x)′ =",
+          "options": [
+            "1/x²",
+            "−1/x²",
+            "ln x",
+            "−1/x"
+          ],
+          "correct": 1,
+          "explanation": "Ejemplo 3."
+        },
+        {
+          "type": "quiz",
+          "question": "Para derivar √x con la definición se usa:",
+          "options": [
+            "Factorización",
+            "El conjugado",
+            "L'Hôpital",
+            "La cadena"
+          ],
+          "correct": 1,
+          "explanation": "Racionalizar el numerador."
+        },
+        {
+          "type": "quiz",
+          "question": "Derivada de f(x) = x² − 4x en x = 3 usando f′(x) = 2x − 4:",
+          "options": [
+            "2",
+            "−1",
+            "6",
+            "0"
+          ],
+          "correct": 0,
+          "explanation": "6 − 4 = 2."
+        }
+      ]
+    },
+    {
+      "id": "l03-notacion",
+      "title": "Notaciones y derivabilidad",
+      "summary": "f′, dy/dx, Df; cuándo una función NO es derivable.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Notación",
+            "Autor",
+            "Se lee"
+          ],
+          "rows": [
+            [
+              "f′(x), y′",
+              "Lagrange",
+              "«f prima de x»"
+            ],
+            [
+              "dy/dx, df/dx, (d/dx)f(x)",
+              "Leibniz",
+              "«derivada de y respecto a x»"
+            ],
+            [
+              "Dₓf, Df",
+              "Euler",
+              "«D de f»"
+            ],
+            [
+              "ẏ",
+              "Newton",
+              "«y punto» (derivada respecto al tiempo; muy usada en física y en Mecánica)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "dy/dx recuerda que la derivada viene de Δy/Δx (cambio en y entre cambio en x) cuando el cambio es infinitamente pequeño. NO es una fracción común, pero muchas veces se comporta como una (te será útil en la regla de la cadena y en razones relacionadas).",
+          "title": "Leibniz"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "f es **derivable** en a si f′(a) existe (el límite existe y es finito). Si f es derivable en a, entonces **f es continua en a**. Lo contrario NO es cierto: hay funciones continuas que no son derivables.",
+          "title": "Derivabilidad y continuidad"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Dónde NO es derivable",
+            "Por qué",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Pico o esquina",
+              "Las pendientes por izquierda y derecha son distintas",
+              "|x| en x = 0 (pendiente −1 y +1)"
+            ],
+            [
+              "Discontinuidad",
+              "Si no es continua, no es derivable",
+              "Salto de ⌊x⌋ en los enteros"
+            ],
+            [
+              "Tangente vertical",
+              "La pendiente es infinita",
+              "∛x en x = 0"
+            ],
+            [
+              "Cúspide",
+              "Las pendientes laterales → ±∞ con signos opuestos",
+              "x^(2/3) en x = 0"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Derivadas laterales:  f′₋(a) = lím (h→0⁻) [f(a + h) − f(a)]/h;   f′₊(a) = lím (h→0⁺) …",
+          "caption": "f es derivable en a si ambas existen y son iguales."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = { x² si x ≤ 1; 2x − 1 si x > 1 }. Continua en 1 (ambos lados dan 1). Pendientes: por la izquierda 2x → 2; por la derecha 2. Iguales → **derivable** en 1: la unión es suave.",
+          "title": "Por tramos"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_tangent",
+          "title": "Prueba con |x| cerca de 0",
+          "params": {
+            "preset": 6
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "dy/dx se lee:",
+          "options": [
+            "d por y entre d por x",
+            "Derivada de y respecto a x",
+            "y dividido x",
+            "Diferencia de y"
+          ],
+          "correct": 1,
+          "explanation": "Notación de Leibniz."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f es derivable en a, entonces:",
+          "options": [
+            "f es continua en a",
+            "f no es continua en a",
+            "f(a) = 0",
+            "f′(a) = 0"
+          ],
+          "correct": 0,
+          "explanation": "Derivable ⇒ continua."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Es derivable |x| en x = 0?",
+          "options": [
+            "Sí",
+            "No: tiene un pico",
+            "Solo por la derecha",
+            "Sí, vale 0"
+          ],
+          "correct": 1,
+          "explanation": "Laterales −1 y 1."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Una función continua es siempre derivable?",
+          "options": [
+            "Sí",
+            "No (ej. picos)",
+            "Solo los polinomios",
+            "Nunca"
+          ],
+          "correct": 1,
+          "explanation": "|x| es continua y no derivable en 0."
+        },
+        {
+          "type": "quiz",
+          "question": "∛x en x = 0 tiene:",
+          "options": [
+            "Un pico",
+            "Una tangente vertical",
+            "Un salto",
+            "Derivada 0"
+          ],
+          "correct": 1,
+          "explanation": "Pendiente infinita."
+        }
+      ]
+    },
+    {
+      "id": "l04-reglas-basicas",
+      "title": "Reglas básicas: constante, potencia y suma",
+      "summary": "Derivar polinomios y potencias en segundos.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Regla",
+            "Fórmula",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Constante",
+              "(c)′ = 0",
+              "(7)′ = 0; (π²)′ = 0"
+            ],
+            [
+              "Identidad",
+              "(x)′ = 1",
+              "—"
+            ],
+            [
+              "**Potencia**",
+              "(xⁿ)′ = n·xⁿ⁻¹  (cualquier n real)",
+              "(x⁵)′ = 5x⁴"
+            ],
+            [
+              "Constante por función",
+              "(c·f)′ = c·f′",
+              "(4x³)′ = 12x²"
+            ],
+            [
+              "Suma y resta",
+              "(f ± g)′ = f′ ± g′",
+              "(x² + 3x − 1)′ = 2x + 3"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El exponente «**baja**» multiplicando y al exponente se le **resta 1**. Una constante sola tiene derivada 0 porque no cambia: su gráfica es horizontal (pendiente 0).",
+          "title": "Regla de la potencia en palabras"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Antes de derivar, **reescribe** raíces y fracciones como potencias: √x = x^(1/2) → (1/2)x^(−1/2) = 1/(2√x); 1/x³ = x⁻³ → −3x⁻⁴ = −3/x⁴; 5/∛x = 5x^(−1/3) → −(5/3)x^(−4/3).",
+          "title": "Reescribir primero"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Reescrita",
+            "Derivada",
+            "Simplificada"
+          ],
+          "rows": [
+            [
+              "√x",
+              "x^(1/2)",
+              "(1/2)x^(−1/2)",
+              "1/(2√x)"
+            ],
+            [
+              "1/x",
+              "x⁻¹",
+              "−x⁻²",
+              "−1/x²"
+            ],
+            [
+              "1/x²",
+              "x⁻²",
+              "−2x⁻³",
+              "−2/x³"
+            ],
+            [
+              "x√x",
+              "x^(3/2)",
+              "(3/2)x^(1/2)",
+              "(3/2)√x"
+            ],
+            [
+              "∛(x²)",
+              "x^(2/3)",
+              "(2/3)x^(−1/3)",
+              "2/(3∛x)"
+            ],
+            [
+              "(x² + 1)/x",
+              "x + x⁻¹",
+              "1 − x⁻²",
+              "1 − 1/x²"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = 4x⁵ − 3x² + 7x − 9 + 2/x → f′(x) = 20x⁴ − 6x + 7 − 2/x².",
+          "title": "Ejemplo completo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "(x²·x³)′ NO es 2x·3x². Primero se simplifica (x⁵ → 5x⁴) o se usa la regla del producto. Tampoco se deriva arriba y abajo por separado en un cociente."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_tangent",
+          "title": "Comprueba: (x³ − 3x)′ = 3x² − 3",
+          "params": {
+            "preset": 1
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "(x⁷)′ =",
+          "options": [
+            "7x⁶",
+            "x⁶",
+            "7x⁷",
+            "6x⁷"
+          ],
+          "correct": 0,
+          "explanation": "n·xⁿ⁻¹."
+        },
+        {
+          "type": "quiz",
+          "question": "(5)′ =",
+          "options": [
+            "5",
+            "1",
+            "0",
+            "x"
+          ],
+          "correct": 2,
+          "explanation": "Constante."
+        },
+        {
+          "type": "quiz",
+          "question": "(3x⁴ − 2x + 8)′ =",
+          "options": [
+            "12x³ − 2",
+            "12x³ − 2x",
+            "3x³ − 2",
+            "12x⁴ − 2"
+          ],
+          "correct": 0,
+          "explanation": "Término a término."
+        },
+        {
+          "type": "quiz",
+          "question": "(√x)′ =",
+          "options": [
+            "√x/2",
+            "1/(2√x)",
+            "2√x",
+            "1/√x"
+          ],
+          "correct": 1,
+          "explanation": "x^(1/2)."
+        },
+        {
+          "type": "quiz",
+          "question": "(1/x⁴)′ =",
+          "options": [
+            "1/(4x³)",
+            "−4/x⁵",
+            "−4/x³",
+            "4x³"
+          ],
+          "correct": 1,
+          "explanation": "x⁻⁴ → −4x⁻⁵."
+        },
+        {
+          "type": "quiz",
+          "question": "(x^(2/3))′ =",
+          "options": [
+            "(2/3)x^(−1/3)",
+            "(2/3)x^(1/3)",
+            "(3/2)x^(1/2)",
+            "x^(−1/3)"
+          ],
+          "correct": 0,
+          "explanation": "2/3 − 1 = −1/3."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f(x) = 2x³, f′(2) =",
+          "options": [
+            "16",
+            "24",
+            "12",
+            "48"
+          ],
+          "correct": 1,
+          "explanation": "f′ = 6x² → 24."
+        }
+      ]
+    },
+    {
+      "id": "l05-producto-cociente",
+      "title": "Regla del producto y del cociente",
+      "summary": "Derivar productos y divisiones de funciones.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "(f·g)′ = f′·g + f·g′",
+          "caption": "Regla del producto: «la derivada del primero por el segundo sin derivar, más el primero sin derivar por la derivada del segundo»."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un terreno rectangular de lados f y g crece. El área cambia por dos franjas: una por el crecimiento de f (f′·g) y otra por el crecimiento de g (f·g′). La esquinita (f′g′) es despreciable cuando los cambios son infinitamente pequeños.",
+          "title": "Analogía del rectángulo"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "(x²·sen x)′ = 2x·sen x + x²·cos x.",
+          "title": "Ejemplo producto"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "[(x² + 1)(3x − 2)]′ = 2x(3x − 2) + (x² + 1)·3 = 6x² − 4x + 3x² + 3 = 9x² − 4x + 3.",
+          "title": "Ejemplo producto"
+        },
+        {
+          "type": "formula",
+          "expression": "(f/g)′ = (f′·g − f·g′) / g²",
+          "caption": "Regla del cociente: «la de arriba derivada por la de abajo, MENOS la de arriba por la de abajo derivada, todo sobre la de abajo al cuadrado»."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Para el orden del cociente: «**abajo · d(arriba) − arriba · d(abajo), sobre abajo al cuadrado**». En el cociente el orden importa (hay una resta); en el producto no.",
+          "title": "Mnemotecnia"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "[(x + 1)/(x − 1)]′ = [1·(x − 1) − (x + 1)·1]/(x − 1)² = **−2/(x − 1)²**.",
+          "title": "Ejemplo cociente"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "(tan x)′ = (sen x/cos x)′ = [cos x·cos x − sen x·(−sen x)]/cos²x = (cos²x + sen²x)/cos²x = 1/cos²x = **sec²x**.",
+          "title": "Derivada de la tangente"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si el denominador es una constante, NO uses la regla del cociente: (x³/5)′ = (1/5)(3x²) = 3x²/5. Y si arriba hay una constante, conviene reescribir: (3/x²)′ = (3x⁻²)′ = −6/x³.",
+          "title": "Atajos"
+        },
+        {
+          "type": "quiz",
+          "question": "(x³·eˣ)′ =",
+          "options": [
+            "3x²eˣ",
+            "3x²eˣ + x³eˣ",
+            "x³eˣ",
+            "3x²·eˣ·x³"
+          ],
+          "correct": 1,
+          "explanation": "Producto."
+        },
+        {
+          "type": "quiz",
+          "question": "[x/(x + 1)]′ =",
+          "options": [
+            "1/(x + 1)²",
+            "−1/(x + 1)²",
+            "x/(x + 1)²",
+            "1"
+          ],
+          "correct": 0,
+          "explanation": "[(x + 1) − x]/(x + 1)²."
+        },
+        {
+          "type": "quiz",
+          "question": "(f·g)′ es igual a:",
+          "options": [
+            "f′·g′",
+            "f′g + fg′",
+            "f′g − fg′",
+            "(f′g − fg′)/g²"
+          ],
+          "correct": 1,
+          "explanation": "Regla del producto."
+        },
+        {
+          "type": "quiz",
+          "question": "(tan x)′ =",
+          "options": [
+            "sec x",
+            "sec²x",
+            "cot x",
+            "−csc²x"
+          ],
+          "correct": 1,
+          "explanation": "Por la regla del cociente."
+        },
+        {
+          "type": "quiz",
+          "question": "[(2x + 3)/x²]′ =",
+          "options": [
+            "(2x² − 2x(2x + 3))/x⁴",
+            "2/(2x)",
+            "(2x + 3)/(2x)",
+            "2/x²"
+          ],
+          "correct": 0,
+          "explanation": "Cociente (simplifica a −2(x + 3)/x³)."
+        },
+        {
+          "type": "quiz",
+          "question": "(x²/7)′ =",
+          "options": [
+            "2x/7",
+            "(14x − 0)/49",
+            "Ambas son correctas",
+            "x/7"
+          ],
+          "correct": 2,
+          "explanation": "Las dos dan 2x/7; la primera es más rápida."
+        }
+      ]
+    },
+    {
+      "id": "l06-cadena",
+      "title": "Regla de la cadena",
+      "summary": "Derivar funciones compuestas: «la de afuera por la de adentro».",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "[f(g(x))]′ = f′(g(x))·g′(x)        dy/dx = (dy/du)·(du/dx)",
+          "caption": "Regla de la cadena."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Tres engranajes: A gira 3 veces más rápido que B, y B gira 2 veces más rápido que C. ¿Cuánto más rápido gira A que C? 3 × 2 = **6 veces**. En una función compuesta, las razones de cambio **se multiplican**: dy/dx = (dy/du)(du/dx).",
+          "title": "Analogía de los engranajes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Identifica la función **de afuera** f y la **de adentro** g.",
+            "Deriva la de afuera **dejando intacta la de adentro**: f′(g(x)).",
+            "Multiplica por la derivada de la de adentro: g′(x).",
+            "Si hay más capas, sigue multiplicando (cadena de varios eslabones)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Afuera f(u)",
+            "Adentro u = g(x)",
+            "Derivada"
+          ],
+          "rows": [
+            [
+              "(3x² + 1)⁵",
+              "u⁵",
+              "3x² + 1",
+              "5(3x² + 1)⁴·6x = 30x(3x² + 1)⁴"
+            ],
+            [
+              "√(x² + 9)",
+              "√u",
+              "x² + 9",
+              "[1/(2√(x² + 9))]·2x = x/√(x² + 9)"
+            ],
+            [
+              "sen(4x)",
+              "sen u",
+              "4x",
+              "cos(4x)·4"
+            ],
+            [
+              "cos(x²)",
+              "cos u",
+              "x²",
+              "−sen(x²)·2x"
+            ],
+            [
+              "e^(3x²)",
+              "eᵘ",
+              "3x²",
+              "e^(3x²)·6x"
+            ],
+            [
+              "ln(x² + 1)",
+              "ln u",
+              "x² + 1",
+              "2x/(x² + 1)"
+            ],
+            [
+              "sen²x = (sen x)²",
+              "u²",
+              "sen x",
+              "2 sen x cos x = sen 2x"
+            ],
+            [
+              "1/(2x − 1)³ = (2x − 1)⁻³",
+              "u⁻³",
+              "2x − 1",
+              "−3(2x − 1)⁻⁴·2 = −6/(2x − 1)⁴"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = sen³(2x + 1) = [sen(2x + 1)]³. Capas: cubo → seno → lineal. y′ = 3 sen²(2x + 1) · cos(2x + 1) · 2 = **6 sen²(2x + 1) cos(2x + 1)**.",
+          "title": "Tres capas"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = e^(sen(x²)). y′ = e^(sen(x²)) · cos(x²) · 2x.",
+          "title": "Tres capas"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El error más común es olvidar multiplicar por la derivada de adentro. (sen 5x)′ = 5 cos 5x, NO cos 5x. Pregúntate siempre: «¿lo de adentro es solo x?». Si no, hay cadena.",
+          "title": "El error típico"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Si el radio de una mancha de contaminación crece con el tiempo, r(t), el área A = πr² cambia a razón dA/dt = 2πr·dr/dt. Esa es la regla de la cadena, y es la base de las **razones de cambio relacionadas**."
+        },
+        {
+          "type": "quiz",
+          "question": "[(2x + 1)⁴]′ =",
+          "options": [
+            "4(2x + 1)³",
+            "8(2x + 1)³",
+            "4(2x)³",
+            "(2x + 1)³·2"
+          ],
+          "correct": 1,
+          "explanation": "4(2x + 1)³·2."
+        },
+        {
+          "type": "quiz",
+          "question": "(sen 3x)′ =",
+          "options": [
+            "cos 3x",
+            "3 cos 3x",
+            "−3 cos 3x",
+            "3 sen x"
+          ],
+          "correct": 1,
+          "explanation": "Afuera cos, adentro 3."
+        },
+        {
+          "type": "quiz",
+          "question": "(e^(x²))′ =",
+          "options": [
+            "e^(x²)",
+            "2x·e^(x²)",
+            "x²e^(x²−1)",
+            "2e^(x²)"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        },
+        {
+          "type": "quiz",
+          "question": "[ln(5x)]′ =",
+          "options": [
+            "1/(5x)",
+            "5/x",
+            "1/x",
+            "ln 5"
+          ],
+          "correct": 2,
+          "explanation": "5/(5x) = 1/x."
+        },
+        {
+          "type": "quiz",
+          "question": "[√(1 − x²)]′ =",
+          "options": [
+            "1/(2√(1 − x²))",
+            "−x/√(1 − x²)",
+            "−2x√(1 − x²)",
+            "x/√(1 − x²)"
+          ],
+          "correct": 1,
+          "explanation": "(−2x)/(2√(1 − x²))."
+        },
+        {
+          "type": "quiz",
+          "question": "(cos²x)′ =",
+          "options": [
+            "2 cos x",
+            "−2 cos x sen x",
+            "2 cos x sen x",
+            "sen²x"
+          ],
+          "correct": 1,
+          "explanation": "2 cos x·(−sen x) = −sen 2x."
+        },
+        {
+          "type": "quiz",
+          "question": "Si y = u³ y u = 2x − 1, dy/dx =",
+          "options": [
+            "3u²",
+            "3(2x − 1)²·2",
+            "6x",
+            "3(2x − 1)²"
+          ],
+          "correct": 1,
+          "explanation": "(dy/du)(du/dx)."
+        }
+      ]
+    },
+    {
+      "id": "l07-trigonometricas",
+      "title": "Derivadas de funciones trigonométricas",
+      "summary": "Las seis derivadas y cómo combinarlas.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Derivada",
+            "Con cadena (u = g(x))"
+          ],
+          "rows": [
+            [
+              "sen x",
+              "cos x",
+              "cos u · u′"
+            ],
+            [
+              "cos x",
+              "−sen x",
+              "−sen u · u′"
+            ],
+            [
+              "tan x",
+              "sec²x",
+              "sec²u · u′"
+            ],
+            [
+              "cot x",
+              "−csc²x",
+              "−csc²u · u′"
+            ],
+            [
+              "sec x",
+              "sec x · tan x",
+              "sec u tan u · u′"
+            ],
+            [
+              "csc x",
+              "−csc x · cot x",
+              "−csc u cot u · u′"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Las que empiezan con **c** (cos, cot, csc) tienen derivada **negativa**. Y van en parejas: sen ↔ cos, tan ↔ sec², cot ↔ csc², sec ↔ sec·tan, csc ↔ csc·cot.",
+          "title": "Mnemotecnia"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La derivada de sen x es cos x porque la pendiente de la onda seno es máxima (1) donde sen x cruza el cero hacia arriba (x = 0), cero en sus crestas (x = π/2) y negativa al bajar: exactamente los valores de cos x.",
+          "title": "Por qué"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "(x² cos x)′ = 2x cos x − x² sen x.   (sen x cos x)′ = cos²x − sen²x = cos 2x.   [tan(3x²)]′ = sec²(3x²)·6x.",
+          "title": "Ejemplos"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Estas fórmulas valen solo con x en **radianes**."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_tangent",
+          "title": "Mira cómo la pendiente de sen x dibuja cos x",
+          "params": {
+            "preset": 2
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "(cos x)′ =",
+          "options": [
+            "sen x",
+            "−sen x",
+            "cos x",
+            "−cos x"
+          ],
+          "correct": 1,
+          "explanation": "Negativo."
+        },
+        {
+          "type": "quiz",
+          "question": "(sec x)′ =",
+          "options": [
+            "sec²x",
+            "sec x tan x",
+            "tan²x",
+            "−sec x"
+          ],
+          "correct": 1,
+          "explanation": "Pareja sec·tan."
+        },
+        {
+          "type": "quiz",
+          "question": "[sen(x²)]′ =",
+          "options": [
+            "cos(x²)",
+            "2x cos(x²)",
+            "cos(2x)",
+            "2 sen x cos x"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        },
+        {
+          "type": "quiz",
+          "question": "(cot x)′ =",
+          "options": [
+            "csc²x",
+            "−csc²x",
+            "−tan²x",
+            "sec²x"
+          ],
+          "correct": 1,
+          "explanation": "Empieza con c: negativa."
+        },
+        {
+          "type": "quiz",
+          "question": "(x sen x)′ =",
+          "options": [
+            "cos x",
+            "sen x + x cos x",
+            "x cos x",
+            "sen x − x cos x"
+          ],
+          "correct": 1,
+          "explanation": "Producto."
+        }
+      ]
+    },
+    {
+      "id": "l08-exp-log",
+      "title": "Derivadas exponenciales y logarítmicas",
+      "summary": "eˣ, aˣ, ln x, logₐ x y derivación logarítmica.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Derivada",
+            "Con cadena"
+          ],
+          "rows": [
+            [
+              "eˣ",
+              "eˣ  (¡ella misma!)",
+              "eᵘ · u′"
+            ],
+            [
+              "aˣ",
+              "aˣ · ln a",
+              "aᵘ · ln a · u′"
+            ],
+            [
+              "ln x",
+              "1/x  (x > 0)",
+              "u′/u"
+            ],
+            [
+              "ln|x|",
+              "1/x  (x ≠ 0)",
+              "u′/u"
+            ],
+            [
+              "logₐ x",
+              "1/(x ln a)",
+              "u′/(u ln a)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "eˣ es la única función (salvo múltiplos) cuya pendiente en cada punto es igual a su altura. Por eso describe todo lo que crece «en proporción a lo que ya hay»: poblaciones, intereses, reacciones químicas.",
+          "title": "La magia de eˣ"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "(e^(−2x))′ = −2e^(−2x).   (x eˣ)′ = eˣ + x eˣ = eˣ(1 + x).   (2ˣ)′ = 2ˣ ln 2.   [ln(x² + 3x)]′ = (2x + 3)/(x² + 3x).   [ln(sen x)]′ = cos x/sen x = cot x.",
+          "title": "Ejemplos"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Antes de derivar un logaritmo, **usa sus propiedades para separar**: ln[(x²(x + 1))/√(x − 1)] = 2 ln x + ln(x + 1) − (1/2) ln(x − 1) → derivada: 2/x + 1/(x + 1) − 1/[2(x − 1)]. ¡Mucho más fácil!",
+          "title": "Truco: simplificar primero"
+        },
+        {
+          "type": "heading",
+          "text": "Derivación logarítmica"
+        },
+        {
+          "type": "text",
+          "text": "Sirve para funciones del tipo f(x)^g(x) (variable en la base Y en el exponente) o productos/cocientes muy complicados."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toma ln a ambos lados: ln y = ln(f(x)).",
+            "Simplifica con las propiedades del logaritmo.",
+            "Deriva implícitamente: y′/y = …",
+            "Despeja y′ = y·(…) y reemplaza y."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = xˣ. ln y = x ln x. Derivando: y′/y = ln x + x·(1/x) = ln x + 1. → **y′ = xˣ(ln x + 1)**. (Ni la regla de la potencia ni la exponencial sirven aquí.)",
+          "title": "Ejemplo clásico"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = x^(sen x). ln y = sen x · ln x. y′/y = cos x ln x + sen x/x → y′ = x^(sen x)[cos x ln x + (sen x)/x].",
+          "title": "Otro ejemplo"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_tangent",
+          "title": "eˣ: la pendiente es igual a la altura",
+          "params": {
+            "preset": 3
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "(e^(5x))′ =",
+          "options": [
+            "e^(5x)",
+            "5e^(5x)",
+            "5x e^(5x−1)",
+            "e⁵"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        },
+        {
+          "type": "quiz",
+          "question": "(ln x)′ =",
+          "options": [
+            "ln x",
+            "1/x",
+            "x",
+            "eˣ"
+          ],
+          "correct": 1,
+          "explanation": "Fórmula básica."
+        },
+        {
+          "type": "quiz",
+          "question": "(3ˣ)′ =",
+          "options": [
+            "x·3ˣ⁻¹",
+            "3ˣ ln 3",
+            "3ˣ",
+            "3ˣ/ln 3"
+          ],
+          "correct": 1,
+          "explanation": "aˣ ln a."
+        },
+        {
+          "type": "quiz",
+          "question": "[ln(x³)]′ =",
+          "options": [
+            "1/x³",
+            "3/x",
+            "3x²",
+            "1/(3x)"
+          ],
+          "correct": 1,
+          "explanation": "ln x³ = 3 ln x."
+        },
+        {
+          "type": "quiz",
+          "question": "Para derivar y = xˣ se usa:",
+          "options": [
+            "Regla de la potencia",
+            "Regla exponencial",
+            "Derivación logarítmica",
+            "L'Hôpital"
+          ],
+          "correct": 2,
+          "explanation": "Variable en base y exponente."
+        },
+        {
+          "type": "quiz",
+          "question": "[ln(cos x)]′ =",
+          "options": [
+            "1/cos x",
+            "−tan x",
+            "tan x",
+            "−sen x"
+          ],
+          "correct": 1,
+          "explanation": "−sen x/cos x."
+        }
+      ]
+    },
+    {
+      "id": "l09-inversas",
+      "title": "Derivadas de trigonométricas inversas",
+      "summary": "arcsen, arccos, arctan y compañía.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Derivada",
+            "Con cadena"
+          ],
+          "rows": [
+            [
+              "arcsen x",
+              "1/√(1 − x²)",
+              "u′/√(1 − u²)"
+            ],
+            [
+              "arccos x",
+              "−1/√(1 − x²)",
+              "−u′/√(1 − u²)"
+            ],
+            [
+              "arctan x",
+              "1/(1 + x²)",
+              "u′/(1 + u²)"
+            ],
+            [
+              "arccot x",
+              "−1/(1 + x²)",
+              "−u′/(1 + u²)"
+            ],
+            [
+              "arcsec x",
+              "1/(|x|√(x² − 1))",
+              "u′/(|u|√(u² − 1))"
+            ],
+            [
+              "arccsc x",
+              "−1/(|x|√(x² − 1))",
+              "−u′/(|u|√(u² − 1))"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Se obtienen con **derivación implícita**: si y = arcsen x, entonces sen y = x. Derivando: cos y · y′ = 1 → y′ = 1/cos y = 1/√(1 − sen²y) = **1/√(1 − x²)**. Lo verás en la unidad de derivación implícita.",
+          "title": "De dónde salen"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "[arctan(2x)]′ = 2/(1 + 4x²).   [arcsen(x²)]′ = 2x/√(1 − x⁴).   (x arctan x)′ = arctan x + x/(1 + x²).",
+          "title": "Ejemplos"
+        },
+        {
+          "type": "quiz",
+          "question": "(arctan x)′ =",
+          "options": [
+            "1/(1 + x²)",
+            "1/√(1 − x²)",
+            "sec²x",
+            "−1/(1 + x²)"
+          ],
+          "correct": 0,
+          "explanation": "Fórmula."
+        },
+        {
+          "type": "quiz",
+          "question": "(arcsen x)′ =",
+          "options": [
+            "1/(1 + x²)",
+            "1/√(1 − x²)",
+            "cos x",
+            "−1/√(1 − x²)"
+          ],
+          "correct": 1,
+          "explanation": "Fórmula."
+        },
+        {
+          "type": "quiz",
+          "question": "[arctan(x³)]′ =",
+          "options": [
+            "3x²/(1 + x⁶)",
+            "1/(1 + x⁶)",
+            "3x²/(1 + x²)",
+            "3/(1 + x⁶)"
+          ],
+          "correct": 0,
+          "explanation": "u′/(1 + u²)."
+        }
+      ]
+    },
+    {
+      "id": "l10-orden-superior",
+      "title": "Derivadas de orden superior",
+      "summary": "Segunda, tercera… derivada; aceleración y curvatura.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Orden",
+            "Notaciones",
+            "Significado físico"
+          ],
+          "rows": [
+            [
+              "1.ª",
+              "f′(x), dy/dx",
+              "Velocidad, pendiente"
+            ],
+            [
+              "2.ª",
+              "f″(x), d²y/dx²",
+              "Aceleración; concavidad (curvatura)"
+            ],
+            [
+              "3.ª",
+              "f‴(x), d³y/dx³",
+              "Sobreaceleración («jerk»)"
+            ],
+            [
+              "n-ésima",
+              "f⁽ⁿ⁾(x), dⁿy/dxⁿ",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x⁴ − 3x² + 5: f′ = 4x³ − 6x; f″ = 12x² − 6; f‴ = 24x; f⁽⁴⁾ = 24; f⁽⁵⁾ = 0.",
+          "title": "Polinomio"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "s(t) = t³ − 6t² + 9t (m). v(t) = 3t² − 12t + 9; a(t) = 6t − 12. En t = 1: v = 0 (se detiene un instante) y a = −6 m/s² (frenando hacia atrás).",
+          "title": "Movimiento"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Patrón de derivadas"
+          ],
+          "rows": [
+            [
+              "sen x",
+              "cos x, −sen x, −cos x, sen x, … (ciclo de 4)"
+            ],
+            [
+              "eˣ",
+              "eˣ siempre"
+            ],
+            [
+              "e^(kx)",
+              "kⁿe^(kx)"
+            ],
+            [
+              "ln x",
+              "1/x, −1/x², 2/x³, −6/x⁴ → (−1)ⁿ⁺¹(n − 1)!/xⁿ"
+            ],
+            [
+              "xⁿ (n entero)",
+              "Se anula después de n + 1 derivadas"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En la teoría de vigas: si y(x) es la deflexión, y′ es el giro, EI·y″ es el **momento flector**, EI·y‴ es la **fuerza cortante** y EI·y⁗ es la **carga distribuida**. ¡Toda la resistencia de materiales es derivar!"
+        },
+        {
+          "type": "quiz",
+          "question": "Si f(x) = x³, f″(x) =",
+          "options": [
+            "3x²",
+            "6x",
+            "6",
+            "x"
+          ],
+          "correct": 1,
+          "explanation": "3x² → 6x."
+        },
+        {
+          "type": "quiz",
+          "question": "Si s(t) es la posición, s″(t) es:",
+          "options": [
+            "La velocidad",
+            "La aceleración",
+            "La distancia",
+            "El tiempo"
+          ],
+          "correct": 1,
+          "explanation": "Segunda derivada."
+        },
+        {
+          "type": "quiz",
+          "question": "(sen x)⁽⁴⁾ =",
+          "options": [
+            "cos x",
+            "−sen x",
+            "sen x",
+            "−cos x"
+          ],
+          "correct": 2,
+          "explanation": "Ciclo de 4."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f(x) = e^(2x), f″(x) =",
+          "options": [
+            "2e^(2x)",
+            "4e^(2x)",
+            "e^(2x)",
+            "4xe^(2x)"
+          ],
+          "correct": 1,
+          "explanation": "2² e^(2x)."
+        },
+        {
+          "type": "quiz",
+          "question": "La quinta derivada de x⁴ es:",
+          "options": [
+            "24",
+            "0",
+            "x",
+            "120"
+          ],
+          "correct": 1,
+          "explanation": "Se anula."
+        }
+      ]
+    },
+    {
+      "id": "l11-tabla-practica",
+      "title": "Tabla de derivadas y práctica mixta",
+      "summary": "Todas las fórmulas juntas y ejercicios combinando reglas.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Derivada"
+          ],
+          "rows": [
+            [
+              "c",
+              "0"
+            ],
+            [
+              "xⁿ",
+              "n xⁿ⁻¹"
+            ],
+            [
+              "eˣ",
+              "eˣ"
+            ],
+            [
+              "aˣ",
+              "aˣ ln a"
+            ],
+            [
+              "ln x",
+              "1/x"
+            ],
+            [
+              "logₐ x",
+              "1/(x ln a)"
+            ],
+            [
+              "sen x",
+              "cos x"
+            ],
+            [
+              "cos x",
+              "−sen x"
+            ],
+            [
+              "tan x",
+              "sec²x"
+            ],
+            [
+              "cot x",
+              "−csc²x"
+            ],
+            [
+              "sec x",
+              "sec x tan x"
+            ],
+            [
+              "csc x",
+              "−csc x cot x"
+            ],
+            [
+              "arcsen x",
+              "1/√(1 − x²)"
+            ],
+            [
+              "arccos x",
+              "−1/√(1 − x²)"
+            ],
+            [
+              "arctan x",
+              "1/(1 + x²)"
+            ],
+            [
+              "f·g",
+              "f′g + fg′"
+            ],
+            [
+              "f/g",
+              "(f′g − fg′)/g²"
+            ],
+            [
+              "f(g(x))",
+              "f′(g(x))·g′(x)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Estrategia ante cualquier derivada"
+        },
+        {
+          "type": "list",
+          "items": [
+            "¿Se puede **simplificar** antes? (propiedades de log, reescribir raíces, dividir, expandir).",
+            "¿Cuál es la operación **más externa**? Esa decide la regla principal: suma → término a término; producto → producto; cociente → cociente; composición → cadena.",
+            "Aplica la regla y, dentro de cada pieza, repite el análisis.",
+            "Simplifica el resultado (factor común)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = x²√(x² + 1). Producto: y′ = 2x√(x² + 1) + x²·x/√(x² + 1) = [2x(x² + 1) + x³]/√(x² + 1) = (3x³ + 2x)/√(x² + 1).",
+          "title": "Producto + cadena"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = e^(2x)/(x² + 1). Cociente: y′ = [2e^(2x)(x² + 1) − e^(2x)·2x]/(x² + 1)² = 2e^(2x)(x² − x + 1)/(x² + 1)².",
+          "title": "Cociente + cadena"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = ln[(x + 1)³/(x − 2)] = 3 ln(x + 1) − ln(x − 2) → y′ = 3/(x + 1) − 1/(x − 2).",
+          "title": "Simplificar primero"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = sen(e^(3x)). y′ = cos(e^(3x))·e^(3x)·3.",
+          "title": "Cadena doble"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_tangent",
+          "title": "Verifica cualquier derivada con la gráfica",
+          "params": {
+            "preset": 8
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "[(x² + 1)³]′ =",
+          "options": [
+            "3(x² + 1)²",
+            "6x(x² + 1)²",
+            "3(2x)²",
+            "6x(x² + 1)³"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        },
+        {
+          "type": "quiz",
+          "question": "(x² ln x)′ =",
+          "options": [
+            "2x ln x",
+            "2x ln x + x",
+            "2x/x",
+            "2 + ln x"
+          ],
+          "correct": 1,
+          "explanation": "2x ln x + x²·(1/x)."
+        },
+        {
+          "type": "quiz",
+          "question": "[sen x / x]′ =",
+          "options": [
+            "cos x",
+            "(x cos x − sen x)/x²",
+            "(sen x − x cos x)/x²",
+            "cos x/x"
+          ],
+          "correct": 1,
+          "explanation": "Cociente."
+        },
+        {
+          "type": "quiz",
+          "question": "(e^(sen x))′ =",
+          "options": [
+            "e^(sen x)",
+            "cos x · e^(sen x)",
+            "e^(cos x)",
+            "sen x · e^(sen x − 1)"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        },
+        {
+          "type": "quiz",
+          "question": "[tan(x²)]′ =",
+          "options": [
+            "sec²(x²)",
+            "2x sec²(x²)",
+            "2x tan x",
+            "sec²(2x)"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        },
+        {
+          "type": "quiz",
+          "question": "[arctan(eˣ)]′ =",
+          "options": [
+            "eˣ/(1 + e²ˣ)",
+            "1/(1 + e²ˣ)",
+            "eˣ/(1 + eˣ)",
+            "eˣ arctan x"
+          ],
+          "correct": 0,
+          "explanation": "u′/(1 + u²)."
+        },
+        {
+          "type": "quiz",
+          "question": "[√x · eˣ]′ =",
+          "options": [
+            "eˣ/(2√x)",
+            "eˣ(1/(2√x) + √x)",
+            "√x eˣ",
+            "eˣ/√x"
+          ],
+          "correct": 1,
+          "explanation": "Producto."
+        },
+        {
+          "type": "quiz",
+          "question": "[ln(x²√x)]′ =",
+          "options": [
+            "5/(2x)",
+            "1/(x²√x)",
+            "2/x",
+            "5x/2"
+          ],
+          "correct": 0,
+          "explanation": "ln x^(5/2) = (5/2) ln x."
+        }
+      ]
+    }
+  ]
+}

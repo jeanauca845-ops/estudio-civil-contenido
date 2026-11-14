@@ -1,0 +1,592 @@
+{
+  "id": "mr02-potencial",
+  "title": "Energía potencial y estabilidad",
+  "description": "Diagramas V(x): equilibrio, estabilidad, regiones de movimiento, puntos de retorno y análisis por tramos",
+  "lessons": [
+    {
+      "id": "l01-diagramas",
+      "title": "Diagramas de energía potencial",
+      "summary": "Cómo leer V(x): fuerza, equilibrio, estabilidad, regiones y puntos de retorno.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En un sistema conservativo de un grado de libertad toda la información del movimiento está en la curva **V(x)** y en la energía total **E = T + V** (constante). Así se analiza el movimiento sin resolver la ecuación diferencial."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Lo que buscas",
+            "Cómo se obtiene de V(x)"
+          ],
+          "rows": [
+            [
+              "**Fuerza**",
+              "F = −dV/dx: apunta hacia donde V **disminuye**. Si V crece hacia la derecha, la fuerza va hacia la izquierda"
+            ],
+            [
+              "**Equilibrio**",
+              "dV/dx = 0 (fuerza nula)"
+            ],
+            [
+              "**Estable**",
+              "d²V/dx² > 0: mínimo de V (si se aparta un poco, vuelve)"
+            ],
+            [
+              "**Inestable**",
+              "d²V/dx² < 0: máximo de V (si se aparta, se aleja)"
+            ],
+            [
+              "**Neutro**",
+              "V constante alrededor del punto"
+            ],
+            [
+              "**Energía cinética**",
+              "T = E − V(x) (distancia vertical entre la línea E y la curva)"
+            ],
+            [
+              "**Regiones permitidas**",
+              "Donde V(x) ≤ E (T ≥ 0)"
+            ],
+            [
+              "**Puntos de retorno**",
+              "Donde V(x) = E: T = 0, la partícula se detiene un instante e invierte su movimiento"
+            ],
+            [
+              "**Rapidez máxima**",
+              "Donde V es mínima dentro de la región permitida: v = √(2(E − Vmín)/m)"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "potential_diagram",
+          "title": "Laboratorio: diagrama de energía potencial"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Fuerza nula no implica rapidez nula:** en un mínimo de V la fuerza es cero y la rapidez es MÁXIMA. **Rapidez nula no implica equilibrio:** en un punto de retorno v = 0 pero la fuerza no es cero, por eso la partícula regresa."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si E coincide exactamente con un **máximo** de V (equilibrio inestable), la partícula se acerca a ese punto cada vez más despacio y tarda un **tiempo infinito** en llegar: cerca del máximo V ≈ Vmáx − ½a·(x − x*)², así que v ∝ |x − x*| y el tiempo ∫dx/v diverge (logaritmo).",
+          "title": "Llegar a un máximo con E = Vmáx"
+        },
+        {
+          "type": "quiz",
+          "question": "En un punto de retorno:",
+          "options": [
+            "La fuerza es cero",
+            "La velocidad es cero pero la fuerza no",
+            "Hay equilibrio estable",
+            "La energía cinética es máxima"
+          ],
+          "correct": 1,
+          "explanation": "T = 0 (v = 0), pero la pendiente de V no es cero: la fuerza lo hace regresar."
+        },
+        {
+          "type": "quiz",
+          "question": "Si en un intervalo V(x) crece al aumentar x, la fuerza en ese intervalo apunta:",
+          "options": [
+            "Hacia la derecha",
+            "Hacia la izquierda",
+            "Es nula",
+            "Depende de E"
+          ],
+          "correct": 1,
+          "explanation": "F = −dV/dx < 0: hacia la **izquierda**, hacia donde V disminuye."
+        },
+        {
+          "type": "quiz",
+          "question": "En un mínimo de V(x), la rapidez de la partícula es:",
+          "options": [
+            "Nula",
+            "Máxima (dentro de su región)",
+            "Mínima",
+            "Infinita"
+          ],
+          "correct": 1,
+          "explanation": "T = E − V es mayor donde V es menor: **rapidez máxima**."
+        },
+        {
+          "type": "quiz",
+          "question": "Si E es menor que el valor mínimo de V(x):",
+          "options": [
+            "La partícula oscila",
+            "El movimiento es imposible (T sería negativa)",
+            "La partícula se escapa",
+            "Está en equilibrio inestable"
+          ],
+          "correct": 1,
+          "explanation": "T = E − V < 0 en todo punto: **no hay movimiento posible**."
+        },
+        {
+          "type": "quiz",
+          "question": "Si V''(x*) < 0 en un punto de equilibrio, el equilibrio es:",
+          "options": [
+            "Estable",
+            "Inestable",
+            "Neutro",
+            "No es equilibrio"
+          ],
+          "correct": 1,
+          "explanation": "Es un **máximo** de V: un pequeño desplazamiento lo aleja."
+        }
+      ]
+    },
+    {
+      "id": "l02-ejercicio-clase",
+      "title": "Ejercicio resuelto: V(x) = 4x⁴ − 1,5x²",
+      "summary": "Equilibrios, fuerzas, gráfica, regiones para varios E, rapidez y llegada al origen.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Partícula sobre el eje x con V(x) = 4x⁴ − 1,5x² (J, x en m), sin rozamiento y energía total E."
+        },
+        {
+          "type": "heading",
+          "text": "1. Equilibrios"
+        },
+        {
+          "type": "text",
+          "text": "V'(x) = 16x³ − 3x = x(16x² − 3) = 0 → **x = 0** y **x = ±√(3/16) = ±0,433 m**. V''(x) = 48x² − 3: en x = 0, V'' = −3 < 0 → **máximo, inestable**; en x = ±0,433, V'' = 48·0,1875 − 3 = 6 > 0 → **mínimos, estables**. V(0) = 0; V(±0,433) = −0,140625 J."
+        },
+        {
+          "type": "heading",
+          "text": "2. Sentido de la fuerza (F = −dV/dx)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Intervalo",
+            "Signo de V'",
+            "V",
+            "Fuerza"
+          ],
+          "rows": [
+            [
+              "x < −0,433",
+              "−",
+              "decrece",
+              "→ derecha"
+            ],
+            [
+              "−0,433 < x < 0",
+              "+",
+              "crece",
+              "← izquierda"
+            ],
+            [
+              "0 < x < 0,433",
+              "−",
+              "decrece",
+              "→ derecha"
+            ],
+            [
+              "x > 0,433",
+              "+",
+              "crece",
+              "← izquierda"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "La fuerza siempre empuja hacia el mínimo más cercano y aleja del máximo en x = 0."
+        },
+        {
+          "type": "heading",
+          "text": "3. Gráfica cualitativa"
+        },
+        {
+          "type": "text",
+          "text": "Forma de «W»: cortes con V = 0 en x = 0 y x = ±√(1,5/4) = **±0,612 m**; máximo local en (0, 0); mínimos en (±0,433; −0,1406); crece como 4x⁴ para |x| grande."
+        },
+        {
+          "type": "interactive",
+          "widget": "potential_diagram",
+          "title": "Compruébalo moviendo E"
+        },
+        {
+          "type": "heading",
+          "text": "4. Regiones de movimiento según E"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "E (J)",
+            "Regiones y puntos de retorno",
+            "¿Cruza el origen?"
+          ],
+          "rows": [
+            [
+              "−0,20",
+              "Ninguna: E < Vmín = −0,1406. Movimiento imposible",
+              "—"
+            ],
+            [
+              "−0,140625",
+              "Solo en reposo en x = ±0,433 (equilibrio estable)",
+              "No"
+            ],
+            [
+              "−0,10",
+              "Oscila en [0,295; 0,537] o en [−0,537; −0,295] (V = E → x² = (1,5 ± 0,806)/8)",
+              "No: la barrera V(0) = 0 > E"
+            ],
+            [
+              "0",
+              "Entre x = 0 y ±0,612; x = 0 es un máximo con V = E",
+              "No: llega al origen en un tiempo infinito"
+            ],
+            [
+              "0,20",
+              "Oscila en [−0,692; 0,692] (x² = (1,5 + 2,335)/8)",
+              "Sí"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "5. Rapidez máxima"
+        },
+        {
+          "type": "text",
+          "text": "En los mínimos x = ±0,433 (donde V es menor): v = √(2(E + 0,1406)/m). Para E = 0,20 se alcanza también en x = ±0,433 al pasar por cada pozo; en x = 0 la rapidez es localmente mínima."
+        },
+        {
+          "type": "heading",
+          "text": "6. Liberada desde el reposo en x = √(3/8) = 0,612"
+        },
+        {
+          "type": "text",
+          "text": "E = V(0,612) = 0, igual al máximo de V en el origen. v = √(−2V/m) = √((3x² − 8x⁴)/m); cerca de x = 0, v ≈ √(3/m)·|x|. Entonces t = ∫ dx/v ≈ √(m/3) ∫ dx/x, que diverge (logaritmo): **se aproxima al origen indefinidamente, sin llegar nunca**."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Por eso, con E = 0, decir «movimiento oscilatorio entre 0 y 0,612» no es correcto: la partícula no regresa, se queda acercándose asintóticamente al origen (equilibrio inestable)."
+        },
+        {
+          "type": "quiz",
+          "question": "Con E = −0,10 J, ¿puede la partícula pasar del pozo derecho al izquierdo?",
+          "options": [
+            "Sí, siempre",
+            "No: necesitaría superar V(0) = 0 > E",
+            "Solo si m es pequeña",
+            "Sí, en x = 0,433"
+          ],
+          "correct": 1,
+          "explanation": "Para cruzar x = 0 se requiere E ≥ V(0) = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde es máxima la rapidez para E = 0,20 J?",
+          "options": [
+            "En x = 0",
+            "En x = ±0,433",
+            "En x = ±0,692",
+            "En x = ±0,612"
+          ],
+          "correct": 1,
+          "explanation": "Donde V es mínima: **x = ±0,433**, con T = 0,20 + 0,1406 = 0,3406 J."
+        },
+        {
+          "type": "quiz",
+          "question": "Para V = 4x⁴ − 1,5x², ¿en qué puntos V = 0?",
+          "options": [
+            "x = 0 y ±0,433",
+            "x = 0 y ±0,612",
+            "Solo x = 0",
+            "x = ±0,612"
+          ],
+          "correct": 1,
+          "explanation": "4x⁴ − 1,5x² = x²(4x² − 1,5) = 0 → x = 0 y x = ±√0,375 = **±0,612**."
+        },
+        {
+          "type": "quiz",
+          "question": "Con E = 0,20 J, ¿cuáles son los puntos de retorno?",
+          "options": [
+            "±0,433",
+            "±0,612",
+            "±0,692",
+            "0 y 0,692"
+          ],
+          "correct": 2,
+          "explanation": "4x⁴ − 1,5x² = 0,2 → x² = (1,5 + √(2,25 + 3,2))/8 = 0,479 → **x = ±0,692**."
+        },
+        {
+          "type": "quiz",
+          "question": "Con E = 0, la partícula liberada en x = 0,612:",
+          "options": [
+            "Oscila entre 0 y 0,612",
+            "Cruza al pozo izquierdo",
+            "Se acerca a x = 0 sin llegar nunca (tiempo infinito)",
+            "Se queda en reposo"
+          ],
+          "correct": 2,
+          "explanation": "x = 0 es un máximo con V = E: la aproximación tarda un **tiempo infinito**."
+        }
+      ]
+    },
+    {
+      "id": "l03-anillo",
+      "title": "Ejercicio resuelto: anillo en una barra parabólica",
+      "summary": "Prueba 1: V(x), equilibrios, rapidez máxima y desplazamiento máximo.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Anillo de 5 lb sobre una barra lisa y = 8 − x²/2 (pies), unido a un resorte con la otra punta en el origen (longitud libre 0, k = 10 lb/pie). En A (x = 2 pies) su rapidez es 10 pies/s."
+        },
+        {
+          "type": "heading",
+          "text": "Planteamiento"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Longitud del resorte: L² = x² + y² = x² + (8 − x²/2)² = x⁴/4 − 7x² + 64.",
+            "Ve = ½·k·L² = 5·(x⁴/4 − 7x² + 64) = 1,25x⁴ − 35x² + 320 (deformación = L porque la longitud libre es 0).",
+            "Vg = W·y = 5·(8 − x²/2) = 40 − 2,5x².",
+            "**V(x) = 1,25x⁴ − 37,5x² + 360** (lb·pie)."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Equilibrios"
+        },
+        {
+          "type": "text",
+          "text": "V' = 5x³ − 75x = 5x(x² − 15) = 0 → x = 0 y x = ±√15 = ±3,873 pies. V'' = 15x² − 75: en 0 → −75 (**inestable**, V = 360); en ±3,873 → 150 (**estable**, V = 78,75)."
+        },
+        {
+          "type": "heading",
+          "text": "Energía"
+        },
+        {
+          "type": "text",
+          "text": "TA = ½·(5/32,2)·10² = 7,764 lb·pie; V(2) = 20 − 150 + 360 = 230 → **E = 237,764 lb·pie**."
+        },
+        {
+          "type": "heading",
+          "text": "Rapidez máxima"
+        },
+        {
+          "type": "text",
+          "text": "En el mínimo x = 3,873: Tmáx = 237,764 − 78,75 = 159,014 → vmáx = √(2·159,014/(5/32,2)) = **45,26 pies/s**."
+        },
+        {
+          "type": "heading",
+          "text": "Puntos de retorno (V = E)"
+        },
+        {
+          "type": "text",
+          "text": "1,25x⁴ − 37,5x² + 122,236 = 0 → x² = (37,5 ± 28,197)/2,5 → x² = 26,279 o 3,721 → **x = 5,126** y **x = 1,929** pies."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Como V(0) = 360 > E, el anillo **no puede pasar por x = 0**: se mueve solo en **1,929 ≤ x ≤ 5,126**. Ambas raíces positivas son puntos de retorno; las negativas no se alcanzan. Comprueba también que la barra exista en ese rango (con y = 8 − x²/2, y = 0 en x = 4 pies): si la barra termina antes, el análisis cambia."
+        },
+        {
+          "type": "heading",
+          "text": "Fuerza"
+        },
+        {
+          "type": "text",
+          "text": "F = −dV/dx = 75x − 5x³ (componente generalizada en x): positiva para 0 < x < 3,873 y negativa para x > 3,873, siempre empujando hacia el mínimo."
+        },
+        {
+          "type": "interactive",
+          "widget": "potential_diagram",
+          "title": "Diagrama del anillo",
+          "params": {
+            "preset": 1
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el anillo no puede llegar a x = 0?",
+          "options": [
+            "Porque la barra es lisa",
+            "Porque V(0) = 360 lb·pie supera su energía total 237,76",
+            "Porque el resorte se rompe",
+            "Porque x = 0 es estable"
+          ],
+          "correct": 1,
+          "explanation": "Para llegar a x = 0 necesitaría E ≥ V(0) = 360."
+        },
+        {
+          "type": "quiz",
+          "question": "En el anillo, ¿por qué la deformación del resorte es igual a su longitud?",
+          "options": [
+            "Porque k es grande",
+            "Porque su longitud libre es cero",
+            "Porque la barra es lisa",
+            "Porque el anillo pesa 5 lb"
+          ],
+          "correct": 1,
+          "explanation": "Deformación = L − L₀ y L₀ = 0 → deformación = **L**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde alcanza el anillo su rapidez máxima?",
+          "options": [
+            "x = 0",
+            "x = 1,929 pies",
+            "x = 3,873 pies",
+            "x = 5,126 pies"
+          ],
+          "correct": 2,
+          "explanation": "En el mínimo de V: x = √15 = **3,873 pies**, con vmáx = 45,26 pies/s."
+        },
+        {
+          "type": "quiz",
+          "question": "¿En qué intervalo se mueve el anillo?",
+          "options": [
+            "−5,126 ≤ x ≤ 5,126",
+            "0 ≤ x ≤ 5,126",
+            "1,929 ≤ x ≤ 5,126",
+            "2 ≤ x ≤ 3,873"
+          ],
+          "correct": 2,
+          "explanation": "Puntos de retorno en 1,929 y 5,126; no cruza x = 0 porque V(0) = 360 > E."
+        }
+      ]
+    },
+    {
+      "id": "l04-tramos",
+      "title": "Energía potencial por tramos: collarín con dos resortes",
+      "summary": "Talleres 1 y 3: definir tramos, V en cada uno, equilibrio y extremos.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Cuando un resorte **solo actúa en una parte del recorrido** (topes, resortes sin unir), V(x) es una función **por tramos**: hay que escribir la deformación de cada resorte en cada tramo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Elige el nivel de referencia (NR) y el sentido positivo de y.",
+            "Identifica los **tramos**: dónde toca cada resorte (deformación > 0) y dónde no.",
+            "En cada tramo: V = Vg + Σ½k·(deformación)², con la deformación escrita en función de y.",
+            "Verifica la **continuidad** de V en los límites entre tramos.",
+            "Equilibrios: dV/dy = 0 **dentro** del tramo (descarta raíces fuera de él).",
+            "Energía total con la posición inicial; puntos de retorno: V = E en el tramo correcto."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Taller 1: collarín de 4 kg, k₂ = 75 N/m abajo y k₁ = 10 N/m arriba"
+        },
+        {
+          "type": "text",
+          "text": "Se suelta desde el reposo con el resorte inferior comprimido 2,25 m. NR en el extremo libre del resorte inferior (y = 0)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tramo",
+            "Rango",
+            "V(y) (J)"
+          ],
+          "rows": [
+            [
+              "1: resorte inferior",
+              "−2,25 ≤ y ≤ 0",
+              "39,2y + 37,5y²"
+            ],
+            [
+              "2: sin resortes",
+              "0 ≤ y ≤ 0,9",
+              "39,2y"
+            ],
+            [
+              "3: resorte superior",
+              "y ≥ 0,9",
+              "39,2y + 5(y − 0,9)² = 5y² + 30,2y + 4,05"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "E = V(−2,25) = −88,2 + 189,84 = **101,64 J** (T = 0).",
+            "Equilibrio en el tramo 1: 39,2 + 75y = 0 → **y = −0,523 m** (V'' = 75 > 0: estable). V mín = −10,244 J.",
+            "Rapidez máxima en y = −0,523: Tmáx = 111,89 J → **vmáx = 7,48 m/s**.",
+            "En los tramos 2 y 3 V es creciente: no hay más equilibrios.",
+            "Punto de retorno superior (tramo 3): 5y² + 30,2y − 97,594 = 0 → **y = 2,332 m**."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "interactive",
+          "widget": "potential_diagram",
+          "title": "Diagrama por tramos del collarín",
+          "params": {
+            "preset": 2
+          }
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Al resolver la cuadrática de un tramo, comprueba que la raíz cae **dentro del rango del tramo**; la otra raíz (aquí y = −8,37) no tiene sentido físico."
+        },
+        {
+          "type": "quiz",
+          "question": "En el tramo 2 (sin resortes), V = 39,2y. ¿Hay equilibrio ahí?",
+          "options": [
+            "Sí, en y = 0",
+            "No: dV/dy = 39,2 ≠ 0 en todo el tramo",
+            "Sí, en y = 0,45",
+            "Depende de E"
+          ],
+          "correct": 1,
+          "explanation": "Solo actúa el peso: la fuerza (−39,2 N) nunca se anula."
+        },
+        {
+          "type": "quiz",
+          "question": "En el collarín, ¿en qué tramo está el equilibrio estable y = −0,523 m?",
+          "options": [
+            "Tramo 1 (resorte inferior)",
+            "Tramo 2 (sin resortes)",
+            "Tramo 3 (resorte superior)",
+            "No existe"
+          ],
+          "correct": 0,
+          "explanation": "Solo en el tramo 1 la derivada 39,2 + 75y puede anularse: y = −0,523 m."
+        },
+        {
+          "type": "quiz",
+          "question": "Al pasar de un tramo a otro, V(y) debe ser:",
+          "options": [
+            "Discontinua",
+            "Continua",
+            "Cero",
+            "Constante"
+          ],
+          "correct": 1,
+          "explanation": "La energía potencial es **continua**; si no lo es, hay un error en la deformación de algún resorte."
+        },
+        {
+          "type": "quiz",
+          "question": "Si una raíz de V = E cae fuera del rango del tramo que usaste:",
+          "options": [
+            "Es el punto de retorno",
+            "Se descarta: no pertenece a ese tramo",
+            "Se toma su valor absoluto",
+            "Indica equilibrio"
+          ],
+          "correct": 1,
+          "explanation": "Cada fórmula de V solo vale en su tramo; la raíz exterior **no tiene sentido físico**."
+        }
+      ]
+    }
+  ]
+}

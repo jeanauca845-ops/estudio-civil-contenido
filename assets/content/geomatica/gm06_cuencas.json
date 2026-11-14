@@ -1,0 +1,419 @@
+{
+  "id": "gm06-cuencas",
+  "title": "Cuencas hidrográficas",
+  "description": "Conceptos, red de drenaje, parámetros morfométricos y tiempo de concentración",
+  "lessons": [
+    {
+      "id": "l01-cuenca",
+      "title": "¿Qué es una cuenca hidrográfica?",
+      "summary": "Divisoria, punto de salida, partes y tipos.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Área del terreno cuyas aguas superficiales **drenan hacia un mismo punto de salida** (desembocadura o punto de interés, como una captación o un puente). Está limitada por la **divisoria de aguas** (parteaguas): la línea que une los puntos más altos y separa el agua que va a una cuenca de la que va a otra.",
+          "title": "Cuenca hidrográfica"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "**Punto de salida (pour point)**",
+              "Donde se cierra la cuenca: por eso una cuenca se define **para un punto**. Cambiar el punto cambia la cuenca"
+            ],
+            [
+              "**Divisoria de aguas**",
+              "Límite de la cuenca; corta las curvas de nivel perpendicularmente y pasa por crestas y cumbres"
+            ],
+            [
+              "**Cauce principal**",
+              "El río más largo que llega a la salida"
+            ],
+            [
+              "**Red de drenaje**",
+              "Todos los cauces de la cuenca"
+            ],
+            [
+              "**Subcuenca / microcuenca**",
+              "Cuencas menores dentro de una mayor"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parte",
+            "Características"
+          ],
+          "rows": [
+            [
+              "Alta (cabecera)",
+              "Pendientes fuertes, erosión, nacientes, páramo"
+            ],
+            [
+              "Media",
+              "Transporte de sedimentos"
+            ],
+            [
+              "Baja",
+              "Pendientes suaves, depósito, llanuras de inundación"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Desagua en"
+          ],
+          "rows": [
+            [
+              "Exorreica",
+              "El mar"
+            ],
+            [
+              "Endorreica",
+              "Un lago o laguna sin salida al mar"
+            ],
+            [
+              "Arreica",
+              "No tiene drenaje superficial organizado (zonas áridas)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Trazar la divisoria a mano sobre curvas de nivel"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Marca el **punto de salida** sobre el cauce.",
+            "Identifica el cauce principal y sus afluentes (curvas en «V» que apuntan aguas arriba).",
+            "Desde la salida, avanza por un lado cortando las curvas **perpendicularmente**, pasando por los puntos más altos (crestas, cumbres) y **sin cruzar ningún cauce**.",
+            "Repite por el otro lado hasta cerrar en la cabecera.",
+            "Comprueba: el agua de cualquier punto interior debe llegar a la salida."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "quiz",
+          "question": "Si mueves el punto de salida aguas abajo, la cuenca:",
+          "options": [
+            "Se reduce",
+            "Se agranda",
+            "No cambia",
+            "Desaparece"
+          ],
+          "correct": 1,
+          "explanation": "Aguas abajo se suma el área que drena a ese tramo: la cuenca **crece**."
+        },
+        {
+          "type": "quiz",
+          "question": "La divisoria de aguas cruza las curvas de nivel:",
+          "options": [
+            "Paralela a ellas",
+            "Perpendicularmente",
+            "Por los fondos de los valles",
+            "Nunca las cruza"
+          ],
+          "correct": 1,
+          "explanation": "Sigue la línea de máxima pendiente de las crestas: **perpendicular** a las curvas."
+        },
+        {
+          "type": "quiz",
+          "question": "La divisoria de aguas de una cuenca pasa por:",
+          "options": [
+            "Los cauces",
+            "Las cimas y crestas que separan cuencas vecinas",
+            "El punto de salida",
+            "El centro"
+          ],
+          "correct": 1,
+          "explanation": "Une los puntos **más altos** que separan el drenaje."
+        }
+      ]
+    },
+    {
+      "id": "l02-drenaje",
+      "title": "Red de drenaje y orden de los cauces",
+      "summary": "Orden de Strahler, densidad de drenaje y patrones.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Los cauces sin afluentes son de **orden 1**. Cuando se unen dos cauces del mismo orden n, forman uno de orden **n + 1**. Si se unen dos de distinto orden, sigue el mayor. El orden de la cuenca es el del cauce principal en la salida.",
+          "title": "Orden de Strahler"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Dos de orden 1 → orden 2. Un orden 2 + un orden 1 → sigue siendo 2. Dos de orden 2 → orden 3."
+        },
+        {
+          "type": "formula",
+          "expression": "Dd = Lt / A",
+          "caption": "Densidad de drenaje (km/km²): longitud total de cauces / área."
+        },
+        {
+          "type": "text",
+          "text": "Una Dd alta indica suelos poco permeables, pendientes fuertes y poca vegetación: la cuenca responde rápido a la lluvia. Una baja indica suelos permeables o mucha cobertura."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Patrón",
+            "Indica"
+          ],
+          "rows": [
+            [
+              "Dendrítico (ramificado como un árbol)",
+              "Rocas homogéneas"
+            ],
+            [
+              "Paralelo",
+              "Pendiente regional fuerte"
+            ],
+            [
+              "Rectangular",
+              "Control por fallas y diaclasas"
+            ],
+            [
+              "Radial",
+              "Cono volcánico (cauces que bajan en todas direcciones)"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Un cauce de orden 3 recibe un afluente de orden 2. Aguas abajo, el orden es:",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": 1,
+          "explanation": "Distintos órdenes → se mantiene el **mayor**: 3."
+        },
+        {
+          "type": "quiz",
+          "question": "En el orden de Strahler, dos cauces de orden 2 que se unen forman:",
+          "options": [
+            "Un cauce de orden 2",
+            "Un cauce de orden 3",
+            "Un cauce de orden 4",
+            "Un cauce de orden 1"
+          ],
+          "correct": 1,
+          "explanation": "Dos del mismo orden → **orden + 1**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un cauce de orden 2 que recibe uno de orden 1 sigue siendo:",
+          "options": [
+            "Orden 1",
+            "Orden 2",
+            "Orden 3",
+            "Orden 4"
+          ],
+          "correct": 1,
+          "explanation": "Si son distintos, se conserva el **mayor**."
+        }
+      ]
+    },
+    {
+      "id": "l03-morfometria",
+      "title": "Parámetros morfométricos",
+      "summary": "Área, perímetro, Kc, Kf, pendientes y curva hipsométrica.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Parámetro",
+            "Fórmula",
+            "Interpretación"
+          ],
+          "rows": [
+            [
+              "Área A",
+              "Medida en SIG (km²)",
+              "El parámetro más importante: más área, más caudal"
+            ],
+            [
+              "Perímetro P",
+              "Longitud de la divisoria (km)",
+              ""
+            ],
+            [
+              "Longitud del cauce principal L",
+              "Desde la salida hasta la divisoria (km)",
+              ""
+            ],
+            [
+              "Coeficiente de compacidad (Gravelius) Kc",
+              "0,282 · P / √A",
+              "1 = circular; > 1 más alargada. Cuencas redondas concentran la crecida"
+            ],
+            [
+              "Factor de forma (Horton) Kf",
+              "A / L²",
+              "Bajo = alargada (crecidas atenuadas)"
+            ],
+            [
+              "Pendiente media del cauce",
+              "(Hmáx − Hmín) / L",
+              "Velocidad del flujo"
+            ],
+            [
+              "Pendiente media de la cuenca (Alvord)",
+              "D · Lc / A",
+              "D = equidistancia; Lc = longitud total de curvas"
+            ],
+            [
+              "Elevación media",
+              "Promedio ponderado de cotas (o de la curva hipsométrica)",
+              "Clima, precipitación"
+            ],
+            [
+              "Densidad de drenaje Dd",
+              "Lt / A",
+              "Respuesta hidrológica"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "basin_morphometry",
+          "title": "Calculadora morfométrica"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Gráfico del porcentaje del área de la cuenca que está **por encima** de cada cota. Su forma indica la «edad» geomorfológica: convexa = cuenca joven, con mucho relieve por erosionar; cóncava = cuenca vieja, ya erosionada.",
+          "title": "Curva hipsométrica"
+        },
+        {
+          "type": "quiz",
+          "question": "Una cuenca con P = 20 km y A = 25 km². ¿Su Kc?",
+          "options": [
+            "0,80",
+            "1,13",
+            "1,50",
+            "2,00"
+          ],
+          "correct": 1,
+          "explanation": "Kc = 0,282 · 20 / √25 = 5,64 / 5 = **1,13**: casi circular, respuesta rápida."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos cuencas de igual área: una alargada (Kf = 0,2) y otra achatada (Kf = 0,6). ¿Cuál tendrá crecidas más bruscas?",
+          "options": [
+            "La alargada",
+            "La achatada",
+            "Iguales",
+            "Ninguna"
+          ],
+          "correct": 1,
+          "explanation": "En la **achatada** los aportes llegan casi a la vez a la salida: pico mayor."
+        },
+        {
+          "type": "quiz",
+          "question": "Un Kc cercano a 1 indica una cuenca:",
+          "options": [
+            "Alargada",
+            "Casi circular, con crecidas más rápidas",
+            "Muy plana",
+            "Sin cauces"
+          ],
+          "correct": 1,
+          "explanation": "Kc = 1 es un círculo: concentra rápido la escorrentía."
+        }
+      ]
+    },
+    {
+      "id": "l04-tc",
+      "title": "Tiempo de concentración",
+      "summary": "Definición y fórmulas de Kirpich y Giandotti.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Tiempo que tarda el agua en viajar desde el punto **hidráulicamente más alejado** de la cuenca hasta la salida. Cuando la lluvia dura al menos tc, toda la cuenca aporta a la vez: se produce el caudal máximo. Se usa en el **método racional** (Q = C·i·A / 3,6).",
+          "title": "Tiempo de concentración (tc)"
+        },
+        {
+          "type": "formula",
+          "expression": "tc = 0,0195 · L^0,77 · S^(−0,385)",
+          "caption": "Kirpich: tc en minutos; L = longitud del cauce en m; S = pendiente del cauce en m/m."
+        },
+        {
+          "type": "formula",
+          "expression": "tc = (4·√A + 1,5·L) / (0,8·√H)",
+          "caption": "Giandotti: tc en horas; A en km²; L en km; H = elevación media − cota de salida (m)."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Cada fórmula se desarrolló para cierto tipo de cuencas y dan resultados distintos. En los estudios se calculan varias y se adopta un valor con criterio (a menudo el promedio, descartando valores extremos)."
+        },
+        {
+          "type": "quiz",
+          "question": "Con L = 3000 m y S = 0,10, el tc de Kirpich es aproximadamente:",
+          "options": [
+            "10 min",
+            "20 min",
+            "40 min",
+            "2 h"
+          ],
+          "correct": 1,
+          "explanation": "0,0195 · 3000^0,77 · 0,10^−0,385 = 0,0195 · 474 · 2,43 ≈ **22 min**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué ocurre con el tc si aumenta la pendiente del cauce?",
+          "options": [
+            "Aumenta",
+            "Disminuye",
+            "No cambia",
+            "Se vuelve negativo"
+          ],
+          "correct": 1,
+          "explanation": "Con más pendiente el agua corre más rápido: el **tc disminuye** (por eso S tiene exponente negativo)."
+        },
+        {
+          "type": "quiz",
+          "question": "El tiempo de concentración es:",
+          "options": [
+            "El tiempo de una lluvia",
+            "El tiempo que tarda el agua desde el punto más alejado hasta la salida",
+            "La duración de la crecida",
+            "El tiempo de infiltración"
+          ],
+          "correct": 1,
+          "explanation": "Desde el punto hidráulicamente **más lejano**."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la pendiente del cauce aumenta, según Kirpich el tc:",
+          "options": [
+            "Aumenta",
+            "Disminuye",
+            "No cambia",
+            "Se duplica"
+          ],
+          "correct": 1,
+          "explanation": "tc ∝ S^−0,385: más pendiente, **menor tc**."
+        }
+      ]
+    }
+  ]
+}

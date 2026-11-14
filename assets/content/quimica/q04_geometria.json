@@ -1,0 +1,943 @@
+{
+  "id": "q04-geometria",
+  "title": "Geometría molecular y fuerzas intermoleculares",
+  "description": "Modelo RPECV, geometrías e hibridación, momento dipolar y polaridad de moléculas, fuerzas intra e intermoleculares",
+  "lessons": [
+    {
+      "id": "l01-rpecv",
+      "title": "Geometría molecular: modelo RPECV",
+      "summary": "Grupos de electrones, átomo central y las geometrías lineal, trigonal plana, tetraédrica, angular y piramidal.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El modo más simple para describir el enlace es la **teoría de Lewis**. A pesar de su sencillez permite predecir la forma de moléculas sencillas, **PERO LAS MOLÉCULAS NO SON TODAS PLANAS**. Esto se explica mediante el modelo de **Repulsión de Pares de Electrones de la Capa de Valencia (RPECV)**, en inglés VSEPR."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Los **grupos de electrones** alrededor del átomo central **se repelen** y se ubican lo más lejos posible entre sí. La geometría resultante es la que minimiza esa repulsión.",
+          "title": "Idea del modelo RPECV"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es «**lo que se une al átomo central**»: cada átomo enlazado (con enlace simple, doble o triple: cuenta como **un solo grupo**) y cada **par libre** de electrones del átomo central. Ejemplo: en el NH₃, el N central tiene 3 H unidos y 1 par libre → 4 grupos.",
+          "title": "Grupo de electrones"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Hacer la **estructura de Lewis** del compuesto.",
+            "Identificar el **átomo central** (A.C.).",
+            "Contar los **grupos de electrones** del átomo central (enlaces + pares libres).",
+            "La **geometría electrónica** depende del total de grupos; la **geometría molecular** describe solo la posición de los átomos (los pares libres «no se ven» pero empujan)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplos de clase"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Molécula",
+            "Lewis",
+            "Grupos (enlazantes + libres)",
+            "Geometría",
+            "Ángulo"
+          ],
+          "rows": [
+            [
+              "BeCl₂ (cloruro de berilio)",
+              "Cl–Be–Cl",
+              "2 (2 + 0)",
+              "**Lineal**",
+              "180°"
+            ],
+            [
+              "CO₂",
+              "O=C=O",
+              "2 (2 + 0)",
+              "**Lineal**",
+              "180°"
+            ],
+            [
+              "HCN",
+              "H–C≡N:",
+              "2 (2 + 0)",
+              "**Lineal**",
+              "180°"
+            ],
+            [
+              "BF₃ (trifluoruro de boro)",
+              "B con 3 F",
+              "3 (3 + 0)",
+              "**Trigonal plana**",
+              "120°"
+            ],
+            [
+              "SO₂ (dióxido de azufre)",
+              "O=S=O con 1 par libre en S",
+              "3 (2 + 1)",
+              "**Angular** (geometría electrónica trigonal plana)",
+              "≈ 118° (menos de 120°)"
+            ],
+            [
+              "CH₄ (metano)",
+              "C con 4 H",
+              "4 (4 + 0)",
+              "**Tetraédrica** (¡no es plana con 90°!)",
+              "109,5°"
+            ],
+            [
+              "NH₃ (amoníaco)",
+              "N con 3 H y 1 par libre",
+              "4 (3 + 1)",
+              "**Piramidal trigonal**",
+              "≈ 107°"
+            ],
+            [
+              "H₂O (agua)",
+              "O con 2 H y 2 pares libres",
+              "4 (2 + 2)",
+              "**Angular**",
+              "104,5°"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Los **pares libres repelen más** que los pares enlazantes (están más cerca del átomo central y ocupan más espacio). Por eso los ángulos se cierran: CH₄ 109,5° → NH₃ 107° (1 par libre) → H₂O 104,5° (2 pares libres).",
+          "title": "¿Por qué el agua no tiene 109,5°?"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Un error clásico es dibujar el CH₄ plano con ángulos de 90°. En 3D los cuatro H se separan más: **109,5°**, en los vértices de un tetraedro."
+        },
+        {
+          "type": "interactive",
+          "widget": "vsepr",
+          "title": "Laboratorio RPECV: geometrías en 3D"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué predice el modelo RPECV?",
+          "options": [
+            "La masa molecular",
+            "La forma (geometría) de las moléculas",
+            "El tipo de enlace",
+            "La configuración electrónica"
+          ],
+          "correct": 1,
+          "explanation": "Geometría por repulsión de grupos de electrones."
+        },
+        {
+          "type": "quiz",
+          "question": "Geometría del BeCl₂:",
+          "options": [
+            "Angular",
+            "Lineal",
+            "Trigonal plana",
+            "Tetraédrica"
+          ],
+          "correct": 1,
+          "explanation": "2 grupos sin pares libres: **lineal**, 180°."
+        },
+        {
+          "type": "quiz",
+          "question": "Ángulo del metano:",
+          "options": [
+            "90°",
+            "104,5°",
+            "109,5°",
+            "120°"
+          ],
+          "correct": 2,
+          "explanation": "Tetraédrico: **109,5°**."
+        },
+        {
+          "type": "quiz",
+          "question": "Geometría del agua:",
+          "options": [
+            "Lineal",
+            "Angular",
+            "Tetraédrica",
+            "Piramidal"
+          ],
+          "correct": 1,
+          "explanation": "2 enlaces + 2 pares libres: **angular** 104,5°."
+        },
+        {
+          "type": "quiz",
+          "question": "En el NH₃, el átomo central tiene:",
+          "options": [
+            "3 grupos",
+            "4 grupos (3 enlaces + 1 par libre)",
+            "2 grupos",
+            "5 grupos"
+          ],
+          "correct": 1,
+          "explanation": "Geometría **piramidal trigonal**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un doble enlace, en RPECV, cuenta como:",
+          "options": [
+            "Dos grupos",
+            "Un grupo",
+            "Medio grupo",
+            "No cuenta"
+          ],
+          "correct": 1,
+          "explanation": "Por eso el CO₂ es lineal."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el ángulo del H₂O es menor que el del CH₄?",
+          "options": [
+            "Porque el O es más pequeño",
+            "Porque los 2 pares libres repelen más y cierran el ángulo",
+            "Porque el H₂O es iónica",
+            "Porque tiene enlaces dobles"
+          ],
+          "correct": 1,
+          "explanation": "Pares libres > pares enlazantes en repulsión."
+        },
+        {
+          "type": "quiz",
+          "question": "Geometría del BF₃:",
+          "options": [
+            "Piramidal",
+            "Trigonal plana",
+            "Angular",
+            "Lineal"
+          ],
+          "correct": 1,
+          "explanation": "3 grupos sin pares libres: 120°."
+        }
+      ]
+    },
+    {
+      "id": "l02-tabla-hibridacion",
+      "title": "Todas las geometrías e hibridación",
+      "summary": "Tabla completa de 2 a 6 nubes electrónicas, ángulos, ejemplos e hibridación.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Geometría molecular",
+            "Nubes electrónicas",
+            "Ángulos aproximados",
+            "Ejemplo",
+            "Hibridación"
+          ],
+          "rows": [
+            [
+              "Lineal",
+              "2",
+              "180°",
+              "BeCl₂",
+              "sp"
+            ],
+            [
+              "Trigonal plana",
+              "3",
+              "120°",
+              "BF₃",
+              "sp²"
+            ],
+            [
+              "Angular",
+              "3 (2 enlazantes, 1 libre)",
+              "≈ 118°",
+              "SO₂",
+              "sp²"
+            ],
+            [
+              "Tetraédrica",
+              "4",
+              "109,5°",
+              "CH₄",
+              "sp³"
+            ],
+            [
+              "Piramidal trigonal",
+              "4 (3 enlazantes, 1 libre)",
+              "≈ 107°",
+              "NH₃",
+              "sp³"
+            ],
+            [
+              "Angular (tetraédrica)",
+              "4 (2 enlazantes, 2 libres)",
+              "≈ 104,5°",
+              "H₂O",
+              "sp³"
+            ],
+            [
+              "Bipiramidal trigonal",
+              "5",
+              "90°, 120°, 180°",
+              "PCl₅",
+              "sp³d"
+            ],
+            [
+              "Tetraedro distorsionado (balancín)",
+              "5 (4 enlazantes, 1 libre)",
+              "≈ 101°, 173°",
+              "SF₄",
+              "sp³d"
+            ],
+            [
+              "Forma de T",
+              "5 (3 enlazantes, 2 libres)",
+              "≈ 87,5°, 180°",
+              "ClF₃",
+              "sp³d"
+            ],
+            [
+              "Octaédrica",
+              "6",
+              "90°, 180°",
+              "SF₆",
+              "sp³d²"
+            ],
+            [
+              "Piramidal cuadrada",
+              "6 (5 enlazantes, 1 libre)",
+              "≈ 90°",
+              "BrF₅",
+              "sp³d²"
+            ],
+            [
+              "Cuadrada plana",
+              "6 (4 enlazantes, 2 libres)",
+              "90°, 180°",
+              "XeF₄",
+              "sp³d²"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "¿Qué es la hibridación?"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la **mezcla de orbitales atómicos** del átomo central (s, p y a veces d) para formar orbitales nuevos, **idénticos entre sí**, orientados según la geometría. El número de orbitales híbridos es igual al número de **grupos de electrones**.",
+          "title": "Hibridación"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Grupos de electrones",
+            "Orbitales que se mezclan",
+            "Híbridos",
+            "Geometría electrónica"
+          ],
+          "rows": [
+            [
+              "2",
+              "1 s + 1 p",
+              "2 sp",
+              "Lineal"
+            ],
+            [
+              "3",
+              "1 s + 2 p",
+              "3 sp²",
+              "Trigonal plana"
+            ],
+            [
+              "4",
+              "1 s + 3 p",
+              "4 sp³",
+              "Tetraédrica"
+            ],
+            [
+              "5",
+              "1 s + 3 p + 1 d",
+              "5 sp³d",
+              "Bipiramidal trigonal"
+            ],
+            [
+              "6",
+              "1 s + 3 p + 2 d",
+              "6 sp³d²",
+              "Octaédrica"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "El carbono (2s² 2p²) solo tiene 2 electrones desapareados, pero en el CH₄ forma 4 enlaces iguales. Explicación: un electrón 2s se promueve al 2p y el 2s se mezcla con los tres 2p → **4 orbitales sp³** idénticos, cada uno con un electrón, apuntando a los vértices de un tetraedro.",
+          "title": "El carbono del metano"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La hibridación del carbono explica materiales: **diamante** (C sp³, red tetraédrica: durísimo, aislante) y **grafito** (C sp², láminas planas con electrones deslocalizados: blando, lubricante y conductor). Mismo elemento, enlaces distintos."
+        },
+        {
+          "type": "quiz",
+          "question": "Hibridación del carbono en el CH₄:",
+          "options": [
+            "sp",
+            "sp²",
+            "sp³",
+            "sp³d"
+          ],
+          "correct": 2,
+          "explanation": "4 grupos → **sp³**."
+        },
+        {
+          "type": "quiz",
+          "question": "Geometría del SF₆:",
+          "options": [
+            "Tetraédrica",
+            "Bipiramidal trigonal",
+            "Octaédrica",
+            "Cuadrada plana"
+          ],
+          "correct": 2,
+          "explanation": "6 grupos: **octaédrica**, 90°."
+        },
+        {
+          "type": "quiz",
+          "question": "XeF₄ (4 enlazantes y 2 libres) es:",
+          "options": [
+            "Tetraédrica",
+            "Cuadrada plana",
+            "Piramidal cuadrada",
+            "Octaédrica"
+          ],
+          "correct": 1,
+          "explanation": "Los dos pares libres quedan opuestos."
+        },
+        {
+          "type": "quiz",
+          "question": "Geometría del PCl₅:",
+          "options": [
+            "Octaédrica",
+            "Bipiramidal trigonal",
+            "Forma de T",
+            "Tetraédrica"
+          ],
+          "correct": 1,
+          "explanation": "5 grupos: 90°, 120°, 180°."
+        },
+        {
+          "type": "quiz",
+          "question": "Hibridación con 3 grupos de electrones:",
+          "options": [
+            "sp",
+            "sp²",
+            "sp³",
+            "sp³d²"
+          ],
+          "correct": 1,
+          "explanation": "1 s + 2 p."
+        },
+        {
+          "type": "quiz",
+          "question": "El ClF₃ tiene geometría:",
+          "options": [
+            "Trigonal plana",
+            "Piramidal",
+            "Forma de T",
+            "Lineal"
+          ],
+          "correct": 2,
+          "explanation": "3 enlazantes + 2 libres."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el grafito conduce y el diamante no?",
+          "options": [
+            "El grafito tiene C sp² con electrones deslocalizados",
+            "El diamante es metálico",
+            "El grafito es iónico",
+            "El diamante tiene huecos"
+          ],
+          "correct": 0,
+          "explanation": "Láminas sp² con nube π deslocalizada."
+        }
+      ]
+    },
+    {
+      "id": "l03-polaridad",
+      "title": "Momento dipolar y polaridad de las moléculas",
+      "summary": "μ como vector, moléculas simétricas y asimétricas: H₂, HCl, CO₂, BF₃, H₂CO y H₂O.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "«**Expresa la polaridad de las moléculas en una escala numérica**.» Se mide en debyes (D).",
+          "title": "Momento dipolar (μ)"
+        },
+        {
+          "type": "text",
+          "text": "La polaridad de las moléculas depende de:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "La **diferencia de electronegatividad** entre sus átomos, y",
+            "su **geometría molecular**."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La existencia de **enlaces covalentes polares** en una molécula **no establece necesariamente la polaridad de la misma**. Para determinarla se utiliza el momento dipolar μ."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "μ se establece como un **vector** con dirección hacia el **átomo más electronegativo** del enlace. Se suman los vectores de todos los enlaces: si **se anulan**, **μ = 0** y la molécula es **apolar** (molécula **simétrica**); si **no se anulan**, **μ ≠ 0** y la molécula es **polar** (molécula **asimétrica**).",
+          "title": "μ es un vector"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Molécula",
+            "Enlaces",
+            "Geometría",
+            "Suma de vectores",
+            "μ",
+            "Molécula"
+          ],
+          "rows": [
+            [
+              "H–H, F–F, Cl–Cl",
+              "Apolares",
+              "Lineal",
+              "No hay vectores",
+              "0",
+              "**Apolar**"
+            ],
+            [
+              "H–Cl",
+              "Polar (δ+ H, δ− Cl)",
+              "Lineal",
+              "Un solo vector",
+              "≠ 0",
+              "**Polar**"
+            ],
+            [
+              "H–F",
+              "Polar (δ+ H, δ− F)",
+              "Lineal",
+              "Un solo vector",
+              "≠ 0",
+              "**Polar**"
+            ],
+            [
+              "CO₂ (EN C 2,5; O 3,5; ΔEN = 1)",
+              "Polares",
+              "Lineal O=C=O",
+              "Dos vectores opuestos se anulan",
+              "0",
+              "**Apolar**"
+            ],
+            [
+              "BF₃ (trifluoruro de boro)",
+              "Polares",
+              "Trigonal plana",
+              "Tres vectores a 120° se anulan",
+              "0",
+              "**Apolar**"
+            ],
+            [
+              "H₂CO (formaldehído)",
+              "Polares (C=O y C–H distintos)",
+              "Trigonal plana",
+              "No se anulan (el O tira más)",
+              "> 0",
+              "**Polar**"
+            ],
+            [
+              "H₂O",
+              "Polares",
+              "Angular",
+              "No se anulan (geometría doblada)",
+              "≈ 1,85 D",
+              "**Polar**"
+            ],
+            [
+              "CH₄",
+              "Casi apolares",
+              "Tetraédrica",
+              "Se anulan",
+              "0",
+              "**Apolar**"
+            ],
+            [
+              "NH₃",
+              "Polares",
+              "Piramidal",
+              "No se anulan",
+              "≈ 1,47 D",
+              "**Polar**"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "CO₂ y H₂O tienen enlaces polares parecidos, pero el CO₂ es **lineal** (sus dipolos se cancelan, μ = 0) y el agua es **angular** (no se cancelan). Esa diferencia de forma explica por qué el agua es líquida y disuelve sales, mientras el CO₂ es un gas.",
+          "title": "El ejemplo clave"
+        },
+        {
+          "type": "quiz",
+          "question": "Si la suma de los vectores de enlace se anula, la molécula es:",
+          "options": [
+            "Polar",
+            "Apolar",
+            "Iónica",
+            "Metálica"
+          ],
+          "correct": 1,
+          "explanation": "μ = 0 → apolar."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el CO₂ es apolar si sus enlaces son polares?",
+          "options": [
+            "Porque no tiene enlaces",
+            "Porque es lineal y los dos dipolos se anulan",
+            "Porque el C es más electronegativo",
+            "Porque es iónico"
+          ],
+          "correct": 1,
+          "explanation": "Geometría simétrica."
+        },
+        {
+          "type": "quiz",
+          "question": "El vector μ apunta hacia:",
+          "options": [
+            "El átomo menos electronegativo",
+            "El átomo más electronegativo",
+            "El centro de la molécula",
+            "Arriba"
+          ],
+          "correct": 1,
+          "explanation": "Hacia la carga δ−."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué molécula es polar?",
+          "options": [
+            "CO₂",
+            "BF₃",
+            "H₂O",
+            "CH₄"
+          ],
+          "correct": 2,
+          "explanation": "Angular: los dipolos no se anulan."
+        },
+        {
+          "type": "quiz",
+          "question": "El formaldehído (H₂CO) es:",
+          "options": [
+            "Apolar",
+            "Polar (μ > 0)",
+            "Iónico",
+            "Metálico"
+          ],
+          "correct": 1,
+          "explanation": "Según la diapositiva."
+        },
+        {
+          "type": "quiz",
+          "question": "La polaridad de una molécula depende de:",
+          "options": [
+            "Solo de su masa",
+            "De la ΔEN y de la geometría",
+            "Solo del número de átomos",
+            "Del color"
+          ],
+          "correct": 1,
+          "explanation": "Ambas cosas."
+        },
+        {
+          "type": "quiz",
+          "question": "El H₂ tiene μ:",
+          "options": [
+            "0",
+            "1 D",
+            "Infinito",
+            "1,85 D"
+          ],
+          "correct": 0,
+          "explanation": "Átomos idénticos."
+        }
+      ]
+    },
+    {
+      "id": "l04-intermoleculares",
+      "title": "Fuerzas intermoleculares",
+      "summary": "Intra frente a inter; ion-dipolo, dipolo-dipolo, puente de hidrógeno, dipolo inducido y London.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo de fuerza",
+            "Qué une",
+            "Qué determina",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "**Intramoleculares**",
+              "Unen a los **átomos dentro** de una molécula",
+              "Las **propiedades químicas** de las sustancias",
+              "Enlace iónico, covalente y metálico"
+            ],
+            [
+              "**Intermoleculares**",
+              "Mantienen unidas a las **moléculas entre sí**",
+              "Las **propiedades físicas** de las sustancias (puntos de fusión y ebullición, solubilidad, viscosidad, tensión superficial)",
+              "Ion-dipolo, puente de H, dipolo-dipolo, ion-dipolo inducido, dipolo-dipolo inducido, fuerzas de dispersión"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ion-dipolo"
+        },
+        {
+          "type": "text",
+          "text": "Se producen entre una **sustancia iónica** y una **sustancia covalente polar** (dipolo). La **solvatación** de sustancias iónicas en agua se debe a la formación de interacciones ion-dipolo entre los iones y las moléculas de agua: los **cationes** quedan rodeados por el lado del **oxígeno (δ−)** del agua y los **aniones** por el lado de los **hidrógenos (δ+)**. Es la fuerza intermolecular **más fuerte**. Ejemplo: NaCl disuelto en agua."
+        },
+        {
+          "type": "heading",
+          "text": "Dipolo-dipolo"
+        },
+        {
+          "type": "text",
+          "text": "Cuando dos **moléculas polares** (dipolos) se aproximan, se produce una atracción entre **polos opuestos** (δ+ de una con δ− de otra). Esta fuerza es **más intensa cuanto mayor sea la diferencia de electronegatividad** entre los átomos enlazados (depende de μ). Ejemplo: HCl···HCl, SO₂, cloroformo (CHCl₃)."
+        },
+        {
+          "type": "heading",
+          "text": "Puentes de hidrógeno"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Atracción entre un **átomo de hidrógeno** unido a un átomo muy electronegativo y un **átomo de oxígeno, flúor o nitrógeno con carga negativa** (con pares libres) de otra molécula. Es una interacción **dipolo-dipolo especialmente fuerte** que vincula el polo positivo de una molécula con el polo negativo de otra: O–H···O, N–H···N, F–H···F.",
+          "title": "Puente de hidrógeno"
+        },
+        {
+          "type": "text",
+          "text": "Ejemplos: agua (H₂O), amoníaco (NH₃), fluoruro de hidrógeno (HF), metanol (CH₃OH). En el agua cada molécula forma hasta 4 puentes de hidrógeno y crea una red tridimensional."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Los puentes de hidrógeno explican las «anomalías» del agua: punto de ebullición alto (100 °C, cuando el H₂S, más pesado, hierve a −60 °C), elevado calor específico, alta tensión superficial y que el hielo flote.",
+          "title": "Por qué importa"
+        },
+        {
+          "type": "heading",
+          "text": "Dipolo-dipolo inducido"
+        },
+        {
+          "type": "text",
+          "text": "Entre una **molécula polar** y una **molécula apolar**. La molécula polar (dipolo permanente, por ejemplo H₂O) **induce una distorsión** en la nube electrónica de la molécula apolar, que se convierte en un **dipolo inducido** y ambas se atraen. Ejemplo: O₂ disuelto en agua (así respiran los peces); acetona con hexano."
+        },
+        {
+          "type": "heading",
+          "text": "Ion-dipolo inducido"
+        },
+        {
+          "type": "text",
+          "text": "Entre un **ion** y una **molécula apolar**: el ion distorsiona la nube electrónica de la molécula. Ejemplo: ion I⁻ con hexano; Cl⁻ con hexano."
+        },
+        {
+          "type": "heading",
+          "text": "Fuerzas de dispersión de London"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la **única interacción atractiva entre dos moléculas apolares**. Los electrones se mueven y en un instante se acumulan en un lado: se forma un **dipolo instantáneo** que induce otro en la molécula vecina. Están presentes en **TODAS** las moléculas y crecen con el tamaño (masa) de la molécula.",
+          "title": "Fuerzas de dispersión de London"
+        },
+        {
+          "type": "text",
+          "text": "Ejemplos: CH₄, I₂, octano (C₈H₁₈) con hexano (C₆H₁₄), gases nobles. Por London el I₂ es sólido, el Br₂ líquido y el F₂ y Cl₂ gases: moléculas más grandes, nubes más deformables, más atracción."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Interacción",
+            "Entre",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Ion–dipolo",
+              "Ion + molécula polar (**la más fuerte**)",
+              "NaCl en agua"
+            ],
+            [
+              "Puente de hidrógeno",
+              "H unido a F, O o N con otro F, O o N",
+              "H₂O, NH₃, HF"
+            ],
+            [
+              "Dipolo–dipolo",
+              "Moléculas polares; depende de μ (ΔEN y geometría)",
+              "HCl, SO₂"
+            ],
+            [
+              "Dipolo–dipolo inducido",
+              "Molécula polar + apolar",
+              "O₂ en agua"
+            ],
+            [
+              "Ion–dipolo inducido",
+              "Ion + molécula apolar",
+              "I⁻ con hexano"
+            ],
+            [
+              "Dispersión de London",
+              "Presente en TODAS las moléculas; única entre apolares",
+              "CH₄, I₂"
+            ]
+          ],
+          "caption": "Tabla resumen de clase"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Orden aproximado de intensidad: **ion-dipolo > puente de hidrógeno > dipolo-dipolo > dipolo-dipolo inducido > dispersión de London**. Todas son mucho más débiles que un enlace químico (intramolecular)."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Las fuerzas intermoleculares están detrás de la **capilaridad** en suelos y muros (ascenso de humedad), de la **adherencia** del asfalto al agregado, del funcionamiento de los **aditivos** del hormigón (superplastificantes que se adsorben en el cemento) y de por qué el agua moja el hormigón pero no una superficie impermeabilizada (apolar)."
+        },
+        {
+          "type": "quiz",
+          "question": "Las fuerzas intermoleculares determinan:",
+          "options": [
+            "Las propiedades químicas",
+            "Las propiedades físicas",
+            "El número atómico",
+            "La masa del núcleo"
+          ],
+          "correct": 1,
+          "explanation": "Fusión, ebullición, solubilidad…"
+        },
+        {
+          "type": "quiz",
+          "question": "La solvatación del NaCl en agua se debe a fuerzas:",
+          "options": [
+            "De London",
+            "Ion-dipolo",
+            "Dipolo-dipolo inducido",
+            "Metálicas"
+          ],
+          "correct": 1,
+          "explanation": "Iones con el dipolo del agua."
+        },
+        {
+          "type": "quiz",
+          "question": "El puente de hidrógeno se forma cuando el H está unido a:",
+          "options": [
+            "C, S o Cl",
+            "F, O o N",
+            "Cualquier átomo",
+            "Metales"
+          ],
+          "correct": 1,
+          "explanation": "Átomos pequeños y muy electronegativos."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué fuerza es la única entre dos moléculas apolares?",
+          "options": [
+            "Puente de hidrógeno",
+            "Dipolo-dipolo",
+            "Dispersión de London",
+            "Ion-dipolo"
+          ],
+          "correct": 2,
+          "explanation": "**London**."
+        },
+        {
+          "type": "quiz",
+          "question": "El O₂ se disuelve un poco en agua gracias a fuerzas:",
+          "options": [
+            "Ion-dipolo",
+            "Dipolo-dipolo inducido",
+            "Metálicas",
+            "Iónicas"
+          ],
+          "correct": 1,
+          "explanation": "El agua polariza al O₂."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué fuerza está presente en TODAS las moléculas?",
+          "options": [
+            "Puente de hidrógeno",
+            "Dispersión de London",
+            "Ion-dipolo",
+            "Dipolo-dipolo"
+          ],
+          "correct": 1,
+          "explanation": "Dipolos instantáneos."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el agua hierve a 100 °C y el H₂S a −60 °C?",
+          "options": [
+            "Porque el H₂S es más liviano",
+            "Por los puentes de hidrógeno del agua",
+            "Porque el agua es iónica",
+            "Por la gravedad"
+          ],
+          "correct": 1,
+          "explanation": "El S no forma puentes de hidrógeno fuertes."
+        },
+        {
+          "type": "quiz",
+          "question": "La fuerza intermolecular más intensa es:",
+          "options": [
+            "London",
+            "Dipolo-dipolo",
+            "Ion-dipolo",
+            "Dipolo inducido"
+          ],
+          "correct": 2,
+          "explanation": "Según la tabla de clase."
+        },
+        {
+          "type": "quiz",
+          "question": "Al hervir agua se rompen:",
+          "options": [
+            "Los enlaces O–H",
+            "Los puentes de hidrógeno entre moléculas",
+            "Los núcleos",
+            "Los enlaces iónicos"
+          ],
+          "correct": 1,
+          "explanation": "Fuerzas **inter**moleculares."
+        }
+      ]
+    }
+  ]
+}

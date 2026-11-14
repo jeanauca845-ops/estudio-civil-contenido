@@ -1,0 +1,317 @@
+{
+  "id": "a05-espacios",
+  "title": "Espacios vectoriales",
+  "description": "Definición, subespacios, combinación lineal, independencia lineal, base y dimensión",
+  "lessons": [
+    {
+      "id": "l01-espacio",
+      "title": "Espacios y subespacios vectoriales",
+      "summary": "Los axiomas y cómo verificar un subespacio.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un espacio vectorial es cualquier conjunto de «objetos» (flechas, polinomios, matrices, funciones) que se pueden **sumar** y **multiplicar por números** cumpliendo las mismas reglas que las flechas del plano. El álgebra lineal estudia todos a la vez.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Axiomas (V con suma y producto por escalar)",
+            ""
+          ],
+          "rows": [
+            [
+              "Cerradura de la suma",
+              "u + v ∈ V"
+            ],
+            [
+              "Conmutativa y asociativa",
+              "u + v = v + u; (u + v) + w = u + (v + w)"
+            ],
+            [
+              "Neutro",
+              "Existe 0 con u + 0 = u"
+            ],
+            [
+              "Opuesto",
+              "Existe −u con u + (−u) = 0"
+            ],
+            [
+              "Cerradura del producto",
+              "k·u ∈ V"
+            ],
+            [
+              "Distributivas",
+              "k(u + v) = ku + kv; (k + m)u = ku + mu"
+            ],
+            [
+              "Asociativa del escalar",
+              "k(mu) = (km)u"
+            ],
+            [
+              "Unidad",
+              "1·u = u"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Ejemplos de espacios vectoriales",
+            "Elementos"
+          ],
+          "rows": [
+            [
+              "ℝⁿ",
+              "n-uplas (x₁, …, xₙ)"
+            ],
+            [
+              "Pₙ",
+              "Polinomios de grado ≤ n"
+            ],
+            [
+              "M(m×n)",
+              "Matrices m × n"
+            ],
+            [
+              "C[a, b]",
+              "Funciones continuas en [a, b]"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "W ⊆ V es subespacio si: 1) **0 ∈ W**; 2) es cerrado bajo la suma (u, v ∈ W ⇒ u + v ∈ W); 3) es cerrado bajo el producto por escalar (u ∈ W ⇒ ku ∈ W).",
+          "title": "Subespacio (criterio práctico)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "W = {(x, y) : y = 2x} (recta por el origen) SÍ es subespacio de ℝ². W = {(x, y) : y = 2x + 1} NO: no contiene al (0, 0). En ℝ³, los subespacios son: {0}, rectas y planos **por el origen**, y ℝ³.",
+          "title": "Ejemplos"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es subespacio de ℝ²?",
+          "options": [
+            "La recta y = 3x",
+            "La recta y = 3x + 2",
+            "El círculo x² + y² = 1",
+            "El primer cuadrante"
+          ],
+          "correct": 0,
+          "explanation": "Pasa por el origen y es cerrada."
+        },
+        {
+          "type": "quiz",
+          "question": "Lo primero a verificar en un subespacio:",
+          "options": [
+            "Que tenga inversa",
+            "Que contenga el vector cero",
+            "Que sea finito",
+            "Que sea simétrico"
+          ],
+          "correct": 1,
+          "explanation": "Condición necesaria."
+        },
+        {
+          "type": "quiz",
+          "question": "¿El primer cuadrante {x ≥ 0, y ≥ 0} es subespacio?",
+          "options": [
+            "Sí",
+            "No: −1·(1, 1) sale del conjunto",
+            "Solo en ℝ³",
+            "Depende"
+          ],
+          "correct": 1,
+          "explanation": "No es cerrado bajo escalares negativos."
+        }
+      ]
+    },
+    {
+      "id": "l02-independencia",
+      "title": "Combinación lineal e independencia lineal",
+      "summary": "Conjunto generador y cómo comprobar independencia.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "v es combinación lineal de v₁, …, vₖ si existen escalares con v = c₁v₁ + … + cₖvₖ. El conjunto de todas las combinaciones es el **espacio generado** gen{v₁, …, vₖ}.",
+          "title": "Combinación lineal"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "v₁, …, vₖ son **linealmente independientes (LI)** si la única solución de c₁v₁ + … + cₖvₖ = 0 es c₁ = … = cₖ = 0. Si hay otra solución, son **dependientes (LD)**: alguno es combinación de los otros (es «redundante»).",
+          "title": "Independencia lineal"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para llegar a cualquier punto de una ciudad bastan dos direcciones independientes (norte y este). Una tercera dirección «noreste» no aporta nada nuevo: es dependiente de las otras dos.",
+          "title": "Analogía"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Coloca los vectores como columnas de una matriz.",
+            "Escalona (Gauss).",
+            "Si el rango = número de vectores → LI. Si es menor → LD.",
+            "Atajo para n vectores en ℝⁿ: LI ⟺ det ≠ 0."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "(1, 2, 3), (0, 1, 4), (5, 6, 0): det = 1 ≠ 0 → **LI**. (1, 2), (2, 4): el segundo es el doble del primero → **LD**.",
+          "title": "Ejemplos"
+        },
+        {
+          "type": "quiz",
+          "question": "Dos vectores en ℝ² son LD si:",
+          "options": [
+            "Son perpendiculares",
+            "Uno es múltiplo del otro",
+            "Tienen norma 1",
+            "Suman cero siempre"
+          ],
+          "correct": 1,
+          "explanation": "Paralelos."
+        },
+        {
+          "type": "quiz",
+          "question": "Tres vectores en ℝ³ son LI si:",
+          "options": [
+            "det = 0",
+            "det ≠ 0",
+            "Son unitarios",
+            "Uno es nulo"
+          ],
+          "correct": 1,
+          "explanation": "Matriz invertible."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Puede un conjunto que contiene al vector cero ser LI?",
+          "options": [
+            "Sí",
+            "No",
+            "Solo en ℝ²",
+            "Depende"
+          ],
+          "correct": 1,
+          "explanation": "1·0 = 0 es una combinación no trivial."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos vectores LI puede haber como máximo en ℝ³?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "Infinitos"
+          ],
+          "correct": 1,
+          "explanation": "La dimensión."
+        }
+      ]
+    },
+    {
+      "id": "l03-base",
+      "title": "Base y dimensión",
+      "summary": "Base canónica, coordenadas y dimensión de un espacio.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Un conjunto de vectores que es **linealmente independiente** y **genera** todo el espacio. La **dimensión** es el número de vectores de cualquier base.",
+          "title": "Base y dimensión"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Espacio",
+            "Base canónica",
+            "Dimensión"
+          ],
+          "rows": [
+            [
+              "ℝ²",
+              "{(1, 0), (0, 1)}",
+              "2"
+            ],
+            [
+              "ℝ³",
+              "{i, j, k}",
+              "3"
+            ],
+            [
+              "P₂",
+              "{1, x, x²}",
+              "3"
+            ],
+            [
+              "M(2×2)",
+              "4 matrices con un 1 y ceros",
+              "4"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una base es como un **sistema de coordenadas**: cada vector se escribe de forma única con ella. En ℝⁿ, cualquier conjunto de n vectores LI es automáticamente una base.",
+          "title": "Idea"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Subespacio W = {(x, y, z) : x + y + z = 0}: z = −x − y → (x, y, −x − y) = x(1, 0, −1) + y(0, 1, −1). Base: {(1, 0, −1), (0, 1, −1)}; **dim W = 2** (es un plano por el origen).",
+          "title": "Base de un subespacio"
+        },
+        {
+          "type": "quiz",
+          "question": "Dimensión de ℝ⁴:",
+          "options": [
+            "3",
+            "4",
+            "16",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "4 vectores canónicos."
+        },
+        {
+          "type": "quiz",
+          "question": "Una base debe ser:",
+          "options": [
+            "Solo LI",
+            "Solo generadora",
+            "LI y generadora",
+            "Ortogonal"
+          ],
+          "correct": 2,
+          "explanation": "Ambas."
+        },
+        {
+          "type": "quiz",
+          "question": "Dimensión de P₃ (polinomios de grado ≤ 3):",
+          "options": [
+            "3",
+            "4",
+            "2",
+            "Infinita"
+          ],
+          "correct": 1,
+          "explanation": "{1, x, x², x³}."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1409 @@
+{
+  "id": "c03-funciones",
+  "title": "Funciones",
+  "description": "Concepto, dominio y rango, funciones lineales, cuadráticas, polinomiales, racionales, por tramos, exponenciales, logarítmicas y trigonométricas; transformaciones, composición e inversa",
+  "lessons": [
+    {
+      "id": "l01-concepto",
+      "title": "¿Qué es una función?",
+      "summary": "La máquina de entrada y salida, notación f(x), evaluación y prueba de la recta vertical.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una función es como una **máquina expendedora**: metes un dato (x, la entrada), la máquina aplica una regla fija y sale **un único resultado** (y = f(x), la salida). Si aprietas el botón A1, siempre sale lo mismo; nunca salen dos productos distintos por el mismo botón.",
+          "title": "Analogía"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Una función f de A en B es una regla que asigna a **cada** elemento x de A **exactamente un** elemento y de B. Se escribe y = f(x). x es la **variable independiente** y y la **dependiente**.",
+          "title": "Función"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x² − 3x. f(2) = 4 − 6 = **−2**. f(−1) = 1 + 3 = **4**. f(a + h) = (a + h)² − 3(a + h) = a² + 2ah + h² − 3a − 3h. Evaluar f(a + h) es justo lo que harás para derivar con la definición.",
+          "title": "Evaluar"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Forma de representar",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Fórmula",
+              "f(x) = 2x + 1"
+            ],
+            [
+              "Tabla",
+              "x: 0, 1, 2 → y: 1, 3, 5"
+            ],
+            [
+              "Gráfica",
+              "Recta que pasa por (0, 1) con pendiente 2"
+            ],
+            [
+              "Palabras",
+              "«El doble de un número más uno»"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Una curva en el plano es la gráfica de una función si **ninguna recta vertical la corta en más de un punto**. La circunferencia x² + y² = 25 NO es función (la recta x = 0 la corta en y = 5 y y = −5). Estas curvas se derivan con **derivación implícita**.",
+          "title": "Prueba de la recta vertical"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Ejemplos reales: la deflexión de una viga en función de la posición, y(x); el caudal de un río en función del tiempo, Q(t); el costo de una obra en función de los metros construidos, C(m)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f(x) = 3x − 5, f(4) =",
+          "options": [
+            "7",
+            "12",
+            "−2",
+            "17"
+          ],
+          "correct": 0,
+          "explanation": "12 − 5 = 7."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál NO es una función de x?",
+          "options": [
+            "y = x²",
+            "y = 2x + 1",
+            "x² + y² = 1",
+            "y = |x|"
+          ],
+          "correct": 2,
+          "explanation": "La circunferencia falla la prueba de la recta vertical."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f(x) = x², f(a + h) =",
+          "options": [
+            "a² + h²",
+            "a² + 2ah + h²",
+            "a² + h",
+            "(a + h)"
+          ],
+          "correct": 1,
+          "explanation": "Cuadrado de un binomio."
+        },
+        {
+          "type": "quiz",
+          "question": "En y = f(x), x es la variable:",
+          "options": [
+            "Dependiente",
+            "Independiente",
+            "Constante",
+            "Imaginaria"
+          ],
+          "correct": 1,
+          "explanation": "La entrada."
+        },
+        {
+          "type": "quiz",
+          "question": "Si g(t) = 1/t, g(1/2) =",
+          "options": [
+            "1/2",
+            "2",
+            "−2",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "1/(1/2) = 2."
+        }
+      ]
+    },
+    {
+      "id": "l02-dominio",
+      "title": "Dominio y rango",
+      "summary": "Las tres reglas para hallar el dominio; rango desde la gráfica.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "**Dominio:** todos los valores de x que se pueden meter en la función (entradas permitidas). **Rango (o recorrido, imagen):** todos los valores que salen (salidas posibles).",
+          "title": "Dominio y rango"
+        },
+        {
+          "type": "text",
+          "text": "Para hallar el dominio, empieza con todos los reales y **quita** lo que «rompe» la función:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Regla",
+            "Qué no se permite",
+            "Ejemplo",
+            "Dominio"
+          ],
+          "rows": [
+            [
+              "1. Denominador",
+              "Que el denominador valga 0",
+              "f(x) = 1/(x − 3)",
+              "ℝ − {3}"
+            ],
+            [
+              "2. Raíz de índice par",
+              "Que lo de adentro sea negativo",
+              "f(x) = √(x − 2)",
+              "[2, +∞)"
+            ],
+            [
+              "3. Logaritmo",
+              "Que el argumento sea ≤ 0",
+              "f(x) = ln(x + 1)",
+              "(−1, +∞)"
+            ],
+            [
+              "Combinadas",
+              "Todas a la vez",
+              "f(x) = √x/(x − 4)",
+              "[0, 4) ∪ (4, +∞)"
+            ],
+            [
+              "Raíz par en denominador",
+              "Adentro debe ser > 0 (estricto)",
+              "f(x) = 1/√(5 − x)",
+              "(−∞, 5)"
+            ],
+            [
+              "Polinomios, raíz impar, eˣ, sen, cos",
+              "Nada",
+              "f(x) = x³ − x, ∛x, eˣ",
+              "ℝ"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = √(x² − 9): se necesita x² − 9 ≥ 0 → (x − 3)(x + 3) ≥ 0 → tabla de signos → **(−∞, −3] ∪ [3, +∞)**.",
+          "title": "Dominio con inecuación"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El rango se ve mejor en la **gráfica** (proyectándola sobre el eje y) o despejando x en función de y. f(x) = x² tiene rango [0, +∞); f(x) = 1/x tiene rango ℝ − {0}; sen x tiene rango [−1, 1].",
+          "title": "Rango"
+        },
+        {
+          "type": "quiz",
+          "question": "Dominio de f(x) = 1/(x + 5):",
+          "options": [
+            "ℝ",
+            "ℝ − {5}",
+            "ℝ − {−5}",
+            "(−5, +∞)"
+          ],
+          "correct": 2,
+          "explanation": "x + 5 ≠ 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Dominio de f(x) = √(4 − x):",
+          "options": [
+            "(−∞, 4]",
+            "[4, +∞)",
+            "(−∞, 4)",
+            "ℝ"
+          ],
+          "correct": 0,
+          "explanation": "4 − x ≥ 0 → x ≤ 4."
+        },
+        {
+          "type": "quiz",
+          "question": "Dominio de ln(x − 2):",
+          "options": [
+            "[2, +∞)",
+            "(2, +∞)",
+            "ℝ",
+            "(0, +∞)"
+          ],
+          "correct": 1,
+          "explanation": "x − 2 > 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Rango de f(x) = x² + 1:",
+          "options": [
+            "ℝ",
+            "[1, +∞)",
+            "[0, +∞)",
+            "(1, +∞)"
+          ],
+          "correct": 1,
+          "explanation": "x² ≥ 0 → x² + 1 ≥ 1."
+        },
+        {
+          "type": "quiz",
+          "question": "Dominio de f(x) = ∛(x − 7):",
+          "options": [
+            "[7, +∞)",
+            "ℝ",
+            "ℝ − {7}",
+            "(7, +∞)"
+          ],
+          "correct": 1,
+          "explanation": "La raíz cúbica acepta negativos."
+        },
+        {
+          "type": "quiz",
+          "question": "Dominio de x/(x² − 4):",
+          "options": [
+            "ℝ − {2}",
+            "ℝ − {−2, 2}",
+            "ℝ − {4}",
+            "ℝ"
+          ],
+          "correct": 1,
+          "explanation": "x² − 4 = 0 en ±2."
+        }
+      ]
+    },
+    {
+      "id": "l03-lineal",
+      "title": "Función lineal y la recta",
+      "summary": "Pendiente, intercepto, ecuaciones de la recta, paralelas y perpendiculares.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "f(x) = mx + b",
+          "caption": "m = pendiente; b = intercepto con el eje y (ordenada al origen)."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Mide **cuánto sube y por cada unidad que avanza x**: m = Δy/Δx = (y₂ − y₁)/(x₂ − x₁). Es la «inclinación» de la recta. m > 0 sube, m < 0 baja, m = 0 horizontal; una recta vertical no tiene pendiente (x = constante).",
+          "title": "Pendiente"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una pendiente de 0,08 (8 %) en una carretera significa que sube 8 m por cada 100 m horizontales. **La derivada será la pendiente de una curva en un punto**: por eso la recta es la base de todo el cálculo diferencial.",
+          "title": "Analogía de la carretera"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Forma",
+            "Ecuación",
+            "Cuándo usarla"
+          ],
+          "rows": [
+            [
+              "Pendiente-intercepto",
+              "y = mx + b",
+              "Conoces m y b"
+            ],
+            [
+              "Punto-pendiente",
+              "y − y₁ = m(x − x₁)",
+              "Conoces un punto y la pendiente (¡la usarás para rectas tangentes!)"
+            ],
+            [
+              "General",
+              "Ax + By + C = 0",
+              "Forma estándar"
+            ],
+            [
+              "Dos puntos",
+              "Primero m = (y₂ − y₁)/(x₂ − x₁), luego punto-pendiente",
+              "Conoces dos puntos"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Relación",
+            "Condición",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Paralelas",
+              "m₁ = m₂",
+              "y = 2x + 1 y y = 2x − 5"
+            ],
+            [
+              "Perpendiculares",
+              "m₁·m₂ = −1  (m₂ = −1/m₁)",
+              "y = 2x y y = −x/2"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Recta por (1, 3) y (4, 9): m = (9 − 3)/(4 − 1) = 2. y − 3 = 2(x − 1) → **y = 2x + 1**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_function",
+          "title": "Función lineal: cambia a (pendiente) y k (intercepto)",
+          "params": {
+            "preset": 0
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Pendiente de la recta por (2, 1) y (5, 7):",
+          "options": [
+            "2",
+            "3",
+            "1/2",
+            "6"
+          ],
+          "correct": 0,
+          "explanation": "6/3 = 2."
+        },
+        {
+          "type": "quiz",
+          "question": "Una recta perpendicular a y = 3x − 1 tiene pendiente:",
+          "options": [
+            "3",
+            "−3",
+            "1/3",
+            "−1/3"
+          ],
+          "correct": 3,
+          "explanation": "m₂ = −1/3."
+        },
+        {
+          "type": "quiz",
+          "question": "Ecuación de la recta con m = −2 que pasa por (0, 4):",
+          "options": [
+            "y = −2x + 4",
+            "y = 4x − 2",
+            "y = −2x − 4",
+            "y = 2x + 4"
+          ],
+          "correct": 0,
+          "explanation": "b = 4."
+        },
+        {
+          "type": "quiz",
+          "question": "Una recta horizontal tiene pendiente:",
+          "options": [
+            "1",
+            "0",
+            "Infinita",
+            "−1"
+          ],
+          "correct": 1,
+          "explanation": "No sube ni baja."
+        },
+        {
+          "type": "quiz",
+          "question": "Recta por (2, 5) con pendiente 3 (punto-pendiente):",
+          "options": [
+            "y − 5 = 3(x − 2)",
+            "y − 2 = 3(x − 5)",
+            "y = 3x + 5",
+            "y + 5 = 3(x + 2)"
+          ],
+          "correct": 0,
+          "explanation": "y − y₁ = m(x − x₁)."
+        }
+      ]
+    },
+    {
+      "id": "l04-cuadratica",
+      "title": "Función cuadrática",
+      "summary": "Parábola, vértice, raíces, concavidad y forma canónica.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "f(x) = ax² + bx + c   (a ≠ 0)",
+          "caption": "Su gráfica es una parábola."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Cómo se obtiene",
+            "Ejemplo: f(x) = x² − 4x + 3"
+          ],
+          "rows": [
+            [
+              "Abre hacia",
+              "a > 0 arriba (∪, tiene mínimo); a < 0 abajo (∩, tiene máximo)",
+              "a = 1 > 0: hacia arriba"
+            ],
+            [
+              "Vértice",
+              "xv = −b/(2a);  yv = f(xv)",
+              "xv = 2; f(2) = −1 → V(2, −1)"
+            ],
+            [
+              "Eje de simetría",
+              "x = −b/(2a)",
+              "x = 2"
+            ],
+            [
+              "Corte con y",
+              "(0, c)",
+              "(0, 3)"
+            ],
+            [
+              "Raíces (cortes con x)",
+              "Fórmula general o factorización",
+              "(x − 1)(x − 3) → x = 1, x = 3"
+            ],
+            [
+              "Rango",
+              "a > 0: [yv, +∞);  a < 0: (−∞, yv]",
+              "[−1, +∞)"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "f(x) = a(x − h)² + k",
+          "caption": "Forma canónica (vértice en (h, k)). Se obtiene completando el cuadrado: x² − 4x + 3 = (x² − 4x + 4) − 4 + 3 = (x − 2)² − 1."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La forma de un cable colgante con carga uniforme en la horizontal (puente colgante) es una parábola; también la trayectoria de un proyectil y el diagrama de momento flector de una viga con carga uniforme."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_function",
+          "title": "Parábola: mueve el vértice con h y k",
+          "params": {
+            "preset": 1
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Vértice de f(x) = x² + 6x + 5:",
+          "options": [
+            "(3, 32)",
+            "(−3, −4)",
+            "(−6, 5)",
+            "(3, −4)"
+          ],
+          "correct": 1,
+          "explanation": "xv = −6/2 = −3; f(−3) = 9 − 18 + 5 = −4."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = −2x² + 3 abre hacia:",
+          "options": [
+            "Arriba",
+            "Abajo",
+            "La derecha",
+            "No es parábola"
+          ],
+          "correct": 1,
+          "explanation": "a < 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Forma canónica de x² − 2x + 5:",
+          "options": [
+            "(x − 1)² + 4",
+            "(x + 1)² + 4",
+            "(x − 2)² + 1",
+            "(x − 1)² + 5"
+          ],
+          "correct": 0,
+          "explanation": "x² − 2x + 1 − 1 + 5."
+        },
+        {
+          "type": "quiz",
+          "question": "Una parábola con a < 0 tiene:",
+          "options": [
+            "Un mínimo",
+            "Un máximo",
+            "Ninguno",
+            "Dos máximos"
+          ],
+          "correct": 1,
+          "explanation": "Abre hacia abajo."
+        }
+      ]
+    },
+    {
+      "id": "l05-otras",
+      "title": "Polinomios, racionales, raíces, valor absoluto y por tramos",
+      "summary": "Catálogo de funciones algebraicas y sus gráficas típicas.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Forma",
+            "Dominio",
+            "Rasgos de la gráfica"
+          ],
+          "rows": [
+            [
+              "Polinomial de grado n",
+              "aₙxⁿ + … + a₁x + a₀",
+              "ℝ",
+              "Continua y suave; hasta n raíces y hasta n − 1 «vueltas»; para |x| grande se comporta como aₙxⁿ"
+            ],
+            [
+              "Potencia",
+              "xⁿ",
+              "ℝ",
+              "n par: forma de U (simétrica); n impar: forma de S"
+            ],
+            [
+              "Racional",
+              "P(x)/Q(x)",
+              "ℝ menos las raíces de Q",
+              "Asíntotas verticales donde Q = 0 (si no se cancela); horizontales según los grados"
+            ],
+            [
+              "Recíproca",
+              "1/x",
+              "ℝ − {0}",
+              "Hipérbola; asíntotas x = 0 y y = 0"
+            ],
+            [
+              "Raíz cuadrada",
+              "√x",
+              "[0, +∞)",
+              "Media parábola acostada"
+            ],
+            [
+              "Raíz cúbica",
+              "∛x",
+              "ℝ",
+              "S acostada, pasa por el origen"
+            ],
+            [
+              "Valor absoluto",
+              "|x|",
+              "ℝ",
+              "V con vértice en el origen"
+            ],
+            [
+              "Por tramos (a trozos)",
+              "Distintas fórmulas en distintos intervalos",
+              "Según los tramos",
+              "Puede tener saltos o picos"
+            ],
+            [
+              "Parte entera (escalón)",
+              "⌊x⌋ = mayor entero ≤ x",
+              "ℝ",
+              "Escalones: salta en cada entero"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = { x² si x < 1;  3 − x si x ≥ 1 }. Para evaluar, primero mira en qué tramo cae x: f(−2) = 4 (primer tramo); f(1) = 2 (segundo tramo, porque x ≥ 1); f(5) = −2. En x = 1, el tramo izquierdo se acerca a 1 y el derecho vale 2: hay un **salto**.",
+          "title": "Función por tramos"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Las tarifas de agua potable por bloques de consumo, las cargas que actúan solo en una parte de una viga y la ley tensión–deformación del acero (elástica y luego plástica) son funciones por tramos."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Grado del polinomio",
+            "Nombre",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "0",
+              "Constante",
+              "f(x) = 5"
+            ],
+            [
+              "1",
+              "Lineal",
+              "2x + 1"
+            ],
+            [
+              "2",
+              "Cuadrática",
+              "x² − 3"
+            ],
+            [
+              "3",
+              "Cúbica",
+              "x³ − x"
+            ],
+            [
+              "4",
+              "Cuártica",
+              "x⁴ − 4x²"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_function",
+          "title": "Explora x³, √x, 1/x y |x|",
+          "params": {
+            "preset": 2
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Dominio de una función polinomial:",
+          "options": [
+            "ℝ",
+            "[0, +∞)",
+            "ℝ − {0}",
+            "Depende del grado"
+          ],
+          "correct": 0,
+          "explanation": "Siempre todos los reales."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = (x + 1)/(x − 2) tiene asíntota vertical en:",
+          "options": [
+            "x = −1",
+            "x = 2",
+            "y = 1",
+            "x = 0"
+          ],
+          "correct": 1,
+          "explanation": "Donde el denominador se anula."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f(x) = { 2x si x ≤ 0; x + 1 si x > 0 }, f(0) =",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "No existe"
+          ],
+          "correct": 0,
+          "explanation": "x = 0 cae en el primer tramo."
+        },
+        {
+          "type": "quiz",
+          "question": "Un polinomio de grado 3 puede tener como máximo:",
+          "options": [
+            "1 raíz",
+            "2 raíces",
+            "3 raíces",
+            "4 raíces"
+          ],
+          "correct": 2,
+          "explanation": "Hasta n raíces reales."
+        },
+        {
+          "type": "quiz",
+          "question": "⌊2,7⌋ =",
+          "options": [
+            "3",
+            "2",
+            "2,7",
+            "0,7"
+          ],
+          "correct": 1,
+          "explanation": "Mayor entero menor o igual."
+        }
+      ]
+    },
+    {
+      "id": "l06-exp-log",
+      "title": "Funciones exponenciales y logarítmicas",
+      "summary": "aˣ, eˣ, logaritmos, propiedades y ecuaciones.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "f(x) = aˣ   (a > 0, a ≠ 1)",
+          "caption": "Exponencial: dominio ℝ, rango (0, +∞), pasa por (0, 1). a > 1 crece; 0 < a < 1 decrece."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una hoja de papel doblada por la mitad duplica su grosor cada vez: 2, 4, 8, 16… Tras 42 dobleces llegaría a la Luna. Eso es el crecimiento **exponencial**: la variable está en el exponente.",
+          "title": "Analogía"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "e ≈ 2,71828… es un número irracional, la base «natural» del cálculo. Surge del interés compuesto continuo: lím (1 + 1/n)ⁿ cuando n → ∞. La función eˣ es la única que **es igual a su propia derivada**.",
+          "title": "El número e"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "logₐ x = y significa aʸ = x. **El logaritmo es el exponente**: log₂ 8 = 3 porque 2³ = 8. ln x = logₑ x (logaritmo natural); log x = log₁₀ x. Dominio: x > 0.",
+          "title": "Logaritmo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Fórmula",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Producto",
+              "ln(ab) = ln a + ln b",
+              "ln(2x) = ln 2 + ln x"
+            ],
+            [
+              "Cociente",
+              "ln(a/b) = ln a − ln b",
+              "ln(x/3) = ln x − ln 3"
+            ],
+            [
+              "Potencia",
+              "ln(aⁿ) = n·ln a",
+              "ln(x⁵) = 5 ln x"
+            ],
+            [
+              "Inversas",
+              "ln(eˣ) = x;  e^(ln x) = x",
+              "e^(ln 7) = 7"
+            ],
+            [
+              "Valores clave",
+              "ln 1 = 0;  ln e = 1",
+              "—"
+            ],
+            [
+              "Cambio de base",
+              "logₐ x = ln x / ln a",
+              "log₂ 10 = ln 10/ln 2 ≈ 3,32"
+            ],
+            [
+              "NO existe",
+              "ln(a + b) ≠ ln a + ln b",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad exponencial",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Producto",
+              "eᵃ·eᵇ = eᵃ⁺ᵇ"
+            ],
+            [
+              "Cociente",
+              "eᵃ/eᵇ = eᵃ⁻ᵇ"
+            ],
+            [
+              "Potencia",
+              "(eᵃ)ᵇ = eᵃᵇ"
+            ],
+            [
+              "Negativo",
+              "e⁻ˣ = 1/eˣ"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "3e^(2x) = 12 → e^(2x) = 4 → 2x = ln 4 → **x = ln 4/2 = ln 2 ≈ 0,693**. Para «bajar» la x del exponente se aplica ln a ambos lados.",
+          "title": "Ecuación exponencial"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "ln(x) + ln(x − 3) = ln 4 → ln[x(x − 3)] = ln 4 → x² − 3x − 4 = 0 → x = 4 o x = −1; x = −1 no está en el dominio → **x = 4**.",
+          "title": "Ecuación logarítmica"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Decaimiento exponencial: consolidación de suelos, enfriamiento del hormigón, descarga de un tanque (Q ∝ e^(−kt)), crecimiento de población para dimensionar un sistema de agua potable: P = P₀(1 + r)ⁿ."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_function",
+          "title": "Exponencial y logaritmo",
+          "params": {
+            "preset": 6
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "log₃ 81 =",
+          "options": [
+            "3",
+            "4",
+            "27",
+            "9"
+          ],
+          "correct": 1,
+          "explanation": "3⁴ = 81."
+        },
+        {
+          "type": "quiz",
+          "question": "ln(e⁵) =",
+          "options": [
+            "e",
+            "5",
+            "5e",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "Son inversas."
+        },
+        {
+          "type": "quiz",
+          "question": "ln(x³y) =",
+          "options": [
+            "3 ln x · ln y",
+            "3 ln x + ln y",
+            "ln 3x + ln y",
+            "3(ln x + ln y)"
+          ],
+          "correct": 1,
+          "explanation": "Producto y potencia."
+        },
+        {
+          "type": "quiz",
+          "question": "Resuelve eˣ = 5:",
+          "options": [
+            "x = 5/e",
+            "x = ln 5",
+            "x = e⁵",
+            "x = log 5"
+          ],
+          "correct": 1,
+          "explanation": "Aplicar ln."
+        },
+        {
+          "type": "quiz",
+          "question": "Dominio de ln x:",
+          "options": [
+            "ℝ",
+            "(0, +∞)",
+            "[0, +∞)",
+            "ℝ − {0}"
+          ],
+          "correct": 1,
+          "explanation": "Argumento positivo."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es FALSA?",
+          "options": [
+            "ln 1 = 0",
+            "ln(ab) = ln a + ln b",
+            "ln(a + b) = ln a + ln b",
+            "ln e = 1"
+          ],
+          "correct": 2,
+          "explanation": "No existe propiedad para la suma."
+        }
+      ]
+    },
+    {
+      "id": "l07-trig-funciones",
+      "title": "Funciones trigonométricas y sus inversas",
+      "summary": "Gráficas de sen, cos, tan; amplitud, período; arcsen, arccos, arctan.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Dominio",
+            "Rango",
+            "Período",
+            "Ceros"
+          ],
+          "rows": [
+            [
+              "sen x",
+              "ℝ",
+              "[−1, 1]",
+              "2π",
+              "x = kπ"
+            ],
+            [
+              "cos x",
+              "ℝ",
+              "[−1, 1]",
+              "2π",
+              "x = π/2 + kπ"
+            ],
+            [
+              "tan x",
+              "x ≠ π/2 + kπ",
+              "ℝ",
+              "π",
+              "x = kπ (asíntotas en π/2 + kπ)"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "y = A sen(B(x − C)) + D",
+          "caption": "|A| = amplitud; período = 2π/|B|; C = desfase (horizontal); D = desplazamiento vertical."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = 3 sen(2x): amplitud 3, período 2π/2 = π. Oscila entre −3 y 3 y completa un ciclo cada π unidades.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Las vibraciones de estructuras, las mareas, la corriente alterna y la variación de temperatura a lo largo del día se modelan con senos y cosenos."
+        },
+        {
+          "type": "heading",
+          "text": "Funciones trigonométricas inversas"
+        },
+        {
+          "type": "text",
+          "text": "Para que el seno tenga inversa hay que **restringir** su dominio a un tramo donde sea uno a uno."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inversa",
+            "Significado",
+            "Dominio",
+            "Rango (valor principal)",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "arcsen x (sen⁻¹ x)",
+              "El ángulo cuyo seno es x",
+              "[−1, 1]",
+              "[−π/2, π/2]",
+              "arcsen(1/2) = π/6"
+            ],
+            [
+              "arccos x (cos⁻¹ x)",
+              "El ángulo cuyo coseno es x",
+              "[−1, 1]",
+              "[0, π]",
+              "arccos(0) = π/2"
+            ],
+            [
+              "arctan x (tan⁻¹ x)",
+              "El ángulo cuya tangente es x",
+              "ℝ",
+              "(−π/2, π/2)",
+              "arctan(1) = π/4"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "sen⁻¹ x significa arcsen x, **no** 1/sen x (eso es csc x)."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_function",
+          "title": "Seno y coseno: amplitud y período",
+          "params": {
+            "preset": 9
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Período de y = sen(4x):",
+          "options": [
+            "4π",
+            "π/2",
+            "2π",
+            "π/4"
+          ],
+          "correct": 1,
+          "explanation": "2π/4 = π/2."
+        },
+        {
+          "type": "quiz",
+          "question": "Amplitud de y = −5 cos x:",
+          "options": [
+            "−5",
+            "5",
+            "1",
+            "10"
+          ],
+          "correct": 1,
+          "explanation": "Valor absoluto de A."
+        },
+        {
+          "type": "quiz",
+          "question": "arctan(1) =",
+          "options": [
+            "π/2",
+            "π/4",
+            "1",
+            "45"
+          ],
+          "correct": 1,
+          "explanation": "tan(π/4) = 1 (en radianes)."
+        },
+        {
+          "type": "quiz",
+          "question": "arcsen(2) =",
+          "options": [
+            "π",
+            "No existe",
+            "π/2",
+            "2"
+          ],
+          "correct": 1,
+          "explanation": "El seno nunca vale 2."
+        },
+        {
+          "type": "quiz",
+          "question": "Período de tan x:",
+          "options": [
+            "2π",
+            "π",
+            "π/2",
+            "4π"
+          ],
+          "correct": 1,
+          "explanation": "Se repite cada π."
+        }
+      ]
+    },
+    {
+      "id": "l08-transformaciones",
+      "title": "Transformaciones, simetría y monotonía",
+      "summary": "Desplazar, estirar y reflejar gráficas; funciones pares, impares, crecientes.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Transformación",
+            "Efecto en la gráfica de f(x)"
+          ],
+          "rows": [
+            [
+              "f(x) + k",
+              "Sube k unidades (baja si k < 0)"
+            ],
+            [
+              "f(x − h)",
+              "Se mueve h unidades a la **derecha** (h > 0). ¡Al revés de lo que sugiere el signo!"
+            ],
+            [
+              "a·f(x)",
+              "Estira verticalmente si |a| > 1; comprime si 0 < |a| < 1"
+            ],
+            [
+              "−f(x)",
+              "Reflejo respecto al eje x"
+            ],
+            [
+              "f(−x)",
+              "Reflejo respecto al eje y"
+            ],
+            [
+              "f(bx)",
+              "Comprime horizontalmente si b > 1 (todo pasa «más rápido»)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "En f(x − 3), para obtener la misma salida que f(0) necesitas x = 3: todo ocurre 3 unidades **más tarde**, o sea, a la derecha. Es como un tren que sale 3 horas después: llega a cada estación 3 horas «más a la derecha» en el horario.",
+          "title": "¿Por qué f(x − h) va a la derecha?"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Simetría",
+            "Condición",
+            "Gráfica",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Par",
+              "f(−x) = f(x)",
+              "Simétrica respecto al eje y",
+              "x², cos x, |x|"
+            ],
+            [
+              "Impar",
+              "f(−x) = −f(x)",
+              "Simétrica respecto al origen",
+              "x³, sen x, 1/x"
+            ],
+            [
+              "Ni par ni impar",
+              "Ninguna de las dos",
+              "—",
+              "x² + x, eˣ"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Monotonía",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "Creciente en un intervalo",
+              "Si x₁ < x₂ entonces f(x₁) < f(x₂) (sube de izquierda a derecha)"
+            ],
+            [
+              "Decreciente",
+              "Si x₁ < x₂ entonces f(x₁) > f(x₂) (baja)"
+            ],
+            [
+              "Constante",
+              "f(x₁) = f(x₂)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Más adelante verás que la **derivada** decide si una función crece (f′ > 0) o decrece (f′ < 0) sin necesidad de graficar."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_function",
+          "title": "Laboratorio de transformaciones",
+          "params": {
+            "preset": 1
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "La gráfica de f(x + 2) respecto a f(x) se mueve:",
+          "options": [
+            "2 a la derecha",
+            "2 a la izquierda",
+            "2 arriba",
+            "2 abajo"
+          ],
+          "correct": 1,
+          "explanation": "x − (−2): a la izquierda."
+        },
+        {
+          "type": "quiz",
+          "question": "La gráfica de −f(x) es:",
+          "options": [
+            "Reflejo en el eje y",
+            "Reflejo en el eje x",
+            "Igual",
+            "Desplazada"
+          ],
+          "correct": 1,
+          "explanation": "Cambian de signo las salidas."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = x⁴ − 3x² es:",
+          "options": [
+            "Par",
+            "Impar",
+            "Ni par ni impar",
+            "Constante"
+          ],
+          "correct": 0,
+          "explanation": "f(−x) = f(x)."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = x³ + x es:",
+          "options": [
+            "Par",
+            "Impar",
+            "Ni par ni impar",
+            "Periódica"
+          ],
+          "correct": 1,
+          "explanation": "f(−x) = −f(x)."
+        },
+        {
+          "type": "quiz",
+          "question": "y = (x − 1)² + 3 tiene el vértice en:",
+          "options": [
+            "(1, 3)",
+            "(−1, 3)",
+            "(1, −3)",
+            "(3, 1)"
+          ],
+          "correct": 0,
+          "explanation": "h = 1, k = 3."
+        }
+      ]
+    },
+    {
+      "id": "l09-composicion",
+      "title": "Operaciones, composición e inversa",
+      "summary": "Suma y producto de funciones, f∘g, función uno a uno e inversa.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Operación",
+            "Definición",
+            "Dominio"
+          ],
+          "rows": [
+            [
+              "(f + g)(x)",
+              "f(x) + g(x)",
+              "Dom f ∩ Dom g"
+            ],
+            [
+              "(f·g)(x)",
+              "f(x)·g(x)",
+              "Dom f ∩ Dom g"
+            ],
+            [
+              "(f/g)(x)",
+              "f(x)/g(x)",
+              "Dom f ∩ Dom g, con g(x) ≠ 0"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "(f ∘ g)(x) = f(g(x)): primero se aplica g y al resultado se le aplica f. Es una **cadena de montaje**: la salida de una máquina es la entrada de la siguiente.",
+          "title": "Composición"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = √x, g(x) = x² + 1. (f ∘ g)(x) = √(x² + 1). (g ∘ f)(x) = (√x)² + 1 = x + 1 (con x ≥ 0). En general **f ∘ g ≠ g ∘ f**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para derivar con la **regla de la cadena** tendrás que «descomponer» funciones: h(x) = (3x + 1)⁵ es f(g(x)) con g(x) = 3x + 1 (la de adentro) y f(u) = u⁵ (la de afuera). Practica identificar «la de afuera» y «la de adentro».",
+          "title": "Importante para derivadas"
+        },
+        {
+          "type": "heading",
+          "text": "Función inversa"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "f es **uno a uno** (inyectiva) si valores distintos de x dan valores distintos de y (prueba de la recta **horizontal**). Solo entonces tiene inversa f⁻¹, que «deshace» lo que hace f: f⁻¹(f(x)) = x.",
+          "title": "Uno a uno e inversa"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Escribe y = f(x).",
+            "Despeja x en función de y.",
+            "Intercambia x e y: y = f⁻¹(x).",
+            "Dominio de f⁻¹ = rango de f."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = (2x + 1)/3 → y = (2x + 1)/3 → 3y = 2x + 1 → x = (3y − 1)/2 → **f⁻¹(x) = (3x − 1)/2**. La gráfica de f⁻¹ es el reflejo de f en la recta y = x.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "quiz",
+          "question": "Si f(x) = x² y g(x) = x + 3, (f ∘ g)(x) =",
+          "options": [
+            "x² + 3",
+            "(x + 3)²",
+            "x² + x + 3",
+            "3x²"
+          ],
+          "correct": 1,
+          "explanation": "f aplicada a g."
+        },
+        {
+          "type": "quiz",
+          "question": "En h(x) = sen(x²), la función «de adentro» es:",
+          "options": [
+            "sen x",
+            "x²",
+            "sen",
+            "x"
+          ],
+          "correct": 1,
+          "explanation": "Se calcula primero x²."
+        },
+        {
+          "type": "quiz",
+          "question": "Inversa de f(x) = 2x − 6:",
+          "options": [
+            "(x + 6)/2",
+            "2x + 6",
+            "x/2 − 6",
+            "1/(2x − 6)"
+          ],
+          "correct": 0,
+          "explanation": "Despejar e intercambiar."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué función NO tiene inversa en ℝ?",
+          "options": [
+            "2x + 1",
+            "x³",
+            "x²",
+            "eˣ"
+          ],
+          "correct": 2,
+          "explanation": "No es uno a uno: f(2) = f(−2)."
+        },
+        {
+          "type": "quiz",
+          "question": "La inversa de eˣ es:",
+          "options": [
+            "e⁻ˣ",
+            "ln x",
+            "1/eˣ",
+            "log x"
+          ],
+          "correct": 1,
+          "explanation": "ln deshace a e."
+        }
+      ]
+    }
+  ]
+}

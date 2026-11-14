@@ -1,0 +1,833 @@
+{
+  "id": "mr04-coulomb",
+  "title": "Vibraciones con fricción seca (Coulomb)",
+  "description": "EDO por tramos, respuesta, pérdida de energía por semiciclo, semiciclos hasta detenerse y gráfica cualitativa",
+  "lessons": [
+    {
+      "id": "l01-planteo",
+      "title": "Planteamiento: la EDO por tramos",
+      "summary": "Diagrama de cuerpo libre, signo de la fricción y Δ = μN/k.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Bloque de masa m unido a un resorte k sobre una superficie horizontal con coeficiente de fricción μ (seca o de Coulomb). Se estira x₀ y se suelta desde el reposo."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La fricción tiene magnitud **constante** Fr = μ·N = μ·m·g, pero su **sentido es siempre opuesto a la velocidad**. Por eso la EDO cambia de signo cada vez que el bloque invierte su movimiento: es una EDO **por tramos**, uno por cada semiciclo."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tramo",
+            "Velocidad",
+            "Fricción",
+            "Ecuación"
+          ],
+          "rows": [
+            [
+              "Se mueve hacia la izquierda",
+              "ẋ < 0",
+              "+Fr (→)",
+              "m·ẍ + k·x = +Fr"
+            ],
+            [
+              "Se mueve hacia la derecha",
+              "ẋ > 0",
+              "−Fr (←)",
+              "m·ẍ + k·x = −Fr"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "m·ẍ + k·x = −Fr·signo(ẋ)",
+          "caption": "Forma compacta."
+        },
+        {
+          "type": "formula",
+          "expression": "Δ = Fr / k = μ·m·g / k",
+          "caption": "Δ tiene unidades de longitud: es lo que «se corre» la posición de equilibrio en cada tramo."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Dividiendo entre m: ẍ + ωn²·x = ±ωn²·Δ. Es la misma EDO del oscilador libre, pero alrededor de una nueva posición de equilibrio desplazada: **x = +Δ** cuando se mueve hacia la izquierda y **x = −Δ** cuando se mueve hacia la derecha. En cada semiciclo el movimiento es **armónico alrededor de ±Δ**.",
+          "title": "La idea clave"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En un plano inclinado con ángulo θ: N = m·g·cos θ, y el peso solo desplaza la posición de equilibrio estático; el análisis es el mismo con Δ = μ·m·g·cos θ / k medido desde esa posición."
+        },
+        {
+          "type": "quiz",
+          "question": "Si m = 2 kg, k = 200 N/m y μ = 0,1, ¿cuánto vale Δ?",
+          "options": [
+            "0,981 mm",
+            "9,81 mm",
+            "0,0981 m",
+            "19,62 mm"
+          ],
+          "correct": 1,
+          "explanation": "Δ = 0,1·2·9,81/200 = 0,00981 m = **9,81 mm**."
+        },
+        {
+          "type": "quiz",
+          "question": "Durante un semiciclo en que el bloque se mueve hacia la DERECHA, la ecuación es:",
+          "options": [
+            "m·ẍ + k·x = +μmg",
+            "m·ẍ + k·x = −μmg",
+            "m·ẍ + k·x = 0",
+            "m·ẍ − k·x = μmg"
+          ],
+          "correct": 1,
+          "explanation": "Moviéndose a la derecha, la fricción apunta a la izquierda: **−μmg**."
+        },
+        {
+          "type": "quiz",
+          "question": "m = 4 kg, k = 400 N/m, μ = 0,2. ¿Δ?",
+          "options": [
+            "1,96 mm",
+            "19,6 mm",
+            "0,196 m",
+            "7,85 mm"
+          ],
+          "correct": 1,
+          "explanation": "Δ = 0,2·4·9,81/400 = 0,0196 m = **19,6 mm**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué representa Δ = μmg/k?",
+          "options": [
+            "La amplitud final",
+            "La posición donde el resorte equilibra a la fricción (centro de cada semiciclo)",
+            "La energía perdida",
+            "El período"
+          ],
+          "correct": 1,
+          "explanation": "k·Δ = μmg: es el **centro desplazado** de cada semiciclo."
+        },
+        {
+          "type": "quiz",
+          "question": "Si se duplica k (resto igual), Δ:",
+          "options": [
+            "Se duplica",
+            "Se reduce a la mitad",
+            "No cambia",
+            "Se cuadruplica"
+          ],
+          "correct": 1,
+          "explanation": "Δ = μmg/k: inversamente proporcional a k."
+        }
+      ]
+    },
+    {
+      "id": "l02-respuesta",
+      "title": "Respuesta de la EDO",
+      "summary": "Solución del primer semiciclo, de cualquier semiciclo, velocidad y tiempo al punto de retorno.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Primer semiciclo"
+        },
+        {
+          "type": "text",
+          "text": "Condiciones: x(0) = x₀ > 0, ẋ(0) = 0. El bloque se mueve hacia la izquierda: ẍ + ωn²·x = ωn²·Δ."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Solución homogénea: xh = C₁ cos ωn·t + C₂ sen ωn·t.",
+            "Solución particular (constante): xp = Δ.",
+            "x(0) = x₀ → C₁ = x₀ − Δ.  ẋ(0) = 0 → C₂ = 0."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "formula",
+          "expression": "x(t) = Δ + (x₀ − Δ)·cos(ωn·t)        0 ≤ t ≤ π/ωn",
+          "caption": "Coseno de amplitud (x₀ − Δ) centrado en +Δ."
+        },
+        {
+          "type": "formula",
+          "expression": "ẋ(t) = −ωn·(x₀ − Δ)·sen(ωn·t)"
+        },
+        {
+          "type": "heading",
+          "text": "Tiempo hasta el punto de retorno"
+        },
+        {
+          "type": "text",
+          "text": "La velocidad se anula cuando sen(ωn·t) = 0, es decir en **t = π/ωn**: medio período natural. La posición es x₁ = Δ − (x₀ − Δ) = **−(x₀ − 2Δ)**."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**La fricción de Coulomb NO cambia el período**: cada semiciclo dura π/ωn, igual que sin fricción. Solo reduce la amplitud. (El amortiguamiento viscoso, en cambio, sí cambia la frecuencia a ωd.)"
+        },
+        {
+          "type": "heading",
+          "text": "Semiciclo n (fórmula general)"
+        },
+        {
+          "type": "formula",
+          "expression": "x(t) = (−1)^(n+1)·Δ + (x₀ − (2n − 1)·Δ)·cos(ωn·t)        (n − 1)·π/ωn ≤ t ≤ n·π/ωn",
+          "caption": "Válida mientras el bloque siga moviéndose."
+        },
+        {
+          "type": "formula",
+          "expression": "Velocidad máxima del semiciclo n:  vmáx = ωn·(x₀ − (2n − 1)·Δ)  (al pasar por x = ±Δ, no por x = 0)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La velocidad máxima ocurre donde la fuerza neta es cero: el resorte equilibra a la fricción, k·x = ±Fr → x = ±Δ. No en x = 0 como en el oscilador sin fricción.",
+          "title": "¿Por qué en ±Δ?"
+        },
+        {
+          "type": "interactive",
+          "widget": "coulomb_oscillator",
+          "title": "Laboratorio: oscilador con fricción de Coulomb"
+        },
+        {
+          "type": "quiz",
+          "question": "¿En qué instante llega el bloque al primer punto de retorno?",
+          "options": [
+            "t = 2π/ωn",
+            "t = π/ωn",
+            "t = π/(2ωn)",
+            "Depende de μ"
+          ],
+          "correct": 1,
+          "explanation": "Medio período natural: **π/ωn**, sin importar la fricción."
+        },
+        {
+          "type": "quiz",
+          "question": "Con x₀ = 0,10 m y Δ = 0,01 m, ¿dónde está el primer punto de retorno?",
+          "options": [
+            "x = −0,10 m",
+            "x = −0,09 m",
+            "x = −0,08 m",
+            "x = −0,12 m"
+          ],
+          "correct": 2,
+          "explanation": "x₁ = −(x₀ − 2Δ) = −(0,10 − 0,02) = **−0,08 m**."
+        },
+        {
+          "type": "quiz",
+          "question": "m = 4 kg, k = 400 N/m: ¿cuánto dura cada semiciclo?",
+          "options": [
+            "0,157 s",
+            "0,314 s",
+            "0,628 s",
+            "10 s"
+          ],
+          "correct": 1,
+          "explanation": "ωn = √(400/4) = 10 rad/s → π/ωn = **0,314 s**."
+        },
+        {
+          "type": "quiz",
+          "question": "Con x₀ = 0,15 m y Δ = 0,0196 m, ¿rapidez máxima en el primer semiciclo (ωn = 10)?",
+          "options": [
+            "1,50 m/s",
+            "1,30 m/s",
+            "1,11 m/s",
+            "0,196 m/s"
+          ],
+          "correct": 1,
+          "explanation": "vmáx = ωn(x₀ − Δ) = 10·(0,1304) = **1,30 m/s**, al pasar por x = +Δ."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la solución del primer semiciclo (x(0) = x₀, ẋ(0) = 0)?",
+          "options": [
+            "x = x₀ cos ωn·t",
+            "x = Δ + (x₀ − Δ) cos ωn·t",
+            "x = x₀ e^(−Δt) cos ωn·t",
+            "x = (x₀ − 2Δ) cos ωn·t"
+          ],
+          "correct": 1,
+          "explanation": "Homogénea + particular (Δ), con C₁ = x₀ − Δ y C₂ = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "En el segundo semiciclo (moviéndose a la derecha), la oscilación está centrada en:",
+          "options": [
+            "x = 0",
+            "x = +Δ",
+            "x = −Δ",
+            "x = x₁"
+          ],
+          "correct": 2,
+          "explanation": "Moviéndose a la derecha la fricción apunta a la izquierda: centro en **−Δ**."
+        }
+      ]
+    },
+    {
+      "id": "l03-energia",
+      "title": "Pérdida de energía",
+      "summary": "Por semiciclo, en dos tramos consecutivos y total; demostración con trabajo y energía.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Demostración con trabajo y energía"
+        },
+        {
+          "type": "text",
+          "text": "Entre dos puntos de retorno consecutivos, x(i−1) y xi, la velocidad es cero en ambos (T = 0). El único trabajo no conservativo es el de la fricción sobre la distancia recorrida |x(i−1)| + |xi|:"
+        },
+        {
+          "type": "formula",
+          "expression": "½k·x(i−1)² − ½k·xi² = Fr·(|x(i−1)| + |xi|)",
+          "caption": "Energía elástica perdida = trabajo de la fricción."
+        },
+        {
+          "type": "text",
+          "text": "Factorizando la diferencia de cuadrados: ½k(|x(i−1)| − |xi|)(|x(i−1)| + |xi|) = Fr(|x(i−1)| + |xi|) → |x(i−1)| − |xi| = 2Fr/k = **2Δ**."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La amplitud disminuye **2Δ en cada semiciclo** y **4Δ en cada ciclo completo**: una disminución **LINEAL** (en progresión aritmética), no exponencial."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Pregunta típica",
+            "Cómo se calcula"
+          ],
+          "rows": [
+            [
+              "Energía perdida en el semiciclo i",
+              "ΔEi = ½k(x(i−1)² − xi²) = Fr·(|x(i−1)| + |xi|)"
+            ],
+            [
+              "Energía perdida en dos tramos consecutivos (i e i + 1)",
+              "ΔE = ½k(x(i−1)² − x(i+1)²), con |x(i+1)| = |x(i−1)| − 4Δ"
+            ],
+            [
+              "Energía que queda tras n semiciclos",
+              "En = ½k(x₀ − 2nΔ)²"
+            ],
+            [
+              "Pérdida total hasta detenerse",
+              "ΔEtotal = ½k(x₀² − xf²)"
+            ],
+            [
+              "Porcentaje perdido",
+              "100·ΔE/E₀"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Las pérdidas por semiciclo NO son iguales: disminuyen en 4·Fr·Δ de un semiciclo al siguiente, porque el bloque recorre 2Δ + 2Δ menos de distancia. Lo que es constante es la disminución de AMPLITUD (2Δ).",
+          "title": "Observa"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "m = 2 kg, k = 200 N/m, μ = 0,1, x₀ = 0,10 m → Δ = 9,81 mm, ωn = 10 rad/s. Amplitudes: 0,1000 → 0,0804 → 0,0608 → 0,0411 → 0,0215 → 0,0019 m. E₀ = 1,000 J. Pérdida 1.er semiciclo: 0,354 J; 1.º y 2.º juntos: 0,631 J; total: 0,9996 J."
+        },
+        {
+          "type": "quiz",
+          "question": "Con k = 500 N/m, x₀ = 0,12 m y Δ = 0,0147 m, ¿energía perdida en el primer semiciclo?",
+          "options": [
+            "0,736 J",
+            "1,549 J",
+            "3,600 J",
+            "2,665 J"
+          ],
+          "correct": 1,
+          "explanation": "x₁ = −(0,12 − 0,0294) = −0,0906 m. ΔE = ½·500·(0,0144 − 0,00820) = **1,549 J**."
+        },
+        {
+          "type": "quiz",
+          "question": "Y en los dos primeros semiciclos (mismos datos)?",
+          "options": [
+            "1,549 J",
+            "2,665 J",
+            "3,099 J",
+            "3,599 J"
+          ],
+          "correct": 1,
+          "explanation": "|x₂| = 0,12 − 4·0,0147 = 0,0611 m. ΔE = ½·500·(0,0144 − 0,00374) = **2,665 J**."
+        },
+        {
+          "type": "quiz",
+          "question": "m = 4 kg, k = 400 N/m, μ = 0,2, x₀ = 0,15 m (Δ = 0,0196 m). ¿Energía perdida en el 1.er semiciclo?",
+          "options": [
+            "4,50 J",
+            "2,05 J",
+            "1,43 J",
+            "0,78 J"
+          ],
+          "correct": 1,
+          "explanation": "x₁ = −(0,15 − 0,0392) = −0,1108 m. ΔE = ½·400·(0,0225 − 0,01227) = **2,05 J**."
+        },
+        {
+          "type": "quiz",
+          "question": "Mismos datos: ¿energía perdida en los semiciclos 2 y 3 juntos?",
+          "options": [
+            "2,05 J",
+            "2,25 J",
+            "3,48 J",
+            "1,43 J"
+          ],
+          "correct": 1,
+          "explanation": "x₁ = −0,1108, x₃ = −0,0323 m: ΔE = ½·400·(0,01227 − 0,00104) = **2,25 J**."
+        },
+        {
+          "type": "quiz",
+          "question": "La energía perdida en un semiciclo también se calcula como:",
+          "options": [
+            "Fr · |x(i−1) − xi|",
+            "Fr · (|x(i−1)| + |xi|)",
+            "2Δ · k",
+            "μ · E₀"
+          ],
+          "correct": 1,
+          "explanation": "Trabajo de la fricción = fuerza × **distancia recorrida** (de un extremo al otro)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Las pérdidas de energía de semiciclos consecutivos son iguales?",
+          "options": [
+            "Sí, siempre",
+            "No: disminuyen porque el recorrido es cada vez más corto",
+            "No: aumentan",
+            "Solo si μs = μk"
+          ],
+          "correct": 1,
+          "explanation": "La fuerza es constante pero la distancia recorrida baja 4Δ por semiciclo."
+        }
+      ]
+    },
+    {
+      "id": "l04-detencion",
+      "title": "Cuándo y dónde se detiene",
+      "summary": "Condición de parada, número de semiciclos, tiempo total y posición final.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "En un punto de retorno xi el bloque está en reposo. Vuelve a moverse solo si el resorte vence a la fricción ESTÁTICA: **k·|xi| > μs·m·g**, es decir |xi| > Δs. Si |xi| ≤ Δs, el bloque **se queda ahí**, aunque no esté en x = 0.",
+          "title": "Condición de parada"
+        },
+        {
+          "type": "formula",
+          "expression": "|xn| = x₀ − 2n·Δ",
+          "caption": "Amplitud tras n semiciclos (mientras no haya parado)."
+        },
+        {
+          "type": "formula",
+          "expression": "n = menor entero tal que x₀ − 2nΔ ≤ Δ   →   n = ⌈(x₀ − Δ)/(2Δ)⌉",
+          "caption": "Número de semiciclos hasta detenerse (con μs = μk)."
+        },
+        {
+          "type": "formula",
+          "expression": "t parada = n·π/ωn        x final = (−1)^n·(x₀ − 2nΔ)",
+          "caption": "Si n es impar se detiene a la izquierda; si es par, a la derecha."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si |xi| queda entre Δ y 2Δ, el bloque todavía se mueve un semiciclo más pero termina del **mismo lado** (no cruza el equilibrio). Usa siempre x(i+1) = 2Δ·signo(xi) − xi para no equivocarte."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "m = 5 kg, k = 500 N/m, μ = 0,15, x₀ = 0,12 m: Δ = 0,0147 m. (0,12 − 0,0147)/(2·0,0147) = 3,58 → **n = 4 semiciclos**. xf = (+1)·(0,12 − 8·0,0147) = **+0,0023 m**. ωn = 10 rad/s → t = 4π/10 = **1,257 s**. E₀ = 3,600 J; pérdida total = **3,599 J**."
+        },
+        {
+          "type": "quiz",
+          "question": "Con x₀ = 0,10 m y Δ = 0,0098 m, ¿cuántos semiciclos cumple?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "10"
+          ],
+          "correct": 1,
+          "explanation": "(0,10 − 0,0098)/(0,0196) = 4,6 → **5 semiciclos** (amplitud final 0,0019 m < Δ)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el bloque casi nunca se detiene exactamente en x = 0?",
+          "options": [
+            "Porque la fricción desaparece",
+            "Porque se detiene en el primer punto de retorno donde el resorte ya no vence a la fricción estática, que puede estar en cualquier lugar de la franja |x| ≤ Δs",
+            "Porque el período cambia",
+            "Porque la energía se conserva"
+          ],
+          "correct": 1,
+          "explanation": "Se queda en cualquier posición dentro de la **zona muerta** |x| ≤ μs·m·g/k."
+        },
+        {
+          "type": "quiz",
+          "question": "m = 4 kg, k = 400 N/m, μ = 0,2, x₀ = 0,15 m. ¿Cuántos semiciclos cumple?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "7"
+          ],
+          "correct": 1,
+          "explanation": "Amplitudes: 0,150 → 0,1108 → 0,0715 → 0,0323 → 0,0070. La última es < Δ: **4 semiciclos**."
+        },
+        {
+          "type": "quiz",
+          "question": "Mismos datos: ¿dónde se detiene?",
+          "options": [
+            "x = +0,0070 m",
+            "x = −0,0070 m",
+            "x = 0",
+            "x = −0,0323 m"
+          ],
+          "correct": 1,
+          "explanation": "Desde x₃ = −0,0323 (entre Δ y 2Δ) se mueve a 2Δ·(−1) + 0,0323 = **−0,0070 m**: termina del mismo lado, sin cruzar."
+        },
+        {
+          "type": "quiz",
+          "question": "Mismos datos: ¿en qué instante se detiene?",
+          "options": [
+            "0,314 s",
+            "0,942 s",
+            "1,257 s",
+            "1,571 s"
+          ],
+          "correct": 2,
+          "explanation": "4 semiciclos × π/10 = **1,257 s**."
+        },
+        {
+          "type": "quiz",
+          "question": "Mismos datos: ¿energía total perdida?",
+          "options": [
+            "4,50 J",
+            "4,49 J",
+            "2,05 J",
+            "3,48 J"
+          ],
+          "correct": 1,
+          "explanation": "½·400·(0,15² − 0,0070²) = **4,49 J** (casi toda la inicial de 4,50 J)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si μs > μk, el bloque se detiene:",
+          "options": [
+            "Más tarde",
+            "Igual o antes, porque la zona de parada |x| ≤ μs·mg/k es más ancha",
+            "Nunca",
+            "En x = 0"
+          ],
+          "correct": 1,
+          "explanation": "La franja de parada crece: puede quedarse antes en un punto de retorno."
+        }
+      ]
+    },
+    {
+      "id": "l05-grafica",
+      "title": "La gráfica sin tabular puntos",
+      "summary": "Análisis previo para bosquejar x(t), v(t), el plano de fase y la energía.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En el examen se pide dibujar la respuesta «con un análisis previo». No hace falta calcular puntos: basta con estas características."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Escala de tiempo:** marca múltiplos de π/ωn en el eje t (cada uno es un semiciclo).",
+            "**Franja de parada:** dibuja líneas horizontales en x = +Δ y x = −Δ.",
+            "**Envolvente lineal:** dos rectas que parten de ±x₀ en t = 0 y bajan 2Δ por cada π/ωn; se cortan con la franja aproximadamente donde se detiene.",
+            "**Arcos:** en cada semiciclo dibuja medio coseno que va de un punto de retorno al siguiente, centrado alternadamente en +Δ y −Δ (no en 0).",
+            "**Final:** a partir de t = nπ/ωn, una recta horizontal en xf (dentro de la franja)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Gráfica",
+            "Rasgos"
+          ],
+          "rows": [
+            [
+              "x(t)",
+              "Picos sobre rectas (no exponenciales); semiciclos de igual duración; termina plana en xf ≠ 0"
+            ],
+            [
+              "v(t)",
+              "Arcos de seno de duración π/ωn, con picos que disminuyen linealmente; v = 0 en cada punto de retorno"
+            ],
+            [
+              "Plano de fase (x, v/ωn)",
+              "Semicircunferencias centradas alternadamente en (+Δ, 0) y (−Δ, 0) con radios que disminuyen 2Δ: una «espiral» de arcos"
+            ],
+            [
+              "Energía E = T + V",
+              "Escalones descendentes: baja solo mientras se mueve; las caídas son cada vez menores"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "coulomb_oscillator",
+          "title": "Compara tu bosquejo con la gráfica exacta (prueba las 4 vistas)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Rectas → fricción seca (Coulomb). Curvas exponenciales → amortiguamiento viscoso. Es una pregunta frecuente de interpretación.",
+          "title": "Cómo reconocer el tipo de amortiguamiento por la gráfica"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué forma tiene la envolvente de x(t) con fricción de Coulomb?",
+          "options": [
+            "Exponencial decreciente",
+            "Lineal (rectas)",
+            "Parabólica",
+            "Constante"
+          ],
+          "correct": 1,
+          "explanation": "La amplitud cae lo mismo (2Δ) en cada semiciclo: **rectas**."
+        },
+        {
+          "type": "quiz",
+          "question": "En el plano de fase, cada semiciclo es:",
+          "options": [
+            "Una espiral logarítmica",
+            "Una semicircunferencia centrada en ±Δ",
+            "Una recta",
+            "Una elipse centrada en el origen"
+          ],
+          "correct": 1,
+          "explanation": "Movimiento armónico alrededor de ±Δ → semicírculos en (x, v/ωn)."
+        },
+        {
+          "type": "quiz",
+          "question": "Al bosquejar x(t), ¿qué marcas pones en el eje del tiempo?",
+          "options": [
+            "Múltiplos de 2π/ωd",
+            "Múltiplos de π/ωn",
+            "Múltiplos de Δ",
+            "Solo t = 0"
+          ],
+          "correct": 1,
+          "explanation": "Cada semiciclo dura **π/ωn**."
+        },
+        {
+          "type": "quiz",
+          "question": "La gráfica de la energía E(t) con fricción de Coulomb tiene forma de:",
+          "options": [
+            "Recta horizontal",
+            "Exponencial",
+            "Escalones que bajan, cada vez menores, hasta quedar constante",
+            "Seno"
+          ],
+          "correct": 2,
+          "explanation": "Baja mientras se mueve y queda constante al detenerse."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuánto baja la envolvente de x(t) en un ciclo completo?",
+          "options": [
+            "Δ",
+            "2Δ",
+            "4Δ",
+            "Depende del ciclo"
+          ],
+          "correct": 2,
+          "explanation": "2Δ por semiciclo → **4Δ por ciclo**."
+        }
+      ]
+    },
+    {
+      "id": "l06-efecto",
+      "title": "En qué afecta la fricción",
+      "summary": "Resumen comparativo: con y sin fricción, Coulomb y viscoso.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Característica",
+            "Sin amortiguamiento",
+            "Fricción de Coulomb",
+            "Viscoso (c·ẋ)"
+          ],
+          "rows": [
+            [
+              "Fuerza de amortiguamiento",
+              "—",
+              "Constante μN, opuesta a la velocidad",
+              "Proporcional a la velocidad"
+            ],
+            [
+              "EDO",
+              "Lineal",
+              "Lineal por tramos (cambia de signo)",
+              "Lineal: mẍ + cẋ + kx = 0"
+            ],
+            [
+              "Frecuencia",
+              "ωn",
+              "ωn (no cambia)",
+              "ωd = ωn√(1 − ζ²) (menor)"
+            ],
+            [
+              "Disminución de amplitud",
+              "Ninguna",
+              "Lineal: 2Δ por semiciclo",
+              "Exponencial: e^(−ζωn t)"
+            ],
+            [
+              "Centro de oscilación",
+              "0",
+              "±Δ, alterna cada semiciclo",
+              "0"
+            ],
+            [
+              "¿Se detiene?",
+              "Nunca",
+              "Sí, en tiempo finito",
+              "Teóricamente nunca (tiende a 0)"
+            ],
+            [
+              "Posición final",
+              "—",
+              "Cualquiera en |x| ≤ Δs",
+              "0"
+            ],
+            [
+              "Energía",
+              "Constante",
+              "Pierde Fr × distancia recorrida",
+              "Pierde ∫c·ẋ²dt"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "viscous_oscillator",
+          "title": "Compara viscoso y Coulomb en la misma gráfica"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cambia el período de un oscilador al agregar fricción seca?",
+          "options": [
+            "Sí, aumenta",
+            "Sí, disminuye",
+            "No: cada semiciclo dura π/ωn",
+            "Se vuelve infinito"
+          ],
+          "correct": 2,
+          "explanation": "La fricción constante solo desplaza el centro de oscilación: la frecuencia sigue siendo **ωn**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué sistema se detiene en un tiempo finito?",
+          "options": [
+            "Sin amortiguamiento",
+            "Con fricción de Coulomb",
+            "Con amortiguamiento viscoso subamortiguado",
+            "Con amortiguamiento crítico"
+          ],
+          "correct": 1,
+          "explanation": "La fricción seca lleva la amplitud a la zona muerta en un **número finito de semiciclos**."
+        },
+        {
+          "type": "quiz",
+          "question": "Con amortiguamiento viscoso la amplitud decrece:",
+          "options": [
+            "Linealmente",
+            "Exponencialmente",
+            "No decrece",
+            "Por escalones"
+          ],
+          "correct": 1,
+          "explanation": "Envolvente A·e^(−ζωn t)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde queda en reposo final un sistema con fricción de Coulomb?",
+          "options": [
+            "Siempre en x = 0",
+            "En cualquier punto de |x| ≤ μs·mg/k",
+            "En x = x₀",
+            "En x = ±2Δ"
+          ],
+          "correct": 1,
+          "explanation": "Se detiene en la **zona muerta**, no necesariamente en el origen."
+        }
+      ]
+    },
+    {
+      "id": "l07-practica",
+      "title": "Práctica tipo examen (generador)",
+      "summary": "Problemas aleatorios ilimitados con solución completa paso a paso.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Cada problema pide lo mismo que tu prueba: la EDO y su respuesta, el tiempo al punto de retorno, la energía perdida en uno y en dos semiciclos, los semiciclos hasta detenerse, la pérdida total y el bosquejo de la gráfica. Resuélvelo primero en papel y después abre la solución."
+        },
+        {
+          "type": "interactive",
+          "widget": "coulomb_trainer",
+          "title": "Generador de problemas de fricción de Coulomb"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Lista de verificación: 1) calcula Δ = μmg/k y ωn = √(k/m) primero; 2) cada semiciclo dura π/ωn; 3) la amplitud baja 2Δ por semiciclo; 4) se detiene cuando |x| ≤ Δ (o Δs); 5) la energía perdida se calcula con ½k(x² − x²), nunca con «2Δ × algo» sin justificar; 6) en la gráfica: rectas, arcos centrados en ±Δ y final plano."
+        },
+        {
+          "type": "quiz",
+          "question": "Primer paso al resolver un problema de fricción de Coulomb:",
+          "options": [
+            "Dibujar la gráfica",
+            "Calcular Δ = μmg/k y ωn = √(k/m)",
+            "Calcular la energía total",
+            "Resolver con ζ"
+          ],
+          "correct": 1,
+          "explanation": "Con Δ y ωn se obtiene todo lo demás."
+        },
+        {
+          "type": "quiz",
+          "question": "Un bloque se suelta en x₀ = 7Δ (μs = μk). ¿Semiciclos y posición final?",
+          "options": [
+            "3 semiciclos, x = −Δ",
+            "3 semiciclos, x = +Δ",
+            "4 semiciclos, x = 0",
+            "7 semiciclos, x = 0"
+          ],
+          "correct": 0,
+          "explanation": "7Δ → 5Δ → 3Δ → Δ: tras **3 semiciclos** la amplitud es Δ; n impar → lado opuesto: **x = −Δ**."
+        },
+        {
+          "type": "quiz",
+          "question": "Con x₀ = 0,10 m y Δ = 0,01 m, ¿energía que queda tras 2 semiciclos (k = 200 N/m)?",
+          "options": [
+            "0,36 J",
+            "0,64 J",
+            "1,00 J",
+            "0,16 J"
+          ],
+          "correct": 0,
+          "explanation": "|x₂| = 0,10 − 4·0,01 = 0,06 m → E = ½·200·0,06² = **0,36 J**."
+        }
+      ]
+    }
+  ]
+}

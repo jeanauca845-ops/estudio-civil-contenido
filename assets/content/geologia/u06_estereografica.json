@@ -1,0 +1,1553 @@
+{
+  "id": "u06-estereografica",
+  "title": "Proyección estereográfica",
+  "description": "Orientación de planos y líneas, red de Wulff y Schmidt, intersecciones y estabilidad de taludes",
+  "lessons": [
+    {
+      "id": "l00-fundamentos",
+      "title": "Fundamentos teóricos: strike, dip y compañía",
+      "summary": "Qué es un plano y una línea geológica; rumbo (strike), buzamiento (dip), dirección de buzamiento, tendencia, inmersión, cabeceo, azimut y brújula.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Antes de usar la red hay que dominar el vocabulario. En geología estructural todo se reduce a dos objetos geométricos: **planos** y **líneas**. La geometría ignora su tamaño y su posición: solo importa su **orientación** en el espacio respecto a la horizontal y al norte."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Estructuras planares",
+            "Estructuras lineales"
+          ],
+          "rows": [
+            [
+              "Estratificación (S₀)",
+              "Línea de intersección de dos planos"
+            ],
+            [
+              "Diaclasas o juntas",
+              "Eje de un pliegue"
+            ],
+            [
+              "Fallas",
+              "Estrías de falla (indican el movimiento)"
+            ],
+            [
+              "Foliación y esquistosidad",
+              "Lineaciones minerales"
+            ],
+            [
+              "Diques, vetas, contactos",
+              "Dirección de un sondeo inclinado"
+            ],
+            [
+              "Superficie de un talud o de un corte",
+              "Eje de un túnel"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ángulos básicos: azimut y rumbo de una dirección"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Azimut",
+          "text": "Ángulo horizontal medido **desde el norte, en sentido horario**, de 0° a 360°. Se escribe con tres cifras: 045° (NE), 090° (E), 180° (S), 270° (O). En geotecnia se usa casi siempre el azimut."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Notación por cuadrantes (rumbo de una dirección)",
+          "text": "Ángulo agudo medido desde el **N o el S** hacia el **E o el O**: N30°E = 030°; S40°E = 140°; S20°O = 200°; N70°O = 290°."
+        },
+        {
+          "type": "heading",
+          "text": "Orientación de un plano"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término (español / inglés)",
+            "Definición",
+            "Rango"
+          ],
+          "rows": [
+            [
+              "**Rumbo / strike**",
+              "Dirección de la **línea horizontal** contenida en el plano (la intersección del plano con un plano horizontal, como la orilla de un lago en una ladera). Tiene dos sentidos opuestos: 030° y 210° son el mismo rumbo",
+              "0° – 360° (o cuadrantes)"
+            ],
+            [
+              "**Buzamiento / dip**",
+              "Ángulo entre el plano y la horizontal, medido en un plano vertical **perpendicular al rumbo**. Es la máxima inclinación del plano",
+              "0° (horizontal) a 90° (vertical)"
+            ],
+            [
+              "**Dirección de buzamiento / dip direction**",
+              "Azimut hacia donde **baja** el plano, medido en la horizontal. Es siempre perpendicular al rumbo: rumbo ± 90°",
+              "0° – 360°"
+            ],
+            [
+              "**Línea de máxima pendiente / dip line**",
+              "Recta del plano perpendicular al rumbo. Su inmersión es el buzamiento y su tendencia, la dirección de buzamiento",
+              "—"
+            ],
+            [
+              "**Sentido de buzamiento**",
+              "Cuadrante hacia el que baja el plano (NE, SO…). Necesario cuando se usa rumbo, porque un mismo rumbo admite dos planos",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "title": "Imagina un tejado",
+          "text": "La **cumbrera** (horizontal) da el **rumbo**. Una gota de agua cae por la **línea de máxima pendiente**: su inclinación es el **buzamiento** y la dirección horizontal hacia donde corre es la **dirección de buzamiento**."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "title": "Buzamiento real y aparente",
+          "text": "El **buzamiento real** (true dip) solo se ve en un corte perpendicular al rumbo. En cualquier otro corte vertical se ve un **buzamiento aparente** (apparent dip), siempre menor: tan(aparente) = tan(real) · cos(α), donde α es el ángulo entre el corte y la dirección de buzamiento. En un corte paralelo al rumbo el plano se ve horizontal."
+        },
+        {
+          "type": "interactive",
+          "widget": "plane_orientation",
+          "title": "Mueve el plano y observa rumbo, buzamiento y dirección de buzamiento"
+        },
+        {
+          "type": "heading",
+          "text": "Las notaciones de un plano"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Notación",
+            "Ejemplo",
+            "Ventaja / cuidado"
+          ],
+          "rows": [
+            [
+              "Dirección de buzamiento / buzamiento (dip direction / dip)",
+              "**120/35**",
+              "No es ambigua. La más usada en geotecnia y software (Dips)"
+            ],
+            [
+              "Rumbo con regla de la mano derecha / buzamiento (strike RHR / dip)",
+              "**030/35**",
+              "Mirando en la dirección del rumbo, el plano buza a la **derecha**: dir. de buzamiento = rumbo + 90°"
+            ],
+            [
+              "Cuadrantes",
+              "**N30°E, 35°SE**",
+              "Siempre hay que indicar el sentido del buzamiento (SE), si no, son dos planos posibles"
+            ],
+            [
+              "Azimutal sin regla",
+              "030, 35 SE",
+              "Rumbo en azimut + sentido"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Orientación de una línea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término (español / inglés)",
+            "Definición",
+            "Rango"
+          ],
+          "rows": [
+            [
+              "**Tendencia / trend** (dirección, azimut de inmersión)",
+              "Azimut de la proyección horizontal de la línea, en el sentido en que **baja**",
+              "0° – 360°"
+            ],
+            [
+              "**Inmersión / plunge**",
+              "Ángulo entre la línea y la horizontal, medido en el plano vertical que la contiene",
+              "0° – 90°"
+            ],
+            [
+              "**Cabeceo / pitch o rake**",
+              "Ángulo entre la línea y el **rumbo** del plano que la contiene, medido **dentro del plano**",
+              "0° – 180° (o 0 – 90° con sentido)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una línea **horizontal** tiene inmersión 0° y dos tendencias posibles (opuestas). Una línea **vertical** tiene inmersión 90° y su tendencia no está definida. La inmersión de una línea contenida en un plano **nunca** supera el buzamiento de ese plano."
+        },
+        {
+          "type": "heading",
+          "text": "Cómo se mide en campo"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Usa una **brújula de geólogo** (tipo Brunton o Clar) con **clinómetro**.",
+            "Corrige la **declinación magnética** local (diferencia entre el norte magnético y el geográfico) en la brújula.",
+            "**Rumbo:** apoya el borde de la brújula horizontal (nivel centrado) sobre el plano y lee el azimut.",
+            "**Buzamiento:** coloca la brújula de canto, perpendicular al rumbo, y lee el ángulo con el clinómetro.",
+            "Con brújula tipo Clar se mide directamente **dirección de buzamiento/buzamiento** en una sola operación.",
+            "Mide en superficies representativas y frescas, varias veces por familia."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En un levantamiento geotécnico de un talud o un túnel se registran decenas o cientos de discontinuidades (dirección de buzamiento/buzamiento, espaciado, abertura, relleno, rugosidad). Esa base de datos se analiza con la red estereográfica."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué es el rumbo (strike) de un plano?",
+          "options": [
+            "La dirección de su máxima pendiente",
+            "La dirección de la línea horizontal contenida en el plano",
+            "El ángulo que forma con la horizontal",
+            "La dirección de su polo"
+          ],
+          "correct": 1,
+          "explanation": "El **rumbo** es la orientación de la línea **horizontal** del plano; la máxima pendiente es perpendicular a él."
+        },
+        {
+          "type": "quiz",
+          "question": "Un estrato tiene rumbo N60°O y buza 40° hacia el NE. Su dirección de buzamiento es:",
+          "options": [
+            "060",
+            "030",
+            "300",
+            "210"
+          ],
+          "correct": 1,
+          "explanation": "Rumbo N60°O = 300° (o 120°). Perpendicular hacia el NE: 300 + 90 = 390 − 360 = **030**. Plano **030/40**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿En qué tipo de corte se observa el buzamiento REAL de un estrato?",
+          "options": [
+            "En cualquier corte vertical",
+            "En un corte paralelo al rumbo",
+            "En un corte vertical perpendicular al rumbo",
+            "En un corte horizontal"
+          ],
+          "correct": 2,
+          "explanation": "Solo en el corte **perpendicular al rumbo** (paralelo a la dirección de buzamiento) se ve el buzamiento real; en los demás, uno aparente menor."
+        },
+        {
+          "type": "quiz",
+          "question": "La notación «rumbo con regla de la mano derecha 250/30» equivale a:",
+          "options": [
+            "250/30 en dirección de buzamiento",
+            "340/30 en dirección de buzamiento",
+            "160/30 en dirección de buzamiento",
+            "070/30 en dirección de buzamiento"
+          ],
+          "correct": 1,
+          "explanation": "Dir. de buzamiento = rumbo + 90 = 250 + 90 = **340**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué diferencia hay entre inmersión (plunge) y cabeceo (pitch)?",
+          "options": [
+            "Son lo mismo",
+            "La inmersión se mide en un plano vertical; el cabeceo, dentro del plano que contiene la línea, desde el rumbo",
+            "El cabeceo solo se usa para planos",
+            "La inmersión se mide desde el norte"
+          ],
+          "correct": 1,
+          "explanation": "La **inmersión** se mide en el plano **vertical**; el **cabeceo**, dentro del plano geológico, a partir de su rumbo."
+        },
+        {
+          "type": "quiz",
+          "question": "El rumbo (strike) de un plano es:",
+          "options": [
+            "La línea de máxima pendiente",
+            "La dirección de una línea horizontal contenida en el plano",
+            "El ángulo con la horizontal",
+            "La dirección del polo"
+          ],
+          "correct": 1,
+          "explanation": "Rumbo = orientación de la **línea horizontal** del plano."
+        },
+        {
+          "type": "quiz",
+          "question": "El buzamiento (dip) se mide:",
+          "options": [
+            "Desde el norte, en la horizontal",
+            "En la vertical, desde la horizontal hasta la línea de máxima pendiente",
+            "Desde la vertical",
+            "Sobre el rumbo"
+          ],
+          "correct": 1,
+          "explanation": "Ángulo de 0° a 90° medido **en el plano vertical perpendicular al rumbo**."
+        }
+      ]
+    },
+    {
+      "id": "l01-orientacion",
+      "title": "Orientación de planos y líneas",
+      "summary": "Rumbo, buzamiento, dirección de buzamiento, tendencia, inmersión y cabeceo; todas las notaciones.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Estratos, fallas, diaclasas y foliaciones son **planos**; ejes de pliegue, estrías de falla e intersecciones son **líneas**. Para trabajar con ellos hay que describir su orientación en el espacio con pocos números."
+        },
+        {
+          "type": "heading",
+          "text": "Planos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "**Rumbo** (dirección)",
+              "Dirección de la línea **horizontal** contenida en el plano, medida respecto al norte. Tiene dos sentidos opuestos (p. ej. 030° y 210°)"
+            ],
+            [
+              "**Buzamiento** (inclinación)",
+              "Ángulo entre el plano y la horizontal, medido **perpendicular al rumbo**: de 0° (horizontal) a 90° (vertical)"
+            ],
+            [
+              "**Dirección de buzamiento**",
+              "Azimut hacia donde **baja** el plano; siempre a 90° del rumbo"
+            ],
+            [
+              "**Línea de máxima pendiente**",
+              "La recta del plano más inclinada; su inmersión es el buzamiento"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "plane_orientation",
+          "title": "Laboratorio: orienta un plano"
+        },
+        {
+          "type": "heading",
+          "text": "Las notaciones (¡el mismo plano escrito de 3 formas!)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Notación",
+            "Ejemplo",
+            "Cómo se lee"
+          ],
+          "rows": [
+            [
+              "Dirección de buzamiento / buzamiento",
+              "**120/35**",
+              "Baja hacia el azimut 120° con 35°. La más usada en geotecnia: no tiene ambigüedad"
+            ],
+            [
+              "Rumbo (mano derecha) / buzamiento",
+              "**030/35**",
+              "Rumbo 030°; el plano buza a la DERECHA de esa dirección (030 + 90 = 120)"
+            ],
+            [
+              "Cuadrantes",
+              "**N30°E, 35°SE**",
+              "Rumbo N30°E; buza 35° hacia el cuadrante SE"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "title": "Conversiones clave",
+          "text": "**Dir. de buzamiento = rumbo (mano derecha) + 90°.** **Rumbo (mano derecha) = dir. de buzamiento − 90°.** En cuadrantes, el rumbo se da siempre desde el N y hay que indicar el **sentido** del buzamiento, porque un mismo rumbo admite dos planos (uno buza a cada lado)."
+        },
+        {
+          "type": "heading",
+          "text": "Líneas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "**Tendencia** (dirección, trend)",
+              "Azimut de la proyección horizontal de la línea, en el sentido en que **baja**"
+            ],
+            [
+              "**Inmersión** (plunge)",
+              "Ángulo entre la línea y la horizontal, medido en el plano vertical que la contiene (0°–90°)"
+            ],
+            [
+              "**Cabeceo** (pitch o rake)",
+              "Ángulo entre la línea y la dirección del rumbo, medido **dentro del plano** que la contiene"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Una línea se escribe **inmersión → tendencia** (35 → 120) o **tendencia/inmersión** (120/35). Indica siempre cuál es cuál."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En campo se mide con una **brújula de geólogo** (tipo Brunton o Clar), corrigiendo la **declinación magnética** local para trabajar respecto al norte geográfico. Un levantamiento de discontinuidades en un talud puede tener cientos de medidas: por eso se necesita la red estereográfica."
+        },
+        {
+          "type": "quiz",
+          "question": "Un estrato se anota como N40°E, 30°SE. ¿Cómo se escribe en dirección de buzamiento / buzamiento?",
+          "options": [
+            "040/30",
+            "130/30",
+            "220/30",
+            "310/30"
+          ],
+          "correct": 1,
+          "explanation": "Rumbo 040° (o 220°). La dirección de buzamiento es perpendicular y hacia el SE: 040 + 90 = **130**. Respuesta: **130/30**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una diaclasa N60°O, 45°SO. ¿Cuál es su dirección de buzamiento / buzamiento?",
+          "options": [
+            "300/45",
+            "030/45",
+            "210/45",
+            "120/45"
+          ],
+          "correct": 2,
+          "explanation": "N60°O = azimut 300° (o 120°). Perpendicular hacia el SO: 300 − 90 = **210**. Respuesta: **210/45**."
+        },
+        {
+          "type": "quiz",
+          "question": "Con la regla de la mano derecha se mide 200/35. ¿Cuál es la dirección de buzamiento?",
+          "options": [
+            "110",
+            "200",
+            "290",
+            "020"
+          ],
+          "correct": 2,
+          "explanation": "Dir. de buzamiento = rumbo + 90 = 200 + 90 = **290**. Plano: 290/35."
+        },
+        {
+          "type": "quiz",
+          "question": "Un plano tiene dirección de buzamiento 120° y buzamiento 40°. Con la regla de la mano derecha, su rumbo es:",
+          "options": [
+            "030°",
+            "210°",
+            "120°",
+            "300°"
+          ],
+          "correct": 0,
+          "explanation": "Rumbo = dirección de buzamiento − 90° = **030°** (el plano buza a la derecha del rumbo)."
+        },
+        {
+          "type": "quiz",
+          "question": "La notación 040/30 en dirección de buzamiento significa:",
+          "options": [
+            "Rumbo 040°, inmersión 30°",
+            "Buza 30° hacia el azimut 040°",
+            "Buza 40° hacia 030°",
+            "Cabeceo 30°"
+          ],
+          "correct": 1,
+          "explanation": "Formato DD/BZ: buzamiento **30° hacia 040°**."
+        },
+        {
+          "type": "quiz",
+          "question": "Para una línea, la tendencia (trend) y la inmersión (plunge) son:",
+          "options": [
+            "Rumbo y buzamiento",
+            "Azimut de su proyección horizontal y ángulo con la horizontal",
+            "Ángulos medidos en el plano",
+            "Cabeceo y buzamiento"
+          ],
+          "correct": 1,
+          "explanation": "Tendencia = azimut; inmersión = ángulo con la horizontal en el plano vertical que la contiene."
+        }
+      ]
+    },
+    {
+      "id": "l02-fundamentos",
+      "title": "La proyección estereográfica",
+      "summary": "Esfera de referencia, hemisferio inferior, red de Wulff y de Schmidt.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Proyección estereográfica",
+          "text": "Método para representar en un **círculo plano** la orientación de planos y líneas en el espacio, **sin tener en cuenta su posición**. Solo importa su dirección e inclinación."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Imagina una **esfera de referencia** y traslada el plano o la línea para que pase por su **centro**.",
+            "Un plano corta la esfera en un **círculo máximo**; una línea, en dos puntos opuestos.",
+            "Se usa solo el **hemisferio inferior** (convenio de geología e ingeniería).",
+            "Los puntos del hemisferio inferior se proyectan hacia el **cénit** (punto más alto de la esfera) sobre el plano horizontal ecuatorial.",
+            "El resultado: un plano se dibuja como un **arco** (ciclográfica) y una línea como un **punto**."
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Qué representa"
+          ],
+          "rows": [
+            [
+              "**Primitiva**",
+              "El círculo exterior: el plano horizontal. Lo que está en la primitiva tiene inclinación 0°"
+            ],
+            [
+              "**Centro**",
+              "La vertical: una línea de inmersión 90°"
+            ],
+            [
+              "**Ciclográfica** (círculo máximo)",
+              "Un plano. Cuanto más cerca del centro pasa, más buza"
+            ],
+            [
+              "**Polo**",
+              "Punto que representa la normal (perpendicular) a un plano"
+            ],
+            [
+              "**Círculo menor**",
+              "Lugar de líneas que forman un ángulo constante con un eje (p. ej. el cono de fricción)"
+            ],
+            [
+              "**Falsilla** (red)",
+              "Cuadrícula de círculos máximos y menores cada 2° o 10° para medir ángulos"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dos redes"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "Red de Wulff",
+            "Red de Schmidt (Lambert)"
+          ],
+          "rows": [
+            [
+              "Propiedad",
+              "Igual ángulo (conforme)",
+              "Igual área (equiareal)"
+            ],
+            [
+              "Círculos menores",
+              "Se ven como círculos",
+              "Se deforman"
+            ],
+            [
+              "Uso principal",
+              "Medir ángulos, construcciones geométricas",
+              "Contar polos y hacer diagramas de densidad"
+            ],
+            [
+              "Radio de una línea de inmersión δ",
+              "r = R·tan(45° − δ/2)",
+              "r = R·√2·sen(45° − δ/2)"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "stereonet",
+          "title": "Compara Wulff y Schmidt",
+          "params": {
+            "planes": [
+              "090/30",
+              "090/60"
+            ]
+          }
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Las dos redes dan los **mismos resultados** de orientación (ángulos, intersecciones). Solo cambia dónde quedan dibujados los puntos. En el examen, usa la red que te indiquen."
+        },
+        {
+          "type": "quiz",
+          "question": "En una red de Wulff de radio R = 10 cm, ¿a qué distancia del centro se dibuja una línea de inmersión 30°?",
+          "options": [
+            "3,0 cm",
+            "5,8 cm",
+            "7,1 cm",
+            "8,7 cm"
+          ],
+          "correct": 1,
+          "explanation": "r = 10 · tan(45° − 15°) = 10 · tan 30° = **5,77 cm**. En la red de Schmidt sería 10 · √2 · sen 30° = 7,07 cm."
+        },
+        {
+          "type": "quiz",
+          "question": "Un plano horizontal se proyecta como:",
+          "options": [
+            "Un punto en el centro",
+            "La primitiva",
+            "Un diámetro",
+            "Un círculo menor"
+          ],
+          "correct": 1,
+          "explanation": "Un plano horizontal coincide con el ecuador de la esfera: se proyecta como la **primitiva**. Su polo es vertical: un punto en el **centro**."
+        },
+        {
+          "type": "quiz",
+          "question": "La red de Wulff conserva:",
+          "options": [
+            "Las áreas",
+            "Los ángulos (es equiangular)",
+            "Las distancias",
+            "Nada"
+          ],
+          "correct": 1,
+          "explanation": "Wulff = proyección **equiangular**; Schmidt = de igual área."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué se usa la red de Schmidt para diagramas de polos?",
+          "options": [
+            "Porque es más bonita",
+            "Porque conserva las áreas y la densidad de polos no se distorsiona",
+            "Porque conserva los ángulos",
+            "Porque usa el hemisferio superior"
+          ],
+          "correct": 1,
+          "explanation": "Para contar concentraciones hace falta **igual área**."
+        }
+      ]
+    },
+    {
+      "id": "l03-planos",
+      "title": "Proyectar un plano y su polo",
+      "summary": "Procedimiento con papel calcante y falsilla, paso a paso.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Procedimiento manual (papel calcante sobre la falsilla)"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Fija el calcante sobre la falsilla con un alfiler en el centro. Dibuja la primitiva y marca el **N**.",
+            "Marca sobre la primitiva el azimut de la **dirección de buzamiento** (o del rumbo), contando en sentido horario desde el N.",
+            "**Gira el calcante** hasta llevar esa marca al diámetro **E-O** de la falsilla (si marcaste la dirección de buzamiento) o al **N-S** (si marcaste el rumbo).",
+            "Desde la primitiva, cuenta hacia el centro el **buzamiento** sobre el diámetro E-O y traza el **círculo máximo** de la falsilla que pasa por ese punto: es la ciclográfica.",
+            "Para el **polo**: desde el punto de la ciclográfica sobre el diámetro, cuenta **90°** a lo largo del diámetro, pasando por el centro. (Equivale a contar el buzamiento desde el centro hacia el lado opuesto.)",
+            "**Regresa** el calcante a su posición original (N con N)."
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "stereonet",
+          "title": "Red interactiva: agrega planos y líneas",
+          "params": {
+            "planes": [
+              "120/40"
+            ]
+          }
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Relación plano – polo",
+          "text": "**Tendencia del polo = dirección de buzamiento ± 180°**, e **inmersión del polo = 90° − buzamiento**. Un plano vertical tiene su polo en la primitiva; un plano horizontal, en el centro."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Error típico: dibujar el polo del **mismo lado** que el buzamiento. El polo siempre está en el lado **opuesto** a la dirección de buzamiento."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el polo del plano 235/70?",
+          "options": [
+            "235/20",
+            "055/20",
+            "055/70",
+            "145/70"
+          ],
+          "correct": 1,
+          "explanation": "Tendencia: 235 − 180 = **055**. Inmersión: 90 − 70 = **20°**. Polo: **055/20**."
+        },
+        {
+          "type": "quiz",
+          "question": "El polo de un plano está a 340/15. ¿Qué plano es?",
+          "options": [
+            "340/75",
+            "160/75",
+            "160/15",
+            "070/75"
+          ],
+          "correct": 1,
+          "explanation": "Dir. de buzamiento = 340 − 180 = **160**. Buzamiento = 90 − 15 = **75°**. Plano **160/75**: un plano muy inclinado tiene el polo cerca de la primitiva."
+        },
+        {
+          "type": "quiz",
+          "question": "Un plano vertical se proyecta como:",
+          "options": [
+            "La primitiva",
+            "Una recta (diámetro) que pasa por el centro",
+            "Un punto",
+            "Un círculo menor"
+          ],
+          "correct": 1,
+          "explanation": "Buzamiento 90° → círculo máximo **recto** por el centro."
+        },
+        {
+          "type": "quiz",
+          "question": "Plano 090/30 (DD/BZ). ¿Su polo?",
+          "options": [
+            "Tendencia 090°, inmersión 30°",
+            "Tendencia 270°, inmersión 60°",
+            "Tendencia 090°, inmersión 60°",
+            "Tendencia 270°, inmersión 30°"
+          ],
+          "correct": 1,
+          "explanation": "Polo: tendencia DD + 180° = **270°**, inmersión 90° − 30° = **60°**."
+        },
+        {
+          "type": "quiz",
+          "question": "Al dibujar un plano, ¿hacia dónde se cuenta el buzamiento sobre el diámetro E–O de la falsilla?",
+          "options": [
+            "Desde el centro hacia afuera",
+            "Desde la primitiva hacia el centro",
+            "Desde el norte",
+            "No se cuenta"
+          ],
+          "correct": 1,
+          "explanation": "Se cuenta **desde el borde hacia el centro** y por ahí pasa el círculo máximo."
+        }
+      ]
+    },
+    {
+      "id": "l04-lineas",
+      "title": "Proyectar una línea; cabeceo",
+      "summary": "Ubicar una línea por tendencia e inmersión y medir su cabeceo en un plano.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Marca la **tendencia** sobre la primitiva.",
+            "Gira el calcante hasta llevar la marca a un diámetro (N-S o E-O).",
+            "Cuenta la **inmersión** desde la primitiva hacia el centro, sobre ese diámetro, y marca el punto.",
+            "Regresa el calcante."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Líneas contenidas en un plano",
+          "text": "Si una línea está en un plano, su punto cae **sobre la ciclográfica** de ese plano. Así se reconoce, por ejemplo, que una estría está sobre el plano de falla que la contiene."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Cabeceo (pitch)",
+          "text": "Para medirlo, gira el calcante hasta que la ciclográfica del plano coincida con un círculo máximo de la falsilla y cuenta los grados **a lo largo de la ciclográfica**, desde la primitiva (extremo del rumbo) hasta el punto de la línea."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Una estría de falla con cabeceo cercano a 0° indica movimiento horizontal (falla de **desgarre**); con cabeceo cercano a 90°, movimiento según el buzamiento (falla **normal o inversa**)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde se proyecta una línea vertical (inmersión 90°)?",
+          "options": [
+            "En la primitiva",
+            "En el centro de la red",
+            "En el diámetro N-S",
+            "No se puede proyectar"
+          ],
+          "correct": 1,
+          "explanation": "La inmersión se cuenta desde la primitiva (0°) hacia el centro (90°): una línea vertical cae en el **centro**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una estría sobre un plano de falla tiene cabeceo de 5°. ¿Qué movimiento indica?",
+          "options": [
+            "Normal",
+            "Inversa",
+            "De desgarre (horizontal)",
+            "Ninguno"
+          ],
+          "correct": 2,
+          "explanation": "Cabeceo casi nulo = la estría es casi paralela al rumbo: movimiento **horizontal** (desgarre o rumbo-deslizante)."
+        },
+        {
+          "type": "quiz",
+          "question": "Una línea con inmersión 0° se proyecta:",
+          "options": [
+            "En el centro",
+            "En la primitiva",
+            "A mitad de radio",
+            "No se proyecta"
+          ],
+          "correct": 1,
+          "explanation": "Línea horizontal → punto en el **borde**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una línea vertical se proyecta:",
+          "options": [
+            "En la primitiva",
+            "En el centro",
+            "En el norte",
+            "Como un círculo"
+          ],
+          "correct": 1,
+          "explanation": "Inmersión 90° → **centro** de la red."
+        },
+        {
+          "type": "quiz",
+          "question": "El cabeceo (rake o pitch) se mide:",
+          "options": [
+            "En la horizontal desde el norte",
+            "Dentro del plano, desde el rumbo hasta la línea",
+            "En la vertical",
+            "Desde el polo"
+          ],
+          "correct": 1,
+          "explanation": "Ángulo de 0° a 90° **sobre el plano** que contiene la línea, medido desde la horizontal (rumbo)."
+        }
+      ]
+    },
+    {
+      "id": "l05-polos",
+      "title": "Diagramas de polos y familias de discontinuidades",
+      "summary": "Por qué se trabaja con polos y cómo se identifican familias con la red de Schmidt.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En un talud real se miden cientos de discontinuidades. Dibujar cientos de ciclográficas sería ilegible; en cambio, cada plano se reduce a **un solo punto: su polo**. Los polos de planos parecidos se agrupan en **nubes**."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Familia de discontinuidades",
+          "text": "Conjunto de discontinuidades (diaclasas, estratificación, foliación) con orientación **aproximadamente paralela**. En el diagrama de polos aparece como una concentración de puntos."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Se proyectan todos los polos en la **red de Schmidt** (igual área, para no exagerar ninguna zona).",
+            "Se cuenta la densidad de polos con un **contador** de área igual al 1 % de la red (p. ej. el método de Kalsbeek).",
+            "Se dibujan **contornos de densidad** (1 %, 2 %, 4 %...).",
+            "Cada máximo de densidad es una **familia**; su polo medio da la orientación representativa.",
+            "Se dibuja la ciclográfica de cada familia y se usa para el análisis de estabilidad."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Las familias controlan la estabilidad de taludes, túneles y cimentaciones en roca, y también el tamaño de los bloques y la permeabilidad del macizo. Lo habitual es tener de 2 a 4 familias principales."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué los diagramas de densidad de polos se hacen en la red de Schmidt?",
+          "options": [
+            "Porque conserva los ángulos",
+            "Porque conserva las áreas: la densidad de puntos no se deforma",
+            "Porque es más pequeña",
+            "Porque usa el hemisferio superior"
+          ],
+          "correct": 1,
+          "explanation": "La red de **Schmidt es equiareal**: un 1 % del área vale lo mismo en el centro que en el borde, así que contar polos es justo."
+        },
+        {
+          "type": "quiz",
+          "question": "Una nube de polos cerca del CENTRO de la red indica una familia de planos:",
+          "options": [
+            "Casi verticales",
+            "Casi horizontales",
+            "Con buzamiento de 45°",
+            "Paralelos al talud"
+          ],
+          "correct": 1,
+          "explanation": "Polo con inmersión alta (cerca del centro) → buzamiento bajo (90° − inmersión): planos **casi horizontales**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué ángulo separa a un plano de su polo?",
+          "options": [
+            "0°",
+            "45°",
+            "90°",
+            "180°"
+          ],
+          "correct": 2,
+          "explanation": "El polo es la normal al plano: está a **90°**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una concentración de polos en el diagrama indica:",
+          "options": [
+            "Un error de medida",
+            "Una familia de discontinuidades con orientación similar",
+            "Un plano horizontal",
+            "Una falla"
+          ],
+          "correct": 1,
+          "explanation": "Cada concentración = **una familia** (set) de diaclasas."
+        },
+        {
+          "type": "quiz",
+          "question": "Polo con tendencia 200° e inmersión 50°. ¿Plano (DD/BZ)?",
+          "options": [
+            "200/50",
+            "020/40",
+            "020/50",
+            "200/40"
+          ],
+          "correct": 1,
+          "explanation": "DD = 200 − 180 = **020°**; BZ = 90 − 50 = **40°**."
+        }
+      ]
+    },
+    {
+      "id": "l06-intersecciones",
+      "title": "Intersecciones, ángulos y buzamiento aparente",
+      "summary": "Línea de intersección de dos planos, ángulo entre planos y buzamiento aparente.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Línea de intersección de dos planos"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Dibuja las ciclográficas de los dos planos.",
+            "El **punto donde se cortan** es la línea de intersección.",
+            "Gira el calcante hasta llevar ese punto a un diámetro: lee la **inmersión** contando desde la primitiva.",
+            "Regresa el calcante y lee la **tendencia** como el azimut del punto."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ángulo entre dos planos"
+        },
+        {
+          "type": "text",
+          "text": "Es el ángulo entre sus **polos**: gira el calcante hasta que ambos polos queden sobre el **mismo círculo máximo** de la falsilla y cuenta los grados entre ellos. (Con dos ciclográficas también puede medirse sobre el círculo máximo perpendicular a la intersección.)"
+        },
+        {
+          "type": "heading",
+          "text": "Buzamiento aparente"
+        },
+        {
+          "type": "text",
+          "text": "En un corte (perfil, talud, pared de túnel) que **no** es perpendicular al rumbo, el plano se ve con un buzamiento **menor** que el real: el buzamiento aparente. En la red se lee donde la dirección del corte corta la ciclográfica."
+        },
+        {
+          "type": "formula",
+          "expression": "tan(β aparente) = tan(δ real) · cos(α)",
+          "caption": "α: ángulo entre la dirección del corte y la dirección de buzamiento."
+        },
+        {
+          "type": "interactive",
+          "widget": "stereo_intersection",
+          "title": "Laboratorio: intersección y buzamiento aparente"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La intersección de dos familias de diaclasas es el eje de las **cuñas** que pueden deslizar en un talud o caer en un túnel. El buzamiento aparente es el que verás en las paredes de una excavación."
+        },
+        {
+          "type": "quiz",
+          "question": "Un estrato 060/40 aflora en un corte de carretera orientado hacia 100°. ¿Qué buzamiento aparente se ve en el corte?",
+          "options": [
+            "≈ 18°",
+            "≈ 33°",
+            "40°",
+            "≈ 49°"
+          ],
+          "correct": 1,
+          "explanation": "α = 100 − 60 = 40°. tan β = tan 40° · cos 40° = 0,839 · 0,766 = 0,643 → β ≈ **32,7°**."
+        },
+        {
+          "type": "quiz",
+          "question": "El mismo estrato 060/40, en un corte orientado hacia 150° (paralelo al rumbo). ¿Buzamiento aparente?",
+          "options": [
+            "0°",
+            "20°",
+            "40°",
+            "90°"
+          ],
+          "correct": 0,
+          "explanation": "150 − 60 = 90°: cos 90° = 0. Mirando en la dirección del **rumbo** el estrato se ve **horizontal** (0°)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la línea de intersección de los planos 040/60 y 150/50?",
+          "options": [
+            "102/39",
+            "282/39",
+            "102/51",
+            "012/39"
+          ],
+          "correct": 0,
+          "explanation": "Resolviendo en la red (o con el laboratorio): la intersección tiene tendencia ≈ **102°** e inmersión ≈ **39°**. El ángulo entre los planos es ≈ 85°."
+        },
+        {
+          "type": "quiz",
+          "question": "En la red, la intersección de dos planos es:",
+          "options": [
+            "Una recta",
+            "El punto donde se cortan sus círculos máximos",
+            "El punto medio de sus polos",
+            "El centro"
+          ],
+          "correct": 1,
+          "explanation": "Se cortan en **un punto**: la línea de intersección."
+        },
+        {
+          "type": "quiz",
+          "question": "La línea de intersección de dos planos también es el polo del plano que contiene:",
+          "options": [
+            "A ambos planos",
+            "A los dos polos",
+            "Al norte",
+            "Al rumbo"
+          ],
+          "correct": 1,
+          "explanation": "El círculo máximo que pasa por los dos polos tiene como polo a la **línea de intersección**."
+        },
+        {
+          "type": "quiz",
+          "question": "El buzamiento aparente en una dirección distinta de la de buzamiento es:",
+          "options": [
+            "Mayor que el real",
+            "Menor o igual que el real",
+            "Siempre 0°",
+            "Igual al real"
+          ],
+          "correct": 1,
+          "explanation": "tan δa = tan δ · cos α: **nunca supera** al real; es 0 en la dirección del rumbo."
+        }
+      ]
+    },
+    {
+      "id": "l06b-lugar-geometrico",
+      "title": "Lugar geométrico (LG)",
+      "summary": "Qué es un LG, los LG más usados y cómo resolver problemas cruzando dos LG.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Lugar geométrico",
+          "text": "Conjunto de **todos los puntos** de la red que cumplen una misma condición. En la proyección estereográfica, los LG son siempre **círculos máximos** o **círculos menores**. Muchos problemas se resuelven trazando **dos LG**: la solución está donde se cortan."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Condición",
+            "Lugar geométrico",
+            "Cómo se traza"
+          ],
+          "rows": [
+            [
+              "Líneas contenidas en un plano",
+              "La **ciclográfica** de ese plano",
+              "Como cualquier plano"
+            ],
+            [
+              "Polos de los planos que contienen una línea L",
+              "El **círculo máximo perpendicular a L** (el plano cuyo polo es L)",
+              "Lleva L al diámetro E-O y cuenta 90° pasando por el centro: ese punto es el polo del LG; traza su ciclográfica"
+            ],
+            [
+              "Líneas perpendiculares a una línea L",
+              "El mismo círculo máximo a 90° de L",
+              "Igual que el anterior"
+            ],
+            [
+              "Líneas que forman un ángulo α con una línea L",
+              "**Círculo menor** (cono) de radio α alrededor de L",
+              "Lleva L a un diámetro y cuenta α a ambos lados sobre varios círculos máximos; une los puntos"
+            ],
+            [
+              "Polos de los planos que forman un ángulo α con un plano P",
+              "Círculo menor de radio α alrededor del **polo** de P",
+              "Igual, usando el polo de P como eje"
+            ],
+            [
+              "Líneas con inmersión β (o polos de planos con buzamiento 90° − β)",
+              "Círculo **concéntrico** con la primitiva",
+              "Cuenta β desde la primitiva sobre un diámetro y traza el círculo"
+            ],
+            [
+              "Polos de los estratos de un pliegue cilíndrico",
+              "Un círculo máximo (**guirnalda π**)",
+              "Su polo es el **eje del pliegue** (diagrama π)"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "stereo_locus",
+          "title": "Laboratorio de lugares geométricos"
+        },
+        {
+          "type": "heading",
+          "text": "Problema tipo: plano que contiene una línea y tiene un buzamiento dado"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**LG₁:** los polos de todos los planos que contienen a L están en el círculo máximo perpendicular a L.",
+            "**LG₂:** los polos de todos los planos con buzamiento δ están en el círculo concéntrico de inmersión 90° − δ.",
+            "Los puntos donde se cortan LG₁ y LG₂ son los **polos de las soluciones**. Puede haber 2 soluciones, 1 (si δ = inmersión de L) o ninguna (si δ es menor que la inmersión de L).",
+            "Pasa de cada polo a su plano: dirección de buzamiento = tendencia del polo ± 180°; buzamiento = 90° − inmersión del polo."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Diagrama π: el eje de un pliegue"
+        },
+        {
+          "type": "text",
+          "text": "En un pliegue cilíndrico todos los estratos contienen una misma línea: el **eje del pliegue**. Por eso sus polos caen en un mismo círculo máximo (la **guirnalda π**, su LG). El **polo de esa guirnalda** es el eje del pliegue (también llamado β)."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El LG también aparece en el análisis de taludes: el **círculo de fricción** es el LG de las líneas con inmersión igual a φ, y la «media luna» crítica es la región entre dos LG."
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio LG-1. ¿Qué plano contiene la línea L = 045/30 y buza 60°? (Puede haber dos soluciones.)",
+          "options": [
+            "116/60 y 334/60",
+            "045/60 y 225/60",
+            "135/60 y 315/60",
+            "075/60 y 015/60"
+          ],
+          "correct": 0,
+          "explanation": "LG₁: círculo máximo cuyo polo es L. LG₂: círculo concéntrico de inmersión 90 − 60 = 30°. Se cortan en dos polos, que corresponden a los planos **116/60** y **334/60**. Comprobación: tan 30° = tan 60° · cos(45° − dir. de buzamiento) → cos = 0,333 → 45° ± 70,5°."
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio LG-2. ¿Cuántas soluciones tiene el plano que contiene la línea 100/50 y buza 40°?",
+          "options": [
+            "Dos",
+            "Una",
+            "Ninguna",
+            "Infinitas"
+          ],
+          "correct": 2,
+          "explanation": "Un plano no puede contener una línea más inclinada que su propio buzamiento: 50° > 40°. Los dos LG **no se cortan**: no hay solución."
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio LG-3 (diagrama π). Se midieron los estratos de un pliegue: 277/71, 292/44, 333/22, 047/28, 074/53 y 085/76. Proyectando sus polos, se alinean en un círculo máximo. ¿Cuál es el eje del pliegue?",
+          "options": [
+            "000/20",
+            "180/20",
+            "090/70",
+            "000/70"
+          ],
+          "correct": 0,
+          "explanation": "Los polos caen sobre una guirnalda cuyo polo es ≈ **000/20**: todos los estratos contienen esa línea, que es el **eje del pliegue** (buza 20° hacia el norte)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el LG de los polos de todos los planos con buzamiento 30°?",
+          "options": [
+            "Un círculo máximo",
+            "Un círculo concéntrico a 60° de inmersión",
+            "La primitiva",
+            "Un diámetro"
+          ],
+          "correct": 1,
+          "explanation": "Polos de planos con buzamiento 30° → inmersión 90 − 30 = **60°**: círculo **concéntrico** cerca del centro."
+        },
+        {
+          "type": "quiz",
+          "question": "El LG de las líneas que forman 40° con una línea L es:",
+          "options": [
+            "Un círculo máximo",
+            "Un círculo menor (cono) alrededor de L",
+            "Un diámetro",
+            "Un punto"
+          ],
+          "correct": 1,
+          "explanation": "Ángulo constante con un eje = **cono** → **círculo menor** de radio 40° alrededor de L."
+        },
+        {
+          "type": "quiz",
+          "question": "El LG de las líneas que forman un ángulo α con una línea dada es:",
+          "options": [
+            "Un círculo máximo",
+            "Un cono, que se proyecta como un círculo menor",
+            "Un punto",
+            "Una recta"
+          ],
+          "correct": 1,
+          "explanation": "Un **cono** de semiángulo α alrededor de la línea: círculo menor en la red."
+        }
+      ]
+    },
+    {
+      "id": "l07-taludes",
+      "title": "Análisis cinemático de taludes",
+      "summary": "Rotura plana, en cuña y por vuelco con la red estereográfica (test de Markland).",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El **análisis cinemático** responde a la pregunta: ¿la orientación de las discontinuidades **permite** que un bloque se mueva hacia la cara del talud? Se hace con la red estereográfica, la orientación del talud y el **ángulo de fricción φ** de las discontinuidades."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Rotura",
+            "Condiciones (todas deben cumplirse)"
+          ],
+          "rows": [
+            [
+              "**Plana**",
+              "1) Dirección de buzamiento de la discontinuidad a ± 20° de la del talud. 2) Buzamiento de la discontinuidad MENOR que el del talud (aflora). 3) Buzamiento MAYOR que φ"
+            ],
+            [
+              "**En cuña**",
+              "1) La intersección de dos familias apunta hacia la cara del talud. 2) Su inmersión es MENOR que el buzamiento (aparente) del talud en esa dirección. 3) Su inmersión es MAYOR que φ"
+            ],
+            [
+              "**Por vuelco**",
+              "1) Las discontinuidades buzan hacia el INTERIOR del talud (dirección opuesta, ± 30°). 2) Buzamiento ≥ (90° − inclinación del talud) + φ"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Cómo se ve en la red",
+          "text": "Se dibuja la ciclográfica del talud y el **círculo de fricción** (líneas con inmersión φ). Para rotura plana y en cuña, la zona crítica es la «media luna» entre la ciclográfica del talud y el círculo de fricción, del lado de la cara: ahí deben caer el vector de buzamiento o la intersección."
+        },
+        {
+          "type": "interactive",
+          "widget": "kinematic_slope",
+          "title": "Laboratorio: análisis cinemático"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El análisis cinemático dice si un mecanismo es **posible**, no si ocurrirá. Después se calcula el **factor de seguridad** considerando cohesión, presión de agua y sismo (muy importante en el Ecuador)."
+        },
+        {
+          "type": "quiz",
+          "question": "Talud 090/60, φ = 30°. Una diaclasa 100/40. ¿Es posible la rotura plana?",
+          "options": [
+            "Sí: dirección a 10° del talud, 40° < 60° y 40° > 30°",
+            "No: la diaclasa buza menos que el talud",
+            "No: 40° es mayor que φ",
+            "No: la diaclasa no es paralela"
+          ],
+          "correct": 0,
+          "explanation": "Se cumplen las tres condiciones: |100 − 90| = 10° ≤ 20°, la diaclasa **aflora** (40° < 60°) y **supera la fricción** (40° > 30°). Rotura plana **posible**."
+        },
+        {
+          "type": "quiz",
+          "question": "Talud 180/65, φ = 30°. Las familias 140/55 y 230/50 se cortan en la línea 190/42. ¿Es posible la rotura en cuña?",
+          "options": [
+            "No, porque ninguna familia es paralela al talud",
+            "Sí: la intersección apunta al talud y 30° < 42° < 65°",
+            "No, porque 42° es mayor que φ",
+            "No se puede saber sin el polo"
+          ],
+          "correct": 1,
+          "explanation": "La intersección (190/42) apunta hacia la cara (a 10° de la dirección del talud); su inmersión es menor que el buzamiento aparente del talud en esa dirección (≈ 65°) y mayor que φ (30°). Cuña **posible**, aunque ninguna familia por sí sola produce rotura plana."
+        },
+        {
+          "type": "quiz",
+          "question": "Talud 000/70, φ = 30°. Una foliación 180/80. ¿Es posible el vuelco?",
+          "options": [
+            "Sí: buza hacia el interior y 80° ≥ (90 − 70) + 30 = 50°",
+            "No: buza demasiado",
+            "No: debería buzar hacia la cara del talud",
+            "Sí, pero solo como rotura plana"
+          ],
+          "correct": 0,
+          "explanation": "La foliación buza hacia 180°, opuesta a la cara (000°), y su buzamiento (80°) supera el límite (90 − 70) + 30 = 50°: **vuelco posible**."
+        },
+        {
+          "type": "quiz",
+          "question": "Para rotura plana, el buzamiento del plano debe ser:",
+          "options": [
+            "Mayor que el del talud",
+            "Menor que el del talud y mayor que el ángulo de fricción",
+            "Menor que el ángulo de fricción",
+            "Igual a 90°"
+          ],
+          "correct": 1,
+          "explanation": "Debe **aflorar** en la cara del talud (menor que el talud) y **vencer la fricción** (mayor que φ)."
+        },
+        {
+          "type": "quiz",
+          "question": "En rotura en cuña se analiza:",
+          "options": [
+            "El polo de cada plano por separado",
+            "La línea de intersección de los dos planos",
+            "Solo el rumbo",
+            "La primitiva"
+          ],
+          "correct": 1,
+          "explanation": "La cuña desliza a lo largo de la **línea de intersección**: su inmersión debe estar entre φ y el buzamiento aparente del talud."
+        },
+        {
+          "type": "quiz",
+          "question": "La rotura por vuelco (toppling) ocurre con discontinuidades:",
+          "options": [
+            "Que buzan suave hacia fuera del talud",
+            "Que buzan fuerte hacia dentro del talud, paralelas a su cara",
+            "Horizontales",
+            "Perpendiculares al rumbo del talud"
+          ],
+          "correct": 1,
+          "explanation": "Bloques esbeltos separados por planos que buzan **hacia el interior** del talud."
+        }
+      ]
+    },
+    {
+      "id": "l07b-ejercicios",
+      "title": "Ejercicios resueltos",
+      "summary": "Nueve problemas tipo examen: notaciones, polos, intersecciones, buzamiento real, cabeceo y taludes.",
+      "minutes": 40,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Resuelve cada ejercicio **primero en papel** con calcante y falsilla (o en la red interactiva de abajo) y después revisa la solución paso a paso. Las respuestas se calcularon con precisión; en la red manual se acepta un error de ± 2°."
+        },
+        {
+          "type": "interactive",
+          "widget": "stereonet",
+          "title": "Red de trabajo para los ejercicios"
+        },
+        {
+          "type": "heading",
+          "text": "A. Notaciones y polos"
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio 1. Una diaclasa se midió como N25°O, 60°NE. Exprésala como dirección de buzamiento/buzamiento y halla su polo.",
+          "options": [
+            "065/60; polo 245/30",
+            "335/60; polo 155/30",
+            "065/60; polo 245/60",
+            "245/60; polo 065/30"
+          ],
+          "correct": 0,
+          "explanation": "Rumbo N25°O = azimut **335°** (o 155°). Perpendicular hacia el NE: 335 + 90 = 425 − 360 = **065**. Plano **065/60**. Polo: tendencia 065 + 180 = **245**, inmersión 90 − 60 = **30°** → **245/30**."
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio 2. El plano 300/25, ¿cómo se escribe con la regla de la mano derecha y en cuadrantes?",
+          "options": [
+            "210/25 y N30°E, 25°NO",
+            "030/25 y N30°E, 25°SE",
+            "210/25 y N60°O, 25°NE",
+            "120/25 y S60°E, 25°SO"
+          ],
+          "correct": 0,
+          "explanation": "Rumbo (mano derecha) = 300 − 90 = **210**: **210/25**. En cuadrantes, el rumbo 210° se escribe desde el norte como 210 − 180 = 30° → **N30°E**; el plano baja hacia 300°, que está en el cuadrante **NO**: **N30°E, 25°NO**."
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio 3. El polo de una falla es 200/10. ¿Cuál es la falla y cómo se ve en la red?",
+          "options": [
+            "020/80: ciclográfica muy cerca de un diámetro",
+            "200/80: ciclográfica cerca de la primitiva",
+            "020/10: ciclográfica cerca de la primitiva",
+            "110/80: ciclográfica cerca del centro"
+          ],
+          "correct": 0,
+          "explanation": "Dir. de buzamiento = 200 − 180 = **020**; buzamiento = 90 − 10 = **80°** → **020/80**. Un plano casi vertical tiene su ciclográfica casi recta, pasando cerca del centro, y su polo en el borde (cerca de la primitiva)."
+        },
+        {
+          "type": "heading",
+          "text": "B. Intersecciones y ángulos"
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio 4. Dos familias de diaclasas: 150/60 y 250/40. Halla la línea de intersección y el ángulo entre ellas.",
+          "options": [
+            "216/35 y 73°",
+            "036/35 y 73°",
+            "216/55 y 107°",
+            "200/40 y 60°"
+          ],
+          "correct": 0,
+          "explanation": "1) Dibuja las dos ciclográficas. 2) Marca el punto donde se cortan. 3) Gira el calcante hasta llevarlo al diámetro E-O y cuenta desde la primitiva: **35°**. 4) Regresa el calcante y lee el azimut del punto: **216°**. Intersección **216/35**. Para el ángulo, lleva los dos polos (330/30 y 070/50) al mismo círculo máximo y cuenta: **73°** (el obtuso es 107°)."
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio 5. Ángulo entre los planos 010/30 y 100/80.",
+          "options": [
+            "81°",
+            "50°",
+            "90°",
+            "70°"
+          ],
+          "correct": 0,
+          "explanation": "Polos: 190/60 y 280/10. Llévalos al mismo círculo máximo de la falsilla y cuenta los grados entre ellos: **≈ 81°**. (Su intersección es la línea 016/30.)"
+        },
+        {
+          "type": "heading",
+          "text": "C. Problemas clásicos de examen"
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio 6. En dos cortes de una cantera un estrato muestra buzamiento aparente de 20° hacia 090 y de 30° hacia 180. ¿Cuál es su orientación real?",
+          "options": [
+            "148/34",
+            "135/25",
+            "148/30",
+            "328/34"
+          ],
+          "correct": 0,
+          "explanation": "Los buzamientos aparentes son **líneas contenidas en el plano**: 090/20 y 180/30. 1) Proyecta los dos puntos. 2) Gira el calcante hasta que ambos queden sobre el **mismo círculo máximo**: ese es el plano. 3) Lee su buzamiento sobre el diámetro E-O: **34°**, y su dirección de buzamiento: **148°**. Plano **148/34**. Comprobación: el real (34°) es mayor que los dos aparentes."
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio 7. Sobre un plano de falla 120/50 hay una estría con cabeceo de 40° medido desde el extremo 030 del rumbo. ¿Cuál es la orientación de la estría?",
+          "options": [
+            "058/30",
+            "030/40",
+            "120/50",
+            "238/30"
+          ],
+          "correct": 0,
+          "explanation": "1) Dibuja la ciclográfica de 120/50 y gírala hasta que coincida con un círculo máximo de la falsilla. 2) Desde el extremo del rumbo en 030°, cuenta **40° a lo largo de la ciclográfica**. 3) Regresa y lee: tendencia **058°**, inmersión **30°**. Comprobación: sen(inmersión) = sen 50° · sen 40° = 0,49 → 29,5°."
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio 8. Un túnel con eje N-S (000°) atraviesa un estrato 045/55. ¿Qué buzamiento aparente se ve en los hastiales (paredes) del túnel?",
+          "options": [
+            "≈ 45°",
+            "55°",
+            "≈ 39°",
+            "0°"
+          ],
+          "correct": 0,
+          "explanation": "La pared del túnel es un plano vertical N-S, así que se busca el buzamiento aparente en la dirección 000°: α = 045 − 000 = 45°. tan β = tan 55° · cos 45° = 1,428 · 0,707 = 1,010 → β ≈ **45,3°** hacia el norte."
+        },
+        {
+          "type": "heading",
+          "text": "D. Estabilidad de taludes"
+        },
+        {
+          "type": "quiz",
+          "question": "Ejercicio 9. Talud 240/70, φ = 35°, familias J1 = 230/50, J2 = 310/60 y J3 = 060/75. ¿Qué mecanismos de rotura son cinemáticamente posibles?",
+          "options": [
+            "Plana por J1, cuña J1–J2 y vuelco por J3",
+            "Solo plana por J2",
+            "Solo vuelco por J1",
+            "Ninguno"
+          ],
+          "correct": 0,
+          "explanation": "**Plana J1:** |230 − 240| = 10° ≤ 20°, 50° < 70° y 50° > 35° → **sí**. J2: |310 − 240| = 70° > 20° → no. **Cuña J1–J2:** intersección 258/47; apunta a la cara (18°), 47° < 69° (buzamiento aparente del talud) y 47° > 35° → **sí**. **Vuelco J3:** buza hacia 060°, opuesto a la cara (240°), y 75° ≥ (90 − 70) + 35 = 55° → **sí**. Compruébalo en el laboratorio de análisis cinemático."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "¿Te sale distinto en papel? Las causas más comunes son: no regresar el calcante a su posición original, contar el ángulo desde el centro en vez de desde la primitiva, o dibujar el polo del mismo lado que el buzamiento."
+        }
+      ]
+    },
+    {
+      "id": "l08-entrenamiento",
+      "title": "Entrenamiento para el examen",
+      "summary": "Ejercicios aleatorios ilimitados de lectura de la red y consejos finales.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El entrenador genera ejercicios nuevos cada vez. Practica los cuatro modos hasta resolverlos sin dudar: leer una ciclográfica, leer un polo, convertir notaciones y hallar intersecciones."
+        },
+        {
+          "type": "interactive",
+          "widget": "stereo_trainer",
+          "title": "Entrenador de red estereográfica"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "title": "Lista de verificación del examen",
+          "text": "1) Marca el **N** en el calcante y vuelve siempre a él. 2) La inmersión y el buzamiento se cuentan **desde la primitiva** hacia el centro. 3) El polo va al **lado opuesto** del buzamiento y a 90° de la ciclográfica. 4) Gira hasta llevar el punto al **diámetro** antes de medir. 5) Escribe la notación **completa** (dir. de buzamiento/buzamiento o tendencia/inmersión) y comprueba que tenga sentido con un croquis."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Comprobaciones rápidas: un plano que buza poco tiene la ciclográfica cerca de la primitiva y el polo cerca del centro; uno casi vertical, la ciclográfica cerca de un diámetro y el polo en la primitiva."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos planos con el mismo rumbo pero buzando en sentidos opuestos se cortan en una línea:",
+          "options": [
+            "Vertical",
+            "Horizontal, paralela al rumbo común",
+            "Con inmersión igual al buzamiento",
+            "No se cortan"
+          ],
+          "correct": 1,
+          "explanation": "Ambos contienen la misma horizontal: la intersección es **horizontal**, con tendencia igual al rumbo."
+        },
+        {
+          "type": "quiz",
+          "question": "El ángulo entre dos planos se mide:",
+          "options": [
+            "Entre sus rumbos",
+            "Entre sus polos, sobre el círculo máximo que los une",
+            "Entre sus buzamientos",
+            "En la primitiva"
+          ],
+          "correct": 1,
+          "explanation": "Ángulo entre polos = ángulo entre planos (o su suplemento)."
+        },
+        {
+          "type": "quiz",
+          "question": "Una línea 135/00 (tendencia/inmersión) está:",
+          "options": [
+            "En el centro",
+            "En la primitiva, en el SE",
+            "En el NO a mitad de radio",
+            "En el SE a mitad de radio"
+          ],
+          "correct": 1,
+          "explanation": "Inmersión 0° → borde, azimut 135° → **SE**."
+        }
+      ]
+    }
+  ]
+}

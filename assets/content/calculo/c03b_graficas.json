@@ -1,0 +1,1704 @@
+{
+  "id": "c03b-graficas",
+  "title": "Gráficas de funciones (sin derivadas)",
+  "description": "Cómo graficar cualquier función sin cálculo: catálogo básico, transformaciones, piso, techo, mantisa, signo, valor absoluto, funciones por tramos, racionales y polinomios",
+  "lessons": [
+    {
+      "id": "l01-metodo",
+      "title": "Cómo graficar sin derivadas",
+      "summary": "El método paso a paso y el catálogo de gráficas que debes reconocer de memoria.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Graficar no es «calcular muchos puntos y unirlos». Es como armar un rompecabezas: primero reconoces la **forma base** (¿es una parábola? ¿un escalón? ¿una hipérbola?), luego la **mueves y estiras**, y al final marcas los **puntos clave**. Con 5 o 6 puntos bien elegidos basta.",
+          "title": "La idea"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Dominio**: ¿dónde existe? (denominadores, raíces pares, logaritmos).",
+            "**Forma base**: ¿qué función del catálogo es, transformada?",
+            "**Cortes con los ejes**: x = 0 → corte con y; f(x) = 0 → cortes con x.",
+            "**Signo**: tabla de signos para saber dónde la gráfica está arriba o abajo del eje x.",
+            "**Simetría**: par (espejo en el eje y) o impar (simétrica respecto al origen).",
+            "**Asíntotas**: verticales (denominador = 0) y horizontales (x → ±∞).",
+            "**Saltos y puntos especiales**: ¿hay tramos, escalones, huecos? Marca ● si el punto está incluido y ○ si no.",
+            "**Tabla de valores** con pocos puntos estratégicos (cerca de los puntos clave).",
+            "**Dibujar** y comprobar que la gráfica respeta todo lo anterior."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Catálogo: las gráficas que debes reconocer"
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/catalogo.png",
+          "caption": "Las 9 funciones básicas. Todas las demás se obtienen transformándolas o combinándolas."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Forma",
+            "Puntos que debes ubicar",
+            "Dominio",
+            "Rango"
+          ],
+          "rows": [
+            [
+              "x²",
+              "Parábola ∪",
+              "(0, 0), (±1, 1), (±2, 4)",
+              "ℝ",
+              "[0, +∞)"
+            ],
+            [
+              "x³",
+              "S que sube",
+              "(0, 0), (1, 1), (−1, −1), (2, 8)",
+              "ℝ",
+              "ℝ"
+            ],
+            [
+              "√x",
+              "Media parábola acostada",
+              "(0, 0), (1, 1), (4, 2), (9, 3)",
+              "[0, +∞)",
+              "[0, +∞)"
+            ],
+            [
+              "|x|",
+              "V",
+              "(0, 0), (±1, 1)",
+              "ℝ",
+              "[0, +∞)"
+            ],
+            [
+              "1/x",
+              "Hipérbola en 2 ramas",
+              "(1, 1), (−1, −1), (2, 1/2), (1/2, 2)",
+              "ℝ − {0}",
+              "ℝ − {0}"
+            ],
+            [
+              "eˣ",
+              "Crece rapidísimo a la derecha; → 0 a la izquierda",
+              "(0, 1), (1, e ≈ 2,7)",
+              "ℝ",
+              "(0, +∞)"
+            ],
+            [
+              "ln x",
+              "Crece muy lento; → −∞ cerca de 0",
+              "(1, 0), (e, 1)",
+              "(0, +∞)",
+              "ℝ"
+            ],
+            [
+              "sen x",
+              "Onda",
+              "(0, 0), (π/2, 1), (π, 0), (3π/2, −1)",
+              "ℝ",
+              "[−1, 1]"
+            ],
+            [
+              "∛x",
+              "S acostada",
+              "(0, 0), (1, 1), (8, 2), (−8, −2)",
+              "ℝ",
+              "ℝ"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Antes de hacer una tabla, pregúntate siempre: «¿a qué función del catálogo se parece?». Si la reconoces, ya tienes el 80 % de la gráfica.",
+          "title": "El hábito clave"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_function",
+          "title": "Repasa las funciones del catálogo",
+          "params": {
+            "preset": 1
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el primer paso para graficar?",
+          "options": [
+            "Hacer una tabla de 20 puntos",
+            "Hallar el dominio",
+            "Derivar",
+            "Dibujar ejes y adivinar"
+          ],
+          "correct": 1,
+          "explanation": "Saber dónde existe."
+        },
+        {
+          "type": "quiz",
+          "question": "La gráfica de √x empieza en:",
+          "options": [
+            "(0, 0) y va a la derecha",
+            "(0, 0) y va a la izquierda",
+            "(1, 1)",
+            "Todo ℝ"
+          ],
+          "correct": 0,
+          "explanation": "Dominio [0, +∞)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué función tiene forma de V?",
+          "options": [
+            "x²",
+            "|x|",
+            "1/x",
+            "x³"
+          ],
+          "correct": 1,
+          "explanation": "Valor absoluto."
+        },
+        {
+          "type": "quiz",
+          "question": "ln x corta al eje x en:",
+          "options": [
+            "x = 0",
+            "x = 1",
+            "x = e",
+            "No lo corta"
+          ],
+          "correct": 1,
+          "explanation": "ln 1 = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Un punto ○ (abierto) en una gráfica significa:",
+          "options": [
+            "Que está incluido",
+            "Que NO está incluido",
+            "Que es un máximo",
+            "Que es el origen"
+          ],
+          "correct": 1,
+          "explanation": "Excluido."
+        }
+      ]
+    },
+    {
+      "id": "l02-transformaciones",
+      "title": "Transformaciones combinadas",
+      "summary": "Desplazar, estirar y reflejar en el orden correcto, con ejemplos resueltos.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "y = a·f(b(x − h)) + k",
+          "caption": "Toda transformación básica cabe en esta forma."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parámetro",
+            "Dónde está",
+            "Efecto"
+          ],
+          "rows": [
+            [
+              "h",
+              "Dentro, restando a x",
+              "Mueve **horizontalmente**: h > 0 a la DERECHA (¡al revés del signo que ves!)"
+            ],
+            [
+              "b",
+              "Dentro, multiplicando a x",
+              "Comprime horizontalmente si b > 1; estira si 0 < b < 1; b < 0 refleja en el eje y"
+            ],
+            [
+              "a",
+              "Fuera, multiplicando",
+              "Estira verticalmente si |a| > 1; comprime si |a| < 1; a < 0 refleja en el eje x"
+            ],
+            [
+              "k",
+              "Fuera, sumando",
+              "Mueve **verticalmente**: k > 0 sube"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Lo que está **dentro** de la función afecta a x (horizontal) y funciona «al revés»; lo que está **fuera** afecta a y (vertical) y funciona «como se ve». Orden seguro: **1) h (mover), 2) b (estirar en x), 3) a (estirar/reflejar en y), 4) k (subir/bajar)**.",
+          "title": "Regla de oro"
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo 1: y = −2(x − 1)² + 3"
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/transformaciones.png",
+          "caption": "Paso a paso: cada gráfica parte de la anterior (en gris)."
+        },
+        {
+          "type": "text",
+          "text": "Base x² → (x − 1)² mueve 1 a la derecha → −2(x − 1)² estira ×2 y voltea (abre hacia abajo) → +3 sube. Vértice (1, 3), abre hacia abajo, más «angosta»."
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo 2: y = √(2 − x)"
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/raiz-reflejada.png",
+          "caption": "Primero reflejar (√(−x)), luego mover 2 a la derecha."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Para leer bien el desplazamiento, **saca factor común** del coeficiente de x: √(2 − x) = √(−(x − 2)) → reflejo en el eje y y desplazamiento 2 a la DERECHA. El dominio es x ≤ 2. Del mismo modo, √(2x + 6) = √(2(x + 3)): 3 a la izquierda (no 6).",
+          "title": "Trampa frecuente"
+        },
+        {
+          "type": "heading",
+          "text": "Más ejemplos resueltos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Base",
+            "Transformaciones",
+            "Punto clave"
+          ],
+          "rows": [
+            [
+              "y = |x + 2| − 1",
+              "|x|",
+              "2 a la izquierda, 1 abajo",
+              "Vértice (−2, −1)"
+            ],
+            [
+              "y = −|x| + 4",
+              "|x|",
+              "Reflejo en el eje x, 4 arriba (V invertida)",
+              "Vértice (0, 4); corta x en ±4"
+            ],
+            [
+              "y = 1/(x − 2) + 1",
+              "1/x",
+              "2 a la derecha, 1 arriba",
+              "Asíntotas x = 2 y y = 1"
+            ],
+            [
+              "y = 2ˣ⁺¹ − 3",
+              "2ˣ",
+              "1 a la izquierda, 3 abajo",
+              "Asíntota y = −3; pasa por (−1, −2)"
+            ],
+            [
+              "y = ln(x + 3)",
+              "ln x",
+              "3 a la izquierda",
+              "Asíntota x = −3; corta x en −2"
+            ],
+            [
+              "y = 3 sen(2x)",
+              "sen x",
+              "Amplitud 3; período π",
+              "Máximo (π/4, 3)"
+            ],
+            [
+              "y = (x + 1)³ − 2",
+              "x³",
+              "1 a la izquierda, 2 abajo",
+              "Centro (−1, −2)"
+            ],
+            [
+              "y = −√(x − 1)",
+              "√x",
+              "1 a la derecha, reflejo en el eje x",
+              "Empieza en (1, 0) y baja"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = x² + 6x + 5 no parece transformación, pero completando el cuadrado: (x + 3)² − 4 → parábola con vértice (−3, −4).",
+          "title": "Completar el cuadrado"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_function",
+          "title": "Practica transformaciones",
+          "params": {
+            "preset": 1
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "y = (x + 4)² tiene el vértice en:",
+          "options": [
+            "(4, 0)",
+            "(−4, 0)",
+            "(0, 4)",
+            "(0, −4)"
+          ],
+          "correct": 1,
+          "explanation": "x + 4 = x − (−4): a la izquierda."
+        },
+        {
+          "type": "quiz",
+          "question": "y = −x² + 2:",
+          "options": [
+            "Abre hacia arriba, vértice (0, 2)",
+            "Abre hacia abajo, vértice (0, 2)",
+            "Abre hacia abajo, vértice (0, −2)",
+            "Es una recta"
+          ],
+          "correct": 1,
+          "explanation": "a = −1, k = 2."
+        },
+        {
+          "type": "quiz",
+          "question": "√(3 − x) tiene dominio:",
+          "options": [
+            "x ≥ 3",
+            "x ≤ 3",
+            "x ≥ −3",
+            "ℝ"
+          ],
+          "correct": 1,
+          "explanation": "3 − x ≥ 0."
+        },
+        {
+          "type": "quiz",
+          "question": "y = 1/(x + 1) − 2 tiene asíntotas:",
+          "options": [
+            "x = 1, y = 2",
+            "x = −1, y = −2",
+            "x = −1, y = 2",
+            "x = 2, y = −1"
+          ],
+          "correct": 1,
+          "explanation": "Base 1/x movida."
+        },
+        {
+          "type": "quiz",
+          "question": "√(2x − 8) se obtiene de √(2x) moviendo:",
+          "options": [
+            "8 a la derecha",
+            "4 a la derecha",
+            "8 a la izquierda",
+            "4 a la izquierda"
+          ],
+          "correct": 1,
+          "explanation": "√(2(x − 4))."
+        },
+        {
+          "type": "quiz",
+          "question": "y = |x − 3| + 1 tiene su vértice en:",
+          "options": [
+            "(3, 1)",
+            "(−3, 1)",
+            "(1, 3)",
+            "(3, −1)"
+          ],
+          "correct": 0,
+          "explanation": "h = 3, k = 1."
+        }
+      ]
+    },
+    {
+      "id": "l03-piso-techo",
+      "title": "Función piso (máximo entero) y función techo",
+      "summary": "Definición, tabla por intervalos, gráficas en escalera, variantes, ecuaciones y propiedades.",
+      "minutes": 24,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "⌊x⌋ = **el mayor número entero que es menor o igual que x**. Se lee «piso de x». En muchos libros se escribe **⟦x⟧** o [[x]] y se llama **«máximo entero»**; también E(x) o «parte entera». Ejemplos: ⌊3,7⌋ = 3; ⌊5⌋ = 5; ⌊0,2⌋ = 0; **⌊−0,2⌋ = −1**; **⌊−3,7⌋ = −4**.",
+          "title": "Función piso (máximo entero)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Imagina un edificio: el piso ⌊x⌋ es **el piso en el que estás parado**. Si estás a 3,7 m de altura en un edificio con un piso por metro, estás en el piso 3 (no en el 4, aún no llegas). En el sótano (negativos), a −0,2 m ya estás en el piso −1. ¡Con negativos el piso «baja»!",
+          "title": "Analogía del edificio"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El error más común: creer que ⌊−2,5⌋ = −2. **Falso**: el mayor entero que es ≤ −2,5 es **−3** (−2 es mayor que −2,5, así que no sirve). En la recta: el piso siempre está a la **izquierda** (o en el mismo número si x es entero).",
+          "title": "Cuidado con los negativos"
+        },
+        {
+          "type": "heading",
+          "text": "Cómo graficar ⌊x⌋: tabla por intervalos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Intervalo de x",
+            "Valor de ⌊x⌋"
+          ],
+          "rows": [
+            [
+              "−2 ≤ x < −1",
+              "−2"
+            ],
+            [
+              "−1 ≤ x < 0",
+              "−1"
+            ],
+            [
+              "0 ≤ x < 1",
+              "0"
+            ],
+            [
+              "1 ≤ x < 2",
+              "1"
+            ],
+            [
+              "2 ≤ x < 3",
+              "2"
+            ],
+            [
+              "En general: n ≤ x < n + 1",
+              "n"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "En cada intervalo la función es **constante** (un escalón horizontal). Como el intervalo es [n, n + 1) — cerrado a la izquierda y abierto a la derecha — cada escalón tiene **● a la izquierda** y **○ a la derecha**."
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/piso-techo.png",
+          "caption": "Piso: ● a la izquierda de cada escalón. Techo: ● a la derecha. La línea gris es y = x: el piso siempre queda por debajo (o sobre ella)."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "⌈x⌉ = **el menor entero que es mayor o igual que x**. ⌈3,2⌉ = 4; ⌈5⌉ = 5; ⌈−3,7⌉ = −3. En cada intervalo (n − 1, n] vale n: **○ a la izquierda, ● a la derecha**. Es el «piso al que llegas si subes».",
+          "title": "Función techo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "Piso ⌊x⌋",
+            "Techo ⌈x⌉"
+          ],
+          "rows": [
+            [
+              "Definición",
+              "Mayor entero ≤ x",
+              "Menor entero ≥ x"
+            ],
+            [
+              "Dominio",
+              "ℝ",
+              "ℝ"
+            ],
+            [
+              "Rango",
+              "ℤ (los enteros)",
+              "ℤ"
+            ],
+            [
+              "Escalón",
+              "[n, n + 1) → n",
+              "(n − 1, n] → n"
+            ],
+            [
+              "Puntos",
+              "● izquierda, ○ derecha",
+              "○ izquierda, ● derecha"
+            ],
+            [
+              "Relación",
+              "⌈x⌉ = −⌊−x⌋",
+              "⌊x⌋ = −⌈−x⌉"
+            ],
+            [
+              "Si x es entero",
+              "⌊x⌋ = x",
+              "⌈x⌉ = x"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Variantes: qué hace cada número"
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/piso-variantes.png",
+          "caption": "b dentro cambia el ANCHO del escalón; a fuera cambia la ALTURA del salto."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Efecto",
+            "Cómo se grafica"
+          ],
+          "rows": [
+            [
+              "⌊2x⌋",
+              "Escalones de **ancho 1/2**",
+              "⌊2x⌋ = n ⟺ n ≤ 2x < n + 1 ⟺ n/2 ≤ x < (n + 1)/2"
+            ],
+            [
+              "⌊x/2⌋",
+              "Escalones de **ancho 2**",
+              "n ≤ x/2 < n + 1 ⟺ 2n ≤ x < 2n + 2"
+            ],
+            [
+              "2⌊x⌋",
+              "Ancho 1 pero **saltos de 2** (valores pares)",
+              "Multiplica las alturas"
+            ],
+            [
+              "⌊x⌋ + 1 o ⌊x − 1⌋ + 2",
+              "Sube 1 la escalera",
+              "⌊x + n⌋ = ⌊x⌋ + n si n es entero"
+            ],
+            [
+              "⌊x + 0,5⌋",
+              "Escalera movida 0,5 a la izquierda (es el redondeo)",
+              "Salta en x = k − 0,5"
+            ],
+            [
+              "−⌊x⌋",
+              "Escalera que baja; ● sigue a la izquierda",
+              "Reflejo en el eje x"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Funciones con piso dentro de otra cosa"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x + ⌊x⌋. En [0, 1): x + 0 = x. En [1, 2): x + 1. En [−1, 0): x − 1. Son **segmentos inclinados** (pendiente 1) que saltan 1 hacia arriba en cada entero, con ● al inicio de cada tramo.",
+          "title": "Ejemplo 1: x + ⌊x⌋"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = ⌊x²⌋ en [0, 2]: x² = 1 en x = 1; x² = 2 en x = √2 ≈ 1,41; x² = 3 en x = √3 ≈ 1,73; x² = 4 en x = 2. Escalones: 0 en [0, 1), 1 en [1, √2), 2 en [√2, √3), 3 en [√3, 2), 4 en x = 2. **Los escalones se vuelven cada vez más angostos.** Truco: busca dónde lo de adentro vale un entero.",
+          "title": "Ejemplo 2: ⌊x²⌋"
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/piso-absoluto.png",
+          "caption": "⌊|x|⌋ es par (espejo de la parte derecha). |⌊x⌋| refleja hacia arriba los escalones negativos."
+        },
+        {
+          "type": "heading",
+          "text": "Ecuaciones e inecuaciones con piso"
+        },
+        {
+          "type": "formula",
+          "expression": "⌊x⌋ = n  ⟺  n ≤ x < n + 1        ⌈x⌉ = n  ⟺  n − 1 < x ≤ n        (n entero)",
+          "caption": "La clave para resolver: convertir en una doble desigualdad."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Problema",
+            "Solución"
+          ],
+          "rows": [
+            [
+              "⌊x⌋ = 3",
+              "3 ≤ x < 4 → x ∈ [3, 4)"
+            ],
+            [
+              "⌊2x − 1⌋ = 3",
+              "3 ≤ 2x − 1 < 4 → 4 ≤ 2x < 5 → x ∈ [2; 2,5)"
+            ],
+            [
+              "⌊x⌋ = 2,5",
+              "Sin solución: el piso siempre es entero"
+            ],
+            [
+              "⌊x⌋ < 2",
+              "⌊x⌋ ≤ 1 → x < 2"
+            ],
+            [
+              "⌊x⌋ ≥ −1",
+              "x ≥ −1"
+            ],
+            [
+              "⌈x⌉ = −2",
+              "−3 < x ≤ −2"
+            ],
+            [
+              "⌊x/3⌋ = 1",
+              "1 ≤ x/3 < 2 → x ∈ [3, 6)"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad del piso",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Encierro",
+              "⌊x⌋ ≤ x < ⌊x⌋ + 1  y  x − 1 < ⌊x⌋ ≤ x"
+            ],
+            [
+              "Sumar un entero",
+              "⌊x + n⌋ = ⌊x⌋ + n (n entero)"
+            ],
+            [
+              "Opuesto",
+              "⌊−x⌋ = −⌊x⌋ si x es entero;  −⌊x⌋ − 1 si no"
+            ],
+            [
+              "NO es aditiva",
+              "⌊a + b⌋ ≠ ⌊a⌋ + ⌊b⌋ en general (⌊0,5 + 0,5⌋ = 1 ≠ 0)"
+            ],
+            [
+              "Suma con el opuesto",
+              "⌊x⌋ + ⌊−x⌋ = 0 si x es entero; −1 si no"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Conexión con límites"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "En cada entero hay un salto: lím (x→2⁻) ⌊x⌋ = 1 y lím (x→2⁺) ⌊x⌋ = 2 → el límite no existe y ⌊x⌋ es **discontinua en todos los enteros** (discontinuidad de salto). Pero lím (x→2,5) ⌊x⌋ = 2 (dentro de un escalón todo es constante).",
+          "title": "Límites laterales"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Las funciones piso y techo aparecen en el **cobro por tramos** (tarifas de agua por cada m³ iniciado: costo = c·⌈V⌉), en el **número de varillas o bloques** necesarios (siempre se redondea hacia arriba: n = ⌈L/s⌉ + 1) y en la discretización de datos (pixeles de un ráster)."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_special",
+          "title": "Laboratorio: piso y techo con ● y ○",
+          "params": {
+            "preset": 0
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "⌊−4,3⌋ =",
+          "options": [
+            "−4",
+            "−5",
+            "4",
+            "−4,3"
+          ],
+          "correct": 1,
+          "explanation": "El mayor entero ≤ −4,3 es −5."
+        },
+        {
+          "type": "quiz",
+          "question": "⌈−4,3⌉ =",
+          "options": [
+            "−4",
+            "−5",
+            "−3",
+            "4"
+          ],
+          "correct": 0,
+          "explanation": "Menor entero ≥ −4,3."
+        },
+        {
+          "type": "quiz",
+          "question": "⌊7⌋ =",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "Si es entero, queda igual."
+        },
+        {
+          "type": "quiz",
+          "question": "En la gráfica de ⌊x⌋, el escalón de altura 1 va de:",
+          "options": [
+            "(1, 2] con ● a la derecha",
+            "[1, 2) con ● a la izquierda",
+            "[0, 1)",
+            "(0, 1]"
+          ],
+          "correct": 1,
+          "explanation": "n ≤ x < n + 1."
+        },
+        {
+          "type": "quiz",
+          "question": "El rango de ⌊x⌋ es:",
+          "options": [
+            "ℝ",
+            "ℤ (los enteros)",
+            "[0, +∞)",
+            "ℕ"
+          ],
+          "correct": 1,
+          "explanation": "Solo enteros."
+        },
+        {
+          "type": "quiz",
+          "question": "La gráfica de ⌊3x⌋ tiene escalones de ancho:",
+          "options": [
+            "3",
+            "1/3",
+            "1",
+            "6"
+          ],
+          "correct": 1,
+          "explanation": "n/3 ≤ x < (n + 1)/3."
+        },
+        {
+          "type": "quiz",
+          "question": "Soluciones de ⌊x − 2⌋ = 5:",
+          "options": [
+            "x = 7",
+            "[7, 8)",
+            "(7, 8]",
+            "[5, 6)"
+          ],
+          "correct": 1,
+          "explanation": "5 ≤ x − 2 < 6."
+        },
+        {
+          "type": "quiz",
+          "question": "Soluciones de ⌊2x⌋ = 3:",
+          "options": [
+            "[1,5; 2)",
+            "[3, 4)",
+            "[1, 2)",
+            "x = 1,5"
+          ],
+          "correct": 0,
+          "explanation": "3 ≤ 2x < 4."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→3⁻) ⌊x⌋ =",
+          "options": [
+            "3",
+            "2",
+            "4",
+            "No existe"
+          ],
+          "correct": 1,
+          "explanation": "Justo antes de 3, el piso es 2."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde es discontinua ⌊x⌋?",
+          "options": [
+            "En ningún punto",
+            "En todos los enteros",
+            "Solo en 0",
+            "En todo ℝ"
+          ],
+          "correct": 1,
+          "explanation": "Salta en cada entero."
+        },
+        {
+          "type": "quiz",
+          "question": "⌊x⌋ + ⌊−x⌋ para x = 2,4 vale:",
+          "options": [
+            "0",
+            "−1",
+            "1",
+            "4,8"
+          ],
+          "correct": 1,
+          "explanation": "2 + (−3)."
+        }
+      ]
+    },
+    {
+      "id": "l04-especiales",
+      "title": "Mantisa, signo y redondeo",
+      "summary": "Otras funciones especiales de los exámenes y cómo graficarlas.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/especiales.png",
+          "caption": "Cuatro funciones especiales frecuentes en exámenes."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Definición",
+            "Dominio",
+            "Rango",
+            "Gráfica"
+          ],
+          "rows": [
+            [
+              "Mantisa (parte fraccionaria)",
+              "{x} = x − ⌊x⌋",
+              "ℝ",
+              "[0, 1)",
+              "Diente de sierra: rectas de pendiente 1 que vuelven a 0 en cada entero (● abajo, ○ arriba)"
+            ],
+            [
+              "Signo",
+              "sgn(x) = −1 si x < 0; 0 si x = 0; 1 si x > 0",
+              "ℝ",
+              "{−1, 0, 1}",
+              "Dos semirrectas horizontales y un punto aislado en el origen"
+            ],
+            [
+              "Redondeo",
+              "R(x) = ⌊x + 1/2⌋",
+              "ℝ",
+              "ℤ",
+              "Escalera como el piso pero movida 1/2 a la izquierda"
+            ],
+            [
+              "⌊x⌋ + ⌊−x⌋",
+              "0 si x es entero; −1 si no",
+              "ℝ",
+              "{−1, 0}",
+              "Recta y = −1 con «huecos» en los enteros y puntos sueltos en y = 0"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "{3,7} = 3,7 − 3 = 0,7.   {−3,7} = −3,7 − (−4) = **0,3** (¡no 0,7!).   {5} = 0.",
+          "title": "Mantisa con negativos"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "sgn(x) dice solo «de qué lado del cero» está x. Se cumple x = sgn(x)·|x| y |x| = x·sgn(x). Es discontinua en 0 (salto de −1 a 1).",
+          "title": "Signo"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "La mantisa es **periódica** de período 1: {x + 1} = {x}. Por eso la gráfica se repite igual en cada intervalo [n, n + 1)."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_special",
+          "title": "Laboratorio: mantisa, signo, redondeo y onda cuadrada",
+          "params": {
+            "preset": 2
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "{−2,25} (mantisa) =",
+          "options": [
+            "0,25",
+            "0,75",
+            "−0,25",
+            "−2"
+          ],
+          "correct": 1,
+          "explanation": "−2,25 − (−3) = 0,75."
+        },
+        {
+          "type": "quiz",
+          "question": "El rango de la mantisa es:",
+          "options": [
+            "[0, 1]",
+            "[0, 1)",
+            "ℤ",
+            "ℝ"
+          ],
+          "correct": 1,
+          "explanation": "Nunca llega a 1."
+        },
+        {
+          "type": "quiz",
+          "question": "sgn(−7) =",
+          "options": [
+            "7",
+            "−7",
+            "−1",
+            "0"
+          ],
+          "correct": 2,
+          "explanation": "Negativo."
+        },
+        {
+          "type": "quiz",
+          "question": "Redondeo de 2,5 con ⌊x + 1/2⌋:",
+          "options": [
+            "2",
+            "3",
+            "2,5",
+            "−3"
+          ],
+          "correct": 1,
+          "explanation": "⌊3⌋ = 3."
+        },
+        {
+          "type": "quiz",
+          "question": "La mantisa es periódica de período:",
+          "options": [
+            "1",
+            "2",
+            "π",
+            "No es periódica"
+          ],
+          "correct": 0,
+          "explanation": "Se repite cada 1."
+        }
+      ]
+    },
+    {
+      "id": "l05-valor-absoluto",
+      "title": "Gráficas con valor absoluto",
+      "summary": "|f(x)|, f(|x|) y sumas de valores absolutos por tramos.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "|f(x)|: lo de abajo sube"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Para graficar y = |f(x)|: grafica f(x) y **refleja hacia arriba** (en el eje x) solo las partes que estén **debajo** del eje x. Lo que ya estaba arriba no cambia. Nunca hay valores negativos.",
+          "title": "Regla 1"
+        },
+        {
+          "type": "heading",
+          "text": "f(|x|): se copia la derecha"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Para graficar y = f(|x|): grafica f(x) **solo para x ≥ 0**, **borra la parte izquierda** y dibuja en su lugar el **reflejo** de la parte derecha (espejo en el eje y). El resultado siempre es una función **par**.",
+          "title": "Regla 2"
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/abs-f.png",
+          "caption": "f(x) = x² − 2x − 3; |f(x)|; f(|x|) = x² − 2|x| − 3."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "No confundas: |f(x)| cambia las **y** negativas (refleja verticalmente lo de abajo); f(|x|) cambia las **x** negativas (copia la derecha a la izquierda).",
+          "title": "No confundir"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Cómo queda"
+          ],
+          "rows": [
+            [
+              "|x² − 4|",
+              "Parábola con el «valle» entre −2 y 2 volteado hacia arriba (forma de W con picos)"
+            ],
+            [
+              "|sen x|",
+              "Solo arcos hacia arriba (período π)"
+            ],
+            [
+              "|ln x|",
+              "La parte de 0 a 1 (negativa) sube: forma de V redondeada con vértice en (1, 0)"
+            ],
+            [
+              "|x³ − 3x|",
+              "Las partes negativas de la cúbica suben"
+            ],
+            [
+              "x² − 4|x| + 3",
+              "f(|x|) con f(x) = x² − 4x + 3: dos parábolas simétricas, mínimos en x = ±2"
+            ],
+            [
+              "sen|x|",
+              "La onda para x > 0 reflejada a la izquierda (función par)"
+            ],
+            [
+              "ln|x|",
+              "Dos ramas simétricas; dominio ℝ − {0}"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Suma de valores absolutos: quitar las barras por tramos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Encuentra dónde se anula cada expresión dentro de las barras (puntos críticos).",
+            "Divide la recta en intervalos con esos puntos.",
+            "En cada intervalo, cada |A| vale A (si A ≥ 0) o −A (si A < 0).",
+            "Escribe la función por tramos sin barras y grafica cada tramo."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = |x − 1| + |x + 2|. Puntos críticos: x = 1 y x = −2. Si x < −2: −(x − 1) − (x + 2) = **−2x − 1**. Si −2 ≤ x ≤ 1: −(x − 1) + (x + 2) = **3**. Si x > 1: (x − 1) + (x + 2) = **2x + 1**. Gráfica: forma de «bañera» con fondo plano y = 3 entre −2 y 1.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/abs-suma.png",
+          "caption": "y = |x − 1| + |x + 2| escrita por tramos."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = x·|x|: si x ≥ 0, x²; si x < 0, −x². Es una curva en forma de S (impar) que pasa por el origen.",
+          "title": "Ejemplo 2"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_special",
+          "title": "Laboratorio: elige la parábola y prueba |f(x)| y f(|x|)",
+          "params": {
+            "preset": 6
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Para graficar |f(x)|:",
+          "options": [
+            "Se copia la derecha a la izquierda",
+            "Se reflejan hacia arriba las partes negativas",
+            "Se borra todo lo negativo",
+            "Se suma |x|"
+          ],
+          "correct": 1,
+          "explanation": "Regla 1."
+        },
+        {
+          "type": "quiz",
+          "question": "La gráfica de f(|x|) siempre es:",
+          "options": [
+            "Impar",
+            "Par (simétrica respecto al eje y)",
+            "Positiva",
+            "Creciente"
+          ],
+          "correct": 1,
+          "explanation": "Copia en espejo."
+        },
+        {
+          "type": "quiz",
+          "question": "|x² − 9| en x = 0 vale:",
+          "options": [
+            "−9",
+            "9",
+            "0",
+            "3"
+          ],
+          "correct": 1,
+          "explanation": "|−9| = 9."
+        },
+        {
+          "type": "quiz",
+          "question": "Para x < −2, |x − 1| + |x + 2| es:",
+          "options": [
+            "3",
+            "2x + 1",
+            "−2x − 1",
+            "−3"
+          ],
+          "correct": 2,
+          "explanation": "Ambas expresiones negativas."
+        },
+        {
+          "type": "quiz",
+          "question": "El rango de |sen x| es:",
+          "options": [
+            "[−1, 1]",
+            "[0, 1]",
+            "[0, +∞)",
+            "{0, 1}"
+          ],
+          "correct": 1,
+          "explanation": "Solo la parte de arriba."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es par?",
+          "options": [
+            "|x − 2|",
+            "x³",
+            "cos|x|",
+            "ln x"
+          ],
+          "correct": 2,
+          "explanation": "f(|x|) siempre es par (y además cos ya es par)."
+        }
+      ]
+    },
+    {
+      "id": "l06-tramos",
+      "title": "Funciones definidas por tramos",
+      "summary": "Graficar cada pedazo en su intervalo, puntos abiertos y cerrados, y escribir la fórmula a partir de la gráfica.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Una función que usa **distintas fórmulas en distintos intervalos** de x. Es como una tarifa de taxi: un precio fijo los primeros kilómetros y otro por cada kilómetro adicional.",
+          "title": "Función por tramos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Para cada tramo, grafica su fórmula **solo** en su intervalo (como si el resto no existiera).",
+            "En cada extremo de intervalo: ● si la desigualdad incluye el punto (≤, ≥) y ○ si no (<, >).",
+            "Calcula el valor de cada fórmula en los extremos para ubicar los puntos.",
+            "Comprueba que cada x tenga un solo valor (la gráfica debe pasar la prueba de la recta vertical)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = { x + 3 si x < −1;  x² si −1 ≤ x ≤ 2;  1 si x > 2 }. Tramo 1: recta que llega a (−1, 2) con ○. Tramo 2: parábola de (−1, 1) ● a (2, 4) ●. Tramo 3: recta horizontal y = 1 desde (2, 1) ○. Hay saltos en x = −1 y en x = 2.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/tramos.png",
+          "caption": "Fíjate en los ● y ○ de cada extremo."
+        },
+        {
+          "type": "heading",
+          "text": "De la gráfica a la fórmula"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Identifica cada pedazo y su intervalo (mirando los ● y ○).",
+            "Reconoce la forma de cada pedazo (recta, parábola, constante…).",
+            "Halla su ecuación con dos puntos (recta: pendiente y punto-pendiente).",
+            "Escribe la función con llaves y las desigualdades correctas."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Una gráfica es: recta de (−3, 0) a (0, 3) con ● en ambos, y luego horizontal y = 3 para x > 0. Primer tramo: pendiente 1 → y = x + 3 en [−3, 0]. Segundo: y = 3 en (0, +∞). (Aquí es continua porque ambos tramos llegan a 3.)",
+          "title": "Ejemplo inverso"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El diagrama de fuerza cortante de una viga con cargas puntuales es una función por tramos (constante entre cargas, con saltos en cada carga). Lo graficarás en Física y en Resistencia de Materiales."
+        },
+        {
+          "type": "quiz",
+          "question": "En f(x) = { 2 si x < 1; x si x ≥ 1 }, en x = 1 hay:",
+          "options": [
+            "● en y = 2",
+            "● en y = 1 y ○ en y = 2",
+            "○ en y = 1",
+            "Nada"
+          ],
+          "correct": 1,
+          "explanation": "x = 1 pertenece al segundo tramo."
+        },
+        {
+          "type": "quiz",
+          "question": "Con f(x) = { x² si x ≤ 0; x + 1 si x > 0 }, f(0) =",
+          "options": [
+            "0",
+            "1",
+            "No existe",
+            "−1"
+          ],
+          "correct": 0,
+          "explanation": "Primer tramo."
+        },
+        {
+          "type": "quiz",
+          "question": "Un ● en un extremo de tramo corresponde a una desigualdad:",
+          "options": [
+            "< o >",
+            "≤ o ≥",
+            "Cualquiera",
+            "="
+          ],
+          "correct": 1,
+          "explanation": "Incluye el punto."
+        },
+        {
+          "type": "quiz",
+          "question": "Una gráfica por tramos con ● en (2, 1) y ● en (2, 3):",
+          "options": [
+            "Es correcta",
+            "No es función (dos valores para x = 2)",
+            "Es continua",
+            "Es par"
+          ],
+          "correct": 1,
+          "explanation": "Falla la recta vertical."
+        }
+      ]
+    },
+    {
+      "id": "l07-racionales",
+      "title": "Funciones racionales sin derivadas",
+      "summary": "Asíntotas, huecos, cortes y tabla de signos para dibujar P(x)/Q(x).",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Factoriza** numerador y denominador.",
+            "**Huecos**: factores que se cancelan → punto ○ (no asíntota).",
+            "**Asíntotas verticales**: ceros del denominador que quedan después de cancelar.",
+            "**Asíntota horizontal**: compara grados (menor arriba → y = 0; iguales → cociente de coeficientes; mayor arriba → no hay, quizá oblicua).",
+            "**Cortes**: con y (x = 0) y con x (ceros del numerador simplificado).",
+            "**Tabla de signos** con todos los puntos críticos: dice si cada rama va hacia +∞ o −∞ junto a las asíntotas.",
+            "Dibuja las asíntotas punteadas, los puntos y las ramas."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo completo: y = (x − 1)/(x² − 4)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Paso",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "Factorizar",
+              "(x − 1)/[(x − 2)(x + 2)]"
+            ],
+            [
+              "Dominio",
+              "ℝ − {−2, 2}"
+            ],
+            [
+              "Huecos",
+              "No hay (nada se cancela)"
+            ],
+            [
+              "Asíntotas verticales",
+              "x = −2 y x = 2"
+            ],
+            [
+              "Asíntota horizontal",
+              "y = 0 (grado 1 < grado 2)"
+            ],
+            [
+              "Cortes",
+              "Con x: (1, 0); con y: (0, 1/4)"
+            ],
+            [
+              "Signos",
+              "(−∞, −2): −;  (−2, 1): +;  (1, 2): −;  (2, +∞): +"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/racional.png",
+          "caption": "Asíntotas en rojo; los signos de la tabla dicen hacia dónde va cada rama."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si a la izquierda de x = −2 la función es negativa, la rama baja a −∞ al acercarse; si a la derecha es positiva, sube a +∞. La tabla de signos te ahorra calcular puntos cerca de las asíntotas.",
+          "title": "Cómo usar los signos"
+        },
+        {
+          "type": "heading",
+          "text": "Hueco vs asíntota"
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/hueco.png",
+          "caption": "Cuando el factor (x − 1) se cancela, queda la recta y = x + 1 con un punto ○."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "y = (x² − 1)/(x − 1) = (x + 1)(x − 1)/(x − 1) = x + 1 **con x ≠ 1**. Su gráfica es la recta y = x + 1 con un **hueco** en (1, 2), no una asíntota. Siempre factoriza y cancela antes de buscar asíntotas."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_limit",
+          "title": "Compara un hueco y una asíntota vertical",
+          "params": {
+            "preset": 0
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "y = (x + 3)/(x − 5) tiene asíntota vertical en:",
+          "options": [
+            "x = −3",
+            "x = 5",
+            "y = 1",
+            "x = 0"
+          ],
+          "correct": 1,
+          "explanation": "Denominador cero."
+        },
+        {
+          "type": "quiz",
+          "question": "y = (x² − 9)/(x − 3) tiene en x = 3:",
+          "options": [
+            "Asíntota vertical",
+            "Un hueco",
+            "Un corte con el eje x",
+            "Nada especial"
+          ],
+          "correct": 1,
+          "explanation": "El factor se cancela."
+        },
+        {
+          "type": "quiz",
+          "question": "y = (4x² + 1)/(2x² − 3) tiene asíntota horizontal:",
+          "options": [
+            "y = 0",
+            "y = 2",
+            "y = 4",
+            "No tiene"
+          ],
+          "correct": 1,
+          "explanation": "4/2."
+        },
+        {
+          "type": "quiz",
+          "question": "El corte con el eje y de (x − 1)/(x² − 4) es:",
+          "options": [
+            "(0, 1/4)",
+            "(0, −1/4)",
+            "(1, 0)",
+            "(0, 1)"
+          ],
+          "correct": 0,
+          "explanation": "(−1)/(−4)."
+        }
+      ]
+    },
+    {
+      "id": "l08-polinomios",
+      "title": "Polinomios por sus raíces",
+      "summary": "Raíces, multiplicidad (cruza o rebota) y comportamiento en los extremos.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Rasgo",
+            "Regla"
+          ],
+          "rows": [
+            [
+              "Raíz simple (factor (x − r))",
+              "La gráfica **cruza** el eje x"
+            ],
+            [
+              "Raíz doble ((x − r)²)",
+              "La gráfica **rebota** (toca y se devuelve)"
+            ],
+            [
+              "Raíz triple ((x − r)³)",
+              "Cruza «aplanándose» (como x³ en el origen)"
+            ],
+            [
+              "Extremos (x → ±∞)",
+              "Mandan el grado n y el signo del coeficiente principal"
+            ],
+            [
+              "n par, a > 0",
+              "Ambos extremos hacia arriba ↑ ↑"
+            ],
+            [
+              "n par, a < 0",
+              "Ambos hacia abajo ↓ ↓"
+            ],
+            [
+              "n impar, a > 0",
+              "Baja a la izquierda y sube a la derecha ↓ ↑"
+            ],
+            [
+              "n impar, a < 0",
+              "Sube a la izquierda y baja a la derecha ↑ ↓"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo: y = (x + 2)(x − 1)²(x − 3)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Grado 1 + 2 + 1 = 4 (par), coeficiente principal +1 → ambos extremos hacia arriba.",
+            "Raíces: x = −2 (simple, cruza), x = 1 (doble, rebota), x = 3 (simple, cruza).",
+            "Corte con y: (2)(1)(−3) = −6 → (0, −6).",
+            "Signos: (−∞, −2): +;  (−2, 1): −;  (1, 3): −;  (3, +∞): +."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/polinomio.png",
+          "caption": "Cruza en −2 y 3; rebota en 1 (raíz doble)."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_analysis",
+          "title": "Explora polinomios (x³ − 3x y x⁴ − 4x²)",
+          "params": {
+            "preset": 7
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Si (x − 4)² es factor, en x = 4 la gráfica:",
+          "options": [
+            "Cruza el eje",
+            "Rebota en el eje",
+            "Tiene asíntota",
+            "No toca el eje"
+          ],
+          "correct": 1,
+          "explanation": "Raíz doble."
+        },
+        {
+          "type": "quiz",
+          "question": "y = −x³ + … cuando x → +∞ va hacia:",
+          "options": [
+            "+∞",
+            "−∞",
+            "0",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "Grado impar, a < 0."
+        },
+        {
+          "type": "quiz",
+          "question": "y = 2x⁴ − 5x + 1: sus dos extremos van hacia:",
+          "options": [
+            "Arriba y arriba",
+            "Abajo y abajo",
+            "Abajo y arriba",
+            "Arriba y abajo"
+          ],
+          "correct": 0,
+          "explanation": "Grado par, a > 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Corte con y de y = (x − 2)(x + 3):",
+          "options": [
+            "(0, −6)",
+            "(0, 6)",
+            "(2, 0)",
+            "(0, 1)"
+          ],
+          "correct": 0,
+          "explanation": "(−2)(3)."
+        }
+      ]
+    },
+    {
+      "id": "l09-practica",
+      "title": "Práctica: reconocer y graficar",
+      "summary": "Ejercicios mixtos tipo examen de gráficas sin derivadas.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Para cada pregunta, intenta primero **dibujar en papel** la gráfica y luego elige. Usa los laboratorios para comprobar."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_special",
+          "title": "Comprobador de gráficas especiales"
+        },
+        {
+          "type": "quiz",
+          "question": "La gráfica de y = ⌊x⌋ − 1 es la de ⌊x⌋:",
+          "options": [
+            "Movida 1 a la derecha",
+            "Bajada 1",
+            "Ambas cosas dan lo mismo",
+            "Todas son correctas"
+          ],
+          "correct": 3,
+          "explanation": "⌊x⌋ − 1 = ⌊x − 1⌋: bajarla 1 o moverla 1 a la derecha produce la misma escalera."
+        },
+        {
+          "type": "quiz",
+          "question": "Rango de f(x) = 2⌊x⌋ + 1:",
+          "options": [
+            "ℤ",
+            "Los enteros impares",
+            "Los pares",
+            "ℝ"
+          ],
+          "correct": 1,
+          "explanation": "2n + 1."
+        },
+        {
+          "type": "quiz",
+          "question": "Dominio de f(x) = 1/⌊x⌋:",
+          "options": [
+            "ℝ − {0}",
+            "ℝ − [0, 1)",
+            "ℤ",
+            "(0, +∞)"
+          ],
+          "correct": 1,
+          "explanation": "⌊x⌋ = 0 cuando 0 ≤ x < 1."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué gráfica tiene forma de diente de sierra?",
+          "options": [
+            "⌊x⌋",
+            "x − ⌊x⌋",
+            "sgn x",
+            "|x|"
+          ],
+          "correct": 1,
+          "explanation": "La mantisa."
+        },
+        {
+          "type": "quiz",
+          "question": "y = −|x − 2| + 3 tiene:",
+          "options": [
+            "Vértice (2, 3) y abre hacia abajo",
+            "Vértice (−2, 3)",
+            "Vértice (2, −3) hacia arriba",
+            "Forma de U"
+          ],
+          "correct": 0,
+          "explanation": "V invertida."
+        },
+        {
+          "type": "quiz",
+          "question": "Rango de y = |x| − 2:",
+          "options": [
+            "[−2, +∞)",
+            "[2, +∞)",
+            "ℝ",
+            "[0, +∞)"
+          ],
+          "correct": 0,
+          "explanation": "El vértice baja a −2."
+        },
+        {
+          "type": "quiz",
+          "question": "Soluciones de ⌊x/2⌋ = −1:",
+          "options": [
+            "[−2, 0)",
+            "(−2, 0]",
+            "[−1, 0)",
+            "x = −2"
+          ],
+          "correct": 0,
+          "explanation": "−1 ≤ x/2 < 0."
+        },
+        {
+          "type": "quiz",
+          "question": "y = √(x + 4) − 1 empieza en:",
+          "options": [
+            "(4, −1)",
+            "(−4, −1)",
+            "(−4, 1)",
+            "(0, 1)"
+          ],
+          "correct": 1,
+          "explanation": "Se mueve 4 a la izquierda y 1 abajo."
+        },
+        {
+          "type": "quiz",
+          "question": "La gráfica de y = 1/x² está:",
+          "options": [
+            "En los cuadrantes I y III",
+            "En los cuadrantes I y II (siempre positiva)",
+            "Solo en el I",
+            "En el III y IV"
+          ],
+          "correct": 1,
+          "explanation": "Par y positiva."
+        },
+        {
+          "type": "quiz",
+          "question": "f(|x|) con f(x) = x − 3 es:",
+          "options": [
+            "|x − 3|",
+            "|x| − 3 (V con vértice (0, −3))",
+            "x − 3",
+            "|x| + 3"
+          ],
+          "correct": 1,
+          "explanation": "Reemplazar x por |x|."
+        },
+        {
+          "type": "quiz",
+          "question": "|f(x)| con f(x) = x − 3 es:",
+          "options": [
+            "V con vértice en (3, 0)",
+            "V con vértice en (0, −3)",
+            "Recta",
+            "Parábola"
+          ],
+          "correct": 0,
+          "explanation": "|x − 3|."
+        },
+        {
+          "type": "quiz",
+          "question": "¿En cuántos puntos corta y = ⌊x⌋ a la recta y = x en [0, 3]?",
+          "options": [
+            "En ninguno",
+            "Solo en los enteros 0, 1, 2, 3",
+            "En infinitos",
+            "Solo en 0"
+          ],
+          "correct": 1,
+          "explanation": "⌊x⌋ = x solo si x es entero."
+        }
+      ]
+    }
+  ]
+}

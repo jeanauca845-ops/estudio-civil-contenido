@@ -1,0 +1,285 @@
+{
+  "id": "c05-continuidad",
+  "title": "Continuidad",
+  "description": "Definición, tipos de discontinuidad, continuidad de funciones por tramos y teorema del valor intermedio",
+  "lessons": [
+    {
+      "id": "l01-definicion",
+      "title": "Continuidad en un punto",
+      "summary": "Las tres condiciones y los tipos de discontinuidad.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una función es continua si puedes dibujar su gráfica **sin levantar el lápiz**: sin huecos, sin saltos y sin irse al infinito.",
+          "title": "Idea"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "f es continua en x = a si se cumplen las TRES condiciones: 1) **f(a) existe**; 2) **lím (x→a) f(x) existe**; 3) **lím (x→a) f(x) = f(a)**.",
+          "title": "Continuidad"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo de discontinuidad",
+            "Qué falla",
+            "Gráfica",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Evitable (removible)",
+              "El límite existe pero f(a) no existe o es distinto",
+              "Un hueco",
+              "(x² − 1)/(x − 1) en x = 1"
+            ],
+            [
+              "De salto (esencial de 1.ª especie)",
+              "Los laterales existen pero son distintos",
+              "Un escalón",
+              "|x|/x en 0; ⌊x⌋ en enteros"
+            ],
+            [
+              "Infinita (esencial)",
+              "Algún lateral es ±∞",
+              "Asíntota vertical",
+              "1/x en 0"
+            ],
+            [
+              "Oscilante (esencial)",
+              "Oscila sin acercarse a nada",
+              "Oscila infinitamente",
+              "sen(1/x) en 0"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = (x² − 4)/(x − 2) tiene discontinuidad evitable en x = 2 (límite 4). Se «repara» redefiniendo f(2) = 4.",
+          "title": "Evitable"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Funciones continuas en todo su dominio"
+          ],
+          "rows": [
+            [
+              "Polinomios, racionales, raíces, exponenciales, logaritmos, trigonométricas y sus sumas, productos, cocientes (donde el denominador ≠ 0) y composiciones"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_limit",
+          "title": "Distingue hueco, salto e infinito",
+          "params": {
+            "preset": 4
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántas condiciones exige la continuidad en un punto?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "explanation": "f(a) existe, límite existe y son iguales."
+        },
+        {
+          "type": "quiz",
+          "question": "(x² − 9)/(x − 3) en x = 3 tiene una discontinuidad:",
+          "options": [
+            "De salto",
+            "Evitable",
+            "Infinita",
+            "Es continua"
+          ],
+          "correct": 1,
+          "explanation": "Hueco; límite 6."
+        },
+        {
+          "type": "quiz",
+          "question": "1/(x − 5) en x = 5 tiene una discontinuidad:",
+          "options": [
+            "Evitable",
+            "De salto",
+            "Infinita",
+            "No tiene"
+          ],
+          "correct": 2,
+          "explanation": "Asíntota vertical."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde es continua f(x) = x³ − 2x + 1?",
+          "options": [
+            "Solo en x > 0",
+            "En todo ℝ",
+            "En ℝ − {0}",
+            "En ningún punto"
+          ],
+          "correct": 1,
+          "explanation": "Polinomio."
+        },
+        {
+          "type": "quiz",
+          "question": "Si lím (x→a⁻) f = 2 y lím (x→a⁺) f = 5, la discontinuidad es:",
+          "options": [
+            "Evitable",
+            "De salto",
+            "Infinita",
+            "No hay"
+          ],
+          "correct": 1,
+          "explanation": "Laterales distintos."
+        }
+      ]
+    },
+    {
+      "id": "l02-tramos",
+      "title": "Continuidad de funciones por tramos",
+      "summary": "Hallar constantes para que una función definida a trozos sea continua.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En una función por tramos, dentro de cada tramo suele ser continua; el problema está en los **puntos de unión**. Ahí se comparan los límites laterales con el valor de la función."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = { kx + 1 si x < 2;  x² − 1 si x ≥ 2 }. Por la izquierda: lím = 2k + 1. Por la derecha y f(2): 4 − 1 = 3. Continuidad: 2k + 1 = 3 → **k = 1**.",
+          "title": "Hallar una constante"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = { x + a si x < 1;  bx² si 1 ≤ x ≤ 3;  2x − 1 si x > 3 }. En x = 1: 1 + a = b. En x = 3: 9b = 5 → b = 5/9 y a = −4/9.",
+          "title": "Dos constantes"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En el diseño vial, la unión de una recta con una curva debe ser continua (y además suave, con la misma pendiente): de lo contrario el vehículo sufriría un salto o un quiebre. Esa segunda condición es la **derivabilidad**."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = { 2x + k si x < 1; 5 si x ≥ 1 } es continua si k =",
+          "options": [
+            "3",
+            "5",
+            "2",
+            "−3"
+          ],
+          "correct": 0,
+          "explanation": "2 + k = 5."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = { x² si x ≤ 2; ax si x > 2 } es continua si a =",
+          "options": [
+            "4",
+            "2",
+            "1",
+            "1/2"
+          ],
+          "correct": 1,
+          "explanation": "4 = 2a."
+        },
+        {
+          "type": "quiz",
+          "question": "En una función por tramos, la continuidad hay que revisarla principalmente:",
+          "options": [
+            "Dentro de cada tramo",
+            "En los puntos de unión",
+            "En x = 0",
+            "Al infinito"
+          ],
+          "correct": 1,
+          "explanation": "Donde cambia la fórmula."
+        }
+      ]
+    },
+    {
+      "id": "l03-tvi",
+      "title": "Teorema del valor intermedio y de Bolzano",
+      "summary": "Si una función continua cambia de signo, tiene una raíz.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Si f es continua en [a, b] y N es cualquier número entre f(a) y f(b), entonces existe c en (a, b) con f(c) = N.",
+          "title": "Teorema del valor intermedio (TVI)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si a las 6 a. m. la temperatura era 10 °C y a las 2 p. m. 24 °C, en algún momento tuvo que ser exactamente 17 °C: la temperatura no puede «saltar» valores.",
+          "title": "Analogía"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Si f es continua en [a, b] y f(a) y f(b) tienen **signos opuestos**, existe al menos un c en (a, b) con **f(c) = 0** (una raíz).",
+          "title": "Teorema de Bolzano"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "¿Tiene x³ + x − 1 = 0 una raíz entre 0 y 1? f(0) = −1 < 0 y f(1) = 1 > 0; f es continua (polinomio) → **sí**. Partiendo el intervalo a la mitad repetidamente (**bisección**) se aproxima: f(0,5) = −0,375; f(0,75) = 0,172 → raíz entre 0,5 y 0,75; … ≈ 0,682.",
+          "title": "Aplicación"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El teorema exige continuidad: 1/x cambia de signo entre −1 y 1 pero no tiene raíz (no es continua en 0)."
+        },
+        {
+          "type": "quiz",
+          "question": "El teorema de Bolzano garantiza:",
+          "options": [
+            "Un máximo",
+            "Una raíz si hay cambio de signo y continuidad",
+            "Una asíntota",
+            "La derivada"
+          ],
+          "correct": 1,
+          "explanation": "f(c) = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = x² − 3 en [1, 2]: f(1) = −2 y f(2) = 1. ¿Hay raíz?",
+          "options": [
+            "Sí, en (1, 2)",
+            "No",
+            "Solo si es par",
+            "En x = 0"
+          ],
+          "correct": 0,
+          "explanation": "Es √3 ≈ 1,732."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué 1/x no contradice Bolzano en [−1, 1]?",
+          "options": [
+            "Porque sí tiene raíz",
+            "Porque no es continua en 0",
+            "Porque no cambia de signo",
+            "Porque es par"
+          ],
+          "correct": 1,
+          "explanation": "Falla la hipótesis."
+        }
+      ]
+    }
+  ]
+}

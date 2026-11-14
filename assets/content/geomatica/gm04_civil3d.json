@@ -1,0 +1,475 @@
+{
+  "id": "gm04-civil3d",
+  "title": "Civil 3D paso a paso",
+  "description": "Configuración, puntos, superficies, breaklines, boundary, curvas, análisis y lámina",
+  "lessons": [
+    {
+      "id": "l01-config",
+      "title": "Configurar el dibujo",
+      "summary": "Plantilla, unidades, sistema de coordenadas y Toolspace.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Crea el dibujo desde una plantilla de Civil 3D (p. ej. «AutoCAD Civil 3D (Metric) NCS.dwt»).",
+            "Abre **Toolspace** (Espacio de herramientas, comando TOOLSPACE): pestaña **Prospector** (objetos del dibujo) y **Settings** (estilos y configuración).",
+            "En **Settings**, clic derecho sobre el nombre del dibujo → **Edit Drawing Settings** (Editar configuración del dibujo).",
+            "En **Units and Zone:** unidades en **metros**, escala del dibujo y categoría **UTM, WGS84 Datum** → **Zone 17 South** (o el sistema SIRGAS que use tu proyecto).",
+            "Verifica también el formato de ángulos (grados decimales o grados-minutos-segundos) y las precisiones."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si el sistema de coordenadas está mal, todo lo demás (ortofotos georreferenciadas, mapas en línea, exportación a ArcMap) quedará desplazado."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde se define el sistema de coordenadas de un dibujo de Civil 3D?",
+          "options": [
+            "En Layer Properties",
+            "En Edit Drawing Settings → Units and Zone",
+            "En el comando PLOT",
+            "En el Prospector, carpeta Points"
+          ],
+          "correct": 1,
+          "explanation": "**Edit Drawing Settings → Units and Zone**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué hay que asignar el sistema de coordenadas en Civil 3D?",
+          "options": [
+            "Para cambiar colores",
+            "Para que los datos coincidan con su ubicación real (p. ej. UTM 17S) y con otras fuentes",
+            "Para imprimir",
+            "No hace falta"
+          ],
+          "correct": 1,
+          "explanation": "Sin el sistema correcto, las imágenes y los datos externos no se alinean."
+        },
+        {
+          "type": "quiz",
+          "question": "El Toolspace de Civil 3D contiene:",
+          "options": [
+            "Solo capas",
+            "Las pestañas Prospector y Settings con los objetos y estilos",
+            "La ortofoto",
+            "Los puntos en Excel"
+          ],
+          "correct": 1,
+          "explanation": "**Prospector** (objetos) y **Settings** (estilos y configuraciones)."
+        }
+      ]
+    },
+    {
+      "id": "l02-puntos",
+      "title": "Importar y organizar puntos",
+      "summary": "Formatos de archivo, grupos de puntos y claves de descripción.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Pestaña **Insert** (Insertar) → **Points from File**, o Home → Points → **Point Creation Tools** → Import Points.",
+            "Elige el **formato** exacto de tu archivo: p. ej. **PNEZD (comma delimited)** o **PENZD (space delimited)**. Si el orden de columnas no coincide, los puntos aparecen en otro lugar.",
+            "Agrega el archivo (.txt o .csv) y opcionalmente asígnalos a un **grupo de puntos**.",
+            "Usa **Zoom Extents** (ZE) para verlos."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Herramienta",
+            "Para qué"
+          ],
+          "rows": [
+            [
+              "**Point Groups** (grupos de puntos)",
+              "Agrupar por código: TN, BR, MURO… Permite controlar su estilo, rótulo y cuáles entran a la superficie"
+            ],
+            [
+              "**Description Keys** (claves de descripción)",
+              "Asignan automáticamente capa, símbolo y estilo según el código (BR*, ARB*…)"
+            ],
+            [
+              "**Point Style / Label Style**",
+              "Cómo se ve el punto (marca) y qué texto muestra (número, cota, descripción)"
+            ],
+            [
+              "**Point Table**",
+              "Tabla con número, N, E, Z y descripción para la lámina"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Crea un grupo «TERRENO» con los puntos que sí son terreno y **excluye** los que no (copas de árbol, tapas de postes): solo ese grupo se usará para la superficie."
+        },
+        {
+          "type": "quiz",
+          "question": "Al importar, todos los puntos aparecen girados y lejos del lugar esperado. La causa más probable es:",
+          "options": [
+            "La escala del dibujo",
+            "Elegir PENZD cuando el archivo es PNEZD (se intercambian Norte y Este)",
+            "El estilo de punto",
+            "El color de la capa"
+          ],
+          "correct": 1,
+          "explanation": "Intercambiar N y E refleja los puntos: revisa el **formato** al importar."
+        },
+        {
+          "type": "quiz",
+          "question": "Los grupos de puntos (Point Groups) sirven para:",
+          "options": [
+            "Borrar puntos",
+            "Organizar puntos por criterio (código, cota...) y usarlos para crear superficies",
+            "Calcular volúmenes",
+            "Dibujar la lámina"
+          ],
+          "correct": 1,
+          "explanation": "Por ejemplo, un grupo «TERRENO» para la superficie."
+        },
+        {
+          "type": "quiz",
+          "question": "Las claves de descripción (Description Keys) permiten:",
+          "options": [
+            "Asignar automáticamente capa, estilo y símbolo según el código",
+            "Cambiar la cota",
+            "Proyectar",
+            "Medir"
+          ],
+          "correct": 0,
+          "explanation": "El código de campo controla el **estilo** del punto."
+        }
+      ]
+    },
+    {
+      "id": "l03-superficie",
+      "title": "Crear la superficie TIN",
+      "summary": "Create Surface, definición con grupos de puntos, breaklines y boundary.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Home → **Surfaces → Create Surface**: tipo **TIN surface**, nombre (p. ej. «TN-Captacion») y estilo.",
+            "En Prospector: Surfaces → TN-Captacion → **Definition** (Definición).",
+            "**Point Groups → Add:** el grupo de terreno.",
+            "Dibuja las líneas de quiebre como **polilíneas 3D** uniendo los puntos en orden (comando 3DPOLY con referencia a objetos tipo Node o «Point object»), o crea **Feature Lines**.",
+            "**Breaklines → Add:** selecciónalas, tipo **Standard**.",
+            "Dibuja el contorno como **polilínea cerrada** siguiendo el límite levantado.",
+            "**Boundaries → Add:** tipo **Outer**, sin «Non-destructive» si quieres recortar triángulos.",
+            "Rebuild (Reconstruir) la superficie si aparece desactualizada."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El **orden** de la definición importa: Civil 3D aplica las operaciones de arriba hacia abajo. Normalmente: puntos → breaklines → boundary → ediciones.",
+          "title": "Orden de la definición"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Revisa la triangulación con un estilo que muestre los **triángulos**: busca triángulos largos en los bordes o que crucen estructuras. Corrige con breaklines, boundary o **Edit Surface → Delete Line** / **Swap Edge**."
+        },
+        {
+          "type": "quiz",
+          "question": "En la definición de la superficie, ¿qué conviene agregar ANTES del boundary?",
+          "options": [
+            "El estilo de curvas",
+            "Los puntos y las breaklines",
+            "La tabla de puntos",
+            "El layout"
+          ],
+          "correct": 1,
+          "explanation": "Primero los **datos** (puntos y breaklines); el boundary recorta el resultado."
+        },
+        {
+          "type": "quiz",
+          "question": "Para crear una superficie TIN en Civil 3D se agregan en su definición:",
+          "options": [
+            "Grupos de puntos, breaklines y boundaries",
+            "Solo la lámina",
+            "Solo textos",
+            "Imágenes"
+          ],
+          "correct": 0,
+          "explanation": "Definición → Point Groups, Breaklines, Boundaries."
+        }
+      ]
+    },
+    {
+      "id": "l04-curvas-analisis",
+      "title": "Curvas de nivel y análisis",
+      "summary": "Estilos, rótulos de curvas, análisis de elevaciones y pendientes.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Surface Properties → Surface Style:** elige o edita un estilo, p. ej. curvas mayores cada 5 m y menores cada 1 m (Contours: intervalos).",
+            "Activa el **suavizado** de curvas solo para presentación.",
+            "**Add Labels → Contour - Multiple:** traza una línea que corte las curvas para rotular sus cotas.",
+            "**Spot Elevation:** rótulos de cotas puntuales."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Análisis (Surface Properties → Analysis)",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "**Elevations**",
+              "Colorea la superficie por rangos de cota"
+            ],
+            [
+              "**Slopes**",
+              "Colorea por rangos de pendiente (%)"
+            ],
+            [
+              "**Slope Arrows**",
+              "Flechas en la dirección de la pendiente (hacia dónde corre el agua)"
+            ],
+            [
+              "**Watersheds**",
+              "Delimita áreas de drenaje sobre la superficie"
+            ],
+            [
+              "**Contours**",
+              "Rangos de curvas con colores distintos"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Después de calcular el análisis, inserta su **leyenda** (Add Legend Table) en la lámina."
+        },
+        {
+          "type": "quiz",
+          "question": "Para mostrar en colores las zonas planas y las empinadas de la superficie, se usa el análisis:",
+          "options": [
+            "Elevations",
+            "Slopes",
+            "Contours",
+            "Points"
+          ],
+          "correct": 1,
+          "explanation": "El análisis de **Slopes** clasifica por rangos de pendiente."
+        },
+        {
+          "type": "quiz",
+          "question": "Las curvas maestras (major) suelen dibujarse cada:",
+          "options": [
+            "Cada curva",
+            "Cada 5 curvas menores",
+            "Cada 100 curvas",
+            "Nunca"
+          ],
+          "correct": 1,
+          "explanation": "Habitualmente **cada 5 intervalos**, más gruesas y rotuladas."
+        },
+        {
+          "type": "quiz",
+          "question": "El análisis de pendientes en Civil 3D se configura en:",
+          "options": [
+            "Surface Properties → Analysis",
+            "Point Groups",
+            "Layout",
+            "Alignments"
+          ],
+          "correct": 0,
+          "explanation": "Propiedades de superficie → **Analysis**, con un estilo que muestre los rangos."
+        }
+      ]
+    },
+    {
+      "id": "l05-perfiles",
+      "title": "Alineamientos, perfiles y volúmenes",
+      "summary": "Ejes, perfil del terreno, secciones y cálculo de volúmenes.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Objeto",
+            "Qué es",
+            "Cómo"
+          ],
+          "rows": [
+            [
+              "**Alignment** (alineamiento)",
+              "Eje en planta de una vía, canal o tubería",
+              "Alignment Creation Tools, o desde una polilínea (Create Alignment from Objects)"
+            ],
+            [
+              "**Surface Profile**",
+              "Perfil del terreno a lo largo del eje",
+              "Profile → Create Surface Profile"
+            ],
+            [
+              "**Profile View**",
+              "Gráfico del perfil con cuadrícula de cotas y abscisas",
+              "Draw in Profile View"
+            ],
+            [
+              "**Sample Lines / Section Views**",
+              "Secciones transversales",
+              "Para movimiento de tierras"
+            ],
+            [
+              "**Volumes Dashboard**",
+              "Corte y relleno entre dos superficies",
+              "Superficie existente vs. de diseño"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Para una conducción desde la captación: alineamiento por el eje de la tubería → perfil del terreno → diseño de la rasante → volumen de excavación de la zanja."
+        },
+        {
+          "type": "quiz",
+          "question": "El perfil longitudinal del terreno a lo largo de un eje se obtiene con:",
+          "options": [
+            "Create Surface Profile",
+            "Point Table",
+            "Description Keys",
+            "Surface Boundary"
+          ],
+          "correct": 0,
+          "explanation": "**Create Surface Profile** muestrea la superficie a lo largo del alineamiento."
+        },
+        {
+          "type": "quiz",
+          "question": "Un perfil longitudinal muestra:",
+          "options": [
+            "El terreno en planta",
+            "Las cotas del terreno a lo largo de un alineamiento",
+            "Las curvas",
+            "Las coordenadas"
+          ],
+          "correct": 1,
+          "explanation": "Cota frente a **abscisa** (estación) del eje."
+        },
+        {
+          "type": "quiz",
+          "question": "Para calcular volúmenes entre dos superficies se usa:",
+          "options": [
+            "Una superficie de volumen (TIN volume surface)",
+            "Un grupo de puntos",
+            "Un boundary",
+            "Un layout"
+          ],
+          "correct": 0,
+          "explanation": "Superficie de volumen = diferencia entre **diseño y terreno**: corte y relleno."
+        }
+      ]
+    },
+    {
+      "id": "l06-lamina",
+      "title": "La planimetría y la lámina de entrega",
+      "summary": "Layout, ventanas, escala, rótulos, tabla de puntos, grilla y cajetín.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Pasa a la pestaña **Layout** (presentación) y configura el papel (A3, A1…) con **Page Setup Manager**.",
+            "Inserta el **marco y cajetín** (bloque con autor, docente, institución, fecha, escala, lámina).",
+            "Crea la **ventana gráfica** (MVIEW) y fija la **escala** estándar (1:500, 1:1000…) en la barra de estado; bloquea la ventana.",
+            "Activa la **anotación escalada** para que los textos de Civil 3D tengan el tamaño correcto.",
+            "Agrega **grilla de coordenadas** (por ejemplo con Map → Grid o con bloques y rótulos de E y N).",
+            "Inserta la **tabla de puntos** (Add Tables → Point Table), la **leyenda** de análisis y los símbolos.",
+            "Coloca **norte**, **escala gráfica** y **sistema de referencia**.",
+            "Imprime a **PDF** con un estilo de impresión (.ctb) que defina grosores de línea."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Para que tu planimetría sea **propia** y no parezca copiada: define tus propios estilos (colores y grosores por capa), tus códigos y grupos de puntos, tu distribución de la lámina (ubicación de la tabla, cuadro de leyenda) y un cajetín personal."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento en planimetría",
+            "Representación habitual"
+          ],
+          "rows": [
+            [
+              "Cauce / río",
+              "Bordes con breaklines, relleno azul o achurado, flecha del sentido del flujo"
+            ],
+            [
+              "Estructuras de hormigón",
+              "Contorno grueso, achurado, rótulo con nombre (captación, desarenador)"
+            ],
+            [
+              "Tuberías",
+              "Línea con diámetro y material rotulados"
+            ],
+            [
+              "Puntos",
+              "Símbolo pequeño con número; los datos completos en la tabla"
+            ],
+            [
+              "Curvas de nivel",
+              "Mayores más gruesas y rotuladas; menores finas"
+            ],
+            [
+              "Vegetación / árboles",
+              "Símbolo de árbol según código"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Para qué se bloquea la ventana gráfica (viewport) en el layout?",
+          "options": [
+            "Para que no se pueda imprimir",
+            "Para que al hacer zoom no se pierda la escala fijada",
+            "Para cambiar el sistema de coordenadas",
+            "Para ocultar la superficie"
+          ],
+          "correct": 1,
+          "explanation": "Bloqueada, la **escala** de la ventana no cambia accidentalmente."
+        },
+        {
+          "type": "quiz",
+          "question": "En una lámina a escala 1:500 en el Layout, la ventana (viewport) debe tener una escala de:",
+          "options": [
+            "1:1",
+            "1:500",
+            "1:5000",
+            "La que sea"
+          ],
+          "correct": 1,
+          "explanation": "La escala de la ventana = **escala de la lámina**."
+        },
+        {
+          "type": "quiz",
+          "question": "El cajetín de una lámina contiene:",
+          "options": [
+            "Datos del proyecto, autor, escala, fecha y número de lámina",
+            "Solo el norte",
+            "Las curvas",
+            "Los puntos"
+          ],
+          "correct": 0,
+          "explanation": "Es el **rótulo** de identificación."
+        }
+      ]
+    }
+  ]
+}

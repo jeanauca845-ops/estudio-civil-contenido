@@ -1,0 +1,147 @@
+{
+  "id": "u01",
+  "title": "Los minerales",
+  "description": "Contenido de muestra para probar la app; se reemplazará con el sílabo.",
+  "lessons": [
+    {
+      "id": "l01",
+      "title": "¿Qué es un mineral?",
+      "summary": "Definición, criterios y diferencia entre mineral, mineraloide y roca.",
+      "minutes": 6,
+      "blocks": [
+        { "type": "heading", "text": "La unidad básica de las rocas" },
+        { "type": "text", "text": "Todas las rocas sobre las que construimos están formadas por **minerales**. Entender qué son y cómo se comportan es el primer paso para predecir cómo responderá un terreno ante una obra." },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Mineral",
+          "text": "Sólido de origen natural, generalmente inorgánico, con una **estructura cristalina ordenada** (átomos dispuestos en un patrón que se repite) y una **composición química definida**, que puede variar dentro de ciertos límites."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Natural:** se forma por procesos geológicos, no en un laboratorio.",
+            "**Sólido** a temperatura ambiente.",
+            "**Estructura cristalina:** orden interno de los átomos.",
+            "**Composición química definida:** se puede expresar con una fórmula, p. ej. el cuarzo es SiO₂.",
+            "**Generalmente inorgánico.**"
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "El **hielo de un glaciar** sí es un mineral: natural, sólido, cristalino y de composición H₂O. La **obsidiana** (vidrio volcánico) no lo es: se enfrió tan rápido que no formó estructura cristalina; se llama **mineraloide**."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Mineral vs. roca",
+          "text": "Una **roca** es un agregado de uno o más minerales. El granito, por ejemplo, está formado principalmente por cuarzo, feldespatos y micas."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El **cuarzo** es duro y químicamente estable, por eso es muy valorado en agregados para hormigón. En cambio, algunas **arcillas** como la montmorillonita se hinchan al absorber agua y pueden dañar cimentaciones."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué la obsidiana NO se considera un mineral?",
+          "options": [
+            "Porque no es de origen natural",
+            "Porque no tiene estructura cristalina",
+            "Porque es líquida a temperatura ambiente",
+            "Porque es de origen orgánico"
+          ],
+          "correct": 1,
+          "explanation": "La obsidiana se forma cuando la lava se enfría muy rápido: los átomos no alcanzan a ordenarse en una red cristalina. Es un sólido **amorfo**, por eso se clasifica como mineraloide."
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "title": "La dureza y la escala de Mohs",
+      "summary": "Cómo se mide la dureza en campo y por qué la escala no es lineal.",
+      "minutes": 8,
+      "blocks": [
+        { "type": "heading", "text": "Resistencia al rayado" },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Dureza",
+          "text": "Resistencia que opone un mineral a ser **rayado**. Depende de la fuerza de los enlaces entre sus átomos."
+        },
+        { "type": "text", "text": "En 1812 Friedrich Mohs propuso una escala con **10 minerales patrón**, del más blando (talco, 1) al más duro (diamante, 10). Cada mineral raya a los que tienen un número menor y es rayado por los de número mayor." },
+        { "type": "text", "text": "En campo se usan objetos comunes como referencia: la **uña** (≈2,5), una **moneda de cobre** (≈3,5), el **vidrio o una navaja** (≈5,5) y una **lima de acero** (≈6,5)." },
+        {
+          "type": "interactive",
+          "widget": "mohs_lab",
+          "title": "Laboratorio: ensayo de rayado"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La escala de Mohs es **ordinal**: solo ordena. El salto de dureza real entre el corindón (9) y el diamante (10) es mayor que entre el talco (1) y el corindón."
+        },
+        {
+          "type": "quiz",
+          "question": "Una muestra raya a la calcita, pero es rayada por el apatito. ¿Cuál es su dureza aproximada?",
+          "options": ["2", "4", "6", "8"],
+          "correct": 1,
+          "explanation": "Si raya a la calcita su dureza es mayor que 3, y si el apatito la raya es menor que 5. Por lo tanto es ≈4, como la **fluorita**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un mineral raya el vidrio con facilidad. ¿Cuál de estos podría ser?",
+          "options": ["Yeso", "Calcita", "Cuarzo", "Fluorita"],
+          "correct": 2,
+          "explanation": "El vidrio tiene una dureza de ≈5,5. Solo el **cuarzo** (7) es más duro; yeso (2), calcita (3) y fluorita (4) son más blandos que el vidrio."
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "title": "Brillo, raya y exfoliación",
+      "summary": "Otras propiedades físicas para identificar minerales en campo.",
+      "minutes": 7,
+      "blocks": [
+        { "type": "heading", "text": "Identificar un mineral a simple vista" },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Brillo",
+          "text": "Forma en que la superficie de un mineral refleja la luz. Puede ser **metálico** (como un metal pulido, p. ej. la pirita) o **no metálico**: vítreo, perlado, sedoso, resinoso o terroso."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Raya",
+          "text": "Color del **polvo** del mineral, que se obtiene frotándolo sobre una placa de porcelana sin esmaltar. Es más confiable que el color de la muestra, que puede variar por impurezas."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "La **hematita** puede verse gris o negra, pero su raya siempre es **rojo-castaña**."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Exfoliación y fractura",
+          "text": "La **exfoliación** es la tendencia a romperse a lo largo de planos de debilidad de la red cristalina (la mica se separa en láminas). Si no hay planos preferentes, el mineral presenta **fractura**; el cuarzo, por ejemplo, tiene fractura **concoidea** (curva, como el vidrio)."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Las rocas con minerales de exfoliación marcada, como las micas, tienden a separarse en planos y suelen ser menos resistentes como material de construcción."
+        },
+        {
+          "type": "quiz",
+          "question": "Una muestra gris oscura deja una raya rojo-castaña en la porcelana. ¿Qué mineral es más probable?",
+          "options": ["Cuarzo", "Hematita", "Calcita", "Talco"],
+          "correct": 1,
+          "explanation": "La raya rojo-castaña es característica de la **hematita**, aunque la muestra se vea gris o negra."
+        }
+      ]
+    }
+  ]
+}

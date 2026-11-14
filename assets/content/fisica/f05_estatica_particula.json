@@ -1,0 +1,106 @@
+{
+  "id": "f05-estatica-particula",
+  "title": "Estática de la partícula",
+  "description": "Equilibrio de una partícula en 2D y 3D: cables, poleas y resortes",
+  "lessons": [
+    {
+      "id": "l01-equilibrio",
+      "title": "Equilibrio de una partícula",
+      "summary": "ΣF = 0, DCL de nudos, cables y tensiones.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Una partícula (o un nudo donde concurren fuerzas) está en equilibrio si la **fuerza resultante es cero**: está en reposo o con velocidad constante.",
+          "title": "Equilibrio"
+        },
+        {
+          "type": "formula",
+          "expression": "ΣFx = 0        ΣFy = 0        (en 3D también ΣFz = 0)",
+          "caption": "Dos ecuaciones en 2D: se pueden hallar como máximo 2 incógnitas por nudo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Elige el punto (nudo) donde concurren las fuerzas.",
+            "Dibuja su DCL con todas las fuerzas: pesos y tensiones (las tensiones siempre **jalan** desde el nudo a lo largo del cable).",
+            "Descompón cada fuerza en x e y.",
+            "Plantea ΣFx = 0 y ΣFy = 0 y resuelve el sistema."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un semáforo de 200 N cuelga de dos cables: el izquierdo forma 37° y el derecho 53° con la horizontal. ΣFx: −T₁ cos 37° + T₂ cos 53° = 0 → 0,8T₁ = 0,6T₂. ΣFy: T₁ sen 37° + T₂ sen 53° − 200 = 0 → 0,6T₁ + 0,8T₂ = 200. Resolviendo: **T₁ = 120 N, T₂ = 160 N**.",
+          "title": "Ejemplo: semáforo"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para tres fuerzas en equilibrio también se puede usar el **triángulo de fuerzas** y la ley de senos (teorema de Lamy): F₁/sen α₁ = F₂/sen α₂ = F₃/sen α₃, donde αᵢ es el ángulo opuesto a cada fuerza.",
+          "title": "Atajo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Un cable casi horizontal soporta tensiones enormes: si una cuerda tendida entre dos postes casi no se comba, su tensión es muchísimo mayor que el peso que cuelga. Por eso los cables de tendido eléctrico siempre tienen flecha."
+        },
+        {
+          "type": "interactive",
+          "widget": "fis_forces",
+          "title": "Encuentra la equilibrante de dos fuerzas"
+        },
+        {
+          "type": "quiz",
+          "question": "Un cuerpo en equilibrio cumple:",
+          "options": [
+            "ΣF = ma",
+            "ΣF = 0",
+            "v = 0 siempre",
+            "a = g"
+          ],
+          "correct": 1,
+          "explanation": "Definición."
+        },
+        {
+          "type": "quiz",
+          "question": "En 2D, el equilibrio de un nudo da cuántas ecuaciones:",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "6"
+          ],
+          "correct": 1,
+          "explanation": "ΣFx y ΣFy."
+        },
+        {
+          "type": "quiz",
+          "question": "Un peso de 100 N cuelga de dos cables simétricos a 30° con la horizontal. Tensión en cada uno:",
+          "options": [
+            "50 N",
+            "100 N",
+            "57,7 N",
+            "86,6 N"
+          ],
+          "correct": 1,
+          "explanation": "2T sen 30° = 100 → T = 100."
+        },
+        {
+          "type": "quiz",
+          "question": "Las tensiones en el DCL de un nudo:",
+          "options": [
+            "Empujan hacia el nudo",
+            "Jalan desde el nudo a lo largo del cable",
+            "Son verticales",
+            "Son nulas"
+          ],
+          "correct": 1,
+          "explanation": "Los cables solo jalan."
+        }
+      ]
+    }
+  ]
+}

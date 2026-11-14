@@ -1,0 +1,1099 @@
+{
+  "id": "c04-limites",
+  "title": "Límites",
+  "description": "Idea intuitiva, límites laterales, leyes, indeterminaciones, límites infinitos y al infinito, asíntotas, límites trigonométricos, el número e y la definición ε-δ",
+  "lessons": [
+    {
+      "id": "l01-idea",
+      "title": "La idea de límite",
+      "summary": "Acercarse sin llegar: tablas, gráficas, notación y límites laterales.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Caminas hacia una puerta recorriendo cada vez la mitad de lo que falta: 1 m, 0,5 m, 0,25 m… Nunca «llegas» en un número finito de pasos, pero está claro **a dónde te acercas**: a la puerta. El límite es ese destino al que te acercas tanto como quieras.",
+          "title": "Analogía"
+        },
+        {
+          "type": "formula",
+          "expression": "lím (x→a) f(x) = L",
+          "caption": "Se lee: «el límite de f(x) cuando x tiende a a es L». Significa que f(x) se acerca tanto como queramos a L cuando x se acerca a a (sin ser igual a a)."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El límite **no** depende del valor de f en a: f(a) puede no existir o ser distinto. Solo importa **a dónde se acercan** los valores cerca de a. Ejemplo: f(x) = (x² − 1)/(x − 1) no existe en x = 1, pero lím (x→1) f(x) = 2.",
+          "title": "Lo más importante"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "x",
+            "0,9",
+            "0,99",
+            "0,999",
+            "1",
+            "1,001",
+            "1,01",
+            "1,1"
+          ],
+          "rows": [
+            [
+              "(x² − 1)/(x − 1)",
+              "1,9",
+              "1,99",
+              "1,999",
+              "no existe",
+              "2,001",
+              "2,01",
+              "2,1"
+            ]
+          ],
+          "caption": "Tabla de valores: se acerca a 2"
+        },
+        {
+          "type": "heading",
+          "text": "Límites laterales"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Notación",
+            "Significa"
+          ],
+          "rows": [
+            [
+              "lím (x→a⁻) f(x)",
+              "Límite por la **izquierda** (x < a, acercándose desde valores menores)"
+            ],
+            [
+              "lím (x→a⁺) f(x)",
+              "Límite por la **derecha** (x > a)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "lím (x→a) f(x) = L **existe** si y solo si **ambos límites laterales existen y son iguales** a L.",
+          "title": "Teorema"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = |x|/x: por la derecha vale 1 y por la izquierda −1. Como 1 ≠ −1, **lím (x→0) |x|/x no existe**.",
+          "title": "Laterales distintos"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_limit",
+          "title": "Laboratorio de límites: tablas y gráficas"
+        },
+        {
+          "type": "quiz",
+          "question": "Para que exista lím (x→a) f(x) se necesita que:",
+          "options": [
+            "f(a) exista",
+            "Los límites laterales existan y sean iguales",
+            "f sea polinomial",
+            "a sea 0"
+          ],
+          "correct": 1,
+          "explanation": "Teorema de los laterales."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f(3) = 5 y lím (x→3) f(x) = 2:",
+          "options": [
+            "Es imposible",
+            "Es posible: el límite no depende de f(3)",
+            "El límite es 5",
+            "f no es función"
+          ],
+          "correct": 1,
+          "explanation": "Solo importan los valores cercanos."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→2⁻) f(x) = 4 y lím (x→2⁺) f(x) = 4. Entonces lím (x→2) f(x) =",
+          "options": [
+            "No existe",
+            "4",
+            "8",
+            "2"
+          ],
+          "correct": 1,
+          "explanation": "Laterales iguales."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) |x|/x:",
+          "options": [
+            "1",
+            "−1",
+            "0",
+            "No existe"
+          ],
+          "correct": 3,
+          "explanation": "Laterales −1 y 1."
+        },
+        {
+          "type": "quiz",
+          "question": "x → 3⁺ significa que x se acerca a 3:",
+          "options": [
+            "Por la izquierda",
+            "Por la derecha (valores mayores)",
+            "Desde arriba en y",
+            "Exactamente igual a 3"
+          ],
+          "correct": 1,
+          "explanation": "Valores como 3,1; 3,01…"
+        }
+      ]
+    },
+    {
+      "id": "l02-leyes",
+      "title": "Leyes de los límites y sustitución directa",
+      "summary": "Propiedades algebraicas y cuándo basta con reemplazar.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Ley (si lím f = L y lím g = M)",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Suma / resta",
+              "lím (f ± g) = L ± M"
+            ],
+            [
+              "Constante por función",
+              "lím (c·f) = c·L"
+            ],
+            [
+              "Producto",
+              "lím (f·g) = L·M"
+            ],
+            [
+              "Cociente",
+              "lím (f/g) = L/M  (si M ≠ 0)"
+            ],
+            [
+              "Potencia",
+              "lím fⁿ = Lⁿ"
+            ],
+            [
+              "Raíz",
+              "lím ⁿ√f = ⁿ√L  (L ≥ 0 si n es par)"
+            ],
+            [
+              "Constante",
+              "lím c = c"
+            ],
+            [
+              "Identidad",
+              "lím (x→a) x = a"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para polinomios, racionales (si el denominador no se anula), raíces, exponenciales, logaritmos y trigonométricas dentro de su dominio, el límite se calcula **reemplazando x por a**. Es lo primero que se intenta SIEMPRE.",
+          "title": "Sustitución directa"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→2) (3x² − x + 1) = 12 − 2 + 1 = **11**.   lím (x→1) (x + 3)/(x² + 1) = 4/2 = **2**.   lím (x→0) e^(cos x) = e¹ = **e**.",
+          "title": "Ejemplos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Al sustituir obtienes…",
+            "Significa",
+            "Qué hacer"
+          ],
+          "rows": [
+            [
+              "Un número",
+              "Ese es el límite",
+              "Listo"
+            ],
+            [
+              "k/0 con k ≠ 0",
+              "Límite infinito (asíntota vertical)",
+              "Estudiar signos por izquierda y derecha"
+            ],
+            [
+              "0/0",
+              "**Indeterminación**: no se sabe aún",
+              "Factorizar, racionalizar o simplificar"
+            ],
+            [
+              "∞/∞, ∞ − ∞, 0·∞, 1^∞, 0⁰, ∞⁰",
+              "Otras indeterminaciones",
+              "Técnicas específicas (y más adelante L'Hôpital)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "0/0 **no** es 0, ni 1, ni «no existe»: es una señal de que hay que trabajar más. Es como una película pausada: aún no sabes el final.",
+          "title": "La indeterminación"
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→3) (x² + 2x) =",
+          "options": [
+            "9",
+            "15",
+            "6",
+            "3"
+          ],
+          "correct": 1,
+          "explanation": "9 + 6 = 15."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→−1) (2x + 5)/(x + 2) =",
+          "options": [
+            "3",
+            "1",
+            "−3",
+            "7"
+          ],
+          "correct": 0,
+          "explanation": "3/1."
+        },
+        {
+          "type": "quiz",
+          "question": "Si al sustituir obtienes 0/0:",
+          "options": [
+            "El límite es 0",
+            "El límite no existe",
+            "Es una indeterminación: hay que simplificar",
+            "El límite es 1"
+          ],
+          "correct": 2,
+          "explanation": "Hay que trabajar más."
+        },
+        {
+          "type": "quiz",
+          "question": "Si al sustituir obtienes 5/0:",
+          "options": [
+            "El límite es 0",
+            "Es infinito (por algún lado) o no existe",
+            "Es 5",
+            "Es indeterminado"
+          ],
+          "correct": 1,
+          "explanation": "Asíntota vertical."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→π) cos x =",
+          "options": [
+            "0",
+            "1",
+            "−1",
+            "π"
+          ],
+          "correct": 2,
+          "explanation": "Sustitución directa."
+        }
+      ]
+    },
+    {
+      "id": "l03-indeterminaciones",
+      "title": "Indeterminación 0/0: factorizar y racionalizar",
+      "summary": "Las tres técnicas algebraicas, con muchos ejemplos resueltos.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si al sustituir aparece 0/0, es porque numerador y denominador comparten un factor que se anula en a (como (x − a)). La idea es **encontrarlo y cancelarlo**: se puede cancelar porque en el límite x ≠ a.",
+          "title": "Por qué funciona"
+        },
+        {
+          "type": "heading",
+          "text": "Técnica 1: factorizar"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→3) (x² − 9)/(x − 3) → 0/0. = lím (x + 3)(x − 3)/(x − 3) = lím (x + 3) = **6**.",
+          "title": "Ejemplo 1"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→2) (x² − 5x + 6)/(x² − 4) → 0/0. = lím (x − 2)(x − 3)/[(x − 2)(x + 2)] = lím (x − 3)/(x + 2) = **−1/4**.",
+          "title": "Ejemplo 2"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→1) (x³ − 1)/(x − 1) → 0/0. Diferencia de cubos: (x − 1)(x² + x + 1)/(x − 1) → 1 + 1 + 1 = **3**.",
+          "title": "Ejemplo 3"
+        },
+        {
+          "type": "heading",
+          "text": "Técnica 2: racionalizar (conjugado)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→0) (√(x + 9) − 3)/x → 0/0. Multiplico por (√(x + 9) + 3)/(√(x + 9) + 3): = lím (x + 9 − 9)/[x(√(x + 9) + 3)] = lím 1/(√(x + 9) + 3) = **1/6**.",
+          "title": "Ejemplo 4"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→4) (x − 4)/(√x − 2) → 0/0. Conjugado: (x − 4)(√x + 2)/(x − 4) = √x + 2 → **4**. (También: x − 4 = (√x − 2)(√x + 2).)",
+          "title": "Ejemplo 5"
+        },
+        {
+          "type": "heading",
+          "text": "Técnica 3: simplificar fracciones complejas o desarrollar"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→2) (1/x − 1/2)/(x − 2) → 0/0. = lím [(2 − x)/(2x)]/(x − 2) = lím −1/(2x) = **−1/4**.",
+          "title": "Ejemplo 6"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (h→0) [(3 + h)² − 9]/h → 0/0. = lím (9 + 6h + h² − 9)/h = lím (6 + h) = **6**. ¡Este es exactamente el cálculo de una derivada!",
+          "title": "Ejemplo 7"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_limit",
+          "title": "Comprueba con la tabla de valores",
+          "params": {
+            "preset": 2
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→5) (x² − 25)/(x − 5) =",
+          "options": [
+            "0",
+            "5",
+            "10",
+            "No existe"
+          ],
+          "correct": 2,
+          "explanation": "(x + 5) → 10."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→1) (x² + x − 2)/(x − 1) =",
+          "options": [
+            "3",
+            "1",
+            "0",
+            "2"
+          ],
+          "correct": 0,
+          "explanation": "(x + 2)(x − 1)/(x − 1) → 3."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) (√(1 + x) − 1)/x =",
+          "options": [
+            "1",
+            "1/2",
+            "0",
+            "2"
+          ],
+          "correct": 1,
+          "explanation": "Conjugado: 1/(√(1 + x) + 1) → 1/2."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (h→0) [(2 + h)³ − 8]/h =",
+          "options": [
+            "8",
+            "12",
+            "6",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "(12h + 6h² + h³)/h → 12."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→−3) (x + 3)/(x² − 9) =",
+          "options": [
+            "−1/6",
+            "1/6",
+            "0",
+            "6"
+          ],
+          "correct": 0,
+          "explanation": "1/(x − 3) → −1/6."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué se puede cancelar (x − a)?",
+          "options": [
+            "Porque es cero",
+            "Porque en el límite x ≠ a",
+            "Porque siempre se puede",
+            "No se puede"
+          ],
+          "correct": 1,
+          "explanation": "x se acerca a a pero no es a."
+        }
+      ]
+    },
+    {
+      "id": "l04-infinitos",
+      "title": "Límites infinitos y asíntotas verticales",
+      "summary": "Cuando el resultado crece sin límite: k/0, signos laterales.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "lím (x→a) f(x) = +∞",
+          "caption": "Significa que f(x) crece sin cota al acercarse x a a (no es un número: el límite «no existe» como número, pero sabemos cómo se comporta)."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "La recta x = a es una **asíntota vertical** de f si al menos un límite lateral en a es +∞ o −∞. Suele aparecer donde el denominador se anula y el numerador no.",
+          "title": "Asíntota vertical"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Sustituye: si da k/0 (k ≠ 0), hay asíntota vertical.",
+            "Estudia el signo por la **izquierda**: prueba un x un poco menor que a.",
+            "Estudia el signo por la **derecha**.",
+            "Si ambos dan el mismo infinito, el límite es ese infinito; si no, el límite no existe."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→2) 3/(x − 2): por la izquierda (x = 1,99) denominador negativo pequeño → **−∞**; por la derecha → **+∞**. El límite no existe; x = 2 es asíntota vertical.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→0) 1/x² = +∞ por ambos lados (x² siempre positivo).",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si al sustituir sale 0/0 primero hay que simplificar: en (x² − 4)/(x − 2) NO hay asíntota en x = 2 (es un hueco), porque el factor se cancela."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_limit",
+          "title": "Mira 1/x y 1/x² cerca de 0",
+          "params": {
+            "preset": 3
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0⁺) 1/x =",
+          "options": [
+            "0",
+            "+∞",
+            "−∞",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "Positivo cada vez más grande."
+        },
+        {
+          "type": "quiz",
+          "question": "Asíntotas verticales de f(x) = (x + 1)/(x² − 9):",
+          "options": [
+            "x = −1",
+            "x = 3 y x = −3",
+            "x = 9",
+            "Ninguna"
+          ],
+          "correct": 1,
+          "explanation": "Denominador cero, numerador no."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→1⁻) 2/(x − 1) =",
+          "options": [
+            "+∞",
+            "−∞",
+            "0",
+            "2"
+          ],
+          "correct": 1,
+          "explanation": "Denominador negativo pequeño."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Tiene asíntota vertical en x = 3 la función (x − 3)/(x² − 9)?",
+          "options": [
+            "Sí",
+            "No: se cancela (es un hueco)",
+            "Sí, en ambos lados +∞",
+            "Solo por la derecha"
+          ],
+          "correct": 1,
+          "explanation": "= 1/(x + 3); asíntota solo en x = −3."
+        }
+      ]
+    },
+    {
+      "id": "l05-al-infinito",
+      "title": "Límites al infinito y asíntotas horizontales y oblicuas",
+      "summary": "Comportamiento cuando x crece sin límite; grados del numerador y denominador.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "lím (x→+∞) f(x) pregunta: «si x se hace enorme, ¿a qué se acerca f?». Es como preguntar qué pasará con un tanque que se llena y vacía «a largo plazo».",
+          "title": "Idea"
+        },
+        {
+          "type": "formula",
+          "expression": "lím (x→±∞) 1/xⁿ = 0   (n > 0)",
+          "caption": "El resultado clave: un número fijo dividido entre algo gigantesco tiende a 0."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Divide numerador y denominador entre la **mayor potencia de x del denominador**, y usa que c/xⁿ → 0.",
+          "title": "Técnica para racionales (∞/∞)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→∞) (3x² + 1)/(x² − 4) = lím (3 + 1/x²)/(1 − 4/x²) = 3/1 = **3**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Grados de P(x)/Q(x)",
+            "lím (x→±∞)",
+            "Asíntota horizontal",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "grado P < grado Q",
+              "0",
+              "y = 0",
+              "(2x + 1)/(x² + 3) → 0"
+            ],
+            [
+              "grado P = grado Q",
+              "cociente de coeficientes principales",
+              "y = aₙ/bₙ",
+              "(6x³ − x)/(2x³ + 5) → 3"
+            ],
+            [
+              "grado P > grado Q",
+              "±∞",
+              "No hay horizontal; si grado P = grado Q + 1 hay **oblicua**",
+              "(x² + 1)/x → ∞"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = (x² + 3x + 1)/(x + 1). Dividiendo polinomios: x + 2 − 1/(x + 1). Cuando x → ±∞ el resto → 0: **asíntota oblicua y = x + 2**. En general y = mx + b con m = lím f(x)/x y b = lím [f(x) − mx].",
+          "title": "Asíntota oblicua"
+        },
+        {
+          "type": "heading",
+          "text": "Indeterminación ∞ − ∞ con raíces"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→∞) [√(x² + 4x) − x] (∞ − ∞). Conjugado: (x² + 4x − x²)/(√(x² + 4x) + x) = 4x/(√(x² + 4x) + x). Dividiendo entre x: 4/(√(1 + 4/x) + 1) → 4/2 = **2**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Para x → −∞ con raíces: √(x²) = |x| = −x. Por eso lím (x→−∞) x/√(x² + 1) = **−1**, no 1."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Funciones",
+            "Al infinito"
+          ],
+          "rows": [
+            [
+              "eˣ",
+              "→ +∞ cuando x → +∞; → 0 cuando x → −∞"
+            ],
+            [
+              "e⁻ˣ",
+              "→ 0 cuando x → +∞"
+            ],
+            [
+              "ln x",
+              "→ +∞ (muy lento)"
+            ],
+            [
+              "arctan x",
+              "→ π/2 (x → +∞); → −π/2 (x → −∞)"
+            ],
+            [
+              "sen x",
+              "No tiene límite (oscila)"
+            ],
+            [
+              "Jerarquía de crecimiento",
+              "ln x ≪ xⁿ ≪ eˣ ≪ xˣ"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_limit",
+          "title": "Asíntota horizontal y = 3",
+          "params": {
+            "preset": 7
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→∞) (5x³ − 2)/(2x³ + x) =",
+          "options": [
+            "5",
+            "5/2",
+            "0",
+            "∞"
+          ],
+          "correct": 1,
+          "explanation": "Mismo grado: 5/2."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→∞) (x + 1)/(x² + 1) =",
+          "options": [
+            "1",
+            "0",
+            "∞",
+            "1/2"
+          ],
+          "correct": 1,
+          "explanation": "Grado menor arriba."
+        },
+        {
+          "type": "quiz",
+          "question": "Asíntota horizontal de f(x) = (4x − 1)/(2x + 3):",
+          "options": [
+            "y = 4",
+            "y = 2",
+            "y = −1/3",
+            "x = −3/2"
+          ],
+          "correct": 1,
+          "explanation": "4/2."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→∞) e⁻ˣ =",
+          "options": [
+            "1",
+            "∞",
+            "0",
+            "e"
+          ],
+          "correct": 2,
+          "explanation": "1/eˣ → 0."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→∞) [√(x² + 6x) − x] =",
+          "options": [
+            "0",
+            "3",
+            "6",
+            "∞"
+          ],
+          "correct": 1,
+          "explanation": "6x/(√(x² + 6x) + x) → 6/2."
+        },
+        {
+          "type": "quiz",
+          "question": "Si grado del numerador = grado del denominador + 1, hay asíntota:",
+          "options": [
+            "Horizontal",
+            "Oblicua",
+            "Vertical siempre",
+            "Ninguna"
+          ],
+          "correct": 1,
+          "explanation": "Recta inclinada."
+        }
+      ]
+    },
+    {
+      "id": "l06-trigonometricos",
+      "title": "Límites trigonométricos y teorema del sándwich",
+      "summary": "lím sen x/x = 1, (1 − cos x)/x = 0 y cómo usarlos.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "lím (x→0) sen x / x = 1        lím (x→0) (1 − cos x)/x = 0        lím (x→0) (1 − cos x)/x² = 1/2",
+          "caption": "Límites notables (x en radianes)."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para ángulos muy pequeños, sen x ≈ x (el arco y la cuerda casi coinciden). Por eso su cociente tiende a 1. Es la base para demostrar que (sen x)′ = cos x.",
+          "title": "Intuición"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Si g(x) ≤ f(x) ≤ h(x) cerca de a, y lím g = lím h = L, entonces lím f = L. Como dos policías que llevan a un sospechoso entre ellos: si ambos van a la comisaría, él también.",
+          "title": "Teorema del sándwich (del encaje)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→0) x² sen(1/x): como −1 ≤ sen(1/x) ≤ 1 → −x² ≤ x² sen(1/x) ≤ x²; ambos extremos → 0, así que el límite es **0**.",
+          "title": "Sándwich"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Límite",
+            "Truco",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "lím (x→0) sen(5x)/x",
+              "Multiplicar y dividir por 5: 5·sen(5x)/(5x)",
+              "5"
+            ],
+            [
+              "lím (x→0) sen(3x)/sen(7x)",
+              "[3·sen 3x/(3x)]/[7·sen 7x/(7x)]",
+              "3/7"
+            ],
+            [
+              "lím (x→0) tan x / x",
+              "tan x = sen x/cos x",
+              "1"
+            ],
+            [
+              "lím (x→0) x/sen x",
+              "Recíproco",
+              "1"
+            ],
+            [
+              "lím (x→0) (1 − cos x)/x²",
+              "Multiplicar por (1 + cos x): sen²x/[x²(1 + cos x)]",
+              "1/2"
+            ],
+            [
+              "lím (x→0) sen²(2x)/x²",
+              "[sen 2x/x]² = [2·sen 2x/(2x)]²",
+              "4"
+            ],
+            [
+              "lím (x→∞) sen x / x",
+              "Sándwich: |sen x/x| ≤ 1/x",
+              "0"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La regla sen(kx)/(kx) → 1 exige que el argumento del seno y el denominador sean **lo mismo** y que tienda a 0."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_limit",
+          "title": "sen x / x cerca de 0",
+          "params": {
+            "preset": 1
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) sen(4x)/x =",
+          "options": [
+            "1",
+            "4",
+            "1/4",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "4·sen(4x)/(4x)."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) sen(2x)/sen(6x) =",
+          "options": [
+            "1/3",
+            "3",
+            "2",
+            "1"
+          ],
+          "correct": 0,
+          "explanation": "2/6."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) (1 − cos x)/x =",
+          "options": [
+            "1",
+            "0",
+            "1/2",
+            "∞"
+          ],
+          "correct": 1,
+          "explanation": "Límite notable."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) tan(3x)/x =",
+          "options": [
+            "3",
+            "1",
+            "0",
+            "1/3"
+          ],
+          "correct": 0,
+          "explanation": "tan ≈ sen para x pequeño."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→∞) sen x / x =",
+          "options": [
+            "1",
+            "0",
+            "No existe",
+            "∞"
+          ],
+          "correct": 1,
+          "explanation": "Sándwich."
+        }
+      ]
+    },
+    {
+      "id": "l07-e",
+      "title": "El número e y la indeterminación 1^∞",
+      "summary": "lím (1 + 1/x)ˣ = e, límites exponenciales y logarítmicos notables.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "lím (x→∞) (1 + 1/x)ˣ = e        lím (x→0) (1 + x)^(1/x) = e",
+          "caption": "Definición del número e ≈ 2,71828."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un banco te paga 100 % anual. Si capitaliza 1 vez: 1 → 2. Si 2 veces (50 % cada semestre): (1,5)² = 2,25. Si 12 veces: (1 + 1/12)¹² ≈ 2,613. Si infinitas veces: **e ≈ 2,718**. Más capitalizaciones no te hacen infinitamente rico: hay un límite.",
+          "title": "Analogía del interés compuesto"
+        },
+        {
+          "type": "formula",
+          "expression": "lím (x→∞) (1 + k/x)ˣ = eᵏ        lím (x→∞) (1 + a/x)^(bx) = e^(ab)",
+          "caption": "Forma general para 1^∞."
+        },
+        {
+          "type": "formula",
+          "expression": "Si lím f = 1 y lím g = ∞:   lím f^g = e^(lím g·(f − 1))",
+          "caption": "Fórmula práctica para cualquier 1^∞."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→∞) (1 + 3/x)^(2x) = e^(3·2) = **e⁶**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→∞) [(x + 2)/(x − 1)]ˣ: f → 1, g → ∞. g·(f − 1) = x·[3/(x − 1)] → 3. Resultado: **e³**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "formula",
+          "expression": "lím (x→0) (eˣ − 1)/x = 1        lím (x→0) ln(1 + x)/x = 1        lím (x→0) (aˣ − 1)/x = ln a",
+          "caption": "Otros límites notables."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_limit",
+          "title": "(1 + 1/x)ˣ cuando x crece",
+          "params": {
+            "preset": 6
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→∞) (1 + 1/x)ˣ =",
+          "options": [
+            "1",
+            "e",
+            "∞",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "Definición de e."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→∞) (1 + 2/x)ˣ =",
+          "options": [
+            "e",
+            "e²",
+            "2e",
+            "∞"
+          ],
+          "correct": 1,
+          "explanation": "eᵏ con k = 2."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) (eˣ − 1)/x =",
+          "options": [
+            "0",
+            "1",
+            "e",
+            "∞"
+          ],
+          "correct": 1,
+          "explanation": "Límite notable."
+        },
+        {
+          "type": "quiz",
+          "question": "1^∞ es:",
+          "options": [
+            "Siempre 1",
+            "Una indeterminación",
+            "Infinito",
+            "Cero"
+          ],
+          "correct": 1,
+          "explanation": "Por ejemplo da e."
+        }
+      ]
+    },
+    {
+      "id": "l08-formal",
+      "title": "Definición formal de límite (ε-δ)",
+      "summary": "La definición rigurosa explicada con una analogía y un ejemplo.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "lím (x→a) f(x) = L  ⟺  para todo ε > 0 existe δ > 0 tal que si 0 < |x − a| < δ entonces |f(x) − L| < ε",
+          "caption": "Definición de Cauchy–Weierstrass."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un cliente pide un eje de 5 cm con tolerancia ε (por ejemplo ±0,01 cm). El tornero responde: «si me das la materia prima con un error menor que δ, te garantizo esa tolerancia». El límite existe si, **para cualquier tolerancia ε que pida el cliente** (por pequeña que sea), **el tornero siempre puede encontrar un δ** que la cumpla.",
+          "title": "Analogía del tornero"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Símbolo",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "ε (épsilon)",
+              "Qué tan cerca de L queremos que esté f(x) (tolerancia en y)"
+            ],
+            [
+              "δ (delta)",
+              "Qué tan cerca de a debe estar x para lograrlo (tolerancia en x)"
+            ],
+            [
+              "0 < |x − a|",
+              "x ≠ a: el valor en a no importa"
+            ],
+            [
+              "|f(x) − L| < ε",
+              "f(x) está dentro de la franja L ± ε"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Demostrar lím (x→3) (2x + 1) = 7. Queremos |(2x + 1) − 7| < ε → |2x − 6| < ε → 2|x − 3| < ε → |x − 3| < ε/2. Basta elegir **δ = ε/2**. Así, si |x − 3| < ε/2, entonces |f(x) − 7| = 2|x − 3| < ε. ∎",
+          "title": "Ejemplo de demostración"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En el primer ciclo suelen pedir solo demostraciones con funciones lineales (δ = ε/|m|) y, a veces, cuadráticas. Lo importante es entender la idea de «tan cerca como se quiera»."
+        },
+        {
+          "type": "quiz",
+          "question": "En la definición ε-δ, ε representa:",
+          "options": [
+            "La distancia de x a a",
+            "La tolerancia alrededor de L",
+            "El valor de f(a)",
+            "La pendiente"
+          ],
+          "correct": 1,
+          "explanation": "Cercanía en y."
+        },
+        {
+          "type": "quiz",
+          "question": "Para lím (x→2) (5x − 3) = 7, se puede tomar:",
+          "options": [
+            "δ = ε",
+            "δ = ε/5",
+            "δ = 5ε",
+            "δ = ε/3"
+          ],
+          "correct": 1,
+          "explanation": "|5x − 10| = 5|x − 2| < ε."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué aparece 0 < |x − a|?",
+          "options": [
+            "Para que x sea positivo",
+            "Para excluir x = a",
+            "Por costumbre",
+            "Para que δ sea 0"
+          ],
+          "correct": 1,
+          "explanation": "El valor en a no importa."
+        }
+      ]
+    }
+  ]
+}

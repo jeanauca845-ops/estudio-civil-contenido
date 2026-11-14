@@ -1,0 +1,632 @@
+{
+  "id": "c02-trigonometria",
+  "title": "Trigonometría esencial",
+  "description": "Ángulos y radianes, razones trigonométricas, círculo unitario, identidades y leyes de senos y cosenos",
+  "lessons": [
+    {
+      "id": "l01-angulos",
+      "title": "Ángulos: grados y radianes",
+      "summary": "Qué es un radián, conversión y por qué el cálculo usa radianes.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Un ángulo mide cuánto «gira» una semirrecta. Una vuelta completa son **360°**."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es el ángulo que abarca un arco **de la misma longitud que el radio**. Como la circunferencia mide 2πr, una vuelta completa son **2π radianes** ≈ 6,28 rad.",
+          "title": "Radián"
+        },
+        {
+          "type": "formula",
+          "expression": "180° = π rad        grados → radianes: × π/180        radianes → grados: × 180/π"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Grados",
+            "0°",
+            "30°",
+            "45°",
+            "60°",
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ],
+          "rows": [
+            [
+              "Radianes",
+              "0",
+              "π/6",
+              "π/4",
+              "π/3",
+              "π/2",
+              "π",
+              "3π/2",
+              "2π"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En cálculo **siempre se usan radianes**. Las fórmulas como (sen x)′ = cos x o lím sen x/x = 1 **solo son ciertas en radianes**. Revisa que tu calculadora esté en modo RAD.",
+          "title": "Configura tu calculadora"
+        },
+        {
+          "type": "formula",
+          "expression": "Longitud de arco: s = r·θ        (θ en radianes)",
+          "caption": "Ejemplo: una rueda de radio 0,3 m que gira 2 rad avanza 0,6 m."
+        },
+        {
+          "type": "quiz",
+          "question": "120° en radianes:",
+          "options": [
+            "π/3",
+            "2π/3",
+            "3π/2",
+            "4π/3"
+          ],
+          "correct": 1,
+          "explanation": "120·π/180 = 2π/3."
+        },
+        {
+          "type": "quiz",
+          "question": "3π/4 rad en grados:",
+          "options": [
+            "120°",
+            "135°",
+            "145°",
+            "270°"
+          ],
+          "correct": 1,
+          "explanation": "3·180/4 = 135°."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos radianes tiene una vuelta completa?",
+          "options": [
+            "π",
+            "2π",
+            "360",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "**2π**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un radián es aproximadamente:",
+          "options": [
+            "1°",
+            "57,3°",
+            "90°",
+            "3,14°"
+          ],
+          "correct": 1,
+          "explanation": "180/π ≈ 57,3°."
+        }
+      ]
+    },
+    {
+      "id": "l02-razones",
+      "title": "Razones trigonométricas",
+      "summary": "Seno, coseno y tangente en el triángulo rectángulo; ángulos notables; Pitágoras.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En un triángulo rectángulo, frente al ángulo recto está la **hipotenusa** (el lado más largo). Para un ángulo agudo θ, el **cateto opuesto** está frente a θ y el **cateto adyacente** lo toca."
+        },
+        {
+          "type": "formula",
+          "expression": "a² + b² = c²",
+          "caption": "Teorema de Pitágoras (c = hipotenusa)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Razón",
+            "Definición",
+            "Recíproca"
+          ],
+          "rows": [
+            [
+              "sen θ",
+              "opuesto / hipotenusa",
+              "csc θ = 1/sen θ = hipotenusa/opuesto"
+            ],
+            [
+              "cos θ",
+              "adyacente / hipotenusa",
+              "sec θ = 1/cos θ = hipotenusa/adyacente"
+            ],
+            [
+              "tan θ",
+              "opuesto / adyacente = sen θ/cos θ",
+              "cot θ = 1/tan θ = adyacente/opuesto"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "«**SOH-CAH-TOA**»: Seno = Opuesto/Hipotenusa; Coseno = Adyacente/Hipotenusa; Tangente = Opuesto/Adyacente.",
+          "title": "Mnemotecnia"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "θ",
+            "0",
+            "30° (π/6)",
+            "45° (π/4)",
+            "60° (π/3)",
+            "90° (π/2)"
+          ],
+          "rows": [
+            [
+              "sen θ",
+              "0",
+              "1/2",
+              "√2/2",
+              "√3/2",
+              "1"
+            ],
+            [
+              "cos θ",
+              "1",
+              "√3/2",
+              "√2/2",
+              "1/2",
+              "0"
+            ],
+            [
+              "tan θ",
+              "0",
+              "√3/3",
+              "1",
+              "√3",
+              "no definida"
+            ]
+          ],
+          "caption": "Ángulos notables: memorízalos"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Truco: los senos de 0°, 30°, 45°, 60°, 90° son √0/2, √1/2, √2/2, √3/2, √4/2. Los cosenos son los mismos en orden inverso.",
+          "title": "Para recordar la tabla"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La pendiente de una rampa o de un talud es la tangente de su ángulo: una rampa de 1:12 (8,33 %) tiene θ = arctan(1/12) ≈ 4,76°. Las componentes de una fuerza F inclinada son F cos θ y F sen θ."
+        },
+        {
+          "type": "quiz",
+          "question": "En un triángulo con catetos 3 y 4, la hipotenusa mide:",
+          "options": [
+            "5",
+            "7",
+            "12",
+            "25"
+          ],
+          "correct": 0,
+          "explanation": "√(9 + 16) = 5."
+        },
+        {
+          "type": "quiz",
+          "question": "sen 30° =",
+          "options": [
+            "√3/2",
+            "1/2",
+            "√2/2",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "Ángulo notable."
+        },
+        {
+          "type": "quiz",
+          "question": "tan 45° =",
+          "options": [
+            "0",
+            "1",
+            "√3",
+            "1/2"
+          ],
+          "correct": 1,
+          "explanation": "Opuesto = adyacente."
+        },
+        {
+          "type": "quiz",
+          "question": "Si sen θ = 3/5 (θ agudo), cos θ =",
+          "options": [
+            "4/5",
+            "3/4",
+            "5/3",
+            "5/4"
+          ],
+          "correct": 0,
+          "explanation": "Catetos 3 y 4, hipotenusa 5."
+        },
+        {
+          "type": "quiz",
+          "question": "cos 60° =",
+          "options": [
+            "1/2",
+            "√3/2",
+            "√2/2",
+            "0"
+          ],
+          "correct": 0,
+          "explanation": "Ángulo notable."
+        }
+      ]
+    },
+    {
+      "id": "l03-circulo",
+      "title": "El círculo unitario y las funciones trigonométricas",
+      "summary": "Seno y coseno de cualquier ángulo, signos por cuadrante y ángulos de referencia.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Circunferencia de radio 1 centrada en el origen. Para un ángulo θ medido desde el eje +x (sentido antihorario positivo), el punto de la circunferencia es **(cos θ, sen θ)**. Así se define seno y coseno para **cualquier** ángulo, incluso negativos o mayores que 360°.",
+          "title": "Círculo unitario"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Cuadrante",
+            "Ángulos",
+            "sen",
+            "cos",
+            "tan"
+          ],
+          "rows": [
+            [
+              "I",
+              "0 a π/2",
+              "+",
+              "+",
+              "+"
+            ],
+            [
+              "II",
+              "π/2 a π",
+              "+",
+              "−",
+              "−"
+            ],
+            [
+              "III",
+              "π a 3π/2",
+              "−",
+              "−",
+              "+"
+            ],
+            [
+              "IV",
+              "3π/2 a 2π",
+              "−",
+              "+",
+              "−"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "«**Todos Sienten Tanto Cariño**»: en el cuadrante I son positivas Todas; en el II, el Seno; en el III, la Tangente; en el IV, el Coseno.",
+          "title": "Mnemotecnia de signos"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "sen(150°): ángulo de referencia 180° − 150° = 30°; en el cuadrante II el seno es +: sen 150° = **1/2**. cos(240°): referencia 60°, cuadrante III, coseno −: cos 240° = **−1/2**.",
+          "title": "Ángulos de referencia"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Periodicidad",
+              "sen(θ + 2π) = sen θ;  cos(θ + 2π) = cos θ;  tan(θ + π) = tan θ"
+            ],
+            [
+              "Paridad",
+              "sen(−θ) = −sen θ (impar);  cos(−θ) = cos θ (par)"
+            ],
+            [
+              "Cofunciones",
+              "sen(π/2 − θ) = cos θ"
+            ],
+            [
+              "Rango",
+              "−1 ≤ sen θ ≤ 1;  −1 ≤ cos θ ≤ 1"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_function",
+          "title": "Gráfica de sen x: mueve a, b, h y k",
+          "params": {
+            "preset": 8
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Las coordenadas de un punto del círculo unitario a ángulo θ son:",
+          "options": [
+            "(sen θ, cos θ)",
+            "(cos θ, sen θ)",
+            "(tan θ, 1)",
+            "(θ, sen θ)"
+          ],
+          "correct": 1,
+          "explanation": "x = cos, y = sen."
+        },
+        {
+          "type": "quiz",
+          "question": "sen(210°) =",
+          "options": [
+            "1/2",
+            "−1/2",
+            "√3/2",
+            "−√3/2"
+          ],
+          "correct": 1,
+          "explanation": "Referencia 30°, cuadrante III: negativo."
+        },
+        {
+          "type": "quiz",
+          "question": "cos(π) =",
+          "options": [
+            "0",
+            "1",
+            "−1",
+            "π"
+          ],
+          "correct": 2,
+          "explanation": "Punto (−1, 0)."
+        },
+        {
+          "type": "quiz",
+          "question": "En el cuadrante II es positivo:",
+          "options": [
+            "El coseno",
+            "El seno",
+            "La tangente",
+            "Ninguno"
+          ],
+          "correct": 1,
+          "explanation": "Todos Sienten Tanto Cariño."
+        },
+        {
+          "type": "quiz",
+          "question": "cos(−θ) =",
+          "options": [
+            "−cos θ",
+            "cos θ",
+            "sen θ",
+            "1/cos θ"
+          ],
+          "correct": 1,
+          "explanation": "El coseno es par."
+        }
+      ]
+    },
+    {
+      "id": "l04-identidades",
+      "title": "Identidades trigonométricas",
+      "summary": "Pitagóricas, de cociente, suma de ángulos, ángulo doble y medio ángulo.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Identidades"
+          ],
+          "rows": [
+            [
+              "Pitagóricas",
+              "sen²θ + cos²θ = 1;  1 + tan²θ = sec²θ;  1 + cot²θ = csc²θ"
+            ],
+            [
+              "Cociente",
+              "tan θ = sen θ/cos θ;  cot θ = cos θ/sen θ"
+            ],
+            [
+              "Recíprocas",
+              "csc θ = 1/sen θ;  sec θ = 1/cos θ;  cot θ = 1/tan θ"
+            ],
+            [
+              "Suma y resta",
+              "sen(a ± b) = sen a cos b ± cos a sen b;  cos(a ± b) = cos a cos b ∓ sen a sen b"
+            ],
+            [
+              "Ángulo doble",
+              "sen 2θ = 2 sen θ cos θ;  cos 2θ = cos²θ − sen²θ = 2cos²θ − 1 = 1 − 2sen²θ"
+            ],
+            [
+              "Reducción de potencia",
+              "sen²θ = (1 − cos 2θ)/2;  cos²θ = (1 + cos 2θ)/2"
+            ],
+            [
+              "Tangente de la suma",
+              "tan(a + b) = (tan a + tan b)/(1 − tan a tan b)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "sen²θ + cos²θ = 1 es simplemente **Pitágoras en el círculo unitario**: el punto (cos θ, sen θ) está a distancia 1 del origen.",
+          "title": "De dónde sale la principal"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Simplifica (1 − cos²x)/sen x = sen²x/sen x = **sen x**. Estas simplificaciones aparecen todo el tiempo al calcular límites y derivadas.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "sen 75° = sen(45° + 30°) = (√2/2)(√3/2) + (√2/2)(1/2) = (√6 + √2)/4 ≈ 0,966.",
+          "title": "Suma de ángulos"
+        },
+        {
+          "type": "quiz",
+          "question": "sen²x + cos²x =",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "tan x"
+          ],
+          "correct": 1,
+          "explanation": "Identidad pitagórica."
+        },
+        {
+          "type": "quiz",
+          "question": "sen 2x =",
+          "options": [
+            "2 sen x",
+            "2 sen x cos x",
+            "sen²x",
+            "cos²x − sen²x"
+          ],
+          "correct": 1,
+          "explanation": "Ángulo doble."
+        },
+        {
+          "type": "quiz",
+          "question": "1 + tan²x =",
+          "options": [
+            "sec²x",
+            "csc²x",
+            "cos²x",
+            "1"
+          ],
+          "correct": 0,
+          "explanation": "Dividiendo la pitagórica entre cos²x."
+        },
+        {
+          "type": "quiz",
+          "question": "(1 − sen²x)/cos x simplifica a:",
+          "options": [
+            "sen x",
+            "cos x",
+            "tan x",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "cos²x/cos x."
+        }
+      ]
+    },
+    {
+      "id": "l05-leyes",
+      "title": "Ley de senos y ley de cosenos",
+      "summary": "Resolver triángulos que no son rectángulos (muy usado en física y topografía).",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "a/sen A = b/sen B = c/sen C",
+          "caption": "Ley de senos: lados opuestos a los ángulos A, B, C."
+        },
+        {
+          "type": "formula",
+          "expression": "c² = a² + b² − 2ab cos C",
+          "caption": "Ley de cosenos (Pitágoras generalizado: si C = 90°, cos C = 0)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Datos conocidos",
+            "Usar"
+          ],
+          "rows": [
+            [
+              "Dos ángulos y un lado",
+              "Ley de senos"
+            ],
+            [
+              "Dos lados y el ángulo opuesto a uno",
+              "Ley de senos (cuidado: puede haber dos triángulos)"
+            ],
+            [
+              "Dos lados y el ángulo entre ellos",
+              "Ley de cosenos"
+            ],
+            [
+              "Los tres lados",
+              "Ley de cosenos (para hallar un ángulo)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Dos fuerzas de 30 N y 40 N forman 60° entre sí. La resultante: R² = 30² + 40² + 2·30·40·cos 60° = 900 + 1600 + 1200 = 3700 → **R ≈ 60,8 N**. (Para la suma de vectores el ángulo del triángulo es 180° − 60°, por eso aparece +2ab cos 60°.)",
+          "title": "Aplicación en física"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En topografía se usa la ley de senos para calcular distancias inaccesibles (el ancho de un río) midiendo una base y dos ángulos."
+        },
+        {
+          "type": "quiz",
+          "question": "Se conocen dos lados y el ángulo entre ellos. Se usa:",
+          "options": [
+            "Ley de senos",
+            "Ley de cosenos",
+            "Pitágoras",
+            "SOH-CAH-TOA"
+          ],
+          "correct": 1,
+          "explanation": "Ley de cosenos."
+        },
+        {
+          "type": "quiz",
+          "question": "Triángulo con a = 5, b = 7, C = 90°: c =",
+          "options": [
+            "√74",
+            "12",
+            "√24",
+            "2"
+          ],
+          "correct": 0,
+          "explanation": "c² = 25 + 49 = 74."
+        },
+        {
+          "type": "quiz",
+          "question": "Si A = 30°, a = 4 y B = 90°, entonces b =",
+          "options": [
+            "2",
+            "8",
+            "4√3",
+            "6"
+          ],
+          "correct": 1,
+          "explanation": "b = a sen B/sen A = 4·1/(1/2) = 8."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "id": "mr03-vibracion-libre",
+  "title": "Vibraciones libres sin amortiguamiento",
+  "description": "Ecuación del movimiento, solución, frecuencia natural, condiciones iniciales y método de energía",
+  "lessons": [
+    {
+      "id": "l01-modelo",
+      "title": "El oscilador masa–resorte",
+      "summary": "EDO, frecuencia natural, período y caso vertical.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Bloque de masa m unido a un resorte k, desplazado x de la posición de equilibrio. La única fuerza horizontal es la del resorte, −k·x:"
+        },
+        {
+          "type": "formula",
+          "expression": "m·ẍ + k·x = 0    →    ẍ + ωn²·x = 0",
+          "caption": "Ecuación diferencial del movimiento armónico simple."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Magnitud",
+            "Fórmula",
+            "Unidad"
+          ],
+          "rows": [
+            [
+              "Frecuencia natural circular",
+              "ωn = √(k/m)",
+              "rad/s"
+            ],
+            [
+              "Período",
+              "τ = 2π/ωn",
+              "s"
+            ],
+            [
+              "Frecuencia",
+              "f = 1/τ = ωn/2π",
+              "Hz"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si el resorte cuelga verticalmente, el peso lo estira δst = m·g/k (deflexión estática). Midiendo x desde la **posición de equilibrio estático**, el peso y la fuerza inicial del resorte se cancelan y se obtiene la misma EDO: m·ẍ + k·x = 0. Además ωn = √(g/δst).",
+          "title": "Resorte vertical"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Resortes",
+            "Rigidez equivalente"
+          ],
+          "rows": [
+            [
+              "En paralelo (se estiran igual)",
+              "keq = k₁ + k₂"
+            ],
+            [
+              "En serie (soportan la misma fuerza)",
+              "1/keq = 1/k₁ + 1/k₂"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Un bloque de 5 kg cuelga de un resorte de 500 N/m. ¿Deflexión estática y período?",
+          "options": [
+            "0,098 m y 0,628 s",
+            "0,98 m y 6,28 s",
+            "0,049 m y 0,314 s",
+            "0,098 m y 1,59 s"
+          ],
+          "correct": 0,
+          "explanation": "δst = 5·9,81/500 = 0,0981 m; ωn = √(500/5) = 10 rad/s → τ = 2π/10 = **0,628 s**."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos resortes de 300 N/m en serie equivalen a:",
+          "options": [
+            "600 N/m",
+            "300 N/m",
+            "150 N/m",
+            "90 000 N/m"
+          ],
+          "correct": 2,
+          "explanation": "1/keq = 1/300 + 1/300 → keq = **150 N/m** (más flexible)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la masa de un oscilador se cuadruplica, la frecuencia natural:",
+          "options": [
+            "Se cuadruplica",
+            "Se duplica",
+            "Se reduce a la mitad",
+            "No cambia"
+          ],
+          "correct": 2,
+          "explanation": "ωn = √(k/m): con 4m, ωn se divide entre √4 = **2**."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos resortes de 300 N/m en paralelo equivalen a:",
+          "options": [
+            "150 N/m",
+            "300 N/m",
+            "600 N/m",
+            "90 000 N/m"
+          ],
+          "correct": 2,
+          "explanation": "En paralelo se suman: **600 N/m**."
+        }
+      ]
+    },
+    {
+      "id": "l02-solucion",
+      "title": "Solución de la EDO y condiciones iniciales",
+      "summary": "x(t) = A sen(ωn t + φ), amplitud y fase, velocidad y aceleración.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "x(t) = C₁·cos(ωn·t) + C₂·sen(ωn·t) = A·sen(ωn·t + φ)",
+          "caption": "Solución general."
+        },
+        {
+          "type": "formula",
+          "expression": "C₁ = x₀    C₂ = v₀/ωn    A = √(x₀² + (v₀/ωn)²)    tan φ = x₀·ωn / v₀",
+          "caption": "Con x(0) = x₀ y ẋ(0) = v₀."
+        },
+        {
+          "type": "formula",
+          "expression": "v = ẋ = A·ωn·cos(ωn·t + φ)    a = ẍ = −ωn²·x",
+          "caption": "vmáx = A·ωn (en x = 0); amáx = A·ωn² (en x = ±A)."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x₀ = 0,02 m, v₀ = 0,5 m/s, ωn = 10 rad/s: A = √(0,02² + 0,05²) = 0,0539 m; φ = arctan(0,2/0,5) = 21,8°. vmáx = 0,539 m/s."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Energía: E = ½kA² = ½m·vmáx². Durante el movimiento la energía pasa de potencial (en los extremos) a cinética (en el centro), pero T + V se mantiene constante.",
+          "title": "Energía del oscilador"
+        },
+        {
+          "type": "interactive",
+          "widget": "viscous_oscillator",
+          "title": "Pon ζ = 0 para ver la oscilación sin amortiguamiento"
+        },
+        {
+          "type": "quiz",
+          "question": "Un oscilador con ωn = 5 rad/s se suelta desde x₀ = 0,1 m sin velocidad. ¿Rapidez máxima?",
+          "options": [
+            "0,1 m/s",
+            "0,5 m/s",
+            "2,5 m/s",
+            "0,02 m/s"
+          ],
+          "correct": 1,
+          "explanation": "A = 0,1 m (v₀ = 0); vmáx = A·ωn = **0,5 m/s**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde es máxima la aceleración de un oscilador armónico?",
+          "options": [
+            "En x = 0",
+            "En los extremos x = ±A",
+            "A mitad de camino",
+            "Es constante"
+          ],
+          "correct": 1,
+          "explanation": "a = −ωn²·x: máxima en **x = ±A**."
+        },
+        {
+          "type": "quiz",
+          "question": "x₀ = 0, v₀ = 2 m/s, ωn = 4 rad/s. ¿Amplitud?",
+          "options": [
+            "0,5 m",
+            "2 m",
+            "8 m",
+            "0,25 m"
+          ],
+          "correct": 0,
+          "explanation": "A = √(0 + (v₀/ωn)²) = 2/4 = **0,5 m**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un oscilador tiene A = 0,05 m y k = 200 N/m. ¿Energía total?",
+          "options": [
+            "0,25 J",
+            "0,5 J",
+            "5 J",
+            "10 J"
+          ],
+          "correct": 0,
+          "explanation": "E = ½kA² = ½·200·0,0025 = **0,25 J**."
+        }
+      ]
+    },
+    {
+      "id": "l03-energia",
+      "title": "Método de la energía",
+      "summary": "Obtener ωn derivando T + V = constante; péndulo y cuerpos rígidos.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Escribe T y V en función de la coordenada x (o θ) y su derivada.",
+            "Como T + V = constante: d/dt(T + V) = 0.",
+            "Simplifica hasta la forma ẍ + ωn²·x = 0 (usando sen θ ≈ θ para ángulos pequeños) y lee ωn."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Péndulo simple: T = ½m(Lθ̇)², V = mgL(1 − cos θ). d/dt: mL²θ̇θ̈ + mgL sen θ·θ̇ = 0 → θ̈ + (g/L) sen θ = 0 ≈ θ̈ + (g/L)θ = 0 → **ωn = √(g/L)**."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Disco de masa m y radio r que rueda sin deslizar unido a un resorte k en su centro: T = ½mẋ² + ½(½mr²)(ẋ/r)² = ¾mẋ²; V = ½kx² → (3/2)m·ẍ + k·x = 0 → **ωn = √(2k/3m)**."
+        },
+        {
+          "type": "interactive",
+          "widget": "potential_diagram",
+          "title": "Diagrama de energía del péndulo (vueltas completas si E > 2mgL)",
+          "params": {
+            "preset": 4
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué ωn tiene un péndulo de 2,45 m (g = 9,81 m/s²)?",
+          "options": [
+            "1 rad/s",
+            "2 rad/s",
+            "4 rad/s",
+            "0,5 rad/s"
+          ],
+          "correct": 1,
+          "explanation": "ωn = √(9,81/2,45) ≈ **2 rad/s**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué ωn tiene un disco macizo que rueda sin deslizar con un resorte k en su centro?",
+          "options": [
+            "√(k/m)",
+            "√(2k/3m)",
+            "√(3k/2m)",
+            "√(k/2m)"
+          ],
+          "correct": 1,
+          "explanation": "T = ¾mẋ²; V = ½kx² → (3/2)mẍ + kx = 0 → **√(2k/3m)**."
+        },
+        {
+          "type": "quiz",
+          "question": "En el método de energía se usa que:",
+          "options": [
+            "T = V",
+            "d(T + V)/dt = 0",
+            "T = 0",
+            "V es máxima"
+          ],
+          "correct": 1,
+          "explanation": "Sistema conservativo: T + V constante → su **derivada es cero**."
+        }
+      ]
+    }
+  ]
+}

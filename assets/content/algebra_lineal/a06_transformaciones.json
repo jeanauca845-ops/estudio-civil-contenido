@@ -1,0 +1,218 @@
+{
+  "id": "a06-transformaciones",
+  "title": "Transformaciones lineales y valores propios",
+  "description": "Transformación lineal, matriz asociada, núcleo e imagen; valores y vectores propios",
+  "lessons": [
+    {
+      "id": "l01-tl",
+      "title": "Transformaciones lineales",
+      "summary": "Definición, matriz asociada, núcleo, imagen y ejemplos geométricos.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "T: V → W es lineal si **T(u + v) = T(u) + T(v)** y **T(ku) = kT(u)**. Toda transformación lineal de ℝⁿ en ℝᵐ es multiplicar por una matriz: T(x) = A·x.",
+          "title": "Transformación lineal"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La matriz A se construye poniendo como columnas las imágenes de los vectores canónicos: A = [T(e₁) | T(e₂) | …]. Es una «máquina» que deforma el espacio manteniendo las rectas rectas y el origen fijo.",
+          "title": "Matriz asociada"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Transformación de ℝ²",
+            "Matriz"
+          ],
+          "rows": [
+            [
+              "Rotación θ antihoraria",
+              "[[cos θ, −sen θ], [sen θ, cos θ]]"
+            ],
+            [
+              "Reflexión en el eje x",
+              "[[1, 0], [0, −1]]"
+            ],
+            [
+              "Escalamiento",
+              "[[k, 0], [0, k]]"
+            ],
+            [
+              "Proyección sobre el eje x",
+              "[[1, 0], [0, 0]]"
+            ],
+            [
+              "Cizalla horizontal",
+              "[[1, k], [0, 1]]"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "Núcleo Ker(T)",
+              "Vectores que T manda al cero: T(v) = 0"
+            ],
+            [
+              "Imagen Im(T)",
+              "Todos los vectores que se obtienen como T(v)"
+            ],
+            [
+              "Teorema de la dimensión",
+              "dim Ker(T) + dim Im(T) = dim V"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Es lineal T(x, y) = (x + 1, y)?",
+          "options": [
+            "Sí",
+            "No: T(0, 0) ≠ (0, 0)",
+            "Solo si x > 0",
+            "Siempre"
+          ],
+          "correct": 1,
+          "explanation": "Una TL fija el origen."
+        },
+        {
+          "type": "quiz",
+          "question": "Matriz de rotación de 90°:",
+          "options": [
+            "[[0, −1], [1, 0]]",
+            "[[1, 0], [0, 1]]",
+            "[[0, 1], [1, 0]]",
+            "[[−1, 0], [0, −1]]"
+          ],
+          "correct": 0,
+          "explanation": "cos 90 = 0, sen 90 = 1."
+        },
+        {
+          "type": "quiz",
+          "question": "El núcleo de T es el conjunto de vectores que T envía a:",
+          "options": [
+            "Sí mismos",
+            "El cero",
+            "Uno",
+            "La imagen"
+          ],
+          "correct": 1,
+          "explanation": "Definición."
+        }
+      ]
+    },
+    {
+      "id": "l02-propios",
+      "title": "Valores y vectores propios",
+      "summary": "Ecuación característica y cálculo para matrices 2 × 2.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "v ≠ 0 es **vector propio** de A con **valor propio** λ si **A·v = λ·v**: la matriz solo lo estira o encoge (o invierte), sin cambiar su dirección.",
+          "title": "Definición"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Al girar un globo terráqueo, todos los puntos cambian de dirección excepto los del **eje** (polo norte–polo sur): ese eje es un vector propio de la rotación (con λ = 1).",
+          "title": "Analogía"
+        },
+        {
+          "type": "formula",
+          "expression": "det(A − λI) = 0",
+          "caption": "Ecuación característica: sus raíces son los valores propios."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "A = [[4, 1], [2, 3]]. det[[4 − λ, 1], [2, 3 − λ]] = (4 − λ)(3 − λ) − 2 = λ² − 7λ + 10 = 0 → **λ = 5, λ = 2**. Para λ = 5: (A − 5I)v = 0 → [[−1, 1], [2, −2]] → v = (1, 1). Para λ = 2: [[2, 1], [2, 1]] → v = (1, −2).",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Suma de valores propios",
+              "= traza de A"
+            ],
+            [
+              "Producto de valores propios",
+              "= det A"
+            ],
+            [
+              "Matriz triangular",
+              "Los valores propios están en la diagonal"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En dinámica estructural, los valores propios de la matriz de rigidez y masa dan las **frecuencias naturales** de vibración de un edificio y los vectores propios sus **modos de vibración**: se usan en el diseño sismorresistente."
+        },
+        {
+          "type": "quiz",
+          "question": "La ecuación característica es:",
+          "options": [
+            "det A = 0",
+            "det(A − λI) = 0",
+            "Av = 0",
+            "A = λI"
+          ],
+          "correct": 1,
+          "explanation": "Para hallar λ."
+        },
+        {
+          "type": "quiz",
+          "question": "Valores propios de [[3, 0], [0, 7]]:",
+          "options": [
+            "3 y 7",
+            "0 y 10",
+            "21",
+            "10"
+          ],
+          "correct": 0,
+          "explanation": "Diagonal."
+        },
+        {
+          "type": "quiz",
+          "question": "La suma de los valores propios es igual a:",
+          "options": [
+            "El determinante",
+            "La traza",
+            "El rango",
+            "Cero"
+          ],
+          "correct": 1,
+          "explanation": "Propiedad."
+        },
+        {
+          "type": "quiz",
+          "question": "Si Av = 2v, entonces:",
+          "options": [
+            "v es valor propio",
+            "2 es valor propio y v vector propio",
+            "A = 2",
+            "v = 0"
+          ],
+          "correct": 1,
+          "explanation": "Definición."
+        }
+      ]
+    }
+  ]
+}

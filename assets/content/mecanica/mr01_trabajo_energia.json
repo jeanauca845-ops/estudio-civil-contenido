@@ -1,0 +1,426 @@
+{
+  "id": "mr01-trabajo-energia",
+  "title": "Trabajo y energía",
+  "description": "Trabajo de las fuerzas, energía cinética, principio de trabajo y energía, conservación y potencia",
+  "lessons": [
+    {
+      "id": "l01-trabajo",
+      "title": "Trabajo de una fuerza",
+      "summary": "Definición y trabajo del peso, del resorte y de la fricción.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Una fuerza realiza trabajo cuando su punto de aplicación se desplaza y la fuerza tiene una componente en la dirección del desplazamiento: **U = ∫ F · dr = ∫ F·cos θ ds**. Es un escalar; en el SI se mide en **joules** (1 J = 1 N·m). Es positivo si la fuerza ayuda al movimiento y negativo si se opone.",
+          "title": "Trabajo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Fuerza",
+            "Trabajo de la posición 1 a la 2",
+            "Observaciones"
+          ],
+          "rows": [
+            [
+              "Constante en dirección del movimiento",
+              "U = F·s·cos θ",
+              "θ: ángulo entre la fuerza y el desplazamiento"
+            ],
+            [
+              "**Peso**",
+              "U = −W·(y₂ − y₁) = −W·Δy",
+              "Solo importa el desnivel; negativo si sube (y hacia arriba)"
+            ],
+            [
+              "**Resorte** (lineal)",
+              "U = −(½k·s₂² − ½k·s₁²)",
+              "s = deformación (alargamiento o compresión) respecto a la longitud libre"
+            ],
+            [
+              "**Fricción** cinética",
+              "U = −μk·N·d",
+              "d = DISTANCIA recorrida (no el desplazamiento). Siempre negativo"
+            ],
+            [
+              "Normal, reacciones en apoyos fijos",
+              "U = 0",
+              "Perpendiculares al movimiento o sin desplazamiento"
+            ],
+            [
+              "Par M sobre un cuerpo que gira",
+              "U = M·Δθ",
+              "Δθ en radianes"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El trabajo del resorte depende de las **deformaciones**, no de las posiciones: s = longitud actual − longitud libre. Un error típico es usar la posición del bloque en lugar de la deformación del resorte."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El trabajo del peso y del resorte solo depende de los puntos inicial y final (fuerzas **conservativas**). El de la fricción depende del **camino**: ir y volver no lo anula, lo duplica.",
+          "title": "Conservativas y no conservativas"
+        },
+        {
+          "type": "quiz",
+          "question": "Un resorte de k = 200 N/m pasa de 0,10 m a 0,30 m de alargamiento. ¿Trabajo del resorte sobre el bloque?",
+          "options": [
+            "+8 J",
+            "−8 J",
+            "−4 J",
+            "−9 J"
+          ],
+          "correct": 1,
+          "explanation": "U = −½·200·(0,30² − 0,10²) = −100·(0,09 − 0,01) = **−8 J** (el resorte se opone al alargamiento)."
+        },
+        {
+          "type": "quiz",
+          "question": "Un bloque recorre 2 m hacia la derecha y vuelve 2 m hacia la izquierda con fricción Fr = 5 N. ¿Trabajo total de la fricción?",
+          "options": [
+            "0 J",
+            "−10 J",
+            "−20 J",
+            "+20 J"
+          ],
+          "correct": 2,
+          "explanation": "La fricción siempre se opone al movimiento: −5·2 − 5·2 = **−20 J**. Depende de la distancia recorrida (4 m)."
+        },
+        {
+          "type": "quiz",
+          "question": "Un bloque de 5 kg sube 2 m por una rampa. ¿Trabajo de su peso?",
+          "options": [
+            "+98,1 J",
+            "−98,1 J",
+            "−49,05 J",
+            "0 J"
+          ],
+          "correct": 1,
+          "explanation": "U = −W·Δy = −5·9,81·2 = **−98,1 J** (el peso se opone a la subida)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué fuerza NO realiza trabajo sobre un bloque que se desliza por una superficie fija?",
+          "options": [
+            "El peso",
+            "La fricción",
+            "La normal",
+            "El resorte"
+          ],
+          "correct": 2,
+          "explanation": "La normal es perpendicular al desplazamiento: U = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Un resorte de k = 1000 N/m se comprime de 0 a 0,05 m. ¿Trabajo del resorte sobre el bloque?",
+          "options": [
+            "+1,25 J",
+            "−1,25 J",
+            "−2,5 J",
+            "−50 J"
+          ],
+          "correct": 1,
+          "explanation": "U = −½·1000·(0,05² − 0) = **−1,25 J**."
+        }
+      ]
+    },
+    {
+      "id": "l02-cinetica",
+      "title": "Energía cinética: partícula y cuerpo rígido",
+      "summary": "Traslación, rotación alrededor de un eje fijo y movimiento plano general.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Movimiento",
+            "Energía cinética T"
+          ],
+          "rows": [
+            [
+              "Partícula",
+              "T = ½·m·v²"
+            ],
+            [
+              "Cuerpo rígido en traslación",
+              "T = ½·m·vG²"
+            ],
+            [
+              "Rotación alrededor de un eje fijo O",
+              "T = ½·IO·ω²"
+            ],
+            [
+              "Movimiento plano general",
+              "T = ½·m·vG² + ½·IG·ω²"
+            ],
+            [
+              "Rodadura sin deslizar (radio r)",
+              "vG = ω·r  →  T = ½(m + IG/r²)·vG²"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Cuerpo",
+            "Momento de inercia IG"
+          ],
+          "rows": [
+            [
+              "Varilla delgada (eje por el centro)",
+              "m·L²/12"
+            ],
+            [
+              "Varilla (eje por un extremo)",
+              "m·L²/3"
+            ],
+            [
+              "Disco o cilindro macizo",
+              "m·r²/2"
+            ],
+            [
+              "Aro o cilindro hueco delgado",
+              "m·r²"
+            ],
+            [
+              "Esfera maciza",
+              "2·m·r²/5"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un disco macizo rueda sin deslizar desde el reposo y baja h = 2 m: m·g·h = ½m·v² + ½(½m·r²)(v/r)² = ¾m·v² → v = √(4gh/3) = **5,11 m/s**. Un bloque que se desliza sin fricción llegaría con √(2gh) = 6,26 m/s: el disco es más lento porque parte de la energía se va en girar."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué energía cinética tiene un cilindro macizo de 4 kg que rueda sin deslizar a vG = 3 m/s?",
+          "options": [
+            "18 J",
+            "27 J",
+            "36 J",
+            "9 J"
+          ],
+          "correct": 1,
+          "explanation": "T = ½·4·9 + ½·(½·4·r²)·(3/r)² = 18 + 9 = **27 J**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una varilla de 3 kg y 2 m gira alrededor de un extremo a 4 rad/s. ¿T?",
+          "options": [
+            "8 J",
+            "16 J",
+            "32 J",
+            "24 J"
+          ],
+          "correct": 2,
+          "explanation": "I = mL²/3 = 3·4/3 = 4 kg·m²; T = ½·I·ω² = ½·4·16 = **32 J**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un aro y un disco macizo de igual masa y radio ruedan a la misma vG. ¿Cuál tiene más energía cinética?",
+          "options": [
+            "El disco",
+            "El aro",
+            "Igual",
+            "Depende de la masa"
+          ],
+          "correct": 1,
+          "explanation": "El aro tiene mayor IG (mr² frente a mr²/2): T = ½m·v² + ½IG·ω² es mayor para el **aro**."
+        }
+      ]
+    },
+    {
+      "id": "l03-principio",
+      "title": "Principio de trabajo y energía",
+      "summary": "T₁ + ΣU₁₂ = T₂, procedimiento y ejemplo resuelto.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "T₁ + ΣU₁→₂ = T₂",
+          "caption": "La energía cinética inicial más el trabajo de TODAS las fuerzas es igual a la energía cinética final."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Elige las posiciones 1 y 2 (donde conoces o buscas la velocidad).",
+            "Dibuja el **diagrama de cuerpo libre** en una posición intermedia: identifica qué fuerzas trabajan.",
+            "Calcula T₁ y T₂ (traslación, rotación o ambas).",
+            "Calcula el trabajo de cada fuerza con su signo.",
+            "Plantea la ecuación y despeja."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Bloque de 10 kg que baja por un plano de 30° con μ = 0,2, partiendo del reposo 3 m antes de un resorte de k = 2000 N/m. Fuerza neta a lo largo del plano: mg(sen 30° − 0,2·cos 30°) = 32,06 N. Hasta la compresión máxima δ: 32,06·(3 + δ) − ½·2000·δ² = 0 → 1000δ² − 32,06δ − 96,18 = 0 → **δ = 0,327 m**. Velocidad al tocar el resorte: v = √(2·32,06·3/10) = **4,39 m/s**.",
+          "title": "Ejemplo: plano inclinado con fricción y resorte"
+        },
+        {
+          "type": "quiz",
+          "question": "Desde el reposo, un bloque de 2 kg recibe 50 J de trabajo neto. ¿Su rapidez final?",
+          "options": [
+            "5 m/s",
+            "7,07 m/s",
+            "25 m/s",
+            "50 m/s"
+          ],
+          "correct": 1,
+          "explanation": "50 = ½·2·v² → v² = 50 → **7,07 m/s**."
+        },
+        {
+          "type": "quiz",
+          "question": "En el principio de trabajo y energía, ¿qué fuerzas se incluyen en ΣU?",
+          "options": [
+            "Solo las conservativas",
+            "Solo las no conservativas",
+            "Todas las que realizan trabajo",
+            "Solo el peso"
+          ],
+          "correct": 2,
+          "explanation": "ΣU incluye **todas** las fuerzas que trabajan (peso, resortes, fricción, fuerzas aplicadas)."
+        },
+        {
+          "type": "quiz",
+          "question": "Un bloque de 2 kg se suelta desde 1,5 m de altura sin fricción. ¿Rapidez al llegar al suelo?",
+          "options": [
+            "3,83 m/s",
+            "5,42 m/s",
+            "7,67 m/s",
+            "29,4 m/s"
+          ],
+          "correct": 1,
+          "explanation": "m·g·h = ½m·v² → v = √(2·9,81·1,5) = **5,42 m/s**."
+        }
+      ]
+    },
+    {
+      "id": "l04-conservacion",
+      "title": "Conservación de la energía",
+      "summary": "Fuerzas conservativas, energía potencial gravitatoria y elástica, y fuerzas no conservativas.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Energía potencial",
+            "Fórmula",
+            "Referencia"
+          ],
+          "rows": [
+            [
+              "Gravitatoria",
+              "Vg = W·y = m·g·y",
+              "y medida desde un nivel de referencia (NR) elegido; positiva arriba"
+            ],
+            [
+              "Elástica",
+              "Ve = ½·k·s²",
+              "s = deformación; siempre positiva"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "T₁ + V₁ = T₂ + V₂",
+          "caption": "Si solo trabajan fuerzas conservativas (peso, resortes): E = T + V = constante."
+        },
+        {
+          "type": "formula",
+          "expression": "T₁ + V₁ + ΣU(no conservativas) = T₂ + V₂",
+          "caption": "Con fricción u otras fuerzas no conservativas: E₂ = E₁ + Unc. Con fricción, Unc < 0: la energía mecánica disminuye."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una fuerza es conservativa si su trabajo no depende del camino. Equivale a que exista una función V con **F = −dV/dx** (en 1 dimensión) o F = −∇V. Esta relación es la base del análisis de los diagramas de energía potencial.",
+          "title": "Fuerza conservativa"
+        },
+        {
+          "type": "quiz",
+          "question": "Una masa sube con un resorte que se descomprime, sin fricción. ¿Qué se conserva?",
+          "options": [
+            "Solo T",
+            "Solo Vg",
+            "T + Vg + Ve",
+            "Nada"
+          ],
+          "correct": 2,
+          "explanation": "Peso y resorte son conservativos: se conserva **T + Vg + Ve**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué no se puede usar T₁ + V₁ = T₂ + V₂ si hay fricción?",
+          "options": [
+            "Porque la fricción es conservativa",
+            "Porque la fricción disipa energía mecánica: hay que sumar su trabajo (negativo)",
+            "Porque el peso cambia",
+            "Sí se puede usar siempre"
+          ],
+          "correct": 1,
+          "explanation": "Con fricción: T₁ + V₁ + Ufr = T₂ + V₂, con Ufr < 0."
+        },
+        {
+          "type": "quiz",
+          "question": "La energía potencial elástica de un resorte de 400 N/m estirado 0,1 m es:",
+          "options": [
+            "2 J",
+            "4 J",
+            "20 J",
+            "40 J"
+          ],
+          "correct": 0,
+          "explanation": "Ve = ½·400·0,1² = **2 J**."
+        }
+      ]
+    },
+    {
+      "id": "l05-potencia",
+      "title": "Potencia y eficiencia",
+      "summary": "P = F·v, eficiencia mecánica.",
+      "minutes": 6,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "P = dU/dt = F · v        (rotación: P = M · ω)",
+          "caption": "Unidades: vatios (W = J/s). 1 hp ≈ 746 W."
+        },
+        {
+          "type": "formula",
+          "expression": "ε = potencia de salida / potencia de entrada  (< 1)"
+        },
+        {
+          "type": "quiz",
+          "question": "Un montacargas eleva 500 kg a 0,8 m/s con eficiencia 0,8. ¿Potencia del motor?",
+          "options": [
+            "3,92 kW",
+            "4,91 kW",
+            "3,14 kW",
+            "400 W"
+          ],
+          "correct": 1,
+          "explanation": "Salida = 500·9,81·0,8 = 3924 W; entrada = 3924/0,8 = **4905 W ≈ 4,91 kW**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una fuerza de 200 N mueve un carro a 3 m/s en su misma dirección. ¿Potencia?",
+          "options": [
+            "66,7 W",
+            "600 W",
+            "200 W",
+            "1800 W"
+          ],
+          "correct": 1,
+          "explanation": "P = F·v = 200·3 = **600 W**."
+        }
+      ]
+    }
+  ]
+}

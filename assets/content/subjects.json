@@ -1,0 +1,122 @@
+{
+  "subjects": [
+    {
+      "id": "calculo_1",
+      "name": "Cálculo en una variable",
+      "description": "Desde cero: álgebra, trigonometría, funciones, límites, continuidad, derivadas, derivación implícita y aplicaciones.",
+      "icon": "calculus",
+      "color": "#E53935",
+      "cycle": 1,
+      "units": [
+        "assets/content/calculo/c01_algebra.json",
+        "assets/content/calculo/c02_trigonometria.json",
+        "assets/content/calculo/c03_funciones.json",
+        "assets/content/calculo/c03b_graficas.json",
+        "assets/content/calculo/c04_limites.json",
+        "assets/content/calculo/c05_continuidad.json",
+        "assets/content/calculo/c06_derivada.json",
+        "assets/content/calculo/c07_implicita.json",
+        "assets/content/calculo/c08_aplicaciones.json",
+        "assets/content/calculo/c09_repaso.json"
+      ]
+    },
+    {
+      "id": "algebra_lineal",
+      "name": "Álgebra lineal",
+      "description": "Matrices, determinantes, sistemas de ecuaciones, vectores, rectas y planos, espacios vectoriales y valores propios.",
+      "icon": "matrix",
+      "color": "#1E88E5",
+      "cycle": 1,
+      "units": [
+        "assets/content/algebra_lineal/a01_matrices.json",
+        "assets/content/algebra_lineal/a02_determinantes.json",
+        "assets/content/algebra_lineal/a03_sistemas.json",
+        "assets/content/algebra_lineal/a04_vectores.json",
+        "assets/content/algebra_lineal/a05_espacios.json",
+        "assets/content/algebra_lineal/a06_transformaciones.json"
+      ]
+    },
+    {
+      "id": "fisica_general",
+      "name": "Física general",
+      "description": "Unidades, vectores, cinemática, leyes de Newton, equilibrio, momentos y cargas distribuidas.",
+      "icon": "physics",
+      "color": "#FB8C00",
+      "cycle": 1,
+      "units": [
+        "assets/content/fisica/f01_medicion.json",
+        "assets/content/fisica/f02_vectores.json",
+        "assets/content/fisica/f03_cinematica.json",
+        "assets/content/fisica/f04_dinamica.json",
+        "assets/content/fisica/f05_estatica_particula.json",
+        "assets/content/fisica/f06_momentos.json"
+      ]
+    },
+    {
+      "id": "geologia",
+      "name": "Geología",
+      "description": "Minerales, rocas, procesos geológicos y su relación con las obras civiles.",
+      "icon": "terrain",
+      "color": "#8D6E63",
+      "units": [
+        "assets/content/geologia/u01_tierra.json",
+        "assets/content/geologia/u02_tectonica.json",
+        "assets/content/geologia/u03_minerales.json",
+        "assets/content/geologia/u05_rocas.json",
+        "assets/content/geologia/u06_estereografica.json",
+        "assets/content/geologia/u04_mapas.json"
+      ],
+      "cycle": 4
+    },
+    {
+      "id": "geomatica",
+      "name": "Geomática",
+      "description": "Cartografía, topografía, modelos del terreno, Civil 3D, suelos, cuencas y ArcMap.",
+      "icon": "map",
+      "color": "#00897B",
+      "units": [
+        "assets/content/geomatica/gm01_fundamentos.json",
+        "assets/content/geomatica/gm02_topografia.json",
+        "assets/content/geomatica/gm03_modelos.json",
+        "assets/content/geomatica/gm04_civil3d.json",
+        "assets/content/geomatica/gm05_pendientes_suelos.json",
+        "assets/content/geomatica/gm06_cuencas.json",
+        "assets/content/geomatica/gm07_arcmap.json"
+      ],
+      "cycle": 4
+    },
+    {
+      "id": "mecanica_racional_2",
+      "name": "Mecánica Racional 2",
+      "description": "Trabajo y energía, diagramas de energía potencial, vibraciones libres, fricción de Coulomb, amortiguamiento viscoso y vibraciones forzadas.",
+      "icon": "mechanics",
+      "color": "#3949AB",
+      "units": [
+        "assets/content/mecanica/mr01_trabajo_energia.json",
+        "assets/content/mecanica/mr02_potencial.json",
+        "assets/content/mecanica/mr03_vibracion_libre.json",
+        "assets/content/mecanica/mr04_coulomb.json",
+        "assets/content/mecanica/mr05_viscoso_forzado.json",
+        "assets/content/mecanica/mr06_examen.json"
+      ],
+      "cycle": 3
+    },
+    {
+      "id": "quimica_aplicada",
+      "name": "Química aplicada",
+      "description": "Átomo, tabla periódica, enlaces, el agua y la química de los materiales de construcción.",
+      "icon": "science",
+      "color": "#8E24AA",
+      "units": [
+        "assets/content/quimica/q01_atomo.json",
+        "assets/content/quimica/q01b_cuantica.json",
+        "assets/content/quimica/q02_tabla.json",
+        "assets/content/quimica/q03_enlaces.json",
+        "assets/content/quimica/q04_geometria.json",
+        "assets/content/quimica/q05_agua.json",
+        "assets/content/quimica/q06_materiales.json"
+      ],
+      "cycle": 3
+    }
+  ]
+}

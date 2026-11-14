@@ -1,0 +1,440 @@
+{
+  "id": "q05-agua",
+  "title": "El agua, un líquido especial",
+  "description": "Estructura, propiedades físicas y químicas, anomalías y aplicaciones en ingeniería civil",
+  "lessons": [
+    {
+      "id": "l01-estructura",
+      "title": "Estructura molecular del agua",
+      "summary": "Geometría angular, enlaces O–H polares, polaridad y puentes de hidrógeno.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El agua (H₂O, 18,02 g/mol) es una molécula pequeña, similar en masa al metano (16,04 g/mol), que hierve a −160 °C. Sin embargo, el agua hierve a **100 °C**. Si siguiera la tendencia de los hidruros de su grupo (H₂Te, H₂Se, H₂S) hervería a ≈ −80 °C y sería un gas. La diferencia se explica por su estructura."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Composición:** el oxígeno aporta el 88,8 % de la masa; los hidrógenos, pequeños, quedan en la periferia.",
+            "**Geometría:** 4 grupos de electrones alrededor del O (2 enlaces + 2 pares libres) → geometría electrónica tetraédrica y molecular **angular**, con **104,5°**, menos que 109,5° porque los pares libres ocupan más espacio.",
+            "**Enlaces O–H covalentes polares:** ΔEN ≈ 1,2 – 1,4 según la tabla de electronegatividades usada; el O, más electronegativo, atrae los electrones.",
+            "**Molécula polar:** O con δ− y cada H con δ+; por la forma angular los dipolos no se anulan.",
+            "**Puentes de hidrógeno:** el H (δ+) de una molécula es atraído por el O (δ−) de otra. Cada molécula forma varios: una red tetraédrica que se rompe y rehace continuamente."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El enlace O–H es **intramolecular** (dentro de la molécula, covalente, fuerte). El puente de hidrógeno es **intermolecular** (entre moléculas, mucho más débil). Casi todas las propiedades «raras» del agua salen de esa red de puentes de hidrógeno."
+        },
+        {
+          "type": "interactive",
+          "widget": "vsepr",
+          "title": "Comprueba la geometría del agua (4 grupos, 2 pares libres)"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el ángulo H–O–H es 104,5° y no 109,5°?",
+          "options": [
+            "Porque el hidrógeno es muy grande",
+            "Porque los dos pares libres del oxígeno repelen más y comprimen el ángulo",
+            "Porque el enlace es iónico",
+            "Porque la molécula es lineal"
+          ],
+          "correct": 1,
+          "explanation": "La repulsión par libre–par enlazante es mayor que entre pares enlazantes: los hidrógenos se acercan entre sí."
+        },
+        {
+          "type": "quiz",
+          "question": "El ángulo H–O–H del agua es aproximadamente:",
+          "options": [
+            "180°",
+            "120°",
+            "104,5°",
+            "90°"
+          ],
+          "correct": 2,
+          "explanation": "Dos pares libres comprimen el ángulo: **104,5°**."
+        },
+        {
+          "type": "quiz",
+          "question": "Cada molécula de agua puede formar hasta:",
+          "options": [
+            "1 puente de hidrógeno",
+            "2 puentes de hidrógeno",
+            "4 puentes de hidrógeno",
+            "8 puentes de hidrógeno"
+          ],
+          "correct": 2,
+          "explanation": "2 como donadora (H) y 2 como aceptora (pares libres): **4**."
+        }
+      ]
+    },
+    {
+      "id": "l02-fisicas",
+      "title": "Propiedades físicas del agua",
+      "summary": "Densidad, puntos de cambio de fase, calor específico, tensión superficial, viscosidad y capilaridad.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "interactive",
+          "widget": "water_lab",
+          "title": "Laboratorio: el agua según la temperatura"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Valor de referencia",
+            "Aplicación en ingeniería"
+          ],
+          "rows": [
+            [
+              "Densidad",
+              "998,2 kg/m³ (20 °C); máx. 1000 kg/m³ a 4 °C; hielo 917 kg/m³",
+              "Empuje hidrostático sobre presas y muros"
+            ],
+            [
+              "Fusión / ebullición",
+              "0 °C / 100 °C a 1 atm (en Cuenca, por la altura, hierve antes)",
+              "Ciclos de congelamiento; cavitación en bombas"
+            ],
+            [
+              "Calor específico",
+              "4,184 J/(g·°C): de los más altos",
+              "Control de temperatura en el curado del hormigón"
+            ],
+            [
+              "Calor latente",
+              "Fusión 334 kJ/kg; vaporización 2256 kJ/kg",
+              "Evaporación del agua del hormigón fresco"
+            ],
+            [
+              "Tensión superficial",
+              "72,8 mN/m (20 °C); con jabón ≈ 37 mN/m",
+              "Aditivos que mejoran el mojado"
+            ],
+            [
+              "Viscosidad",
+              "1,002 mPa·s (20 °C); 1,792 a 0 °C",
+              "Pérdidas de carga en tuberías (número de Reynolds)"
+            ],
+            [
+              "Capilaridad",
+              "≈ 12 cm en un tubo de vidrio de 0,25 mm",
+              "Humedad ascendente en suelos finos y muros"
+            ],
+            [
+              "Compresibilidad",
+              "4,64 × 10⁻⁵ atm⁻¹",
+              "Flujo incompresible en hidráulica; golpe de ariete"
+            ],
+            [
+              "Conductividad térmica",
+              "0,6 W/(m·°C); hielo 2,2",
+              "Un muro húmedo aísla peor que uno seco"
+            ]
+          ],
+          "caption": "Datos del trabajo «El agua, un líquido especial»."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Todo sale de la red de puentes de hidrógeno: para calentar, fundir o evaporar el agua hay que deformar o romper parte de esa red. Por eso vaporizarla cuesta casi **7 veces** más energía que fundirla: al fundir se rompe solo una parte de la red; al evaporar, cada molécula se separa por completo."
+        },
+        {
+          "type": "quiz",
+          "question": "Según h = 2γ·cos θ/(r·ρ·g), si el poro de un suelo es 10 veces más fino, el ascenso capilar:",
+          "options": [
+            "Es 10 veces menor",
+            "No cambia",
+            "Es 10 veces mayor",
+            "Es 100 veces mayor"
+          ],
+          "correct": 2,
+          "explanation": "h es **inversamente proporcional** al radio: radio 10 veces menor → ascenso **10 veces mayor**. Por eso los limos y arcillas mantienen humedad muy por encima del nivel freático."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué la viscosidad del agua disminuye al calentarla?",
+          "options": [
+            "Porque se vuelve más densa",
+            "Porque las moléculas se mueven más rápido y vencen más fácilmente las fuerzas intermoleculares",
+            "Porque pierde puentes covalentes O–H",
+            "Porque aumenta la tensión superficial"
+          ],
+          "correct": 1,
+          "explanation": "Más energía cinética → las moléculas rompen con facilidad los puentes de hidrógeno que frenan el flujo."
+        },
+        {
+          "type": "quiz",
+          "question": "El elevado calor específico del agua (4,18 J/g·°C) se debe a:",
+          "options": [
+            "Su masa molar",
+            "La energía necesaria para romper puentes de hidrógeno",
+            "Su color",
+            "Su pH"
+          ],
+          "correct": 1,
+          "explanation": "Parte del calor se usa en romper **puentes de hidrógeno**."
+        }
+      ]
+    },
+    {
+      "id": "l03-quimicas",
+      "title": "Propiedades químicas: disolvente, anfótero y pH",
+      "summary": "Capacidad disolvente, comportamiento anfótero, autoionización, pH, hidrólisis y conductividad.",
+      "minutes": 11,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Disolvente universal",
+          "text": "El agua disuelve sustancias iónicas (hidratación por interacciones ion–dipolo) y polares (puentes de hidrógeno), pero no las apolares, como el aceite o la gasolina: **«lo semejante disuelve a lo semejante»**. Por eso casi nunca está pura y arrastra sales y gases que pueden atacar los materiales."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Anfótero (anfiprótico)",
+          "text": "Según Brønsted–Lowry, un ácido **dona** un protón (H⁺) y una base lo **acepta**. El agua puede hacer las dos cosas: frente al HF actúa como **base** (HF + H₂O ⇌ H₃O⁺ + F⁻) y frente al NH₃ como **ácido** (NH₃ + H₂O ⇌ NH₄⁺ + OH⁻)."
+        },
+        {
+          "type": "formula",
+          "expression": "H₂O + H₂O ⇌ H₃O⁺ + OH⁻      Kw = [H₃O⁺][OH⁻] = 1,0 × 10⁻¹⁴ (25 °C)",
+          "caption": "Autoionización del agua."
+        },
+        {
+          "type": "formula",
+          "expression": "pH = −log [H₃O⁺]",
+          "caption": "A 25 °C: neutra pH = 7; ácida pH < 7; básica pH > 7."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La neutralidad significa **[H₃O⁺] = [OH⁻]**, no «pH 7» en cualquier condición: Kw aumenta con la temperatura, y el agua pura a 80 °C es neutra con pH ≈ 6,31."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Hidrólisis:** los iones de algunas sales reaccionan con el agua y cambian el pH (el NH₄Cl da disolución ácida; el acetato de sodio, básica).",
+            "**Lluvia ácida:** el CO₂ forma ácido carbónico (CO₂ + H₂O ⇌ H₂CO₃): la lluvia normal tiene pH 5–6; se considera ácida por debajo de 5.",
+            "**Conductividad:** el agua pura conduce muy mal; los iones disueltos la vuelven conductora. Se usa como indicador rápido de sales disueltas.",
+            "**Corrosión del acero:** 2 Fe + O₂ + 4 H⁺ → 2 Fe²⁺ + 2 H₂O; el agua actúa como electrolito."
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Una disolución tiene [H₃O⁺] = 1 × 10⁻⁹ mol/L a 25 °C. Su pH y carácter son:",
+          "options": [
+            "pH 9, básica",
+            "pH 9, ácida",
+            "pH 5, ácida",
+            "pH 7, neutra"
+          ],
+          "correct": 0,
+          "explanation": "pH = −log(10⁻⁹) = **9** > 7: **básica**. (El hormigón tiene pH > 12,5: muy básico.)"
+        },
+        {
+          "type": "quiz",
+          "question": "En la reacción NH₃ + H₂O ⇌ NH₄⁺ + OH⁻, el agua actúa como:",
+          "options": [
+            "Base, porque acepta un protón",
+            "Ácido, porque cede un protón",
+            "Disolvente inerte",
+            "Oxidante"
+          ],
+          "correct": 1,
+          "explanation": "El agua **cede** un H⁺ al amoníaco y queda como OH⁻: actúa como **ácido** de Brønsted."
+        },
+        {
+          "type": "quiz",
+          "question": "Que el agua sea anfótera significa que:",
+          "options": [
+            "No reacciona",
+            "Puede actuar como ácido o como base",
+            "Es siempre ácida",
+            "Es un metal"
+          ],
+          "correct": 1,
+          "explanation": "Puede donar o aceptar H⁺."
+        },
+        {
+          "type": "quiz",
+          "question": "A 25 °C, el agua pura tiene pH:",
+          "options": [
+            "0",
+            "7",
+            "14",
+            "5,6"
+          ],
+          "correct": 1,
+          "explanation": "[H⁺] = 10⁻⁷ mol/L → **pH 7**."
+        }
+      ]
+    },
+    {
+      "id": "l04-anomalias",
+      "title": "Comportamiento anómalo del agua",
+      "summary": "Densidad máxima a 4 °C, el hielo que flota y los puntos de cambio de fase elevados.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En la mayoría de las sustancias el sólido es más denso que el líquido y el líquido se contrae al enfriarse. El agua rompe ambas reglas. Es la sustancia con más anomalías conocidas, y todas tienen la misma causa: la red de puentes de hidrógeno con orientación tetraédrica."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Anomalía",
+            "Explicación"
+          ],
+          "rows": [
+            [
+              "Densidad máxima a 4 °C",
+              "Compiten dos efectos: el térmico (al calentarse, las moléculas se separan) y el estructural (al enfriarse, los puentes de hidrógeno direccionales forman una estructura abierta). Por debajo de 4 °C gana el estructural y el agua se expande"
+            ],
+            [
+              "El hielo flota",
+              "En el hielo cada molécula forma 4 puentes de hidrógeno en una red hexagonal abierta, con mucho espacio vacío: 917 kg/m³ frente a ≈ 1000 kg/m³ del líquido"
+            ],
+            [
+              "Fusión y ebullición altas",
+              "Hay que romper parte de la red de puentes de hidrógeno, cosa que no ocurre en moléculas de masa parecida como el CH₄ o el H₂S"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Al congelarse, el agua aumenta su volumen ≈ 9 %. En los poros del hormigón, del ladrillo o de la roca esto genera presiones que fisuran el material en cada ciclo de **congelamiento y deshielo** (gelifracción), un problema en obras de altura y páramos."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el hielo flota en el agua líquida?",
+          "options": [
+            "Porque contiene aire atrapado",
+            "Porque su red de puentes de hidrógeno es abierta y menos densa (917 kg/m³)",
+            "Porque es más frío",
+            "Porque sus enlaces O–H son más largos"
+          ],
+          "correct": 1,
+          "explanation": "En el hielo cada molécula se une a 4 vecinas en una red hexagonal con mucho espacio libre: **menor densidad** que el líquido."
+        },
+        {
+          "type": "quiz",
+          "question": "El agua líquida alcanza su densidad máxima a:",
+          "options": [
+            "0 °C",
+            "4 °C",
+            "25 °C",
+            "100 °C"
+          ],
+          "correct": 1,
+          "explanation": "A **4 °C** (≈ 1,000 g/cm³)."
+        },
+        {
+          "type": "quiz",
+          "question": "El hielo flota porque:",
+          "options": [
+            "Tiene aire",
+            "Su red de puentes de hidrógeno es abierta y menos densa que el líquido",
+            "Es más denso",
+            "Por la tensión superficial"
+          ],
+          "correct": 1,
+          "explanation": "Estructura hexagonal **abierta**."
+        }
+      ]
+    },
+    {
+      "id": "l05-ingenieria",
+      "title": "El agua en la ingeniería civil",
+      "summary": "Hormigón, tuberías y canales, suelos, humedad capilar y transferencia de calor.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Proceso",
+            "Propiedad que lo gobierna",
+            "Consecuencia"
+          ],
+          "rows": [
+            [
+              "Hidratación y curado del hormigón",
+              "Reactividad química, calor específico, evaporación",
+              "Sin agua suficiente la hidratación se detiene; la evaporación rápida produce fisuras por retracción"
+            ],
+            [
+              "Flujo en tuberías y canales",
+              "Viscosidad y densidad",
+              "Pérdidas de carga dependientes de la temperatura; régimen laminar o turbulento"
+            ],
+            [
+              "Infiltración en suelos",
+              "Viscosidad, tensión superficial",
+              "La permeabilidad depende de la temperatura del agua"
+            ],
+            [
+              "Humedad ascendente",
+              "Capilaridad (adhesión > cohesión)",
+              "Manchas y deterioro en la base de los muros; se corta con barreras impermeables"
+            ],
+            [
+              "Transferencia de calor",
+              "Conductividad térmica",
+              "Los materiales húmedos aíslan peor"
+            ],
+            [
+              "Durabilidad",
+              "Capacidad disolvente",
+              "Transporta cloruros y sulfatos que atacan el acero y el hormigón"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un ingeniero civil necesita entender el agua porque está en casi todo: es un **material** (hormigón), una **carga** (presas, muros), un **fluido** que se transporta (hidráulica) y un **agente de deterioro** (corrosión, heladas, sales)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué se cura el hormigón manteniéndolo húmedo?",
+          "options": [
+            "Para enfriarlo",
+            "Porque la hidratación del cemento necesita agua; si se evapora, se detiene y aparecen fisuras",
+            "Para disolver el cemento sobrante",
+            "Para reducir el pH"
+          ],
+          "correct": 1,
+          "explanation": "El cemento **reacciona** con el agua (hidratación); si esta se evapora antes de tiempo, la resistencia final baja y aparecen fisuras por retracción."
+        },
+        {
+          "type": "quiz",
+          "question": "El exceso de agua en la mezcla de hormigón provoca:",
+          "options": [
+            "Mayor resistencia",
+            "Mayor porosidad y menor resistencia",
+            "Fraguado instantáneo",
+            "Ningún efecto"
+          ],
+          "correct": 1,
+          "explanation": "Más relación agua/cemento → más poros, **menos resistencia**."
+        },
+        {
+          "type": "quiz",
+          "question": "El ascenso capilar en suelos es mayor en:",
+          "options": [
+            "Gravas",
+            "Arenas gruesas",
+            "Limos y arcillas (poros finos)",
+            "Rocas sanas"
+          ],
+          "correct": 2,
+          "explanation": "Poros más finos → mayor altura capilar."
+        }
+      ]
+    }
+  ]
+}

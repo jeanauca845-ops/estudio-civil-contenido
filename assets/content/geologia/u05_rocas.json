@@ -1,0 +1,1539 @@
+{
+  "id": "u05-rocas",
+  "title": "Rocas y su reconocimiento",
+  "description": "Capítulo 3 · Ígneas, sedimentarias y metamórficas; identificación en muestra de mano",
+  "lessons": [
+    {
+      "id": "l01-ciclo",
+      "title": "Las rocas y el ciclo de las rocas",
+      "summary": "Los tres grandes grupos de rocas y los procesos que transforman unas en otras.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Roca",
+          "text": "Agregado natural y sólido de uno o más minerales (o de mineraloides o materia orgánica). Se clasifica por su **origen** en tres grupos: **ígneas, sedimentarias y metamórficas**."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Grupo",
+            "Origen",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Ígneas",
+              "Enfriamiento y cristalización de un **magma** (bajo tierra) o de una **lava** (en superficie)",
+              "Granito, andesita, basalto"
+            ],
+            [
+              "Sedimentarias",
+              "Acumulación y **litificación** de sedimentos, o precipitación química y biológica",
+              "Arenisca, lutita, caliza"
+            ],
+            [
+              "Metamórficas",
+              "Transformación en estado **sólido** de otra roca por **temperatura, presión y fluidos**",
+              "Pizarra, gneis, mármol"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "El ciclo de las rocas"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Un **magma** se enfría y **cristaliza** → roca **ígnea**.",
+            "En superficie, la roca sufre **meteorización y erosión** → **sedimentos**, que se transportan y depositan.",
+            "Los sedimentos se **compactan y cementan** (litificación o diagénesis) → roca **sedimentaria**.",
+            "Enterrada a gran profundidad, con **calor y presión** → roca **metamórfica**.",
+            "Si la temperatura sigue subiendo, se **funde** → nuevo **magma**, y el ciclo vuelve a empezar."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El ciclo tiene **atajos**: una roca ígnea puede metamorfizarse sin pasar por sedimento, y cualquier roca puede volver a la superficie y erosionarse. El motor es la **tectónica de placas** (entierra, levanta y funde) junto con la energía solar y la gravedad (meteorización y erosión)."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Las rocas sedimentarias forman solo ≈ 5 % del **volumen** de la corteza, pero cubren ≈ 75 % de la **superficie** continental. Por eso son las que más encontrarás en las obras."
+        },
+        {
+          "type": "quiz",
+          "question": "Una lutita enterrada a gran profundidad se calienta y se transforma en pizarra sin fundirse. ¿Qué proceso ocurrió?",
+          "options": [
+            "Cristalización",
+            "Litificación",
+            "Metamorfismo",
+            "Meteorización"
+          ],
+          "correct": 2,
+          "explanation": "Transformación en estado **sólido** por presión y temperatura = **metamorfismo**. Si se hubiera fundido, sería magma."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué dos procesos convierten los sedimentos en roca sedimentaria?",
+          "options": [
+            "Fusión y cristalización",
+            "Compactación y cementación",
+            "Erosión y transporte",
+            "Presión y foliación"
+          ],
+          "correct": 1,
+          "explanation": "La **litificación** (diagénesis) consiste en **compactar** los sedimentos (expulsar agua y reducir poros) y **cementarlos** (minerales que precipitan entre los granos)."
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca ígnea expuesta en superficie se meteoriza, se erosiona y sus sedimentos se compactan. Se forma una roca:",
+          "options": [
+            "Ígnea",
+            "Sedimentaria",
+            "Metamórfica",
+            "Mineral"
+          ],
+          "correct": 1,
+          "explanation": "Meteorización + erosión + diagénesis → **sedimentaria**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué proceso transforma cualquier roca en metamórfica?",
+          "options": [
+            "Fusión total",
+            "Cambios de presión y temperatura en estado sólido",
+            "Erosión",
+            "Cementación"
+          ],
+          "correct": 1,
+          "explanation": "El metamorfismo ocurre **sin fundir** la roca."
+        }
+      ]
+    },
+    {
+      "id": "l02b-magma",
+      "title": "El magma y su evolución",
+      "summary": "Qué es el magma, cómo se origina (calor, descompresión, volátiles) y cómo evoluciona.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Magma",
+          "text": "Material rocoso fundido (**líquido + gases + cristales**) que se forma y permanece bajo la superficie. El que sale al exterior se llama **lava**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Fundido:** sobre todo iones de silicio y oxígeno (sílice, SiO₂) con Al, K, Ca, Na, Fe y Mg; controlan la densidad y la viscosidad.",
+            "**Sólidos:** silicatos ya cristalizados; aumentan al enfriarse el magma.",
+            "**Volátiles:** H₂O, CO₂ y SO₂ disueltos por la presión; pueden llegar al 14 % en volumen y **controlan la explosividad** de las erupciones."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "El magma **asciende por flotación** porque es menos denso que las rocas que lo rodean. Se detiene cuando su densidad se equilibra con la de las rocas circundantes o cuando el techo es demasiado resistente."
+        },
+        {
+          "type": "heading",
+          "text": "¿Cómo se forma un magma?"
+        },
+        {
+          "type": "text",
+          "text": "La mayor actividad ígnea ocurre en los **límites divergentes** (dorsales) y en las **zonas de subducción**. En la corteza superior la temperatura aumenta de 20 a 30 °C por km; a 100 km de profundidad hay entre 1200 y 1400 °C, cerca, pero por debajo, del punto de fusión de las rocas. Para fundirlas hace falta alguno de estos tres mecanismos:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Mecanismo",
+            "Qué pasa",
+            "Dónde"
+          ],
+          "rows": [
+            [
+              "Aumento de temperatura",
+              "La roca supera su punto de fusión",
+              "Cerca de intrusiones calientes"
+            ],
+            [
+              "**Descompresión**",
+              "Al bajar la presión de confinamiento baja la temperatura de fusión: la roca caliente se funde sin calentarse más",
+              "Dorsales, puntos calientes"
+            ],
+            [
+              "**Adición de volátiles**",
+              "El agua baja la temperatura de fusión, como la sal con el hielo: con solo 0,1 % de agua el basalto funde hasta 100 °C antes",
+              "Zonas de subducción: la placa que se hunde libera agua al manto"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Así nacen los volcanes del Ecuador: la placa de Nazca libera agua al hundirse, el manto que está encima se funde parcialmente y el magma asciende hasta formar el arco volcánico."
+        },
+        {
+          "type": "heading",
+          "text": "Evolución del magma: Bowen y la diferenciación"
+        },
+        {
+          "type": "text",
+          "text": "N. L. Bowen demostró en el laboratorio (primer cuarto del siglo XX) que al enfriarse un magma basáltico los minerales cristalizan en un orden sistemático, empezando por el **olivino**. Mientras cristalizan, el líquido restante **cambia de composición**: pierde Fe, Mg y Ca (que se van a los primeros minerales) y se enriquece en Na, K y **sílice**."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Diferenciación magmática",
+          "text": "Formación de uno o más magmas secundarios a partir de un solo magma inicial, por ejemplo cuando los primeros cristales, más densos, se hunden y se separan del líquido (**sedimentación cristalina**). Explica por qué un mismo volcán puede emitir lavas de composiciones distintas."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La mayoría de los magmas basálticos son **primarios**: vienen de la fusión parcial de la **peridotita** del manto superior. Los magmas intermedios y félsicos solo aparecen en los márgenes continentales: se generan por la interacción de los magmas basálticos con la corteza, rica en sílice."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué se funde el manto bajo los volcanes de una zona de subducción?",
+          "options": [
+            "Porque allí la temperatura es más alta que en las dorsales",
+            "Porque la placa que se hunde libera agua, que baja la temperatura de fusión del manto",
+            "Porque la presión aumenta mucho",
+            "Porque el núcleo está más cerca"
+          ],
+          "correct": 1,
+          "explanation": "Los **volátiles** (agua) que libera la placa subducida bajan el punto de fusión del manto que está encima: se produce fusión parcial."
+        },
+        {
+          "type": "quiz",
+          "question": "Mientras un magma cristaliza según la serie de Bowen, el líquido restante se enriquece en:",
+          "options": [
+            "Hierro y magnesio",
+            "Calcio",
+            "Sílice, sodio y potasio",
+            "Olivino"
+          ],
+          "correct": 2,
+          "explanation": "Fe, Mg y Ca se van a los primeros minerales; el líquido residual queda más rico en **sílice, Na y K**: por eso los últimos minerales son el feldespato potásico, la moscovita y el cuarzo."
+        },
+        {
+          "type": "quiz",
+          "question": "En las dorsales oceánicas el magma se genera principalmente por:",
+          "options": [
+            "Aumento de temperatura",
+            "Descompresión",
+            "Adición de agua",
+            "Fricción"
+          ],
+          "correct": 1,
+          "explanation": "El manto asciende y la presión baja: **fusión por descompresión**."
+        },
+        {
+          "type": "quiz",
+          "question": "En las zonas de subducción la fusión se favorece por:",
+          "options": [
+            "La adición de volátiles (agua) que bajan el punto de fusión del manto",
+            "La descompresión",
+            "El enfriamiento",
+            "La erosión"
+          ],
+          "correct": 0,
+          "explanation": "La placa que se hunde libera agua al manto: **fusión por volátiles**."
+        }
+      ]
+    },
+    {
+      "id": "l03-igneas",
+      "title": "Rocas ígneas",
+      "summary": "Intrusivas y extrusivas, texturas, composición y serie de Bowen.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Roca ígnea",
+          "text": "Se forma por enfriamiento y solidificación de un **magma** (roca fundida bajo tierra). Si cristaliza en profundidad es **intrusiva o plutónica**; si sale como **lava** y se enfría en superficie, es **extrusiva o volcánica**."
+        },
+        {
+          "type": "heading",
+          "text": "Texturas: la velocidad de enfriamiento"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Textura",
+            "Aspecto",
+            "Enfriamiento",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Fanerítica",
+              "Cristales visibles (> 1 mm)",
+              "Lento, en profundidad",
+              "Granito"
+            ],
+            [
+              "Afanítica",
+              "Cristales no visibles",
+              "Rápido, en superficie",
+              "Basalto"
+            ],
+            [
+              "Porfídica",
+              "Cristales grandes (fenocristales) en matriz fina",
+              "En dos etapas: lento y luego rápido",
+              "Andesita porfídica"
+            ],
+            [
+              "Vítrea",
+              "Vidrio, sin cristales",
+              "Instantáneo",
+              "Obsidiana"
+            ],
+            [
+              "Pegmatítica",
+              "Cristales enormes, todos > 1 cm",
+              "Final de la cristalización, en un fundido muy rico en agua (no por enfriamiento más lento)",
+              "Pegmatita"
+            ],
+            [
+              "Vesicular",
+              "Llena de poros (gas)",
+              "Rápido, con gases",
+              "Pumita, escoria"
+            ],
+            [
+              "Piroclástica",
+              "Fragmentos y ceniza soldados",
+              "Explosión volcánica",
+              "Toba"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Composición: el contenido de sílice"
+        },
+        {
+          "type": "text",
+          "text": "Las rocas ígneas son ≈ **95 %** de la parte superior de la corteza, aunque quedan ocultas bajo una capa fina de sedimentarias y metamórficas. Silicatos más Al, Ca, Na, K, Mg y Fe forman ≈ 98 % en peso de los magmas."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Composición",
+            "Silicatos oscuros",
+            "Rasgos",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Félsica (granítica)",
+              "Pocos",
+              "≈ 70 % de sílice; cuarzo y feldespato; clara y poco densa; forma la corteza continental",
+              "Granito, riolita"
+            ],
+            [
+              "Intermedia (andesítica)",
+              "Al menos 25 %: anfíbol, piroxeno, biotita + plagioclasa",
+              "Típica de márgenes convergentes",
+              "Diorita, andesita"
+            ],
+            [
+              "Máfica (basáltica)",
+              "Abundantes + plagioclasa cálcica",
+              "Oscura y densa (más Fe); forma la corteza oceánica",
+              "Gabro, basalto"
+            ],
+            [
+              "Ultramáfica",
+              "Más del 90 %",
+              "Rara en superficie; forma el manto superior",
+              "Peridotita"
+            ]
+          ],
+          "caption": "Silicatos oscuros (ferromagnesianos): olivino, piroxeno, anfíbol, biotita. Claros: cuarzo, moscovita, feldespatos."
+        },
+        {
+          "type": "interactive",
+          "widget": "igneous_classifier",
+          "title": "Clasificador de rocas ígneas"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Regla práctica",
+          "text": "Cada roca intrusiva tiene una «gemela» extrusiva con la misma composición: **granito ↔ riolita**, **diorita ↔ andesita**, **gabro ↔ basalto**. Lo que cambia es el tamaño de los cristales."
+        },
+        {
+          "type": "heading",
+          "text": "Serie de reacción de Bowen"
+        },
+        {
+          "type": "text",
+          "text": "Al enfriarse un magma, los minerales cristalizan en un orden: primero los de **alta temperatura** (olivino → piroxeno → anfíbol → biotita, y plagioclasa cálcica), al final los de **baja temperatura** (plagioclasa sódica, feldespato potásico, moscovita y **cuarzo**)."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Los minerales que cristalizan primero (olivino, piroxeno) son los **más inestables** en la superficie y se meteorizan antes; el cuarzo, el último, es el más resistente. Por eso un basalto se altera más rápido que un granito, y las arenas de río son casi todas de cuarzo."
+        },
+        {
+          "type": "heading",
+          "text": "Cuerpos ígneos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Batolito:** intrusión enorme e irregular, **discordante** (corta las capas); forma el corazón de las cordilleras.",
+            "**Stock:** como un batolito, pero menor.",
+            "**Dique:** cuerpo tabular angosto y **discordante**: corta las capas de la roca caja.",
+            "**Sill (lámina):** cuerpo tabular delgado y **concordante**: se mete entre los estratos.",
+            "**Lacolito:** concordante, de base plana y techo en forma de domo.",
+            "**Lopolito:** concordante, de techo casi plano y base cóncava, como una cuchara.",
+            "**Cuello volcánico:** conducto vertical solidificado, en forma de tubo (p. ej. la Torre del Diablo, EE. UU.).",
+            "**Colada de lava:** cuerpo extrusivo que fluyó en superficie."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En el Ecuador abundan las **andesitas** y **tobas** del arco volcánico andino, y los granitoides en la cordillera Real. Las andesitas sanas son buen agregado; las tobas y depósitos de ceniza son blandos y erosionables."
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca tiene cristales grandes de plagioclasa dentro de una matriz gris de grano fino. Su textura es:",
+          "options": [
+            "Fanerítica",
+            "Porfídica",
+            "Vítrea",
+            "Clástica"
+          ],
+          "correct": 1,
+          "explanation": "Cristales grandes (**fenocristales**) en matriz fina = **porfídica**: el magma empezó a cristalizar lento en profundidad y terminó de enfriarse rápido en superficie."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el equivalente extrusivo (volcánico) del gabro?",
+          "options": [
+            "Riolita",
+            "Andesita",
+            "Basalto",
+            "Obsidiana"
+          ],
+          "correct": 2,
+          "explanation": "Gabro y **basalto** tienen la misma composición máfica; el gabro cristalizó lento en profundidad y el basalto rápido en superficie."
+        },
+        {
+          "type": "quiz",
+          "question": "Según la serie de Bowen, ¿qué mineral es el más resistente a la meteorización?",
+          "options": [
+            "Olivino",
+            "Piroxeno",
+            "Plagioclasa cálcica",
+            "Cuarzo"
+          ],
+          "correct": 3,
+          "explanation": "El **cuarzo** cristaliza último, a menor temperatura, y es el más estable en las condiciones de la superficie."
+        },
+        {
+          "type": "quiz",
+          "question": "Un cuerpo ígneo tabular se mete entre los estratos, paralelo a ellos. ¿Cómo se llama?",
+          "options": [
+            "Dique",
+            "Sill",
+            "Batolito",
+            "Cuello volcánico"
+          ],
+          "correct": 1,
+          "explanation": "Tabular y **concordante** (paralelo a las capas) = **sill**. El dique es tabular pero **discordante** (las corta)."
+        },
+        {
+          "type": "quiz",
+          "question": "Una pegmatita tiene cristales de varios centímetros. ¿Por qué son tan grandes?",
+          "options": [
+            "Porque el magma se enfrió durante millones de años más",
+            "Porque cristalizó en un fundido muy rico en agua y volátiles, donde los iones migran con facilidad",
+            "Porque es una roca metamórfica",
+            "Porque se enfrió muy rápido"
+          ],
+          "correct": 1,
+          "explanation": "Según clase: no es por un enfriamiento más largo, sino por el **ambiente rico en agua** del final de la cristalización, que facilita la migración iónica."
+        }
+      ]
+    },
+    {
+      "id": "l04b-meteorizacion",
+      "title": "Meteorización, erosión y depósitos",
+      "summary": "Meteorización física y química, comportamiento de los minerales, diagénesis y depósitos coluviales, aluviales y glaciares.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Meteorización",
+          "text": "Alteración o descomposición de la parte más superficial de la corteza expuesta a la intemperie. Puede ser **física** (desintegración: la roca se rompe en trozos sin cambiar su química) o **química** (descomposición: los minerales se transforman)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Disolución:** el agua (sobre todo ácida) disuelve minerales como la calcita.",
+            "**Oxidación:** el hierro se oxida (colores rojizos).",
+            "**Hidrólisis:** reacción del agua con los silicatos; los feldespatos se transforman en arcillas."
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Mineral",
+            "Comportamiento ante la meteorización"
+          ],
+          "rows": [
+            [
+              "Cuarzo",
+              "Duro y químicamente resistente: por eso domina en arenas y areniscas"
+            ],
+            [
+              "Micas",
+              "Generan planos de discontinuidad (deslizamientos); la biotita se altera a arcilla, la moscovita es estable"
+            ],
+            [
+              "Carbonatos (calcita)",
+              "Solubles: forman cavernas e inestabilidad. Las vetas de calcita se distinguen del cuarzo por su menor dureza"
+            ],
+            [
+              "Arcillas (caolinita, illita, esmectita)",
+              "A mayor **capacidad de intercambio catiónico**, más inestables frente al agua (la montmorillonita es la peor)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Después vienen la **erosión** (desprendimiento por agua, viento o hielo), el **transporte** (su distancia depende de la energía del agente y del tamaño y forma del material) y la **sedimentación**, cuando el agente pierde capacidad de transporte."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Diagénesis",
+          "text": "Todos los cambios químicos, físicos y biológicos posteriores al depósito. Incluye la **litificación**, con tres etapas: **hundimiento, compactación y cementación**. Reduce la porosidad y aumenta la compacidad."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Cemento",
+            "Cómo reconocerlo"
+          ],
+          "rows": [
+            [
+              "Calcita",
+              "Efervesce con HCl diluido"
+            ],
+            [
+              "Sílice",
+              "El más duro: da las rocas sedimentarias más resistentes"
+            ],
+            [
+              "Óxido de hierro",
+              "Color naranja a rojo oscuro"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Depósitos (suelos transportados)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Depósito",
+            "Agente",
+            "Características"
+          ],
+          "rows": [
+            [
+              "Coluvial",
+              "Gravedad",
+              "Origen local, al pie de laderas. Gravas angulosas a subangulosas, caóticas, sin selección ni estratificación, mal consolidadas"
+            ],
+            [
+              "Aluvial",
+              "Agua (ríos)",
+              "De arcilla a bloques; clastos gruesos redondeados; estratificados y algo clasificados. Cauces, llanuras de inundación, terrazas, abanicos"
+            ],
+            [
+              "Glaciar",
+              "Hielo",
+              "Tillitas y morrenas: mezcla de todos los tamaños sin clasificar"
+            ],
+            [
+              "Fluvioglaciar",
+              "Agua de deshielo",
+              "De gravas a arcillas, algo clasificados; el tamaño disminuye al alejarse del glaciar"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Suelo residual",
+          "text": "Se forma por meteorización **en el mismo sitio** (no fue transportado). En una ladera de granito se pasa gradualmente, de abajo hacia arriba, de roca sana a roca meteorizada y a suelo residual."
+        },
+        {
+          "type": "quiz",
+          "question": "Gravas angulosas, caóticas, sin estratificación ni selección, al pie de una ladera. ¿Qué depósito es?",
+          "options": [
+            "Aluvial",
+            "Coluvial",
+            "Fluvioglaciar",
+            "Residual"
+          ],
+          "correct": 1,
+          "explanation": "Transporte por **gravedad**, corto y caótico, con clastos angulosos: **coluvial**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una arenisca de color rojo intenso probablemente tiene cemento de:",
+          "options": [
+            "Calcita",
+            "Sílice",
+            "Óxido de hierro",
+            "Yeso"
+          ],
+          "correct": 2,
+          "explanation": "El color naranja a rojo oscuro indica cemento de **óxido de hierro**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué mineral es más resistente a la meteorización química?",
+          "options": [
+            "Olivino",
+            "Plagioclasa cálcica",
+            "Cuarzo",
+            "Piroxeno"
+          ],
+          "correct": 2,
+          "explanation": "El orden de Goldich es inverso al de Bowen: el **cuarzo** es el más estable."
+        },
+        {
+          "type": "quiz",
+          "question": "La gelifracción (cuñas de hielo) es un tipo de meteorización:",
+          "options": [
+            "Química",
+            "Física (mecánica)",
+            "Biológica",
+            "Orgánica"
+          ],
+          "correct": 1,
+          "explanation": "El agua al congelarse aumenta ~9 % su volumen y **rompe** la roca."
+        }
+      ]
+    },
+    {
+      "id": "l04-sedimentarias",
+      "title": "Rocas sedimentarias",
+      "summary": "Clásticas por tamaño de grano, químicas, orgánicas y estructuras sedimentarias.",
+      "minutes": 11,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Se forman en la superficie: la **meteorización** descompone las rocas, la **erosión** y el **transporte** (agua, viento, hielo, gravedad) mueven los fragmentos, se **depositan** en capas y finalmente se **litifican**."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Según clase hay tres tipos: **detríticas** (por erosión, transporte y sedimentación), **químicas** (por precipitación: yeso, calizas) y **orgánicas** (de materia orgánica, origen del petróleo y el carbón)."
+        },
+        {
+          "type": "heading",
+          "text": "Clásticas (detríticas): por tamaño de grano"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sedimento",
+            "Tamaño",
+            "Roca"
+          ],
+          "rows": [
+            [
+              "Grava (redondeada)",
+              "> 2 mm",
+              "**Conglomerado**"
+            ],
+            [
+              "Grava (angulosa)",
+              "> 2 mm",
+              "**Brecha**"
+            ],
+            [
+              "Arena",
+              "1/16 – 2 mm",
+              "**Arenisca**"
+            ],
+            [
+              "Limo",
+              "1/256 – 1/16 mm",
+              "**Limolita**"
+            ],
+            [
+              "Arcilla",
+              "< 1/256 mm",
+              "**Lutita** (fisil) o arcillolita"
+            ]
+          ],
+          "caption": "Escala de Wentworth simplificada."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Lo que cuentan los granos",
+          "text": "**Redondez:** cuanto más redondeados, más largo fue el transporte. **Selección:** granos de tamaño parecido indican un agente que los clasificó (viento, oleaje); mezcla de tamaños indica depósito rápido (deslizamiento, glaciar)."
+        },
+        {
+          "type": "heading",
+          "text": "Químicas, bioquímicas y orgánicas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Roca",
+            "Composición",
+            "Origen"
+          ],
+          "rows": [
+            [
+              "Caliza",
+              "Calcita (CaCO₃)",
+              "Precipitación o acumulación de conchas y corales"
+            ],
+            [
+              "Dolomía",
+              "Dolomita CaMg(CO₃)₂",
+              "Transformación de calizas por aguas con Mg"
+            ],
+            [
+              "Yeso (roca)",
+              "Yeso CaSO₄·2H₂O",
+              "Evaporación de agua salada (evaporita)"
+            ],
+            [
+              "Sal gema",
+              "Halita (NaCl)",
+              "Evaporita"
+            ],
+            [
+              "Sílex (chert)",
+              "Sílice microcristalina",
+              "Precipitación química o restos de organismos silíceos"
+            ],
+            [
+              "Carbón",
+              "Materia vegetal",
+              "Acumulación y enterramiento de plantas en pantanos"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Estructuras sedimentarias"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Estratificación:** capas o estratos; el rasgo más típico de estas rocas.",
+            "**Estratificación cruzada:** láminas inclinadas dentro de un estrato (dunas, ríos).",
+            "**Rizaduras (ripple marks):** ondulaciones de corrientes u oleaje.",
+            "**Grietas de desecación:** polígonos de barro secado al sol.",
+            "**Fósiles:** casi exclusivos de las rocas sedimentarias."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "**Lutitas** y **limolitas**: se ablandan y desmoronan con agua, generan deslizamientos. **Calizas**: se disuelven (karst) y dejan cavidades. **Yeso**: soluble y agresivo con el hormigón. **Areniscas**: permeables, buenos acuíferos pero con filtraciones en presas."
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca de granos de 0,5 mm, áspera como lija, sin reacción con HCl, es probablemente:",
+          "options": [
+            "Lutita",
+            "Arenisca",
+            "Conglomerado",
+            "Caliza"
+          ],
+          "correct": 1,
+          "explanation": "0,5 mm está en el rango de la **arena** (1/16 – 2 mm): **arenisca**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué diferencia un conglomerado de una brecha?",
+          "options": [
+            "El tamaño de los clastos",
+            "La forma de los clastos: redondeados en el conglomerado, angulosos en la brecha",
+            "El conglomerado es metamórfico",
+            "La brecha reacciona con HCl"
+          ],
+          "correct": 1,
+          "explanation": "Ambos tienen clastos > 2 mm; la diferencia es la **forma**, que refleja la distancia de transporte."
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca clástica con granos de 0,0625 a 2 mm es:",
+          "options": [
+            "Conglomerado",
+            "Arenisca",
+            "Limolita",
+            "Lutita"
+          ],
+          "correct": 1,
+          "explanation": "Tamaño arena → **arenisca**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un conglomerado y una brecha se diferencian en que:",
+          "options": [
+            "La brecha tiene clastos angulosos y el conglomerado redondeados",
+            "La brecha es metamórfica",
+            "El conglomerado tiene grano fino",
+            "No hay diferencia"
+          ],
+          "correct": 0,
+          "explanation": "Redondeados → transporte largo (**conglomerado**); angulosos → poco transporte (**brecha**)."
+        },
+        {
+          "type": "quiz",
+          "question": "El carbón es una roca sedimentaria:",
+          "options": [
+            "Clástica",
+            "Química",
+            "Orgánica",
+            "Metamórfica"
+          ],
+          "correct": 2,
+          "explanation": "Se forma de restos **vegetales** acumulados."
+        }
+      ]
+    },
+    {
+      "id": "l05-metamorficas",
+      "title": "Rocas metamórficas",
+      "summary": "Agentes y tipos de metamorfismo, foliación, grado metamórfico y protolitos.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Metamorfismo",
+          "text": "Transformación en **estado sólido** de una roca preexistente (el **protolito**) por cambios de **temperatura**, **presión** y **fluidos químicamente activos**. Cambian la textura y, a menudo, los minerales; la roca **no se funde**."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El metamorfismo es esencialmente **isoquímico**: la composición química global casi no cambia; cambian los minerales y la textura hasta equilibrarse con las nuevas condiciones. Las rocas metamórficas son **cristalinas** (como las ígneas) y **sin cemento** (a diferencia de las sedimentarias)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Factor",
+            "Detalle según clase"
+          ],
+          "rows": [
+            [
+              "Temperatura (el más importante)",
+              "Más de 200 °C y menos que la de fusión (granito ≈ 625 °C, basalto ≈ 900 °C). Hace vibrar los iones y permite recristalizar. Viene de intrusiones, situaciones tectónicas o profundidad (≈ 1 °C cada 33 m). A ≈ 8 km (150–200 °C) las arcillas recristalizan en clorita y moscovita"
+            ],
+            [
+              "Presión",
+              "**De confinamiento:** igual en todas direcciones, como la hidrostática. **Esfuerzo diferencial (dirigido):** mayor en una dirección; pliega y aplasta las rocas (bordes convergentes) y produce la foliación"
+            ],
+            [
+              "Fluidos químicamente activos",
+              "Agua y CO₂ que actúan como catalizadores y favorecen la migración iónica"
+            ],
+            [
+              "Tiempo",
+              "Millones de años"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Agente principal",
+            "Dónde",
+            "Rocas típicas"
+          ],
+          "rows": [
+            [
+              "Dinámico (dinamometamorfismo)",
+              "Presión / cizalla",
+              "Zonas de falla",
+              "Brecha de falla, cataclasita, milonita"
+            ],
+            [
+              "De contacto (térmico)",
+              "Temperatura",
+              "Aureola alrededor de una intrusión; mayor grado cerca del plutón",
+              "Corneana, mármol, cuarcita"
+            ],
+            [
+              "Regional (dinamotérmico)",
+              "Temperatura + presión (2–10 kbar, > 200 °C)",
+              "Grandes extensiones: cuencas y zonas de subducción",
+              "Pizarra, filita, esquisto, gneis, migmatita"
+            ],
+            [
+              "Hidrotermal",
+              "Fluidos calientes ricos en iones",
+              "Fracturas cerca de actividad ígnea",
+              "Rocas alteradas, vetas"
+            ],
+            [
+              "De choque",
+              "Impacto",
+              "Cráteres de meteoritos",
+              "Raro"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Foliación",
+          "text": "Disposición **paralela** de minerales planos o alargados (micas, anfíboles), producida por **presión dirigida**: los minerales crecen perpendiculares al esfuerzo máximo."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo de foliación",
+            "Descripción",
+            "Roca"
+          ],
+          "rows": [
+            [
+              "Pizarrosidad",
+              "Superficies planas muy juntas; se separa en lajas al golpearla (clivaje)",
+              "Pizarra"
+            ],
+            [
+              "Esquistosidad",
+              "Micas y clorita crecen hasta verse a simple vista; aspecto laminar",
+              "Esquisto"
+            ],
+            [
+              "Bandeado gnéisico",
+              "Segregación en bandas claras (cuarzo, feldespato) y oscuras (biotita); no se separa en lajas",
+              "Gneis"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Textura porfidoblástica",
+          "text": "Cristales metamórficos grandes (**porfidoblastos**), como granates, rodeados de una matriz de grano fino. Ejemplo: micaesquisto granatífero. Minerales índice del metamorfismo: cianita, estaurolita, silimanita, andalucita."
+        },
+        {
+          "type": "heading",
+          "text": "Grado metamórfico: de lutita a gneis"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Pizarra** (grado bajo): grano invisible, se separa en lajas.",
+            "**Filita:** brillo satinado por micas finas.",
+            "**Esquisto:** micas visibles, aspecto escamoso.",
+            "**Gneis** (grado alto): bandas claras y oscuras de grano grueso.",
+            "**Migmatita:** fusión parcial; límite con las ígneas."
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Protolito",
+            "Roca metamórfica",
+            "Foliada"
+          ],
+          "rows": [
+            [
+              "Lutita",
+              "Pizarra → filita → esquisto → gneis",
+              "Sí"
+            ],
+            [
+              "Granito",
+              "Gneis",
+              "Sí"
+            ],
+            [
+              "Caliza / dolomía",
+              "Mármol",
+              "No"
+            ],
+            [
+              "Arenisca cuarzosa",
+              "Cuarcita",
+              "No"
+            ],
+            [
+              "Basalto",
+              "Esquisto verde, anfibolita",
+              "Sí"
+            ],
+            [
+              "Cualquier roca de grano fino (contacto)",
+              "Corneana",
+              "No"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La foliación crea **anisotropía**: un talud en esquisto o filita es estable si la foliación buza hacia el interior de la ladera, pero puede deslizar si buza hacia el corte. Esto se analiza con la **red estereográfica**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el mármol y la cuarcita NO tienen foliación?",
+          "options": [
+            "Porque se forman sin presión",
+            "Porque sus minerales (calcita, cuarzo) son equidimensionales y no se orientan",
+            "Porque son rocas ígneas",
+            "Porque se funden"
+          ],
+          "correct": 1,
+          "explanation": "La foliación requiere minerales **planos o alargados** (micas, anfíboles). La calcita y el cuarzo forman granos casi equidimensionales que simplemente recristalizan."
+        },
+        {
+          "type": "quiz",
+          "question": "Ordena de menor a mayor grado metamórfico:",
+          "options": [
+            "Gneis → esquisto → filita → pizarra",
+            "Pizarra → filita → esquisto → gneis",
+            "Filita → pizarra → gneis → esquisto",
+            "Esquisto → pizarra → gneis → filita"
+          ],
+          "correct": 1,
+          "explanation": "**Pizarra → filita → esquisto → gneis**: el tamaño de los cristales y la segregación en bandas aumentan con el grado."
+        },
+        {
+          "type": "quiz",
+          "question": "En una zona de falla, la roca triturada forma cantos englobados en una matriz fina. ¿Qué tipo de metamorfismo y qué roca?",
+          "options": [
+            "De contacto: corneana",
+            "Dinámico: brecha de falla",
+            "Regional: gneis",
+            "Hidrotermal: mármol"
+          ],
+          "correct": 1,
+          "explanation": "La trituración (cataclasis) en zonas de falla es **metamorfismo dinámico**: produce **brechas de falla** o cataclasitas; si la deformación es dúctil, **milonita**."
+        },
+        {
+          "type": "quiz",
+          "question": "El mármol procede de:",
+          "options": [
+            "Arenisca",
+            "Caliza",
+            "Granito",
+            "Basalto"
+          ],
+          "correct": 1,
+          "explanation": "Caliza → **mármol** (no foliado)."
+        },
+        {
+          "type": "quiz",
+          "question": "La cuarcita procede de:",
+          "options": [
+            "Arenisca cuarzosa",
+            "Lutita",
+            "Caliza",
+            "Basalto"
+          ],
+          "correct": 0,
+          "explanation": "Arenisca de cuarzo → **cuarcita**, muy dura y no foliada."
+        }
+      ]
+    },
+    {
+      "id": "l02-metodo",
+      "title": "Cómo describir una roca en campo",
+      "summary": "Herramientas, pruebas rápidas y el orden correcto para identificar una muestra de mano.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Reconocer una roca no es adivinar por el color: es observar **en orden** unas pocas características diagnósticas. En el examen, describe siempre la muestra antes de nombrarla."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Lupa 10×:** ver granos, cristales y cemento.",
+            "**Navaja o clavo de acero (≈ 5,5)** y **uña (≈ 2,5):** dureza.",
+            "**HCl diluido al 10 %:** detectar carbonatos.",
+            "**Placa de porcelana:** color de la raya.",
+            "**Imán:** minerales magnéticos (magnetita).",
+            "**Martillo de geólogo:** obtener una superficie fresca (la meteorizada engaña)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "El orden de observación"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Estructura:** ¿es masiva, estratificada, foliada, vesicular?",
+            "**Textura:** ¿cristales entrelazados, granos con cemento, vidrio, grano fino?",
+            "**Tamaño de grano o cristal:** grueso (visible), fino (no visible), mixto (porfídica).",
+            "**Composición:** minerales que reconoces (cuarzo, feldespato, micas, calcita...) y color general.",
+            "**Pruebas:** dureza, reacción con HCl, densidad aparente (¿pesada o liviana?).",
+            "**Nombre** de la roca y su **grupo**."
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Prueba",
+            "Resultado",
+            "Indica"
+          ],
+          "rows": [
+            [
+              "HCl en la roca",
+              "Burbujea con fuerza",
+              "Calcita: caliza o mármol"
+            ],
+            [
+              "HCl en polvo",
+              "Burbujea solo raspada",
+              "Dolomita: dolomía"
+            ],
+            [
+              "Rayar vidrio",
+              "Lo raya",
+              "Cuarzo abundante: cuarcita, sílex, granito"
+            ],
+            [
+              "Uña",
+              "La raya",
+              "Yeso, talco, arcillas"
+            ],
+            [
+              "Romper",
+              "Fractura atraviesa los granos",
+              "Cuarcita (no arenisca)"
+            ],
+            [
+              "Agua",
+              "Flota",
+              "Pumita"
+            ],
+            [
+              "Morder (dientes)",
+              "Áspera / suave",
+              "Limolita / lutita"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Usa siempre una **superficie fresca**. La meteorización cambia el color (óxidos de hierro rojizos, pátinas) y ablanda la superficie."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué conviene observar PRIMERO al describir una muestra de mano?",
+          "options": [
+            "El nombre más probable",
+            "El color",
+            "La estructura y la textura",
+            "Su uso en construcción"
+          ],
+          "correct": 2,
+          "explanation": "La **estructura y textura** (foliada, cristalina, clástica, vítrea) separan de inmediato los grandes grupos; el color es secundario y engaña."
+        },
+        {
+          "type": "quiz",
+          "question": "El primer paso al describir una muestra de mano es:",
+          "options": [
+            "Partirla",
+            "Observar si tiene cristales, granos o foliación (textura)",
+            "Pesarla",
+            "Echarle ácido"
+          ],
+          "correct": 1,
+          "explanation": "La **textura** separa los tres grupos."
+        },
+        {
+          "type": "quiz",
+          "question": "Una gota de HCl diluido que produce efervescencia indica:",
+          "options": [
+            "Cuarzo",
+            "Carbonato (calcita)",
+            "Feldespato",
+            "Mica"
+          ],
+          "correct": 1,
+          "explanation": "El CO₂ liberado delata la **calcita** (caliza, mármol)."
+        }
+      ]
+    },
+    {
+      "id": "l06-reconocimiento",
+      "title": "Reconocimiento de rocas: la clave",
+      "summary": "Clave dicotómica interactiva y las confusiones más comunes del examen.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Sigue la clave como lo harías en el examen con una muestra en la mano: cada respuesta te lleva a la siguiente pregunta hasta el nombre de la roca, con su ficha completa."
+        },
+        {
+          "type": "interactive",
+          "widget": "rock_key",
+          "title": "Clave de identificación de rocas"
+        },
+        {
+          "type": "heading",
+          "text": "Confusiones típicas (¡y cómo evitarlas!)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Se confunden",
+            "Cómo diferenciarlas"
+          ],
+          "rows": [
+            [
+              "Caliza / mármol",
+              "Ambas burbujean con HCl. El mármol tiene cristales brillantes entrelazados (azucarado); la caliza es compacta, a veces con fósiles"
+            ],
+            [
+              "Mármol / cuarcita",
+              "Ambas blancas y cristalinas. El mármol se raya con navaja y burbujea; la cuarcita raya el vidrio y no reacciona"
+            ],
+            [
+              "Arenisca / cuarcita",
+              "La arenisca se rompe rodeando los granos y se desgrana; la cuarcita se rompe atravesándolos"
+            ],
+            [
+              "Lutita / pizarra",
+              "La lutita es blanda, se ablanda con agua y huele a tierra; la pizarra es dura, suena al golpearla y forma lajas regulares"
+            ],
+            [
+              "Granito / gneis",
+              "Mismos minerales; el gneis tiene bandas orientadas, el granito no"
+            ],
+            [
+              "Basalto / andesita",
+              "El basalto es negro y pesado; la andesita, gris media y suele tener fenocristales"
+            ],
+            [
+              "Pumita / escoria",
+              "La pumita es clara y flota; la escoria es oscura y se hunde"
+            ],
+            [
+              "Toba / arenisca",
+              "La toba es liviana, con fragmentos de pómez y vidrio; la arenisca tiene granos de cuarzo redondeados"
+            ],
+            [
+              "Estratificación / foliación",
+              "La estratificación separa capas de sedimento distinto; la foliación es la orientación de los minerales"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca blanca y cristalina no reacciona con HCl y raya el vidrio. ¿Cuál es?",
+          "options": [
+            "Mármol",
+            "Caliza",
+            "Cuarcita",
+            "Yeso"
+          ],
+          "correct": 2,
+          "explanation": "Raya el vidrio (dureza > 5,5) y no es carbonato: **cuarcita**. El mármol y la caliza burbujean y se rayan con navaja; el yeso se raya con la uña."
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca oscura se separa en lajas planas, es dura y «suena» al golpearla. Al mojarla no se ablanda. Es:",
+          "options": [
+            "Lutita",
+            "Pizarra",
+            "Basalto",
+            "Esquisto"
+          ],
+          "correct": 1,
+          "explanation": "Lajas regulares + dureza + no se ablanda con agua = **pizarra** (lutita metamorfizada). La lutita se ablanda y es más blanda."
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca tiene bandas alternas claras y oscuras de grano grueso, con cuarzo, feldespato y biotita. Es:",
+          "options": [
+            "Granito",
+            "Gneis",
+            "Esquisto",
+            "Diorita"
+          ],
+          "correct": 1,
+          "explanation": "Mismos minerales que el granito pero **en bandas**: **gneis**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca de grano grueso con cuarzo, feldespato rosado y biotita, sin foliación, es:",
+          "options": [
+            "Gneis",
+            "Granito",
+            "Basalto",
+            "Arenisca"
+          ],
+          "correct": 1,
+          "explanation": "Textura fanerítica, félsica, sin bandas → **granito**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca negra, de grano muy fino, con vesículas (huecos) es:",
+          "options": [
+            "Obsidiana",
+            "Basalto vesicular",
+            "Pizarra",
+            "Carbón"
+          ],
+          "correct": 1,
+          "explanation": "Afanítica, máfica, con burbujas de gas → **basalto vesicular**."
+        }
+      ]
+    },
+    {
+      "id": "l07-practica",
+      "title": "Práctica de reconocimiento",
+      "summary": "Entrenador con muestras de mano aleatorias, ilimitadas.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Practica hasta acertar varias seguidas sin pedir pistas. Las opciones incorrectas son siempre rocas con las que se suele confundir la correcta. Lee la ficha también cuando aciertes."
+        },
+        {
+          "type": "interactive",
+          "widget": "rock_trainer",
+          "title": "Entrenador: todas las rocas"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Para el examen",
+          "text": "Responde siempre con **grupo + textura + minerales + nombre**. Por ejemplo: «Roca ígnea extrusiva, textura porfídica, con fenocristales de plagioclasa y anfíbol en matriz afanítica gris: **andesita**»."
+        },
+        {
+          "type": "interactive",
+          "widget": "rock_trainer",
+          "title": "Entrenador: solo metamórficas",
+          "params": {
+            "groups": [
+              "metFoliada",
+              "metNoFoliada"
+            ]
+          }
+        },
+        {
+          "type": "interactive",
+          "widget": "rock_trainer",
+          "title": "Entrenador: solo sedimentarias",
+          "params": {
+            "groups": [
+              "sedClastica",
+              "sedQuimica"
+            ]
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Diferencia clave entre gneis y granito:",
+          "options": [
+            "El gneis tiene bandas claras y oscuras (foliación)",
+            "El granito es más blando",
+            "El gneis no tiene cuarzo",
+            "El granito tiene vesículas"
+          ],
+          "correct": 0,
+          "explanation": "El **bandeado gnéisico** delata el metamorfismo."
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca que raya el vidrio, no reacciona al ácido y tiene granos de arena soldados es:",
+          "options": [
+            "Caliza",
+            "Cuarcita",
+            "Mármol",
+            "Lutita"
+          ],
+          "correct": 1,
+          "explanation": "Dureza alta + sin efervescencia + granos fundidos → **cuarcita**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una roca que se parte en láminas planas y finas, de grano invisible y sin brillo, es:",
+          "options": [
+            "Esquisto",
+            "Pizarra",
+            "Gneis",
+            "Basalto"
+          ],
+          "correct": 1,
+          "explanation": "Foliación pizarrosa de grano muy fino → **pizarra**."
+        }
+      ]
+    },
+    {
+      "id": "l08-ingenieria",
+      "title": "Las rocas en la ingeniería civil",
+      "summary": "Resistencia, usos y problemas típicos de cada roca en obra.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Roca",
+            "Resistencia a compresión típica (MPa)",
+            "Comportamiento"
+          ],
+          "rows": [
+            [
+              "Granito, gabro, basalto, cuarcita",
+              "100 – 300",
+              "Muy resistentes; excelentes agregados"
+            ],
+            [
+              "Andesita, gneis, mármol, caliza compacta",
+              "50 – 200",
+              "Resistentes; buenos agregados"
+            ],
+            [
+              "Arenisca",
+              "20 – 170",
+              "Muy variable según el cemento"
+            ],
+            [
+              "Esquisto, pizarra, filita",
+              "20 – 150",
+              "Muy anisótropos (dependen de la dirección)"
+            ],
+            [
+              "Lutita, limolita, toba",
+              "5 – 60",
+              "Débiles; se degradan con el agua"
+            ],
+            [
+              "Yeso, carbón",
+              "< 30",
+              "Débiles; el yeso es soluble"
+            ]
+          ],
+          "caption": "Órdenes de magnitud orientativos para roca sana; la meteorización y las fracturas los reducen mucho."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Problema",
+            "Rocas",
+            "Consecuencia"
+          ],
+          "rows": [
+            [
+              "Disolución (karst)",
+              "Caliza, yeso, sal",
+              "Cavidades, hundimientos, filtraciones"
+            ],
+            [
+              "Expansividad",
+              "Lutitas con montmorillonita",
+              "Levantamiento y fisuras en pisos y cimientos"
+            ],
+            [
+              "Desleimiento",
+              "Lutita, limolita, toba",
+              "Se desmoronan con ciclos de humedad y secado"
+            ],
+            [
+              "Reacción álcali-sílice",
+              "Riolita, obsidiana, sílex, andesita con vidrio",
+              "Expansión y fisuración del hormigón"
+            ],
+            [
+              "Anisotropía",
+              "Pizarra, esquisto, filita, lutita",
+              "Deslizamientos por planos de foliación o estratificación"
+            ],
+            [
+              "Ataque por sulfatos",
+              "Yeso, pirita alterada",
+              "Deterioro del hormigón"
+            ],
+            [
+              "Abrasividad",
+              "Cuarcita, sílex, granito",
+              "Desgaste de brocas y tuneladoras"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Para un agregado de hormigón, ¿qué roca requiere ensayos de reacción álcali-sílice antes de usarse?",
+          "options": [
+            "Caliza",
+            "Basalto sano",
+            "Sílex (chert)",
+            "Mármol"
+          ],
+          "correct": 2,
+          "explanation": "El **sílex** (sílice microcristalina) y los vidrios volcánicos reaccionan con los álcalis del cemento, formando un gel expansivo."
+        },
+        {
+          "type": "quiz",
+          "question": "Al excavar para una cimentación sobre caliza aparecen huecos y conductos. El fenómeno es:",
+          "options": [
+            "Expansividad",
+            "Karst (disolución)",
+            "Desleimiento",
+            "Foliación"
+          ],
+          "correct": 1,
+          "explanation": "La calcita se disuelve con el agua ácida, formando cavidades: **karst**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué roca suele dar problemas de disolución (karst) bajo las cimentaciones?",
+          "options": [
+            "Granito",
+            "Caliza",
+            "Cuarcita",
+            "Basalto"
+          ],
+          "correct": 1,
+          "explanation": "Los carbonatos se disuelven en agua ácida: cavidades y hundimientos."
+        },
+        {
+          "type": "quiz",
+          "question": "Las lutitas y arcillitas son problemáticas en taludes porque:",
+          "options": [
+            "Son muy duras",
+            "Se ablandan y degradan con el agua (slaking) y tienen baja resistencia",
+            "Son volcánicas",
+            "Tienen vesículas"
+          ],
+          "correct": 1,
+          "explanation": "Pierden resistencia al humedecerse y secarse."
+        }
+      ]
+    }
+  ]
+}

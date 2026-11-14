@@ -1,0 +1,332 @@
+{
+  "id": "a02-determinantes",
+  "title": "Determinantes e inversa",
+  "description": "Determinante 2 × 2, Sarrus, cofactores, propiedades y matriz inversa",
+  "lessons": [
+    {
+      "id": "l01-calculo",
+      "title": "Cálculo de determinantes",
+      "summary": "2 × 2, regla de Sarrus y desarrollo por cofactores (Laplace).",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El determinante es **un número** asociado a una matriz cuadrada. Geométricamente, |det A| es el **factor de escala de áreas** (o volúmenes) que produce la matriz; si det A = 0, la matriz «aplasta» el plano y no tiene inversa.",
+          "title": "Qué es"
+        },
+        {
+          "type": "formula",
+          "expression": "|a b; c d| = ad − bc",
+          "caption": "Determinante 2 × 2: diagonal principal menos diagonal secundaria."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "|3 2; 1 4| = 12 − 2 = **10**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "formula",
+          "expression": "|a b c; d e f; g h i| = aei + bfg + cdh − ceg − afh − bdi",
+          "caption": "Regla de Sarrus (solo 3 × 3): se copian las dos primeras columnas a la derecha; tres diagonales hacia abajo suman y tres hacia arriba restan."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "|1 2 3; 0 1 4; 5 6 0|: (1·1·0 + 2·4·5 + 3·0·6) − (3·1·5 + 1·4·6 + 2·0·0) = (0 + 40 + 0) − (15 + 24 + 0) = **1**.",
+          "title": "Sarrus"
+        },
+        {
+          "type": "heading",
+          "text": "Desarrollo por cofactores (Laplace)"
+        },
+        {
+          "type": "text",
+          "text": "Para cualquier tamaño: el **menor** Mᵢⱼ es el determinante que queda al tachar la fila i y la columna j; el **cofactor** es Cᵢⱼ = (−1)^(i+j)·Mᵢⱼ. Signos en tablero de ajedrez: + − + / − + − / + − +."
+        },
+        {
+          "type": "formula",
+          "expression": "det A = aᵢ₁Cᵢ₁ + aᵢ₂Cᵢ₂ + … + aᵢₙCᵢₙ",
+          "caption": "Desarrollando por cualquier fila (o columna). Conviene elegir la que tenga más ceros."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Por la 1.ª columna (tiene un cero): |1 2 3; 0 1 4; 5 6 0| = 1·|1 4; 6 0| − 0 + 5·|2 3; 1 4| = 1·(−24) + 5·(5) = **1** ✓.",
+          "title": "Laplace"
+        },
+        {
+          "type": "interactive",
+          "widget": "la_gauss",
+          "title": "El laboratorio calcula det(A) de cada sistema"
+        },
+        {
+          "type": "quiz",
+          "question": "|5 3; 2 4| =",
+          "options": [
+            "14",
+            "26",
+            "20",
+            "6"
+          ],
+          "correct": 0,
+          "explanation": "20 − 6."
+        },
+        {
+          "type": "quiz",
+          "question": "La regla de Sarrus sirve para matrices:",
+          "options": [
+            "2 × 2",
+            "3 × 3",
+            "Cualquiera",
+            "4 × 4"
+          ],
+          "correct": 1,
+          "explanation": "Solo 3 × 3."
+        },
+        {
+          "type": "quiz",
+          "question": "El signo del cofactor C₁₂ es:",
+          "options": [
+            "+",
+            "−",
+            "depende",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "(−1)³."
+        },
+        {
+          "type": "quiz",
+          "question": "Para Laplace conviene elegir la fila o columna con:",
+          "options": [
+            "Más números grandes",
+            "Más ceros",
+            "Más negativos",
+            "La primera siempre"
+          ],
+          "correct": 1,
+          "explanation": "Menos cálculos."
+        },
+        {
+          "type": "quiz",
+          "question": "|2 0 0; 0 3 0; 0 0 4| =",
+          "options": [
+            "9",
+            "24",
+            "0",
+            "2"
+          ],
+          "correct": 1,
+          "explanation": "Diagonal: producto."
+        }
+      ]
+    },
+    {
+      "id": "l02-propiedades",
+      "title": "Propiedades de los determinantes",
+      "summary": "Cómo cambian con las operaciones de fila; cuándo valen cero.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Efecto"
+          ],
+          "rows": [
+            [
+              "Intercambiar dos filas",
+              "Cambia el signo del determinante"
+            ],
+            [
+              "Multiplicar una fila por k",
+              "El determinante queda multiplicado por k"
+            ],
+            [
+              "Sumar a una fila un múltiplo de otra",
+              "NO cambia el determinante (base del método de Gauss)"
+            ],
+            [
+              "Fila o columna de ceros",
+              "det = 0"
+            ],
+            [
+              "Dos filas iguales o proporcionales",
+              "det = 0"
+            ],
+            [
+              "Matriz triangular o diagonal",
+              "det = producto de la diagonal"
+            ],
+            [
+              "Transpuesta",
+              "det Aᵀ = det A"
+            ],
+            [
+              "Producto",
+              "det(AB) = det A · det B"
+            ],
+            [
+              "Escalar (n × n)",
+              "det(kA) = kⁿ det A"
+            ],
+            [
+              "Inversa",
+              "det(A⁻¹) = 1/det A"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Con operaciones «sumar múltiplo de otra fila» se lleva la matriz a forma triangular y el determinante es el producto de la diagonal. Es lo que hacen las computadoras para matrices grandes.",
+          "title": "Método eficiente"
+        },
+        {
+          "type": "quiz",
+          "question": "Si se intercambian dos filas, el determinante:",
+          "options": [
+            "No cambia",
+            "Cambia de signo",
+            "Se duplica",
+            "Vale cero"
+          ],
+          "correct": 1,
+          "explanation": "Propiedad."
+        },
+        {
+          "type": "quiz",
+          "question": "Si dos filas son proporcionales, det =",
+          "options": [
+            "1",
+            "0",
+            "el producto",
+            "negativo"
+          ],
+          "correct": 1,
+          "explanation": "Son dependientes."
+        },
+        {
+          "type": "quiz",
+          "question": "Si det A = 3 (A es 2 × 2), det(2A) =",
+          "options": [
+            "6",
+            "12",
+            "3",
+            "9"
+          ],
+          "correct": 1,
+          "explanation": "2²·3."
+        },
+        {
+          "type": "quiz",
+          "question": "det(AB) =",
+          "options": [
+            "det A + det B",
+            "det A · det B",
+            "det A/det B",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "Propiedad multiplicativa."
+        }
+      ]
+    },
+    {
+      "id": "l03-inversa",
+      "title": "Matriz inversa",
+      "summary": "Existencia, fórmula 2 × 2, método de la adjunta y Gauss-Jordan.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "A⁻¹ es la matriz tal que **A·A⁻¹ = A⁻¹·A = I**. Es como el «recíproco» de un número (5·(1/5) = 1). Solo existe si A es cuadrada y **det A ≠ 0** (matriz regular o invertible). Si det A = 0 la matriz es **singular**.",
+          "title": "Inversa"
+        },
+        {
+          "type": "formula",
+          "expression": "[a b; c d]⁻¹ = (1/(ad − bc))·[d −b; −c a]",
+          "caption": "Fórmula 2 × 2: intercambiar la diagonal, cambiar de signo la otra, dividir entre el determinante."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "A = [[4, 7], [2, 6]], det = 24 − 14 = 10. A⁻¹ = (1/10)[[6, −7], [−2, 4]] = [[0,6; −0,7], [−0,2; 0,4]].",
+          "title": "Ejemplo 2 × 2"
+        },
+        {
+          "type": "formula",
+          "expression": "A⁻¹ = (1/det A)·adj(A),   adj(A) = (matriz de cofactores)ᵀ",
+          "caption": "Método de la adjunta."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Escribe [A | I] (A con la identidad a la derecha).",
+            "Con operaciones elementales de fila convierte A en I.",
+            "Lo que queda a la derecha es A⁻¹.",
+            "Si aparece una fila de ceros en el lado izquierdo, A no es invertible."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si A es invertible, el sistema A·x = b tiene solución única **x = A⁻¹·b**, igual que 5x = 10 → x = 10/5.",
+          "title": "Para qué sirve"
+        },
+        {
+          "type": "quiz",
+          "question": "Una matriz tiene inversa si:",
+          "options": [
+            "det A = 0",
+            "det A ≠ 0",
+            "Es simétrica",
+            "Es 2 × 3"
+          ],
+          "correct": 1,
+          "explanation": "Regular."
+        },
+        {
+          "type": "quiz",
+          "question": "[[2, 1], [5, 3]]⁻¹ =",
+          "options": [
+            "[[3, −1], [−5, 2]]",
+            "[[2, 1], [5, 3]]",
+            "[[3, 1], [5, 2]]",
+            "[[−3, 1], [5, −2]]"
+          ],
+          "correct": 0,
+          "explanation": "det = 1."
+        },
+        {
+          "type": "quiz",
+          "question": "A·A⁻¹ =",
+          "options": [
+            "A",
+            "O",
+            "I",
+            "A²"
+          ],
+          "correct": 2,
+          "explanation": "Definición."
+        },
+        {
+          "type": "quiz",
+          "question": "Si A es invertible, la solución de Ax = b es:",
+          "options": [
+            "x = bA⁻¹",
+            "x = A⁻¹b",
+            "x = b/A",
+            "x = Ab"
+          ],
+          "correct": 1,
+          "explanation": "Multiplicar por A⁻¹ por la izquierda."
+        }
+      ]
+    }
+  ]
+}

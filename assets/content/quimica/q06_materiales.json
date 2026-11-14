@@ -1,0 +1,507 @@
+{
+  "id": "q06-materiales",
+  "title": "Química de los materiales de construcción",
+  "description": "Cemento, acero, cal, cerámicos, vidrio, yeso, aluminio, polímeros, asfalto y protección",
+  "lessons": [
+    {
+      "id": "l01-cemento",
+      "title": "El cemento Portland",
+      "summary": "Fases del clínker, hidratación, gel C-S-H y pasivación del acero.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Fase del clínker",
+            "Fórmula",
+            "Función"
+          ],
+          "rows": [
+            [
+              "Silicato tricálcico (alita, C₃S)",
+              "3CaO·SiO₂",
+              "Resistencia temprana; mucho calor de hidratación"
+            ],
+            [
+              "Silicato dicálcico (belita, C₂S)",
+              "2CaO·SiO₂",
+              "Resistencia a largo plazo"
+            ],
+            [
+              "Aluminato tricálcico (C₃A)",
+              "3CaO·Al₂O₃",
+              "Fraguado rápido; sensible a los sulfatos"
+            ],
+            [
+              "Ferroaluminato tetracálcico (C₄AF)",
+              "4CaO·Al₂O₃·Fe₂O₃",
+              "Color gris; poca resistencia"
+            ],
+            [
+              "Yeso añadido",
+              "CaSO₄·2H₂O",
+              "Regula el fraguado"
+            ]
+          ],
+          "caption": "Elementos base: Ca, Si, Al, Fe y O."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Hidratación",
+          "text": "Al agregar agua, los silicatos de calcio reaccionan (reacción **exotérmica**) y forman el **gel C-S-H** (silicato de calcio hidratado), una red amorfa que une y endurece la pasta, y **portlandita**, Ca(OH)₂. Al precipitar, estos productos conectan las partículas y reducen los poros: aumentan la rigidez y la resistencia a compresión."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "La química de los enlaces",
+          "text": "El calcio, de baja energía de ionización, cede sus electrones y forma Ca²⁺. Los enlaces Si–O, covalentes polares, forman tetraedros muy estables. El agua, polar, hidrata los iones y disuelve parcialmente las fases del clínker."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "title": "Pasivación y carbonatación",
+          "text": "La portlandita da al hormigón un **pH > 12,5**, que forma una capa pasiva que protege al acero de la corrosión. Con los años, el CO₂ del aire reacciona con ella (Ca(OH)₂ + CO₂ → CaCO₃ + H₂O): el pH baja a ≈ 9, la capa pasiva desaparece y el acero empieza a corroerse. Los **cloruros** también rompen la pasivación."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué producto de la hidratación es el principal responsable de la resistencia del hormigón?",
+          "options": [
+            "La portlandita Ca(OH)₂",
+            "El gel C-S-H",
+            "El yeso",
+            "El C₄AF"
+          ],
+          "correct": 1,
+          "explanation": "El **gel C-S-H** es la red amorfa que une las partículas y da cohesión y resistencia."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el acero no se corroe dentro de un hormigón sano?",
+          "options": [
+            "Porque el hormigón no tiene agua",
+            "Porque el pH muy alto (> 12,5) forma una capa pasiva sobre el acero",
+            "Porque el acero es inoxidable",
+            "Porque el cemento es ácido"
+          ],
+          "correct": 1,
+          "explanation": "La alcalinidad de la portlandita **pasiva** el acero. Se pierde por carbonatación o por cloruros."
+        },
+        {
+          "type": "quiz",
+          "question": "El producto de hidratación que da la resistencia al hormigón es:",
+          "options": [
+            "Portlandita Ca(OH)₂",
+            "Gel C-S-H",
+            "Yeso",
+            "Clínker"
+          ],
+          "correct": 1,
+          "explanation": "El **silicato cálcico hidratado** (C-S-H)."
+        }
+      ]
+    },
+    {
+      "id": "l02-acero",
+      "title": "El acero y la corrosión",
+      "summary": "Hierro con carbono intersticial, enlace metálico y protección contra la corrosión.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Composición:** matriz de hierro (Fe) con **carbono** intersticial (0,20 – 0,60 % en el acero de refuerzo) y trazas de Mn y Si como desoxidantes.",
+            "**Enlace metálico:** los electrones de valencia del Fe se deslocalizan: cohesión, conductividad y ductilidad.",
+            "**Por qué el carbono lo hace más resistente:** el C, pequeño, se aloja entre los átomos de Fe, distorsiona la red y bloquea el movimiento de las **dislocaciones** (defectos que permiten deformar el cristal): sube el límite de fluencia.",
+            "**Densidad:** 7850 kg/m³. **Dilatación térmica:** 1,2 × 10⁻⁵ °C⁻¹, casi igual a la del hormigón: por eso trabajan juntos sin tensiones térmicas."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Corrosión",
+          "text": "Oxidación del hierro en presencia de **oxígeno y agua** (electrolito): 2 Fe + O₂ + 4 H⁺ → 2 Fe²⁺ + 2 H₂O. El Fe²⁺ se oxida luego a herrumbre (Fe₂O₃·xH₂O), una capa porosa que **no protege** al metal y ocupa varias veces su volumen: fisura el hormigón que lo recubre."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Protección",
+            "Cómo funciona"
+          ],
+          "rows": [
+            [
+              "Recubrimiento de hormigón",
+              "Mantiene el pH alto y aleja el agua y los cloruros"
+            ],
+            [
+              "Galvanizado",
+              "Capa de zinc: el Zn es más activo que el Fe y se corroe primero (**ánodo de sacrificio**)"
+            ],
+            [
+              "Pinturas y epóxicos",
+              "Barrera física contra agua y oxígeno"
+            ],
+            [
+              "Protección catódica",
+              "Ánodos de sacrificio o corriente impresa en estructuras enterradas o marinas"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "En el acero galvanizado, ¿por qué el zinc protege al hierro aunque se raye la capa?",
+          "options": [
+            "Porque el zinc es más noble que el hierro",
+            "Porque el zinc es más activo y se oxida en lugar del hierro (ánodo de sacrificio)",
+            "Porque el zinc no conduce",
+            "Porque el zinc es un no metal"
+          ],
+          "correct": 1,
+          "explanation": "El zinc cede electrones con más facilidad que el hierro: se corroe **primero** y protege al acero."
+        },
+        {
+          "type": "quiz",
+          "question": "La corrosión del acero es una reacción de:",
+          "options": [
+            "Neutralización",
+            "Óxido-reducción (el hierro se oxida)",
+            "Precipitación",
+            "Combustión"
+          ],
+          "correct": 1,
+          "explanation": "Fe → Fe²⁺ + 2e⁻: **oxidación**."
+        },
+        {
+          "type": "quiz",
+          "question": "El galvanizado protege el acero con una capa de:",
+          "options": [
+            "Cobre",
+            "Zinc",
+            "Plomo",
+            "Estaño"
+          ],
+          "correct": 1,
+          "explanation": "El **zinc** se oxida antes que el hierro (protección de sacrificio)."
+        }
+      ]
+    },
+    {
+      "id": "l03-cal-ceramicos-vidrio",
+      "title": "Cal, ladrillo y vidrio",
+      "summary": "Estabilización de suelos con cal, cerámicos cocidos y química del vidrio sodo-cálcico.",
+      "minutes": 11,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Cal hidratada, Ca(OH)₂, en suelos arcillosos",
+          "text": "Los cationes **Ca²⁺** reemplazan a los cationes monovalentes (Na⁺, K⁺) de las arcillas (**intercambio catiónico**), comprimen la doble capa eléctrica, reducen la repulsión entre partículas y provocan su **floculación**: baja el índice de plasticidad y la expansividad. A largo plazo reacciona con los aluminosilicatos (reacción **puzolánica**) y forma geles cementantes que aumentan la capacidad portante (CBR)."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Ladrillo cerámico",
+          "text": "Aluminosilicatos deshidratados, cuarzo libre, alúmina y óxidos de hierro (Fe₂O₃, que dan el color rojo). Al cocerse por encima de 900 °C se produce **vitrificación**: una fase vítrea con enlaces iónico-covalentes que da rigidez, estabilidad dimensional, inercia química y resistencia al fuego."
+        },
+        {
+          "type": "heading",
+          "text": "Vidrio sodo-cálcico"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Componente",
+            "Papel",
+            "Efecto"
+          ],
+          "rows": [
+            [
+              "SiO₂ (≈ 72 %)",
+              "Formador de red",
+              "Red tridimensional de tetraedros SiO₄; funde a más de 1700 °C"
+            ],
+            [
+              "Na₂O (≈ 14 %)",
+              "Fundente",
+              "El Na⁺ rompe enlaces Si–O–Si (oxígenos no puente): baja la viscosidad y la temperatura de fusión. En exceso, el vidrio se vuelve soluble"
+            ],
+            [
+              "CaO (≈ 10 %), MgO, Al₂O₃",
+              "Estabilizadores",
+              "Devuelven la inercia química y la durabilidad"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "¿Por qué es amorfo?",
+          "text": "Al enfriarse, la viscosidad aumenta tan rápido que los átomos no alcanzan a ordenarse para cristalizar: queda «congelada» una estructura **amorfa** (como la obsidiana)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Vidrio",
+            "Proceso",
+            "Resistencia",
+            "Rotura"
+          ],
+          "rows": [
+            [
+              "Común (recocido, float)",
+              "Enfriamiento lento sobre estaño fundido",
+              "≈ 40 MPa",
+              "Fragmentos grandes y afilados"
+            ],
+            [
+              "Templado",
+              "Calentado a ≈ 600 °C y enfriado bruscamente en la superficie: compresión en la superficie y tracción en el núcleo",
+              "≈ 120 – 200 MPa",
+              "Pequeños fragmentos obtusos"
+            ],
+            [
+              "Laminado",
+              "Láminas unidas con PVB (puentes de hidrógeno con la superficie del vidrio)",
+              "La del vidrio base",
+              "Los fragmentos quedan adheridos"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el vidrio templado resiste más que el común si su composición química es la misma?",
+          "options": [
+            "Porque contiene más sílice",
+            "Porque su superficie queda en compresión y hay que vencerla antes de abrir una grieta",
+            "Porque es cristalino",
+            "Porque tiene plomo"
+          ],
+          "correct": 1,
+          "explanation": "El templado no cambia la química: crea **esfuerzos residuales de compresión** en la superficie, donde empiezan las grietas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué ion de la cal produce la floculación de las arcillas?",
+          "options": [
+            "Na⁺",
+            "Ca²⁺",
+            "OH⁻",
+            "Cl⁻"
+          ],
+          "correct": 1,
+          "explanation": "El **Ca²⁺**, de carga doble, sustituye a los cationes monovalentes y comprime la doble capa de las arcillas."
+        },
+        {
+          "type": "quiz",
+          "question": "El componente principal del vidrio común es:",
+          "options": [
+            "Carbonato de calcio",
+            "Sílice (SiO₂)",
+            "Alúmina",
+            "Hierro"
+          ],
+          "correct": 1,
+          "explanation": "Vidrio sodo-cálcico: ≈ 70 % **SiO₂**."
+        }
+      ]
+    },
+    {
+      "id": "l04-yeso-aluminio",
+      "title": "Yeso frente al fuego y aluminio",
+      "summary": "Agua de cristalización del yeso y pasivación y aleaciones del aluminio.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Yeso: CaSO₄·2H₂O"
+        },
+        {
+          "type": "text",
+          "text": "Capas de Ca²⁺ y SO₄²⁻ separadas por planos de moléculas de agua unidas por puentes de hidrógeno. Esa **agua de cristalización** (≈ 20,9 % del peso) no es humedad libre: está ligada en proporción fija."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Fase",
+            "Temperatura",
+            "Reacción",
+            "Efecto"
+          ],
+          "rows": [
+            [
+              "1. Hemihidrato (basanita)",
+              "100 – 150 °C",
+              "CaSO₄·2H₂O → CaSO₄·½H₂O + 1,5 H₂O↑",
+              "Libera el 75 % del agua"
+            ],
+            [
+              "2. Anhidrita III (soluble)",
+              "200 – 300 °C",
+              "CaSO₄·½H₂O → CaSO₄ + 0,5 H₂O↑",
+              "Libera el 25 % restante"
+            ],
+            [
+              "3. Anhidrita II (insoluble)",
+              "> 400 °C",
+              "Reorganización de la red",
+              "Pierde cohesión y se fisura"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Las fases 1 y 2 son **endotérmicas**: el calor del incendio se gasta en evaporar el agua de cristalización en lugar de calentar la pared. Mientras queda agua (30 a 120 min según el espesor), la cara no expuesta rara vez supera 100 – 120 °C. Por eso las placas de yeso son **protección pasiva** contra el fuego; las tipo F llevan fibra de vidrio para no desmoronarse."
+        },
+        {
+          "type": "heading",
+          "text": "Aluminio"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Liviano:** ≈ 2,7 g/cm³, un tercio de la densidad del acero.",
+            "**Pasivación espontánea:** se recubre de una película densa de alúmina (Al₂O₃) que detiene la oxidación.",
+            "**Aleaciones:** el Mg distorsiona la red (serie 5000); Mg + Si forman precipitados de Mg₂Si con tratamiento térmico T6 (serie 6000): 6063-T6 ≈ 215 MPa (perfilería), 6061-T6 ≈ 310 MPa (estructural). El puro (1100) tiene solo ≈ 90 MPa.",
+            "**Limitaciones:** módulo de elasticidad ≈ 70 GPa (un tercio del acero: se deforma el triple); gran dilatación térmica; corrosión galvánica con metales más nobles y en contacto con hormigón fresco (alcalino)."
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué una placa de yeso retrasa el paso del calor en un incendio?",
+          "options": [
+            "Porque el yeso es combustible",
+            "Porque absorbe calor al liberar su agua de cristalización (deshidratación endotérmica)",
+            "Porque es metálico",
+            "Porque refleja la luz"
+          ],
+          "correct": 1,
+          "explanation": "La energía del fuego se usa para **evaporar el agua** ligada a la red: la temperatura del otro lado se mantiene cerca de 100 °C."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué protege al aluminio de la corrosión sin necesidad de pintura?",
+          "options": [
+            "Una capa de zinc",
+            "Una película de alúmina (Al₂O₃) que se forma sola",
+            "Su alta densidad",
+            "El carbono intersticial"
+          ],
+          "correct": 1,
+          "explanation": "La **pasivación** forma casi al instante una capa nanométrica, densa e impermeable de Al₂O₃."
+        },
+        {
+          "type": "quiz",
+          "question": "El yeso protege del fuego porque:",
+          "options": [
+            "No se calienta",
+            "Libera su agua de cristalización, que absorbe calor al evaporarse",
+            "Es metálico",
+            "Refleja la luz"
+          ],
+          "correct": 1,
+          "explanation": "CaSO₄·2H₂O pierde agua y consume energía."
+        }
+      ]
+    },
+    {
+      "id": "l05-polimeros-asfalto",
+      "title": "Polímeros, asfalto y recubrimientos",
+      "summary": "PVC, HDPE, XPS; química del asfalto y modificación con SBS; pinturas fotocatalíticas y cristalizantes.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Polímeros",
+          "text": "Macromoléculas de cadena larga con enlaces **covalentes** dentro de la cadena, pero unidas entre sí por fuerzas **intermoleculares** débiles (London, dipolo–dipolo, puentes de hidrógeno). Por eso son livianos, resistentes a la corrosión y deformables, pero muy sensibles a la temperatura y al tiempo de carga (fluencia lenta)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Polímero",
+            "Uso",
+            "Clave química"
+          ],
+          "rows": [
+            [
+              "PVC-U, −[CH₂−CHCl]ₙ−",
+              "Tuberías de agua y alcantarillado",
+              "El Cl (≈ 57 % de la masa) crea dipolos C–Cl: rigidez. Al arder libera HCl: autoextinguible. Se degrada con UV"
+            ],
+            [
+              "HDPE (polietileno de alta densidad)",
+              "Geomembranas, rellenos sanitarios",
+              "Cadenas lineales apolares: muy cristalino, impermeable, resistente a solventes"
+            ],
+            [
+              "XPS (poliestireno extruido)",
+              "Aislamiento térmico",
+              "Espuma de celda cerrada, k ≈ 0,035 W/(m·K); combustible"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Asfalto"
+        },
+        {
+          "type": "text",
+          "text": "Mezcla de miles de hidrocarburos (C 82–88 %, H 8–11 %) con heteroátomos (S, N, O) que le dan polaridad. Se describe con el fraccionamiento **SARA**: **asfaltenos** (rígidos, polares, aromáticos, dan el color negro), **resinas** (los mantienen dispersos), y **aromáticos y saturados** (maltenos, la fase fluida). Es un **sistema coloidal**."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Es **termoplástico**: en frío se vuelve frágil (fisuración térmica) y en calor fluye (ahuellamiento). El polímero **SBS** (3 – 6 %) forma una red elástica dentro del asfalto: los bloques de polibutadieno dan elasticidad y los de poliestireno, rigidez, ampliando el rango de temperaturas de servicio."
+        },
+        {
+          "type": "heading",
+          "text": "Recubrimientos activos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Pintura fotocatalítica (TiO₂ anatasa):** la luz UV lleva un electrón a la banda de conducción y deja un hueco; se forman radicales OH• y O₂•⁻ que degradan suciedad, moho y NOx. Autolimpiante, pero necesita luz UV.",
+            "**Impermeabilizante cristalizante:** silicatos alcalinos que migran por los poros y reaccionan con la portlandita libre del hormigón, formando cristales insolubles que sellan microfisuras de hasta 0,4 mm."
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué hace el SBS en un asfalto modificado?",
+          "options": [
+            "Lo vuelve soluble en agua",
+            "Forma una red elástica que mejora el comportamiento en frío y en calor",
+            "Aumenta el contenido de azufre",
+            "Lo convierte en un material cristalino"
+          ],
+          "correct": 1,
+          "explanation": "El SBS absorbe maltenos, se hincha y forma una **red elastomérica**: más resistencia al ahuellamiento y a la fisuración térmica."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué las tuberías de PVC son autoextinguibles?",
+          "options": [
+            "Porque contienen agua",
+            "Porque al quemarse liberan HCl, que desplaza el oxígeno y apaga la llama",
+            "Porque son metálicas",
+            "Porque no tienen carbono"
+          ],
+          "correct": 1,
+          "explanation": "El alto contenido de **cloro** libera HCl al descomponerse, que actúa como supresor de la llama."
+        },
+        {
+          "type": "quiz",
+          "question": "El asfalto modificado con SBS mejora:",
+          "options": [
+            "El color",
+            "La elasticidad y la resistencia a deformaciones por temperatura",
+            "La densidad",
+            "El olor"
+          ],
+          "correct": 1,
+          "explanation": "El polímero SBS da **elasticidad**."
+        }
+      ]
+    }
+  ]
+}

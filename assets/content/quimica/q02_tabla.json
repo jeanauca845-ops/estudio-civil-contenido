@@ -1,0 +1,1689 @@
+{
+  "id": "q02-tabla",
+  "title": "La tabla periódica y las propiedades periódicas",
+  "description": "Historia, organización (periodos, grupos, bloques, familias), casilla de un elemento, carga nuclear efectiva y Slater, radio, electronegatividad, energía de ionización, afinidad electrónica y carácter metálico",
+  "lessons": [
+    {
+      "id": "l01-historia",
+      "title": "¿Qué es la tabla periódica? Historia",
+      "summary": "Elemento, número atómico y periodicidad; Döbereiner, Newlands, Mendeléiev y Moseley.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es una **organización de los elementos según su estructura y propiedades**. Leerla significa **ubicar patrones**: dónde está el elemento, qué tipo de elemento es y cómo tiende a comportarse químicamente.",
+          "title": "Tabla periódica"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "**Elemento**",
+              "Átomos de una misma clase química (mismo Z)"
+            ],
+            [
+              "**Número atómico**",
+              "Cantidad de protones en el núcleo"
+            ],
+            [
+              "**Periodicidad**",
+              "Propiedades que se repiten con cierto patrón"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Orden moderno:** número atómico creciente → se forman patrones de propiedades."
+        },
+        {
+          "type": "heading",
+          "text": "De la lista al mapa: evolución histórica"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Científico",
+            "Año",
+            "Aporte",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "**Döbereiner**",
+              "1829",
+              "Observó que ciertos elementos podían agruparse en **tríadas** con propiedades semejantes. La masa atómica del elemento central era aproximadamente el **promedio** de las otras dos",
+              "Li (6,9) – Na (23,0) – K (39,1); Ca (40,1) – Sr (87,6) – Ba (137,3); Cl (35,5) – Br (79,9) – I (126,9)"
+            ],
+            [
+              "**Newlands**",
+              "1864",
+              "Ordenó los elementos por **masa atómica creciente**. Observó que las propiedades se repetían **cada ocho elementos**, como en una «**ley de las octavas**» (similar a las notas de un piano)",
+              "1.ª octava: Li Be B C N O F; 2.ª octava: Na Mg Al Si P S Cl"
+            ],
+            [
+              "**Mendeléiev**",
+              "1869",
+              "Organizó los elementos por masa atómica **y propiedades químicas**. Dejó **espacios en blanco** para elementos aún no descubiertos y **predijo sus propiedades** con gran precisión",
+              "Galio (Ga), germanio (Ge) y escandio (Sc), descubiertos después"
+            ],
+            [
+              "**Moseley**",
+              "1913",
+              "Demostró que el **número atómico (Z)**, y no la masa atómica, es el criterio correcto para ordenar los elementos. La ley periódica se basa en la repetición de propiedades al aumentar Z",
+              "Cada elemento tiene un **espectro de rayos X** característico, relacionado con su Z (Na = 11, Mg = 12, Al = 13)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Tríada Li – Na – K: (6,9 + 39,1)/2 = 23,0, que es justamente la masa del Na. Tríada Cl – Br – I: (35,5 + 126,9)/2 = 81,2 ≈ 79,9 del Br.",
+          "title": "Comprueba la tríada"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La tabla periódica actual es el resultado de muchas observaciones y correcciones: pasamos de **buscar semejanzas** (tríadas), a **identificar repeticiones periódicas** (octavas, Mendeléiev) y, finalmente, a comprender que el **número atómico** organiza mejor los elementos (Moseley).",
+          "title": "Idea clave"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Mendeléiev predijo el «eka-silicio» con masa ≈ 72 y densidad ≈ 5,5 g/cm³; en 1886 se descubrió el germanio con masa 72,6 y densidad 5,35 g/cm³. Fue la gran prueba de que la tabla funcionaba.",
+          "title": "Dato histórico"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién propuso las tríadas?",
+          "options": [
+            "Newlands",
+            "Döbereiner",
+            "Mendeléiev",
+            "Moseley"
+          ],
+          "correct": 1,
+          "explanation": "**Döbereiner** (1829)."
+        },
+        {
+          "type": "quiz",
+          "question": "La «ley de las octavas» es de:",
+          "options": [
+            "Döbereiner",
+            "Newlands",
+            "Mendeléiev",
+            "Moseley"
+          ],
+          "correct": 1,
+          "explanation": "**Newlands** (1864): las propiedades se repiten cada 8 elementos."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién dejó espacios para elementos no descubiertos?",
+          "options": [
+            "Moseley",
+            "Newlands",
+            "Mendeléiev",
+            "Dalton"
+          ],
+          "correct": 2,
+          "explanation": "**Mendeléiev** (1869) y predijo Ga, Ge y Sc."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué criterio estableció Moseley para ordenar los elementos?",
+          "options": [
+            "La masa atómica",
+            "El número atómico Z",
+            "La densidad",
+            "El color"
+          ],
+          "correct": 1,
+          "explanation": "El **número atómico**, gracias a los espectros de rayos X."
+        },
+        {
+          "type": "quiz",
+          "question": "En la tríada Ca – Sr – Ba, la masa del Sr es aproximadamente:",
+          "options": [
+            "La suma de las otras dos",
+            "El promedio de las otras dos",
+            "El doble del Ca",
+            "Igual a la del Ba"
+          ],
+          "correct": 1,
+          "explanation": "(40,1 + 137,3)/2 = 88,7 ≈ 87,6."
+        },
+        {
+          "type": "quiz",
+          "question": "Periodicidad significa:",
+          "options": [
+            "Que los elementos se descubrieron por periodos",
+            "Que las propiedades se repiten con cierto patrón",
+            "Que todos los elementos son iguales",
+            "Que la masa crece siempre"
+          ],
+          "correct": 1,
+          "explanation": "Definición de clase."
+        }
+      ]
+    },
+    {
+      "id": "l02-organizacion",
+      "title": "Organización de la tabla moderna",
+      "summary": "Periodos, grupos, bloques s p d f; representativos, transición, transición interna; metales, no metales y metaloides.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "**7 periodos, 18 grupos y 118 elementos** reconocidos. Filas horizontales = **periodos**; columnas verticales = **grupos o familias**. La ubicación de un elemento da información química.",
+          "title": "Tabla periódica moderna"
+        },
+        {
+          "type": "heading",
+          "text": "Bloques s, p, d y f"
+        },
+        {
+          "type": "text",
+          "text": "Cada bloque indica el **subnivel que se está llenando** al ubicar los electrones: la posición en la tabla se relaciona con la configuración electrónica."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Bloque",
+            "Ubicación",
+            "Último subnivel que se llena",
+            "Columnas"
+          ],
+          "rows": [
+            [
+              "s",
+              "Grupos 1 y 2 (más el He)",
+              "ns",
+              "2"
+            ],
+            [
+              "p",
+              "Grupos 13 a 18",
+              "np",
+              "6"
+            ],
+            [
+              "d",
+              "Grupos 3 a 12",
+              "(n − 1)d",
+              "10"
+            ],
+            [
+              "f",
+              "Lantánidos y actínidos (abajo)",
+              "(n − 2)f",
+              "14"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tipos de elementos según su ubicación"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Ubicación",
+            "Características"
+          ],
+          "rows": [
+            [
+              "**Representativos**",
+              "Grupos 1–2 y 13–18 (bloques s y p)",
+              "Sus propiedades se relacionan de manera más directa con los electrones del nivel externo. Incluyen metales, no metales, metaloides, halógenos y gases nobles"
+            ],
+            [
+              "**De transición**",
+              "Grupos 3 al 12 (bloque d)",
+              "Metales en el centro de la tabla. Muchos tienen **varios estados de oxidación** y forman **compuestos coloreados**. Fe (acero y corrosión), Cu (conductores eléctricos), Zn (galvanizado), Ti (aleaciones resistentes)"
+            ],
+            [
+              "**De transición interna**",
+              "Bloque f: lantánidos (periodo 6) y actínidos (periodo 7)",
+              "Se dibujan abajo: su lugar real conecta con las filas 6 y 7. Si se colocaran en el cuerpo principal, la tabla sería demasiado ancha para imprimirse o proyectarse. Los actínidos son muchos radiactivos (uranio, plutonio)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Metales, no metales y metaloides"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Clase",
+            "Características",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "**Metales**",
+              "Buenos conductores, maleables; son la **mayoría** de los elementos (izquierda y centro)",
+              "Fe, Cu, Al, Na, Ca, Zn"
+            ],
+            [
+              "**No metales**",
+              "Mayor diversidad: gases, sólidos frágiles; alta electronegatividad en algunos casos (derecha)",
+              "O, N, C, S, Cl, F"
+            ],
+            [
+              "**Metaloides**",
+              "Propiedades **intermedias**; importantes en materiales y semiconductores (escalera entre metales y no metales)",
+              "B, Si, Ge, As, Sb, Te"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "periodic_trends",
+          "title": "Tabla periódica interactiva"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos grupos tiene la tabla periódica?",
+          "options": [
+            "7",
+            "8",
+            "18",
+            "118"
+          ],
+          "correct": 2,
+          "explanation": "**18 grupos**, 7 periodos."
+        },
+        {
+          "type": "quiz",
+          "question": "Los elementos de transición forman el bloque:",
+          "options": [
+            "s",
+            "p",
+            "d",
+            "f"
+          ],
+          "correct": 2,
+          "explanation": "Grupos 3 a 12: bloque **d**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué los lantánidos y actínidos se dibujan abajo?",
+          "options": [
+            "Porque son gases",
+            "Para que la tabla no sea demasiado ancha",
+            "Porque no tienen electrones",
+            "Porque no son elementos"
+          ],
+          "correct": 1,
+          "explanation": "Su lugar real está en los periodos 6 y 7."
+        },
+        {
+          "type": "quiz",
+          "question": "El silicio es un:",
+          "options": [
+            "Metal",
+            "No metal",
+            "Metaloide",
+            "Gas noble"
+          ],
+          "correct": 2,
+          "explanation": "**Metaloide**: base de los semiconductores."
+        },
+        {
+          "type": "quiz",
+          "question": "Los elementos representativos son los de los grupos:",
+          "options": [
+            "3 al 12",
+            "1–2 y 13–18",
+            "Solo el 18",
+            "Lantánidos"
+          ],
+          "correct": 1,
+          "explanation": "Bloques s y p."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué característica es típica de los metales de transición?",
+          "options": [
+            "Un solo estado de oxidación",
+            "Varios estados de oxidación y compuestos coloreados",
+            "Son gases",
+            "No conducen"
+          ],
+          "correct": 1,
+          "explanation": "Ej. Fe²⁺/Fe³⁺, Cu⁺/Cu²⁺."
+        }
+      ]
+    },
+    {
+      "id": "l03-periodos-grupos",
+      "title": "Periodos, grupos y la casilla de un elemento",
+      "summary": "Relación con la configuración, las familias principales y qué información trae cada casilla.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Periodos: las filas horizontales"
+        },
+        {
+          "type": "text",
+          "text": "Un periodo se lee de **izquierda a derecha**. En el periodo 3, por ejemplo, encontramos desde el Na hasta el Ar. **El número del periodo se relaciona con el nivel principal de energía más externo ocupado** por los electrones."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Configuración",
+            "Mayor n",
+            "Periodo"
+          ],
+          "rows": [
+            [
+              "Na (11)",
+              "1s² 2s² 2p⁶ 3s¹",
+              "3",
+              "3"
+            ],
+            [
+              "Mg (12)",
+              "1s² 2s² 2p⁶ 3s²",
+              "3",
+              "3"
+            ],
+            [
+              "Cl (17)",
+              "1s² 2s² 2p⁶ 3s² 3p⁵",
+              "3",
+              "3"
+            ],
+            [
+              "Fe (26)",
+              "[Ar] 4s² 3d⁶",
+              "4",
+              "4"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Para elementos representativos, el número del periodo **coincide con el mayor nivel principal n ocupado**."
+        },
+        {
+          "type": "heading",
+          "text": "Grupos o familias: las columnas verticales"
+        },
+        {
+          "type": "text",
+          "text": "Agrupan elementos con **comportamiento químico semejante**. No significa que todos sean idénticos: significa que **comparten patrones químicos por su estructura electrónica externa**. Ejemplo: grupo 17, halógenos (F, Cl, Br, I…): tienen tendencias químicas relacionadas: forman sales y compuestos iónicos con muchos metales."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Grupo",
+            "Nombre",
+            "Por qué se llama así",
+            "Elementos",
+            "e⁻ de valencia"
+          ],
+          "rows": [
+            [
+              "1",
+              "**Alcalinos**",
+              "Forman hidróxidos alcalinos (bases)",
+              "Li, Na, K, Rb, Cs, Fr",
+              "1 (ns¹)"
+            ],
+            [
+              "2",
+              "**Alcalinotérreos**",
+              "Alcalinos encontrados en la tierra",
+              "Be, Mg, Ca, Sr, Ba, Ra",
+              "2 (ns²)"
+            ],
+            [
+              "13",
+              "**Familia del boro** (térreos)",
+              "Nombrados por el primer elemento, el boro",
+              "B, Al, Ga, In, Tl",
+              "3"
+            ],
+            [
+              "14",
+              "**Familia del carbono** (carbonoideos)",
+              "El carbono es la base de la vida orgánica",
+              "C, Si, Ge, Sn, Pb",
+              "4"
+            ],
+            [
+              "15",
+              "**Familia del nitrógeno** (nitrogenoideos)",
+              "El nitrógeno es el elemento clave",
+              "N, P, As, Sb, Bi",
+              "5"
+            ],
+            [
+              "16",
+              "**Anfígenos** (calcógenos)",
+              "Forman compuestos ácidos y básicos (anfóteros)",
+              "O, S, Se, Te, Po",
+              "6"
+            ],
+            [
+              "17",
+              "**Halógenos**",
+              "Del griego «formadores de sales»",
+              "F, Cl, Br, I, At",
+              "7"
+            ],
+            [
+              "18",
+              "**Gases nobles**",
+              "Muy estables y no reactivos",
+              "He, Ne, Ar, Kr, Xe, Rn",
+              "8 (He: 2)"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Grupo (representativos):  bloque s → grupo = e⁻ de valencia;  bloque p → grupo = 10 + e⁻ de valencia",
+          "caption": "Ejemplo: Cl 3s² 3p⁵ → 7 de valencia → grupo 17; periodo 3."
+        },
+        {
+          "type": "heading",
+          "text": "¿Qué información puede aparecer en la casilla de un elemento?"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "N.º",
+            "Dato",
+            "Significado",
+            "Ejemplo: cloro"
+          ],
+          "rows": [
+            [
+              "1",
+              "Número atómico (Z)",
+              "Cantidad de protones; identifica al elemento",
+              "17"
+            ],
+            [
+              "2",
+              "Símbolo químico",
+              "Abreviatura internacional del elemento",
+              "Cl"
+            ],
+            [
+              "3",
+              "Nombre",
+              "Nombre del elemento químico",
+              "Cloro"
+            ],
+            [
+              "4",
+              "Masa atómica",
+              "Promedio de las masas isotópicas naturales",
+              "35,45"
+            ],
+            [
+              "5",
+              "Configuración electrónica",
+              "Cómo se distribuyen los electrones",
+              "[Ne] 3s² 3p⁵"
+            ],
+            [
+              "6",
+              "Estados de oxidación",
+              "Valores que puede presentar al formar compuestos",
+              "−1, +1, +3, +5, +7"
+            ],
+            [
+              "7",
+              "Electronegatividad (Pauling)",
+              "Capacidad de atraer electrones en un enlace",
+              "3,16"
+            ],
+            [
+              "8",
+              "Radio atómico o covalente",
+              "Tamaño aproximado del átomo según la tabla empleada",
+              "99 pm"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "No todas las tablas muestran la misma información. Las más sencillas incluyen Z, símbolo, nombre y masa atómica; otras añaden configuración electrónica, estados de oxidación, electronegatividad o radios atómicos. Las categorías por color suelen ser: gases nobles, halógenos, no metales, metaloides, otros metales, metales de transición, alcalinotérreos, alcalinos, lantánidos y actínidos.",
+          "title": "Importante"
+        },
+        {
+          "type": "quiz",
+          "question": "El periodo de un elemento representativo coincide con:",
+          "options": [
+            "Su número de electrones de valencia",
+            "Su mayor nivel principal n ocupado",
+            "Su número de neutrones",
+            "Su grupo"
+          ],
+          "correct": 1,
+          "explanation": "Na: n = 3 → periodo 3."
+        },
+        {
+          "type": "quiz",
+          "question": "¿En qué grupo y periodo está un elemento con configuración 1s² 2s² 2p⁶ 3s² 3p⁴?",
+          "options": [
+            "Grupo 4, periodo 3",
+            "Grupo 16, periodo 3",
+            "Grupo 14, periodo 4",
+            "Grupo 6, periodo 2"
+          ],
+          "correct": 1,
+          "explanation": "6 de valencia en bloque p → 10 + 6 = **16**; n = 3 → **periodo 3** (es el azufre)."
+        },
+        {
+          "type": "quiz",
+          "question": "Los halógenos son el grupo:",
+          "options": [
+            "1",
+            "2",
+            "17",
+            "18"
+          ],
+          "correct": 2,
+          "explanation": "Grupo **17**: «formadores de sales»."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué significa «halógeno»?",
+          "options": [
+            "Formador de ácidos",
+            "Formador de sales",
+            "Gas noble",
+            "Metal de la tierra"
+          ],
+          "correct": 1,
+          "explanation": "Del griego: **formadores de sales**."
+        },
+        {
+          "type": "quiz",
+          "question": "Los anfígenos forman compuestos:",
+          "options": [
+            "Solo ácidos",
+            "Ácidos y básicos",
+            "Solo básicos",
+            "No forman compuestos"
+          ],
+          "correct": 1,
+          "explanation": "Por eso «anfi-»: de ambos tipos."
+        },
+        {
+          "type": "quiz",
+          "question": "El dato «−1, +1, +3, +5, +7» en la casilla del cloro corresponde a:",
+          "options": [
+            "Electronegatividad",
+            "Estados de oxidación",
+            "Configuración",
+            "Isótopos"
+          ],
+          "correct": 1,
+          "explanation": "Valores al formar compuestos."
+        },
+        {
+          "type": "quiz",
+          "question": "Grupo de un elemento con configuración [Ar] 4s²:",
+          "options": [
+            "1",
+            "2",
+            "12",
+            "14"
+          ],
+          "correct": 1,
+          "explanation": "Bloque s con 2 de valencia: grupo **2** (es el calcio)."
+        }
+      ]
+    },
+    {
+      "id": "l04-carga-efectiva",
+      "title": "Carga nuclear efectiva y reglas de Slater",
+      "summary": "Propiedades periódicas, apantallamiento σ, Zef = Z − σ y ejemplos calculados.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Son características que **se repiten** y dependen de la **configuración electrónica** de los átomos, del **número atómico (Z)** del elemento y de la **carga nuclear efectiva**. A partir de ellas se pueden entender las características y el comportamiento de todos los elementos de la tabla periódica.",
+          "title": "Propiedades periódicas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo de relación",
+            "Propiedades"
+          ],
+          "rows": [
+            [
+              "1. Relaciones de **tamaño**",
+              "a) Radio atómico; b) Radio iónico"
+            ],
+            [
+              "2. Relaciones de **energía**",
+              "a) Electronegatividad; b) Energía de ionización; c) Afinidad electrónica"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Conceptos previos"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la **fuerza de atracción** ejercida por el núcleo sobre los **electrones más alejados** del núcleo.",
+          "title": "Carga nuclear efectiva (Zef)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Depende de",
+            "Explicación"
+          ],
+          "rows": [
+            [
+              "1. **Carga nuclear real (Z)**",
+              "Al aumentar Z, mayor será la carga nuclear, ya que aumenta la cantidad de protones en el núcleo"
+            ],
+            [
+              "2. **Apantallamiento (σ)**",
+              "Efecto de interferencia que originan los **electrones interiores**, los cuales **reducen la atracción** entre el núcleo y los electrones del último nivel de energía (efecto pantalla)"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Zef = Z − σ",
+          "caption": "Z = número atómico; σ = constante de apantallamiento."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La carga nuclear efectiva es **MAYOR** donde el número atómico es muy grande (muchos protones) y el efecto de apantallamiento es leve: hacia la **derecha** de un periodo (y arriba a la derecha de la tabla).",
+          "title": "Dónde es mayor"
+        },
+        {
+          "type": "heading",
+          "text": "Reglas de Slater para calcular σ"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Se escribe la configuración y se ordenan los orbitales en grupos: **(1s) (2s 2p) (3s 3p) (3d) (4s 4p) (4d) (4f) (5s 5p)…** en orden creciente.",
+            "**No** contribuyen al apantallamiento los electrones de grupos **superiores** (a la derecha) al considerado.",
+            "A cada electrón del **mismo grupo** le corresponde **0,35** por cada uno de los demás presentes, excepto en el orbital **1s**, que vale **0,30**.",
+            "Si el electrón está en **ns o np**: los electrones de la capa inferior **n − 1** (s, p o d) contribuyen **0,85** cada uno, y **1,00** los de capas más internas.",
+            "Si el electrón está en **nd o nf**: se toma **1,00** para todos los electrones de grupos inferiores."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplos resueltos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Electrón",
+            "Agrupación",
+            "Cálculo de σ",
+            "σ",
+            "Zef = Z − σ"
+          ],
+          "rows": [
+            [
+              "Li, 2s (Z = 3)",
+              "(1s²)(2s¹)",
+              "2·0,85",
+              "1,70",
+              "3 − 1,70 = **1,30**"
+            ],
+            [
+              "O, 2p (Z = 8)",
+              "(1s²)(2s² 2p⁴)",
+              "5·0,35 + 2·0,85",
+              "3,45",
+              "8 − 3,45 = **4,55**"
+            ],
+            [
+              "F, 2p (Z = 9)",
+              "(1s²)(2s² 2p⁵)",
+              "6·0,35 + 2·0,85",
+              "3,80",
+              "9 − 3,80 = **5,20**"
+            ],
+            [
+              "Na, 3s (Z = 11)",
+              "(1s²)(2s² 2p⁶)(3s¹)",
+              "8·0,85 + 2·1,00",
+              "8,80",
+              "11 − 8,80 = **2,20**"
+            ],
+            [
+              "Cl, 3p (Z = 17)",
+              "(1s²)(2s² 2p⁶)(3s² 3p⁵)",
+              "6·0,35 + 8·0,85 + 2·1,00",
+              "10,90",
+              "17 − 10,90 = **6,10**"
+            ],
+            [
+              "K, 4s (Z = 19)",
+              "(1s²)(2s² 2p⁶)(3s² 3p⁶)(4s¹)",
+              "8·0,85 + 10·1,00",
+              "16,80",
+              "19 − 16,80 = **2,20**"
+            ],
+            [
+              "Fe, 3d (Z = 26)",
+              "(1s²)(2s² 2p⁶)(3s² 3p⁶)(3d⁶)(4s²)",
+              "5·0,35 + 18·1,00 (el 4s no cuenta)",
+              "19,75",
+              "26 − 19,75 = **6,25**"
+            ],
+            [
+              "Zn, 4s (Z = 30)",
+              "(1s²)(2s² 2p⁶)(3s² 3p⁶)(3d¹⁰)(4s²)",
+              "1·0,35 + 18·0,85 + 10·1,00",
+              "25,65",
+              "30 − 25,65 = **4,35**"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Na (Zef 2,2) y Cl (Zef 6,1) están en el mismo periodo, pero el electrón externo del cloro siente casi el triple de atracción: por eso el Cl es más pequeño, más electronegativo y más difícil de ionizar. Na y K tienen Zef parecida (2,2), pero el K tiene su electrón un nivel más lejos: por eso el K es más grande y más reactivo.",
+          "title": "Lo que explican estos números"
+        },
+        {
+          "type": "interactive",
+          "widget": "slater",
+          "title": "Calculadora de Slater: Zef de cualquier electrón",
+          "params": {
+            "z": 17
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Zef = Z − σ. ¿Qué es σ?",
+          "options": [
+            "El número de protones",
+            "La constante de apantallamiento",
+            "El número de neutrones",
+            "La electronegatividad"
+          ],
+          "correct": 1,
+          "explanation": "Efecto pantalla de los electrones internos."
+        },
+        {
+          "type": "quiz",
+          "question": "El apantallamiento se debe a:",
+          "options": [
+            "Los protones",
+            "Los electrones interiores",
+            "Los neutrones",
+            "Los electrones de otro átomo"
+          ],
+          "correct": 1,
+          "explanation": "Los internos «tapan» la carga del núcleo."
+        },
+        {
+          "type": "quiz",
+          "question": "Según Slater, un electrón del mismo grupo (que no sea 1s) aporta:",
+          "options": [
+            "0,30",
+            "0,35",
+            "0,85",
+            "1,00"
+          ],
+          "correct": 1,
+          "explanation": "**0,35** (0,30 solo en 1s)."
+        },
+        {
+          "type": "quiz",
+          "question": "Para un electrón 3s, cada electrón de la capa n = 2 aporta:",
+          "options": [
+            "0,35",
+            "0,85",
+            "1,00",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "Capa n − 1: **0,85**."
+        },
+        {
+          "type": "quiz",
+          "question": "Zef del electrón 3s del sodio:",
+          "options": [
+            "1,0",
+            "2,2",
+            "8,8",
+            "11"
+          ],
+          "correct": 1,
+          "explanation": "σ = 8·0,85 + 2 = 8,8 → Zef = **2,2**."
+        },
+        {
+          "type": "quiz",
+          "question": "En un periodo, de izquierda a derecha, la carga nuclear efectiva:",
+          "options": [
+            "Disminuye",
+            "Aumenta",
+            "No cambia",
+            "Se anula"
+          ],
+          "correct": 1,
+          "explanation": "Aumenta Z y el apantallamiento crece poco."
+        },
+        {
+          "type": "quiz",
+          "question": "Zef del electrón 2p del flúor:",
+          "options": [
+            "5,20",
+            "9,00",
+            "3,80",
+            "7,00"
+          ],
+          "correct": 0,
+          "explanation": "σ = 6·0,35 + 2·0,85 = 3,8 → **5,2**."
+        }
+      ]
+    },
+    {
+      "id": "l05-radios",
+      "title": "Radio atómico y radio iónico",
+      "summary": "Definición, tendencias en grupo y periodo, cationes más pequeños y aniones más grandes.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Distancia desde el núcleo hasta su órbita más externa. Se define como **la mitad de la distancia entre DOS núcleos de un mismo átomo unidos entre sí**. Ejemplo: en el N₂ los núcleos están a 1,5 Å → radio del N = **0,75 Å**.",
+          "title": "Radio atómico"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "1 Å (ángstrom) = 10⁻¹⁰ m = 100 pm. Un átomo mide del orden de 1 Å."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Dirección",
+            "Tendencia",
+            "Por qué",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "**En un grupo** (hacia abajo)",
+              "El radio **aumenta**",
+              "Los electrones de valencia se encuentran en un nivel de energía (n) más alto",
+              "H 0,37 Å → Li 1,52 Å → Na 1,86 Å"
+            ],
+            [
+              "**En un periodo** (hacia la derecha)",
+              "El radio **disminuye**",
+              "Aumenta la **carga nuclear efectiva**: el núcleo atrae más a los electrones del mismo nivel",
+              "Li 1,52 Å → Ne 0,71 Å (periodo 2)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Radio atómico **creciente: hacia abajo y hacia la izquierda**. El átomo más grande está abajo a la izquierda (Cs, Fr) y el más pequeño arriba a la derecha (He)."
+        },
+        {
+          "type": "heading",
+          "text": "Radio iónico"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es el radio que tiene un átomo cuando **ha ganado o perdido electrones**.",
+          "title": "Radio iónico"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Proceso",
+            "Ejemplo",
+            "Regla",
+            "Por qué"
+          ],
+          "rows": [
+            [
+              "Pierde 1 e⁻",
+              "Li (1,23 Å) → Li⁺ (0,68 Å)",
+              "Los **cationes** son siempre **menores** que los átomos neutros de los que se forman",
+              "Queda el mismo núcleo para menos electrones (y a veces se pierde un nivel entero)"
+            ],
+            [
+              "Gana 1 e⁻",
+              "F (0,64 Å) → F⁻ (1,36 Å)",
+              "Los **aniones** son siempre **mayores** que los átomos neutros de los que se forman",
+              "Más electrones con la misma carga nuclear: más repulsión, la nube se expande"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "En una serie isoelectrónica (todos con 10 e⁻) el tamaño disminuye al aumentar Z: O²⁻ > F⁻ > Na⁺ > Mg²⁺ > Al³⁺. Mismos electrones, pero más protones tirando de ellos.",
+          "title": "Ejemplo avanzado"
+        },
+        {
+          "type": "interactive",
+          "widget": "periodic_trends",
+          "title": "Explora el radio atómico en la tabla"
+        },
+        {
+          "type": "quiz",
+          "question": "En un grupo, al bajar, el radio atómico:",
+          "options": [
+            "Disminuye",
+            "Aumenta",
+            "No cambia",
+            "Se hace cero"
+          ],
+          "correct": 1,
+          "explanation": "Se añade un nivel n más alto."
+        },
+        {
+          "type": "quiz",
+          "question": "En un periodo, hacia la derecha, el radio:",
+          "options": [
+            "Aumenta",
+            "Disminuye",
+            "Es constante",
+            "Aumenta y luego disminuye"
+          ],
+          "correct": 1,
+          "explanation": "Aumenta la carga nuclear efectiva."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es más grande?",
+          "options": [
+            "Na",
+            "Cl",
+            "Ar",
+            "Mg"
+          ],
+          "correct": 0,
+          "explanation": "Mismo periodo: el de la izquierda, **Na**."
+        },
+        {
+          "type": "quiz",
+          "question": "Comparado con el átomo de Li, el ion Li⁺ es:",
+          "options": [
+            "Más grande",
+            "Más pequeño",
+            "Igual",
+            "Depende de la temperatura"
+          ],
+          "correct": 1,
+          "explanation": "Cationes **menores**: 1,23 → 0,68 Å."
+        },
+        {
+          "type": "quiz",
+          "question": "Comparado con el F, el F⁻ es:",
+          "options": [
+            "Más pequeño",
+            "Más grande",
+            "Igual",
+            "Un catión"
+          ],
+          "correct": 1,
+          "explanation": "Aniones **mayores**: 0,64 → 1,36 Å."
+        },
+        {
+          "type": "quiz",
+          "question": "Radio atómico del N si la distancia N–N es 1,5 Å:",
+          "options": [
+            "1,5 Å",
+            "0,75 Å",
+            "3 Å",
+            "0,375 Å"
+          ],
+          "correct": 1,
+          "explanation": "La mitad: **0,75 Å**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el más pequeño de la serie isoelectrónica?",
+          "options": [
+            "O²⁻",
+            "F⁻",
+            "Na⁺",
+            "Al³⁺"
+          ],
+          "correct": 3,
+          "explanation": "Mayor Z (13) con 10 electrones: **Al³⁺**."
+        }
+      ]
+    },
+    {
+      "id": "l06-energia",
+      "title": "Electronegatividad, energía de ionización y afinidad electrónica",
+      "summary": "Definiciones, procesos endotérmico y exotérmico, valores de referencia y tendencias.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Electronegatividad"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Capacidad de un átomo para **atraer electrones durante la formación de enlaces**.",
+          "title": "Electronegatividad"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Al avanzar **hacia la derecha** en un periodo **aumenta**: a menor tamaño del átomo resulta más fácil captar el electrón, al encontrarse más atraído por el núcleo.",
+            "Al **subir** en un grupo **aumenta** (pasando de abajo hacia arriba): átomo más pequeño, el núcleo atrae más.",
+            "Por lo tanto, los electrones serán mayormente atraídos por los átomos más electronegativos."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "EN (Pauling)",
+            "Elemento",
+            "EN (Pauling)"
+          ],
+          "rows": [
+            [
+              "H",
+              "2,1",
+              "F",
+              "4,0 (el más electronegativo)"
+            ],
+            [
+              "Li",
+              "1,0",
+              "O",
+              "3,5"
+            ],
+            [
+              "Be",
+              "1,5",
+              "N",
+              "3,0"
+            ],
+            [
+              "B",
+              "2,0",
+              "Cl",
+              "3,0"
+            ],
+            [
+              "C",
+              "2,5",
+              "Br",
+              "2,8"
+            ],
+            [
+              "Na",
+              "0,9",
+              "I",
+              "2,5"
+            ],
+            [
+              "Mg",
+              "1,2",
+              "S",
+              "2,5"
+            ],
+            [
+              "Al",
+              "1,5",
+              "P",
+              "2,1"
+            ],
+            [
+              "Si",
+              "1,8",
+              "K",
+              "0,8"
+            ],
+            [
+              "Cs, Fr",
+              "0,7 – 0,8 (los menos electronegativos)",
+              "Metales de transición",
+              "1,4 – 1,8"
+            ]
+          ],
+          "caption": "Lantánidos: 1,0 – 1,1; actínidos: 1,3 – 1,5. Algunas tablas usan valores más precisos: Na 0,93, Cl 3,16, H 2,20, C 2,55, O 3,44."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "En la diapositiva, el francio (EN 0,7) y el flúor (EN 4,0) «compiten» en un ring por un electrón como dos imanes: gana el flúor, que lo atrae con mucha más fuerza.",
+          "title": "Fr contra F"
+        },
+        {
+          "type": "heading",
+          "text": "Energía de ionización (EI)"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la **energía requerida (kJ/mol)** para **extraer un electrón** de un átomo neutro (en estado gaseoso), o sea, para **formar un catión**.",
+          "title": "Energía de ionización"
+        },
+        {
+          "type": "formula",
+          "expression": "X(g) + energía → X⁺(g) + e⁻",
+          "caption": "Ejemplo: H(g) + 1312 kJ/mol → H⁺(g) + e⁻. Es un proceso **endotérmico**: el átomo absorbe energía."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Si el último electrón está **débilmente** unido, la EI es **baja**; si está **fuertemente** unido, la EI es **alta**.",
+            "**Periodo:** aumenta de izquierda a derecha (a mayor Z crece la atracción del núcleo por los electrones externos).",
+            "**Grupo:** aumenta de abajo hacia arriba (a menor número de niveles, la fuerza de atracción del núcleo aumenta y el electrón es más difícil de arrancar)."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "EI (kJ/mol)",
+            "Interpretación"
+          ],
+          "rows": [
+            [
+              "He",
+              "2372",
+              "La más alta: **difícilmente** forma cationes"
+            ],
+            [
+              "H",
+              "≈ 1312 (1314 en la diapositiva)",
+              "Alta"
+            ],
+            [
+              "Na",
+              "496",
+              "Baja"
+            ],
+            [
+              "Cs",
+              "≈ 376 (377 en la diapositiva)",
+              "Muy baja: **fácilmente** forma cationes"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Se puede arrancar un segundo, tercer… electrón: la segunda EI es siempre mayor que la primera. Na: EI₁ = 496 kJ/mol, EI₂ = 4562 kJ/mol (enorme, porque habría que romper el octeto del 2p⁶). Por eso el sodio forma Na⁺ y nunca Na²⁺.",
+          "title": "Energías de ionización sucesivas"
+        },
+        {
+          "type": "heading",
+          "text": "Afinidad electrónica (AE)"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la **energía intercambiada cuando un átomo captura un electrón** para formar un **anión** (átomo neutro + electrón → ion negativo). Mide la **capacidad que tiene un átomo para aceptar electrones**: a mayor afinidad electrónica, mayor tendencia del elemento a aceptar un electrón.",
+          "title": "Afinidad electrónica"
+        },
+        {
+          "type": "formula",
+          "expression": "X(g) + e⁻ → X⁻(g) + energía        ΔH < 0",
+          "caption": "Proceso **generalmente exotérmico**: el átomo **desprende** energía."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Periodo:** aumenta de izquierda a derecha.",
+            "**Grupo:** aumenta de abajo hacia arriba. Al descender en un grupo disminuye: a mayor tamaño del átomo resulta más complejo captar el electrón, pues la atracción del núcleo es menor.",
+            "A los **gases nobles** se les asigna afinidad electrónica de **cero** por no aceptar electrones."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "AE (kJ/mol)",
+            "Comentario"
+          ],
+          "rows": [
+            [
+              "F",
+              "≈ −330 (−328)",
+              "Alta: acepta electrones con mucha facilidad"
+            ],
+            [
+              "Cl",
+              "−349",
+              "La más negativa de todas (el F es tan pequeño que sus electrones se repelen)"
+            ],
+            [
+              "O",
+              "−141",
+              "Moderada"
+            ],
+            [
+              "Cs",
+              "≈ −45",
+              "Baja"
+            ],
+            [
+              "Gases nobles",
+              "0",
+              "No aceptan electrones"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El signo negativo indica energía **liberada**. «Mayor afinidad» significa un valor **más negativo** (se libera más energía)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Qué mide",
+            "Proceso",
+            "Tendencia"
+          ],
+          "rows": [
+            [
+              "Electronegatividad",
+              "Atraer electrones **en un enlace**",
+              "—",
+              "↑ derecha y ↑ arriba"
+            ],
+            [
+              "Energía de ionización",
+              "Energía para **quitar** un electrón",
+              "Endotérmico (absorbe)",
+              "↑ derecha y ↑ arriba"
+            ],
+            [
+              "Afinidad electrónica",
+              "Energía al **ganar** un electrón",
+              "Exotérmico (libera)",
+              "↑ derecha y ↑ arriba"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "periodic_trends",
+          "title": "Compara EN, EI y AE en la tabla"
+        },
+        {
+          "type": "quiz",
+          "question": "El elemento más electronegativo es:",
+          "options": [
+            "Oxígeno",
+            "Cloro",
+            "Flúor",
+            "Francio"
+          ],
+          "correct": 2,
+          "explanation": "**F** = 4,0."
+        },
+        {
+          "type": "quiz",
+          "question": "La energía de ionización es un proceso:",
+          "options": [
+            "Exotérmico",
+            "Endotérmico",
+            "Nuclear",
+            "Sin energía"
+          ],
+          "correct": 1,
+          "explanation": "Hay que **suministrar** energía para arrancar el electrón."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué elemento forma cationes con más facilidad?",
+          "options": [
+            "He",
+            "F",
+            "Cs",
+            "O"
+          ],
+          "correct": 2,
+          "explanation": "EI muy baja (≈ 376 kJ/mol)."
+        },
+        {
+          "type": "quiz",
+          "question": "La afinidad electrónica corresponde a la formación de:",
+          "options": [
+            "Un catión",
+            "Un anión",
+            "Un átomo neutro",
+            "Un isótopo"
+          ],
+          "correct": 1,
+          "explanation": "El átomo **captura** un electrón."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué afinidad electrónica se asigna a los gases nobles?",
+          "options": [
+            "La más alta",
+            "Cero",
+            "−330 kJ/mol",
+            "2372 kJ/mol"
+          ],
+          "correct": 1,
+          "explanation": "No aceptan electrones: **0**."
+        },
+        {
+          "type": "quiz",
+          "question": "En un grupo, al bajar, la energía de ionización:",
+          "options": [
+            "Aumenta",
+            "Disminuye",
+            "No cambia",
+            "Se duplica"
+          ],
+          "correct": 1,
+          "explanation": "El electrón está más lejos del núcleo: más fácil de arrancar."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el Na forma Na⁺ y no Na²⁺?",
+          "options": [
+            "Porque su segunda energía de ionización es enorme (habría que romper el octeto)",
+            "Porque tiene 2 electrones de valencia",
+            "Porque es un gas",
+            "Porque su afinidad es cero"
+          ],
+          "correct": 0,
+          "explanation": "EI₂ ≈ 4562 kJ/mol frente a EI₁ = 496."
+        },
+        {
+          "type": "quiz",
+          "question": "Electronegatividad del flúor y del litio en Pauling:",
+          "options": [
+            "4,0 y 1,0",
+            "3,5 y 0,9",
+            "2,1 y 4,0",
+            "1,0 y 4,0"
+          ],
+          "correct": 0,
+          "explanation": "F 4,0; Li 1,0 (diferencia 3,0: enlace iónico en LiF)."
+        }
+      ]
+    },
+    {
+      "id": "l07-caracter-metalico",
+      "title": "Carácter metálico y resumen",
+      "summary": "Metales frente a no metales: propiedades físicas y químicas; resumen de todas las tendencias.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Hace referencia al **comportamiento como metal o no metal** de un átomo, en función de su tendencia a **ganar o perder sus electrones externos**.",
+          "title": "Carácter metálico"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Elementos metálicos** → poco electronegativos, con **baja** energía de ionización y **baja** afinidad electrónica (pierden electrones con facilidad).",
+            "**Elementos no metálicos** → muy electronegativos, con **alta** energía de ionización y **alta** afinidad electrónica (ganan electrones con facilidad).",
+            "El carácter metálico **aumenta hacia la izquierda y hacia abajo** (el francio y el cesio son los más metálicos)."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Metales",
+            "No metales"
+          ],
+          "rows": [
+            [
+              "Conductividad eléctrica",
+              "Elevada. Disminuye al aumentar la temperatura",
+              "Deficiente, excepto el carbono en su forma alotrópica de grafito"
+            ],
+            [
+              "Conductividad térmica",
+              "Elevada",
+              "Deficiente, excepto el carbono como grafito"
+            ],
+            [
+              "Brillo",
+              "Gris metálico, excepto cobre y oro",
+              "Sin brillo metálico"
+            ],
+            [
+              "Estado de agregación",
+              "Sólidos, excepto el mercurio. El punto de fusión del cesio y del galio es bajo (≈ 30 °C)",
+              "Sólidos, líquidos (bromo) o gaseosos"
+            ],
+            [
+              "Ductilidad",
+              "Dúctiles",
+              "No son dúctiles"
+            ],
+            [
+              "Tipo de enlace",
+              "En estado sólido, enlace metálico",
+              "Moléculas con enlaces covalentes"
+            ],
+            [
+              "Características físicas",
+              "Maleables",
+              "En estado sólido son quebradizos"
+            ],
+            [
+              "Electrones de valencia",
+              "Pocos: tres o menos",
+              "Muchos: cuatro o más"
+            ],
+            [
+              "Afinidad electrónica",
+              "Débil tendencia a aceptar electrones",
+              "Elevada tendencia a aceptar electrones: forman aniones con facilidad"
+            ],
+            [
+              "Energía de ionización",
+              "Baja: forman cationes con facilidad",
+              "Elevada"
+            ],
+            [
+              "Electronegatividad",
+              "Baja",
+              "Elevada"
+            ],
+            [
+              "Compuestos",
+              "Iónicos con los no metales",
+              "Iónicos con los metales y moleculares con otros no metales"
+            ]
+          ],
+          "caption": "Las primeras siete filas son propiedades físicas; las cinco últimas, químicas"
+        },
+        {
+          "type": "heading",
+          "text": "Resumen de las propiedades periódicas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "En un periodo (→ derecha)",
+            "En un grupo (↑ arriba)",
+            "Máximo en"
+          ],
+          "rows": [
+            [
+              "Radio atómico",
+              "Disminuye",
+              "Disminuye (aumenta hacia abajo)",
+              "Abajo a la izquierda (Cs, Fr)"
+            ],
+            [
+              "Carácter metálico",
+              "Disminuye",
+              "Disminuye (aumenta hacia abajo)",
+              "Abajo a la izquierda (Fr, Cs)"
+            ],
+            [
+              "Energía de ionización",
+              "Aumenta",
+              "Aumenta",
+              "Arriba a la derecha (He)"
+            ],
+            [
+              "Afinidad electrónica",
+              "Aumenta",
+              "Aumenta",
+              "Arriba a la derecha (halógenos: Cl, F)"
+            ],
+            [
+              "Electronegatividad",
+              "Aumenta",
+              "Aumenta",
+              "Arriba a la derecha (F)"
+            ],
+            [
+              "Carga nuclear efectiva",
+              "Aumenta",
+              "Aumenta ligeramente",
+              "Derecha"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Regla de oro: **radio y carácter metálico** crecen hacia **abajo-izquierda**; **energía de ionización, afinidad electrónica, electronegatividad y carga nuclear efectiva** crecen hacia **arriba-derecha**. Todo se explica con la carga nuclear efectiva y el número de niveles."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El carácter metálico explica la **corrosión**: los metales tienden a perder electrones (oxidarse). El zinc y el aluminio, más «metálicos» (más activos) que el hierro, se sacrifican para protegerlo (galvanizado, ánodos de sacrificio en tuberías y estructuras marinas)."
+        },
+        {
+          "type": "interactive",
+          "widget": "periodic_trends",
+          "title": "Repaso visual de todas las tendencias"
+        },
+        {
+          "type": "quiz",
+          "question": "El carácter metálico aumenta:",
+          "options": [
+            "Hacia arriba y a la derecha",
+            "Hacia abajo y a la izquierda",
+            "Solo hacia la derecha",
+            "No tiene tendencia"
+          ],
+          "correct": 1,
+          "explanation": "Igual que el radio atómico."
+        },
+        {
+          "type": "quiz",
+          "question": "Los metales tienen:",
+          "options": [
+            "Alta energía de ionización",
+            "Baja energía de ionización y baja electronegatividad",
+            "Alta afinidad electrónica",
+            "Muchos electrones de valencia"
+          ],
+          "correct": 1,
+          "explanation": "Pierden electrones con facilidad."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué no metal conduce la electricidad?",
+          "options": [
+            "Azufre",
+            "Carbono en forma de grafito",
+            "Oxígeno",
+            "Fósforo"
+          ],
+          "correct": 1,
+          "explanation": "Excepción de la tabla: el **grafito**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué metal es líquido a temperatura ambiente?",
+          "options": [
+            "Galio",
+            "Cesio",
+            "Mercurio",
+            "Sodio"
+          ],
+          "correct": 2,
+          "explanation": "**Mercurio**; Ga y Cs funden cerca de 30 °C."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué propiedad NO aumenta hacia arriba y a la derecha?",
+          "options": [
+            "Electronegatividad",
+            "Energía de ionización",
+            "Radio atómico",
+            "Afinidad electrónica"
+          ],
+          "correct": 2,
+          "explanation": "El radio aumenta hacia abajo-izquierda."
+        },
+        {
+          "type": "quiz",
+          "question": "En estado sólido, los no metales son generalmente:",
+          "options": [
+            "Maleables",
+            "Quebradizos",
+            "Dúctiles",
+            "Brillantes"
+          ],
+          "correct": 1,
+          "explanation": "Quebradizos."
+        },
+        {
+          "type": "quiz",
+          "question": "La conductividad eléctrica de un metal al aumentar la temperatura:",
+          "options": [
+            "Aumenta",
+            "Disminuye",
+            "No cambia",
+            "Se vuelve infinita"
+          ],
+          "correct": 1,
+          "explanation": "Los átomos vibran más y estorban el paso de los electrones."
+        }
+      ]
+    }
+  ]
+}

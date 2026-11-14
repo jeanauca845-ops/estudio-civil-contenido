@@ -1,0 +1,901 @@
+{
+  "id": "u03-minerales",
+  "title": "Minerales",
+  "description": "Capítulo 2 · Definición, cristalización, clasificación y propiedades",
+  "lessons": [
+    {
+      "id": "l01-mineral",
+      "title": "¿Qué es un mineral?",
+      "summary": "Las cuatro condiciones de un mineral; minerales, mineraloides y rocas.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Antes de estudiar las rocas hay que entender los **minerales** que las forman: erupciones, formación de montañas, meteorización, erosión y terremotos implican rocas y minerales."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Mineral",
+          "text": "Sólido **inorgánico**, de **composición química** y **estructura cristalina** determinadas, formado de modo **natural**."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Sustancia natural:** formada por procesos geológicos, no en un laboratorio.",
+            "**Sustancia inorgánica.**",
+            "**Sustancia cristalina:** sus átomos tienen un orden interno que se repite.",
+            "**Composición química definida:** se expresa con una fórmula (cuarzo: SiO₂; calcita: CaCO₃)."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Roca",
+          "text": "Material sólido formado por cristales o granos de **uno o más minerales**, agrupados de forma natural. Pocas rocas son de un solo mineral (la **caliza**, casi toda de calcita); la mayoría son agregados de varios."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "title": "Lo que NO es mineral",
+          "text": "La **obsidiana** y la **pumita** (rocas volcánicas) son vidrios **no cristalinos**: se enfriaron tan rápido que los átomos no se ordenaron. Se llaman **mineraloides**. El **carbón** tampoco es mineral: está formado por restos **orgánicos**."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "title": "Minerales en la vida diaria",
+          "text": "La mina del lápiz es **grafito**; el talco para bebés viene del mineral **talco**; las brocas de los dentistas llevan **diamante**; y el **cuarzo** es la fuente del silicio de los chips."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el carbón NO es un mineral?",
+          "options": [
+            "Porque no es natural",
+            "Porque es de origen orgánico",
+            "Porque es líquido",
+            "Porque es muy blando"
+          ],
+          "correct": 1,
+          "explanation": "El carbón se forma de **restos vegetales**: incumple la condición de sustancia inorgánica."
+        },
+        {
+          "type": "quiz",
+          "question": "La obsidiana es natural, sólida e inorgánica. ¿Qué condición incumple?",
+          "options": [
+            "Composición química definida",
+            "Estructura cristalina",
+            "Origen natural",
+            "Estado sólido"
+          ],
+          "correct": 1,
+          "explanation": "Es un vidrio **amorfo**: no tiene estructura cristalina. Por eso es un mineraloide."
+        }
+      ]
+    },
+    {
+      "id": "l02-corteza",
+      "title": "Composición química de la corteza",
+      "summary": "Los óxidos y elementos más abundantes; por qué dominan los silicatos.",
+      "minutes": 6,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "% en la corteza"
+          ],
+          "rows": [
+            [
+              "Oxígeno (O)",
+              "46,60"
+            ],
+            [
+              "Silicio (Si)",
+              "27,72"
+            ],
+            [
+              "Aluminio (Al)",
+              "8,13"
+            ],
+            [
+              "Hierro (Fe)",
+              "5,00"
+            ],
+            [
+              "Calcio (Ca)",
+              "3,63"
+            ],
+            [
+              "Sodio (Na)",
+              "2,83"
+            ],
+            [
+              "Potasio (K)",
+              "2,59"
+            ],
+            [
+              "Magnesio (Mg)",
+              "2,09"
+            ]
+          ],
+          "caption": "Ocho elementos forman casi el 99 % de la corteza."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El **oxígeno** y el **silicio** juntos forman casi el **75 %** de las rocas de la corteza (en masa). Por eso los minerales más abundantes son los **silicatos**, construidos con silicio y oxígeno."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Óxido",
+            "Nombre",
+            "%"
+          ],
+          "rows": [
+            [
+              "SiO₂",
+              "Óxido de silicio (IV), sílice",
+              "59,26"
+            ],
+            [
+              "Al₂O₃",
+              "Óxido de aluminio, alúmina",
+              "15,35"
+            ],
+            [
+              "CaO",
+              "Óxido de calcio",
+              "5,08"
+            ],
+            [
+              "Na₂O",
+              "Óxido de sodio",
+              "3,81"
+            ],
+            [
+              "FeO",
+              "Óxido de hierro (II)",
+              "3,74"
+            ],
+            [
+              "MgO",
+              "Óxido de magnesio",
+              "3,46"
+            ],
+            [
+              "Fe₂O₃",
+              "Óxido de hierro (III)",
+              "3,14"
+            ],
+            [
+              "K₂O",
+              "Óxido de potasio",
+              "3,12"
+            ],
+            [
+              "H₂O",
+              "Agua",
+              "1,26"
+            ],
+            [
+              "TiO₂",
+              "Óxido de titanio",
+              "0,73"
+            ],
+            [
+              "P₂O₅",
+              "Óxido de fósforo",
+              "0,28"
+            ]
+          ],
+          "caption": "Composición promedio de las rocas corticales expresada como óxidos."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Los mismos óxidos aparecen en la química del **cemento** (SiO₂, Al₂O₃, CaO, Fe₂O₃): el clínker se fabrica con caliza y arcilla, es decir, con minerales de la corteza."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuáles son los dos elementos más abundantes de la corteza terrestre?",
+          "options": [
+            "Hierro y oxígeno",
+            "Oxígeno y silicio",
+            "Silicio y aluminio",
+            "Calcio y carbono"
+          ],
+          "correct": 1,
+          "explanation": "**Oxígeno (46,6 %)** y **silicio (27,7 %)**: juntos casi el 75 %."
+        },
+        {
+          "type": "quiz",
+          "question": "El elemento más abundante en la corteza terrestre es:",
+          "options": [
+            "Silicio",
+            "Oxígeno",
+            "Hierro",
+            "Aluminio"
+          ],
+          "correct": 1,
+          "explanation": "**Oxígeno** (≈ 46 % en masa), seguido del silicio."
+        }
+      ]
+    },
+    {
+      "id": "l03-cristalizacion",
+      "title": "Cristalización y cristales",
+      "summary": "Factores de cristalización, tamaños de cristal y elementos de un cristal.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Cristalización",
+          "text": "Proceso de formación de los cristales de los minerales que componen las rocas."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Descenso de temperatura**",
+            "**Descenso de presión**",
+            "**Tiempo** disponible",
+            "**Espacio** disponible",
+            "**Material** a cristalizar"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Según cómo se combinen estos factores se obtienen distintas sustancias cristalinas:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Los cristales se reconocen…"
+          ],
+          "rows": [
+            [
+              "Macrocristalina",
+              "A simple vista"
+            ],
+            [
+              "Microcristalina",
+              "Con microscopio petrográfico"
+            ],
+            [
+              "Criptocristalina",
+              "Solo por difracción de rayos X"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "title": "Tiempo y tamaño de los cristales",
+          "text": "Un magma que se enfría **lentamente** en profundidad da cristales **grandes** (granito: se ven a simple vista). Si se enfría **rápido** en superficie, los cristales son **pequeños** (basalto) o no llegan a formarse (obsidiana)."
+        },
+        {
+          "type": "text",
+          "text": "Los **rayos X** tienen longitudes de onda de 10 a 0,1 nm, del orden de la distancia entre átomos; por eso, al atravesar un cristal, se difractan y revelan su estructura interna."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Elementos de un cristal",
+          "text": "**Caras:** superficies planas, lisas y en general brillantes que limitan el cristal. **Aristas:** intersección de dos caras adyacentes. **Vértices:** intersección de tres o más caras."
+        },
+        {
+          "type": "quiz",
+          "question": "Un granito muestra cristales de cuarzo y feldespato de varios milímetros. ¿Qué indica?",
+          "options": [
+            "Que se enfrió muy rápido en superficie",
+            "Que se enfrió lentamente en profundidad",
+            "Que es un vidrio volcánico",
+            "Que es criptocristalino"
+          ],
+          "correct": 1,
+          "explanation": "Cristales grandes (textura macrocristalina) = **enfriamiento lento**, con tiempo para que los átomos se ordenen."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cómo se llama la línea donde se cortan dos caras de un cristal?",
+          "options": [
+            "Vértice",
+            "Arista",
+            "Plano de exfoliación",
+            "Eje"
+          ],
+          "correct": 1,
+          "explanation": "Dos caras adyacentes se cortan en una **arista**; tres o más, en un **vértice**."
+        }
+      ]
+    },
+    {
+      "id": "l04-clasificacion",
+      "title": "Clasificación de los minerales",
+      "summary": "Silicatos, no silicatos, arcillas, elementos nativos y minerales esenciales o accesorios.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Silicatos",
+            "No silicatos"
+          ],
+          "rows": [
+            [
+              "Grupo del olivino",
+              "Sulfuros"
+            ],
+            [
+              "Grupo del piroxeno",
+              "Haluros"
+            ],
+            [
+              "Grupo del anfíbol",
+              "Óxidos e hidróxidos"
+            ],
+            [
+              "Grupo de la mica",
+              "Carbonatos"
+            ],
+            [
+              "Grupo del feldespato",
+              "Wolframatos (tungstatos) y fosfatos"
+            ],
+            [
+              "Grupo del feldespatoide",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Esenciales, accesorios y secundarios",
+          "text": "**Esenciales:** definen la roca y le dan nombre. **Accesorios:** aparecen en pequeñas cantidades. **Secundarios:** resultan de la descomposición de minerales previos, sobre todo por acción del **agua**."
+        },
+        {
+          "type": "heading",
+          "text": "Minerales de arcilla"
+        },
+        {
+          "type": "text",
+          "text": "Las arcillas pueden ser primarias o secundarias. Las más comunes son la **caolinita**, la **montmorillonita** y la **illita**."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En clase se mencionó la «lutita» junto a las arcillas: la **lutita** es una **roca** sedimentaria formada por partículas de arcilla, no un mineral de arcilla. El tercer mineral de arcilla común es la **illita**."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La **montmorillonita** absorbe agua entre sus láminas y **se hincha** mucho: los suelos con ella son **expansivos** y agrietan pisos, muros y cimentaciones. La **caolinita** es mucho más estable."
+        },
+        {
+          "type": "heading",
+          "text": "Elementos nativos"
+        },
+        {
+          "type": "text",
+          "text": "Son elementos que aparecen **sin combinarse** con otros."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Metálicos",
+            "Semimetálicos",
+            "No metálicos"
+          ],
+          "rows": [
+            [
+              "Oro (Au)",
+              "Arsénico (As)",
+              "Carbono (C): diamante, grafito"
+            ],
+            [
+              "Plata (Ag)",
+              "Antimonio (Sb)",
+              "Azufre (S)"
+            ],
+            [
+              "Cobre (Cu)",
+              "Bismuto (Bi)",
+              ""
+            ],
+            [
+              "Platino (Pt)",
+              "",
+              ""
+            ],
+            [
+              "Hierro (Fe)",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Una cimentación sobre arcilla se agrieta en cada época lluviosa. ¿Qué mineral de arcilla es el principal sospechoso?",
+          "options": [
+            "Caolinita",
+            "Montmorillonita",
+            "Cuarzo",
+            "Calcita"
+          ],
+          "correct": 1,
+          "explanation": "La **montmorillonita** es una arcilla **expansiva**: se hincha al mojarse y se contrae al secarse."
+        },
+        {
+          "type": "quiz",
+          "question": "La calcita (CaCO₃) pertenece al grupo de los:",
+          "options": [
+            "Silicatos",
+            "Sulfuros",
+            "Carbonatos",
+            "Haluros"
+          ],
+          "correct": 2,
+          "explanation": "Contiene el anión carbonato (CO₃²⁻): es un **carbonato**."
+        }
+      ]
+    },
+    {
+      "id": "l05-dureza",
+      "title": "Dureza y escala de Mohs",
+      "summary": "Ensayo de rayado, escala de Mohs y por qué el grafito y el diamante son tan distintos.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Las propiedades de los minerales se agrupan en **vectoriales** (dependen de la dirección, como la dureza o la exfoliación), **ópticas** (según el comportamiento de la luz) y **escalares** (iguales en todas direcciones, como la densidad)."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Dureza",
+          "text": "Resistencia que opone la superficie de un mineral a ser **rayada** por otro. Es constante para cada especie mineral, por eso es una de las pruebas más rápidas para identificar un mineral desconocido."
+        },
+        {
+          "type": "text",
+          "text": "El mineralogista alemán **Friedrich Mohs** propuso una escala con **10 minerales patrón**, del más blando al más duro: cada mineral puede ser rayado por todos los que le siguen. En campo se usan referencias como la **uña** (≈ 2,5), una **moneda de cobre** (≈ 3,5), el **vidrio o la navaja** (≈ 5,5) y una **lima de acero** (≈ 6,5)."
+        },
+        {
+          "type": "interactive",
+          "widget": "mohs_lab",
+          "title": "Laboratorio: ensayo de rayado"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La escala de Mohs es **ordinal**: solo ordena. El salto real de dureza entre el corindón (9) y el diamante (10) es mayor que entre el talco (1) y el corindón."
+        },
+        {
+          "type": "heading",
+          "text": "Grafito y diamante: mismo elemento, distinta dureza"
+        },
+        {
+          "type": "text",
+          "text": "La dureza depende de la **composición química** y también de la **disposición de los átomos**: cuanto mayores son las fuerzas de cohesión, mayor es la dureza. El grafito (Mohs 1–2) y el diamante (Mohs 10) son **carbono puro**."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "Grafito",
+            "Diamante"
+          ],
+          "rows": [
+            [
+              "Enlaces por átomo de C",
+              "3, en un mismo plano",
+              "4, en tres dimensiones"
+            ],
+            [
+              "Estructura",
+              "Láminas de anillos hexagonales unidas débilmente",
+              "Red tetraédrica rígida"
+            ],
+            [
+              "Dureza de Mohs",
+              "1 – 2",
+              "10"
+            ],
+            [
+              "Comportamiento",
+              "Las láminas se deslizan: tacto graso, mancha el papel",
+              "El mineral natural más duro"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Alotropía",
+          "text": "Propiedad de algunos elementos de presentarse con **estructuras distintas**. Carbono: grafito y diamante. Oxígeno: O₂ (atmosférico) y O₃ (ozono)."
+        },
+        {
+          "type": "quiz",
+          "question": "Una muestra raya a la calcita, pero es rayada por el apatito. ¿Cuál es su dureza aproximada?",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "correct": 1,
+          "explanation": "Si raya a la calcita, su dureza es mayor que 3; si el apatito la raya, es menor que 5. Por lo tanto es ≈ **4**, como la fluorita."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el grafito es blando si el diamante, también de carbono, es el mineral más duro?",
+          "options": [
+            "Porque el grafito tiene impurezas de hierro",
+            "Porque en el grafito los átomos forman láminas débilmente unidas entre sí",
+            "Porque el grafito es amorfo",
+            "Porque el grafito es orgánico"
+          ],
+          "correct": 1,
+          "explanation": "En el grafito cada carbono se une a otros 3 en **láminas planas** que se deslizan con facilidad; en el diamante cada carbono se une a 4 en una **red tridimensional** rígida."
+        }
+      ]
+    },
+    {
+      "id": "l06-densidad",
+      "title": "Densidad, magnetismo y radiactividad",
+      "summary": "Propiedades escalares y especiales para identificar minerales.",
+      "minutes": 7,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Densidad",
+          "text": "Masa por unidad de volumen. En los minerales aumenta con la **masa de los átomos** que los forman y con lo **apretados** que estén en la red cristalina."
+        },
+        {
+          "type": "list",
+          "items": [
+            "La mayoría de los minerales formadores de rocas: ≈ **2,7 g/cm³**.",
+            "Minerales metálicos: ≈ **5 g/cm³** en promedio.",
+            "**Minerales pesados:** densidad mayor que 2,9 g/cm³; por ejemplo circón, pirita, piroxeno y granate."
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La densidad de los agregados define el peso del hormigón. Para blindajes contra radiación (hospitales) se usan **agregados pesados**, como la magnetita o la barita, que producen hormigones mucho más densos que el normal."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Magnetismo",
+          "text": "Propiedad de algunos minerales de **atraer el hierro**. En general, los que contienen hierro, níquel o cobalto son atraídos por un imán. La **magnetita** fue el primer imán conocido. **Oersted** comprobó que una corriente eléctrica produce un campo magnético."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Radiactividad",
+          "text": "Propiedad de algunos minerales de emitir partículas o radiación de forma **natural y espontánea**. La descubrió **Becquerel en 1896** en el uranio. Más tarde se aisló el **radio**, un millón de veces más radiactivo que el uranio."
+        },
+        {
+          "type": "text",
+          "text": "Hay unos **4000 minerales** conocidos, cada uno definido por su composición química y su estructura interna. De los elementos conocidos, solo **92** aparecen de forma natural."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál de estos es un mineral «pesado» (densidad > 2,9 g/cm³)?",
+          "options": [
+            "Cuarzo",
+            "Feldespato",
+            "Pirita",
+            "Yeso"
+          ],
+          "correct": 2,
+          "explanation": "La **pirita** (FeS₂) tiene ≈ 5 g/cm³. Cuarzo y feldespato rondan 2,6–2,7 g/cm³ y el yeso, ≈ 2,3 g/cm³."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué mineral es atraído con fuerza por un imán?",
+          "options": [
+            "Calcita",
+            "Magnetita",
+            "Cuarzo",
+            "Talco"
+          ],
+          "correct": 1,
+          "explanation": "La **magnetita** (Fe₃O₄), rica en hierro, es el mineral magnético por excelencia."
+        }
+      ]
+    },
+    {
+      "id": "l07-atomos",
+      "title": "Átomos, isótopos y datación",
+      "summary": "Número atómico, número másico, isótopos y desintegración radiactiva como reloj geológico.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Un **átomo** («a» = no; «tomos» = cortar) tiene un **núcleo** con **protones** (carga +) y **neutrones** (sin carga), rodeado de **electrones** (carga −) muy ligeros que se mueven a gran velocidad. Un átomo neutro tiene tantos electrones como protones."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "Número atómico (Z)",
+              "Número de protones; define qué elemento es"
+            ],
+            [
+              "Número másico (A)",
+              "Protones + neutrones del núcleo"
+            ],
+            [
+              "Isótopos",
+              "Átomos del mismo elemento (mismo Z) con distinto número de neutrones (distinto A)"
+            ],
+            [
+              "Masa atómica",
+              "Promedio ponderado de las masas de los isótopos de un elemento"
+            ],
+            [
+              "Enlace químico",
+              "Fuerza eléctrica que une los átomos"
+            ],
+            [
+              "Compuesto",
+              "Sustancia de dos o más elementos unidos en proporciones definidas"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Los electrones apenas aportan masa: cada uno pesa ≈ 1/1836 de un protón. Por eso el número másico cuenta solo protones y neutrones."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "title": "Los isótopos del carbono",
+          "text": "Todos tienen **6 protones**. El **carbono-12** (6 neutrones) es el más abundante; también existen el **carbono-13** (7) y el **carbono-14** (8). Por eso la masa atómica del carbono (≈ 12,01) está mucho más cerca de 12 que de 13 o 14."
+        },
+        {
+          "type": "heading",
+          "text": "Desintegración radiactiva"
+        },
+        {
+          "type": "text",
+          "text": "Algunos isótopos, como el carbono-14, son **inestables**: su núcleo se descompone espontáneamente emitiendo partículas o radiación. Lo hacen a una **velocidad constante y medible**, que se expresa con la **vida media**: el tiempo en que se desintegra la mitad de los átomos. Eso los convierte en **relojes** para datar la historia de la Tierra."
+        },
+        {
+          "type": "interactive",
+          "widget": "radioactive_decay",
+          "title": "Laboratorio: reloj de carbono-14"
+        },
+        {
+          "type": "formula",
+          "expression": "N / N₀ = (1/2)^(t / T½)",
+          "caption": "N: átomos que quedan; N₀: átomos iniciales; t: tiempo; T½: vida media."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos neutrones tiene el carbono-14 (Z = 6)?",
+          "options": [
+            "6",
+            "8",
+            "14",
+            "20"
+          ],
+          "correct": 1,
+          "explanation": "Neutrones = A − Z = 14 − 6 = **8**."
+        },
+        {
+          "type": "quiz",
+          "question": "Tras dos vidas medias, ¿qué fracción del C-14 original queda?",
+          "options": [
+            "50 %",
+            "25 %",
+            "12,5 %",
+            "0 %"
+          ],
+          "correct": 1,
+          "explanation": "Cada vida media lo reduce a la mitad: 100 % → 50 % → **25 %**."
+        }
+      ]
+    },
+    {
+      "id": "l08-opticas",
+      "title": "Propiedades ópticas: color, raya y brillo",
+      "summary": "Color idiocromático y alocromático, raya, brillo, diafanidad y luminiscencia.",
+      "minutes": 9,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Color"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Significado",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Idiocromático",
+              "El color es propio del mineral: viene de sus elementos esenciales y es constante",
+              "Malaquita (verde), azufre (amarillo), pirita (amarillo latón)"
+            ],
+            [
+              "Alocromático",
+              "El color se debe a impurezas: un mismo mineral puede tener muchos colores",
+              "Corindón: rubí (rojo) y zafiros (azul, amarillo, blanco); cuarzo: amatista (violeta)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Color de la raya",
+          "text": "Color del **polvo** del mineral, obtenido al frotarlo sobre una placa de porcelana sin esmaltar. Es mucho más constante que el color de la muestra y es clave para identificar las **menas** (minerales de los que se extrae un metal)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Mineral",
+            "Color de la muestra",
+            "Color de la raya"
+          ],
+          "rows": [
+            [
+              "Magnetita",
+              "Negro",
+              "Negra"
+            ],
+            [
+              "Hematita",
+              "Gris a negro o rojizo",
+              "Rojo cereza"
+            ],
+            [
+              "Goethita",
+              "Pardo a negro",
+              "Café amarillento"
+            ],
+            [
+              "Pirita",
+              "Amarillo latón",
+              "Negro verdosa"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Brillo",
+          "text": "Aspecto de la superficie al reflejar la luz. **Metálico** (como un metal pulido: pirita, galena) o **no metálico**: vítreo (cuarzo), perlado, sedoso (asbesto), resinoso (blenda), adamantino (diamante) o terroso."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Diafanidad",
+          "text": "Capacidad de dejar pasar la luz: **transparente** (se ve a través con nitidez), **translúcido** (deja pasar luz pero no se ve a través) u **opaco** (no deja pasar luz, como los metálicos)."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Luminiscencia",
+          "text": "Emisión de luz por causas distintas al calor. **Fluorescencia:** solo mientras recibe radiación, por ejemplo luz ultravioleta (la fluorita le dio el nombre). **Fosforescencia:** sigue emitiendo luz un tiempo después."
+        },
+        {
+          "type": "quiz",
+          "question": "Un mineral gris oscuro deja una raya rojo cereza. ¿Cuál es?",
+          "options": [
+            "Magnetita",
+            "Hematita",
+            "Goethita",
+            "Pirita"
+          ],
+          "correct": 1,
+          "explanation": "La raya **rojo cereza** identifica a la **hematita**, aunque la muestra se vea gris o negra."
+        },
+        {
+          "type": "quiz",
+          "question": "El rubí y el zafiro son variedades de corindón de distinto color. El corindón es entonces un mineral:",
+          "options": [
+            "Idiocromático",
+            "Alocromático",
+            "Opaco",
+            "Fosforescente"
+          ],
+          "correct": 1,
+          "explanation": "Sus colores se deben a **impurezas** (cromo en el rubí; hierro y titanio en el zafiro azul): es **alocromático**."
+        }
+      ]
+    },
+    {
+      "id": "l09-mecanicas",
+      "title": "Fractura, tenacidad y clasificación de Strunz",
+      "summary": "Cómo se rompen y deforman los minerales, sus propiedades eléctricas y su clasificación.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Exfoliación y fractura",
+          "text": "**Exfoliación:** tendencia a romperse por planos de debilidad de la red cristalina, dejando superficies planas (la mica en láminas, la calcita en romboedros). **Fractura:** rotura irregular cuando no hay planos preferentes. Puede ser **concoidea** (curva, como el vidrio: cuarzo), irregular, astillosa o terrosa."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Tenacidad",
+          "text": "Resistencia de un mineral a romperse, doblarse o aplastarse. **Frágil:** se rompe en fragmentos (cuarzo). **Maleable:** se lamina a golpes (oro, cobre). **Séctil:** se corta con navaja en virutas (yeso). **Dúctil:** se estira en hilos (cobre). **Flexible:** se dobla y no recupera la forma (talco). **Elástico:** se dobla y recupera la forma (mica)."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "title": "Propiedades eléctricas",
+          "text": "**Piezoelectricidad:** genera carga eléctrica al ser comprimido (cuarzo, usado en relojes). **Piroelectricidad:** se carga al calentarse (turmalina)."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Los minerales con exfoliación marcada (micas, arcillas) crean **planos débiles** en la roca. Un agregado con mucha mica da hormigones de menor resistencia y mayor demanda de agua."
+        },
+        {
+          "type": "heading",
+          "text": "Clasificación de Strunz"
+        },
+        {
+          "type": "text",
+          "text": "Es la clasificación estándar de los minerales, basada en su **composición química** (sobre todo el anión o grupo aniónico dominante) y su estructura. Tiene 10 clases:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Elementos nativos",
+            "Sulfuros y sulfosales",
+            "Halogenuros (haluros)",
+            "Óxidos e hidróxidos",
+            "Carbonatos y nitratos",
+            "Boratos",
+            "Sulfatos",
+            "Fosfatos, arseniatos y vanadatos",
+            "Silicatos",
+            "Compuestos orgánicos"
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Una mica se separa en láminas finas y planas. Esta propiedad se llama:",
+          "options": [
+            "Fractura concoidea",
+            "Exfoliación",
+            "Tenacidad",
+            "Diafanidad"
+          ],
+          "correct": 1,
+          "explanation": "Romperse siguiendo planos de debilidad de la red cristalina es **exfoliación**."
+        },
+        {
+          "type": "quiz",
+          "question": "El oro puede laminarse a golpes sin romperse. Es:",
+          "options": [
+            "Frágil",
+            "Séctil",
+            "Maleable",
+            "Elástico"
+          ],
+          "correct": 2,
+          "explanation": "Laminarse a golpes = **maleable**."
+        }
+      ]
+    }
+  ]
+}

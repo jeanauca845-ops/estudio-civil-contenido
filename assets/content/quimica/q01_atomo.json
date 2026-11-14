@@ -1,0 +1,2084 @@
+{
+  "id": "q01-atomo",
+  "title": "El átomo: estructura, isótopos y masas",
+  "description": "Unidad 2 (parte 1): qué es el átomo, partículas subatómicas, modelo estándar, Z, A, N, iones, isótopos, masa atómica relativa y absoluta, uma y masa molar",
+  "lessons": [
+    {
+      "id": "l01-atomo",
+      "title": "¿Qué es el átomo?",
+      "summary": "Etimología, definición, dónde están los átomos y sus dos regiones: corteza y núcleo.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Unidad 2 de Química aplicada (Docente: Gabriela Vázquez G.): **Elementos químicos. Estructura atómica. Tabla periódica.** Temario: 01 El átomo, estructura básica. 02 Modelos atómicos (línea del tiempo). 03 Isótopos de los elementos químicos; peso atómico absoluto y relativo. 04 Mecánica cuántica. 05 Tabla periódica de los elementos; valencia de los elementos.",
+          "title": "Temario de la unidad"
+        },
+        {
+          "type": "heading",
+          "text": "Origen de la palabra"
+        },
+        {
+          "type": "text",
+          "text": "**Átomo** viene del griego: **a** = sin y **tomos** = división, es decir, «sin división» o «indivisible». Los filósofos griegos (Leucipo y Demócrito, siglo V a. C.) imaginaron que la materia no podía dividirse indefinidamente. Hoy sabemos que el átomo SÍ tiene partes, pero el nombre se conservó."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "El átomo es la **unidad básica de la materia que puede participar en una combinación química**.",
+          "title": "Átomo"
+        },
+        {
+          "type": "text",
+          "text": "Ejemplo: la mina de un lápiz es grafito; si pudiéramos ampliarla millones de veces veríamos que está formada por **átomos de carbono** ordenados. Un solo átomo de carbono tiene un núcleo diminuto rodeado por una nube de electrones."
+        },
+        {
+          "type": "heading",
+          "text": "¿Dónde se encuentran?"
+        },
+        {
+          "type": "text",
+          "text": "Los átomos se unen para formar **moléculas**; las moléculas (y los átomos) forman los **sólidos, líquidos y gases**; y con ellos está hecho **todo lo que se conoce**: rocas, agua, aire, seres vivos y materiales de construcción."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Átomos → moléculas",
+            "Moléculas → sólidos, líquidos y gases",
+            "Sólidos, líquidos y gases → todo lo que se conoce"
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Partes del átomo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Región",
+            "Qué es",
+            "Qué contiene",
+            "Carga",
+            "Masa y tamaño"
+          ],
+          "rows": [
+            [
+              "**Corteza** (nube electrónica)",
+              "Región alrededor del núcleo donde existe **mayor probabilidad** de encontrar electrones. Se describe mediante **orbitales** o **niveles de energía**",
+              "Electrones",
+              "Negativa",
+              "Casi no tiene masa, pero **confiere el volumen total** del átomo"
+            ],
+            [
+              "**Núcleo**",
+              "Región central del átomo",
+              "Protones y neutrones (**nucleones**)",
+              "Global **positiva**",
+              "Concentra **casi toda la masa**; es diminuto"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La corteza es una **nube de electrones** que se mueven alrededor del núcleo en una serie de **orbitales cuantizados** (niveles de energía). Los electrones **NO siguen órbitas fijas** como los planetas: se encuentran en regiones de mayor probabilidad llamadas **orbitales** (el orbital s es esférico; el p tiene dos lóbulos).",
+          "title": "No es un sistema solar"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El núcleo está formado por **protones (+)** y **neutrones (sin carga)**, llamados en conjunto **nucleones**. Entre los nucleones actúan **fuerzas nucleares muy fuertes** que mantienen el núcleo unido, a pesar de que los protones se repelen eléctricamente entre sí.",
+          "title": "El núcleo"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Proporción de tamaños: si el núcleo fuera una canica de 1 cm en el centro de un estadio, los electrones más externos estarían en las gradas (≈ 100 m). El radio del átomo es unas **10 000 – 100 000 veces** el del núcleo: el átomo es casi todo espacio vacío.",
+          "title": "Dato para imaginarlo"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "«Modelo actual»: la primera diapositiva muestra una colisión de partículas en un detector (como los del CERN). Así se estudian hoy las partículas que forman el átomo: haciéndolas chocar a muy alta energía."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué significa la palabra «átomo»?",
+          "options": [
+            "Pequeño",
+            "Sin división (indivisible)",
+            "Partícula cargada",
+            "Núcleo"
+          ],
+          "correct": 1,
+          "explanation": "Del griego **a** (sin) y **tomos** (división)."
+        },
+        {
+          "type": "quiz",
+          "question": "Según la definición de clase, el átomo es:",
+          "options": [
+            "La partícula más pequeña con carga",
+            "La unidad básica de la materia que puede participar en una combinación química",
+            "Un conjunto de moléculas",
+            "El núcleo con sus protones"
+          ],
+          "correct": 1,
+          "explanation": "Definición textual de la clase."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué región del átomo concentra casi toda la masa?",
+          "options": [
+            "La corteza",
+            "El núcleo",
+            "Los orbitales p",
+            "Los electrones de valencia"
+          ],
+          "correct": 1,
+          "explanation": "El **núcleo** (protones + neutrones)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué región da el volumen total del átomo?",
+          "options": [
+            "El núcleo",
+            "La corteza (nube electrónica)",
+            "Los neutrones",
+            "Los quarks"
+          ],
+          "correct": 1,
+          "explanation": "La corteza casi no tiene masa pero ocupa casi todo el volumen."
+        },
+        {
+          "type": "quiz",
+          "question": "Los nucleones son:",
+          "options": [
+            "Protones y electrones",
+            "Protones y neutrones",
+            "Neutrones y electrones",
+            "Solo los protones"
+          ],
+          "correct": 1,
+          "explanation": "Las partículas del núcleo."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué mantiene unido el núcleo a pesar de la repulsión entre protones?",
+          "options": [
+            "La gravedad",
+            "Las fuerzas nucleares fuertes entre nucleones",
+            "Los electrones",
+            "El campo magnético terrestre"
+          ],
+          "correct": 1,
+          "explanation": "Las **fuerzas nucleares** son muy intensas a distancias muy cortas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué afirmación sobre los electrones es correcta?",
+          "options": [
+            "Siguen órbitas planas fijas",
+            "Están en regiones de mayor probabilidad llamadas orbitales",
+            "Están dentro del núcleo",
+            "Tienen carga positiva"
+          ],
+          "correct": 1,
+          "explanation": "El modelo actual es una **nube de probabilidad**."
+        }
+      ]
+    },
+    {
+      "id": "l02-particulas",
+      "title": "Partículas subatómicas y modelo estándar",
+      "summary": "Carga y masa de protón, neutrón y electrón; quarks, leptones y bosones.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Las tres partículas del átomo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Partícula",
+            "Símbolo",
+            "Ubicación",
+            "Carga (C)",
+            "Carga relativa",
+            "Masa (kg)",
+            "Masa (uma)"
+          ],
+          "rows": [
+            [
+              "Electrón",
+              "e⁻",
+              "Corteza",
+              "−1,6·10⁻¹⁹",
+              "−1",
+              "9,11·10⁻³¹",
+              "≈ 0,00055"
+            ],
+            [
+              "Protón",
+              "p⁺",
+              "Núcleo",
+              "+1,6·10⁻¹⁹",
+              "+1",
+              "1,673·10⁻²⁷",
+              "≈ 1,007"
+            ],
+            [
+              "Neutrón",
+              "n⁰",
+              "Núcleo",
+              "0 (cero)",
+              "0",
+              "1,674·10⁻²⁷",
+              "≈ 1,009"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El protón es unas **1836 veces** más pesado que el electrón; protón y neutrón tienen casi la misma masa. Por eso la masa del átomo está prácticamente toda en el núcleo, y el número másico (protones + neutrones) es una buena aproximación de la masa en uma.",
+          "title": "Compara las masas"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El electrón: **más ligero** que el protón y el neutrón; **carga negativa**; y **comportamiento dual**: se comporta como partícula y como onda.",
+          "title": "El electrón"
+        },
+        {
+          "type": "heading",
+          "text": "El modelo estándar"
+        },
+        {
+          "type": "text",
+          "text": "Es el conjunto de grupos para **clasificar todas las partículas del universo** según su función y comportamiento. Hay dos grandes familias:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Fermiones:** forman la materia. Se dividen en **quarks** y **leptones**. Todos tienen espín ½.",
+            "**Bosones:** transmiten las fuerzas (mediadores de las interacciones)."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Quark",
+            "Masa aproximada",
+            "Carga",
+            "Espín"
+          ],
+          "rows": [
+            [
+              "up (u)",
+              "≈ 2,2 MeV/c²",
+              "+2/3",
+              "1/2"
+            ],
+            [
+              "charm (c)",
+              "≈ 1,28 GeV/c²",
+              "+2/3",
+              "1/2"
+            ],
+            [
+              "top (t)",
+              "≈ 173,1 GeV/c²",
+              "+2/3",
+              "1/2"
+            ],
+            [
+              "down (d)",
+              "≈ 4,7 MeV/c²",
+              "−1/3",
+              "1/2"
+            ],
+            [
+              "strange (s)",
+              "≈ 96 MeV/c²",
+              "−1/3",
+              "1/2"
+            ],
+            [
+              "bottom (b)",
+              "≈ 4,18 GeV/c²",
+              "−1/3",
+              "1/2"
+            ]
+          ],
+          "caption": "Quarks (6 «sabores»)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Leptón",
+            "Masa aproximada",
+            "Carga",
+            "Espín"
+          ],
+          "rows": [
+            [
+              "electrón (e)",
+              "≈ 0,511 MeV/c²",
+              "−1",
+              "1/2"
+            ],
+            [
+              "muón (μ)",
+              "≈ 105,7 MeV/c²",
+              "−1",
+              "1/2"
+            ],
+            [
+              "tau (τ)",
+              "≈ 1,777 GeV/c²",
+              "−1",
+              "1/2"
+            ],
+            [
+              "neutrino electrónico (νe)",
+              "< 1,0 eV/c²",
+              "0",
+              "1/2"
+            ],
+            [
+              "neutrino muónico (νμ)",
+              "< 0,17 MeV/c²",
+              "0",
+              "1/2"
+            ],
+            [
+              "neutrino tauónico (ντ)",
+              "< 18,2 MeV/c²",
+              "0",
+              "1/2"
+            ]
+          ],
+          "caption": "Leptones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Bosón",
+            "Masa",
+            "Carga",
+            "Espín",
+            "Qué transmite"
+          ],
+          "rows": [
+            [
+              "gluón (g)",
+              "0",
+              "0",
+              "1",
+              "Interacción nuclear fuerte (une a los quarks)"
+            ],
+            [
+              "fotón (γ)",
+              "0",
+              "0",
+              "1",
+              "Interacción electromagnética"
+            ],
+            [
+              "bosón Z",
+              "≈ 91,2 GeV/c²",
+              "0",
+              "1",
+              "Interacción nuclear débil"
+            ],
+            [
+              "bosón W",
+              "≈ 80,4 GeV/c²",
+              "±1",
+              "1",
+              "Interacción nuclear débil (desintegraciones radiactivas)"
+            ],
+            [
+              "bosón de Higgs (H)",
+              "≈ 125 GeV/c²",
+              "0",
+              "0",
+              "Da masa a las demás partículas"
+            ]
+          ],
+          "caption": "Bosones"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "MeV/c² y GeV/c² son unidades de masa usadas en física de partículas (por E = mc²). 1 GeV = 1000 MeV. Como referencia, el protón tiene ≈ 938 MeV/c²."
+        },
+        {
+          "type": "heading",
+          "text": "Los quarks y la carga del protón y del neutrón"
+        },
+        {
+          "type": "text",
+          "text": "Los quarks tienen **cargas eléctricas fraccionarias**: el quark **up** tiene **+2/3** y el quark **down** tiene **−1/3**. Protones y neutrones están formados por tres quarks cada uno:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Partícula",
+            "Quarks",
+            "Suma de cargas",
+            "Carga total"
+          ],
+          "rows": [
+            [
+              "Protón",
+              "u u d (dos up y un down)",
+              "+2/3 + 2/3 − 1/3",
+              "**+1**"
+            ],
+            [
+              "Neutrón",
+              "u d d (un up y dos down)",
+              "+2/3 − 1/3 − 1/3",
+              "**0**"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El electrón **no** está formado por quarks: es un leptón, una partícula elemental (hasta donde se sabe, no tiene partes)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué carga tiene el quark up?",
+          "options": [
+            "−1/3",
+            "+1/3",
+            "+2/3",
+            "+1"
+          ],
+          "correct": 2,
+          "explanation": "up: **+2/3**; down: −1/3."
+        },
+        {
+          "type": "quiz",
+          "question": "El protón está formado por:",
+          "options": [
+            "Dos quarks down y uno up",
+            "Dos quarks up y uno down",
+            "Tres quarks up",
+            "Un electrón y un neutrón"
+          ],
+          "correct": 1,
+          "explanation": "uud: +2/3 + 2/3 − 1/3 = **+1**."
+        },
+        {
+          "type": "quiz",
+          "question": "El neutrón está formado por:",
+          "options": [
+            "uud",
+            "udd",
+            "uuu",
+            "ddd"
+          ],
+          "correct": 1,
+          "explanation": "udd: +2/3 − 1/3 − 1/3 = **0**."
+        },
+        {
+          "type": "quiz",
+          "question": "En el modelo estándar, los fermiones:",
+          "options": [
+            "Transmiten las fuerzas",
+            "Forman la materia",
+            "No tienen masa",
+            "Son solo los fotones"
+          ],
+          "correct": 1,
+          "explanation": "Fermiones = materia (quarks y leptones); bosones = fuerzas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿A qué grupo pertenece el electrón?",
+          "options": [
+            "Quarks",
+            "Leptones",
+            "Bosones",
+            "Nucleones"
+          ],
+          "correct": 1,
+          "explanation": "Es un **leptón** con carga −1."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué bosón transmite la interacción electromagnética?",
+          "options": [
+            "Gluón",
+            "Fotón",
+            "Bosón W",
+            "Higgs"
+          ],
+          "correct": 1,
+          "explanation": "El **fotón** (γ)."
+        },
+        {
+          "type": "quiz",
+          "question": "Masa del electrón:",
+          "options": [
+            "1,673·10⁻²⁷ kg",
+            "9,11·10⁻³¹ kg",
+            "1,674·10⁻²⁷ kg",
+            "1,6·10⁻¹⁹ kg"
+          ],
+          "correct": 1,
+          "explanation": "9,11·10⁻³¹ kg (1,6·10⁻¹⁹ es su carga en coulombs, no su masa)."
+        },
+        {
+          "type": "quiz",
+          "question": "El comportamiento dual del electrón significa que:",
+          "options": [
+            "Tiene dos cargas",
+            "Se comporta como partícula y como onda",
+            "Está en dos núcleos",
+            "Tiene dos masas"
+          ],
+          "correct": 1,
+          "explanation": "Dualidad onda–partícula."
+        }
+      ]
+    },
+    {
+      "id": "l03-caracterizacion",
+      "title": "Caracterización del átomo: Z, A y N",
+      "summary": "Número atómico, número másico, número de neutrones, notación y ejercicios resueltos.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Magnitud",
+            "Símbolo",
+            "Qué indica",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Número atómico",
+              "Z",
+              "Número de **protones**. Identifica al elemento e indica su **posición en la tabla periódica**",
+              "Z = p⁺"
+            ],
+            [
+              "Número másico",
+              "A",
+              "Suma de protones y neutrones del núcleo. **Siempre es un número entero**",
+              "A = Z + N"
+            ],
+            [
+              "Número neutrónico",
+              "N",
+              "Número de **neutrones**",
+              "N = A − Z"
+            ],
+            [
+              "Electrones (átomo neutro)",
+              "e⁻",
+              "En un átomo neutro coincide con el número de protones",
+              "e⁻ = Z"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "ᴬZ X   →   ¹⁹₉F",
+          "caption": "Notación: el número másico A arriba a la izquierda, el número atómico Z abajo a la izquierda y el símbolo X. Flúor-19: Z = 9, A = 19, N = 10."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Todos los átomos de un mismo elemento químico tienen el **mismo número de protones**, pero el número de neutrones puede variar: así aparecen los **isótopos** (¹²C, ¹³C y ¹⁴C son todos carbono, Z = 6)."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "La masa atómica que aparece en la tabla periódica suele ser **decimal** (promedio de los isótopos). Para trabajar con A en ejercicios básicos se usa como aproximación, **redondeando al entero más cercano**: Cl 35,45 → A = 35; Cu 63,55 → A = 64; Zn 65,38 → A = 65.",
+          "title": "Nota para ejercicios básicos"
+        },
+        {
+          "type": "heading",
+          "text": "Ejercicio resuelto de clase"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Átomo",
+            "Z",
+            "A",
+            "Protones (Z)",
+            "Electrones (Z)",
+            "Neutrones (A − Z)"
+          ],
+          "rows": [
+            [
+              "Na",
+              "11",
+              "23",
+              "11",
+              "11",
+              "12"
+            ],
+            [
+              "Mg",
+              "12",
+              "24",
+              "12",
+              "12",
+              "12"
+            ],
+            [
+              "Al",
+              "13",
+              "27",
+              "13",
+              "13",
+              "14"
+            ],
+            [
+              "Cl",
+              "17",
+              "35",
+              "17",
+              "17",
+              "18"
+            ],
+            [
+              "Ca",
+              "20",
+              "40",
+              "20",
+              "20",
+              "20"
+            ],
+            [
+              "Fe",
+              "26",
+              "56",
+              "26",
+              "26",
+              "30"
+            ],
+            [
+              "Cu",
+              "29",
+              "64",
+              "29",
+              "29",
+              "35"
+            ],
+            [
+              "Zn",
+              "30",
+              "65",
+              "30",
+              "30",
+              "35"
+            ]
+          ],
+          "caption": "Electrones = Z solo en elementos neutros"
+        },
+        {
+          "type": "heading",
+          "text": "Más ejemplos para practicar"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Átomo",
+            "Z",
+            "A",
+            "p⁺",
+            "e⁻",
+            "n⁰"
+          ],
+          "rows": [
+            [
+              "H",
+              "1",
+              "1",
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "C",
+              "6",
+              "12",
+              "6",
+              "6",
+              "6"
+            ],
+            [
+              "N",
+              "7",
+              "14",
+              "7",
+              "7",
+              "7"
+            ],
+            [
+              "O",
+              "8",
+              "16",
+              "8",
+              "8",
+              "8"
+            ],
+            [
+              "Si",
+              "14",
+              "28",
+              "14",
+              "14",
+              "14"
+            ],
+            [
+              "S",
+              "16",
+              "32",
+              "16",
+              "16",
+              "16"
+            ],
+            [
+              "K",
+              "19",
+              "39",
+              "19",
+              "19",
+              "20"
+            ],
+            [
+              "Ag",
+              "47",
+              "108",
+              "47",
+              "47",
+              "61"
+            ],
+            [
+              "Au",
+              "79",
+              "197",
+              "79",
+              "79",
+              "118"
+            ],
+            [
+              "U",
+              "92",
+              "238",
+              "92",
+              "92",
+              "146"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "atom_builder",
+          "title": "Construye átomos: protones, neutrones y electrones"
+        },
+        {
+          "type": "quiz",
+          "question": "Un átomo tiene Z = 15 y A = 31. ¿Cuántos neutrones tiene?",
+          "options": [
+            "15",
+            "16",
+            "31",
+            "46"
+          ],
+          "correct": 1,
+          "explanation": "N = A − Z = 31 − 15 = **16** (es el fósforo)."
+        },
+        {
+          "type": "quiz",
+          "question": "El número atómico indica:",
+          "options": [
+            "El número de neutrones",
+            "El número de protones",
+            "La masa del átomo",
+            "El número de niveles"
+          ],
+          "correct": 1,
+          "explanation": "Z = número de **protones**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones tiene un átomo neutro de hierro (Z = 26, A = 56)?",
+          "options": [
+            "26",
+            "30",
+            "56",
+            "82"
+          ],
+          "correct": 0,
+          "explanation": "Neutro: e⁻ = Z = **26**."
+        },
+        {
+          "type": "quiz",
+          "question": "El número másico del ¹⁹₉F es:",
+          "options": [
+            "9",
+            "10",
+            "19",
+            "28"
+          ],
+          "correct": 2,
+          "explanation": "A es el número de arriba: **19**."
+        },
+        {
+          "type": "quiz",
+          "question": "El número másico es siempre:",
+          "options": [
+            "Decimal",
+            "Un número entero",
+            "Igual a Z",
+            "Menor que Z"
+          ],
+          "correct": 1,
+          "explanation": "Cuenta partículas: siempre **entero**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos neutrones tiene el cobre (Z = 29, masa atómica 63,55)?",
+          "options": [
+            "29",
+            "34",
+            "35",
+            "64"
+          ],
+          "correct": 2,
+          "explanation": "A ≈ 64 → N = 64 − 29 = **35**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un átomo neutro tiene 20 electrones y 20 neutrones. ¿A?",
+          "options": [
+            "20",
+            "40",
+            "60",
+            "10"
+          ],
+          "correct": 1,
+          "explanation": "Z = 20 (calcio), A = 20 + 20 = **40**."
+        }
+      ]
+    },
+    {
+      "id": "l04-iones",
+      "title": "Iones: cationes y aniones",
+      "summary": "Los átomos solo ganan o pierden electrones; ejercicios con Na⁺, S²⁻, K⁺ y Fe³⁺.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Los átomos en general se encuentran **neutros**: tienen igual cantidad de protones y electrones. Sin embargo, todos los átomos pueden **perder o ganar SOLAMENTE electrones**; al hacerlo se convierten en **iones**."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En una reacción química **nunca cambian los protones** (cambiaría el elemento) ni los neutrones. Solo cambian los **electrones**."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Especie",
+            "Qué ocurre",
+            "Cargas",
+            "Carga neta",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Átomo neutro",
+              "—",
+              "Igual cantidad de cargas positivas y negativas",
+              "0",
+              "Na"
+            ],
+            [
+              "**Catión**",
+              "**Cede (pierde)** uno o más electrones",
+              "Menos cargas negativas que positivas",
+              "**Positiva**",
+              "Na⁺, K⁺, Fe³⁺, Ca²⁺"
+            ],
+            [
+              "**Anión**",
+              "**Recibe (gana)** uno o más electrones",
+              "Más cargas negativas que positivas",
+              "**Negativa**",
+              "Cl⁻, S²⁻, O²⁻, N³⁻"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "e⁻ del ion = Z − carga",
+          "caption": "Catión +2 → 2 electrones menos; anión −2 → 2 electrones más (Z − (−2) = Z + 2)."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Truco para recordar: el **cat**ión es **pos**itivo («los gatos son positivos»); el **an**ión es **n**egativo.",
+          "title": "Mnemotecnia"
+        },
+        {
+          "type": "heading",
+          "text": "Ejercicio resuelto de clase"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Átomo / Ion",
+            "Z",
+            "A",
+            "Protones (Z)",
+            "Electrones",
+            "Neutrones (A − Z)"
+          ],
+          "rows": [
+            [
+              "Na",
+              "11",
+              "23",
+              "11",
+              "11",
+              "12"
+            ],
+            [
+              "Na⁺",
+              "11",
+              "23",
+              "11",
+              "**10**",
+              "12"
+            ],
+            [
+              "S",
+              "16",
+              "32",
+              "16",
+              "16",
+              "16"
+            ],
+            [
+              "S²⁻",
+              "16",
+              "32",
+              "16",
+              "**18**",
+              "16"
+            ],
+            [
+              "K",
+              "19",
+              "39",
+              "19",
+              "19",
+              "20"
+            ],
+            [
+              "K⁺",
+              "19",
+              "39",
+              "19",
+              "**18**",
+              "20"
+            ],
+            [
+              "Fe",
+              "26",
+              "56",
+              "26",
+              "26",
+              "30"
+            ],
+            [
+              "Fe³⁺",
+              "26",
+              "56",
+              "26",
+              "**23**",
+              "30"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Más práctica"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Ion",
+            "Z",
+            "Protones",
+            "Electrones",
+            "Tipo"
+          ],
+          "rows": [
+            [
+              "Ca²⁺",
+              "20",
+              "20",
+              "18",
+              "Catión"
+            ],
+            [
+              "Al³⁺",
+              "13",
+              "13",
+              "10",
+              "Catión"
+            ],
+            [
+              "Cl⁻",
+              "17",
+              "17",
+              "18",
+              "Anión"
+            ],
+            [
+              "O²⁻",
+              "8",
+              "8",
+              "10",
+              "Anión"
+            ],
+            [
+              "N³⁻",
+              "7",
+              "7",
+              "10",
+              "Anión"
+            ],
+            [
+              "Cu²⁺",
+              "29",
+              "29",
+              "27",
+              "Catión"
+            ],
+            [
+              "Fe²⁺",
+              "26",
+              "26",
+              "24",
+              "Catión"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Na⁺, Mg²⁺, Al³⁺, F⁻, O²⁻ y N³⁻ tienen **10 electrones**, como el neón: son **isoelectrónicas** (misma configuración que un gas noble, por eso son estables).",
+          "title": "Especies isoelectrónicas"
+        },
+        {
+          "type": "quiz",
+          "question": "Un catión se forma cuando el átomo:",
+          "options": [
+            "Gana electrones",
+            "Pierde electrones",
+            "Gana protones",
+            "Pierde neutrones"
+          ],
+          "correct": 1,
+          "explanation": "Pierde electrones → queda con carga **positiva**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones tiene el S²⁻ (Z = 16)?",
+          "options": [
+            "14",
+            "16",
+            "18",
+            "32"
+          ],
+          "correct": 2,
+          "explanation": "Gana 2: 16 + 2 = **18**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones tiene el Fe³⁺ (Z = 26)?",
+          "options": [
+            "23",
+            "26",
+            "29",
+            "30"
+          ],
+          "correct": 0,
+          "explanation": "Pierde 3: 26 − 3 = **23**."
+        },
+        {
+          "type": "quiz",
+          "question": "Al formar el ion K⁺, ¿qué cambia respecto al K?",
+          "options": [
+            "Los protones",
+            "Los neutrones",
+            "Solo los electrones",
+            "El número másico"
+          ],
+          "correct": 2,
+          "explanation": "Solo se pierde **un electrón**; Z, A y N no cambian."
+        },
+        {
+          "type": "quiz",
+          "question": "Un ion tiene 17 protones y 18 electrones. Es:",
+          "options": [
+            "Cl⁺",
+            "Cl⁻",
+            "Ar",
+            "S⁻"
+          ],
+          "correct": 1,
+          "explanation": "Z = 17 (cloro) con un electrón extra: **Cl⁻**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál NO es isoelectrónica con el neón?",
+          "options": [
+            "Na⁺",
+            "O²⁻",
+            "Mg²⁺",
+            "K⁺"
+          ],
+          "correct": 3,
+          "explanation": "K⁺ tiene 18 electrones (como el argón)."
+        },
+        {
+          "type": "quiz",
+          "question": "Un anión tiene:",
+          "options": [
+            "Más protones que electrones",
+            "Más electrones que protones",
+            "Igual número",
+            "Ningún electrón"
+          ],
+          "correct": 1,
+          "explanation": "Mayor cantidad de cargas **negativas**."
+        }
+      ]
+    },
+    {
+      "id": "l05-isotopos",
+      "title": "Isótopos",
+      "summary": "Definición, isótopos del hidrógeno y del carbono, propiedades y tipos según estabilidad y origen.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "**Iso** = igual, **topos** = lugar. Son átomos del **mismo elemento** que tienen **igual número de protones** pero **diferente número de neutrones**: **mismo número atómico (Z)** y **diferente número másico (A)**. Como tienen el mismo número de protones, ocupan **un solo lugar** en la tabla periódica.",
+          "title": "Isótopos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedades",
+            "Entre isótopos de un elemento",
+            "Por qué"
+          ],
+          "rows": [
+            [
+              "**Químicas**",
+              "**Iguales**",
+              "Dependen de los electrones, que son los mismos"
+            ],
+            [
+              "**Físicas**",
+              "**Diferentes**",
+              "Dependen de la masa del núcleo (densidad, velocidad de difusión, estabilidad, radiactividad)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Los isótopos del hidrógeno"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Isótopo",
+            "Protones",
+            "Neutrones",
+            "Masa atómica",
+            "Estabilidad",
+            "Abundancia en el H terrestre"
+          ],
+          "rows": [
+            [
+              "Protio (¹H)",
+              "1",
+              "0",
+              "1",
+              "Estable",
+              "99,99 %"
+            ],
+            [
+              "Deuterio (²H o D)",
+              "1",
+              "1",
+              "2",
+              "Estable",
+              "0,01 %"
+            ],
+            [
+              "Tritio (³H o T)",
+              "1",
+              "2",
+              "3",
+              "Radiactivo",
+              "0,000001 %"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "El agua formada con deuterio (D₂O) se llama **agua pesada**: es químicamente agua, pero más densa (1,11 g/cm³) y se usa en algunos reactores nucleares. Es un buen ejemplo de propiedades químicas iguales y físicas diferentes."
+        },
+        {
+          "type": "heading",
+          "text": "Los isótopos del carbono"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Isótopo",
+            "Protones",
+            "Neutrones",
+            "Observación"
+          ],
+          "rows": [
+            [
+              "Carbono-12 (¹²C)",
+              "6",
+              "6",
+              "Estable; el más abundante; patrón de la uma"
+            ],
+            [
+              "Carbono-13 (¹³C)",
+              "6",
+              "7",
+              "Estable"
+            ],
+            [
+              "Carbono-14 (¹⁴C)",
+              "6",
+              "8",
+              "Radiactivo; se usa para datar restos orgánicos (vida media ≈ 5730 años)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tipos de isótopos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Criterio",
+            "Tipo",
+            "Característica",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Según su estabilidad",
+              "**Estables**",
+              "No cambian espontáneamente con el tiempo y no emiten radiación",
+              "Carbono-12"
+            ],
+            [
+              "Según su estabilidad",
+              "**Radiactivos o inestables**",
+              "Cambian con el tiempo y emiten radiación. Tienen **vida media**: tiempo que tarda en desintegrarse la mitad de una muestra",
+              "Uranio-235"
+            ],
+            [
+              "Según su origen",
+              "**Naturales**",
+              "Se encuentran de forma natural en la naturaleza",
+              "Hidrógeno-1"
+            ],
+            [
+              "Según su origen",
+              "**Artificiales o sintéticos**",
+              "Producidos por el ser humano en laboratorios o reactores nucleares",
+              "Tecnecio-99m"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Isótopos en la ingeniería civil: el **densímetro nuclear** de campo (control de compactación de suelos y bases) usa una fuente de cesio-137 y otra de americio-241/berilio; la **gammagrafía** con iridio-192 o cobalto-60 detecta fallas en soldaduras y hormigón; el **tritio** y el oxígeno-18 sirven como trazadores del agua subterránea."
+        },
+        {
+          "type": "quiz",
+          "question": "Los isótopos de un elemento tienen igual:",
+          "options": [
+            "Número de neutrones",
+            "Número másico",
+            "Número atómico",
+            "Masa"
+          ],
+          "correct": 2,
+          "explanation": "Mismo **Z**, distinto A."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos neutrones tiene el tritio?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "explanation": "1 protón + **2 neutrones** = masa 3."
+        },
+        {
+          "type": "quiz",
+          "question": "Las propiedades químicas de los isótopos de un elemento son:",
+          "options": [
+            "Diferentes",
+            "Iguales",
+            "Opuestas",
+            "Depende del isótopo"
+          ],
+          "correct": 1,
+          "explanation": "Tienen los mismos electrones: **iguales**."
+        },
+        {
+          "type": "quiz",
+          "question": "La vida media de un isótopo radiactivo es:",
+          "options": [
+            "El tiempo que dura su átomo",
+            "El tiempo en que se desintegra la mitad de una muestra",
+            "La mitad de su masa",
+            "Su edad"
+          ],
+          "correct": 1,
+          "explanation": "Definición de clase."
+        },
+        {
+          "type": "quiz",
+          "question": "El tecnecio-99m es un isótopo:",
+          "options": [
+            "Natural y estable",
+            "Artificial (sintético)",
+            "Del hidrógeno",
+            "Del carbono"
+          ],
+          "correct": 1,
+          "explanation": "Se produce en reactores; se usa en medicina nuclear."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el isótopo más abundante del hidrógeno?",
+          "options": [
+            "Protio",
+            "Deuterio",
+            "Tritio",
+            "Helio"
+          ],
+          "correct": 0,
+          "explanation": "El **protio** (99,99 %)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué los tres isótopos del carbono ocupan la misma casilla de la tabla?",
+          "options": [
+            "Porque tienen la misma masa",
+            "Porque tienen el mismo número de protones",
+            "Porque tienen los mismos neutrones",
+            "Porque son radiactivos"
+          ],
+          "correct": 1,
+          "explanation": "La tabla se ordena por **Z**."
+        }
+      ]
+    },
+    {
+      "id": "l06-masa-relativa",
+      "title": "Masa atómica relativa",
+      "summary": "Abundancia de los isótopos y promedio ponderado: carbono, magnesio, silicio y oxígeno.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Los isótopos de cada elemento químico están presentes **siempre en cantidades fijas y constantes**, que se expresan en **porcentajes** (abundancia o frecuencia relativa)."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la **media ponderada** de las masas de los isótopos de un elemento **en función de su presencia (abundancia) en la naturaleza**. Es el valor que aparece en la tabla periódica y por eso **casi nunca es un número entero**. Se expresa en **uma**.",
+          "title": "Masa atómica relativa (Ar)"
+        },
+        {
+          "type": "formula",
+          "expression": "Ar = m₁·(%₁/100) + m₂·(%₂/100) + m₃·(%₃/100) + …",
+          "caption": "Cada masa isotópica multiplicada por su abundancia en tanto por uno."
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo 1: carbono"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Isótopo",
+            "Masa atómica (uma)",
+            "Abundancia"
+          ],
+          "rows": [
+            [
+              "C-12",
+              "12",
+              "98,93 %"
+            ],
+            [
+              "C-13",
+              "13",
+              "1,07 %"
+            ],
+            [
+              "C-14",
+              "14",
+              "10⁻¹⁰ %"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Ar(C) = 12·0,9893 + 13·0,0107 + 14·0 = 12,011 uma",
+          "caption": "El C-14 es tan escaso que su aporte es despreciable."
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo 2: magnesio"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Isótopo",
+            "Masa",
+            "Abundancia (%)"
+          ],
+          "rows": [
+            [
+              "²⁴Mg",
+              "24",
+              "78,99"
+            ],
+            [
+              "²⁵Mg",
+              "25",
+              "10,00"
+            ],
+            [
+              "²⁶Mg",
+              "26",
+              "11,01"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Ar(Mg) = 24·0,7899 + 25·0,1000 + 26·0,1101 = 24,32 uma"
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo 3: silicio"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Isótopo",
+            "Masa",
+            "Abundancia (%)"
+          ],
+          "rows": [
+            [
+              "²⁸Si",
+              "28",
+              "92,23"
+            ],
+            [
+              "²⁹Si",
+              "29",
+              "4,67"
+            ],
+            [
+              "³⁰Si",
+              "30",
+              "3,10"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Ar(Si) = 28·0,9223 + 29·0,0467 + 30·0,0310 = 28,11 uma"
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo 4: oxígeno"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Isótopo",
+            "Masa",
+            "Abundancia (%)"
+          ],
+          "rows": [
+            [
+              "¹⁶O",
+              "16",
+              "99,76"
+            ],
+            [
+              "¹⁷O",
+              "17",
+              "0,04"
+            ],
+            [
+              "¹⁸O",
+              "18",
+              "0,20"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Ar(O) = 16·0,9976 + 17·0,0004 + 18·0,0020 = 16,00 uma"
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo 5: cloro (con masas isotópicas exactas)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Isótopo",
+            "Masa isotópica (uma)",
+            "Abundancia (%)"
+          ],
+          "rows": [
+            [
+              "³⁵Cl",
+              "34,9689",
+              "75,76"
+            ],
+            [
+              "³⁷Cl",
+              "36,9659",
+              "24,24"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Ar(Cl) = 34,9689·0,7576 + 36,9659·0,2424 = 35,45 uma",
+          "caption": "Por eso la masa del cloro está más cerca de 35 que de 37: abunda más el ³⁵Cl."
+        },
+        {
+          "type": "heading",
+          "text": "Problema inverso: hallar la abundancia"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "El cobre tiene dos isótopos: ⁶³Cu (62,93 uma) y ⁶⁵Cu (64,93 uma), y su masa atómica es 63,55 uma. Si x es la fracción de ⁶³Cu: 62,93x + 64,93(1 − x) = 63,55 → 64,93 − 2x = 63,55 → x = 0,69. Abundancias: **⁶³Cu ≈ 69 %** y **⁶⁵Cu ≈ 31 %**.",
+          "title": "Ejemplo resuelto"
+        },
+        {
+          "type": "interactive",
+          "widget": "isotope_average",
+          "title": "Calculadora de masa atómica promedio"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La masa atómica relativa siempre queda **entre** la masa del isótopo más liviano y la del más pesado, y **más cerca del más abundante**. Úsalo para comprobar tu resultado."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué las masas atómicas de la tabla casi nunca son enteras?",
+          "options": [
+            "Por errores de medición",
+            "Porque son promedios ponderados de las masas de los isótopos",
+            "Porque los neutrones pesan decimales",
+            "Porque incluyen los electrones"
+          ],
+          "correct": 1,
+          "explanation": "Son **promedios ponderados**."
+        },
+        {
+          "type": "quiz",
+          "question": "Masa atómica del magnesio con los datos de clase:",
+          "options": [
+            "24,00 uma",
+            "24,32 uma",
+            "25,00 uma",
+            "24,99 uma"
+          ],
+          "correct": 1,
+          "explanation": "24·0,7899 + 25·0,10 + 26·0,1101 = **24,32 uma**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un elemento tiene dos isótopos: 10 uma (20 %) y 11 uma (80 %). ¿Masa atómica?",
+          "options": [
+            "10,2 uma",
+            "10,5 uma",
+            "10,8 uma",
+            "11,0 uma"
+          ],
+          "correct": 2,
+          "explanation": "10·0,2 + 11·0,8 = **10,8 uma** (es el boro)."
+        },
+        {
+          "type": "quiz",
+          "question": "La masa atómica del cloro es 35,45. ¿Qué isótopo es más abundante?",
+          "options": [
+            "³⁵Cl",
+            "³⁷Cl",
+            "Igual",
+            "No se puede saber"
+          ],
+          "correct": 0,
+          "explanation": "El promedio está más cerca de 35."
+        },
+        {
+          "type": "quiz",
+          "question": "Masa atómica del silicio con los datos de clase:",
+          "options": [
+            "28,00 uma",
+            "28,11 uma",
+            "29,00 uma",
+            "28,55 uma"
+          ],
+          "correct": 1,
+          "explanation": "28·0,9223 + 29·0,0467 + 30·0,031 = **28,11 uma**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un elemento tiene isótopos de 6 uma y 7 uma y masa atómica 6,94. ¿Abundancia del de 6 uma?",
+          "options": [
+            "6 %",
+            "50 %",
+            "94 %",
+            "7,5 %"
+          ],
+          "correct": 0,
+          "explanation": "6x + 7(1 − x) = 6,94 → x = **0,06** (es el litio)."
+        }
+      ]
+    },
+    {
+      "id": "l07-masa-absoluta-molar",
+      "title": "Masa absoluta, uma y masa molar",
+      "summary": "Unidad de masa atómica, masa real de un átomo, mol, número de Avogadro y los cuatro tipos de masa.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Masa atómica absoluta"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la **masa real** de un átomo. Su valor oscila entre **1·10⁻²² y 1·10⁻²⁴ gramos**. No existe en la actualidad balanza que permita apreciar esa masa; por eso en la práctica se comparan las masas de los átomos con una **masa patrón**.",
+          "title": "Masa atómica absoluta"
+        },
+        {
+          "type": "heading",
+          "text": "La unidad de masa atómica (uma)"
+        },
+        {
+          "type": "text",
+          "text": "La masa patrón es el isótopo **¹²C**, al que se le asigna exactamente **12,00000 uma**."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la **doceava parte (1/12)** de la masa fijada para el isótopo 12 del carbono.",
+          "title": "Unidad de masa atómica"
+        },
+        {
+          "type": "formula",
+          "expression": "1 uma = 1,66 · 10⁻²⁴ g",
+          "caption": "También se escribe u o Da (dalton)."
+        },
+        {
+          "type": "text",
+          "text": "La masa de todos los átomos queda expresada en relación con la uma: 1 átomo de hidrógeno = **1,0080 uma ≈ 1 uma**; 1 átomo de oxígeno = **15,995 uma ≈ 16 uma** (el oxígeno «pesa» unas 16 veces lo que el hidrógeno)."
+        },
+        {
+          "type": "formula",
+          "expression": "masa absoluta (g) = masa en uma × 1,66·10⁻²⁴ g",
+          "caption": "Ejemplo: m(³⁵Cl) = 34,9689 × 1,66·10⁻²⁴ = 5,80·10⁻²³ g."
+        },
+        {
+          "type": "heading",
+          "text": "Masa molar"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Es la masa de **1 mol** de átomos, moléculas o iones. Se expresa en **gramos por mol (g/mol)**.",
+          "title": "Masa molar (M)"
+        },
+        {
+          "type": "formula",
+          "expression": "1 mol = 6,022 · 10²³ partículas   (número de Avogadro, NA)"
+        },
+        {
+          "type": "formula",
+          "expression": "M = m / n        (masa molar = masa / cantidad de sustancia)",
+          "caption": "n en moles, m en gramos."
+        },
+        {
+          "type": "text",
+          "text": "La masa molar **coincide numéricamente** con la masa atómica o molecular, pero cambia la unidad: de **u** a **g/mol**. Ejemplos: C = 12 g/mol; H₂O = 18 g/mol; NaCl = 58,44 g/mol. 1 mol de H₂O = 18 g."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sustancia",
+            "Cálculo de la masa molar",
+            "M (g/mol)"
+          ],
+          "rows": [
+            [
+              "H₂O",
+              "2·1,008 + 16,00",
+              "18,02"
+            ],
+            [
+              "CO₂",
+              "12,01 + 2·16,00",
+              "44,01"
+            ],
+            [
+              "NaCl",
+              "22,99 + 35,45",
+              "58,44"
+            ],
+            [
+              "CaCO₃ (caliza)",
+              "40,08 + 12,01 + 3·16,00",
+              "100,09"
+            ],
+            [
+              "SiO₂ (cuarzo, arena)",
+              "28,09 + 2·16,00",
+              "60,09"
+            ],
+            [
+              "Fe₂O₃ (óxido de hierro)",
+              "2·55,85 + 3·16,00",
+              "159,7"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "¿Cuántos moles y moléculas hay en 36 g de agua? n = m/M = 36/18 = **2 mol**. Moléculas = 2 × 6,022·10²³ = **1,204·10²⁴ moléculas**.",
+          "title": "Ejemplo resuelto"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "¿Cuál es la masa de 0,5 mol de CaCO₃? m = n·M = 0,5 × 100,09 = **50,05 g**.",
+          "title": "Ejemplo resuelto"
+        },
+        {
+          "type": "heading",
+          "text": "Los cuatro tipos de masa (resumen con el cloro)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Qué es",
+            "Unidad",
+            "Ejemplo con el cloro"
+          ],
+          "rows": [
+            [
+              "1. Masa atómica (A) = número másico",
+              "Suma de protones y neutrones del núcleo; siempre entero; propia de cada isótopo",
+              "Sin unidad (número)",
+              "³⁵Cl: 17 p + 18 n → A = 35; ³⁷Cl: 17 p + 20 n → A = 37; ³⁶Cl: 17 p + 19 n → A = 36"
+            ],
+            [
+              "2. Masa atómica relativa (Ar)",
+              "Promedio ponderado de las masas de los isótopos naturales, según su abundancia; generalmente no entero",
+              "uma",
+              "Ar(Cl) = 34,9689(0,7576) + 36,9659(0,2424) = 35,45 uma"
+            ],
+            [
+              "3. Masa atómica absoluta",
+              "Masa real de UN átomo de un isótopo específico; valor muy pequeño (≈ 10⁻²² – 10⁻²⁴ g)",
+              "gramos",
+              "m(³⁵Cl) = 34,9689 × 1,66·10⁻²⁴ g = 5,80·10⁻²³ g"
+            ],
+            [
+              "4. Masa molar (M)",
+              "Masa de 1 mol de átomos; numéricamente igual a Ar; relaciona masa con cantidad de sustancia (moles)",
+              "g/mol",
+              "M(Cl) = 35,45 g/mol: 6,022·10²³ átomos de Cl pesan 35,45 g"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "No confundas: **A** (entero, de un isótopo), **Ar** (promedio, en uma), **masa absoluta** (gramos, un átomo) y **M** (g/mol, un mol)."
+        },
+        {
+          "type": "quiz",
+          "question": "1 uma equivale a:",
+          "options": [
+            "1 g",
+            "1,66·10⁻²⁴ g",
+            "6,022·10²³ g",
+            "12 g"
+          ],
+          "correct": 1,
+          "explanation": "1/12 de la masa del ¹²C = **1,66·10⁻²⁴ g**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué isótopo es el patrón de la uma?",
+          "options": [
+            "¹H",
+            "¹⁶O",
+            "¹²C",
+            "¹⁴C"
+          ],
+          "correct": 2,
+          "explanation": "Al **¹²C** se le asignan exactamente 12 uma."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántas moléculas hay en 1 mol de agua?",
+          "options": [
+            "18",
+            "6,022·10²³",
+            "1,66·10⁻²⁴",
+            "12"
+          ],
+          "correct": 1,
+          "explanation": "Número de **Avogadro**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos moles hay en 88 g de CO₂ (M = 44 g/mol)?",
+          "options": [
+            "0,5 mol",
+            "1 mol",
+            "2 mol",
+            "44 mol"
+          ],
+          "correct": 2,
+          "explanation": "n = 88/44 = **2 mol**."
+        },
+        {
+          "type": "quiz",
+          "question": "La masa absoluta de un átomo se expresa en:",
+          "options": [
+            "uma",
+            "gramos",
+            "g/mol",
+            "moles"
+          ],
+          "correct": 1,
+          "explanation": "Es la masa real: **gramos**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es entero siempre?",
+          "options": [
+            "La masa atómica relativa",
+            "El número másico A",
+            "La masa molar",
+            "La masa absoluta"
+          ],
+          "correct": 1,
+          "explanation": "A cuenta nucleones."
+        },
+        {
+          "type": "quiz",
+          "question": "Masa de 2 mol de NaCl (M = 58,44 g/mol):",
+          "options": [
+            "29,22 g",
+            "58,44 g",
+            "116,88 g",
+            "6,022·10²³ g"
+          ],
+          "correct": 2,
+          "explanation": "m = 2 × 58,44 = **116,88 g**."
+        },
+        {
+          "type": "quiz",
+          "question": "La masa molar del agua es 18 g/mol. Esto significa que:",
+          "options": [
+            "Una molécula pesa 18 g",
+            "6,022·10²³ moléculas pesan 18 g",
+            "18 moléculas pesan 1 g",
+            "Un mol pesa 1 g"
+          ],
+          "correct": 1,
+          "explanation": "1 mol = NA partículas."
+        }
+      ]
+    },
+    {
+      "id": "l08-modelos",
+      "title": "Modelos atómicos (línea del tiempo)",
+      "summary": "De Demócrito y Dalton al modelo cuántico actual. Se ampliará con el PDF de clase.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Esta lección se ampliará con el PDF de modelos atómicos de la clase cuando lo agregues a la carpeta de fuentes."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Modelo",
+            "Año",
+            "Idea principal",
+            "Limitación"
+          ],
+          "rows": [
+            [
+              "Demócrito y Leucipo",
+              "s. V a. C.",
+              "La materia está formada por partículas indivisibles: átomos",
+              "Idea filosófica, sin experimentos"
+            ],
+            [
+              "Dalton",
+              "1808",
+              "Átomos indivisibles, iguales para cada elemento; se combinan en proporciones enteras",
+              "No explica cargas ni partículas internas"
+            ],
+            [
+              "Thomson («budín de pasas»)",
+              "1897",
+              "Descubre el electrón (rayos catódicos); esfera positiva con electrones incrustados",
+              "No explica la dispersión de Rutherford"
+            ],
+            [
+              "Rutherford (nuclear)",
+              "1911",
+              "Núcleo pequeño, denso y positivo; electrones girando alrededor; átomo casi vacío",
+              "Un electrón en órbita debería perder energía y caer al núcleo"
+            ],
+            [
+              "Bohr",
+              "1913",
+              "Electrones en órbitas de energía cuantizada; absorben o emiten luz al saltar entre niveles",
+              "Solo funciona bien para el hidrógeno"
+            ],
+            [
+              "Sommerfeld",
+              "1916",
+              "Órbitas elípticas además de circulares (subniveles)",
+              "Sigue siendo un modelo de órbitas"
+            ],
+            [
+              "Mecánico-cuántico (Schrödinger, Heisenberg, De Broglie)",
+              "1926",
+              "Orbitales: regiones de probabilidad descritas por la función de onda ψ y los números cuánticos",
+              "Modelo actual"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Al bombardear una lámina de oro con partículas alfa, casi todas la atravesaron, pero unas pocas rebotaron. Conclusión: la carga positiva y casi toda la masa están en un **núcleo diminuto**; el resto del átomo es casi vacío.",
+          "title": "El experimento de Rutherford"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "No se puede conocer con exactitud y al mismo tiempo la posición y la velocidad de un electrón (Heisenberg, 1927). Por eso se habla de **probabilidad** de encontrarlo: los orbitales.",
+          "title": "Principio de incertidumbre"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo introdujo los niveles de energía cuantizados?",
+          "options": [
+            "Dalton",
+            "Thomson",
+            "Rutherford",
+            "Bohr"
+          ],
+          "correct": 3,
+          "explanation": "**Bohr** (1913)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué experimento demostró la existencia del núcleo?",
+          "options": [
+            "Rayos catódicos de Thomson",
+            "Lámina de oro de Rutherford",
+            "Gota de aceite de Millikan",
+            "Espectro de Bohr"
+          ],
+          "correct": 1,
+          "explanation": "Partículas alfa desviadas: **Rutherford** (1911)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién descubrió el electrón?",
+          "options": [
+            "Dalton",
+            "Thomson",
+            "Chadwick",
+            "Bohr"
+          ],
+          "correct": 1,
+          "explanation": "**Thomson** (1897), con los rayos catódicos."
+        },
+        {
+          "type": "quiz",
+          "question": "El modelo actual describe al electrón mediante:",
+          "options": [
+            "Órbitas circulares fijas",
+            "Orbitales (regiones de probabilidad)",
+            "Esferas indivisibles",
+            "Un budín de pasas"
+          ],
+          "correct": 1,
+          "explanation": "Modelo mecánico-cuántico."
+        }
+      ]
+    }
+  ]
+}

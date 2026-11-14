@@ -1,0 +1,614 @@
+{
+  "id": "f06-momentos",
+  "title": "Momentos, cuerpo rígido y cargas distribuidas",
+  "description": "Momento de una fuerza, teorema de Varignon, pares, sistemas equivalentes, apoyos y reacciones, equilibrio del cuerpo rígido, cargas distribuidas y centroides",
+  "lessons": [
+    {
+      "id": "l01-momento",
+      "title": "Momento de una fuerza",
+      "summary": "M = F·d, brazo de palanca, signo y teorema de Varignon.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El **momento** (o torque) mide la tendencia de una fuerza a hacer **girar** un cuerpo alrededor de un punto. Para aflojar una tuerca empujas lejos del centro y perpendicular a la llave: así el giro es mayor. Por eso las puertas tienen la manija lejos de las bisagras.",
+          "title": "Analogía de la llave"
+        },
+        {
+          "type": "formula",
+          "expression": "M₀ = F · d⊥",
+          "caption": "d⊥ = brazo de palanca: distancia **perpendicular** desde el punto O a la **línea de acción** de la fuerza. Unidades: N·m (kN·m en estructuras)."
+        },
+        {
+          "type": "formula",
+          "expression": "M₀ = F · r · sen θ        M₀ = r × F (vectorial)",
+          "caption": "θ = ángulo entre r (de O al punto de aplicación) y F."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Convención de signos",
+            "Sentido"
+          ],
+          "rows": [
+            [
+              "Positivo (+)",
+              "Antihorario ↺"
+            ],
+            [
+              "Negativo (−)",
+              "Horario ↻"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si la línea de acción de la fuerza **pasa por el punto O**, el momento respecto a O es **cero** (brazo nulo). Este truco es clave para elegir el punto donde tomar momentos en los problemas de equilibrio."
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "El momento de una fuerza respecto a un punto es igual a la **suma de los momentos de sus componentes**: M₀ = x·Fy − y·Fx. Casi siempre es más fácil descomponer la fuerza que calcular el brazo perpendicular.",
+          "title": "Teorema de Varignon"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Una fuerza F = 200 N actúa en el punto (3, 2) m a 60° sobre la horizontal. Fx = 100 N, Fy = 173,2 N. M₀ = x·Fy − y·Fx = 3·173,2 − 2·100 = **319,6 N·m** (antihorario).",
+          "title": "Varignon"
+        },
+        {
+          "type": "interactive",
+          "widget": "fis_moment",
+          "title": "Laboratorio: momento de una fuerza con una llave"
+        },
+        {
+          "type": "quiz",
+          "question": "El brazo de palanca es la distancia:",
+          "options": [
+            "Del punto a la fuerza en cualquier dirección",
+            "Perpendicular del punto a la línea de acción",
+            "A lo largo de la fuerza",
+            "Al centro de masa"
+          ],
+          "correct": 1,
+          "explanation": "d⊥."
+        },
+        {
+          "type": "quiz",
+          "question": "Una fuerza de 50 N perpendicular a una llave de 0,4 m produce:",
+          "options": [
+            "20 N·m",
+            "125 N·m",
+            "0,008 N·m",
+            "50,4 N·m"
+          ],
+          "correct": 0,
+          "explanation": "50·0,4."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la fuerza pasa por el punto O, M₀ =",
+          "options": [
+            "F·d",
+            "0",
+            "Máximo",
+            "F"
+          ],
+          "correct": 1,
+          "explanation": "Brazo nulo."
+        },
+        {
+          "type": "quiz",
+          "question": "Por convención, un momento antihorario es:",
+          "options": [
+            "Negativo",
+            "Positivo",
+            "Nulo",
+            "Depende"
+          ],
+          "correct": 1,
+          "explanation": "↺ positivo."
+        },
+        {
+          "type": "quiz",
+          "question": "F = 100 N a 30° respecto a una barra de 2 m (aplicada en el extremo). M =",
+          "options": [
+            "200 N·m",
+            "100 N·m",
+            "173 N·m",
+            "50 N·m"
+          ],
+          "correct": 1,
+          "explanation": "100·2·sen 30°."
+        }
+      ]
+    },
+    {
+      "id": "l02-pares",
+      "title": "Par de fuerzas y sistemas equivalentes",
+      "summary": "Momento de un par, sistema fuerza–par y resultante de fuerzas paralelas.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Dos fuerzas **iguales, paralelas y de sentido opuesto** separadas una distancia d. No producen traslación (suman cero) pero sí giro. Su momento **M = F·d** es el **mismo respecto a cualquier punto** (es un «vector libre»).",
+          "title": "Par de fuerzas"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Al girar un volante con las dos manos, una empuja hacia arriba y la otra hacia abajo: es un par. El auto no se mueve de lado; solo gira el volante.",
+          "title": "Analogía"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Una fuerza F aplicada en A se puede **trasladar** a otro punto B si se agrega un par igual a su momento respecto a B: M = F·d. Así cualquier sistema de fuerzas se reduce a una **fuerza resultante R + un par M** en un punto.",
+          "title": "Sistema fuerza–par"
+        },
+        {
+          "type": "formula",
+          "expression": "R = ΣF        x̄ = Σ(Fᵢ·xᵢ)/ΣFᵢ",
+          "caption": "Resultante de fuerzas paralelas (cargas verticales) y su ubicación: el momento de la resultante es igual a la suma de momentos."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Sobre una viga actúan 10 kN en x = 1 m, 20 kN en x = 3 m y 15 kN en x = 6 m (todas hacia abajo). R = 45 kN; x̄ = (10 + 60 + 90)/45 = **3,56 m**.",
+          "title": "Resultante de cargas paralelas"
+        },
+        {
+          "type": "quiz",
+          "question": "Un par de fuerzas produce:",
+          "options": [
+            "Solo traslación",
+            "Solo rotación",
+            "Ambas",
+            "Nada"
+          ],
+          "correct": 1,
+          "explanation": "Suma de fuerzas cero."
+        },
+        {
+          "type": "quiz",
+          "question": "Momento de un par de 30 N separado 0,5 m:",
+          "options": [
+            "60 N·m",
+            "15 N·m",
+            "30 N·m",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "F·d."
+        },
+        {
+          "type": "quiz",
+          "question": "Resultante de 5 kN en x = 0 y 5 kN en x = 4 m: ubicación",
+          "options": [
+            "0 m",
+            "2 m",
+            "4 m",
+            "1 m"
+          ],
+          "correct": 1,
+          "explanation": "Promedio ponderado."
+        }
+      ]
+    },
+    {
+      "id": "l03-apoyos",
+      "title": "Apoyos, reacciones y equilibrio del cuerpo rígido",
+      "summary": "Tipos de apoyo, DCL de vigas y las tres ecuaciones de equilibrio.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "ΣFx = 0        ΣFy = 0        ΣM = 0  (respecto a cualquier punto)",
+          "caption": "Equilibrio del cuerpo rígido en 2D: tres ecuaciones → se pueden hallar hasta 3 reacciones."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Apoyo",
+            "Qué impide",
+            "Reacciones (incógnitas)",
+            "Ejemplo real"
+          ],
+          "rows": [
+            [
+              "Móvil (rodillo, patín)",
+              "Movimiento perpendicular a la superficie",
+              "1: fuerza perpendicular (By)",
+              "Apoyo de neopreno de un puente"
+            ],
+            [
+              "Fijo (articulación, pasador)",
+              "Traslación en x e y (permite girar)",
+              "2: Ax y Ay",
+              "Bisagra, perno"
+            ],
+            [
+              "Empotramiento",
+              "Traslación y giro",
+              "3: Ax, Ay y momento MA",
+              "Viga en voladizo empotrada en un muro"
+            ],
+            [
+              "Cable",
+              "Alejarse a lo largo del cable",
+              "1: tensión (solo jala)",
+              "Tensor"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Dibuja el DCL: quita los apoyos y reemplázalos por sus reacciones (con sentido supuesto).",
+            "Reemplaza las cargas distribuidas por sus resultantes.",
+            "Toma **momentos respecto a un apoyo** (así sus reacciones no aparecen) y despeja la otra reacción.",
+            "Usa ΣFy = 0 y ΣFx = 0 para las demás.",
+            "Si una reacción sale negativa, su sentido real es el opuesto al supuesto.",
+            "Comprueba con ΣM respecto a otro punto."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Viga de 6 m con apoyo fijo A (x = 0) y móvil B (x = 6 m), carga puntual de 12 kN en x = 2 m. ΣMA = 0: By·6 − 12·2 = 0 → **By = 4 kN**. ΣFy = 0: Ay + 4 − 12 = 0 → **Ay = 8 kN**. ΣFx: Ax = 0. Comprobación ΣMB: −Ay·6 + 12·4 = −48 + 48 = 0 ✓.",
+          "title": "Viga simplemente apoyada"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Voladizo de 3 m empotrado en A con 5 kN en el extremo libre: Ay = 5 kN ↑; MA = 5·3 = **15 kN·m** (antihorario, para equilibrar el giro horario de la carga).",
+          "title": "Viga en voladizo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si hay más de 3 incógnitas de reacción, la estructura es **hiperestática** (estáticamente indeterminada) y no se resuelve solo con las ecuaciones de equilibrio: lo verás en Análisis Estructural.",
+          "title": "Isostática vs hiperestática"
+        },
+        {
+          "type": "interactive",
+          "widget": "fis_beam",
+          "title": "Reacciones de una viga con carga puntual",
+          "params": {
+            "preset": 0
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Un apoyo fijo (articulado) tiene:",
+          "options": [
+            "1 reacción",
+            "2 reacciones",
+            "3 reacciones",
+            "Ninguna"
+          ],
+          "correct": 1,
+          "explanation": "Ax y Ay."
+        },
+        {
+          "type": "quiz",
+          "question": "Un empotramiento tiene:",
+          "options": [
+            "1 reacción",
+            "2 reacciones",
+            "3 reacciones (incluye momento)",
+            "4"
+          ],
+          "correct": 2,
+          "explanation": "Impide también el giro."
+        },
+        {
+          "type": "quiz",
+          "question": "Conviene tomar momentos respecto a:",
+          "options": [
+            "El centro de la viga",
+            "Un apoyo (eliminas sus reacciones)",
+            "Un extremo cualquiera",
+            "Donde está la carga"
+          ],
+          "correct": 1,
+          "explanation": "Menos incógnitas."
+        },
+        {
+          "type": "quiz",
+          "question": "Viga de 10 m con 20 kN en el centro: cada reacción vale",
+          "options": [
+            "20 kN",
+            "10 kN",
+            "5 kN",
+            "200 kN"
+          ],
+          "correct": 1,
+          "explanation": "Simetría."
+        },
+        {
+          "type": "quiz",
+          "question": "Si una reacción calculada sale negativa:",
+          "options": [
+            "Hay un error seguro",
+            "Su sentido real es opuesto al supuesto",
+            "Vale cero",
+            "La viga falla"
+          ],
+          "correct": 1,
+          "explanation": "Solo el sentido."
+        }
+      ]
+    },
+    {
+      "id": "l04-distribuidas",
+      "title": "Cargas distribuidas",
+      "summary": "Resultante = área del diagrama; ubicación en el centroide: uniforme, triangular y trapezoidal.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Carga repartida a lo largo de una longitud, en **kN/m** (o N/m): el peso propio de una viga, una losa que descansa sobre ella, la presión de agua o de suelo sobre un muro, la nieve o el viento.",
+          "title": "Carga distribuida w(x)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una carga distribuida se reemplaza por **una sola fuerza equivalente**: su magnitud es el **área** del diagrama de carga y actúa en el **centroide** de esa área. Es como reemplazar una fila de ladrillos sobre una tabla por un único bloque del mismo peso puesto en su centro de gravedad.",
+          "title": "La regla de oro"
+        },
+        {
+          "type": "formula",
+          "expression": "R = ∫ w(x) dx = área bajo w(x)        x̄ = ∫ x·w(x) dx / R  (centroide)",
+          "caption": "En el primer ciclo se usan las formas geométricas de abajo."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Forma de la carga",
+            "Resultante R",
+            "Ubicación de R"
+          ],
+          "rows": [
+            [
+              "**Uniforme** (rectángulo) de intensidad w en longitud L",
+              "R = w·L",
+              "En el **centro**: L/2"
+            ],
+            [
+              "**Triangular** de 0 a w en longitud L",
+              "R = w·L/2",
+              "A **L/3 del lado más alto** (= 2L/3 desde el vértice de intensidad cero)"
+            ],
+            [
+              "**Trapezoidal** de w₁ a w₂",
+              "Descomponer en rectángulo (w₁·L en L/2) + triángulo ((w₂ − w₁)L/2 en 2L/3 desde el extremo de w₁)",
+              "O usar x̄ = L(w₁ + 2w₂)/[3(w₁ + w₂)] desde el lado de w₁"
+            ],
+            [
+              "**Parabólica** (spandrel) de 0 a w",
+              "R = w·L/3",
+              "A 3L/4 desde el vértice"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Viga de 6 m con carga uniforme de 4 kN/m en toda su longitud. R = 4·6 = 24 kN en x = 3 m. Por simetría Ay = By = **12 kN**.",
+          "title": "Ejemplo 1: uniforme"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Viga de 6 m con carga triangular que crece de 0 (en A) a 6 kN/m (en B). R = 6·6/2 = 18 kN, ubicada a 2·6/3 = 4 m de A. ΣMA: By·6 = 18·4 → **By = 12 kN**; **Ay = 6 kN**. (El apoyo cercano a la parte más cargada recibe más.)",
+          "title": "Ejemplo 2: triangular"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Carga trapezoidal de 2 kN/m (x = 0) a 5 kN/m (x = 4 m) sobre una viga de 4 m. Rectángulo: 2·4 = 8 kN en x = 2. Triángulo: 3·4/2 = 6 kN en x = 8/3 = 2,67 m. R = 14 kN; x̄ = (8·2 + 6·2,67)/14 = **2,29 m**. Reacciones: By = 14·2,29/4 = 8 kN; Ay = 6 kN.",
+          "title": "Ejemplo 3: trapezoidal"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Viga de 8 m: carga uniforme 3 kN/m entre x = 2 y x = 6 m, y puntual de 10 kN en x = 7 m. Uniforme: R = 12 kN en x = 4. ΣMA: By·8 = 12·4 + 10·7 = 118 → **By = 14,75 kN**; Ay = 22 − 14,75 = **7,25 kN**.",
+          "title": "Ejemplo 4: combinada"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La presión del agua sobre la pared de un tanque o de un muro de contención es **triangular** (crece con la profundidad: p = γ·h). Su resultante, γh²/2 por metro de ancho, actúa a **h/3 desde el fondo**: así se diseñan muros y compuertas."
+        },
+        {
+          "type": "interactive",
+          "widget": "fis_beam",
+          "title": "Laboratorio: cargas distribuidas y reacciones",
+          "params": {
+            "preset": 2
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "La resultante de una carga distribuida es igual a:",
+          "options": [
+            "La carga máxima",
+            "El área del diagrama de carga",
+            "La longitud",
+            "La mitad de la carga"
+          ],
+          "correct": 1,
+          "explanation": "Regla de oro."
+        },
+        {
+          "type": "quiz",
+          "question": "Carga uniforme de 5 kN/m en 4 m: resultante y ubicación",
+          "options": [
+            "20 kN en el centro",
+            "5 kN en el centro",
+            "20 kN en un extremo",
+            "10 kN a L/3"
+          ],
+          "correct": 0,
+          "explanation": "wL en L/2."
+        },
+        {
+          "type": "quiz",
+          "question": "Carga triangular de 0 a 9 kN/m en 6 m: resultante",
+          "options": [
+            "54 kN",
+            "27 kN",
+            "18 kN",
+            "9 kN"
+          ],
+          "correct": 1,
+          "explanation": "wL/2."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde actúa la resultante de una carga triangular?",
+          "options": [
+            "En el centro",
+            "A L/3 del lado más alto",
+            "A L/3 del lado de intensidad cero",
+            "En el extremo más cargado"
+          ],
+          "correct": 1,
+          "explanation": "En el centroide del triángulo."
+        },
+        {
+          "type": "quiz",
+          "question": "La presión hidrostática sobre un muro tiene forma:",
+          "options": [
+            "Uniforme",
+            "Triangular",
+            "Parabólica",
+            "Puntual"
+          ],
+          "correct": 1,
+          "explanation": "Crece linealmente con la profundidad."
+        },
+        {
+          "type": "quiz",
+          "question": "Viga de 6 m con 4 kN/m uniforme en toda la luz: Ay =",
+          "options": [
+            "24 kN",
+            "12 kN",
+            "6 kN",
+            "4 kN"
+          ],
+          "correct": 1,
+          "explanation": "Mitad de 24."
+        }
+      ]
+    },
+    {
+      "id": "l05-centroides",
+      "title": "Centro de gravedad y centroides",
+      "summary": "Centroide de áreas compuestas, relación con las cargas distribuidas.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "El **centro de gravedad** es el punto donde se puede considerar concentrado todo el peso de un cuerpo. El **centroide** es el «centro geométrico» de un área (coincide con el centro de gravedad si el material es homogéneo).",
+          "title": "Definiciones"
+        },
+        {
+          "type": "formula",
+          "expression": "x̄ = Σ(Aᵢ·x̄ᵢ)/ΣAᵢ        ȳ = Σ(Aᵢ·ȳᵢ)/ΣAᵢ",
+          "caption": "Áreas compuestas: dividir en figuras simples. Un agujero se resta (área negativa)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Figura",
+            "Área",
+            "Centroide (desde la esquina inferior izquierda o la base)"
+          ],
+          "rows": [
+            [
+              "Rectángulo b × h",
+              "b·h",
+              "(b/2, h/2)"
+            ],
+            [
+              "Triángulo rectángulo b × h",
+              "b·h/2",
+              "(b/3, h/3) desde el ángulo recto"
+            ],
+            [
+              "Círculo de radio r",
+              "πr²",
+              "El centro"
+            ],
+            [
+              "Semicírculo",
+              "πr²/2",
+              "4r/(3π) desde el diámetro"
+            ],
+            [
+              "Cuarto de círculo",
+              "πr²/4",
+              "(4r/(3π), 4r/(3π))"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Sección en L: rectángulo vertical 2 × 10 (A₁ = 20, centroide (1, 5)) + rectángulo horizontal 6 × 2 a su derecha en la base (A₂ = 12, centroide (5, 1)). x̄ = (20·1 + 12·5)/32 = **2,5**; ȳ = (20·5 + 12·1)/32 = **3,5**.",
+          "title": "Área compuesta"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El centroide de la sección de una viga es por donde pasa el **eje neutro** en flexión; el de una zapata define si la carga queda centrada o produce presiones desiguales en el suelo."
+        },
+        {
+          "type": "quiz",
+          "question": "Centroide de un rectángulo de 4 × 6 (desde la esquina):",
+          "options": [
+            "(2, 3)",
+            "(4, 6)",
+            "(1, 2)",
+            "(2, 6)"
+          ],
+          "correct": 0,
+          "explanation": "Mitad de cada lado."
+        },
+        {
+          "type": "quiz",
+          "question": "El centroide de un triángulo rectángulo está a qué distancia del ángulo recto (sobre la base b):",
+          "options": [
+            "b/2",
+            "b/3",
+            "2b/3",
+            "b/4"
+          ],
+          "correct": 1,
+          "explanation": "Un tercio."
+        },
+        {
+          "type": "quiz",
+          "question": "En un área compuesta, un agujero:",
+          "options": [
+            "Se ignora",
+            "Se suma",
+            "Se resta (área negativa)",
+            "Se duplica"
+          ],
+          "correct": 2,
+          "explanation": "Se descuenta."
+        }
+      ]
+    }
+  ]
+}

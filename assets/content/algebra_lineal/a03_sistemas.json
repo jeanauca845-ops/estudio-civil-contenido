@@ -1,0 +1,430 @@
+{
+  "id": "a03-sistemas",
+  "title": "Sistemas de ecuaciones lineales",
+  "description": "Forma matricial, Gauss y Gauss-Jordan, rango y Rouché–Frobenius, Cramer, sistemas homogéneos y aplicaciones",
+  "lessons": [
+    {
+      "id": "l01-planteo",
+      "title": "Sistemas lineales y su forma matricial",
+      "summary": "Qué es un sistema lineal, solución, interpretación geométrica y tipos.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Un conjunto de ecuaciones de primer grado (sin productos ni potencias de las incógnitas). Se escribe como **A·x = b**: A es la matriz de coeficientes, x el vector de incógnitas y b el de términos independientes. [A | b] es la **matriz aumentada**.",
+          "title": "Sistema lineal"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "2x + y = 5 y x − y = 1  →  [[2, 1], [1, −1]]·[x; y] = [5; 1]. Aumentada: [2 1 | 5; 1 −1 | 1]. Solución: x = 2, y = 1.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Soluciones",
+            "Interpretación geométrica (2 incógnitas)"
+          ],
+          "rows": [
+            [
+              "Compatible determinado (SCD)",
+              "Una única",
+              "Dos rectas que se cortan en un punto"
+            ],
+            [
+              "Compatible indeterminado (SCI)",
+              "Infinitas",
+              "Dos rectas coincidentes"
+            ],
+            [
+              "Incompatible (SI)",
+              "Ninguna",
+              "Dos rectas paralelas distintas"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Con 3 incógnitas, cada ecuación es un **plano**. La solución única es el punto común de tres planos (como la esquina de una habitación: piso y dos paredes).",
+          "title": "En 3D"
+        },
+        {
+          "type": "quiz",
+          "question": "Un sistema con infinitas soluciones es:",
+          "options": [
+            "Incompatible",
+            "Compatible determinado",
+            "Compatible indeterminado",
+            "Homogéneo siempre"
+          ],
+          "correct": 2,
+          "explanation": "SCI."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos rectas paralelas distintas representan un sistema:",
+          "options": [
+            "Incompatible",
+            "Determinado",
+            "Indeterminado",
+            "Homogéneo"
+          ],
+          "correct": 0,
+          "explanation": "No se cortan."
+        },
+        {
+          "type": "quiz",
+          "question": "En Ax = b, A es:",
+          "options": [
+            "El vector de incógnitas",
+            "La matriz de coeficientes",
+            "El término independiente",
+            "La inversa"
+          ],
+          "correct": 1,
+          "explanation": "Coeficientes."
+        }
+      ]
+    },
+    {
+      "id": "l02-gauss",
+      "title": "Método de Gauss y Gauss-Jordan",
+      "summary": "Operaciones elementales, forma escalonada, sustitución hacia atrás y forma reducida.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Operación elemental de fila",
+            "Notación",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Intercambiar dos filas",
+              "Fᵢ ↔ Fⱼ",
+              "F₁ ↔ F₂"
+            ],
+            [
+              "Multiplicar una fila por k ≠ 0",
+              "Fᵢ → k·Fᵢ",
+              "F₂ → (1/3)F₂"
+            ],
+            [
+              "Sumar a una fila un múltiplo de otra",
+              "Fᵢ → Fᵢ + k·Fⱼ",
+              "F₂ → F₂ − 2F₁"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Estas operaciones no cambian las soluciones: es como multiplicar una ecuación por un número o sumar dos ecuaciones. El objetivo es dejar ceros debajo (Gauss) o encima y debajo (Gauss-Jordan) de cada **pivote**.",
+          "title": "Idea"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Escribe la matriz aumentada [A | b].",
+            "Elige el pivote de la columna 1 (si es 0, intercambia filas).",
+            "Haz ceros **debajo** del pivote con Fᵢ → Fᵢ − k·F₁.",
+            "Repite con la columna 2 desde la fila 2, y así sucesivamente: forma **escalonada**.",
+            "Resuelve desde la última ecuación hacia arriba (**sustitución hacia atrás**)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x + y + z = 6; 2x − y + z = 3; x + 2y − z = 2.  F₂ → F₂ − 2F₁: (0, −3, −1 | −9).  F₃ → F₃ − F₁: (0, 1, −2 | −4).  F₃ → F₃ + (1/3)F₂: (0, 0, −7/3 | −7) → z = 3. Luego −3y − 3 = −9 → y = 2; x = 6 − 2 − 3 = **1**. Solución (1, 2, 3).",
+          "title": "Ejemplo resuelto"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Se continúa hasta tener **unos en los pivotes y ceros arriba y abajo** (forma escalonada reducida): la solución se lee directamente en la última columna.",
+          "title": "Gauss-Jordan"
+        },
+        {
+          "type": "interactive",
+          "widget": "la_gauss",
+          "title": "Resuelve sistemas paso a paso con fracciones exactas"
+        },
+        {
+          "type": "quiz",
+          "question": "La operación Fᵢ → Fᵢ + kFⱼ:",
+          "options": [
+            "Cambia las soluciones",
+            "No cambia las soluciones",
+            "Cambia el número de ecuaciones",
+            "Solo sirve en 2 × 2"
+          ],
+          "correct": 1,
+          "explanation": "Operación elemental."
+        },
+        {
+          "type": "quiz",
+          "question": "El método de Gauss busca una matriz:",
+          "options": [
+            "Identidad",
+            "Escalonada (ceros debajo de los pivotes)",
+            "Simétrica",
+            "Nula"
+          ],
+          "correct": 1,
+          "explanation": "Luego sustitución hacia atrás."
+        },
+        {
+          "type": "quiz",
+          "question": "Si el pivote es 0 se debe:",
+          "options": [
+            "Detener",
+            "Intercambiar filas",
+            "Dividir entre 0",
+            "Borrar la fila"
+          ],
+          "correct": 1,
+          "explanation": "Buscar un pivote no nulo."
+        },
+        {
+          "type": "quiz",
+          "question": "Gauss-Jordan termina con:",
+          "options": [
+            "Una triangular",
+            "La forma escalonada reducida (identidad a la izquierda)",
+            "Una fila de ceros",
+            "El determinante"
+          ],
+          "correct": 1,
+          "explanation": "Se lee la solución."
+        }
+      ]
+    },
+    {
+      "id": "l03-rouche",
+      "title": "Rango y teorema de Rouché–Frobenius",
+      "summary": "Clasificar un sistema sin resolverlo.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Número de filas **no nulas** de la forma escalonada (número de ecuaciones realmente independientes).",
+          "title": "Rango"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Condición (n = número de incógnitas)",
+            "Tipo de sistema"
+          ],
+          "rows": [
+            [
+              "rango(A) = rango(A|b) = n",
+              "Compatible **determinado**: solución única"
+            ],
+            [
+              "rango(A) = rango(A|b) < n",
+              "Compatible **indeterminado**: infinitas soluciones con n − rango parámetros libres"
+            ],
+            [
+              "rango(A) ≠ rango(A|b)",
+              "**Incompatible**: no tiene solución (aparece una fila 0 0 0 | c con c ≠ 0)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Si al escalonar aparece (0 0 0 | 5), esa fila dice 0 = 5: imposible → incompatible. Si aparece (0 0 0 | 0), esa ecuación sobraba.",
+          "title": "Cómo se ve"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x + 2y − z = 3; 2x + 4y − 2z = 6; x − y + z = 0. La 2.ª es el doble de la 1.ª: rango 2 < 3 incógnitas → infinitas soluciones con 1 parámetro.",
+          "title": "Indeterminado"
+        },
+        {
+          "type": "interactive",
+          "widget": "la_gauss",
+          "title": "Prueba los casos: única, infinitas y sin solución"
+        },
+        {
+          "type": "quiz",
+          "question": "Si rango(A) = rango(A|b) = 3 con 3 incógnitas:",
+          "options": [
+            "Infinitas",
+            "Única",
+            "Ninguna",
+            "Dos"
+          ],
+          "correct": 1,
+          "explanation": "Determinado."
+        },
+        {
+          "type": "quiz",
+          "question": "Una fila (0 0 0 | 4) indica:",
+          "options": [
+            "Solución única",
+            "Sistema incompatible",
+            "Infinitas soluciones",
+            "Error de cálculo"
+          ],
+          "correct": 1,
+          "explanation": "0 = 4."
+        },
+        {
+          "type": "quiz",
+          "question": "Rango 2 con 4 incógnitas (compatible): parámetros libres =",
+          "options": [
+            "1",
+            "2",
+            "4",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "n − rango."
+        }
+      ]
+    },
+    {
+      "id": "l04-cramer",
+      "title": "Regla de Cramer",
+      "summary": "Resolver con determinantes cuando det A ≠ 0.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "xᵢ = det(Aᵢ)/det(A)",
+          "caption": "Aᵢ es A con la columna i reemplazada por b. Solo si det A ≠ 0."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "2x + y = 5; x − y = 1. det A = −2 − 1 = −3. det Aₓ = |5 1; 1 −1| = −6 → x = 2. det Aᵧ = |2 5; 1 1| = −3 → y = 1.",
+          "title": "Ejemplo 2 × 2"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Cramer es cómodo para 2 × 2 y 3 × 3 a mano. Para sistemas grandes, Gauss es mucho más rápido."
+        },
+        {
+          "type": "quiz",
+          "question": "Cramer se puede aplicar si:",
+          "options": [
+            "det A = 0",
+            "det A ≠ 0",
+            "El sistema es incompatible",
+            "Hay más incógnitas que ecuaciones"
+          ],
+          "correct": 1,
+          "explanation": "Solución única."
+        },
+        {
+          "type": "quiz",
+          "question": "En Cramer, para hallar y se reemplaza:",
+          "options": [
+            "La fila 2 por b",
+            "La columna de y por b",
+            "Toda la matriz",
+            "La diagonal"
+          ],
+          "correct": 1,
+          "explanation": "Columna correspondiente."
+        },
+        {
+          "type": "quiz",
+          "question": "x + y = 3; x − y = 1 con Cramer: x =",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "−2"
+          ],
+          "correct": 1,
+          "explanation": "det = −2; detₓ = −4."
+        }
+      ]
+    },
+    {
+      "id": "l05-homogeneos",
+      "title": "Sistemas homogéneos y aplicaciones",
+      "summary": "Ax = 0, solución trivial, y aplicaciones en ingeniería.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Sistema con b = 0. Siempre es compatible: tiene al menos la **solución trivial** x = 0. Tiene soluciones no triviales (infinitas) si y solo si **det A = 0** (rango < n).",
+          "title": "Homogéneo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Aplicación",
+            "Qué representan las incógnitas"
+          ],
+          "rows": [
+            [
+              "Armaduras (cerchas)",
+              "Fuerzas en las barras: equilibrio en cada nudo (ΣFx = 0, ΣFy = 0)"
+            ],
+            [
+              "Redes de tuberías",
+              "Caudales en cada tramo: lo que entra a un nudo = lo que sale"
+            ],
+            [
+              "Circuitos eléctricos",
+              "Corrientes (leyes de Kirchhoff)"
+            ],
+            [
+              "Balance de mezclas",
+              "Cantidades de cada material para cumplir una dosificación"
+            ],
+            [
+              "Tráfico vehicular",
+              "Flujo de vehículos en cada calle de una red"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Dosificación: se necesita 100 kg de agregado con 40 % de arena usando dos acopios (A: 20 % arena; B: 60 % arena). x + y = 100; 0,2x + 0,6y = 40 → y = 50, x = 50 kg.",
+          "title": "Ejemplo de mezcla"
+        },
+        {
+          "type": "quiz",
+          "question": "Un sistema homogéneo siempre tiene:",
+          "options": [
+            "Ninguna solución",
+            "La solución trivial",
+            "Infinitas soluciones",
+            "Una solución no nula"
+          ],
+          "correct": 1,
+          "explanation": "x = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Un sistema homogéneo tiene soluciones no triviales si:",
+          "options": [
+            "det A ≠ 0",
+            "det A = 0",
+            "A es la identidad",
+            "Nunca"
+          ],
+          "correct": 1,
+          "explanation": "Rango < n."
+        }
+      ]
+    }
+  ]
+}

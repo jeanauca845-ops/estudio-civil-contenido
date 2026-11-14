@@ -1,0 +1,616 @@
+{
+  "id": "c07-implicita",
+  "title": "Derivación implícita",
+  "description": "Funciones implícitas, procedimiento, rectas tangentes a curvas, segunda derivada implícita y derivadas de funciones inversas",
+  "lessons": [
+    {
+      "id": "l01-idea",
+      "title": "Funciones implícitas: la idea",
+      "summary": "Explícita vs implícita y el procedimiento de 4 pasos.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Forma",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Explícita",
+              "y está despejada: y = f(x)",
+              "y = x² + 3x"
+            ],
+            [
+              "Implícita",
+              "x e y mezcladas en una ecuación F(x, y) = 0",
+              "x² + y² = 25;  x³ + y³ = 6xy;  sen(xy) = x"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Muchas curvas no se pueden (o no conviene) despejar: x³ + y³ = 6xy (folio de Descartes) o y⁵ + y = x. Además, como la circunferencia, muchas no son funciones (una x tiene dos y). Aun así, en cada punto tienen recta tangente. ¿Cómo calcular su pendiente dy/dx?"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Se deriva **toda la ecuación respecto a x**, término por término, recordando que **y depende de x** (y = y(x)). Por eso, cada vez que derives algo con y aplicas la **regla de la cadena** y aparece un factor **y′** (o dy/dx). Es como derivar (g(x))³ → 3(g(x))²·g′(x), pero con y en lugar de g(x).",
+          "title": "La idea clave"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término",
+            "Derivada respecto a x",
+            "Por qué"
+          ],
+          "rows": [
+            [
+              "x²",
+              "2x",
+              "Normal"
+            ],
+            [
+              "y²",
+              "2y·y′",
+              "Cadena: y es función de x"
+            ],
+            [
+              "y³",
+              "3y²·y′",
+              "Cadena"
+            ],
+            [
+              "sen y",
+              "cos y·y′",
+              "Cadena"
+            ],
+            [
+              "eʸ",
+              "eʸ·y′",
+              "Cadena"
+            ],
+            [
+              "ln y",
+              "y′/y",
+              "Cadena"
+            ],
+            [
+              "xy",
+              "1·y + x·y′",
+              "Producto (x por y)"
+            ],
+            [
+              "x²y³",
+              "2xy³ + x²·3y²y′",
+              "Producto + cadena"
+            ],
+            [
+              "sen(xy)",
+              "cos(xy)·(y + xy′)",
+              "Cadena + producto"
+            ],
+            [
+              "constante",
+              "0",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Deriva ambos lados** de la ecuación respecto a x (cadena en cada término con y).",
+            "**Agrupa** todos los términos con y′ a un lado y los demás al otro.",
+            "**Factoriza** y′.",
+            "**Despeja** y′ dividiendo."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x² + y² = 25. Derivo: 2x + 2y·y′ = 0 → 2y·y′ = −2x → **y′ = −x/y**. En el punto (3, 4): y′ = −3/4. Comprobación: la tangente a una circunferencia es perpendicular al radio (pendiente 4/3): (−3/4)(4/3) = −1 ✓.",
+          "title": "Ejemplo: circunferencia"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La derivada implícita suele quedar en función de **x e y**. Para evaluarla necesitas un **punto completo (x, y)** que esté sobre la curva."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_implicit",
+          "title": "Mueve el punto y mira la tangente",
+          "params": {
+            "preset": 0
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Al derivar y³ respecto a x se obtiene:",
+          "options": [
+            "3y²",
+            "3y²·y′",
+            "y³′",
+            "3x²"
+          ],
+          "correct": 1,
+          "explanation": "Cadena: y depende de x."
+        },
+        {
+          "type": "quiz",
+          "question": "La derivada de xy respecto a x es:",
+          "options": [
+            "y′",
+            "x·y′",
+            "y + x·y′",
+            "1"
+          ],
+          "correct": 2,
+          "explanation": "Regla del producto."
+        },
+        {
+          "type": "quiz",
+          "question": "Para x² + y² = 25, y′ =",
+          "options": [
+            "−y/x",
+            "−x/y",
+            "x/y",
+            "2x"
+          ],
+          "correct": 1,
+          "explanation": "2x + 2yy′ = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "La pendiente de x² + y² = 25 en (−3, 4):",
+          "options": [
+            "3/4",
+            "−3/4",
+            "4/3",
+            "−4/3"
+          ],
+          "correct": 0,
+          "explanation": "−(−3)/4."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué aparece y′ al derivar términos con y?",
+          "options": [
+            "Por la regla del producto",
+            "Porque y es función de x (regla de la cadena)",
+            "Por error",
+            "Porque y es constante"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        },
+        {
+          "type": "quiz",
+          "question": "(eʸ)′ respecto a x =",
+          "options": [
+            "eʸ",
+            "eʸ·y′",
+            "y·eʸ⁻¹",
+            "eˣ"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        }
+      ]
+    },
+    {
+      "id": "l02-ejemplos",
+      "title": "Ejemplos resueltos de derivación implícita",
+      "summary": "Productos, trigonométricas, exponenciales y el folio de Descartes.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x³ + y³ = 6xy. Derivo: 3x² + 3y²y′ = 6y + 6xy′. Agrupo: 3y²y′ − 6xy′ = 6y − 3x². Factorizo: y′(3y² − 6x) = 6y − 3x². **y′ = (2y − x²)/(y² − 2x)**. En (3, 3): y′ = (6 − 9)/(9 − 6) = −1.",
+          "title": "Ejemplo 1: folio de Descartes"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x²y + xy³ = 10. Producto en ambos términos: 2xy + x²y′ + y³ + 3xy²y′ = 0 → y′(x² + 3xy²) = −2xy − y³ → **y′ = −(2xy + y³)/(x² + 3xy²)**.",
+          "title": "Ejemplo 2: productos"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "sen(x + y) = y cos x. cos(x + y)(1 + y′) = y′cos x − y sen x → cos(x + y) + cos(x + y)y′ = y′ cos x − y sen x → y′[cos(x + y) − cos x] = −y sen x − cos(x + y) → **y′ = [y sen x + cos(x + y)]/[cos x − cos(x + y)]**.",
+          "title": "Ejemplo 3: trigonométrica"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "e^(xy) = x + y. e^(xy)(y + xy′) = 1 + y′ → y e^(xy) + x e^(xy) y′ = 1 + y′ → y′(x e^(xy) − 1) = 1 − y e^(xy) → **y′ = (1 − y e^(xy))/(x e^(xy) − 1)**.",
+          "title": "Ejemplo 4: exponencial"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "√x + √y = 4. 1/(2√x) + y′/(2√y) = 0 → **y′ = −√y/√x**.",
+          "title": "Ejemplo 5: raíces"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x²/9 + y²/4 = 1 (elipse). 2x/9 + 2yy′/4 = 0 → **y′ = −4x/(9y)**.",
+          "title": "Ejemplo 6: elipse"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "ln y + xy = 2. y′/y + y + xy′ = 0 → y′(1/y + x) = −y → **y′ = −y²/(1 + xy)**.",
+          "title": "Ejemplo 7: logaritmo"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Si te piden la pendiente en un punto, puedes **reemplazar x e y numéricos justo después de derivar** (antes de despejar): así resuelves una ecuación lineal sencilla en y′ y evitas álgebra.",
+          "title": "Atajo de examen"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_implicit",
+          "title": "Folio de Descartes",
+          "params": {
+            "preset": 4
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "Derivando x² + xy + y² = 7 respecto a x:",
+          "options": [
+            "2x + y + xy′ + 2yy′ = 0",
+            "2x + y′ + 2y = 0",
+            "2x + xy′ + 2y = 0",
+            "2x + y + 2yy′ = 7"
+          ],
+          "correct": 0,
+          "explanation": "Producto en xy y cadena en y²."
+        },
+        {
+          "type": "quiz",
+          "question": "De la anterior, y′ =",
+          "options": [
+            "−(2x + y)/(x + 2y)",
+            "(2x + y)/(x + 2y)",
+            "−2x/2y",
+            "−(x + 2y)/(2x + y)"
+          ],
+          "correct": 0,
+          "explanation": "Agrupar y despejar."
+        },
+        {
+          "type": "quiz",
+          "question": "Para √x + √y = 4, y′ =",
+          "options": [
+            "−√y/√x",
+            "√y/√x",
+            "−√x/√y",
+            "−1"
+          ],
+          "correct": 0,
+          "explanation": "Ejemplo 5."
+        },
+        {
+          "type": "quiz",
+          "question": "Para y³ = x, y′ =",
+          "options": [
+            "1/(3y²)",
+            "3y²",
+            "x/3",
+            "3x²"
+          ],
+          "correct": 0,
+          "explanation": "3y²y′ = 1."
+        },
+        {
+          "type": "quiz",
+          "question": "En x³ + y³ = 6xy, la pendiente en (3, 3) es:",
+          "options": [
+            "1",
+            "−1",
+            "0",
+            "3"
+          ],
+          "correct": 1,
+          "explanation": "Ejemplo 1."
+        },
+        {
+          "type": "quiz",
+          "question": "Derivada de cos(y) respecto a x:",
+          "options": [
+            "−sen y",
+            "−sen y·y′",
+            "sen y·y′",
+            "cos y·y′"
+          ],
+          "correct": 1,
+          "explanation": "Cadena."
+        }
+      ]
+    },
+    {
+      "id": "l03-tangentes",
+      "title": "Rectas tangentes y normales a curvas implícitas",
+      "summary": "Ecuación de la tangente, de la normal, tangentes horizontales y verticales.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "Tangente:  y − y₀ = m(x − x₀)        Normal:  y − y₀ = −(1/m)(x − x₀)",
+          "caption": "m = y′ evaluada en el punto (x₀, y₀). La normal es perpendicular a la tangente."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Verifica que el punto está sobre la curva (reemplaza en la ecuación).",
+            "Deriva implícitamente y evalúa y′ en (x₀, y₀): esa es m.",
+            "Escribe la recta con punto-pendiente.",
+            "Para la normal usa −1/m."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Curva x² + xy + y² = 7 en (1, 2). Comprobación: 1 + 2 + 4 = 7 ✓. Derivando: 2x + y + xy′ + 2yy′ = 0 → en (1, 2): 2 + 2 + y′ + 4y′ = 0 → y′ = −4/5. Tangente: **y − 2 = −(4/5)(x − 1)**. Normal: **y − 2 = (5/4)(x − 1)**.",
+          "title": "Ejemplo completo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo de tangente",
+            "Condición en y′ = N/D",
+            "Cómo hallar los puntos"
+          ],
+          "rows": [
+            [
+              "Horizontal",
+              "y′ = 0 → numerador N = 0 (y D ≠ 0)",
+              "Resolver el sistema {N = 0 y la ecuación de la curva}"
+            ],
+            [
+              "Vertical",
+              "y′ no definida → denominador D = 0 (y N ≠ 0)",
+              "Resolver el sistema {D = 0 y la ecuación de la curva}"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x² + y² = 25, y′ = −x/y. Horizontales: x = 0 → y = ±5 → (0, 5) y (0, −5). Verticales: y = 0 → x = ±5 → (5, 0) y (−5, 0). ¡Justo los puntos más alto, más bajo, más a la derecha y más a la izquierda!",
+          "title": "Tangentes horizontales y verticales"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x² − xy + y² = 3: y′ = (2x − y)/(x − 2y). Horizontal: y = 2x → x² − 2x² + 4x² = 3 → x = ±1 → (1, 2) y (−1, −2).",
+          "title": "Otro ejemplo"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_implicit",
+          "title": "Elipse: busca las tangentes horizontales y verticales",
+          "params": {
+            "preset": 1
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "La recta normal tiene pendiente:",
+          "options": [
+            "m",
+            "−m",
+            "1/m",
+            "−1/m"
+          ],
+          "correct": 3,
+          "explanation": "Perpendicular."
+        },
+        {
+          "type": "quiz",
+          "question": "Tangente a x² + y² = 25 en (3, 4):",
+          "options": [
+            "y − 4 = −(3/4)(x − 3)",
+            "y − 4 = (4/3)(x − 3)",
+            "y = −3x/4",
+            "y − 3 = −(3/4)(x − 4)"
+          ],
+          "correct": 0,
+          "explanation": "m = −3/4."
+        },
+        {
+          "type": "quiz",
+          "question": "Una curva tiene tangente horizontal donde:",
+          "options": [
+            "y′ = 0",
+            "y′ no existe",
+            "y = 0",
+            "x = 0"
+          ],
+          "correct": 0,
+          "explanation": "Pendiente cero."
+        },
+        {
+          "type": "quiz",
+          "question": "Si y′ = (x + 1)/(y − 2), hay tangentes verticales donde:",
+          "options": [
+            "x = −1",
+            "y = 2",
+            "x = 2",
+            "y = −1"
+          ],
+          "correct": 1,
+          "explanation": "Denominador cero."
+        },
+        {
+          "type": "quiz",
+          "question": "Antes de calcular la tangente en un punto conviene:",
+          "options": [
+            "Graficar",
+            "Verificar que el punto pertenece a la curva",
+            "Hallar y″",
+            "Usar L'Hôpital"
+          ],
+          "correct": 1,
+          "explanation": "Si no está en la curva, no tiene sentido."
+        }
+      ]
+    },
+    {
+      "id": "l04-segunda",
+      "title": "Segunda derivada implícita",
+      "summary": "Derivar y′ otra vez, reemplazando y′ y simplificando con la ecuación original.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Obtén y′ implícitamente.",
+            "Deriva y′ respecto a x (con regla del cociente y recordando que y depende de x: aparece y′ otra vez).",
+            "Reemplaza la y′ que ya conoces.",
+            "Simplifica; muchas veces la ecuación original permite reducir la expresión."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x² + y² = 25, y′ = −x/y. y″ = −[1·y − x·y′]/y² = −[y − x(−x/y)]/y² = −[y² + x²]/y³ = **−25/y³** (usando x² + y² = 25). En la parte superior (y > 0), y″ < 0: la curva es cóncava hacia abajo ✓.",
+          "title": "Ejemplo: circunferencia"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x⁴ + y⁴ = 16. y′ = −x³/y³. y″ = −[3x²y³ − x³·3y²y′]/y⁶ = −3x²[y⁴ + x⁴]/y⁷ = **−48x²/y⁷**.",
+          "title": "Ejemplo 2"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y² = x. 2yy′ = 1 → y′ = 1/(2y). y″ = −(1/2)y⁻²·y′ = −1/(2y²)·1/(2y) = **−1/(4y³)**.",
+          "title": "Ejemplo 3"
+        },
+        {
+          "type": "quiz",
+          "question": "Para x² + y² = 25, y″ =",
+          "options": [
+            "−25/y³",
+            "−x/y",
+            "25/y²",
+            "−1/y"
+          ],
+          "correct": 0,
+          "explanation": "Usando la ecuación original."
+        },
+        {
+          "type": "quiz",
+          "question": "Al derivar y′ = −x/y otra vez, ¿qué aparece?",
+          "options": [
+            "Nada nuevo",
+            "y′ de nuevo (y se reemplaza)",
+            "Una integral",
+            "x′"
+          ],
+          "correct": 1,
+          "explanation": "Se reemplaza el y′ conocido."
+        },
+        {
+          "type": "quiz",
+          "question": "Para y² = x, y′ =",
+          "options": [
+            "1/(2y)",
+            "2y",
+            "1/(2x)",
+            "x/2"
+          ],
+          "correct": 0,
+          "explanation": "2yy′ = 1."
+        }
+      ]
+    },
+    {
+      "id": "l05-inversas",
+      "title": "Derivadas de funciones inversas por implícita",
+      "summary": "Cómo salen las derivadas de arcsen, arctan y ln con derivación implícita.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = arcsen x ⟺ sen y = x (con −π/2 ≤ y ≤ π/2). Derivando: cos y·y′ = 1 → y′ = 1/cos y. Como cos y ≥ 0 en ese intervalo: cos y = √(1 − sen²y) = √(1 − x²). **y′ = 1/√(1 − x²)**.",
+          "title": "arcsen x"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = arctan x ⟺ tan y = x. sec²y·y′ = 1 → y′ = 1/sec²y = 1/(1 + tan²y) = **1/(1 + x²)**.",
+          "title": "arctan x"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = ln x ⟺ eʸ = x. eʸ·y′ = 1 → y′ = 1/eʸ = **1/x**.",
+          "title": "ln x"
+        },
+        {
+          "type": "formula",
+          "expression": "(f⁻¹)′(x) = 1 / f′(f⁻¹(x))",
+          "caption": "Fórmula general: la pendiente de la inversa es el recíproco de la pendiente de f en el punto correspondiente."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x³ + x, f(1) = 2. ¿(f⁻¹)′(2)? f′(x) = 3x² + 1 → f′(1) = 4 → (f⁻¹)′(2) = **1/4**. No hace falta despejar la inversa.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "quiz",
+          "question": "Si y = arctan x, entonces tan y = x y al derivar:",
+          "options": [
+            "sec²y·y′ = 1",
+            "tan y·y′ = 1",
+            "sec y = 1",
+            "y′ = tan y"
+          ],
+          "correct": 0,
+          "explanation": "Cadena."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f(2) = 5 y f′(2) = 3, entonces (f⁻¹)′(5) =",
+          "options": [
+            "3",
+            "1/3",
+            "5",
+            "1/5"
+          ],
+          "correct": 1,
+          "explanation": "1/f′(2)."
+        },
+        {
+          "type": "quiz",
+          "question": "Con eʸ = x se demuestra que (ln x)′ =",
+          "options": [
+            "eˣ",
+            "1/x",
+            "x",
+            "ln x"
+          ],
+          "correct": 1,
+          "explanation": "y′ = 1/eʸ = 1/x."
+        }
+      ]
+    }
+  ]
+}

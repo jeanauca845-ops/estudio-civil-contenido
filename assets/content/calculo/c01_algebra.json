@@ -1,0 +1,1489 @@
+{
+  "id": "c01-algebra",
+  "title": "Bases de álgebra para el cálculo",
+  "description": "Todo lo que necesitas antes de empezar: números, fracciones, potencias, factorización, ecuaciones, desigualdades y valor absoluto",
+  "lessons": [
+    {
+      "id": "l00-bienvenida",
+      "title": "Cómo usar esta materia",
+      "summary": "Qué es el cálculo, para qué sirve en ingeniería y cómo estudiar desde cero.",
+      "minutes": 6,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El cálculo es la matemática del **cambio**. El álgebra responde «¿cuánto vale?»; el cálculo responde «**¿qué tan rápido cambia?**» (derivadas) y «**¿cuánto se acumula?**» (integrales, que se ven en Cálculo 2).",
+          "title": "¿Qué es el cálculo?"
+        },
+        {
+          "type": "text",
+          "text": "Imagina que vas en bus. El álgebra te dice dónde estás en un momento dado. El cálculo te dice **qué tan rápido vas en ese instante exacto** (lo que marca el velocímetro), aunque el bus acelere y frene todo el tiempo."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tema",
+            "Pregunta que responde",
+            "Ejemplo en ingeniería civil"
+          ],
+          "rows": [
+            [
+              "Límites",
+              "¿A qué valor se acerca algo?",
+              "Carga a la que tiende una estructura cuando se acerca a la falla"
+            ],
+            [
+              "Derivadas",
+              "¿Qué tan rápido cambia?",
+              "Pendiente de una viga deformada, velocidad de llenado de un tanque"
+            ],
+            [
+              "Aplicaciones",
+              "¿Dónde está el máximo o el mínimo?",
+              "Diseñar la sección de canal que transporta más agua con menos material"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Esta materia **no asume que sepas nada**. Si una lección te parece fácil, avanza; si te pierdes, vuelve a la unidad de bases. El 80 % de los errores en cálculo son en realidad **errores de álgebra**: por eso la primera unidad es álgebra.",
+          "title": "Cómo estudiar"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Lee la lección con lápiz y papel: rehaz cada ejemplo tú misma antes de mirar la solución.",
+            "Usa los laboratorios: mover un deslizador vale más que mil palabras.",
+            "Responde las preguntas; las que falles volverán en el **Repaso**.",
+            "Cuando domines una unidad, haz un **Examen** de esa unidad.",
+            "Anota tus dudas en **Observaciones** (ícono de nota arriba) para preguntarlas después."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "quiz",
+          "question": "El cálculo diferencial estudia principalmente:",
+          "options": [
+            "Cuánto vale una expresión",
+            "Qué tan rápido cambia una cantidad",
+            "Cómo dibujar triángulos",
+            "Las fracciones"
+          ],
+          "correct": 1,
+          "explanation": "Derivadas = **rapidez de cambio**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué causa la mayoría de errores en cálculo?",
+          "options": [
+            "La calculadora",
+            "Los errores de álgebra",
+            "Las gráficas",
+            "El tiempo"
+          ],
+          "correct": 1,
+          "explanation": "Por eso empezamos repasando álgebra."
+        }
+      ]
+    },
+    {
+      "id": "l01-numeros",
+      "title": "Los números reales",
+      "summary": "Naturales, enteros, racionales, irracionales y reales; la recta numérica.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Los números se fueron «inventando» a medida que se necesitaban, como herramientas cada vez más completas:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Conjunto",
+            "Símbolo",
+            "Qué contiene",
+            "Ejemplos",
+            "Por qué se necesitó"
+          ],
+          "rows": [
+            [
+              "Naturales",
+              "ℕ",
+              "Los de contar",
+              "1, 2, 3, 4, …",
+              "Contar ovejas"
+            ],
+            [
+              "Enteros",
+              "ℤ",
+              "Naturales, el cero y los negativos",
+              "…, −2, −1, 0, 1, 2, …",
+              "Deudas, temperaturas bajo cero: 3 − 5 = −2"
+            ],
+            [
+              "Racionales",
+              "ℚ",
+              "Todo número que se escribe como fracción a/b con b ≠ 0",
+              "1/2, −3/4, 0,25, 0,333…",
+              "Repartir: 1 pizza entre 3"
+            ],
+            [
+              "Irracionales",
+              "ℚ′ o 𝕀",
+              "Decimales infinitos que NO se repiten; no son fracción",
+              "√2 = 1,41421…, π = 3,14159…, e = 2,71828…",
+              "La diagonal de un cuadrado de lado 1 mide √2"
+            ],
+            [
+              "Reales",
+              "ℝ",
+              "Racionales + irracionales: todos los puntos de la recta",
+              "Todos los anteriores",
+              "Medir cualquier longitud"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ        ℝ = ℚ ∪ 𝕀",
+          "caption": "Cada conjunto está dentro del siguiente, como muñecas rusas."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Imagina una regla infinita. **Cada punto** de esa regla es un número real y **cada número real** es un punto. A la derecha del 0 están los positivos y a la izquierda los negativos. Entre dos números reales cualesquiera siempre hay infinitos más.",
+          "title": "La recta numérica"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**No existe división entre cero.** 6/2 = 3 porque 3·2 = 6. Pero 6/0 = ? exigiría un número que multiplicado por 0 dé 6: no existe. Y 0/0 podría ser cualquier número: está «indeterminado». Este detalle será clave en los límites.",
+          "title": "La regla más importante"
+        },
+        {
+          "type": "text",
+          "text": "Un decimal que se repite **sí** es racional: 0,333… = 1/3; 0,1212… = 12/99 = 4/33."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x = 0,777…  →  10x = 7,777…  →  10x − x = 7  →  9x = 7  →  x = **7/9**.",
+          "title": "Convertir un decimal periódico a fracción"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué tipo de número es √2?",
+          "options": [
+            "Natural",
+            "Entero",
+            "Racional",
+            "Irracional"
+          ],
+          "correct": 3,
+          "explanation": "Decimal infinito no periódico."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál NO es un número racional?",
+          "options": [
+            "0,5",
+            "−7",
+            "π",
+            "2/3"
+          ],
+          "correct": 2,
+          "explanation": "π no se puede escribir como fracción."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuánto vale 8/0?",
+          "options": [
+            "0",
+            "8",
+            "Infinito",
+            "No está definido"
+          ],
+          "correct": 3,
+          "explanation": "No existe división entre cero."
+        },
+        {
+          "type": "quiz",
+          "question": "0,444… escrito como fracción es:",
+          "options": [
+            "4/10",
+            "4/9",
+            "44/100",
+            "1/4"
+          ],
+          "correct": 1,
+          "explanation": "10x − x = 4 → x = 4/9."
+        },
+        {
+          "type": "quiz",
+          "question": "El conjunto que contiene a todos los demás es:",
+          "options": [
+            "ℕ",
+            "ℤ",
+            "ℚ",
+            "ℝ"
+          ],
+          "correct": 3,
+          "explanation": "Los **reales**."
+        }
+      ]
+    },
+    {
+      "id": "l02-operaciones",
+      "title": "Fracciones y jerarquía de operaciones",
+      "summary": "Suma, resta, multiplicación y división de fracciones; el orden correcto de las operaciones; signos.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Jerarquía de operaciones"
+        },
+        {
+          "type": "text",
+          "text": "Así como al vestirte te pones primero las medias y luego los zapatos, las operaciones tienen un orden obligatorio:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Paréntesis** (y corchetes, llaves), de adentro hacia afuera.",
+            "**Potencias y raíces**.",
+            "**Multiplicaciones y divisiones**, de izquierda a derecha.",
+            "**Sumas y restas**, de izquierda a derecha."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "2 + 3·4² = 2 + 3·16 = 2 + 48 = **50** (no 400). (2 + 3)·4² = 5·16 = **80**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "−3² = −9 (se eleva el 3 y luego se pone el signo), pero (−3)² = +9. Este error aparece muchísimo en cálculo.",
+          "title": "Trampa típica"
+        },
+        {
+          "type": "heading",
+          "text": "Reglas de los signos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Operación",
+            "Regla",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "(+)(+)",
+              "+",
+              "3·4 = 12"
+            ],
+            [
+              "(−)(−)",
+              "+",
+              "(−3)(−4) = 12"
+            ],
+            [
+              "(+)(−) o (−)(+)",
+              "−",
+              "3·(−4) = −12"
+            ],
+            [
+              "Restar un negativo",
+              "es sumar",
+              "5 − (−2) = 7"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Operaciones con fracciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Operación",
+            "Regla",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Suma o resta (mismo denominador)",
+              "a/c + b/c = (a + b)/c",
+              "2/7 + 3/7 = 5/7"
+            ],
+            [
+              "Suma o resta (distinto denominador)",
+              "a/b + c/d = (ad + bc)/(bd)  (o usar el mínimo común múltiplo)",
+              "1/2 + 1/3 = (3 + 2)/6 = 5/6"
+            ],
+            [
+              "Multiplicación",
+              "a/b · c/d = ac/(bd)  (en línea)",
+              "2/3 · 5/7 = 10/21"
+            ],
+            [
+              "División",
+              "a/b ÷ c/d = a/b · d/c = ad/(bc)  («extremos sobre medios»)",
+              "2/3 ÷ 4/5 = 2/3 · 5/4 = 10/12 = 5/6"
+            ],
+            [
+              "Simplificar",
+              "Dividir arriba y abajo por el mismo número",
+              "12/18 = 2/3 (÷ 6)"
+            ],
+            [
+              "Fracción de fracción",
+              "(a/b)/(c/d) = ad/(bc)",
+              "(1/2)/(3/4) = 4/6 = 2/3"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Solo se simplifican **factores** (cosas que multiplican), nunca **términos** (cosas que se suman). (2 + 6)/2 = 8/2 = 4, NO «se tacha el 2» y queda 6. Este es el error número uno en límites.",
+          "title": "Simplificar bien"
+        },
+        {
+          "type": "quiz",
+          "question": "Resultado de 2 + 3·5:",
+          "options": [
+            "25",
+            "17",
+            "30",
+            "10"
+          ],
+          "correct": 1,
+          "explanation": "Primero la multiplicación: 2 + 15 = **17**."
+        },
+        {
+          "type": "quiz",
+          "question": "−4² es igual a:",
+          "options": [
+            "16",
+            "−16",
+            "8",
+            "−8"
+          ],
+          "correct": 1,
+          "explanation": "Se eleva 4 y luego el signo: **−16**."
+        },
+        {
+          "type": "quiz",
+          "question": "1/4 + 2/3 =",
+          "options": [
+            "3/7",
+            "11/12",
+            "3/12",
+            "2/12"
+          ],
+          "correct": 1,
+          "explanation": "(3 + 8)/12 = **11/12**."
+        },
+        {
+          "type": "quiz",
+          "question": "(3/5) ÷ (9/10) =",
+          "options": [
+            "27/50",
+            "2/3",
+            "3/2",
+            "30/45"
+          ],
+          "correct": 1,
+          "explanation": "3/5 · 10/9 = 30/45 = **2/3**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Es correcto simplificar (x + 3)/3 = x?",
+          "options": [
+            "Sí",
+            "No: el 3 de arriba está sumando, no multiplicando",
+            "Solo si x = 3",
+            "Solo si x > 0"
+          ],
+          "correct": 1,
+          "explanation": "Solo se cancelan factores."
+        },
+        {
+          "type": "quiz",
+          "question": "5 − (−3) =",
+          "options": [
+            "2",
+            "8",
+            "−8",
+            "−2"
+          ],
+          "correct": 1,
+          "explanation": "Restar un negativo es sumar: **8**."
+        }
+      ]
+    },
+    {
+      "id": "l03-potencias",
+      "title": "Potencias, raíces y exponentes",
+      "summary": "Leyes de los exponentes, exponentes negativos y fraccionarios, radicales.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "aⁿ = a · a · … · a (n veces). a es la **base** y n el **exponente**. Ejemplo: 2⁴ = 2·2·2·2 = 16.",
+          "title": "Potencia"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Ley",
+            "Fórmula",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Producto de igual base",
+              "aᵐ · aⁿ = aᵐ⁺ⁿ",
+              "x² · x³ = x⁵"
+            ],
+            [
+              "Cociente de igual base",
+              "aᵐ / aⁿ = aᵐ⁻ⁿ",
+              "x⁷ / x² = x⁵"
+            ],
+            [
+              "Potencia de potencia",
+              "(aᵐ)ⁿ = aᵐⁿ",
+              "(x²)³ = x⁶"
+            ],
+            [
+              "Potencia de un producto",
+              "(ab)ⁿ = aⁿbⁿ",
+              "(2x)³ = 8x³"
+            ],
+            [
+              "Potencia de un cociente",
+              "(a/b)ⁿ = aⁿ/bⁿ",
+              "(x/3)² = x²/9"
+            ],
+            [
+              "Exponente cero",
+              "a⁰ = 1  (a ≠ 0)",
+              "5⁰ = 1"
+            ],
+            [
+              "Exponente negativo",
+              "a⁻ⁿ = 1/aⁿ",
+              "x⁻² = 1/x²"
+            ],
+            [
+              "Exponente fraccionario",
+              "a^(m/n) = ⁿ√(aᵐ)",
+              "x^(1/2) = √x;  8^(2/3) = (∛8)² = 4"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "(a + b)² ≠ a² + b². La potencia NO se reparte en sumas: (2 + 3)² = 25, pero 2² + 3² = 13. Lo correcto es (a + b)² = a² + 2ab + b².",
+          "title": "Error clásico"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para derivar, casi siempre conviene **reescribir raíces y fracciones como potencias**: √x = x^(1/2), 1/x³ = x⁻³, 1/√x = x^(−1/2), ∛(x²) = x^(2/3). Practica esta conversión hasta que sea automática.",
+          "title": "El truco que usarás en derivadas"
+        },
+        {
+          "type": "heading",
+          "text": "Radicales"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Fórmula",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Producto",
+              "√(ab) = √a · √b",
+              "√50 = √25·√2 = 5√2"
+            ],
+            [
+              "Cociente",
+              "√(a/b) = √a/√b",
+              "√(9/4) = 3/2"
+            ],
+            [
+              "Raíz de una potencia",
+              "ⁿ√(aⁿ) = a (n impar); = |a| (n par)",
+              "√(x²) = |x|"
+            ],
+            [
+              "NO se separa en sumas",
+              "√(a + b) ≠ √a + √b",
+              "√(9 + 16) = 5 ≠ 3 + 4"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "√(x²) = |x|, no x. Por ejemplo √((−3)²) = √9 = 3 = |−3|. Esto importa en límites al infinito con raíces.",
+          "title": "Detalle fino"
+        },
+        {
+          "type": "quiz",
+          "question": "x³ · x⁴ =",
+          "options": [
+            "x¹²",
+            "x⁷",
+            "2x⁷",
+            "x"
+          ],
+          "correct": 1,
+          "explanation": "Se suman exponentes."
+        },
+        {
+          "type": "quiz",
+          "question": "Escribe 1/x⁵ como potencia:",
+          "options": [
+            "x⁵",
+            "x⁻⁵",
+            "−x⁵",
+            "x^(1/5)"
+          ],
+          "correct": 1,
+          "explanation": "Exponente negativo."
+        },
+        {
+          "type": "quiz",
+          "question": "√x³ como potencia es:",
+          "options": [
+            "x^(3/2)",
+            "x^(2/3)",
+            "x⁶",
+            "x^(1/3)"
+          ],
+          "correct": 0,
+          "explanation": "Índice 2 abajo: x^(3/2)."
+        },
+        {
+          "type": "quiz",
+          "question": "(2x³)² =",
+          "options": [
+            "2x⁶",
+            "4x⁶",
+            "4x⁵",
+            "2x⁵"
+          ],
+          "correct": 1,
+          "explanation": "2² · (x³)² = **4x⁶**."
+        },
+        {
+          "type": "quiz",
+          "question": "16^(3/4) =",
+          "options": [
+            "12",
+            "8",
+            "6",
+            "64"
+          ],
+          "correct": 1,
+          "explanation": "(⁴√16)³ = 2³ = **8**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál igualdad es FALSA?",
+          "options": [
+            "x⁰ = 1",
+            "(x + 1)² = x² + 1",
+            "x⁻¹ = 1/x",
+            "√(4x²) = 2|x|"
+          ],
+          "correct": 1,
+          "explanation": "Falta el término 2x."
+        }
+      ]
+    },
+    {
+      "id": "l04-factorizacion",
+      "title": "Productos notables y factorización",
+      "summary": "Expresiones algebraicas, productos notables y todos los casos de factorización.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Un **término** es un producto de números y letras (3x², −5xy). Una **expresión algebraica** es una suma de términos. Los términos **semejantes** tienen las mismas letras con los mismos exponentes y se suman: 3x² + 5x² = 8x²."
+        },
+        {
+          "type": "heading",
+          "text": "Productos notables (multiplicaciones que conviene memorizar)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Nombre",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Cuadrado de una suma",
+              "(a + b)² = a² + 2ab + b²"
+            ],
+            [
+              "Cuadrado de una diferencia",
+              "(a − b)² = a² − 2ab + b²"
+            ],
+            [
+              "Suma por diferencia",
+              "(a + b)(a − b) = a² − b²"
+            ],
+            [
+              "Cubo de una suma",
+              "(a + b)³ = a³ + 3a²b + 3ab² + b³"
+            ],
+            [
+              "Cubo de una diferencia",
+              "(a − b)³ = a³ − 3a²b + 3ab² − b³"
+            ],
+            [
+              "Producto de binomios con término común",
+              "(x + a)(x + b) = x² + (a + b)x + ab"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Factorizar = «desarmar» un producto"
+        },
+        {
+          "type": "text",
+          "text": "Factorizar es el camino inverso: escribir una suma como **multiplicación**. Es como descubrir qué ladrillos formaron la pared. En límites lo usarás para **cancelar** el factor que produce 0/0."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Caso",
+            "Cuándo se usa",
+            "Fórmula / método",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "1. Factor común",
+              "Todos los términos comparten algo",
+              "ab + ac = a(b + c)",
+              "6x³ − 9x² = 3x²(2x − 3)"
+            ],
+            [
+              "2. Agrupación",
+              "4 términos sin factor común total",
+              "Agrupar de a dos y sacar factor común",
+              "x³ + 2x² + 3x + 6 = x²(x + 2) + 3(x + 2) = (x + 2)(x² + 3)"
+            ],
+            [
+              "3. Diferencia de cuadrados",
+              "a² − b²",
+              "(a + b)(a − b)",
+              "x² − 9 = (x + 3)(x − 3)"
+            ],
+            [
+              "4. Trinomio cuadrado perfecto",
+              "a² ± 2ab + b²",
+              "(a ± b)²",
+              "x² + 6x + 9 = (x + 3)²"
+            ],
+            [
+              "5. Trinomio x² + bx + c",
+              "Coeficiente de x² igual a 1",
+              "Dos números que multiplicados den c y sumados den b",
+              "x² + 5x + 6 = (x + 2)(x + 3)"
+            ],
+            [
+              "6. Trinomio ax² + bx + c",
+              "a ≠ 1",
+              "Método ac: buscar m·n = ac, m + n = b; descomponer bx y agrupar",
+              "2x² + 7x + 3 = 2x² + 6x + x + 3 = (2x + 1)(x + 3)"
+            ],
+            [
+              "7. Suma de cubos",
+              "a³ + b³",
+              "(a + b)(a² − ab + b²)",
+              "x³ + 8 = (x + 2)(x² − 2x + 4)"
+            ],
+            [
+              "8. Diferencia de cubos",
+              "a³ − b³",
+              "(a − b)(a² + ab + b²)",
+              "x³ − 27 = (x − 3)(x² + 3x + 9)"
+            ],
+            [
+              "9. Con la fórmula general",
+              "Cualquier ax² + bx + c con raíces r₁, r₂",
+              "a(x − r₁)(x − r₂)",
+              "2x² − x − 1: raíces 1 y −1/2 → 2(x − 1)(x + 1/2) = (x − 1)(2x + 1)"
+            ],
+            [
+              "10. División sintética (Ruffini)",
+              "Polinomios de grado 3 o más",
+              "Probar divisores del término independiente: si P(r) = 0, entonces (x − r) es factor",
+              "x³ − 6x² + 11x − 6: P(1) = 0 → (x − 1)(x² − 5x + 6) = (x − 1)(x − 2)(x − 3)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Siempre en este orden: 1) ¿hay factor común? 2) ¿cuántos términos hay? (2 → diferencia de cuadrados o cubos; 3 → trinomios; 4 → agrupación) 3) ¿se puede seguir factorizando cada factor?",
+          "title": "Receta para factorizar"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "P(x) = x³ − 6x² + 11x − 6. Posibles raíces: divisores de 6 (±1, ±2, ±3, ±6). P(1) = 1 − 6 + 11 − 6 = 0 ✓. Ruffini con 1: coeficientes 1, −6, 11, −6 → bajo 1; 1·1 = 1 → −6 + 1 = −5; −5·1 = −5 → 11 − 5 = 6; 6·1 = 6 → −6 + 6 = 0 (residuo). Cociente: x² − 5x + 6 = (x − 2)(x − 3).",
+          "title": "Ruffini paso a paso"
+        },
+        {
+          "type": "quiz",
+          "question": "Factoriza x² − 25:",
+          "options": [
+            "(x − 5)²",
+            "(x + 5)(x − 5)",
+            "(x + 25)(x − 1)",
+            "No se puede"
+          ],
+          "correct": 1,
+          "explanation": "Diferencia de cuadrados."
+        },
+        {
+          "type": "quiz",
+          "question": "Factoriza x² − 7x + 12:",
+          "options": [
+            "(x − 3)(x − 4)",
+            "(x + 3)(x + 4)",
+            "(x − 2)(x − 6)",
+            "(x − 12)(x + 1)"
+          ],
+          "correct": 0,
+          "explanation": "−3·−4 = 12 y −3 − 4 = −7."
+        },
+        {
+          "type": "quiz",
+          "question": "(x − 4)² =",
+          "options": [
+            "x² − 16",
+            "x² − 8x + 16",
+            "x² + 16",
+            "x² − 4x + 16"
+          ],
+          "correct": 1,
+          "explanation": "a² − 2ab + b²."
+        },
+        {
+          "type": "quiz",
+          "question": "Factoriza 4x³ − 8x²:",
+          "options": [
+            "4x²(x − 2)",
+            "4x(x − 8)",
+            "4(x³ − 2x²)",
+            "x²(4x − 2)"
+          ],
+          "correct": 0,
+          "explanation": "Factor común 4x² (máximo)."
+        },
+        {
+          "type": "quiz",
+          "question": "Factoriza x³ − 8:",
+          "options": [
+            "(x − 2)³",
+            "(x − 2)(x² + 2x + 4)",
+            "(x + 2)(x² − 2x + 4)",
+            "(x − 2)(x + 2)²"
+          ],
+          "correct": 1,
+          "explanation": "Diferencia de cubos."
+        },
+        {
+          "type": "quiz",
+          "question": "Factoriza 3x² + 5x − 2:",
+          "options": [
+            "(3x − 1)(x + 2)",
+            "(3x + 1)(x − 2)",
+            "(3x + 2)(x − 1)",
+            "(x + 1)(3x − 2)"
+          ],
+          "correct": 0,
+          "explanation": "ac = −6: 6 y −1 → 3x² + 6x − x − 2 = 3x(x + 2) − (x + 2)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si P(2) = 0, entonces:",
+          "options": [
+            "(x + 2) es factor de P",
+            "(x − 2) es factor de P",
+            "P no tiene factores",
+            "P(0) = 2"
+          ],
+          "correct": 1,
+          "explanation": "Teorema del factor."
+        }
+      ]
+    },
+    {
+      "id": "l05-fracciones-algebraicas",
+      "title": "Fracciones algebraicas y racionalización",
+      "summary": "Simplificar, operar y racionalizar con el conjugado.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Una **fracción algebraica** es una división de polinomios: (x² − 1)/(x + 1). Se opera igual que las fracciones numéricas."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "(x² − 9)/(x² + x − 6) = (x + 3)(x − 3)/[(x + 3)(x − 2)] = **(x − 3)/(x − 2)**, válido para x ≠ −3 y x ≠ 2. Primero se factoriza TODO, luego se cancelan factores iguales.",
+          "title": "Simplificar"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "1/(x − 1) + 2/(x + 1) = [(x + 1) + 2(x − 1)]/[(x − 1)(x + 1)] = (3x − 1)/(x² − 1).",
+          "title": "Sumar"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "(1/x − 1/3)/(x − 3) = [(3 − x)/(3x)]/(x − 3) = −(x − 3)/[3x(x − 3)] = **−1/(3x)**. Este tipo de expresión aparece al derivar con la definición.",
+          "title": "Fracción compleja"
+        },
+        {
+          "type": "heading",
+          "text": "Racionalizar"
+        },
+        {
+          "type": "text",
+          "text": "Racionalizar es quitar raíces de un denominador (o numerador) multiplicando por algo que no cambie el valor: una fracción igual a 1."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Caso",
+            "Multiplicar por",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Una raíz: a/√b",
+              "√b/√b",
+              "3/√2 = 3√2/2"
+            ],
+            [
+              "Binomio con raíz: a/(√b − c)",
+              "El **conjugado** (√b + c)/(√b + c)",
+              "1/(√x − 2) = (√x + 2)/(x − 4)"
+            ],
+            [
+              "Raíz en el numerador (para límites)",
+              "El conjugado del numerador",
+              "(√(x + 4) − 2)/x = [(x + 4) − 4]/[x(√(x + 4) + 2)] = 1/(√(x + 4) + 2)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El conjugado de (√a − b) es (√a + b). Se usa porque (√a − b)(√a + b) = a − b²: **desaparece la raíz** (diferencia de cuadrados). En límites, esta es la herramienta para resolver 0/0 con raíces.",
+          "title": "Por qué funciona el conjugado"
+        },
+        {
+          "type": "quiz",
+          "question": "Simplifica (x² − 4)/(x − 2):",
+          "options": [
+            "x − 2",
+            "x + 2",
+            "x² − 2",
+            "2"
+          ],
+          "correct": 1,
+          "explanation": "(x + 2)(x − 2)/(x − 2) = x + 2 (x ≠ 2)."
+        },
+        {
+          "type": "quiz",
+          "question": "El conjugado de √x + 3 es:",
+          "options": [
+            "√x − 3",
+            "−√x − 3",
+            "x + 3",
+            "√x + 3"
+          ],
+          "correct": 0,
+          "explanation": "Se cambia el signo del medio."
+        },
+        {
+          "type": "quiz",
+          "question": "Racionaliza 6/√3:",
+          "options": [
+            "2√3",
+            "6√3",
+            "√3/6",
+            "2"
+          ],
+          "correct": 0,
+          "explanation": "6√3/3 = 2√3."
+        },
+        {
+          "type": "quiz",
+          "question": "(√x − 1)(√x + 1) =",
+          "options": [
+            "x + 1",
+            "x − 1",
+            "√x − 1",
+            "x² − 1"
+          ],
+          "correct": 1,
+          "explanation": "Diferencia de cuadrados."
+        },
+        {
+          "type": "quiz",
+          "question": "Simplifica (x² + 3x)/x:",
+          "options": [
+            "x + 3",
+            "3x",
+            "x² + 3",
+            "4x"
+          ],
+          "correct": 0,
+          "explanation": "x(x + 3)/x = x + 3 (x ≠ 0)."
+        }
+      ]
+    },
+    {
+      "id": "l06-ecuaciones",
+      "title": "Ecuaciones",
+      "summary": "Lineales, cuadráticas (fórmula general y discriminante), racionales, con radicales y sistemas 2 × 2.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una ecuación es una **balanza en equilibrio**: lo que hagas de un lado (sumar, multiplicar, dividir) debes hacerlo del otro para que siga equilibrada. Resolver es dejar la x sola.",
+          "title": "Analogía de la balanza"
+        },
+        {
+          "type": "heading",
+          "text": "Ecuación lineal: ax + b = 0"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "3x − 7 = 2x + 5  →  3x − 2x = 5 + 7  →  **x = 12**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "Ecuación cuadrática: ax² + bx + c = 0"
+        },
+        {
+          "type": "formula",
+          "expression": "x = [−b ± √(b² − 4ac)] / (2a)",
+          "caption": "Fórmula general (resolvente). Δ = b² − 4ac es el discriminante."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Discriminante Δ",
+            "Soluciones reales",
+            "Gráfica de y = ax² + bx + c"
+          ],
+          "rows": [
+            [
+              "Δ > 0",
+              "Dos distintas",
+              "Corta al eje x en dos puntos"
+            ],
+            [
+              "Δ = 0",
+              "Una doble",
+              "Toca al eje x en el vértice"
+            ],
+            [
+              "Δ < 0",
+              "Ninguna real",
+              "No toca el eje x"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "2x² − 3x − 2 = 0: a = 2, b = −3, c = −2. Δ = 9 + 16 = 25. x = (3 ± 5)/4 → **x = 2** o **x = −1/2**. También por factorización: (2x + 1)(x − 2) = 0.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Nunca dividas ambos lados entre x: pierdes la solución x = 0. En x² = 3x, lo correcto es x² − 3x = 0 → x(x − 3) = 0 → x = 0 o x = 3. **Si un producto es cero, alguno de los factores es cero.**",
+          "title": "Cuidado"
+        },
+        {
+          "type": "heading",
+          "text": "Ecuaciones racionales y con radicales"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "2/(x − 1) = 3/(x + 2): multiplicando en cruz: 2(x + 2) = 3(x − 1) → 2x + 4 = 3x − 3 → x = 7. Verificar que no anule un denominador ✓.",
+          "title": "Racional"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "√(x + 5) = x − 1: elevar al cuadrado: x + 5 = x² − 2x + 1 → x² − 3x − 4 = 0 → x = 4 o x = −1. Verificación: x = 4: √9 = 3 ✓; x = −1: √4 = 2 ≠ −2 ✗. Solución: **x = 4**. Al elevar al cuadrado pueden aparecer soluciones falsas: **siempre verifica**.",
+          "title": "Con radical"
+        },
+        {
+          "type": "heading",
+          "text": "Sistemas de 2 ecuaciones con 2 incógnitas"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x + y = 10 y 2x − y = 2. Sumando ambas: 3x = 12 → x = 4; y = 6. (Métodos: sustitución, igualación, reducción; en Álgebra lineal verás Gauss y Cramer.)",
+          "title": "Reducción"
+        },
+        {
+          "type": "quiz",
+          "question": "Resuelve 5x + 3 = 2x − 9:",
+          "options": [
+            "x = −4",
+            "x = 4",
+            "x = −2",
+            "x = 2"
+          ],
+          "correct": 0,
+          "explanation": "3x = −12."
+        },
+        {
+          "type": "quiz",
+          "question": "Soluciones de x² − 5x + 6 = 0:",
+          "options": [
+            "2 y 3",
+            "−2 y −3",
+            "1 y 6",
+            "−1 y 6"
+          ],
+          "correct": 0,
+          "explanation": "(x − 2)(x − 3) = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Si Δ < 0, la ecuación cuadrática:",
+          "options": [
+            "Tiene dos soluciones reales",
+            "Tiene una solución",
+            "No tiene soluciones reales",
+            "Tiene infinitas"
+          ],
+          "correct": 2,
+          "explanation": "No corta el eje x."
+        },
+        {
+          "type": "quiz",
+          "question": "Soluciones de x² = 4x:",
+          "options": [
+            "x = 4",
+            "x = 0 o x = 4",
+            "x = 2",
+            "x = 0"
+          ],
+          "correct": 1,
+          "explanation": "x(x − 4) = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Discriminante de x² + 2x + 5:",
+          "options": [
+            "24",
+            "−16",
+            "16",
+            "4"
+          ],
+          "correct": 1,
+          "explanation": "4 − 20 = −16."
+        },
+        {
+          "type": "quiz",
+          "question": "√(2x + 3) = x tiene como solución:",
+          "options": [
+            "x = 3",
+            "x = −1",
+            "x = 3 y x = −1",
+            "Ninguna"
+          ],
+          "correct": 0,
+          "explanation": "x² − 2x − 3 = 0 → 3 o −1; −1 no verifica."
+        }
+      ]
+    },
+    {
+      "id": "l07-desigualdades",
+      "title": "Desigualdades e intervalos",
+      "summary": "Notación de intervalos, inecuaciones lineales, cuadráticas y racionales con tabla de signos.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Intervalo",
+            "Desigualdad",
+            "Significado",
+            "En la recta"
+          ],
+          "rows": [
+            [
+              "(a, b)",
+              "a < x < b",
+              "Abierto: no incluye los extremos",
+              "○———○"
+            ],
+            [
+              "[a, b]",
+              "a ≤ x ≤ b",
+              "Cerrado: incluye los extremos",
+              "●———●"
+            ],
+            [
+              "[a, b)",
+              "a ≤ x < b",
+              "Semiabierto",
+              "●———○"
+            ],
+            [
+              "(a, +∞)",
+              "x > a",
+              "Desde a (sin incluirlo) hacia la derecha",
+              "○————→"
+            ],
+            [
+              "(−∞, b]",
+              "x ≤ b",
+              "Todo hasta b incluido",
+              "←————●"
+            ],
+            [
+              "(−∞, +∞) = ℝ",
+              "Todos los reales",
+              "Toda la recta",
+              "←————→"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El infinito **siempre** lleva paréntesis: no es un número, nunca se «alcanza»."
+        },
+        {
+          "type": "heading",
+          "text": "Reglas para resolver inecuaciones"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Se puede sumar o restar lo mismo a ambos lados.",
+            "Se puede multiplicar o dividir por un número **positivo**.",
+            "Si multiplicas o divides por un número **negativo**, **la desigualdad se invierte**: −2x > 6 → x < −3."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "3 > 1 es verdad; multiplicando por −1: −3 > −1 es falso. Lo correcto es −3 < −1. Al cambiar de signo, el orden en la recta se da la vuelta como un espejo.",
+          "title": "¿Por qué se invierte?"
+        },
+        {
+          "type": "heading",
+          "text": "Inecuaciones cuadráticas y racionales: tabla de signos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pasa todo a un lado: expresión > 0 (o < 0, ≥, ≤).",
+            "Factoriza y encuentra los **puntos críticos** (donde cada factor vale 0; en racionales, también los del denominador).",
+            "Divide la recta en intervalos con esos puntos.",
+            "Prueba un número de cada intervalo para ver el signo.",
+            "Elige los intervalos con el signo pedido. Los ceros del denominador **nunca** se incluyen."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x² − x − 6 < 0 → (x − 3)(x + 2) < 0. Puntos: −2 y 3. Prueba: x = −3 → (+); x = 0 → (−); x = 4 → (+). Solución: **(−2, 3)**.",
+          "title": "Cuadrática"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Intervalo",
+            "x − 3",
+            "x + 2",
+            "Producto"
+          ],
+          "rows": [
+            [
+              "(−∞, −2)",
+              "−",
+              "−",
+              "+"
+            ],
+            [
+              "(−2, 3)",
+              "−",
+              "+",
+              "−  ✓"
+            ],
+            [
+              "(3, +∞)",
+              "+",
+              "+",
+              "+"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "(x + 1)/(x − 2) ≥ 0. Puntos: −1 (numerador) y 2 (denominador). Signos: (−∞, −1): (−)/(−) = + ✓; (−1, 2): (+)/(−) = −; (2, +∞): + ✓. Solución: **(−∞, −1] ∪ (2, +∞)**. El −1 se incluye (da 0) y el 2 no (división entre 0).",
+          "title": "Racional"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "NUNCA multipliques ambos lados por un denominador con x (no sabes si es positivo o negativo). Usa la tabla de signos."
+        },
+        {
+          "type": "quiz",
+          "question": "Resuelve −3x + 1 > 7:",
+          "options": [
+            "x > −2",
+            "x < −2",
+            "x > 2",
+            "x < 2"
+          ],
+          "correct": 1,
+          "explanation": "−3x > 6 → divido entre −3 e invierto: x < −2."
+        },
+        {
+          "type": "quiz",
+          "question": "x ≥ 5 en notación de intervalo:",
+          "options": [
+            "(5, +∞)",
+            "[5, +∞)",
+            "[5, +∞]",
+            "(−∞, 5]"
+          ],
+          "correct": 1,
+          "explanation": "Corchete en 5, paréntesis en ∞."
+        },
+        {
+          "type": "quiz",
+          "question": "Solución de x² − 4 > 0:",
+          "options": [
+            "(−2, 2)",
+            "(−∞, −2) ∪ (2, +∞)",
+            "[−2, 2]",
+            "x > 2"
+          ],
+          "correct": 1,
+          "explanation": "Positivo fuera de las raíces."
+        },
+        {
+          "type": "quiz",
+          "question": "Solución de (x − 1)/(x + 3) < 0:",
+          "options": [
+            "(−3, 1)",
+            "(−∞, −3) ∪ (1, +∞)",
+            "[−3, 1]",
+            "(1, 3)"
+          ],
+          "correct": 0,
+          "explanation": "Negativo entre los puntos críticos."
+        },
+        {
+          "type": "quiz",
+          "question": "Al multiplicar una desigualdad por −1:",
+          "options": [
+            "No cambia",
+            "Se invierte",
+            "Se vuelve igualdad",
+            "Se duplica"
+          ],
+          "correct": 1,
+          "explanation": "El sentido se invierte."
+        }
+      ]
+    },
+    {
+      "id": "l08-valor-absoluto",
+      "title": "Valor absoluto",
+      "summary": "Definición como distancia, ecuaciones e inecuaciones con valor absoluto.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "|x| es la **distancia** de x al cero, por eso nunca es negativa. |x| = x si x ≥ 0;  |x| = −x si x < 0. Ejemplos: |5| = 5, |−5| = 5, |0| = 0.",
+          "title": "Valor absoluto"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "|a − b| es la **distancia entre a y b** en la recta. |x − 3| < 2 significa «x está a menos de 2 unidades del 3», o sea 1 < x < 5. Esta idea de «estar cerca» es exactamente la que usa la definición formal de límite.",
+          "title": "La idea clave"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Regla (k > 0)",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "|A| = k",
+              "A = k  o  A = −k",
+              "|2x − 1| = 5 → x = 3 o x = −2"
+            ],
+            [
+              "|A| < k",
+              "−k < A < k",
+              "|x − 3| < 2 → 1 < x < 5"
+            ],
+            [
+              "|A| > k",
+              "A < −k  o  A > k",
+              "|x + 1| > 4 → x < −5 o x > 3"
+            ],
+            [
+              "|A| = |B|",
+              "A = B  o  A = −B",
+              "|x| = |x − 2| → x = 1"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Producto",
+              "|ab| = |a||b|"
+            ],
+            [
+              "Cociente",
+              "|a/b| = |a|/|b|"
+            ],
+            [
+              "Desigualdad triangular",
+              "|a + b| ≤ |a| + |b|"
+            ],
+            [
+              "Raíz",
+              "√(x²) = |x|"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = |x| es una «V» con vértice en el origen. Más adelante verás que es continua en x = 0 pero NO es derivable ahí (tiene un pico).",
+          "title": "Gráfica"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_function",
+          "title": "Mira la gráfica de |x| y transfórmala",
+          "params": {
+            "preset": 4
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "|−7| =",
+          "options": [
+            "−7",
+            "7",
+            "0",
+            "49"
+          ],
+          "correct": 1,
+          "explanation": "Distancia al cero."
+        },
+        {
+          "type": "quiz",
+          "question": "Soluciones de |x − 2| = 3:",
+          "options": [
+            "x = 5",
+            "x = 5 o x = −1",
+            "x = −1",
+            "x = 1 o x = 5"
+          ],
+          "correct": 1,
+          "explanation": "x − 2 = ±3."
+        },
+        {
+          "type": "quiz",
+          "question": "|x| < 4 equivale a:",
+          "options": [
+            "x < 4",
+            "−4 < x < 4",
+            "x > −4",
+            "x < −4 o x > 4"
+          ],
+          "correct": 1,
+          "explanation": "A menos de 4 del cero."
+        },
+        {
+          "type": "quiz",
+          "question": "|x − 5| < 0,1 significa que:",
+          "options": [
+            "x es negativo",
+            "x está a menos de 0,1 del 5",
+            "x = 5",
+            "x > 5,1"
+          ],
+          "correct": 1,
+          "explanation": "Distancia."
+        },
+        {
+          "type": "quiz",
+          "question": "√((−4)²) =",
+          "options": [
+            "−4",
+            "4",
+            "16",
+            "±4"
+          ],
+          "correct": 1,
+          "explanation": "= |−4| = 4."
+        }
+      ]
+    }
+  ]
+}

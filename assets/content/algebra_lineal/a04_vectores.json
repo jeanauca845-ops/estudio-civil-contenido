@@ -1,0 +1,444 @@
+{
+  "id": "a04-vectores",
+  "title": "Vectores, rectas y planos",
+  "description": "Vectores en ℝ² y ℝ³, producto punto, proyección, producto cruz, triple producto, rectas y planos",
+  "lessons": [
+    {
+      "id": "l01-vectores",
+      "title": "Vectores en ℝ² y ℝ³",
+      "summary": "Componentes, suma, producto por escalar, norma y vector unitario.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un vector es una **flecha**: tiene **magnitud** (largo), **dirección** y **sentido**. «Camina 5 cuadras hacia el norte» es un vector; «5 cuadras» solo es un escalar.",
+          "title": "Analogía"
+        },
+        {
+          "type": "formula",
+          "expression": "v = (v₁, v₂, v₃) = v₁i + v₂j + v₃k        ‖v‖ = √(v₁² + v₂² + v₃²)",
+          "caption": "Componentes y norma (magnitud)."
+        },
+        {
+          "type": "formula",
+          "expression": "AB = B − A = (b₁ − a₁, b₂ − a₂, b₃ − a₃)",
+          "caption": "Vector que va del punto A al punto B: «punta menos cola»."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Operación",
+            "Regla",
+            "Ejemplo con u = (1, 2, 3), v = (4, 0, −1)"
+          ],
+          "rows": [
+            [
+              "u + v",
+              "Componente a componente",
+              "(5, 2, 2)"
+            ],
+            [
+              "u − v",
+              "Componente a componente",
+              "(−3, 2, 4)"
+            ],
+            [
+              "k·u",
+              "Cada componente por k",
+              "2u = (2, 4, 6)"
+            ],
+            [
+              "‖u‖",
+              "√(suma de cuadrados)",
+              "√14"
+            ],
+            [
+              "Unitario û",
+              "u/‖u‖ (norma 1)",
+              "(1, 2, 3)/√14"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Gráficamente, u + v se obtiene poniendo la cola de v en la punta de u (método del triángulo) o con el paralelogramo.",
+          "title": "Suma geométrica"
+        },
+        {
+          "type": "interactive",
+          "widget": "la_vectors",
+          "title": "Laboratorio de vectores"
+        },
+        {
+          "type": "quiz",
+          "question": "Norma de (3, 4):",
+          "options": [
+            "7",
+            "5",
+            "25",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "√(9 + 16)."
+        },
+        {
+          "type": "quiz",
+          "question": "Vector de A(1, 2) a B(4, 6):",
+          "options": [
+            "(3, 4)",
+            "(5, 8)",
+            "(−3, −4)",
+            "(4, 6)"
+          ],
+          "correct": 0,
+          "explanation": "B − A."
+        },
+        {
+          "type": "quiz",
+          "question": "Un vector unitario tiene norma:",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "cualquiera"
+          ],
+          "correct": 1,
+          "explanation": "Definición."
+        },
+        {
+          "type": "quiz",
+          "question": "(1, −2, 0) + (3, 1, 5) =",
+          "options": [
+            "(4, −1, 5)",
+            "(2, −3, 5)",
+            "(3, −2, 0)",
+            "(4, 1, 5)"
+          ],
+          "correct": 0,
+          "explanation": "Componente a componente."
+        }
+      ]
+    },
+    {
+      "id": "l02-punto",
+      "title": "Producto punto, ángulo y proyección",
+      "summary": "Producto escalar, ortogonalidad y proyección de un vector sobre otro.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "u · v = u₁v₁ + u₂v₂ + u₃v₃ = ‖u‖‖v‖ cos θ",
+          "caption": "El resultado es un **número** (escalar)."
+        },
+        {
+          "type": "formula",
+          "expression": "cos θ = (u · v)/(‖u‖‖v‖)",
+          "caption": "Ángulo entre dos vectores."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "u · v",
+            "Ángulo"
+          ],
+          "rows": [
+            [
+              "> 0",
+              "Agudo (< 90°)"
+            ],
+            [
+              "= 0",
+              "Recto: **ortogonales** (perpendiculares)"
+            ],
+            [
+              "< 0",
+              "Obtuso (> 90°)"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "comp v u = (u · v)/‖v‖        proy v u = [(u · v)/‖v‖²]·v",
+          "caption": "Componente escalar y vector proyección de u sobre v."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La proyección es la «**sombra**» de u sobre la recta de v cuando el sol está perpendicular a v. En física, el **trabajo** de una fuerza es W = F · d: solo cuenta la parte de la fuerza en la dirección del movimiento.",
+          "title": "Interpretación"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "u = (2, 1), v = (3, 4). u · v = 6 + 4 = 10. ‖v‖ = 5. comp = 10/5 = 2. proy = (10/25)(3, 4) = (1,2; 1,6). cos θ = 10/(√5·5) → θ ≈ 26,6°.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "interactive",
+          "widget": "la_vectors",
+          "title": "Producto punto y proyección"
+        },
+        {
+          "type": "quiz",
+          "question": "(1, 2, 3) · (4, −1, 2) =",
+          "options": [
+            "8",
+            "6",
+            "12",
+            "0"
+          ],
+          "correct": 0,
+          "explanation": "4 − 2 + 6."
+        },
+        {
+          "type": "quiz",
+          "question": "Si u · v = 0, los vectores son:",
+          "options": [
+            "Paralelos",
+            "Perpendiculares",
+            "Iguales",
+            "Unitarios"
+          ],
+          "correct": 1,
+          "explanation": "cos θ = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "El producto punto da como resultado:",
+          "options": [
+            "Un vector",
+            "Un número",
+            "Una matriz",
+            "Un ángulo"
+          ],
+          "correct": 1,
+          "explanation": "Escalar."
+        },
+        {
+          "type": "quiz",
+          "question": "Ángulo entre (1, 0) y (0, 1):",
+          "options": [
+            "0°",
+            "45°",
+            "90°",
+            "180°"
+          ],
+          "correct": 2,
+          "explanation": "Producto punto 0."
+        }
+      ]
+    },
+    {
+      "id": "l03-cruz",
+      "title": "Producto cruz y triple producto",
+      "summary": "Vector perpendicular, área de paralelogramos y volumen de paralelepípedos.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "u × v = |i j k; u₁ u₂ u₃; v₁ v₂ v₃| = (u₂v₃ − u₃v₂, u₃v₁ − u₁v₃, u₁v₂ − u₂v₁)",
+          "caption": "Solo en ℝ³. El resultado es un **vector perpendicular** a u y a v."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Magnitud",
+              "‖u × v‖ = ‖u‖‖v‖ sen θ = área del paralelogramo"
+            ],
+            [
+              "Anticonmutativa",
+              "u × v = −(v × u)"
+            ],
+            [
+              "Paralelos",
+              "u × v = 0"
+            ],
+            [
+              "Sentido",
+              "Regla de la mano derecha"
+            ],
+            [
+              "Base",
+              "i × j = k;  j × k = i;  k × i = j"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Con la mano derecha: dedos de u hacia v (cerrando la mano), el pulgar apunta a u × v. Por eso un tornillo que giras en sentido antihorario sale hacia ti.",
+          "title": "Regla de la mano derecha"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "u = (1, 2, 0), v = (3, 1, 0): u × v = (2·0 − 0·1, 0·3 − 1·0, 1·1 − 2·3) = (0, 0, −5). Área del paralelogramo = 5; triángulo = 2,5.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "formula",
+          "expression": "u · (v × w) = det[u; v; w]",
+          "caption": "Triple producto escalar: |u · (v × w)| es el volumen del paralelepípedo. Si vale 0, los tres vectores son coplanares."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El **momento de una fuerza** es M = r × F (física). El producto cruz también da la normal de un plano y el área de un terreno triangular a partir de coordenadas."
+        },
+        {
+          "type": "interactive",
+          "widget": "la_vectors",
+          "title": "Área con el producto cruz (2D)"
+        },
+        {
+          "type": "quiz",
+          "question": "i × j =",
+          "options": [
+            "k",
+            "−k",
+            "0",
+            "i"
+          ],
+          "correct": 0,
+          "explanation": "Base."
+        },
+        {
+          "type": "quiz",
+          "question": "Si u y v son paralelos, u × v =",
+          "options": [
+            "1",
+            "0 (vector nulo)",
+            "u",
+            "v"
+          ],
+          "correct": 1,
+          "explanation": "sen 0 = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "‖u × v‖ representa:",
+          "options": [
+            "El ángulo",
+            "El área del paralelogramo",
+            "El volumen",
+            "La proyección"
+          ],
+          "correct": 1,
+          "explanation": "Interpretación."
+        },
+        {
+          "type": "quiz",
+          "question": "v × u =",
+          "options": [
+            "u × v",
+            "−(u × v)",
+            "0",
+            "u · v"
+          ],
+          "correct": 1,
+          "explanation": "Anticonmutativa."
+        }
+      ]
+    },
+    {
+      "id": "l04-rectas-planos",
+      "title": "Rectas y planos en el espacio",
+      "summary": "Ecuaciones vectorial, paramétrica y simétrica; ecuación del plano; distancias.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "Recta:  (x, y, z) = P₀ + t·d   →   x = x₀ + at, y = y₀ + bt, z = z₀ + ct",
+          "caption": "P₀ punto, d = (a, b, c) vector director, t parámetro."
+        },
+        {
+          "type": "formula",
+          "expression": "Simétrica:  (x − x₀)/a = (y − y₀)/b = (z − z₀)/c"
+        },
+        {
+          "type": "formula",
+          "expression": "Plano:  a(x − x₀) + b(y − y₀) + c(z − z₀) = 0   →   ax + by + cz + d = 0",
+          "caption": "n = (a, b, c) es el vector **normal** (perpendicular al plano)."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Plano que pasa por P(1, 0, 2), Q(2, 1, 1), R(0, 2, 3): PQ = (1, 1, −1), PR = (−1, 2, 1). n = PQ × PR = (1·1 − (−1)·2, (−1)(−1) − 1·1, 1·2 − 1·(−1)) = (3, 0, 3). Plano: 3(x − 1) + 3(z − 2) = 0 → **x + z = 3**.",
+          "title": "Plano por 3 puntos"
+        },
+        {
+          "type": "formula",
+          "expression": "Distancia de P(x₁, y₁, z₁) al plano:  D = |ax₁ + by₁ + cz₁ + d| / √(a² + b² + c²)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Relación",
+            "Condición"
+          ],
+          "rows": [
+            [
+              "Planos paralelos",
+              "Normales paralelas"
+            ],
+            [
+              "Planos perpendiculares",
+              "n₁ · n₂ = 0"
+            ],
+            [
+              "Recta paralela al plano",
+              "d · n = 0"
+            ],
+            [
+              "Recta perpendicular al plano",
+              "d paralelo a n"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "El vector normal del plano 2x − y + 3z = 7 es:",
+          "options": [
+            "(2, −1, 3)",
+            "(7, 0, 0)",
+            "(2, 1, 3)",
+            "(1, 1, 1)"
+          ],
+          "correct": 0,
+          "explanation": "Coeficientes."
+        },
+        {
+          "type": "quiz",
+          "question": "Distancia del origen al plano x + y + z = 3:",
+          "options": [
+            "3",
+            "√3",
+            "1",
+            "3/2"
+          ],
+          "correct": 1,
+          "explanation": "3/√3."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos planos son perpendiculares si:",
+          "options": [
+            "n₁ = n₂",
+            "n₁ · n₂ = 0",
+            "n₁ × n₂ = 0",
+            "d₁ = d₂"
+          ],
+          "correct": 1,
+          "explanation": "Normales ortogonales."
+        }
+      ]
+    }
+  ]
+}

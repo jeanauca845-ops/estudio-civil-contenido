@@ -1,0 +1,396 @@
+{
+  "id": "f04-dinamica",
+  "title": "Dinámica: leyes de Newton",
+  "description": "Leyes de Newton, fuerzas comunes, diagrama de cuerpo libre, fricción, plano inclinado y sistemas con poleas",
+  "lessons": [
+    {
+      "id": "l01-newton",
+      "title": "Las tres leyes de Newton",
+      "summary": "Inercia, ΣF = ma y acción–reacción.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Ley",
+            "Enunciado",
+            "Ejemplo cotidiano"
+          ],
+          "rows": [
+            [
+              "1.ª Inercia",
+              "Si ΣF = 0, un cuerpo sigue en reposo o con velocidad constante en línea recta",
+              "Al frenar el bus, te vas hacia adelante"
+            ],
+            [
+              "2.ª Fundamental",
+              "**ΣF = m·a**: la aceleración es proporcional a la fuerza neta e inversa a la masa",
+              "Empujar un carrito vacío es más fácil que uno lleno"
+            ],
+            [
+              "3.ª Acción y reacción",
+              "Si A empuja a B con F, B empuja a A con −F (iguales, opuestas, en cuerpos distintos)",
+              "Al caminar empujas el piso hacia atrás y el piso te empuja hacia adelante"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Acción y reacción actúan sobre **cuerpos distintos**, por eso no se anulan. El peso de un libro (la Tierra lo atrae) y la normal de la mesa NO son par de acción–reacción: ambas actúan sobre el libro.",
+          "title": "Error común"
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Masa (kg): cantidad de materia; no cambia. Peso (N): fuerza con que la Tierra atrae: **W = m·g**. Una persona de 60 kg pesa 589 N en la Tierra y 97 N en la Luna, pero su masa es 60 kg en ambos.",
+          "title": "Masa vs peso"
+        },
+        {
+          "type": "quiz",
+          "question": "Si la fuerza neta sobre un cuerpo es cero, el cuerpo:",
+          "options": [
+            "Se detiene siempre",
+            "Está en reposo o con velocidad constante",
+            "Acelera",
+            "Cae"
+          ],
+          "correct": 1,
+          "explanation": "1.ª ley."
+        },
+        {
+          "type": "quiz",
+          "question": "Una fuerza neta de 20 N sobre 4 kg produce a =",
+          "options": [
+            "80 m/s²",
+            "5 m/s²",
+            "0,2 m/s²",
+            "24 m/s²"
+          ],
+          "correct": 1,
+          "explanation": "a = F/m."
+        },
+        {
+          "type": "quiz",
+          "question": "El peso de 10 kg es:",
+          "options": [
+            "10 N",
+            "98,1 N",
+            "1 N",
+            "0,98 N"
+          ],
+          "correct": 1,
+          "explanation": "m·g."
+        },
+        {
+          "type": "quiz",
+          "question": "Las fuerzas de acción y reacción:",
+          "options": [
+            "Se anulan",
+            "Actúan sobre cuerpos distintos",
+            "Tienen distinta magnitud",
+            "Actúan sobre el mismo cuerpo"
+          ],
+          "correct": 1,
+          "explanation": "Por eso no se anulan."
+        }
+      ]
+    },
+    {
+      "id": "l02-dcl",
+      "title": "Fuerzas comunes y diagrama de cuerpo libre",
+      "summary": "Peso, normal, tensión, fricción, resorte; cómo dibujar el DCL.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Fuerza",
+            "Símbolo",
+            "Dirección",
+            "Valor"
+          ],
+          "rows": [
+            [
+              "Peso",
+              "W",
+              "Vertical hacia abajo",
+              "m·g"
+            ],
+            [
+              "Normal",
+              "N",
+              "Perpendicular a la superficie, empujando",
+              "La necesaria (se calcula con ΣF)"
+            ],
+            [
+              "Tensión",
+              "T",
+              "A lo largo de la cuerda, jalando",
+              "Igual en toda una cuerda ideal"
+            ],
+            [
+              "Fricción",
+              "f",
+              "Paralela a la superficie, opuesta al movimiento (o a su tendencia)",
+              "fs ≤ μs·N;  fk = μk·N"
+            ],
+            [
+              "Resorte",
+              "Fe",
+              "Opuesta a la deformación",
+              "k·x (ley de Hooke)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Dibujo del cuerpo **aislado** (como un punto o caja) con **todas las fuerzas que actúan sobre él** (y solo sobre él). Es el paso más importante de cualquier problema de dinámica o estática.",
+          "title": "Diagrama de cuerpo libre (DCL)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Aísla el cuerpo (dibújalo solo).",
+            "Dibuja el peso (siempre hacia abajo).",
+            "Dibuja las fuerzas de contacto: normal en cada superficie, fricción, tensiones de cuerdas, fuerzas aplicadas.",
+            "Elige ejes (conviene uno en la dirección del movimiento).",
+            "Escribe ΣFx = m·ax y ΣFy = m·ay."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La normal NO siempre es igual al peso. En un plano inclinado N = mg cos θ; si alguien empuja la caja hacia abajo, N aumenta; en un ascensor que acelera, N cambia."
+        },
+        {
+          "type": "quiz",
+          "question": "La fuerza normal es siempre:",
+          "options": [
+            "Igual al peso",
+            "Perpendicular a la superficie de contacto",
+            "Paralela a la superficie",
+            "Hacia abajo"
+          ],
+          "correct": 1,
+          "explanation": "Definición."
+        },
+        {
+          "type": "quiz",
+          "question": "En un DCL se dibujan:",
+          "options": [
+            "Todas las fuerzas del universo",
+            "Las fuerzas que actúan sobre el cuerpo aislado",
+            "Solo el peso",
+            "Las reacciones de otros cuerpos sobre el suelo"
+          ],
+          "correct": 1,
+          "explanation": "Solo sobre él."
+        },
+        {
+          "type": "quiz",
+          "question": "Una cuerda ideal transmite:",
+          "options": [
+            "Compresión",
+            "La misma tensión en toda su longitud",
+            "Fricción",
+            "Momento"
+          ],
+          "correct": 1,
+          "explanation": "Sin masa ni fricción."
+        }
+      ]
+    },
+    {
+      "id": "l03-friccion",
+      "title": "Fricción",
+      "summary": "Estática y cinética; coeficientes; cuándo se mueve un cuerpo.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Cuándo",
+            "Valor"
+          ],
+          "rows": [
+            [
+              "Estática fs",
+              "El cuerpo no se mueve (todavía)",
+              "Toma el valor necesario para impedir el movimiento, hasta un máximo μs·N"
+            ],
+            [
+              "Cinética fk",
+              "El cuerpo desliza",
+              "fk = μk·N (constante)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Cuesta más **empezar** a mover un mueble pesado que mantenerlo en movimiento: μs > μk.",
+          "title": "Por qué μs > μk"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Caja de 20 kg en el piso (μs = 0,5; μk = 0,3). fs,máx = 0,5·196,2 = 98,1 N. Si la empujas con 80 N no se mueve (fs = 80 N). Con 120 N se mueve: fk = 58,9 N → a = (120 − 58,9)/20 = **3,06 m/s²**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "quiz",
+          "question": "Si empujas una caja y no se mueve, la fricción estática es:",
+          "options": [
+            "μs·N siempre",
+            "Igual a tu fuerza (hasta su máximo)",
+            "Cero",
+            "Mayor que tu fuerza"
+          ],
+          "correct": 1,
+          "explanation": "Se ajusta."
+        },
+        {
+          "type": "quiz",
+          "question": "fk con μk = 0,2 y N = 100 N:",
+          "options": [
+            "20 N",
+            "0,2 N",
+            "500 N",
+            "100 N"
+          ],
+          "correct": 0,
+          "explanation": "μk·N."
+        },
+        {
+          "type": "quiz",
+          "question": "Generalmente:",
+          "options": [
+            "μs < μk",
+            "μs > μk",
+            "μs = μk",
+            "μ > 1 siempre"
+          ],
+          "correct": 1,
+          "explanation": "Cuesta más arrancar."
+        }
+      ]
+    },
+    {
+      "id": "l04-inclinado",
+      "title": "Plano inclinado y sistemas con poleas",
+      "summary": "Descomponer el peso; bloques unidos por cuerdas.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "W∥ = mg sen θ  (a lo largo del plano)        W⊥ = mg cos θ  (contra el plano)        N = mg cos θ",
+          "caption": "Con ejes paralelo y perpendicular al plano."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "El ángulo entre el peso y la perpendicular al plano es el mismo θ del plano. Para no confundir seno y coseno: si θ → 0 (plano horizontal), la componente a lo largo del plano debe anularse → es la del **seno**.",
+          "title": "Truco"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Caso",
+            "Aceleración"
+          ],
+          "rows": [
+            [
+              "Sin fricción",
+              "a = g sen θ (hacia abajo)"
+            ],
+            [
+              "Con fricción, deslizando hacia abajo",
+              "a = g(sen θ − μk cos θ)"
+            ],
+            [
+              "Condición para que no deslice",
+              "tan θ ≤ μs"
+            ],
+            [
+              "Ángulo crítico",
+              "θc = arctan μs"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "fis_incline",
+          "title": "Bloque en un plano inclinado"
+        },
+        {
+          "type": "heading",
+          "text": "Máquina de Atwood y bloques unidos"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Dos masas m₁ = 3 kg y m₂ = 5 kg cuelgan de una polea ideal. a = (m₂ − m₁)g/(m₁ + m₂) = 2·9,81/8 = **2,45 m/s²**. T = m₁(g + a) = 3·12,26 = **36,8 N**.",
+          "title": "Máquina de Atwood"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Bloque A (4 kg) sobre una mesa sin fricción unido por una cuerda a B (2 kg) que cuelga. a = mB·g/(mA + mB) = 19,62/6 = **3,27 m/s²**; T = mA·a = 13,1 N.",
+          "title": "Bloque sobre mesa"
+        },
+        {
+          "type": "quiz",
+          "question": "Sin fricción, un bloque baja por un plano de 30° con a =",
+          "options": [
+            "9,81 m/s²",
+            "4,9 m/s²",
+            "8,5 m/s²",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "g sen 30°."
+        },
+        {
+          "type": "quiz",
+          "question": "La normal en un plano inclinado θ es:",
+          "options": [
+            "mg",
+            "mg sen θ",
+            "mg cos θ",
+            "mg tan θ"
+          ],
+          "correct": 2,
+          "explanation": "Componente perpendicular."
+        },
+        {
+          "type": "quiz",
+          "question": "Un bloque no desliza si:",
+          "options": [
+            "tan θ ≤ μs",
+            "sen θ > μs",
+            "θ > 45°",
+            "μs = 0"
+          ],
+          "correct": 0,
+          "explanation": "Condición de equilibrio."
+        },
+        {
+          "type": "quiz",
+          "question": "En una máquina de Atwood con masas iguales, la aceleración es:",
+          "options": [
+            "g",
+            "g/2",
+            "0",
+            "2g"
+          ],
+          "correct": 2,
+          "explanation": "Se equilibran."
+        }
+      ]
+    }
+  ]
+}
