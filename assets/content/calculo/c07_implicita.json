@@ -611,6 +611,82 @@
           "explanation": "y′ = 1/eʸ = 1/x."
         }
       ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de derivación implícita",
+      "summary": "Tangentes, segunda derivada implícita, tangentes horizontales y verticales, curvas ortogonales.",
+      "minutes": 35,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Estos ejercicios son más largos que las preguntas de práctica. Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Verde = básico, naranja = intermedio, rojo = avanzado (nivel examen).",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Folium de Descartes",
+          "level": 2,
+          "statement": "Halla la recta tangente a x³ + y³ = 6xy en el punto (3, 3).",
+          "steps": [
+            "Deriva: 3x² + 3y²y′ = 6y + 6xy′.",
+            "y′(3y² − 6x) = 6y − 3x² → y′ = (2y − x²)/(y² − 2x).",
+            "En (3, 3): (6 − 9)/(9 − 6) = −1.",
+            "Recta: y − 3 = −(x − 3)."
+          ],
+          "answer": "**x + y = 6**"
+        },
+        {
+          "type": "exercise",
+          "title": "Segunda derivada implícita",
+          "level": 3,
+          "statement": "Para x² + y² = 25 halla y″ en términos de y.",
+          "steps": [
+            "2x + 2yy′ = 0 → y′ = −x/y.",
+            "y″ = −(y − x·y′)/y² = −(y + x²/y)/y².",
+            "y″ = −(y² + x²)/y³, y x² + y² = 25."
+          ],
+          "answer": "**y″ = −25/y³**",
+          "hint": "Al derivar y′ usa el cociente y vuelve a sustituir y′."
+        },
+        {
+          "type": "exercise",
+          "title": "Pendiente en un punto",
+          "level": 2,
+          "statement": "Halla dy/dx en (1, 2) para x²y + y³ = 10.",
+          "steps": [
+            "2xy + x²y′ + 3y²y′ = 0.",
+            "y′ = −2xy/(x² + 3y²).",
+            "En (1, 2): −4/(1 + 12)."
+          ],
+          "answer": "**y′ = −4/13**"
+        },
+        {
+          "type": "exercise",
+          "title": "Tangentes horizontales y verticales",
+          "level": 3,
+          "statement": "En la elipse x² + xy + y² = 3 halla los puntos con tangente horizontal y con tangente vertical.",
+          "steps": [
+            "2x + y + xy′ + 2yy′ = 0 → y′ = −(2x + y)/(x + 2y).",
+            "Horizontal: 2x + y = 0 → y = −2x. En la curva: x² − 2x² + 4x² = 3 → x = ±1 → (1, −2) y (−1, 2).",
+            "Vertical: x + 2y = 0 → x = −2y: 4y² − 2y² + y² = 3 → y = ±1 → (−2, 1) y (2, −1)."
+          ],
+          "answer": "**Horizontal en (1, −2) y (−1, 2); vertical en (−2, 1) y (2, −1).**"
+        },
+        {
+          "type": "exercise",
+          "title": "Familias ortogonales",
+          "level": 3,
+          "statement": "Demuestra que las hipérbolas x² − y² = a y xy = b se cortan en ángulo recto.",
+          "steps": [
+            "Primera: 2x − 2yy′ = 0 → m₁ = x/y.",
+            "Segunda: y + xy′ = 0 → m₂ = −y/x.",
+            "En un punto común: m₁·m₂ = (x/y)(−y/x) = −1. ∎"
+          ],
+          "answer": "El producto de pendientes es **−1**: son ortogonales."
+        }
+      ]
     }
   ]
 }

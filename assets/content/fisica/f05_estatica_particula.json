@@ -101,6 +101,271 @@
           "explanation": "Los cables solo jalan."
         }
       ]
+    },
+    {
+      "id": "l02-tensiones-2d",
+      "title": "DCL y problemas con tensiones en el plano",
+      "summary": "Procedimiento completo, poleas, ley de senos y el problema clásico de dos cables.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El diagrama de cuerpo libre (DCL) es una **foto del nudo aislado**: borras todo lo demás y dibujas solo las fuerzas que actúan sobre él (pesos, tensiones, reacciones). Si la foto está mal, todo lo que sigue está mal.",
+          "title": "Analogía"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Elige el punto (nudo, anillo, partícula) donde concurren las fuerzas.",
+            "Dibújalo aislado con **todas** las fuerzas: el peso W = mg hacia abajo y cada cable **jalando** desde el nudo hacia afuera.",
+            "Pon ejes y los ángulos de cada cable.",
+            "Escribe ΣFx = 0 y ΣFy = 0.",
+            "Resuelve el sistema. Una tensión negativa significa que el cable tendría que empujar: imposible, revisa."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Una carga de 1 500 N cuelga del nudo C, sostenido por el cable CA (30° con la horizontal, hacia la izquierda) y el cable CB (50° con la horizontal, hacia la derecha).\nΣFx: −TA cos 30° + TB cos 50° = 0\nΣFy: TA sen 30° + TB sen 50° − 1500 = 0\nResolviendo: **TA ≈ 979 N, TB ≈ 1 319 N**. El cable más empinado lleva más carga.",
+          "title": "Ejemplo 1: dos cables"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Con tres fuerzas también se puede usar el **triángulo de fuerzas** y la ley de senos: cada fuerza es proporcional al seno del ángulo opuesto. En el ejemplo 1, los ángulos del triángulo son 60°, 40° y 80° (opuestos a W, TA y TB), entonces TA = 1500·sen 40°/sen 80° ≈ 979 N y TB = 1500·sen 60°/sen 80° ≈ 1 319 N. Mismo resultado.",
+          "title": "Ejemplo 2: ley de senos"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En una **polea ideal** (sin fricción, sin peso) la tensión del cable es la **misma a ambos lados**. Un mismo cable que pasa por varias poleas tiene una sola tensión T.",
+          "title": "Poleas"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Una caja de 80 kg cuelga de una polea móvil sostenida por un cable cuyos dos tramos son verticales. Cada tramo lleva la mitad del peso: 2T = 80·9,81 → **T ≈ 392 N**.",
+          "title": "Ejemplo 3: polea móvil"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Cuanto más horizontal es un cable, mayor es su tensión para el mismo peso (sen θ pequeño en ΣFy). Por eso los cables de una línea eléctrica nunca se tensan del todo rectos: la tensión sería enorme."
+        },
+        {
+          "type": "interactive",
+          "widget": "fis_forces",
+          "title": "Laboratorio: equilibrio de fuerzas"
+        },
+        {
+          "type": "quiz",
+          "question": "En un DCL, la tensión de un cable se dibuja:",
+          "options": [
+            "Empujando el nudo",
+            "Jalando desde el nudo a lo largo del cable",
+            "Siempre vertical",
+            "Hacia el suelo"
+          ],
+          "correct": 1,
+          "explanation": "Los cables solo jalan."
+        },
+        {
+          "type": "quiz",
+          "question": "Una polea ideal cambia:",
+          "options": [
+            "La magnitud de la tensión",
+            "Solo la dirección del cable",
+            "El peso",
+            "Nada"
+          ],
+          "correct": 1,
+          "explanation": "T igual a ambos lados."
+        },
+        {
+          "type": "quiz",
+          "question": "Peso de 1 000 N con dos cables simétricos a 45°: T =",
+          "options": [
+            "500 N",
+            "707 N",
+            "1 000 N",
+            "1 414 N"
+          ],
+          "correct": 1,
+          "explanation": "2T sen 45° = 1000."
+        },
+        {
+          "type": "quiz",
+          "question": "Si una tensión sale negativa:",
+          "options": [
+            "Es correcto",
+            "El cable empuja: revisa el sentido o el planteo",
+            "Se duplica",
+            "Se ignora"
+          ],
+          "correct": 1,
+          "explanation": "Un cable no puede empujar."
+        }
+      ]
+    },
+    {
+      "id": "l03-tensiones-3d",
+      "title": "Equilibrio de una partícula en el espacio",
+      "summary": "Tres cables en 3D con vectores unitarios: el problema de examen paso a paso.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "ΣF = 0  ⇔  ΣFx = 0,  ΣFy = 0,  ΣFz = 0",
+          "caption": "Tres ecuaciones → hasta tres incógnitas"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Coordenadas de la partícula y de los extremos de cada cable.",
+            "Para cada cable: vector desde la partícula hacia el anclaje, longitud y λ.",
+            "Escribe cada tensión como T·λ (T desconocida).",
+            "Suma componentes i, j, k e iguala a 0 (con el peso −W k).",
+            "Resuelve el sistema 3 × 3."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Una carga de 1 800 N cuelga del punto D = (0, 0, 0). La sostienen tres cables anclados en A(−4, 0, 6), B(2, 3, 6) y C(2, −3, 6) m.\n• DA = (−4, 0, 6), |DA| = √52 ≈ 7,21; DB = (2, 3, 6), |DB| = 7; DC = (2, −3, 6), |DC| = 7.\n• ΣFx: −4TA/√52 + 2TB/7 + 2TC/7 = 0\n• ΣFy: 3TB/7 − 3TC/7 = 0 → TB = TC (simetría)\n• ΣFz: 6TA/√52 + 6TB/7 + 6TC/7 − 1800 = 0\nResultado: **TA ≈ 721 N, TB = TC = 700 N**.",
+          "title": "Ejemplo resuelto"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Comprobación rápida en z: 721·6/7,21 + 2·700·6/7 = 600 + 1200 = 1 800 N ✔. Siempre comprueba la ecuación que no usaste al final.",
+          "title": "Verificación"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Aprovecha la **simetría**: si dos cables son simétricos respecto a un plano, sus tensiones son iguales y el sistema se reduce a dos incógnitas.",
+          "title": "Ahorra tiempo"
+        },
+        {
+          "type": "interactive",
+          "widget": "la_gauss",
+          "title": "Resuelve el sistema 3 × 3 con Gauss"
+        },
+        {
+          "type": "quiz",
+          "question": "En 3D, el equilibrio de una partícula da:",
+          "options": [
+            "2 ecuaciones",
+            "3 ecuaciones",
+            "6 ecuaciones",
+            "1 ecuación"
+          ],
+          "correct": 1,
+          "explanation": "Una por eje."
+        },
+        {
+          "type": "quiz",
+          "question": "Si DB = (2, 3, 6) y TB = 700 N, TBz =",
+          "options": [
+            "600 N",
+            "200 N",
+            "300 N",
+            "700 N"
+          ],
+          "correct": 0,
+          "explanation": "700·6/7."
+        },
+        {
+          "type": "quiz",
+          "question": "Con tres cables y un peso conocido, las incógnitas son:",
+          "options": [
+            "Las tres tensiones",
+            "Los ángulos",
+            "El peso",
+            "Las longitudes"
+          ],
+          "correct": 0,
+          "explanation": "3 ecuaciones, 3 incógnitas."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos cables simétricos respecto al plano xz tienen:",
+          "options": [
+            "Tensiones iguales",
+            "Tensiones opuestas",
+            "Tensión cero",
+            "Distinta longitud"
+          ],
+          "correct": 0,
+          "explanation": "Simetría."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de estática de partículas",
+      "summary": "Tensiones en el plano y en el espacio, y fuerza mínima.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuelve cada ejercicio **en papel** con su dibujo o diagrama de cuerpo libre; luego pide la pista, la solución paso a paso o solo la respuesta. Usa g = 9,81 m/s².",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Dos cables asimétricos",
+          "level": 2,
+          "statement": "Una carga de 2 kN cuelga de un nudo sostenido por el cable A (60° con la horizontal, hacia la izquierda) y el cable B (20° con la horizontal, hacia la derecha). Halla las tensiones.",
+          "steps": [
+            "ΣFx: −TA cos 60° + TB cos 20° = 0.",
+            "ΣFy: TA sen 60° + TB sen 20° = 2.",
+            "De la primera: TB = 0,532·TA. Sustituye en la segunda."
+          ],
+          "answer": "**TA ≈ 1,91 kN; TB ≈ 1,02 kN**"
+        },
+        {
+          "type": "exercise",
+          "title": "Tres cables en el espacio",
+          "level": 3,
+          "statement": "Una carga de 5 kN cuelga del punto D(0, 0, 0). Los cables van a A(3, 0, 6), B(−2, 3, 6) y C(−2, −3, 6) m (z vertical). Halla las tres tensiones.",
+          "steps": [
+            "Longitudes: DA = √45 = 6,708 m; DB = DC = 7 m.",
+            "ΣFy: 3TB/7 − 3TC/7 = 0 → TB = TC.",
+            "ΣFx: 3TA/6,708 − 2·(2TB/7) = 0 → TA = 1,278·TB.",
+            "ΣFz: 6TA/6,708 + 2·(6TB/7) = 5."
+          ],
+          "answer": "**TA ≈ 2,24 kN; TB = TC = 1,75 kN**",
+          "hint": "Usa la simetría respecto al plano xz."
+        },
+        {
+          "type": "exercise",
+          "title": "Fuerza horizontal sobre una carga colgada",
+          "level": 2,
+          "statement": "Un bloque de 800 N cuelga de un cable. Se le aplica una fuerza horizontal P hasta que el cable forma 35° con la vertical. Halla P y la tensión.",
+          "steps": [
+            "ΣFy: T cos 35° = 800 → T = 976,6 N.",
+            "ΣFx: P = T sen 35° = 800·tan 35°."
+          ],
+          "answer": "**P ≈ 560 N; T ≈ 977 N**"
+        },
+        {
+          "type": "exercise",
+          "title": "Fuerza mínima",
+          "level": 3,
+          "statement": "Una carga de 1 000 N cuelga de un cable que debe mantenerse a 30° de la vertical mediante una fuerza F aplicada a la carga. ¿Cuál es la F mínima y en qué dirección?",
+          "steps": [
+            "Triángulo de fuerzas: el peso es fijo y la dirección del cable también; F cierra el triángulo.",
+            "El lado más corto es el perpendicular a la dirección del cable.",
+            "F = 1 000·sen 30°;  T = 1 000·cos 30°."
+          ],
+          "answer": "**F mín = 500 N, perpendicular al cable (30° sobre la horizontal); T ≈ 866 N**"
+        }
+      ]
     }
   ]
 }

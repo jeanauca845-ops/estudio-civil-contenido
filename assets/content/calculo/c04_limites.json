@@ -1094,6 +1094,323 @@
           "explanation": "El valor en a no importa."
         }
       ]
+    },
+    {
+      "id": "l09-definicion-practica",
+      "title": "Límites por definición: procedimiento y ejemplos",
+      "summary": "Cómo encontrar δ para un ε dado (lineales, cuadráticas, raíces y racionales), teoremas de límites y teorema de estricción.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un juego de dos jugadores. El **retador** exige precisión: “quiero que f(x) esté a menos de ε de L”. El **defensor** responde: “te lo garantizo si x está a menos de δ de a (sin ser a)”. El límite es L si el defensor **siempre** puede responder, por pequeño que sea ε.",
+          "title": "La idea"
+        },
+        {
+          "type": "formula",
+          "expression": "lím (x→a) f(x) = L   ⇔   ∀ε > 0 ∃δ > 0 :  0 < |x − a| < δ  ⇒  |f(x) − L| < ε",
+          "caption": "Definición ε-δ"
+        },
+        {
+          "type": "heading",
+          "text": "Procedimiento (siempre igual)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Análisis (borrador)**: escribe |f(x) − L| y trata de que aparezca el factor |x − a|.",
+            "Si sobra un factor que depende de x, **acótalo** suponiendo δ ≤ 1 (así x queda en un intervalo conocido).",
+            "Despeja: si |f(x) − L| ≤ M·|x − a|, basta |x − a| < ε/M.",
+            "Elige **δ = mín(1, ε/M)** (o solo ε/M si no hubo que acotar).",
+            "**Prueba**: escribe “Sea ε > 0, tomo δ = …; si 0 < |x − a| < δ entonces … < ε”."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Probar lím (x→3) (4x − 5) = 7.\n|f(x) − L| = |4x − 5 − 7| = |4x − 12| = 4|x − 3|.\nQuiero 4|x − 3| < ε → |x − 3| < ε/4.\n**δ = ε/4.** Prueba: si 0 < |x − 3| < ε/4, entonces |(4x − 5) − 7| = 4|x − 3| < 4·ε/4 = ε. ∎\nPara ε = 0,01 → δ = 0,0025.",
+          "title": "Ejemplo 1: lineal"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Probar lím (x→2) x² = 4.\n|x² − 4| = |x − 2|·|x + 2|. El factor |x + 2| depende de x: lo acoto.\nSi δ ≤ 1, entonces |x − 2| < 1 → 1 < x < 3 → 3 < x + 2 < 5 → |x + 2| < 5.\nAsí |x² − 4| < 5|x − 2|, y basta |x − 2| < ε/5.\n**δ = mín(1, ε/5).**",
+          "title": "Ejemplo 2: cuadrática (hay que acotar)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Probar lím (x→4) √x = 2.\nRacionalizo: |√x − 2| = |x − 4| / (√x + 2) ≤ |x − 4| / 2 (porque √x + 2 ≥ 2).\nBasta |x − 4| < 2ε. Además x debe ser ≥ 0, así que pido δ ≤ 4.\n**δ = mín(4, 2ε).**",
+          "title": "Ejemplo 3: raíz"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Probar lím (x→2) 1/x = 1/2.\n|1/x − 1/2| = |2 − x| / (2|x|).\nCon δ ≤ 1: 1 < x < 3 → |x| > 1 → 1/(2|x|) < 1/2.\nEntonces |1/x − 1/2| < |x − 2|/2 y basta |x − 2| < 2ε.\n**δ = mín(1, 2ε).**",
+          "title": "Ejemplo 4: racional"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Variante",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "lím (x→a⁺) f(x) = L",
+              "∀ε ∃δ: 0 < x − a < δ ⇒ |f(x) − L| < ε"
+            ],
+            [
+              "lím (x→a⁻) f(x) = L",
+              "∀ε ∃δ: 0 < a − x < δ ⇒ |f(x) − L| < ε"
+            ],
+            [
+              "lím (x→a) f(x) = +∞",
+              "∀N > 0 ∃δ: 0 < |x − a| < δ ⇒ f(x) > N"
+            ],
+            [
+              "lím (x→+∞) f(x) = L",
+              "∀ε ∃M > 0: x > M ⇒ |f(x) − L| < ε"
+            ]
+          ],
+          "caption": "Definiciones relacionadas"
+        },
+        {
+          "type": "heading",
+          "text": "Teoremas sobre límites (Leithold)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Teorema",
+            "Enunciado (si lím f = L y lím g = M)"
+          ],
+          "rows": [
+            [
+              "Unicidad",
+              "Si el límite existe, es único."
+            ],
+            [
+              "Constante e identidad",
+              "lím c = c;  lím x = a"
+            ],
+            [
+              "Suma y resta",
+              "lím (f ± g) = L ± M"
+            ],
+            [
+              "Producto",
+              "lím (f·g) = L·M;  lím (c·f) = c·L"
+            ],
+            [
+              "Cociente",
+              "lím (f/g) = L/M, si M ≠ 0"
+            ],
+            [
+              "Potencia",
+              "lím fⁿ = Lⁿ (n entero positivo)"
+            ],
+            [
+              "Raíz",
+              "lím ⁿ√f = ⁿ√L (si n es par, L > 0)"
+            ],
+            [
+              "Polinomios y racionales",
+              "Se evalúan directamente (si el denominador no se anula)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Teorema de estricción (del sándwich)"
+        },
+        {
+          "type": "formula",
+          "expression": "Si g(x) ≤ f(x) ≤ h(x) cerca de a, y lím g = lím h = L, entonces lím f = L."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Dos policías (g y h) caminan hacia la misma comisaría (L) llevando a un detenido (f) en medio: el detenido llega a la misma comisaría, quiera o no.",
+          "title": "Analogía"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→0) x²·sen(1/x).\nComo −1 ≤ sen(1/x) ≤ 1, multiplico por x² ≥ 0: −x² ≤ x² sen(1/x) ≤ x².\nlím (−x²) = lím x² = 0, así que **el límite es 0** (aunque sen(1/x) no tenga límite).",
+          "title": "Ejemplo 5"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→+∞) (sen x)/x: −1/x ≤ (sen x)/x ≤ 1/x para x > 0, y ambos extremos tienden a 0 → **límite 0**.",
+          "title": "Ejemplo 6"
+        },
+        {
+          "type": "quiz",
+          "question": "Para lím (x→1) (3x + 2) = 5, el δ adecuado es:",
+          "options": [
+            "ε",
+            "ε/3",
+            "3ε",
+            "ε/5"
+          ],
+          "correct": 1,
+          "explanation": "|3x − 3| = 3|x − 1|."
+        },
+        {
+          "type": "quiz",
+          "question": "Si lím (x→3) (4x − 5) = 7 y ε = 0,02, δ =",
+          "options": [
+            "0,02",
+            "0,005",
+            "0,08",
+            "0,01"
+          ],
+          "correct": 1,
+          "explanation": "δ = ε/4."
+        },
+        {
+          "type": "quiz",
+          "question": "En lím (x→2) x² = 4, ¿por qué se supone δ ≤ 1?",
+          "options": [
+            "Para que ε sea pequeño",
+            "Para acotar el factor |x + 2|",
+            "Porque x es entero",
+            "No es necesario"
+          ],
+          "correct": 1,
+          "explanation": "Así |x + 2| < 5."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) x·cos(1/x) =",
+          "options": [
+            "1",
+            "0",
+            "No existe",
+            "∞"
+          ],
+          "correct": 1,
+          "explanation": "Estricción: −|x| ≤ x cos(1/x) ≤ |x|."
+        },
+        {
+          "type": "quiz",
+          "question": "El teorema de estricción necesita que g y h tengan:",
+          "options": [
+            "El mismo límite",
+            "La misma derivada",
+            "El mismo dominio",
+            "Límites distintos"
+          ],
+          "correct": 0,
+          "explanation": "Ambas tienden a L."
+        },
+        {
+          "type": "quiz",
+          "question": "La definición de lím (x→a) f(x) = L exige 0 < |x − a| porque:",
+          "options": [
+            "x = a no importa: interesa lo que pasa cerca",
+            "f(a) siempre existe",
+            "δ debe ser positivo",
+            "Es un error"
+          ],
+          "correct": 0,
+          "explanation": "El límite no depende de f(a)."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de límites",
+      "summary": "Indeterminaciones 0/0 e ∞ − ∞, límites trigonométricos y asíntotas.",
+      "minutes": 40,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Estos ejercicios son más largos que las preguntas de práctica. Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Verde = básico, naranja = intermedio, rojo = avanzado (nivel examen).",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Dos raíces en el numerador",
+          "level": 2,
+          "statement": "Calcula  lím (x→0) [√(1 + x) − √(1 − x)]/x.",
+          "steps": [
+            "Forma 0/0. Multiplica por el conjugado √(1 + x) + √(1 − x).",
+            "Numerador: (1 + x) − (1 − x) = 2x.",
+            "2x / [x(√(1 + x) + √(1 − x))] = 2/(√(1 + x) + √(1 − x)) → 2/2."
+          ],
+          "answer": "**1**"
+        },
+        {
+          "type": "exercise",
+          "title": "Límite trigonométrico con coseno",
+          "level": 2,
+          "statement": "Calcula  lím (x→0) (1 − cos 3x)/x².",
+          "steps": [
+            "Multiplica por (1 + cos 3x): (1 − cos²3x)/[x²(1 + cos 3x)] = sen²3x/[x²(1 + cos 3x)].",
+            "sen²3x/x² = 9·(sen 3x/3x)² → 9.",
+            "1/(1 + cos 3x) → 1/2."
+          ],
+          "answer": "**9/2**",
+          "hint": "Usa lím (sen u)/u = 1."
+        },
+        {
+          "type": "exercise",
+          "title": "Infinito menos infinito",
+          "level": 2,
+          "statement": "Calcula  lím (x→+∞) [√(x² + 4x) − x].",
+          "steps": [
+            "Multiplica por el conjugado: (x² + 4x − x²)/(√(x² + 4x) + x) = 4x/(√(x² + 4x) + x).",
+            "Divide numerador y denominador entre x (x > 0): 4/(√(1 + 4/x) + 1).",
+            "Cuando x → ∞: 4/(1 + 1)."
+          ],
+          "answer": "**2**"
+        },
+        {
+          "type": "exercise",
+          "title": "tan x − sen x",
+          "level": 3,
+          "statement": "Calcula  lím (x→0) (tan x − sen x)/x³.",
+          "steps": [
+            "tan x − sen x = sen x (1/cos x − 1) = sen x (1 − cos x)/cos x.",
+            "Divide en factores: (sen x/x) · [(1 − cos x)/x²] · (1/cos x).",
+            "Cada factor: 1 · 1/2 · 1."
+          ],
+          "answer": "**1/2**",
+          "hint": "Saca sen x como factor común."
+        },
+        {
+          "type": "exercise",
+          "title": "Raíces de distinto índice",
+          "level": 3,
+          "statement": "Calcula  lím (x→1) (∛x − 1)/(√x − 1).",
+          "steps": [
+            "Cambio de variable x = t⁶ (mínimo común múltiplo de 2 y 3): ∛x = t², √x = t³, y t → 1.",
+            "(t² − 1)/(t³ − 1) = (t − 1)(t + 1)/[(t − 1)(t² + t + 1)].",
+            "Cancela (t − 1) y evalúa: 2/3."
+          ],
+          "answer": "**2/3**",
+          "hint": "Sustituye x = t⁶ para eliminar las raíces."
+        },
+        {
+          "type": "exercise",
+          "title": "Todas las asíntotas",
+          "level": 3,
+          "statement": "Halla las asíntotas de  f(x) = (2x² − 3x + 1)/(x − 2).",
+          "steps": [
+            "Vertical: el denominador se anula en x = 2 y el numerador vale 3 ≠ 0 → x = 2 (por la derecha +∞, por la izquierda −∞).",
+            "Horizontal: no hay (grado del numerador mayor).",
+            "Oblicua (grados 2 y 1): divide: 2x² − 3x + 1 = (x − 2)(2x + 1) + 3.",
+            "f(x) = 2x + 1 + 3/(x − 2), y 3/(x − 2) → 0."
+          ],
+          "answer": "**Vertical x = 2; oblicua y = 2x + 1; sin horizontal.**"
+        }
+      ]
     }
   ]
 }

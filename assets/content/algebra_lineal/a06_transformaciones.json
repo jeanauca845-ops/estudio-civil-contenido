@@ -213,6 +213,1057 @@
           "explanation": "Definición."
         }
       ]
+    },
+    {
+      "id": "l03-tl-general",
+      "title": "Transformación lineal: definición, superposición y ejemplos",
+      "summary": "Espacio de salida y de llegada, las dos condiciones de linealidad, T(0) = 0, cómo demostrar o refutar linealidad e inversa.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Entra en el examen: páginas 3 y 11 del segundo libro de notas (Transformaciones lineales).",
+          "title": "Examen"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una transformación T: V → W es una **máquina que convierte vectores en vectores**. V es el espacio de **salida** (dominio) y W el de **llegada** (codominio). Es lineal si respeta las dos operaciones del álgebra lineal: **“abre sumas”** y **“saca escalares”**.",
+          "title": "Idea"
+        },
+        {
+          "type": "formula",
+          "expression": "T(u + v) = T(u) + T(v)        T(αu) = αT(u)",
+          "caption": "Linealidad = principio de superposición (notas, p. 1 y 10)"
+        },
+        {
+          "type": "formula",
+          "expression": "Equivalente en una sola:  T(αu + βv) = αT(u) + βT(v)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "Dominio (salida) V",
+              "Espacio de donde salen los vectores"
+            ],
+            [
+              "Codominio (llegada) W",
+              "Espacio adonde llegan"
+            ],
+            [
+              "Imagen de v",
+              "w = T(v)"
+            ],
+            [
+              "Imagen (rango) de T, Im(T)",
+              "Conjunto de todas las imágenes: subespacio de W"
+            ],
+            [
+              "Núcleo, ker(T)",
+              "Vectores de V que T manda al 0 de W: subespacio de V"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Toda transformación lineal cumple **T(0) = 0**. Si T(0) ≠ 0, ya sabes que **no** es lineal (prueba rapidísima).",
+          "title": "Prueba rápida"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T(x, y) = (4x − y, 2x + 3y). Con X₁ = (x₁, y₁), X₂ = (x₂, y₂):\nT(αX₁ + βX₂) = (4(αx₁ + βx₂) − (αy₁ + βy₂), 2(αx₁ + βx₂) + 3(αy₁ + βy₂)) = α(4x₁ − y₁, 2x₁ + 3y₁) + β(4x₂ − y₂, 2x₂ + 3y₂) = αT(X₁) + βT(X₂). ✔ **Lineal.**\nSu matriz es [4 −1 ; 2 3] con det = 14 ≠ 0 → es invertible: T⁻¹ = (1/14)[3 1 ; −2 4]. Es un **isomorfismo**.",
+          "title": "Ejemplo 1 (notas, p. 16)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Transformación",
+            "¿Lineal?",
+            "Motivo"
+          ],
+          "rows": [
+            [
+              "T(x, y) = (x + 1, y)",
+              "No",
+              "T(0, 0) = (1, 0) ≠ 0 (es una traslación)"
+            ],
+            [
+              "T(x, y) = (x², y)",
+              "No",
+              "T(2u) ≠ 2T(u)"
+            ],
+            [
+              "T(A) = det A",
+              "No",
+              "det(A + B) ≠ det A + det B y det(αA) = αⁿ det A"
+            ],
+            [
+              "T(A) = Aᵀ",
+              "Sí",
+              "(αA + βB)ᵀ = αAᵀ + βBᵀ"
+            ],
+            [
+              "T([a b ; c d]) = (a, b, c, d)",
+              "Sí (isomorfismo M₂ₓ₂ → ℝ⁴)",
+              "Notas, ejemplo 15"
+            ],
+            [
+              "D(p) = p′ (derivar)",
+              "Sí",
+              "(αp + βq)′ = αp′ + βq′"
+            ],
+            [
+              "T(X) = AX",
+              "Sí",
+              "Propiedades del producto de matrices"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Las transformaciones lineales modelan rotaciones y traslaciones de cuerpos, deformaciones de medios, campos de flujo y la relación entre fuerzas y desplazamientos de una estructura (q = K·d)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si T(0) ≠ 0, entonces T:",
+          "options": [
+            "Es lineal",
+            "No es lineal",
+            "Es invertible",
+            "Es un isomorfismo"
+          ],
+          "correct": 1,
+          "explanation": "Toda TL cumple T(0) = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Es lineal T(x, y) = (3x, x − y)?",
+          "options": [
+            "Sí",
+            "No"
+          ],
+          "correct": 0,
+          "explanation": "Es AX con A = [3 0 ; 1 −1]."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Es lineal T(x) = 2x + 5 de ℝ en ℝ?",
+          "options": [
+            "Sí",
+            "No"
+          ],
+          "correct": 1,
+          "explanation": "T(0) = 5."
+        },
+        {
+          "type": "quiz",
+          "question": "“T saca escalares” significa:",
+          "options": [
+            "T(αu) = αT(u)",
+            "T(u + v) = T(u) + T(v)",
+            "T(0) = 0",
+            "T(u) = αu"
+          ],
+          "correct": 0,
+          "explanation": "Homogeneidad."
+        },
+        {
+          "type": "quiz",
+          "question": "El determinante como función de matrices es:",
+          "options": [
+            "Lineal",
+            "No lineal",
+            "Un isomorfismo",
+            "Una proyección"
+          ],
+          "correct": 1,
+          "explanation": "No abre sumas."
+        }
+      ]
+    },
+    {
+      "id": "l04-matriz-estandar",
+      "title": "Matriz estándar de una transformación (página 3)",
+      "summary": "A = [T(e₁) ⋯ T(eₙ)], equivalente matricial, ejemplos de las notas, composición = producto de matrices y cuándo T es uno a uno o sobre.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Entra en el examen: páginas 3 y 11 del segundo libro de notas (Transformaciones lineales). Esta lección corresponde a la página 3 (impresa) de las notas.",
+          "title": "Examen"
+        },
+        {
+          "type": "formula",
+          "expression": "T(X) = AX,    A = [ T(e₁)  T(e₂)  ⋯  T(eₙ) ]  (m × n)",
+          "caption": "Teorema: existe una única matriz estándar; su columna j es la imagen del vector canónico eⱼ"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Basta saber qué le pasa a los vectores de la base canónica: como todo X = x₁e₁ + ⋯ + xₙeₙ, por linealidad T(X) = x₁T(e₁) + ⋯ + xₙT(eₙ). Las imágenes de la base **son** las columnas de A.",
+          "title": "Por qué funciona"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f: ℝ⁴ → ℝ³, f(x, y, z, w) = (x + y − z, 3z − w, z + 2y).\nCada coordenada da una fila (coeficientes de x, y, z, w):\n**A = [1 1 −1 0 ; 0 0 3 −1 ; 0 2 1 0]** (3 × 4).",
+          "title": "Ejemplo 1: desde la fórmula (notas, ejemplo 1)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T: ℝ² → ℝ² con T(0, 1) = (1, 0) y T(1, 1) = (3, −2).\nA = [a c ; b d]: A(0, 1) = (c, d) = (1, 0); A(1, 1) = (a + c, b + d) = (3, −2) → a = 2, b = −2.\n**A = [2 1 ; −2 0]**, es decir T(x₁, x₂) = (2x₁ + x₂, −2x₁).",
+          "title": "Ejemplo 2: desde imágenes de otros vectores (notas, ejemplo 2)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T: ℝ³ → ℝ⁴ con X = (2, 2, 1), Y = (3, 2, 1), Z = (2, 2, 0) y T(X) = (1, 2, 5, 7), T(Y) = (2, 2, 6, 9), T(Z) = (2, 4, 4, 6).\nTruco: e₁ = Y − X, e₃ = X − Z, e₂ = X − Y + ½Z. Por linealidad:\nT(e₁) = (1, 0, 1, 2), T(e₂) = (0, 2, 1, 1), T(e₃) = (−1, −2, 1, 1).\n**A = [1 0 −1 ; 0 2 −2 ; 1 1 1 ; 2 1 1]**. Rango 3 → columnas LI → **inyectiva**; rango 3 < 4 → **no** es sobre ℝ⁴.",
+          "title": "Ejemplo 3 (notas, ejemplo 3)"
+        },
+        {
+          "type": "heading",
+          "text": "Uno a uno y sobre (existencia y unicidad)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad de T(X) = AX",
+            "Equivale a",
+            "Condición con el rango (A de m × n)"
+          ],
+          "rows": [
+            [
+              "T es **sobre** ℝᵐ (sobreyectiva)",
+              "Las columnas de A generan ℝᵐ; Ax = b tiene solución para todo b",
+              "r = m (pivote en cada fila)"
+            ],
+            [
+              "T es **uno a uno** (inyectiva)",
+              "T(X) = 0 solo tiene la solución trivial; columnas de A LI",
+              "r = n (pivote en cada columna)"
+            ],
+            [
+              "T es biyectiva (isomorfismo)",
+              "A cuadrada e invertible",
+              "r = m = n"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Si n > m (más columnas que filas) T **no** puede ser uno a uno. Si n < m, T **no** puede ser sobre."
+        },
+        {
+          "type": "heading",
+          "text": "Composición = producto de matrices"
+        },
+        {
+          "type": "formula",
+          "expression": "(TB ∘ TA)(X) = TB(TA(X)) = (BA)X",
+          "caption": "Primero A, después B: se escribe de derecha a izquierda"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Rotación de 90°: R = [0 −1 ; 1 0]. Inclinación (cizalla): S = [1 1 ; 0 1]. Primero rotar y luego inclinar: **SR = [1 −1 ; 1 0]**. Si se hace al revés, RS = [0 −1 ; 1 1], distinto: por eso el producto de matrices **no es conmutativo**.",
+          "title": "Ejemplo 4 (notas, p. 7–8)"
+        },
+        {
+          "type": "quiz",
+          "question": "La columna 2 de la matriz estándar es:",
+          "options": [
+            "T(e₁)",
+            "T(e₂)",
+            "e₂",
+            "T(0)"
+          ],
+          "correct": 1,
+          "explanation": "Columna j = T(eⱼ)."
+        },
+        {
+          "type": "quiz",
+          "question": "T(x, y) = (x + 2y, 3x, y) tiene matriz de tamaño:",
+          "options": [
+            "2 × 3",
+            "3 × 2",
+            "3 × 3",
+            "2 × 2"
+          ],
+          "correct": 1,
+          "explanation": "m × n con m = 3, n = 2."
+        },
+        {
+          "type": "quiz",
+          "question": "Si A es 3 × 5, T(X) = AX:",
+          "options": [
+            "Puede ser uno a uno",
+            "No puede ser uno a uno",
+            "Es siempre sobre",
+            "Es invertible"
+          ],
+          "correct": 1,
+          "explanation": "n = 5 > m = 3."
+        },
+        {
+          "type": "quiz",
+          "question": "T es uno a uno si las columnas de A son:",
+          "options": [
+            "Generadoras de ℝᵐ",
+            "Linealmente independientes",
+            "Ortogonales",
+            "Iguales"
+          ],
+          "correct": 1,
+          "explanation": "Solo la solución trivial."
+        },
+        {
+          "type": "quiz",
+          "question": "Aplicar primero A y luego B corresponde a:",
+          "options": [
+            "AB",
+            "BA",
+            "A + B",
+            "AᵀB"
+          ],
+          "correct": 1,
+          "explanation": "De derecha a izquierda."
+        },
+        {
+          "type": "quiz",
+          "question": "Matriz de T(x, y) = (3x − y, x):",
+          "options": [
+            "[3 −1 ; 1 0]",
+            "[3 1 ; −1 0]",
+            "[3 0 ; −1 1]",
+            "[1 0 ; 3 −1]"
+          ],
+          "correct": 0,
+          "explanation": "Filas: coeficientes de cada coordenada."
+        }
+      ]
+    },
+    {
+      "id": "l05-kernel-imagen",
+      "title": "Núcleo (kernel) e imagen; mono, epi e isomorfismo (página 11)",
+      "summary": "ker(T) y Im(T) en lugar de espacio nulo y columna, teorema de la dimensión y cómo clasificar una transformación.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Entra en el examen: páginas 3 y 11 del segundo libro de notas (Transformaciones lineales). Esta lección corresponde a la página 11 (impresa) de las notas.",
+          "title": "Examen"
+        },
+        {
+          "type": "formula",
+          "expression": "ker(T) = { v ∈ V : T(v) = 0 }  ⊆ V        Im(T) = { w ∈ W : w = T(v) para algún v }  ⊆ W"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para T(X) = AX: **ker(T) = Nul(A)** (el espacio nulo) e **Im(T) = Col(A)** (el espacio columna). Son los mismos conceptos con nombres nuevos, válidos también para polinomios, matrices o funciones.",
+          "title": "Traducción"
+        },
+        {
+          "type": "formula",
+          "expression": "dim ker(T) + dim Im(T) = dim V",
+          "caption": "Teorema de la dimensión (del rango)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Nombre",
+            "Significa",
+            "Condición"
+          ],
+          "rows": [
+            [
+              "Monomorfismo",
+              "T inyectiva (uno a uno)",
+              "ker(T) = {0}"
+            ],
+            [
+              "Epimorfismo",
+              "T sobreyectiva",
+              "Im(T) = W (dim Im(T) = dim W)"
+            ],
+            [
+              "Isomorfismo (V ≅ W)",
+              "T biyectiva",
+              "ker(T) = {0} e Im(T) = W"
+            ],
+            [
+              "Endomorfismo",
+              "T: V → V",
+              "Mismo espacio de salida y llegada"
+            ],
+            [
+              "Automorfismo",
+              "Endomorfismo que es isomorfismo",
+              "T: V → V invertible"
+            ]
+          ],
+          "caption": "Clasificación (notas, p. 11)"
+        },
+        {
+          "type": "heading",
+          "text": "Procedimiento"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Escribe la matriz A de T y escalónala.",
+            "**ker**: resuelve AX = 0; las variables libres dan la base. dim ker = n − r.",
+            "**Im**: columnas pivote de A (originales). dim Im = r. Si se pide, saca su ecuación implícita.",
+            "Compara: ¿dim ker = 0? (inyectiva) ¿dim Im = dim W? (sobreyectiva).",
+            "Verifica con dim ker + dim Im = dim V."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T(x, y) = (x, x + y, y), T: ℝ² → ℝ³, A = [1 0 ; 1 1 ; 0 1].\nEscalonada con 2 pivotes, sin variables libres → **ker(T) = {(0, 0)}**, dim 0 → **inyectiva**.\n**Im(T) = Gen{(1, 1, 0), (0, 1, 1)}**, dim 2 < 3 → **no sobreyectiva**. No es isomorfismo. Comprobación: 0 + 2 = 2 = dim ℝ² ✔.",
+          "title": "Ejemplo 1 (notas, ejemplo 2)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T(x, y, z) = (x, y), T: ℝ³ → ℝ², A = [1 0 0 ; 0 1 0]. z es libre → **ker(T) = Gen{(0, 0, 1)}** (el eje z), dim 1 → **no inyectiva**.\nIm(T) = Gen{(1, 0), (0, 1)} = ℝ² → **sobreyectiva**. 1 + 2 = 3 ✔. Geométricamente: proyecta todo el espacio sobre el plano xy.",
+          "title": "Ejemplo 2 (notas, ejemplo 3)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T(x, y, z) = (x − z, 3y), A = [1 0 −1 ; 0 3 0], r = 2.\nker: x = z, y = 0 → **ker(T) = Gen{(1, 0, 1)}**, dim 1. **Im(T) = ℝ²**, dim 2. 1 + 2 = 3 ✔. Sobreyectiva, no inyectiva.",
+          "title": "Ejemplo 3 (notas, ejemplo 20)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T(x, y) = (2x − y, x + y, −3x + 3y), r = 2. **ker(T) = {0}** (inyectiva). **Im(T) = {(u, v, w) : w − v + 2u = 0}**, un plano de ℝ³ (no sobreyectiva).",
+          "title": "Ejemplo 4 (notas, ejemplo 21)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T(x, y, z) = (x − y, −x + y, 2x − 2y + z): las columnas son (1, −1, 2), (−1, 1, −2) = −(columna 1) y (0, 0, 1). **Im(T) = Gen{(1, −1, 2), (0, 0, 1)}**, dim 2; por el teorema, dim ker = 1: ker(T) = Gen{(1, 1, 0)}.",
+          "title": "Ejemplo 5 (notas, ejemplo 23)"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Una TL entre espacios de **dimensión distinta** nunca es isomorfismo. Si dim V = dim W, basta comprobar **una** de las dos (inyectiva o sobreyectiva) para tener las dos.",
+          "title": "Atajos"
+        },
+        {
+          "type": "quiz",
+          "question": "ker(T) es un subespacio de:",
+          "options": [
+            "W (llegada)",
+            "V (salida)",
+            "ℝ",
+            "Im(T)"
+          ],
+          "correct": 1,
+          "explanation": "Vectores que se envían al 0."
+        },
+        {
+          "type": "quiz",
+          "question": "T: ℝ⁴ → ℝ² con dim Im(T) = 2. dim ker(T) =",
+          "options": [
+            "0",
+            "2",
+            "4",
+            "6"
+          ],
+          "correct": 1,
+          "explanation": "4 − 2."
+        },
+        {
+          "type": "quiz",
+          "question": "T es monomorfismo si:",
+          "options": [
+            "Im(T) = W",
+            "ker(T) = {0}",
+            "V = W",
+            "T(0) = 0"
+          ],
+          "correct": 1,
+          "explanation": "Inyectiva."
+        },
+        {
+          "type": "quiz",
+          "question": "Un automorfismo es:",
+          "options": [
+            "T: V → W sobreyectiva",
+            "T: V → V biyectiva",
+            "Una proyección",
+            "T con ker grande"
+          ],
+          "correct": 1,
+          "explanation": "Endomorfismo + isomorfismo."
+        },
+        {
+          "type": "quiz",
+          "question": "T: ℝ³ → ℝ² nunca es:",
+          "options": [
+            "Sobreyectiva",
+            "Lineal",
+            "Inyectiva",
+            "Un epimorfismo"
+          ],
+          "correct": 2,
+          "explanation": "dim ker ≥ 1."
+        },
+        {
+          "type": "quiz",
+          "question": "En T(X) = AX, Im(T) es:",
+          "options": [
+            "Nul(A)",
+            "Col(A)",
+            "Col(Aᵀ)",
+            "Nul(Aᵀ)"
+          ],
+          "correct": 1,
+          "explanation": "Combinaciones de columnas."
+        }
+      ]
+    },
+    {
+      "id": "l06-hallar-tl",
+      "title": "Hallar una transformación f tal que f(h) = j, y su inversa",
+      "summary": "Construir T a partir de las imágenes de una base, expresión analítica, y calcular T⁻¹.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una transformación lineal queda **totalmente determinada** por lo que hace con una base: si sabes T(b₁), …, T(bₙ), sabes T de cualquier vector (escríbelo como combinación de la base y aplica linealidad).",
+          "title": "Teorema fundamental"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Verifica que los vectores dados {h₁, …, hₙ} sean una **base** del espacio de salida (si no, puede haber infinitas T o ninguna).",
+            "Escribe un vector cualquiera X como combinación: X = a₁h₁ + ⋯ + aₙhₙ (resuelve para los aᵢ en función de las coordenadas de X).",
+            "Aplica linealidad: T(X) = a₁j₁ + ⋯ + aₙjₙ.",
+            "Ordena y escribe la expresión analítica y la matriz."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Hallar T: ℝ² → ℝ² con T(0, 1) = (1, 0) y T(1, 1) = (3, −2).\n(x₁, x₂) = a(0, 1) + b(1, 1) → b = x₁, a = x₂ − x₁.\nT(x₁, x₂) = (x₂ − x₁)(1, 0) + x₁(3, −2) = **(2x₁ + x₂, −2x₁)**. Matriz [2 1 ; −2 0].",
+          "title": "Ejemplo 1 (notas, ejemplo 24)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Hallar T: ℝ² → ℝ³ con T(1, 1) = (3, 1, 0) y T(1, −1) = (1, 1, 2).\ne₁ = ½[(1, 1) + (1, −1)] → T(e₁) = ½[(3, 1, 0) + (1, 1, 2)] = (2, 1, 1).\ne₂ = ½[(1, 1) − (1, −1)] → T(e₂) = ½[(3, 1, 0) − (1, 1, 2)] = (1, 0, −1).\n**A = [2 1 ; 1 0 ; 1 −1]**, T(x, y) = (2x + y, x, x − y). Comprobación: T(1, 1) = (3, 1, 0) ✔.",
+          "title": "Ejemplo 2: con la base canónica"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Si los datos son T(hᵢ) = jᵢ para i = 1, …, n, con H = [h₁ ⋯ hₙ] (columnas) y J = [j₁ ⋯ jₙ]: se cumple A·H = J, así que **A = J·H⁻¹**. En el ejemplo 26 de las notas (T: ℝ³ → ℝ⁴ con tres vectores dados) se resuelve así; el det de H es −15 ≠ 0, por eso hay solución única.",
+          "title": "Método matricial"
+        },
+        {
+          "type": "heading",
+          "text": "Inversa de una transformación"
+        },
+        {
+          "type": "formula",
+          "expression": "T⁻¹(T(v)) = v,    T(T⁻¹(w)) = w        Si T(X) = AX, entonces T⁻¹(X) = A⁻¹X"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T(x, y) = (x + 2y, 4x + 3y), A = [1 2 ; 4 3], det = −5 ≠ 0.\nA⁻¹ = (1/−5)[3 −2 ; −4 1] = [−3/5 2/5 ; 4/5 −1/5].\n**T⁻¹(u, w) = (−3u/5 + 2w/5, 4u/5 − w/5).** Comprobación: T(1, 0) = (1, 4) → T⁻¹(1, 4) = (−3/5 + 8/5, 4/5 − 4/5) = (1, 0) ✔.",
+          "title": "Ejemplo 3 (notas, ejemplo 25)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad de la inversa",
+            "Enunciado"
+          ],
+          "rows": [
+            [
+              "Existencia",
+              "T invertible ⇔ T biyectiva ⇔ su matriz es no singular (det ≠ 0)"
+            ],
+            [
+              "Linealidad",
+              "Si T es lineal, T⁻¹ también"
+            ],
+            [
+              "Unicidad",
+              "T⁻¹ es única y (T⁻¹)⁻¹ = T"
+            ],
+            [
+              "Composición",
+              "(F ∘ T)⁻¹ = T⁻¹ ∘ F⁻¹"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Para definir una TL basta conocer las imágenes de:",
+          "options": [
+            "Un vector",
+            "Una base",
+            "El vector cero",
+            "Todos los vectores"
+          ],
+          "correct": 1,
+          "explanation": "Teorema fundamental."
+        },
+        {
+          "type": "quiz",
+          "question": "Si T(1, 0) = (2, 5) y T(0, 1) = (−1, 3), T(2, 1) =",
+          "options": [
+            "(3, 13)",
+            "(1, 8)",
+            "(4, 10)",
+            "(3, 8)"
+          ],
+          "correct": 0,
+          "explanation": "2(2, 5) + (−1, 3)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si AH = J y H es invertible, A =",
+          "options": [
+            "H⁻¹J",
+            "JH⁻¹",
+            "HJ",
+            "J⁻¹H"
+          ],
+          "correct": 1,
+          "explanation": "Multiplicar por H⁻¹ a la derecha."
+        },
+        {
+          "type": "quiz",
+          "question": "T tiene inversa si su matriz tiene:",
+          "options": [
+            "det = 0",
+            "det ≠ 0",
+            "Una fila cero",
+            "Rango 1"
+          ],
+          "correct": 1,
+          "explanation": "No singular."
+        },
+        {
+          "type": "quiz",
+          "question": "Inversa de T(x, y) = (2x, 3y):",
+          "options": [
+            "(x/2, y/3)",
+            "(2x, 3y)",
+            "(x/3, y/2)",
+            "(−2x, −3y)"
+          ],
+          "correct": 0,
+          "explanation": "A⁻¹ = diag(1/2, 1/3)."
+        }
+      ]
+    },
+    {
+      "id": "l07-matriz-bases",
+      "title": "Matriz de una transformación respecto a otras bases",
+      "summary": "M(B, B′): columnas = imágenes de la base de salida escritas en la base de llegada; ejemplos con polinomios y cambio de coordenadas.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "M(B → B′) = [ [T(b₁)]ᴮ′  [T(b₂)]ᴮ′  ⋯  [T(bₙ)]ᴮ′ ]        M·[X]ᴮ = [T(X)]ᴮ′"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La matriz estándar usa bases canónicas en la salida y la llegada. Con otras bases el procedimiento es el mismo, solo que cada imagen T(bⱼ) se escribe **en coordenadas de la base de llegada**.",
+          "title": "Idea"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Calcula T(bⱼ) para cada vector de la base de salida B.",
+            "Escribe cada T(bⱼ) como combinación de la base de llegada B′ (resuelve un sistema).",
+            "Esos coeficientes son la columna j de M.",
+            "Para usarla: [X]ᴮ (coordenadas del vector en B) → M·[X]ᴮ = [T(X)]ᴮ′."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T: ℝ² → P₁, T(y₁, y₂) = (y₁ + y₂)x + (y₂ − y₁). Bases B = {(2, −1), (−1, 0)} y B′ = {x + 1, x − 1}.\nT(2, −1) = x − 3 = −1(x + 1) + 2(x − 1) → columna (−1, 2).\nT(−1, 0) = −x + 1 = 0(x + 1) − 1(x − 1) → columna (0, −1).\n**M = [−1 0 ; 2 −1].**\nPara Y = (4, −3): [Y]ᴮ = (3, 2) → M(3, 2) = (−3, 4) → T(Y) = −3(x + 1) + 4(x − 1) = **x − 7**. Directo: (4 − 3)x + (−3 − 4) = x − 7 ✔.",
+          "title": "Ejemplo 1 (notas, p. 37)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T(x, y) = (x, 2x − y) en la base B = {(1, 0), (1, 1)} (la misma en salida y llegada).\nT(1, 0) = (1, 2) = −1·(1, 0) + 2·(1, 1);  T(1, 1) = (1, 1) = 0·(1, 0) + 1·(1, 1).\n**Mᴮ = [−1 0 ; 2 1]**, mientras que la matriz estándar es M = [1 0 ; 2 −1]. Ambas son **semejantes**: Mᴮ = P⁻¹MP.",
+          "title": "Ejemplo 2 (notas, p. 37–38)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "T(x, y, z) = (x − 2z, 3x + y), X = (2, 2, 3), base de llegada C = {(0, 1), (−2, 1)}.\nT(X) = (−4, 8). En C: a(0, 1) + b(−2, 1) = (−4, 8) → b = 2, a = 6 → **[T(X)]ᶜ = (6, 2)**.",
+          "title": "Ejemplo 3 (notas, p. 38)"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "El rango de la matriz asociada no depende de las bases elegidas: siempre dim ker(T) + dim Im(T) = dim V."
+        },
+        {
+          "type": "quiz",
+          "question": "La columna j de M(B → B′) es:",
+          "options": [
+            "T(bⱼ) en la base canónica",
+            "[T(bⱼ)] en coordenadas de B′",
+            "bⱼ en B′",
+            "T(eⱼ)"
+          ],
+          "correct": 1,
+          "explanation": "Imagen escrita en la base de llegada."
+        },
+        {
+          "type": "quiz",
+          "question": "Para aplicar M(B → B′) a un vector X primero se necesita:",
+          "options": [
+            "[X]ᴮ",
+            "[X]ᴮ′",
+            "T(X)",
+            "det M"
+          ],
+          "correct": 0,
+          "explanation": "M recibe coordenadas en B."
+        },
+        {
+          "type": "quiz",
+          "question": "Las matrices de una misma T en dos bases distintas (V = W) son:",
+          "options": [
+            "Iguales",
+            "Semejantes",
+            "Inversas",
+            "Transpuestas"
+          ],
+          "correct": 1,
+          "explanation": "Mᴮ = P⁻¹MP."
+        },
+        {
+          "type": "quiz",
+          "question": "Si T(X) en base canónica es (−4, 8) y C = {(0, 1), (−2, 1)}, [T(X)]ᶜ =",
+          "options": [
+            "(6, 2)",
+            "(−4, 8)",
+            "(2, 6)",
+            "(8, −4)"
+          ],
+          "correct": 0,
+          "explanation": "Resolver el sistema."
+        }
+      ]
+    },
+    {
+      "id": "l08-rigidez",
+      "title": "Aplicación: matriz de rigidez de una barra de armadura",
+      "summary": "q = K′d, cosenos directores, transformación de coordenadas locales a globales y K = TᵀK′T, con el ejemplo de la barra 1-3 de las notas.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Entra en el examen: páginas 3 y 11 del segundo libro de notas (Transformaciones lineales). Esta aplicación está en la página 11 del PDF (página 9 impresa) del segundo libro.",
+          "title": "Examen"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una armadura (cercha) son barras rectas unidas en nudos articulados; idealmente cada barra solo trabaja a **tracción o compresión**. En el **método matricial de rigideces**, las fuerzas y los desplazamientos de la estructura se relacionan por una transformación lineal: **q = K·d**. La barra se comporta como un **resorte**: fuerza = rigidez × alargamiento.",
+          "title": "Contexto"
+        },
+        {
+          "type": "formula",
+          "expression": "K′ = (EA/L)·[1 −1 ; −1 1]",
+          "caption": "Rigidez de una barra en sus coordenadas locales (a lo largo de la barra)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Símbolo",
+            "Significado",
+            "Unidad típica"
+          ],
+          "rows": [
+            [
+              "E",
+              "Módulo de elasticidad del material",
+              "Ton/m², kN/m²"
+            ],
+            [
+              "A",
+              "Área de la sección transversal",
+              "m²"
+            ],
+            [
+              "L",
+              "Longitud de la barra",
+              "m"
+            ],
+            [
+              "EA/L",
+              "Rigidez axial (como la k de un resorte)",
+              "Ton/m"
+            ],
+            [
+              "λx, λy",
+              "Cosenos directores: Δx/L y Δy/L",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Las barras están inclinadas, pero la estructura se analiza en ejes **globales** (x, y). Hay que **cambiar de base**: de 2 desplazamientos locales (a lo largo de la barra, en cada extremo) a 4 globales (x e y en cada nudo). Eso lo hace la matriz T:",
+          "title": "Cambio de coordenadas"
+        },
+        {
+          "type": "formula",
+          "expression": "d = T·D,   T = [λx λy 0 0 ; 0 0 λx λy]        Q = Tᵀq        ⇒   Q = TᵀK′T·D = K·D"
+        },
+        {
+          "type": "formula",
+          "expression": "K = (EA/L)·[ λx²  λxλy  −λx²  −λxλy ;  λxλy  λy²  −λxλy  −λy² ;  −λx²  −λxλy  λx²  λxλy ;  −λxλy  −λy²  λxλy  λy² ]",
+          "caption": "Matriz de rigidez global de la barra (4 × 4)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Barra 1-3 de la cercha de las notas: nudo 1 en (0; 0) y nudo 3 en (1,5; 1,0) m. A = 0,00236 m², E = 2,0·10⁷ Ton/m².\n1) **L** = √(1,5² + 1,0²) = 1,8028 m;  **EA** = 47 200 Ton;  **EA/L** = 26 181,8 Ton/m.\n2) **λx** = 1,5/1,8028 = 0,8321;  **λy** = 1,0/1,8028 = 0,5547.\n3) EA/L·λx² = **18 125,9**;  EA/L·λxλy = **12 083,9**;  EA/L·λy² = **8 055,9**.",
+          "title": "Ejemplo resuelto (notas, p. 9)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "D₁x",
+            "D₁y",
+            "D₃x",
+            "D₃y"
+          ],
+          "rows": [
+            [
+              "Q₁x",
+              "18 125,9",
+              "12 083,9",
+              "−18 125,9",
+              "−12 083,9"
+            ],
+            [
+              "Q₁y",
+              "12 083,9",
+              "8 055,9",
+              "−12 083,9",
+              "−8 055,9"
+            ],
+            [
+              "Q₃x",
+              "−18 125,9",
+              "−12 083,9",
+              "18 125,9",
+              "12 083,9"
+            ],
+            [
+              "Q₃y",
+              "−12 083,9",
+              "−8 055,9",
+              "12 083,9",
+              "8 055,9"
+            ]
+          ],
+          "caption": "K de la barra 1-3 (Ton/m)"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Propiedades que sirven para revisar: K es **simétrica**, cada fila suma 0 en sus pares (x con x, y con y) y es **singular** (det K = 0), porque una barra sola puede moverse como cuerpo rígido sin deformarse. Al ensamblar la estructura y poner los apoyos, la matriz total sí es invertible.",
+          "title": "Cómo comprobar"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En la expresión de T de las notas, la segunda fila debe leerse [0 0 λx λy] (los cosenos del nudo final).",
+          "title": "Detalle de notación"
+        },
+        {
+          "type": "quiz",
+          "question": "En K′ = (EA/L)[1 −1 ; −1 1], EA/L representa:",
+          "options": [
+            "La longitud",
+            "La rigidez axial de la barra",
+            "El área",
+            "La fuerza"
+          ],
+          "correct": 1,
+          "explanation": "Como la k de un resorte."
+        },
+        {
+          "type": "quiz",
+          "question": "Una barra horizontal tiene:",
+          "options": [
+            "λx = 0, λy = 1",
+            "λx = 1, λy = 0",
+            "λx = λy",
+            "λx = −1"
+          ],
+          "correct": 1,
+          "explanation": "Δy = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Para una barra horizontal, el término (1,1) de K es:",
+          "options": [
+            "0",
+            "EA/L",
+            "−EA/L",
+            "EA"
+          ],
+          "correct": 1,
+          "explanation": "λx² = 1."
+        },
+        {
+          "type": "quiz",
+          "question": "K global se obtiene como:",
+          "options": [
+            "TK′",
+            "TᵀK′T",
+            "K′T",
+            "T⁻¹K′"
+          ],
+          "correct": 1,
+          "explanation": "Cambio de coordenadas a ambos lados."
+        },
+        {
+          "type": "quiz",
+          "question": "La matriz K de una barra suelta es:",
+          "options": [
+            "Invertible",
+            "Singular",
+            "Diagonal",
+            "Nula"
+          ],
+          "correct": 1,
+          "explanation": "Movimiento de cuerpo rígido."
+        },
+        {
+          "type": "quiz",
+          "question": "Barra de 3 m en x y 4 m en y: λx =",
+          "options": [
+            "0,6",
+            "0,8",
+            "0,75",
+            "1,33"
+          ],
+          "correct": 0,
+          "explanation": "3/5."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de transformaciones lineales",
+      "summary": "Núcleo e imagen, construir T, valores propios, diagonalización y rigidez.",
+      "minutes": 45,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuelve cada ejercicio **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Las matrices se escriben por filas separadas con punto y coma: [1 2 ; 3 4].",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Núcleo, imagen y clasificación",
+          "level": 3,
+          "statement": "Para T(x, y, z) = (x + y − z, 2x + y, x − y + 3z) halla ker(T), Im(T) con su ecuación implícita, y di si es inyectiva o sobreyectiva.",
+          "steps": [
+            "A = [1 1 −1 ; 2 1 0 ; 1 −1 3]. F2 − 2F1 → (0 −1 2); F3 − F1 → (0 −2 4) → rango 2.",
+            "ker: y = 2z, x = −y + z = −z → Gen{(−1, 2, 1)}.",
+            "Im: columnas pivote (1, 2, 1) y (1, 1, −1).",
+            "Normal: (1, 2, 1) × (1, 1, −1) = (−3, 2, −1) → 3u − 2v + w = 0."
+          ],
+          "answer": "**ker(T) = Gen{(−1, 2, 1)} (dim 1); Im(T) = plano 3u − 2v + w = 0 (dim 2). Ni inyectiva ni sobreyectiva.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Construir T desde una base no canónica",
+          "level": 3,
+          "statement": "Halla la matriz estándar de T: ℝ³ → ℝ² con T(1, 1, 0) = (2, 0), T(0, 1, 1) = (1, 1), T(1, 0, 1) = (0, 3).",
+          "steps": [
+            "Suma los tres: T(2, 2, 2) = (3, 4) → T(1, 1, 1) = (3/2, 2).",
+            "e₁ = (1,1,1) − (0,1,1) → T(e₁) = (1/2, 1).",
+            "e₂ = (1,1,1) − (1,0,1) → T(e₂) = (3/2, −1).",
+            "e₃ = (1,1,1) − (1,1,0) → T(e₃) = (−1/2, 2)."
+          ],
+          "answer": "**A = [1/2 3/2 −1/2 ; 1 −1 2]**",
+          "hint": "Suma los tres datos para obtener T(1, 1, 1)."
+        },
+        {
+          "type": "exercise",
+          "title": "Valores y vectores propios 2 × 2",
+          "level": 2,
+          "statement": "Diagonaliza A = [4 1 ; 2 3].",
+          "steps": [
+            "det(A − λI) = λ² − 7λ + 10 = (λ − 2)(λ − 5).",
+            "λ = 2: 2x + y = 0 → (1, −2).",
+            "λ = 5: −x + y = 0 → (1, 1)."
+          ],
+          "answer": "**P = [1 1 ; −2 1], D = diag(2, 5), A = PDP⁻¹**"
+        },
+        {
+          "type": "exercise",
+          "title": "Valor propio repetido",
+          "level": 3,
+          "statement": "Halla los valores propios de A = [2 1 0 ; 1 2 0 ; 0 0 3] y decide si es diagonalizable.",
+          "steps": [
+            "det(A − λI) = (3 − λ)[(2 − λ)² − 1] = (3 − λ)(λ − 1)(λ − 3).",
+            "λ = 1: (1, −1, 0).",
+            "λ = 3 (doble): x = y, z libre → (1, 1, 0) y (0, 0, 1): dos vectores propios LI."
+          ],
+          "answer": "**λ = 1, 3, 3. Diagonalizable**: la multiplicidad geométrica de 3 es 2 (además A es simétrica)."
+        },
+        {
+          "type": "exercise",
+          "title": "Rigidez de una barra inclinada",
+          "level": 2,
+          "statement": "Una barra va del nudo (0, 0) al nudo (3, 4) m, con EA = 10 000 kN. Halla los cosenos directores y los términos de su matriz de rigidez global.",
+          "steps": [
+            "L = 5 m; EA/L = 2 000 kN/m.",
+            "λx = 0,6; λy = 0,8.",
+            "λx² = 0,36; λxλy = 0,48; λy² = 0,64."
+          ],
+          "answer": "**(EA/L)λx² = 720; (EA/L)λxλy = 960; (EA/L)λy² = 1 280 kN/m**, con el patrón de signos [+ + − − ; + + − − ; − − + + ; − − + +]."
+        }
+      ]
     }
   ]
 }

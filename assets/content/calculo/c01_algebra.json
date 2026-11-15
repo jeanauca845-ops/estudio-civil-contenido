@@ -1484,6 +1484,88 @@
           "explanation": "= |−4| = 4."
         }
       ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de álgebra",
+      "summary": "Factorización, racionalización, ecuaciones con radicales e inecuaciones.",
+      "minutes": 35,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Estos ejercicios son más largos que las preguntas de práctica. Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Verde = básico, naranja = intermedio, rojo = avanzado (nivel examen).",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Simplificar una expresión racional",
+          "level": 2,
+          "statement": "Simplifica  [(x³ − 8)/(x² − 4)] · [(x² + 4x + 4)/(x² + 2x + 4)]  e indica para qué valores no está definida.",
+          "steps": [
+            "Factoriza todo: x³ − 8 = (x − 2)(x² + 2x + 4) (diferencia de cubos); x² − 4 = (x − 2)(x + 2); x² + 4x + 4 = (x + 2)².",
+            "Sustituye: [(x − 2)(x² + 2x + 4)] / [(x − 2)(x + 2)] · (x + 2)² / (x² + 2x + 4).",
+            "Cancela (x − 2), (x² + 2x + 4) y un factor (x + 2).",
+            "Restricciones: los denominadores originales no pueden anularse: x ≠ 2 y x ≠ −2 (x² + 2x + 4 nunca es 0, su discriminante es −12)."
+          ],
+          "answer": "**x + 2**, con x ≠ ±2.",
+          "hint": "Diferencia de cubos: a³ − b³ = (a − b)(a² + ab + b²)."
+        },
+        {
+          "type": "exercise",
+          "title": "Racionalizar un cociente de diferencias",
+          "level": 2,
+          "statement": "Racionaliza el numerador de  (√(x + h) − √x)/h  y di a qué tiende cuando h se acerca a 0.",
+          "steps": [
+            "Multiplica y divide por el conjugado √(x + h) + √x.",
+            "Numerador: (x + h) − x = h.",
+            "Queda h / [h(√(x + h) + √x)] = 1/(√(x + h) + √x).",
+            "Si h → 0: 1/(2√x). (Es la derivada de √x, que verás en la unidad 6.)"
+          ],
+          "answer": "**1/(√(x + h) + √x)**, que tiende a 1/(2√x)."
+        },
+        {
+          "type": "exercise",
+          "title": "Inecuación racional",
+          "level": 2,
+          "statement": "Resuelve  (x² − x − 6)/(x − 1) ≥ 0.",
+          "steps": [
+            "Factoriza: (x − 3)(x + 2)/(x − 1) ≥ 0. Puntos críticos: −2, 1, 3.",
+            "Tabla de signos por intervalos: (−∞, −2): (−)(−)/(−) = −;  (−2, 1): (−)(+)/(−) = +;  (1, 3): (−)(+)/(+) = −;  (3, ∞): +.",
+            "Se incluyen −2 y 3 (anulan el numerador y hay ≥). Se excluye 1 (anula el denominador)."
+          ],
+          "answer": "**[−2, 1) ∪ [3, ∞)**",
+          "hint": "Nunca multipliques por (x − 1) sin saber su signo: usa tabla de signos."
+        },
+        {
+          "type": "exercise",
+          "title": "Inecuación con valor absoluto",
+          "level": 2,
+          "statement": "Resuelve  |2x − 3| < x + 1.",
+          "steps": [
+            "Para que tenga solución, x + 1 > 0 → x > −1.",
+            "|u| < a equivale a −a < u < a:  −(x + 1) < 2x − 3 < x + 1.",
+            "Izquierda: −x − 1 < 2x − 3 → 2 < 3x → x > 2/3.",
+            "Derecha: 2x − 3 < x + 1 → x < 4.",
+            "Intersección con x > −1."
+          ],
+          "answer": "**2/3 < x < 4**"
+        },
+        {
+          "type": "exercise",
+          "title": "Ecuación con dos radicales",
+          "level": 3,
+          "statement": "Resuelve  √(2x + 3) − √(x + 1) = 1  y verifica las soluciones.",
+          "steps": [
+            "Aísla un radical: √(2x + 3) = 1 + √(x + 1).",
+            "Eleva al cuadrado: 2x + 3 = 1 + 2√(x + 1) + x + 1 → x + 1 = 2√(x + 1).",
+            "Eleva otra vez: (x + 1)² = 4(x + 1) → (x + 1)(x + 1 − 4) = 0 → x = −1 o x = 3.",
+            "Verifica (elevar al cuadrado puede crear soluciones falsas): x = −1: √1 − √0 = 1 ✔;  x = 3: √9 − √4 = 1 ✔."
+          ],
+          "answer": "**x = −1 y x = 3** (ambas válidas).",
+          "hint": "Aísla un radical antes de elevar al cuadrado."
+        }
+      ]
     }
   ]
 }

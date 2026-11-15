@@ -1699,6 +1699,283 @@
           "explanation": "⌊x⌋ = x solo si x es entero."
         }
       ]
+    },
+    {
+      "id": "l10-unitario",
+      "title": "Función escalón unitario y combinaciones con signo",
+      "summary": "U(x), corrimientos, pulsos, rampas, y funciones especiales compuestas como sgn(x² − 1) o U(x² − 4).",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El escalón unitario es un **interruptor**: apagado (0) antes de x = 0 y encendido (1) desde x = 0 en adelante. En ingeniería representa una carga o un voltaje que “se conecta” de golpe.",
+          "title": "Analogía"
+        },
+        {
+          "type": "formula",
+          "expression": "U(x) = 0  si x < 0        U(x) = 1  si x ≥ 0",
+          "caption": "Escalón unitario (Leithold) — también se escribe u(x) o H(x)"
+        },
+        {
+          "type": "formula",
+          "expression": "sgn(x) = −1 si x < 0;   0 si x = 0;   1 si x > 0",
+          "caption": "Función signo"
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/unitario.png",
+          "caption": "Escalón, escalón corrido, pulso y rampa. ● incluido, ○ excluido."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Expresión",
+            "Qué hace",
+            "Valor"
+          ],
+          "rows": [
+            [
+              "U(x − a)",
+              "Interruptor que se enciende en x = a",
+              "0 si x < a; 1 si x ≥ a"
+            ],
+            [
+              "1 − U(x − a)",
+              "Interruptor que se apaga en x = a",
+              "1 si x < a; 0 si x ≥ a"
+            ],
+            [
+              "U(x − a) − U(x − b), a < b",
+              "Pulso: encendido solo en [a, b)",
+              "1 en [a, b); 0 fuera"
+            ],
+            [
+              "x·U(x)",
+              "Rampa: 0 para x < 0 y x para x ≥ 0",
+              "Igual a (x + |x|)/2"
+            ],
+            [
+              "k·U(x − a)",
+              "Escalón de altura k",
+              "0 o k"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Método para U(g(x)) y sgn(g(x))"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Resuelve la **desigualdad** g(x) ≥ 0 (para U) o el **signo** de g(x) (para sgn).",
+            "Donde g(x) ≥ 0, U vale 1; donde g(x) < 0, vale 0.",
+            "Para sgn: 1 donde g > 0, −1 donde g < 0 y 0 exactamente en las raíces de g.",
+            "Dibuja tramos horizontales con ● en los puntos incluidos y ○ en los excluidos."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/signo-compuesto.png",
+          "caption": "sgn(x), sgn(x² − 1), U(x² − 4) y 1 − U(x − 1)."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "g(x) = x² − 1 es positiva si |x| > 1, negativa si |x| < 1 y cero en x = ±1.\nsgn(x² − 1) = 1 si |x| > 1; −1 si −1 < x < 1; 0 en x = −1 y x = 1. Son tres niveles y dos puntos aislados.",
+          "title": "Ejemplo 1: sgn(x² − 1)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "x² − 4 ≥ 0 ⇔ x ≤ −2 o x ≥ 2. Entonces U(x² − 4) = 1 en (−∞, −2] ∪ [2, ∞) y 0 en (−2, 2). Los extremos ±2 llevan ● arriba (porque x² − 4 = 0 cuenta como ≥ 0).",
+          "title": "Ejemplo 2: U(x² − 4)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x² · [U(x) − U(x − 2)] vale x² en [0, 2) y 0 fuera: es un “pedazo” de parábola recortado por un pulso.",
+          "title": "Ejemplo 3: recortar una función"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Relaciones útiles: sgn(x) = U(x) − U(−x) para x ≠ 0, y |x| = x·sgn(x). Leithold usa estas funciones (junto con ⟦x⟧) para practicar dominio, rango y continuidad.",
+          "title": "Relaciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Dominio",
+            "Rango",
+            "Discontinua en"
+          ],
+          "rows": [
+            [
+              "U(x)",
+              "ℝ",
+              "{0, 1}",
+              "x = 0 (salto)"
+            ],
+            [
+              "sgn(x)",
+              "ℝ",
+              "{−1, 0, 1}",
+              "x = 0"
+            ],
+            [
+              "sgn(x² − 1)",
+              "ℝ",
+              "{−1, 0, 1}",
+              "x = ±1"
+            ],
+            [
+              "U(x² − 4)",
+              "ℝ",
+              "{0, 1}",
+              "x = ±2"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "U(−3) =",
+          "options": [
+            "−1",
+            "0",
+            "1",
+            "No existe"
+          ],
+          "correct": 1,
+          "explanation": "−3 < 0."
+        },
+        {
+          "type": "quiz",
+          "question": "U(0) =",
+          "options": [
+            "0",
+            "1",
+            "1/2",
+            "No existe"
+          ],
+          "correct": 1,
+          "explanation": "Con la convención de Leithold, U(0) = 1."
+        },
+        {
+          "type": "quiz",
+          "question": "U(x − 1) − U(x − 4) vale 1 en:",
+          "options": [
+            "[1, 4)",
+            "(1, 4]",
+            "[1, 4]",
+            "(−∞, 1)"
+          ],
+          "correct": 0,
+          "explanation": "Se enciende en 1 y se apaga en 4."
+        },
+        {
+          "type": "quiz",
+          "question": "sgn(x² − 9) vale −1 en:",
+          "options": [
+            "|x| > 3",
+            "−3 < x < 3",
+            "x = ±3",
+            "Nunca"
+          ],
+          "correct": 1,
+          "explanation": "x² − 9 < 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Rango de sgn(x² + 1):",
+          "options": [
+            "{−1, 0, 1}",
+            "{1}",
+            "{0, 1}",
+            "ℝ"
+          ],
+          "correct": 1,
+          "explanation": "x² + 1 > 0 siempre."
+        },
+        {
+          "type": "quiz",
+          "question": "x·U(x) para x = −2 vale:",
+          "options": [
+            "−2",
+            "0",
+            "2",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "U(−2) = 0."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de gráficas",
+      "summary": "Gráficas de funciones especiales compuestas, sin derivadas.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Estos ejercicios son más largos que las preguntas de práctica. Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Verde = básico, naranja = intermedio, rojo = avanzado (nivel examen).",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Valor absoluto de una parábola desplazado",
+          "level": 2,
+          "statement": "Grafica f(x) = |x² − 4| − 3. Indica cortes con los ejes, mínimos y el punto (0, f(0)).",
+          "steps": [
+            "Parte de y = x² − 4 (vértice (0, −4), raíces ±2).",
+            "Valor absoluto: lo que está bajo el eje x se refleja hacia arriba: el vértice pasa a (0, 4) y aparecen picos en (±2, 0).",
+            "Resta 3: todo baja 3 unidades: picos en (±2, −3) y máximo local en (0, 1).",
+            "Cortes con x: |x² − 4| = 3 → x² = 7 o x² = 1 → x = ±√7 ≈ ±2,65 y x = ±1."
+          ],
+          "answer": "**Mínimos (picos) en (±2, −3); máximo local (0, 1); cortes en x = ±1 y ±√7; corte con y en (0, 1).**"
+        },
+        {
+          "type": "exercise",
+          "title": "Suma de parte entera",
+          "level": 3,
+          "statement": "Describe y grafica f(x) = ⟦x⟧ + ⟦−x⟧.",
+          "steps": [
+            "Si x es entero n: ⟦n⟧ + ⟦−n⟧ = n − n = 0.",
+            "Si x no es entero, con n < x < n + 1: ⟦x⟧ = n y −n − 1 < −x < −n → ⟦−x⟧ = −n − 1.",
+            "Suma: n − n − 1 = −1."
+          ],
+          "answer": "**f(x) = 0 si x es entero y −1 si no lo es**: la recta y = −1 con huecos (○) en cada entero y puntos sueltos (●) en y = 0."
+        },
+        {
+          "type": "exercise",
+          "title": "Parte entera con escala",
+          "level": 2,
+          "statement": "Grafica f(x) = ⟦2x⟧ − 1 en [−1, 1].",
+          "steps": [
+            "⟦2x⟧ cambia cuando 2x es entero, es decir cada 0,5 en x.",
+            "Tramos: [−1, −0,5): ⟦2x⟧ = −2 → f = −3;  [−0,5, 0): −1 → −2;  [0, 0,5): 0 → −1;  [0,5, 1): 1 → 0;  x = 1: 2 → 1.",
+            "Cada escalón tiene ● a la izquierda y ○ a la derecha."
+          ],
+          "answer": "**Escalones de ancho 0,5 y altura 1, desde y = −3 hasta y = 0, y el punto suelto (1, 1).**"
+        },
+        {
+          "type": "exercise",
+          "title": "Producto con la función signo",
+          "level": 2,
+          "statement": "Grafica f(x) = x·sgn(x − 1) y estudia su continuidad en x = 1.",
+          "steps": [
+            "sgn(x − 1) = 1 si x > 1; 0 si x = 1; −1 si x < 1.",
+            "f(x) = x si x > 1;  f(1) = 0;  f(x) = −x si x < 1.",
+            "Límites en 1: por la izquierda −1, por la derecha 1, y f(1) = 0."
+          ],
+          "answer": "**Recta y = −x hasta x = 1 (○ en (1, −1)), punto ● en (1, 0) y recta y = x desde (1, 1) (○). Discontinuidad de salto en x = 1.**"
+        }
+      ]
     }
   ]
 }

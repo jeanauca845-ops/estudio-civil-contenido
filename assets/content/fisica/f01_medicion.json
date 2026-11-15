@@ -494,6 +494,70 @@
           "explanation": "[at²] = L ≠ L/T."
         }
       ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de medición y unidades",
+      "summary": "Conversiones encadenadas y análisis dimensional.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuelve cada ejercicio **en papel** con su dibujo o diagrama de cuerpo libre; luego pide la pista, la solución paso a paso o solo la respuesta. Usa g = 9,81 m/s².",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Peso de una losa",
+          "level": 2,
+          "statement": "Una losa de hormigón mide 4 m × 5 m × 15 cm. La densidad del hormigón es 2,4 g/cm³. Halla su masa en kg y su peso en kN.",
+          "steps": [
+            "Densidad: 2,4 g/cm³ = 2,4·(10⁻³ kg)/(10⁻⁶ m³) = 2 400 kg/m³.",
+            "Volumen: 4·5·0,15 = 3 m³.",
+            "Masa: 2 400·3 = 7 200 kg.",
+            "Peso: 7 200·9,81 = 70 632 N."
+          ],
+          "answer": "**m = 7 200 kg; W ≈ 70,6 kN**",
+          "hint": "Pasa primero la densidad a kg/m³ y el espesor a metros."
+        },
+        {
+          "type": "exercise",
+          "title": "Período de un péndulo por análisis dimensional",
+          "level": 3,
+          "statement": "Supón que el período T de un péndulo depende de su longitud L, de la gravedad g y de la masa m: T = k·Lᵃ·gᵇ·mᶜ. Halla a, b y c.",
+          "steps": [
+            "Dimensiones: [T] = T; [L] = L; [g] = L·T⁻²; [m] = M.",
+            "T¹ = Lᵃ·(L·T⁻²)ᵇ·Mᶜ = Lᵃ⁺ᵇ·T⁻²ᵇ·Mᶜ.",
+            "Igualando exponentes: M: c = 0;  T: −2b = 1 → b = −1/2;  L: a + b = 0 → a = 1/2."
+          ],
+          "answer": "**T = k·√(L/g)**: no depende de la masa (k = 2π se obtiene con física, no con dimensiones)."
+        },
+        {
+          "type": "exercise",
+          "title": "Dimensiones de constantes",
+          "level": 2,
+          "statement": "La fuerza de arrastre sobre un cuerpo se modela como F = a·v + b·v², con v la velocidad. Halla las unidades SI de a y b.",
+          "steps": [
+            "Cada término debe tener unidades de fuerza: N = kg·m/s².",
+            "a = F/v → (kg·m/s²)/(m/s) = kg/s.",
+            "b = F/v² → (kg·m/s²)/(m²/s²) = kg/m."
+          ],
+          "answer": "**a en kg/s; b en kg/m**"
+        },
+        {
+          "type": "exercise",
+          "title": "Caudal y tiempo de llenado",
+          "level": 2,
+          "statement": "Una bomba entrega 250 L/min. ¿Cuánto es en m³/s y cuánto tarda en llenar una cisterna de 2,5 m × 2 m × 1,5 m?",
+          "steps": [
+            "250 L/min = 0,250 m³/60 s = 4,17·10⁻³ m³/s.",
+            "Volumen: 2,5·2·1,5 = 7,5 m³.",
+            "t = 7,5/(4,17·10⁻³) = 1 800 s."
+          ],
+          "answer": "**Q ≈ 4,17·10⁻³ m³/s; t = 30 min**"
+        }
+      ]
     }
   ]
 }

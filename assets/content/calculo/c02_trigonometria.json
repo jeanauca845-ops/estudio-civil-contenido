@@ -627,6 +627,83 @@
           "explanation": "b = a sen B/sen A = 4·1/(1/2) = 8."
         }
       ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de trigonometría",
+      "summary": "Ecuaciones, identidades y problemas de triángulos aplicados.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Estos ejercicios son más largos que las preguntas de práctica. Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Verde = básico, naranja = intermedio, rojo = avanzado (nivel examen).",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Ecuación cuadrática en seno",
+          "level": 2,
+          "statement": "Resuelve  2 sen²x − 3 sen x + 1 = 0  en [0, 2π).",
+          "steps": [
+            "Con u = sen x: 2u² − 3u + 1 = 0 → (2u − 1)(u − 1) = 0 → u = 1/2 o u = 1.",
+            "sen x = 1 → x = π/2.",
+            "sen x = 1/2 → x = π/6 y x = 5π/6 (primer y segundo cuadrante)."
+          ],
+          "answer": "**x = π/6, π/2, 5π/6**"
+        },
+        {
+          "type": "exercise",
+          "title": "Demostrar una identidad",
+          "level": 2,
+          "statement": "Demuestra que  (1 − cos 2x)/sen 2x = tan x.",
+          "steps": [
+            "Ángulo doble: cos 2x = 1 − 2 sen²x  y  sen 2x = 2 sen x cos x.",
+            "Numerador: 1 − (1 − 2 sen²x) = 2 sen²x.",
+            "2 sen²x / (2 sen x cos x) = sen x / cos x = tan x. ∎"
+          ],
+          "answer": "Queda demostrada usando las fórmulas de ángulo doble.",
+          "hint": "Elige la forma de cos 2x que elimine el 1."
+        },
+        {
+          "type": "exercise",
+          "title": "Ecuación sen x + cos x = 1",
+          "level": 3,
+          "statement": "Resuelve  sen x + cos x = 1  en [0, 2π).",
+          "steps": [
+            "Eleva al cuadrado: sen²x + 2 sen x cos x + cos²x = 1 → 1 + sen 2x = 1 → sen 2x = 0.",
+            "2x = 0, π, 2π, 3π → x = 0, π/2, π, 3π/2.",
+            "Verifica en la ecuación original (se elevó al cuadrado): x = 0: 0 + 1 = 1 ✔; π/2: 1 + 0 ✔; π: −1 ✘; 3π/2: −1 ✘."
+          ],
+          "answer": "**x = 0 y x = π/2**",
+          "hint": "Al elevar al cuadrado aparecen soluciones falsas: hay que comprobar."
+        },
+        {
+          "type": "exercise",
+          "title": "Altura de una torre con dos visuales",
+          "level": 3,
+          "statement": "Desde un punto A el ángulo de elevación a la cima de una torre es 30°. Avanzando 50 m hacia la torre (punto B) el ángulo es 45°. Halla la altura de la torre.",
+          "steps": [
+            "Sea h la altura y d la distancia de B a la base. tan 45° = h/d → d = h.",
+            "Desde A: tan 30° = h/(d + 50) → h = (h + 50)/√3.",
+            "√3·h = h + 50 → h = 50/(√3 − 1).",
+            "Racionaliza: h = 25(√3 + 1) ≈ 68,3 m."
+          ],
+          "answer": "**h = 25(√3 + 1) ≈ 68,3 m**",
+          "hint": "Plantea una tangente en cada triángulo rectángulo."
+        },
+        {
+          "type": "exercise",
+          "title": "Triángulo oblicuángulo",
+          "level": 2,
+          "statement": "Dos lados de un terreno triangular miden 7 m y 8 m y forman un ángulo de 120°. Halla el tercer lado y el área.",
+          "steps": [
+            "Ley de cosenos: c² = 7² + 8² − 2·7·8·cos 120° = 49 + 64 + 56 = 169 → c = 13 m.",
+            "Área = ½·a·b·sen C = ½·7·8·sen 120° = 28·(√3/2) = 14√3 ≈ 24,25 m²."
+          ],
+          "answer": "**c = 13 m; área = 14√3 ≈ 24,25 m²**"
+        }
+      ]
     }
   ]
 }

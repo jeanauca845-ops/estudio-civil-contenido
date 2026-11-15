@@ -280,6 +280,460 @@
           "explanation": "Falla la hipótesis."
         }
       ]
+    },
+    {
+      "id": "l04-lateral-intervalos",
+      "title": "Continuidad lateral y en intervalos",
+      "summary": "Continuidad por la derecha y por la izquierda, en intervalos abiertos y cerrados, y cómo hallar parámetros.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una función es continua en un intervalo si puedes **recorrerla con el lápiz sin levantarlo** dentro de ese intervalo. En los bordes de un intervalo cerrado solo se mira “desde adentro”.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Condición"
+          ],
+          "rows": [
+            [
+              "Continua en a por la derecha",
+              "lím (x→a⁺) f(x) = f(a)"
+            ],
+            [
+              "Continua en a por la izquierda",
+              "lím (x→a⁻) f(x) = f(a)"
+            ],
+            [
+              "Continua en a",
+              "continua por ambos lados (lím f = f(a))"
+            ],
+            [
+              "Continua en (a, b)",
+              "continua en cada punto del intervalo abierto"
+            ],
+            [
+              "Continua en [a, b]",
+              "continua en (a, b), por la derecha en a y por la izquierda en b"
+            ],
+            [
+              "Continua en [a, b)",
+              "continua en (a, b) y por la derecha en a"
+            ],
+            [
+              "Continua en (a, b]",
+              "continua en (a, b) y por la izquierda en b"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = √(4 − x²), dominio [−2, 2].\nEn (−2, 2) es composición de funciones continuas. En x = −2 solo existe el límite por la derecha: lím (x→−2⁺) √(4 − x²) = 0 = f(−2). En x = 2, por la izquierda, igual.\n**f es continua en [−2, 2].**",
+          "title": "Ejemplo 1: semicírculo"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = ⟦x⟧ en un entero n: lím (x→n⁺) ⟦x⟧ = n = f(n) (continua por la derecha), pero lím (x→n⁻) ⟦x⟧ = n − 1 ≠ f(n) (no por la izquierda).\nPor eso ⟦x⟧ es continua en [n, n + 1) pero **no** en [n, n + 1].",
+          "title": "Ejemplo 2: parte entera"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = 1/x es continua en (0, 1] y en (0, ∞), pero no en [0, 1]: f(0) ni siquiera existe.",
+          "title": "Ejemplo 3"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = √(x − 1)/(x − 3). Necesito x ≥ 1 y x ≠ 3. f es continua en **[1, 3) ∪ (3, ∞)**: en 1 por la derecha y discontinua (infinita) en 3.",
+          "title": "Ejemplo 4"
+        },
+        {
+          "type": "heading",
+          "text": "Hallar parámetros para que sea continua"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cada tramo por separado ya es continuo (polinomios, etc.).",
+            "El único problema está en el **punto de unión**.",
+            "Iguala el límite por la izquierda, el límite por la derecha y el valor de la función.",
+            "Resuelve la ecuación (o el sistema si hay dos parámetros y dos uniones)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = kx² si x ≤ 2;  2x + k si x > 2.\nIzquierda: f(2) = 4k. Derecha: lím (x→2⁺) (2x + k) = 4 + k.\n4k = 4 + k → **k = 4/3**.",
+          "title": "Ejemplo 5: un parámetro"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x + 1 si x < 1;  ax + b si 1 ≤ x ≤ 3;  x² si x > 3.\nEn x = 1: 2 = a + b. En x = 3: 3a + b = 9.\nRestando: 2a = 7 → **a = 7/2, b = −3/2**.",
+          "title": "Ejemplo 6: dos parámetros"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo de discontinuidad",
+            "Qué pasa",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Evitable (removible)",
+              "El límite existe pero ≠ f(a) o f(a) no existe",
+              "(x² − 1)/(x − 1) en x = 1"
+            ],
+            [
+              "De salto (esencial finita)",
+              "Límites laterales finitos y distintos",
+              "⟦x⟧, U(x), sgn(x)"
+            ],
+            [
+              "Infinita (esencial)",
+              "Algún límite lateral es ±∞",
+              "1/x en x = 0"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "⟦x⟧ en x = 2 es continua:",
+          "options": [
+            "Por ambos lados",
+            "Solo por la derecha",
+            "Solo por la izquierda",
+            "Por ningún lado"
+          ],
+          "correct": 1,
+          "explanation": "lím (x→2⁺) = 2 = f(2)."
+        },
+        {
+          "type": "quiz",
+          "question": "Para continuidad en [a, b] en el extremo a se pide:",
+          "options": [
+            "lím (x→a) f = f(a)",
+            "lím (x→a⁺) f = f(a)",
+            "lím (x→a⁻) f = f(a)",
+            "f′(a) exista"
+          ],
+          "correct": 1,
+          "explanation": "Solo desde adentro."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = x² si x ≤ 1; ax si x > 1 es continua si a =",
+          "options": [
+            "2",
+            "1",
+            "0",
+            "−1"
+          ],
+          "correct": 1,
+          "explanation": "1 = a."
+        },
+        {
+          "type": "quiz",
+          "question": "(x² − 4)/(x − 2) en x = 2 tiene discontinuidad:",
+          "options": [
+            "Evitable",
+            "De salto",
+            "Infinita",
+            "No es discontinua"
+          ],
+          "correct": 0,
+          "explanation": "El límite vale 4."
+        },
+        {
+          "type": "quiz",
+          "question": "√x es continua en:",
+          "options": [
+            "ℝ",
+            "(0, ∞) solamente",
+            "[0, ∞)",
+            "(−∞, 0]"
+          ],
+          "correct": 2,
+          "explanation": "En 0 por la derecha."
+        }
+      ]
+    },
+    {
+      "id": "l05-teoremas",
+      "title": "Teoremas de continuidad, composición y valor intermedio",
+      "summary": "Álgebra de funciones continuas, límite y continuidad de la composición, teorema del valor intermedio y del cero intermedio con bisección.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Teorema",
+            "Enunciado"
+          ],
+          "rows": [
+            [
+              "Operaciones",
+              "Si f y g son continuas en a: f ± g, f·g y c·f son continuas en a; f/g también si g(a) ≠ 0."
+            ],
+            [
+              "Polinomios",
+              "Continuos en todo ℝ."
+            ],
+            [
+              "Racionales",
+              "Continuas en todo su dominio (salvo donde el denominador es 0)."
+            ],
+            [
+              "Raíces, trigonométricas, exp y log",
+              "Continuas en todo su dominio."
+            ],
+            [
+              "Límite de una composición",
+              "Si lím (x→a) g(x) = b y f es continua en b: lím f(g(x)) = f(b) = f(lím g(x))."
+            ],
+            [
+              "Continuidad de una composición",
+              "Si g es continua en a y f es continua en g(a), f∘g es continua en a."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El teorema del límite de la composición permite **“meter el límite adentro”** de una función continua: lím √(algo) = √(lím algo).",
+          "title": "En palabras"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→3) √((x² − 9)/(x − 3)): adentro, (x² − 9)/(x − 3) = x + 3 → 6. Como √ es continua en 6, el límite es **√6**.",
+          "title": "Ejemplo 1"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "h(x) = |x² − 5x + 4|: es composición de |u| (continua) con un polinomio (continuo) → **continua en ℝ**.\nh(x) = sen(1/x): continua donde 1/x lo es → **ℝ − {0}**.\nh(x) = √(x² − 4): continua en **(−∞, −2] ∪ [2, ∞)**.",
+          "title": "Ejemplo 2: dónde es continua"
+        },
+        {
+          "type": "heading",
+          "text": "Teorema del valor intermedio (TVI)"
+        },
+        {
+          "type": "formula",
+          "expression": "f continua en [a, b] y k entre f(a) y f(b)  ⇒  existe c ∈ (a, b) con f(c) = k"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si subes de 2 000 m a 3 000 m de altura caminando (sin teletransportarte), en algún momento pasaste exactamente por 2 500 m.",
+          "title": "Analogía"
+        },
+        {
+          "type": "heading",
+          "text": "Teorema del cero intermedio (Bolzano)"
+        },
+        {
+          "type": "formula",
+          "expression": "f continua en [a, b] y f(a)·f(b) < 0  ⇒  existe c ∈ (a, b) con f(c) = 0"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Probar que cos x = x tiene solución. Sea g(x) = cos x − x, continua. g(0) = 1 > 0 y g(π/2) = −π/2 < 0. Por Bolzano hay una raíz en (0, π/2).",
+          "title": "Ejemplo 3"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Ubicar la raíz de f(x) = x³ + x − 1 en [0, 1] (f(0) = −1, f(1) = 1). Partimos el intervalo a la mitad y nos quedamos con la mitad donde cambia el signo:",
+          "title": "Ejemplo 4: método de bisección"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Intervalo",
+            "Punto medio m",
+            "f(m)",
+            "Nuevo intervalo"
+          ],
+          "rows": [
+            [
+              "[0, 1]",
+              "0,5",
+              "−0,375",
+              "[0,5; 1]"
+            ],
+            [
+              "[0,5; 1]",
+              "0,75",
+              "0,1719",
+              "[0,5; 0,75]"
+            ],
+            [
+              "[0,5; 0,75]",
+              "0,625",
+              "−0,1309",
+              "[0,625; 0,75]"
+            ],
+            [
+              "[0,625; 0,75]",
+              "0,6875",
+              "0,0125",
+              "[0,625; 0,6875]"
+            ],
+            [
+              "[0,625; 0,6875]",
+              "0,65625",
+              "−0,0611",
+              "[0,65625; 0,6875]"
+            ]
+          ],
+          "caption": "La raíz es ≈ 0,682"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El TVI **no** sirve si f no es continua: f(x) = 1/x cumple f(−1) = −1 < 0 y f(1) = 1 > 0, pero nunca vale 0 (la discontinuidad en x = 0 lo permite).",
+          "title": "Hipótesis obligatoria"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Así trabajan muchos programas de cálculo estructural para hallar, por ejemplo, la posición del eje neutro o la profundidad normal en un canal: evalúan una función a ambos lados y van reduciendo el intervalo."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) cos(x² + π) =",
+          "options": [
+            "1",
+            "−1",
+            "0",
+            "No existe"
+          ],
+          "correct": 1,
+          "explanation": "cos(π) = −1 (continuidad)."
+        },
+        {
+          "type": "quiz",
+          "question": "Para aplicar Bolzano en [a, b] se necesita:",
+          "options": [
+            "f derivable",
+            "f continua y f(a)·f(b) < 0",
+            "f(a) = f(b)",
+            "f creciente"
+          ],
+          "correct": 1,
+          "explanation": "Continuidad y cambio de signo."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = x³ − 2 tiene una raíz en:",
+          "options": [
+            "(0, 1)",
+            "(1, 2)",
+            "(2, 3)",
+            "(−1, 0)"
+          ],
+          "correct": 1,
+          "explanation": "f(1) = −1, f(2) = 6."
+        },
+        {
+          "type": "quiz",
+          "question": "La composición de funciones continuas es:",
+          "options": [
+            "Siempre discontinua",
+            "Continua (donde está definida)",
+            "Derivable",
+            "Constante"
+          ],
+          "correct": 1,
+          "explanation": "Teorema de la composición."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde es continua √(9 − x²)?",
+          "options": [
+            "ℝ",
+            "[−3, 3]",
+            "(−3, 3)",
+            "[0, 3]"
+          ],
+          "correct": 1,
+          "explanation": "9 − x² ≥ 0."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de continuidad",
+      "summary": "Parámetros en funciones por tramos, clasificación de discontinuidades y teorema del cero.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Estos ejercicios son más largos que las preguntas de práctica. Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Verde = básico, naranja = intermedio, rojo = avanzado (nivel examen).",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Dos parámetros, tres tramos",
+          "level": 3,
+          "statement": "Halla a y b para que f sea continua en ℝ:  f(x) = (x² − 4)/(x − 2) si x < 2;  ax² − bx + 3 si 2 ≤ x < 3;  2x − a + b si x ≥ 3.",
+          "steps": [
+            "En x = 2: lím izquierdo = lím (x + 2) = 4. Valor: 4a − 2b + 3. Ecuación: 4a − 2b = 1.",
+            "En x = 3: izquierda 9a − 3b + 3; derecha 6 − a + b. Ecuación: 10a − 4b = 3.",
+            "De la primera: 2b = 4a − 1. Sustituye: 10a − 2(4a − 1) = 3 → 2a = 1."
+          ],
+          "answer": "**a = 1/2, b = 1/2**"
+        },
+        {
+          "type": "exercise",
+          "title": "Clasificar discontinuidades",
+          "level": 2,
+          "statement": "Halla y clasifica las discontinuidades de  f(x) = (x² − x − 2)/(x² − 4). Si alguna es evitable, redefine f.",
+          "steps": [
+            "Factoriza: (x − 2)(x + 1)/[(x − 2)(x + 2)]. No está definida en x = ±2.",
+            "x = 2: lím = (2 + 1)/(2 + 2) = 3/4 → **evitable**; se define f(2) = 3/4.",
+            "x = −2: el factor (x + 2) no se cancela y el numerador no se anula → límites infinitos → **infinita (esencial)**, asíntota vertical."
+          ],
+          "answer": "**x = 2 evitable (f(2) = 3/4); x = −2 infinita.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Existencia y unicidad de una raíz",
+          "level": 3,
+          "statement": "Demuestra que x⁵ + x − 1 = 0 tiene exactamente una raíz real y ubícala con dos decimales de aproximación por bisección.",
+          "steps": [
+            "f(x) = x⁵ + x − 1 es continua; f(0) = −1 < 0 y f(1) = 1 > 0 → por Bolzano hay raíz en (0, 1).",
+            "Unicidad: f es estrictamente creciente (suma de funciones crecientes; con derivadas, f′ = 5x⁴ + 1 > 0), así que corta al eje una sola vez.",
+            "Bisección: f(0,5) = −0,469; f(0,75) = −0,013; f(0,875) = 0,388 → raíz en (0,75; 0,875).",
+            "f(0,8125) = 0,167; f(0,78125) = 0,072 → raíz en (0,75; 0,78)."
+          ],
+          "answer": "**Una sola raíz, x ≈ 0,755.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Continuidad de x·⟦x⟧",
+          "level": 3,
+          "statement": "Estudia la continuidad de f(x) = x⟦x⟧ en x = 0 y en x = 1.",
+          "steps": [
+            "x = 0: por la izquierda ⟦x⟧ = −1 → f = −x → 0; por la derecha ⟦x⟧ = 0 → f = 0. f(0) = 0. **Continua.**",
+            "x = 1: por la izquierda ⟦x⟧ = 0 → f → 0; por la derecha ⟦x⟧ = 1 → f → 1; f(1) = 1. **Salto**: continua solo por la derecha."
+          ],
+          "answer": "**Continua en 0; discontinua (salto) en 1.** En general es discontinua en todo entero n ≠ 0."
+        }
+      ]
     }
   ]
 }

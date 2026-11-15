@@ -1705,6 +1705,1343 @@
           "explanation": "Razón de cambio del volumen."
         }
       ]
+    },
+    {
+      "id": "l14-velocidad",
+      "title": "Velocidad media y velocidad instantánea",
+      "summary": "Del cociente Δs/Δt al límite: cómo nace la derivada en el movimiento rectilíneo.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "v media en [t₁, t₂] = [s(t₂) − s(t₁)] / (t₂ − t₁)        v(t) = lím (Δt→0) [s(t + Δt) − s(t)]/Δt = s′(t)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La **velocidad media** es la que calcularías con el cuentakilómetros y el reloj al final del viaje. La **instantánea** es la que marca el velocímetro en un momento exacto: la media en un intervalo cada vez más pequeño.",
+          "title": "Analogía"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Una piedra cae: s(t) = 4,9t² (m). Velocidad en t = 2 s:",
+          "title": "Ejemplo: piedra en caída libre"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Intervalo",
+            "Δt",
+            "v media = Δs/Δt (m/s)"
+          ],
+          "rows": [
+            [
+              "[2; 3]",
+              "1",
+              "24,5"
+            ],
+            [
+              "[2; 2,1]",
+              "0,1",
+              "20,09"
+            ],
+            [
+              "[2; 2,01]",
+              "0,01",
+              "19,649"
+            ],
+            [
+              "[2; 2,001]",
+              "0,001",
+              "19,6049"
+            ],
+            [
+              "límite",
+              "→ 0",
+              "19,6 = s′(2) = 9,8·2"
+            ]
+          ],
+          "caption": "Las medias se acercan a 19,6 m/s"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Con la definición: [4,9(2 + h)² − 4,9·4]/h = 4,9(4h + h²)/h = 4,9(4 + h) → **19,6 m/s** cuando h → 0.",
+          "title": "Mismo resultado con el límite"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "s(t) = t² − 6t + 5 (m). Velocidad media en [1, 4]: [s(4) − s(1)]/3 = (−3 − 0)/3 = −1 m/s.\nInstantánea: v(t) = 2t − 6 → v(1) = −4, v(3) = 0 (se detiene), v(4) = 2 m/s.",
+          "title": "Ejemplo 2"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Por el teorema del valor medio, en algún instante del intervalo la velocidad instantánea es igual a la media (en el ejemplo 2: 2t − 6 = −1 → t = 2,5 s)."
+        },
+        {
+          "type": "quiz",
+          "question": "s(t) = t³. Velocidad media en [1, 3]:",
+          "options": [
+            "13",
+            "9",
+            "26",
+            "27"
+          ],
+          "correct": 0,
+          "explanation": "(27 − 1)/2."
+        },
+        {
+          "type": "quiz",
+          "question": "La velocidad instantánea es:",
+          "options": [
+            "Δs/Δt",
+            "s′(t)",
+            "s″(t)",
+            "s(t)/t"
+          ],
+          "correct": 1,
+          "explanation": "Límite del cociente."
+        },
+        {
+          "type": "quiz",
+          "question": "s(t) = 4,9t². v(3) =",
+          "options": [
+            "29,4",
+            "44,1",
+            "9,8",
+            "14,7"
+          ],
+          "correct": 0,
+          "explanation": "9,8·3."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la velocidad media es negativa, el móvil en total:",
+          "options": [
+            "Avanzó",
+            "Retrocedió (desplazamiento negativo)",
+            "Se detuvo",
+            "Aceleró"
+          ],
+          "correct": 1,
+          "explanation": "Δs < 0."
+        }
+      ]
+    },
+    {
+      "id": "l15-tasas-examen",
+      "title": "Tasas de variación relacionadas: problemas tipo examen",
+      "summary": "Seis problemas resueltos paso a paso (abrevadero, cámara y cohete, autos, montón de arena, punto en una curva, mancha) y cómo reconocer cada tipo.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Este tema es **fijo en el examen**. Siempre: dibujo → variables con t → datos y pregunta → ecuación general → derivar respecto a t → recién ahí reemplazar el instante → respuesta con unidades y signo.",
+          "title": "Recordatorio"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Si el problema habla de…",
+            "Ecuación típica"
+          ],
+          "rows": [
+            [
+              "Escalera, distancia entre móviles en ángulo recto",
+              "Pitágoras x² + y² = z²"
+            ],
+            [
+              "Llenado o vaciado de tanques",
+              "Volumen (cono, cilindro, prisma) + semejanza para quitar una variable"
+            ],
+            [
+              "Ángulo de elevación, cámara, faro",
+              "tan θ = opuesto/adyacente"
+            ],
+            [
+              "Sombras",
+              "Triángulos semejantes"
+            ],
+            [
+              "Globos, esferas, manchas",
+              "V = 4πr³/3, A = πr²"
+            ],
+            [
+              "Punto que se mueve sobre una curva",
+              "Ecuación de la curva y distancia D² = x² + y²"
+            ]
+          ],
+          "caption": "Reconocer el tipo"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un abrevadero de 6 m de largo tiene sección de triángulo isósceles invertido de 1 m de ancho arriba y 0,5 m de alto. Entra agua a 0,3 m³/min. ¿Con qué rapidez sube el nivel cuando h = 0,25 m?\n• Semejanza: ancho del agua b/h = 1/0,5 → b = 2h.\n• V = ½·b·h·6 = 6h².\n• dV/dt = 12h·dh/dt → 0,3 = 12·0,25·dh/dt.\n• **dh/dt = 0,1 m/min.**",
+          "title": "Problema 1: abrevadero"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Una cámara está a 1 200 m de la plataforma de lanzamiento de un cohete que sube verticalmente. Cuando el cohete va a 1 600 m de altura, su velocidad es 200 m/s. ¿Con qué rapidez cambia el ángulo de elevación de la cámara?\n• tan θ = y/1200 → sec²θ·θ′ = y′/1200.\n• En el instante: hipotenusa = √(1200² + 1600²) = 2000 → sec θ = 2000/1200 = 5/3 → sec²θ = 25/9.\n• θ′ = (200/1200)·(9/25) = **0,06 rad/s** (≈ 3,4 °/s).",
+          "title": "Problema 2: cámara y cohete"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Dos autos salen del mismo cruce: A hacia el norte a 60 km/h y B hacia el este a 80 km/h. ¿Con qué rapidez aumenta la distancia entre ellos a las 2 h?\n• x = 160 km (B), y = 120 km (A), z = √(160² + 120²) = 200 km.\n• z² = x² + y² → z z′ = x x′ + y y′.\n• z′ = (160·80 + 120·60)/200 = 20 000/200 = **100 km/h**.",
+          "title": "Problema 3: autos que se alejan"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Cae arena formando un cono cuya altura es siempre igual a su diámetro, a 10 m³/min. ¿Con qué rapidez sube la altura cuando h = 5 m?\n• h = 2r → r = h/2. V = ⅓πr²h = πh³/12.\n• dV/dt = (πh²/4)·dh/dt → 10 = (25π/4)·dh/dt.\n• **dh/dt = 8/(5π) ≈ 0,509 m/min.**",
+          "title": "Problema 4: montón de arena"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un punto se mueve sobre y = √x y su abscisa crece a 4 cm/s. ¿Con qué rapidez cambia su distancia al origen cuando x = 4?\n• D² = x² + y² = x² + x.\n• 2D·D′ = (2x + 1)·x′.\n• x = 4 → D = √20 = 2√5. D′ = 9·4/(2·2√5) = 9/√5 ≈ **4,02 cm/s**.",
+          "title": "Problema 5: punto sobre una curva"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "El radio de una mancha circular de petróleo crece a 0,5 m/s. ¿Con qué rapidez crece el área cuando r = 30 m?\n• A = πr² → A′ = 2πr·r′ = 2π·30·0,5 = **30π ≈ 94,2 m²/s**.",
+          "title": "Problema 6: mancha"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Si la cantidad disminuye (se vacía un tanque, una escalera baja), su derivada es **negativa**. Escribe el signo en los datos (dV/dt = −2) y explica el signo de la respuesta.",
+          "title": "Signos"
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_ladder",
+          "title": "Laboratorio: la escalera que resbala"
+        },
+        {
+          "type": "quiz",
+          "question": "En el abrevadero, si entrara agua al doble de velocidad, dh/dt sería:",
+          "options": [
+            "La mitad",
+            "El doble",
+            "Igual",
+            "Cuatro veces"
+          ],
+          "correct": 1,
+          "explanation": "dh/dt es proporcional a dV/dt."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuándo se reemplazan los valores del instante?",
+          "options": [
+            "Antes de escribir la ecuación",
+            "Después de derivar",
+            "Antes de derivar",
+            "Nunca"
+          ],
+          "correct": 1,
+          "explanation": "Si no, las variables se vuelven constantes."
+        },
+        {
+          "type": "quiz",
+          "question": "Para un ángulo de elevación se suele usar:",
+          "options": [
+            "Pitágoras",
+            "tan θ",
+            "Volumen del cono",
+            "Área del círculo"
+          ],
+          "correct": 1,
+          "explanation": "Opuesto/adyacente."
+        },
+        {
+          "type": "quiz",
+          "question": "Si V = πh³/12 y dV/dt = 3π, dh/dt cuando h = 2 es:",
+          "options": [
+            "3",
+            "1",
+            "1/3",
+            "π"
+          ],
+          "correct": 0,
+          "explanation": "3π = (π·4/4)·h′ → h′ = 3."
+        },
+        {
+          "type": "quiz",
+          "question": "Un tanque se vacía a 5 L/min. Entonces dV/dt =",
+          "options": [
+            "5",
+            "−5",
+            "0",
+            "1/5"
+          ],
+          "correct": 1,
+          "explanation": "Disminuye."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos autos en ángulo recto: z z′ = x x′ + y y′ sale de derivar:",
+          "options": [
+            "z = x + y",
+            "z² = x² + y²",
+            "z = xy",
+            "tan z = y/x"
+          ],
+          "correct": 1,
+          "explanation": "Pitágoras."
+        }
+      ]
+    },
+    {
+      "id": "l16-criticos-absolutos",
+      "title": "Números críticos y extremos absolutos en un intervalo",
+      "summary": "Definición de número crítico, extremos relativos y absolutos, teorema del valor extremo y el método del intervalo cerrado.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "c es número crítico de f  ⇔  c ∈ Dom f  y  (f′(c) = 0  o  f′(c) no existe)",
+          "caption": "Definición (Leithold)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Los números críticos son los **únicos sospechosos** de ser máximos o mínimos: o la tangente es horizontal (cima o fondo suave) o la curva tiene un pico o una tangente vertical.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "Máximo relativo en c",
+              "f(c) ≥ f(x) para x cerca de c (la cima de una loma)"
+            ],
+            [
+              "Mínimo relativo en c",
+              "f(c) ≤ f(x) para x cerca de c (el fondo de un valle)"
+            ],
+            [
+              "Máximo absoluto en I",
+              "f(c) ≥ f(x) para todo x del intervalo (la cima más alta)"
+            ],
+            [
+              "Mínimo absoluto en I",
+              "f(c) ≤ f(x) para todo x del intervalo"
+            ],
+            [
+              "Teorema de Fermat",
+              "Si f tiene extremo relativo en c y f′(c) existe, entonces f′(c) = 0"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Teorema del valor extremo"
+        },
+        {
+          "type": "formula",
+          "expression": "f continua en [a, b]  ⇒  f alcanza un máximo absoluto y un mínimo absoluto en [a, b]"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Las dos hipótesis son necesarias. 1/x en (0, 1] no tiene máximo (el intervalo no es cerrado). f(x) = x en [0, 1) y f(1) = 0 es discontinua en [0, 1]: se acerca a 1 pero nunca lo alcanza, así que no tiene máximo.",
+          "title": "Hipótesis"
+        },
+        {
+          "type": "heading",
+          "text": "Método del intervalo cerrado"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Verifica que f sea continua en [a, b].",
+            "Halla los **números críticos** de f dentro de (a, b).",
+            "Evalúa f en los números críticos y en los **extremos** a y b.",
+            "El mayor valor es el máximo absoluto; el menor, el mínimo absoluto."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x^(5/3) − 5x^(2/3) en [−1, 4].\nf′(x) = (5/3)x^(2/3) − (10/3)x^(−1/3) = (5/3)·x^(−1/3)·(x − 2) = 5(x − 2)/(3∛x).\nNúmeros críticos: x = 2 (f′ = 0) y x = 0 (f′ no existe, pero f(0) sí).",
+          "title": "Ejemplo 1"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "x",
+            "f(x)",
+            "Tipo"
+          ],
+          "rows": [
+            [
+              "−1 (extremo)",
+              "−6",
+              "**Mínimo absoluto**"
+            ],
+            [
+              "0 (crítico)",
+              "0",
+              "**Máximo absoluto**"
+            ],
+            [
+              "2 (crítico)",
+              "−3∛4 ≈ −4,76",
+              "Mínimo relativo"
+            ],
+            [
+              "4 (extremo)",
+              "−∛16 ≈ −2,52",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x³ − 3x² + 1 en [−1/2, 4]. f′ = 3x(x − 2) → críticos 0 y 2.\nf(−1/2) = 3/8 = 0,375; f(0) = 1; f(2) = −3; f(4) = 17.\nMáximo absoluto **17** en x = 4; mínimo absoluto **−3** en x = 2.",
+          "title": "Ejemplo 2"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = |x − 2| tiene número crítico x = 2 (f′ no existe allí): es su mínimo absoluto, f(2) = 0.",
+          "title": "Ejemplo 3: crítico por pico"
+        },
+        {
+          "type": "quiz",
+          "question": "Números críticos de f(x) = x³ − 12x:",
+          "options": [
+            "0",
+            "±2",
+            "±12",
+            "±√12"
+          ],
+          "correct": 1,
+          "explanation": "3x² − 12 = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "En el método del intervalo cerrado se evalúa f en:",
+          "options": [
+            "Solo los críticos",
+            "Críticos y extremos del intervalo",
+            "Solo los extremos",
+            "Los puntos de inflexión"
+          ],
+          "correct": 1,
+          "explanation": "Los extremos pueden ser el máximo."
+        },
+        {
+          "type": "quiz",
+          "question": "x = 0 es número crítico de |x| porque:",
+          "options": [
+            "f′(0) = 0",
+            "f′(0) no existe",
+            "f(0) = 0",
+            "Es par"
+          ],
+          "correct": 1,
+          "explanation": "Pico."
+        },
+        {
+          "type": "quiz",
+          "question": "El teorema del valor extremo exige:",
+          "options": [
+            "f derivable en ℝ",
+            "f continua en un intervalo cerrado",
+            "f creciente",
+            "f′(c) = 0"
+          ],
+          "correct": 1,
+          "explanation": "Continuidad en [a, b]."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f′(c) = 0, entonces en c:",
+          "options": [
+            "Hay máximo",
+            "Hay mínimo",
+            "Puede haber extremo o no (x³ en 0)",
+            "f no es continua"
+          ],
+          "correct": 2,
+          "explanation": "Condición necesaria, no suficiente."
+        }
+      ]
+    },
+    {
+      "id": "l17-diferenciales-raices",
+      "title": "Diferenciales: problemas y aproximación de raíces",
+      "summary": "dy = f′(x)dx para aproximar raíces y potencias, estimar errores de medición y propagación de errores.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "dy = f′(x)·dx        Δy ≈ dy        f(x + Δx) ≈ f(x) + f′(x)·Δx"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Cerca de un punto, una curva se parece mucho a su tangente. El diferencial dy es lo que **sube la tangente** cuando te mueves dx; Δy es lo que sube la curva. Para dx pequeño, son casi iguales.",
+          "title": "Idea"
+        },
+        {
+          "type": "heading",
+          "text": "Aproximación de raíces y valores"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Elige f (la raíz o función a aproximar).",
+            "Elige x “bonito” cercano donde f(x) se conozca exacto (un cuadrado o cubo perfecto).",
+            "dx = valor pedido − x.",
+            "Aproxima: f(x + dx) ≈ f(x) + f′(x)·dx."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Aproximar",
+            "f, x, dx",
+            "Cálculo",
+            "Resultado",
+            "Valor real"
+          ],
+          "rows": [
+            [
+              "∛28",
+              "∛u, 27, 1",
+              "3 + 1/(3·9)",
+              "3,0370",
+              "3,0366"
+            ],
+            [
+              "√4,02",
+              "√u, 4, 0,02",
+              "2 + 0,02/(2·2)",
+              "2,0050",
+              "2,00499"
+            ],
+            [
+              "⁴√15,8",
+              "⁴√u, 16, −0,2",
+              "2 − 0,2/(4·8)",
+              "1,99375",
+              "1,99372"
+            ],
+            [
+              "sen 31°",
+              "sen u, 30°, π/180",
+              "0,5 + cos 30°·π/180",
+              "0,51511",
+              "0,51504"
+            ],
+            [
+              "(1,98)⁵",
+              "u⁵, 2, −0,02",
+              "32 − 5·16·0,02",
+              "30,4",
+              "30,43"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "dx **siempre en radianes** para funciones trigonométricas: 1° = π/180 ≈ 0,01745.",
+          "title": "Trigonometría"
+        },
+        {
+          "type": "heading",
+          "text": "Errores de medición"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Error",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Absoluto (aprox.)",
+              "dV = V′(r)·dr"
+            ],
+            [
+              "Relativo",
+              "dV/V"
+            ],
+            [
+              "Porcentual",
+              "100·dV/V %"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Se mide el radio de una esfera: 21 cm con error máximo de ±0,05 cm.\nV = (4/3)πr³ → dV = 4πr²·dr = 4π·441·0,05 = 88,2π ≈ **±277 cm³**.\nError relativo: dV/V = 3·dr/r = 3·0,05/21 ≈ 0,0071 → **0,71 %**.",
+          "title": "Ejemplo 1: volumen de una esfera"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para V = k·rⁿ: dV/V = n·dr/r. El error relativo **se multiplica por el exponente**: un 1 % de error en el radio da ≈ 3 % en el volumen. Por eso las medidas que van al cubo se toman con más cuidado.",
+          "title": "Regla práctica"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un cubo de 10 cm de lado se dilata a 10,1 cm. ΔV ≈ dV = 3x²·dx = 3·100·0,1 = **30 cm³** (exacto: 30,301 cm³).",
+          "title": "Ejemplo 2: dilatación"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "¿Con qué precisión hay que medir el lado de un cuadrado para que el área tenga a lo sumo 2 % de error? A = x² → dA/A = 2·dx/x ≤ 0,02 → **dx/x ≤ 1 %**.",
+          "title": "Ejemplo 3: precisión requerida"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Si se pide más precisión, el **método de Newton** (lección 12) aplica la misma idea repetidas veces: xₙ₊₁ = xₙ − f(xₙ)/f′(xₙ)."
+        },
+        {
+          "type": "quiz",
+          "question": "Con diferenciales, √26 ≈",
+          "options": [
+            "5,1",
+            "5,01",
+            "5,2",
+            "5,05"
+          ],
+          "correct": 0,
+          "explanation": "5 + 1/(2·5)."
+        },
+        {
+          "type": "quiz",
+          "question": "∛8,06 ≈",
+          "options": [
+            "2,005",
+            "2,05",
+            "2,02",
+            "2,5"
+          ],
+          "correct": 0,
+          "explanation": "2 + 0,06/(3·4)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si el radio tiene 2 % de error, el área de un círculo tiene aprox.:",
+          "options": [
+            "2 %",
+            "4 %",
+            "6 %",
+            "1 %"
+          ],
+          "correct": 1,
+          "explanation": "Exponente 2."
+        },
+        {
+          "type": "quiz",
+          "question": "dy para y = x³ en x = 2, dx = 0,1:",
+          "options": [
+            "1,2",
+            "0,12",
+            "0,8",
+            "12"
+          ],
+          "correct": 0,
+          "explanation": "3·4·0,1."
+        },
+        {
+          "type": "quiz",
+          "question": "Para aproximar cos 61° se toma dx =",
+          "options": [
+            "1",
+            "π/180",
+            "1/60",
+            "61"
+          ],
+          "correct": 1,
+          "explanation": "Radianes."
+        }
+      ]
+    },
+    {
+      "id": "l18-tabla-examen",
+      "title": "Análisis completo con tabla (formato de examen)",
+      "summary": "La tabla intervalo / valor de prueba / f / f′ / f″ / comentario, con tres ejemplos completos: polinomio, racional con asíntota oblicua y racional con dos asíntotas verticales.",
+      "minutes": 35,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Esta tabla es **fija en el examen**. Columnas: **intervalo o punto | valor de prueba | f(x) | f′(x) | f″(x) | comentario**. En cada intervalo eliges un número de prueba y miras solo el **signo** de f′ y f″; en cada punto especial escribes los valores exactos.",
+          "title": "Formato"
+        },
+        {
+          "type": "heading",
+          "text": "Pasos previos (antes de la tabla)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Dominio.**",
+            "**Cortes**: con y (x = 0) y con x (f(x) = 0, si se puede resolver).",
+            "**Asíntotas**: verticales (donde el denominador se anula y el numerador no), horizontales (lím x→±∞) y oblicuas (si el grado del numerador es uno más que el del denominador: división de polinomios).",
+            "**f′**, factorizada → **números críticos** (f′ = 0 o no existe, dentro del dominio).",
+            "**f″**, factorizada → **candidatos a inflexión** (f″ = 0 o no existe).",
+            "Ordena en la recta numérica: números críticos, candidatos a inflexión y asíntotas verticales. Esos puntos parten la recta en intervalos."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "f′",
+            "f″",
+            "Comentario (forma de la curva)"
+          ],
+          "rows": [
+            [
+              "+",
+              "+",
+              "Crece, cóncava hacia arriba ( ⤴ )"
+            ],
+            [
+              "+",
+              "−",
+              "Crece, cóncava hacia abajo ( ↗ en arco )"
+            ],
+            [
+              "−",
+              "+",
+              "Decrece, cóncava hacia arriba ( ↘ en taza )"
+            ],
+            [
+              "−",
+              "−",
+              "Decrece, cóncava hacia abajo ( ⤵ )"
+            ]
+          ],
+          "caption": "Cómo escribir el comentario"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "En un punto",
+            "Conclusión"
+          ],
+          "rows": [
+            [
+              "f′ = 0 y f″ < 0",
+              "Máximo relativo"
+            ],
+            [
+              "f′ = 0 y f″ > 0",
+              "Mínimo relativo"
+            ],
+            [
+              "f″ = 0 y f″ cambia de signo",
+              "Punto de inflexión"
+            ],
+            [
+              "f no definida, |f| → ∞",
+              "Asíntota vertical"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo 1: f(x) = x³ − 3x² − 9x + 5"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Paso",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "Dominio",
+              "ℝ (polinomio): sin asíntotas"
+            ],
+            [
+              "Corte con y",
+              "(0, 5)"
+            ],
+            [
+              "Cortes con x",
+              "tres raíces: x ≈ −2,18; x ≈ 0,49; x ≈ 4,69 (por Bolzano: f(−3) < 0 < f(−2), f(0) > 0 > f(1), f(4) < 0 < f(5))"
+            ],
+            [
+              "f′",
+              "3x² − 6x − 9 = 3(x + 1)(x − 3) → críticos x = −1, x = 3"
+            ],
+            [
+              "f″",
+              "6x − 6 = 6(x − 1) → candidato a inflexión x = 1"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Intervalo / punto",
+            "Prueba",
+            "f(x)",
+            "f′(x)",
+            "f″(x)",
+            "Comentario"
+          ],
+          "rows": [
+            [
+              "(−∞, −1)",
+              "x = −2",
+              "3",
+              "+ (15)",
+              "− (−18)",
+              "Crece, cóncava abajo"
+            ],
+            [
+              "x = −1",
+              "—",
+              "10",
+              "0",
+              "− (−12)",
+              "**Máximo relativo (−1, 10)**"
+            ],
+            [
+              "(−1, 1)",
+              "x = 0",
+              "5",
+              "− (−9)",
+              "− (−6)",
+              "Decrece, cóncava abajo"
+            ],
+            [
+              "x = 1",
+              "—",
+              "−6",
+              "− (−12)",
+              "0",
+              "**Punto de inflexión (1, −6)**"
+            ],
+            [
+              "(1, 3)",
+              "x = 2",
+              "−17",
+              "− (−9)",
+              "+ (6)",
+              "Decrece, cóncava arriba"
+            ],
+            [
+              "x = 3",
+              "—",
+              "−22",
+              "0",
+              "+ (12)",
+              "**Mínimo relativo (3, −22)**"
+            ],
+            [
+              "(3, ∞)",
+              "x = 4",
+              "−15",
+              "+ (15)",
+              "+ (18)",
+              "Crece, cóncava arriba"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/analisis-ej1.png",
+          "caption": "Gráfica del ejemplo 1 con sus puntos clave."
+        },
+        {
+          "type": "interactive",
+          "widget": "calc_analysis",
+          "title": "Practica el mismo método con x³ − 3x",
+          "params": {
+            "preset": 1
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo 2: f(x) = x²/(x − 1)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Paso",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "Dominio",
+              "ℝ − {1}"
+            ],
+            [
+              "Cortes",
+              "(0, 0) es el único (corte con ambos ejes)"
+            ],
+            [
+              "Asíntota vertical",
+              "x = 1: lím (x→1⁺) = +∞, lím (x→1⁻) = −∞"
+            ],
+            [
+              "Asíntota oblicua",
+              "x²/(x − 1) = x + 1 + 1/(x − 1) → **y = x + 1** (no hay horizontal)"
+            ],
+            [
+              "f′",
+              "(x² − 2x)/(x − 1)² = x(x − 2)/(x − 1)² → críticos x = 0, x = 2"
+            ],
+            [
+              "f″",
+              "2/(x − 1)³ → nunca es 0: no hay inflexión; la concavidad cambia en la asíntota x = 1"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Intervalo / punto",
+            "Prueba",
+            "f(x)",
+            "f′(x)",
+            "f″(x)",
+            "Comentario"
+          ],
+          "rows": [
+            [
+              "(−∞, 0)",
+              "x = −1",
+              "−0,5",
+              "+ (0,75)",
+              "− (−0,25)",
+              "Crece, cóncava abajo"
+            ],
+            [
+              "x = 0",
+              "—",
+              "0",
+              "0",
+              "− (−2)",
+              "**Máximo relativo (0, 0)**"
+            ],
+            [
+              "(0, 1)",
+              "x = 0,5",
+              "−0,5",
+              "− (−3)",
+              "− (−16)",
+              "Decrece, cóncava abajo"
+            ],
+            [
+              "x = 1",
+              "—",
+              "no existe",
+              "no existe",
+              "no existe",
+              "**Asíntota vertical x = 1**"
+            ],
+            [
+              "(1, 2)",
+              "x = 1,5",
+              "4,5",
+              "− (−3)",
+              "+ (16)",
+              "Decrece, cóncava arriba"
+            ],
+            [
+              "x = 2",
+              "—",
+              "4",
+              "0",
+              "+ (2)",
+              "**Mínimo relativo (2, 4)**"
+            ],
+            [
+              "(2, ∞)",
+              "x = 3",
+              "4,5",
+              "+ (0,75)",
+              "+ (0,25)",
+              "Crece, cóncava arriba"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/analisis-ej2.png",
+          "caption": "Asíntota vertical x = 1 (roja) y oblicua y = x + 1 (naranja)."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Curioso pero correcto: el “máximo” (0, 0) está más abajo que el “mínimo” (2, 4). Son extremos **relativos**: cada uno es el mejor solo en su vecindad, y la asíntota separa las dos ramas."
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo 3: f(x) = x²/(x² − 4)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Paso",
+            "Resultado"
+          ],
+          "rows": [
+            [
+              "Dominio",
+              "ℝ − {−2, 2}"
+            ],
+            [
+              "Simetría",
+              "Par: f(−x) = f(x) (simétrica respecto al eje y)"
+            ],
+            [
+              "Cortes",
+              "(0, 0)"
+            ],
+            [
+              "Asíntotas verticales",
+              "x = −2 y x = 2"
+            ],
+            [
+              "Asíntota horizontal",
+              "y = 1 (grados iguales: 1/1). Nunca la corta: x²/(x² − 4) = 1 no tiene solución"
+            ],
+            [
+              "f′",
+              "−8x/(x² − 4)² → crítico x = 0"
+            ],
+            [
+              "f″",
+              "(24x² + 32)/(x² − 4)³ → nunca 0; su signo es el de (x² − 4)"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Intervalo / punto",
+            "Prueba",
+            "f(x)",
+            "f′(x)",
+            "f″(x)",
+            "Comentario"
+          ],
+          "rows": [
+            [
+              "(−∞, −2)",
+              "x = −3",
+              "1,8",
+              "+ (0,96)",
+              "+ (1,98)",
+              "Crece, cóncava arriba"
+            ],
+            [
+              "x = −2",
+              "—",
+              "no existe",
+              "no existe",
+              "no existe",
+              "**Asíntota vertical** (izq. → +∞, der. → −∞)"
+            ],
+            [
+              "(−2, 0)",
+              "x = −1",
+              "−0,33",
+              "+ (0,89)",
+              "− (−2,07)",
+              "Crece, cóncava abajo"
+            ],
+            [
+              "x = 0",
+              "—",
+              "0",
+              "0",
+              "− (−0,5)",
+              "**Máximo relativo (0, 0)**"
+            ],
+            [
+              "(0, 2)",
+              "x = 1",
+              "−0,33",
+              "− (−0,89)",
+              "− (−2,07)",
+              "Decrece, cóncava abajo"
+            ],
+            [
+              "x = 2",
+              "—",
+              "no existe",
+              "no existe",
+              "no existe",
+              "**Asíntota vertical** (izq. → −∞, der. → +∞)"
+            ],
+            [
+              "(2, ∞)",
+              "x = 3",
+              "1,8",
+              "− (−0,96)",
+              "+ (1,98)",
+              "Decrece, cóncava arriba"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/analisis-ej3.png",
+          "caption": "Dos asíntotas verticales (rojas) y la horizontal y = 1 (naranja)."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Las asíntotas verticales **siempre** van como filas de la tabla (separan intervalos), aunque no sean críticos ni inflexiones: f′ y f″ pueden cambiar de signo al cruzarlas.",
+          "title": "No las olvides"
+        },
+        {
+          "type": "quiz",
+          "question": "En la tabla, en cada intervalo se usa un valor de prueba para:",
+          "options": [
+            "Calcular el área",
+            "Ver el signo de f′ y f″",
+            "Hallar asíntotas",
+            "Hallar el dominio"
+          ],
+          "correct": 1,
+          "explanation": "Solo interesa el signo."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f′ > 0 y f″ < 0 en un intervalo, la curva:",
+          "options": [
+            "Crece cóncava arriba",
+            "Crece cóncava abajo",
+            "Decrece cóncava arriba",
+            "Decrece cóncava abajo"
+          ],
+          "correct": 1,
+          "explanation": "Signo de cada derivada."
+        },
+        {
+          "type": "quiz",
+          "question": "f′(c) = 0 y f″(c) > 0 indica:",
+          "options": [
+            "Máximo relativo",
+            "Mínimo relativo",
+            "Inflexión",
+            "Asíntota"
+          ],
+          "correct": 1,
+          "explanation": "Criterio de la segunda derivada."
+        },
+        {
+          "type": "quiz",
+          "question": "Asíntota oblicua de (x² + 3x)/(x + 1):",
+          "options": [
+            "y = x + 2",
+            "y = x",
+            "y = x + 3",
+            "No tiene"
+          ],
+          "correct": 0,
+          "explanation": "x² + 3x = (x + 1)(x + 2) − 2."
+        },
+        {
+          "type": "quiz",
+          "question": "En f(x) = x²/(x − 1), ¿por qué no hay punto de inflexión en x = 1?",
+          "options": [
+            "Porque f″(1) = 0",
+            "Porque x = 1 no está en el dominio",
+            "Porque f′(1) = 0",
+            "Sí lo hay"
+          ],
+          "correct": 1,
+          "explanation": "Es una asíntota."
+        },
+        {
+          "type": "quiz",
+          "question": "Para f(x) = x³ − 3x² − 9x + 5, el punto de inflexión es:",
+          "options": [
+            "(1, −6)",
+            "(−1, 10)",
+            "(3, −22)",
+            "(0, 5)"
+          ],
+          "correct": 0,
+          "explanation": "f″ = 6(x − 1)."
+        },
+        {
+          "type": "quiz",
+          "question": "Asíntota horizontal de x²/(x² − 4):",
+          "options": [
+            "y = 0",
+            "y = 1",
+            "y = 4",
+            "No tiene"
+          ],
+          "correct": 1,
+          "explanation": "Cociente de coeficientes principales."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de aplicaciones de la derivada",
+      "summary": "Tasas relacionadas, optimización, análisis completo con tabla, extremos absolutos y movimiento.",
+      "minutes": 60,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Estos ejercicios son más largos que las preguntas de práctica. Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Verde = básico, naranja = intermedio, rojo = avanzado (nivel examen).",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Tasas: tanque cónico",
+          "level": 2,
+          "statement": "Un tanque cónico invertido tiene 2 m de radio y 4 m de altura. Entra agua a 2 m³/min. ¿Con qué rapidez sube el nivel cuando la profundidad es 3 m?",
+          "steps": [
+            "Semejanza: r/h = 2/4 → r = h/2.",
+            "V = ⅓πr²h = πh³/12.",
+            "dV/dt = (πh²/4)·dh/dt → 2 = (9π/4)·dh/dt."
+          ],
+          "answer": "**dh/dt = 8/(9π) ≈ 0,283 m/min**"
+        },
+        {
+          "type": "exercise",
+          "title": "Tasas: la sombra",
+          "level": 3,
+          "statement": "Un hombre de 1,8 m camina a 1,5 m/s alejándose de un poste de luz de 6 m. ¿Con qué rapidez crece su sombra y con qué rapidez se mueve la punta de la sombra?",
+          "steps": [
+            "x = distancia al poste, s = largo de la sombra. Semejanza: s/1,8 = (x + s)/6.",
+            "6s = 1,8x + 1,8s → s = (3/7)x.",
+            "ds/dt = (3/7)·1,5 ≈ 0,643 m/s.",
+            "Punta: d(x + s)/dt = 1,5 + 0,643."
+          ],
+          "answer": "**La sombra crece a 0,643 m/s; su punta avanza a 2,14 m/s** (no dependen de x)."
+        },
+        {
+          "type": "exercise",
+          "title": "Optimización: lata de mínimo material",
+          "level": 2,
+          "statement": "Una lata cilíndrica cerrada debe contener 1 000 cm³. Halla las dimensiones que minimizan el material.",
+          "steps": [
+            "h = 1000/(πr²);  S(r) = 2πr² + 2000/r, r > 0.",
+            "S′ = 4πr − 2000/r² = 0 → r³ = 500/π → r ≈ 5,42 cm.",
+            "S″ = 4π + 4000/r³ > 0 → mínimo.",
+            "h = 1000/(πr²) = 2r."
+          ],
+          "answer": "**r ≈ 5,42 cm, h ≈ 10,84 cm** (altura = diámetro)."
+        },
+        {
+          "type": "exercise",
+          "title": "Optimización: viga más resistente",
+          "level": 3,
+          "statement": "La resistencia de una viga rectangular es proporcional a b·h² (ancho por altura al cuadrado). Halla las dimensiones de la viga más resistente que se puede cortar de un tronco de 30 cm de diámetro.",
+          "steps": [
+            "La diagonal es el diámetro: b² + h² = 900 → h² = 900 − b².",
+            "S(b) = k·b(900 − b²) = k(900b − b³), 0 < b < 30.",
+            "S′ = k(900 − 3b²) = 0 → b = √300.",
+            "S″ = −6kb < 0 → máximo. h² = 600."
+          ],
+          "answer": "**b = 10√3 ≈ 17,3 cm, h = 10√6 ≈ 24,5 cm** (h = b√2)."
+        },
+        {
+          "type": "exercise",
+          "title": "Optimización: tubería bajo un río",
+          "level": 3,
+          "statement": "Hay que llevar una tubería desde un punto A en una orilla de un río recto de 3 km de ancho hasta un punto B en la otra orilla, 5 km río abajo. Bajo el agua cuesta 5 (miles de dólares por km) y por tierra 4. ¿Dónde debe salir del agua para minimizar el costo?",
+          "steps": [
+            "Sale a x km del punto de enfrente: tramo bajo agua √(9 + x²), por tierra 5 − x, 0 ≤ x ≤ 5.",
+            "C(x) = 5√(9 + x²) + 4(5 − x).",
+            "C′ = 5x/√(9 + x²) − 4 = 0 → 25x² = 16(9 + x²) → x = 4.",
+            "Compara: C(0) = 35; C(4) = 25 + 4 = 29; C(5) = 5√34 ≈ 29,15."
+          ],
+          "answer": "**A 4 km del punto de enfrente (1 km antes de B); costo mínimo 29 mil dólares.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Análisis completo de una racional",
+          "level": 3,
+          "statement": "Haz el análisis completo de f(x) = x/(x² + 1): dominio, simetría, asíntotas, extremos, inflexiones y tabla.",
+          "steps": [
+            "Dominio ℝ; impar (simétrica respecto al origen); corte (0, 0); asíntota horizontal y = 0; sin verticales.",
+            "f′ = (1 − x²)/(x² + 1)² → críticos x = ±1: mínimo (−1, −1/2), máximo (1, 1/2).",
+            "f″ = 2x(x² − 3)/(x² + 1)³ → candidatos 0 y ±√3.",
+            "Signos de f″: (−∞, −√3) −; (−√3, 0) +; (0, √3) −; (√3, ∞) +.",
+            "Tabla: (−∞, −√3) decrece ∩; (−√3, −1) decrece ∪; (−1, 0) crece ∪; (0, 1) crece ∩; (1, √3) decrece ∩; (√3, ∞) decrece ∪."
+          ],
+          "answer": "**Mín (−1, −1/2), máx (1, 1/2); inflexiones (0, 0) y (±√3, ±√3/4 ≈ ±0,43); asíntota y = 0.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Tabla de un polinomio de grado 4",
+          "level": 3,
+          "statement": "Analiza f(x) = x⁴ − 4x³ con la tabla de intervalos (f′, f″ y comentario).",
+          "steps": [
+            "f′ = 4x³ − 12x² = 4x²(x − 3) → críticos 0 y 3.",
+            "f″ = 12x² − 24x = 12x(x − 2) → candidatos 0 y 2.",
+            "(−∞, 0): f′ −, f″ + → decrece ∪.  (0, 2): f′ −, f″ − → decrece ∩.  (2, 3): f′ −, f″ + → decrece ∪.  (3, ∞): f′ +, f″ + → crece ∪.",
+            "x = 0: f′ = 0 pero no cambia de signo → **no es extremo**, es inflexión con tangente horizontal."
+          ],
+          "answer": "**Mínimo (3, −27); inflexiones (0, 0) y (2, −16); cortes en x = 0 y x = 4.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Extremos absolutos con trigonométricas",
+          "level": 2,
+          "statement": "Halla el máximo y el mínimo absolutos de f(x) = x − 2 sen x en [0, 2π].",
+          "steps": [
+            "f′ = 1 − 2 cos x = 0 → cos x = 1/2 → x = π/3 y 5π/3.",
+            "Evalúa: f(0) = 0; f(π/3) = π/3 − √3 ≈ −0,685; f(5π/3) = 5π/3 + √3 ≈ 6,968; f(2π) ≈ 6,283."
+          ],
+          "answer": "**Mínimo −0,685 en x = π/3; máximo 6,968 en x = 5π/3.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Movimiento rectilíneo",
+          "level": 2,
+          "statement": "Una partícula se mueve con s(t) = t³ − 6t² + 9t (m, s). ¿Cuándo está en reposo, cuándo retrocede y qué distancia total recorre en [0, 5]?",
+          "steps": [
+            "v = 3t² − 12t + 9 = 3(t − 1)(t − 3): reposo en t = 1 y t = 3.",
+            "Retrocede (v < 0) en 1 < t < 3.",
+            "s(0) = 0, s(1) = 4, s(3) = 0, s(5) = 20.",
+            "Distancia = |4 − 0| + |0 − 4| + |20 − 0|."
+          ],
+          "answer": "**Reposo en t = 1 y 3 s; retrocede en (1, 3); distancia total 28 m** (el desplazamiento es solo 20 m)."
+        },
+        {
+          "type": "exercise",
+          "title": "Propagación de error",
+          "level": 2,
+          "statement": "El período de un péndulo es T = 2π√(L/g). Si la longitud aumenta 2 %, ¿en qué porcentaje cambia el período?",
+          "steps": [
+            "T = k·L^(1/2) → dT/T = ½·dL/L.",
+            "½·2 %."
+          ],
+          "answer": "**El período aumenta aprox. 1 %.**"
+        }
+      ]
     }
   ]
 }

@@ -464,6 +464,191 @@
           "explanation": "Vuelve a la original."
         }
       ]
+    },
+    {
+      "id": "l05-bloques",
+      "title": "Matrices por bloques (particionadas)",
+      "summary": "Suma, producto por escalar y producto de matrices divididas en submatrices; matrices diagonales por bloques.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una matriz por bloques es una **“matriz de matrices”**: se agrupan filas y columnas en submatrices Aᵢⱼ. Es como un edificio visto por pisos y departamentos: en vez de contar ladrillo por ladrillo, operas con bloques enteros.",
+          "title": "Idea"
+        },
+        {
+          "type": "formula",
+          "expression": "A = [ A₁₁  A₁₂ ;  A₂₁  A₂₂ ]",
+          "caption": "Una matriz con 2 filas de bloques y 2 columnas de bloques"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Operación",
+            "Regla",
+            "Condición"
+          ],
+          "rows": [
+            [
+              "Suma A + B",
+              "Se suman los bloques correspondientes: Aᵢⱼ + Bᵢⱼ",
+              "Ambas particionadas igual (bloques del mismo tamaño)"
+            ],
+            [
+              "Escalar αA",
+              "Cada bloque por α",
+              "Ninguna"
+            ],
+            [
+              "Producto AB",
+              "Como si los bloques fueran números: (AB)ᵢⱼ = Σₖ Aᵢₖ Bₖⱼ",
+              "Las columnas de los bloques de A deben coincidir con las filas de los bloques de B"
+            ],
+            [
+              "Matriz aumentada",
+              "[A | b] o [A | I]",
+              "Es un caso de matriz por bloques"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "[A₁₁ A₁₂ ; A₂₁ A₂₂]·[B₁₁ B₁₂ ; B₂₁ B₂₂] = [A₁₁B₁₁ + A₁₂B₂₁   A₁₁B₁₂ + A₁₂B₂₂ ;  A₂₁B₁₁ + A₂₂B₂₁   A₂₁B₁₂ + A₂₂B₂₂]"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En el producto se respeta el **orden** de los bloques (A₁₂B₂₁, no B₂₁A₁₂), porque los bloques son matrices y el producto de matrices no es conmutativo.",
+          "title": "Cuidado"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "A = [1 2 0 ; 3 4 0 ; 0 0 5] y B = [2 0 0 ; 1 1 0 ; 0 0 3], ambas **diagonales por bloques** con un bloque 2 × 2 y otro 1 × 1.\nA₁₁B₁₁ = [1 2 ; 3 4]·[2 0 ; 1 1] = [4 2 ; 10 4];  A₂₂B₂₂ = 5·3 = 15.\n**AB = [4 2 0 ; 10 4 0 ; 0 0 15]**: los bloques de ceros siguen siendo ceros.",
+          "title": "Ejemplo: producto de matrices diagonales por bloques"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Si A = diag(A₁₁, A₂₂) con A₁₁ y A₂₂ invertibles, entonces A⁻¹ = diag(A₁₁⁻¹, A₂₂⁻¹) y det A = det A₁₁ · det A₂₂. Invertir una matriz grande se reduce a invertir bloques pequeños.",
+          "title": "Inversa por bloques"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En el análisis matricial de estructuras, la matriz de rigidez de toda la estructura se arma **por bloques**: cada nudo aporta un bloque 2 × 2 (en el plano) y cada barra suma sus bloques en las posiciones de sus nudos."
+        },
+        {
+          "type": "quiz",
+          "question": "Para sumar dos matrices por bloques se necesita:",
+          "options": [
+            "Que sean cuadradas",
+            "Que estén particionadas igual",
+            "Que los bloques sean diagonales",
+            "Nada"
+          ],
+          "correct": 1,
+          "explanation": "Bloques del mismo tamaño."
+        },
+        {
+          "type": "quiz",
+          "question": "El bloque (1,1) de AB con 2 × 2 bloques es:",
+          "options": [
+            "A₁₁B₁₁",
+            "A₁₁B₁₁ + A₁₂B₂₁",
+            "A₁₁ + B₁₁",
+            "A₁₂B₂₁"
+          ],
+          "correct": 1,
+          "explanation": "Fila 1 de bloques por columna 1 de bloques."
+        },
+        {
+          "type": "quiz",
+          "question": "Si A = diag(A₁₁, A₂₂), det A =",
+          "options": [
+            "det A₁₁ + det A₂₂",
+            "det A₁₁·det A₂₂",
+            "0",
+            "det A₁₁"
+          ],
+          "correct": 1,
+          "explanation": "Producto de los determinantes de los bloques."
+        },
+        {
+          "type": "quiz",
+          "question": "[A | I] es un ejemplo de:",
+          "options": [
+            "Matriz por bloques",
+            "Matriz simétrica",
+            "Matriz elemental",
+            "Matriz nula"
+          ],
+          "correct": 0,
+          "explanation": "Dos bloques lado a lado."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de matrices",
+      "summary": "Ecuaciones matriciales, potencias, conmutatividad y descomposición simétrica.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuelve cada ejercicio **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Las matrices se escriben por filas separadas con punto y coma: [1 2 ; 3 4].",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Ecuación matricial",
+          "level": 2,
+          "statement": "Con A = [1 2 ; 0 −1] y B = [4 0 ; 2 6], halla X tal que 2X − 3A = Bᵀ.",
+          "steps": [
+            "Despeja: X = ½(Bᵀ + 3A).",
+            "Bᵀ = [4 2 ; 0 6];  3A = [3 6 ; 0 −3].",
+            "Suma: [7 8 ; 0 3]."
+          ],
+          "answer": "**X = [7/2 4 ; 0 3/2]**"
+        },
+        {
+          "type": "exercise",
+          "title": "Potencia n-ésima",
+          "level": 3,
+          "statement": "Para A = [1 1 ; 0 1] halla una fórmula para Aⁿ y demuéstrala por inducción.",
+          "steps": [
+            "A² = [1 2 ; 0 1], A³ = [1 3 ; 0 1]. Conjetura: Aⁿ = [1 n ; 0 1].",
+            "Base: n = 1 se cumple.",
+            "Paso: Aⁿ⁺¹ = Aⁿ·A = [1 n ; 0 1]·[1 1 ; 0 1] = [1 n + 1 ; 0 1]. ∎"
+          ],
+          "answer": "**Aⁿ = [1 n ; 0 1]**"
+        },
+        {
+          "type": "exercise",
+          "title": "Matrices que conmutan",
+          "level": 3,
+          "statement": "Halla todas las matrices 2 × 2 que conmutan con A = [1 1 ; 0 1].",
+          "steps": [
+            "Sea X = [a b ; c d]. AX = [a + c  b + d ; c  d];  XA = [a  a + b ; c  c + d].",
+            "Igualando: a + c = a → c = 0;  b + d = a + b → d = a."
+          ],
+          "answer": "**X = [a b ; 0 a]** para cualesquiera a, b."
+        },
+        {
+          "type": "exercise",
+          "title": "Parte simétrica y antisimétrica",
+          "level": 2,
+          "statement": "Escribe A = [2 5 ; 1 3] como suma de una matriz simétrica y una antisimétrica.",
+          "steps": [
+            "S = ½(A + Aᵀ) = ½[4 6 ; 6 6].",
+            "K = ½(A − Aᵀ) = ½[0 4 ; −4 0].",
+            "Comprueba S + K = A."
+          ],
+          "answer": "**S = [2 3 ; 3 3], K = [0 2 ; −2 0]**"
+        }
+      ]
     }
   ]
 }

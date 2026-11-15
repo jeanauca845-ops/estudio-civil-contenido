@@ -425,6 +425,265 @@
           "explanation": "Rango < n."
         }
       ]
+    },
+    {
+      "id": "l06-elementales-lu",
+      "title": "Matrices elementales y factorización LU",
+      "summary": "Registrar la eliminación gaussiana con matrices E, obtener A = LU, el caso PA = LU y LU de matrices rectangulares.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Cada paso de la eliminación gaussiana se puede “guardar” en una matriz elemental E. Es como grabar cada movimiento de una receta: después puedes repetirla o deshacerla paso a paso (con las inversas).",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Operación elemental",
+            "Matriz E (se aplica a I)",
+            "Inversa"
+          ],
+          "rows": [
+            [
+              "Intercambiar filas i y j",
+              "P (permutación)",
+              "La misma P"
+            ],
+            [
+              "Multiplicar la fila i por α ≠ 0",
+              "I con α en la posición (i, i)",
+              "I con 1/α"
+            ],
+            [
+              "Fila i + α·fila j",
+              "I con α en la posición (i, j)",
+              "I con −α en (i, j)"
+            ]
+          ],
+          "caption": "Las tres matrices elementales (notas, p. 45)"
+        },
+        {
+          "type": "formula",
+          "expression": "Eₖ ⋯ E₂E₁·A = U    ⇒    A = E₁⁻¹E₂⁻¹ ⋯ Eₖ⁻¹·U = L·U"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Hacer E·A equivale a aplicar a A la operación de filas con la que se construyó E. Las inversas de matrices elementales también son elementales, y el producto de las inversas de las operaciones “fila i − ℓ·fila j” es triangular inferior: **L**.",
+          "title": "Por qué sale L"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "A = [3 −2 ; 2 1] (notas del profesor).\nE₁: fila 1 ÷ 3 → [1 −2/3 ; 2 1].\nE₂: fila 2 − 2·fila 1 → [1 −2/3 ; 0 7/3].\nE₃: fila 2·(−3) → U = [1 −2/3 ; 0 −7].\nInversas: E₁⁻¹ = [3 0 ; 0 1], E₂⁻¹ = [1 0 ; 2 1], E₃⁻¹ = [1 0 ; 0 −1/3].\nL = E₁⁻¹E₂⁻¹E₃⁻¹ = **[3 0 ; 2 −1/3]** y se verifica L·U = [3 −2 ; 2 1] = A.",
+          "title": "Ejemplo 1 (2 × 2)"
+        },
+        {
+          "type": "heading",
+          "text": "Atajo (Doolittle): L con unos en la diagonal"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Elimina hacia abajo **sin** escalar filas ni permutar.",
+            "Cada vez que haces fila i − ℓᵢⱼ·fila j, anota el multiplicador ℓᵢⱼ en la posición (i, j) de L.",
+            "L tiene 1 en la diagonal y los multiplicadores debajo; U es la matriz final escalonada."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "A = [2 1 1 ; 4 3 3 ; 8 7 9].\nℓ₂₁ = 2: fila 2 − 2·fila 1 → (0, 1, 1). ℓ₃₁ = 4: fila 3 − 4·fila 1 → (0, 3, 5). ℓ₃₂ = 3: fila 3 − 3·fila 2 → (0, 0, 2).\n**L = [1 0 0 ; 2 1 0 ; 4 3 1],  U = [2 1 1 ; 0 1 1 ; 0 0 2].**",
+          "title": "Ejemplo 2 (3 × 3)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Resolver Ax = b con b = (4, 10, 24) usando LU:\n1) **Ly = b** (sustitución hacia adelante): y₁ = 4; y₂ = 10 − 2·4 = 2; y₃ = 24 − 4·4 − 3·2 = 2.\n2) **Ux = y** (sustitución hacia atrás): 2x₃ = 2 → x₃ = 1; x₂ + x₃ = 2 → x₂ = 1; 2x₁ + x₂ + x₃ = 4 → x₁ = 1.\n**x = (1, 1, 1).** Si cambia b, L y U se reutilizan: por eso LU es tan útil.",
+          "title": "Ejemplo 3: resolver con LU"
+        },
+        {
+          "type": "heading",
+          "text": "Cuando hace falta permutar: PA = LU"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "A = [0 2 3 ; 2 −4 7 ; 1 −2 5]: el pivote (1,1) es 0, hay que intercambiar filas 1 y 2 con P = [0 1 0 ; 1 0 0 ; 0 0 1].\nPA = [2 −4 7 ; 0 2 3 ; 1 −2 5] → fila 3 − ½·fila 1 → U = [2 −4 7 ; 0 2 3 ; 0 0 3/2].\n**PA = LU** con L = [1 0 0 ; 0 1 0 ; 1/2 0 1].",
+          "title": "Ejemplo 4 (notas del profesor)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Para A de 4 × 3 se plantea A = L(4 × 4)·U(4 × 3) y se igualan entradas fila por fila. Para A = [1 2 3 ; 2 6 9 ; 1 6 7 ; 3 2 1]: L = [1 0 0 0 ; 2 1 0 0 ; 1 2 1 0 ; 3 −2 1 1], U = [1 2 3 ; 0 2 3 ; 0 0 −2 ; 0 0 0]. En este caso LU **no es única**.",
+          "title": "Ejemplo 5: matriz rectangular"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Teorema (notas p. 45)",
+            "Enunciado"
+          ],
+          "rows": [
+            [
+              "Equivalencias",
+              "A invertible ⇔ A se reduce a I ⇔ A es producto de matrices elementales"
+            ],
+            [
+              "Unicidad",
+              "Si A es invertible y no requiere permutaciones, LU (con 1 en la diagonal de L) es única"
+            ],
+            [
+              "Elementales",
+              "Toda matriz elemental es invertible y su inversa es elemental"
+            ]
+          ]
+        },
+        {
+          "type": "interactive",
+          "widget": "la_gauss",
+          "title": "Practica la eliminación paso a paso"
+        },
+        {
+          "type": "quiz",
+          "question": "La matriz elemental de “fila 2 − 3·fila 1” en 2 × 2 es:",
+          "options": [
+            "[1 0 ; 3 1]",
+            "[1 0 ; −3 1]",
+            "[1 −3 ; 0 1]",
+            "[−3 0 ; 0 1]"
+          ],
+          "correct": 1,
+          "explanation": "Se aplica la operación a I."
+        },
+        {
+          "type": "quiz",
+          "question": "Su inversa es:",
+          "options": [
+            "[1 0 ; 3 1]",
+            "[1 0 ; −3 1]",
+            "[1/3 0 ; 0 1]",
+            "No tiene"
+          ],
+          "correct": 0,
+          "explanation": "Deshacer: fila 2 + 3·fila 1."
+        },
+        {
+          "type": "quiz",
+          "question": "En A = LU, L es:",
+          "options": [
+            "Triangular superior",
+            "Triangular inferior",
+            "Diagonal",
+            "Ortogonal"
+          ],
+          "correct": 1,
+          "explanation": "Guarda los multiplicadores."
+        },
+        {
+          "type": "quiz",
+          "question": "Para resolver Ax = b con LU primero se resuelve:",
+          "options": [
+            "Ux = b",
+            "Ly = b",
+            "Lx = y",
+            "Ax = 0"
+          ],
+          "correct": 1,
+          "explanation": "Luego Ux = y."
+        },
+        {
+          "type": "quiz",
+          "question": "Si el pivote es cero hay que usar:",
+          "options": [
+            "A = LU igual",
+            "PA = LU",
+            "Cramer",
+            "La transpuesta"
+          ],
+          "correct": 1,
+          "explanation": "Matriz de permutación."
+        },
+        {
+          "type": "quiz",
+          "question": "En el ejemplo 2, ℓ₃₂ =",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "fila 3 − 3·fila 2."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de sistemas lineales",
+      "summary": "Discusión con parámetro, Cramer, LU y sistemas homogéneos.",
+      "minutes": 40,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuelve cada ejercicio **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Las matrices se escriben por filas separadas con punto y coma: [1 2 ; 3 4].",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Discusión según k",
+          "level": 3,
+          "statement": "Discute y resuelve según k:  x + y + kz = 1;  x + ky + z = 1;  kx + y + z = 1.",
+          "steps": [
+            "det de coeficientes = −(k − 1)²(k + 2).",
+            "k ≠ 1 y k ≠ −2: solución única; por simetría x = y = z → (k + 2)x = 1.",
+            "k = 1: las tres ecuaciones son x + y + z = 1 → infinitas soluciones con 2 parámetros.",
+            "k = −2: sumando las tres ecuaciones se obtiene 0 = 3 → incompatible."
+          ],
+          "answer": "**k ≠ 1, −2: x = y = z = 1/(k + 2). k = 1: infinitas (plano). k = −2: sin solución.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Regla de Cramer",
+          "level": 2,
+          "statement": "Resuelve con Cramer: 2x + y − z = 5;  x − y + 2z = −3;  3x + 2y + z = 6.",
+          "steps": [
+            "det A = 2(−1 − 4) − 1(1 − 6) − 1(2 + 3) = −10.",
+            "Dx (cambia la columna 1 por 5, −3, 6) = −10 → x = 1.",
+            "Dy = −20 → y = 2;  Dz = 10 → z = −1."
+          ],
+          "answer": "**(x, y, z) = (1, 2, −1)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Resolver con LU",
+          "level": 3,
+          "statement": "Factoriza A = [1 2 1 ; 2 6 1 ; 1 1 4] como LU y resuelve Ax = (4, 9, 6).",
+          "steps": [
+            "ℓ₂₁ = 2: F2 → (0 2 −1).  ℓ₃₁ = 1: F3 → (0 −1 3).  ℓ₃₂ = −1/2: F3 → (0 0 5/2).",
+            "L = [1 0 0 ; 2 1 0 ; 1 −1/2 1],  U = [1 2 1 ; 0 2 −1 ; 0 0 5/2].",
+            "Ly = b: y = (4, 1, 5/2).",
+            "Ux = y: z = 1; 2y − 1 = 1 → y = 1; x + 2 + 1 = 4 → x = 1."
+          ],
+          "answer": "**x = (1, 1, 1)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Sistema homogéneo",
+          "level": 2,
+          "statement": "Halla una base del conjunto solución de  x + 2y − z + w = 0;  2x + 4y + z − w = 0.",
+          "steps": [
+            "F2 − 2F1: 3z − 3w = 0 → z = w.",
+            "De la primera: x = −2y + z − w = −2y.",
+            "Libres: y = s, w = t → (−2s, s, t, t)."
+          ],
+          "answer": "**Base {(−2, 1, 0, 0), (0, 0, 1, 1)}, dimensión 2**"
+        }
+      ]
     }
   ]
 }

@@ -428,6 +428,80 @@
           "explanation": "Derivación logarítmica."
         }
       ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Simulacro de examen con soluciones",
+      "summary": "Cinco problemas mixtos del nivel del examen final.",
+      "minutes": 50,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Estos ejercicios son más largos que las preguntas de práctica. Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Verde = básico, naranja = intermedio, rojo = avanzado (nivel examen).",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Problema 1: límite",
+          "level": 2,
+          "statement": "Calcula lím (x→0) (sen 5x − sen 3x)/x.",
+          "steps": [
+            "Separa: 5·(sen 5x/5x) − 3·(sen 3x/3x).",
+            "5·1 − 3·1."
+          ],
+          "answer": "**2**"
+        },
+        {
+          "type": "exercise",
+          "title": "Problema 2: continuidad y derivabilidad",
+          "level": 3,
+          "statement": "Estudia la continuidad y la derivabilidad de f(x) = |x² − 1| en x = 1.",
+          "steps": [
+            "Cerca de 1: f = 1 − x² si x < 1; f = x² − 1 si x ≥ 1.",
+            "Continuidad: ambos límites valen 0 = f(1) → continua.",
+            "f′₋(1) = −2x = −2;  f′₊(1) = 2x = 2."
+          ],
+          "answer": "**Continua pero no derivable en x = 1** (pico: derivadas laterales −2 y 2)."
+        },
+        {
+          "type": "exercise",
+          "title": "Problema 3: tangente implícita",
+          "level": 2,
+          "statement": "Halla la recta tangente a √x + √y = 3 en (4, 1).",
+          "steps": [
+            "1/(2√x) + y′/(2√y) = 0 → y′ = −√y/√x.",
+            "En (4, 1): −1/2.",
+            "y − 1 = −½(x − 4)."
+          ],
+          "answer": "**y = −x/2 + 3**"
+        },
+        {
+          "type": "exercise",
+          "title": "Problema 4: tasa de variación",
+          "level": 2,
+          "statement": "Un globo esférico se infla a 100 cm³/s. ¿Con qué rapidez crece el radio cuando el diámetro es 50 cm?",
+          "steps": [
+            "V = (4/3)πr³ → dV/dt = 4πr²·dr/dt.",
+            "r = 25: 100 = 4π·625·dr/dt."
+          ],
+          "answer": "**dr/dt = 1/(25π) ≈ 0,0127 cm/s**"
+        },
+        {
+          "type": "exercise",
+          "title": "Problema 5: análisis completo con tabla",
+          "level": 3,
+          "statement": "Analiza f(x) = (x² − 4)/(x² − 1): dominio, simetría, cortes, asíntotas, extremos, concavidad y tabla.",
+          "steps": [
+            "Dominio ℝ − {±1}; par. Cortes: (±2, 0) y (0, 4). Asíntotas verticales x = ±1; horizontal y = 1.",
+            "Escribe f = 1 − 3/(x² − 1). f′ = 6x/(x² − 1)² → crítico x = 0.",
+            "f″ = −6(3x² + 1)/(x² − 1)³: nunca 0; positiva si |x| < 1, negativa si |x| > 1.",
+            "Tabla: (−∞, −1) decrece ∩; (−1, 0) decrece ∪; (0, 1) crece ∪; (1, ∞) crece ∩.",
+            "En x = 0: f′ = 0, f″ > 0 → mínimo relativo (0, 4)."
+          ],
+          "answer": "**Mínimo relativo (0, 4); sin inflexiones (la concavidad cambia en las asíntotas x = ±1); asíntota horizontal y = 1.**"
+        }
+      ]
     }
   ]
 }

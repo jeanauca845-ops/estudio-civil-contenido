@@ -312,6 +312,1087 @@
           "explanation": "{1, x, x², x³}."
         }
       ]
+    },
+    {
+      "id": "l04-generadores",
+      "title": "Espacio vectorial, combinación lineal, generadores y base minimal",
+      "summary": "Axiomas, criterio de subespacio, principio de superposición, Gen{S}, base minimal e interpretación geométrica de la dimensión.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un **espacio vectorial** es cualquier conjunto de “objetos” (flechas, polinomios, matrices, funciones) en el que se puede **sumar** y **multiplicar por un escalar** sin salirse del conjunto y respetando las reglas de siempre. Las flechas de ℝ³ son solo un ejemplo.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Axioma",
+            "Enunciado (para u, v, w ∈ V y α, β ∈ K)"
+          ],
+          "rows": [
+            [
+              "1. Cerradura de la suma",
+              "u + v ∈ V"
+            ],
+            [
+              "2. Conmutativa",
+              "u + v = v + u"
+            ],
+            [
+              "3. Asociativa",
+              "(u + v) + w = u + (v + w)"
+            ],
+            [
+              "4. Neutro",
+              "Existe 0 con u + 0 = u"
+            ],
+            [
+              "5. Inverso",
+              "Existe −u con u + (−u) = 0"
+            ],
+            [
+              "6. Cerradura del escalar",
+              "αu ∈ V"
+            ],
+            [
+              "7. Distributiva 1",
+              "α(u + v) = αu + αv"
+            ],
+            [
+              "8. Distributiva 2",
+              "(α + β)u = αu + βu"
+            ],
+            [
+              "9. Asociativa del escalar",
+              "α(βu) = (αβ)u"
+            ],
+            [
+              "10. Unidad",
+              "1u = u"
+            ]
+          ],
+          "caption": "Los 10 axiomas (notas, p. 3)"
+        },
+        {
+          "type": "heading",
+          "text": "Subespacio: criterio rápido"
+        },
+        {
+          "type": "formula",
+          "expression": "W ⊆ V es subespacio  ⇔  0 ∈ W,  u + v ∈ W  y  αu ∈ W  (para todo u, v ∈ W, α ∈ K)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "En ℝ², una **recta por el origen** es subespacio; una recta que **no** pasa por el origen solo es subconjunto (no contiene al 0 y la suma de dos de sus puntos se sale de ella).",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "Principio de superposición"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un sistema es **lineal** si el efecto de varias causas juntas es la **suma** de los efectos de cada una por separado, y si al duplicar la causa se duplica el efecto. En mecánica: la deflexión de una viga por dos cargas es la suma de las deflexiones de cada carga sola.",
+          "title": "Principio de superposición"
+        },
+        {
+          "type": "formula",
+          "expression": "T(αu + βv) = αT(u) + βT(v)",
+          "caption": "Linealidad = aditividad + homogeneidad"
+        },
+        {
+          "type": "heading",
+          "text": "Combinación lineal y subespacio generado"
+        },
+        {
+          "type": "formula",
+          "expression": "u = α₁v₁ + α₂v₂ + ⋯ + αₖvₖ        Gen{v₁, …, vₖ} = { todas las combinaciones lineales }"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "¿w = (1, 6, 4) está en Gen{u, v} con u = (1, 2, 0), v = (−1, 0, 2)?\nau + bv = w → (a − b, 2a, 2b) = (1, 6, 4) → a = 3, b = 2, y a − b = 1 ✔.\n**Sí**: w está en el plano generado por u y v (w es linealmente dependiente de u y v).",
+          "title": "Ejemplo (notas, p. 14)"
+        },
+        {
+          "type": "heading",
+          "text": "Base minimal y dimensión"
+        },
+        {
+          "type": "text",
+          "text": "Una **base** es un conjunto **linealmente independiente** que **genera** todo el espacio: el mínimo de vectores que alcanza para todo. La **dimensión** es cuántos vectores tiene cualquier base."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Subespacio de ℝ³",
+            "Se genera con",
+            "Dimensión",
+            "Geometría"
+          ],
+          "rows": [
+            [
+              "{0}",
+              "nada",
+              "0",
+              "Un punto (el origen)"
+            ],
+            [
+              "Recta por el origen",
+              "1 vector no nulo",
+              "1",
+              "Línea"
+            ],
+            [
+              "Plano por el origen",
+              "2 vectores LI",
+              "2",
+              "Plano"
+            ],
+            [
+              "ℝ³",
+              "3 vectores LI",
+              "3",
+              "Todo el espacio"
+            ]
+          ],
+          "caption": "Identificación geométrica de la dimensión"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "S = Gen{(1, −1, 7, 3), (2, 1, −1, 0), (3, 1, 1, 1)}. El rango de los tres es 2: el tercero es combinación de los otros, (3, 1, 1, 1) = ⅓(1, −1, 7, 3) + (4/3)(2, 1, −1, 0). Por eso **B = {(1, −1, 7, 3), (2, 1, −1, 0)}** es base de S y dim S = 2.\nMétodo general: pon los vectores como **columnas**, escalona y quédate con las columnas **pivote** (de la matriz original).",
+          "title": "Extraer una base (notas, p. 14)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Completar {(1, 1, 0, 0), (1, −1, 1, 0)} a una base de ℝ⁴: se van agregando vectores canónicos que no sean combinación de los anteriores. e₁ sirve; e₂ no (e₂ = (1, 1, 0, 0) − e₁). Con e₁ ya hay tres vectores LI, pero todos tienen 4.ª componente 0, así que el cuarto debe ser **e₄**: {(1, 1, 0, 0), (1, −1, 1, 0), e₁, e₄} es base de ℝ⁴.",
+          "title": "Completar a una base"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En las notas (p. 14) se completa con e₃; revisa ese paso con tu profesor: e₃ ya está en Gen{(1, 1, 0, 0), (1, −1, 1, 0), e₁}, porque e₃ = (1, −1, 1, 0) + (1, 1, 0, 0) − 2e₁, y ningún vector con 4.ª componente 0 completa ℝ⁴. Hace falta uno con 4.ª componente no nula, como e₄.",
+          "title": "Ojo con un detalle de las notas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Teorema",
+            "Enunciado"
+          ],
+          "rows": [
+            [
+              "Más vectores que entradas",
+              "En ℝⁿ, más de n vectores son siempre LD"
+            ],
+            [
+              "Vector cero",
+              "Un conjunto que contiene al 0 es LD"
+            ],
+            [
+              "Unicidad",
+              "Las coordenadas de un vector en una base son únicas"
+            ],
+            [
+              "Fórmula de Grassmann",
+              "dim(S + T) = dim S + dim T − dim(S ∩ T)"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es subespacio de ℝ²?",
+          "options": [
+            "y = x + 1",
+            "y = 3x",
+            "y = x²",
+            "x = 2"
+          ],
+          "correct": 1,
+          "explanation": "Recta por el origen."
+        },
+        {
+          "type": "quiz",
+          "question": "Un plano por el origen en ℝ³ tiene dimensión:",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "Dos vectores LI."
+        },
+        {
+          "type": "quiz",
+          "question": "Cuatro vectores en ℝ³ son siempre:",
+          "options": [
+            "LI",
+            "LD",
+            "Una base",
+            "Ortogonales"
+          ],
+          "correct": 1,
+          "explanation": "Más vectores que entradas."
+        },
+        {
+          "type": "quiz",
+          "question": "El principio de superposición dice que:",
+          "options": [
+            "T(u + v) = T(u)·T(v)",
+            "T(αu + βv) = αT(u) + βT(v)",
+            "T(0) = 1",
+            "T es invertible"
+          ],
+          "correct": 1,
+          "explanation": "Linealidad."
+        },
+        {
+          "type": "quiz",
+          "question": "Para extraer una base de unos generadores se toman:",
+          "options": [
+            "Las filas cero",
+            "Las columnas pivote de la matriz original",
+            "Todas las columnas",
+            "La diagonal"
+          ],
+          "correct": 1,
+          "explanation": "Columnas con pivote."
+        }
+      ]
+    },
+    {
+      "id": "l05-isomorfismo",
+      "title": "Polinomios y matrices como vectores (isomorfismo)",
+      "summary": "Pₙ y M₂ₓ₂ como espacios vectoriales, sus bases canónicas, coordenadas y la idea de isomorfismo con ℝⁿ.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un polinomio a₀ + a₁x + a₂x² queda totalmente descrito por su lista de coeficientes (a₀, a₁, a₂). Una matriz 2 × 2 por sus 4 entradas. **Isomorfismo** significa que son “el mismo espacio con distinto disfraz”: todo lo que hagas con los polinomios lo puedes hacer con sus vectores de coeficientes.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Espacio",
+            "Base canónica",
+            "Dimensión",
+            "Isomorfo a"
+          ],
+          "rows": [
+            [
+              "Pₙ (grado ≤ n)",
+              "{1, x, x², …, xⁿ}",
+              "n + 1",
+              "ℝⁿ⁺¹"
+            ],
+            [
+              "P₂",
+              "{1, x, x²}",
+              "3",
+              "ℝ³"
+            ],
+            [
+              "M₂ₓ₂",
+              "{E₁₁, E₁₂, E₂₁, E₂₂} (un 1 y el resto ceros)",
+              "4",
+              "ℝ⁴"
+            ],
+            [
+              "Mₘₓₙ",
+              "Las mn matrices con un solo 1",
+              "mn",
+              "ℝᵐⁿ"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "a₀ + a₁x + a₂x²  ⟷  (a₀, a₁, a₂)        [a b ; c d]  ⟷  (a, b, c, d)",
+          "caption": "Mapeo de coordenadas (biyectivo y lineal)"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El **orden** de la base importa: en la base {1, x, x², x³, x⁴} el polinomio x³ + 3x² − 1 tiene coordenadas (−1, 0, 3, 1, 0); en la base {x⁴, x³, x², x, 1} son (0, 1, 3, 0, −1).",
+          "title": "Orden (notas, p. 31)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "¿{1 + x, x + x², 1 + x²} es base de P₂?\nVectores de coeficientes como columnas: [1 0 1 ; 1 1 0 ; 0 1 1], det = 2 ≠ 0 → **LI**, y son 3 en un espacio de dimensión 3 → **base**.\nCoordenadas de q = 3 + 5x + 2x²: a(1,1,0) + b(0,1,1) + c(1,0,1) = (3, 5, 2) → **a = 3, b = 2, c = 0**.",
+          "title": "Ejemplo 1: polinomios"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "H = { [a b ; 0 c] } (triangulares superiores 2 × 2): [a b ; 0 c] = aE₁₁ + bE₁₂ + cE₂₂ → H = Gen{E₁₁, E₁₂, E₂₂}, **dim H = 3**.\nH = { [a 0 ; c a + c] }: = a[1 0 ; 0 1] + c[0 0 ; 1 1] → **dim H = 2**.",
+          "title": "Ejemplo 2: subespacios de matrices (notas, p. 15)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Subespacio de M₂ₓ₂",
+            "Base",
+            "Dimensión"
+          ],
+          "rows": [
+            [
+              "Diagonales",
+              "{E₁₁, E₂₂}",
+              "2"
+            ],
+            [
+              "Simétricas [a b ; b c]",
+              "{E₁₁, E₁₂ + E₂₁, E₂₂}",
+              "3"
+            ],
+            [
+              "Traza cero [a b ; c −a]",
+              "{E₁₁ − E₂₂, E₁₂, E₂₁}",
+              "3"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Funciones: sen²x, cos²x y la constante 1 son **LD** porque sen²x + cos²x − 1 = 0 para todo x (coeficientes 1, 1, −1 no todos nulos).",
+          "title": "Ejemplo 3: funciones"
+        },
+        {
+          "type": "quiz",
+          "question": "dim P₃ =",
+          "options": [
+            "3",
+            "4",
+            "2",
+            "9"
+          ],
+          "correct": 1,
+          "explanation": "{1, x, x², x³}."
+        },
+        {
+          "type": "quiz",
+          "question": "M₂ₓ₂ es isomorfo a:",
+          "options": [
+            "ℝ²",
+            "ℝ⁴",
+            "ℝ³",
+            "P₂"
+          ],
+          "correct": 1,
+          "explanation": "4 entradas."
+        },
+        {
+          "type": "quiz",
+          "question": "Coordenadas de 2 − x + 4x² en {1, x, x²}:",
+          "options": [
+            "(4, −1, 2)",
+            "(2, −1, 4)",
+            "(2, 1, 4)",
+            "(−1, 2, 4)"
+          ],
+          "correct": 1,
+          "explanation": "Orden ascendente."
+        },
+        {
+          "type": "quiz",
+          "question": "dim de las matrices simétricas 2 × 2:",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "a, b, c libres."
+        },
+        {
+          "type": "quiz",
+          "question": "Para probar que unos polinomios son LI se puede:",
+          "options": [
+            "Derivarlos",
+            "Ver el rango de su matriz de coeficientes",
+            "Sumarlos",
+            "Evaluarlos en 0"
+          ],
+          "correct": 1,
+          "explanation": "Isomorfismo con ℝⁿ⁺¹."
+        }
+      ]
+    },
+    {
+      "id": "l06-implicita",
+      "title": "Ecuación implícita de una recta, un plano o un subespacio",
+      "summary": "Pasar de generadores (forma paramétrica) a ecuaciones del tipo ax + by + cz = 0 y viceversa.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Hay dos maneras de describir un subespacio: **paramétrica** (“todo lo que se fabrica con estos vectores”: Gen{…}) e **implícita** (“todo lo que cumple estas ecuaciones”: ax + by + cz = 0). Es como dar una dirección diciendo “camina por esta calle” o “es el lugar donde se cumple tal condición”.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Subespacio de ℝ³",
+            "Forma paramétrica",
+            "Forma implícita"
+          ],
+          "rows": [
+            [
+              "Plano por el origen",
+              "Gen{v₁, v₂}",
+              "1 ecuación: ax + by + cz = 0"
+            ],
+            [
+              "Recta por el origen",
+              "Gen{v}",
+              "2 ecuaciones"
+            ],
+            [
+              "Todo ℝ³",
+              "Gen{e₁, e₂, e₃}",
+              "0 ecuaciones"
+            ],
+            [
+              "{0}",
+              "—",
+              "3 ecuaciones independientes"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Número de ecuaciones implícitas = n − dim(subespacio)"
+        },
+        {
+          "type": "heading",
+          "text": "Método por eliminación (el de las notas)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Escribe la matriz aumentada [v₁ v₂ ⋯ | (x, y, z)] con los generadores como columnas.",
+            "Escalona **llevando** x, y, z en la última columna.",
+            "Cada fila que queda con ceros a la izquierda da una condición: lo que queda a la derecha = 0.",
+            "Esas condiciones son las ecuaciones implícitas."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "H = Gen{(1, 2, −1), (2, 1, 1)}.\n[1 2 | x ; 2 1 | y ; −1 1 | z] → fila 2 − 2·fila 1: [0 −3 | y − 2x]; fila 3 + fila 1: [0 3 | z + x]; fila 3 + fila 2: [0 0 | z − x + y].\nCondición: **−x + y + z = 0** (o x − y − z = 0). Comprobación: (1, 2, −1) → 1 − 2 + 1 = 0 ✔.",
+          "title": "Ejemplo 1: un plano"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "En ℝ³, el vector normal del plano es v₁ × v₂ = (1, 2, −1) × (2, 1, 1) = (3, −3, −3) ∝ (1, −1, −1), y el plano es x − y − z = 0. Mismo resultado.",
+          "title": "Atajo con producto cruz (solo para planos en ℝ³)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "H = Gen{(1, −2, 3)}: los puntos son (t, −2t, 3t). Eliminando t (t = x): **y = −2x y z = 3x**, es decir **2x + y = 0** y **3x − z = 0** (dos ecuaciones porque 3 − 1 = 2).",
+          "title": "Ejemplo 2: una recta"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Imagen de T(x, y) = (2x − y, x + y, −3x + 3y): escalonando [2 −1 | u ; 1 1 | v ; −3 3 | w] se llega a la condición **w − v + 2u = 0**. Im(T) es ese plano de ℝ³.",
+          "title": "Ejemplo 3 (notas, ejemplo 21)"
+        },
+        {
+          "type": "heading",
+          "text": "De implícita a paramétrica"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Plano x − 2y + z = 0: despejo x = 2y − z, con y = s, z = t libres:\n(x, y, z) = s(2, 1, 0) + t(−1, 0, 1) → **H = Gen{(2, 1, 0), (−1, 0, 1)}**, dim 2. Es resolver un sistema homogéneo: el subespacio es el espacio nulo de [1 −2 1].",
+          "title": "Ejemplo 4"
+        },
+        {
+          "type": "quiz",
+          "question": "Un plano por el origen en ℝ³ necesita cuántas ecuaciones implícitas:",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "explanation": "3 − 2 = 1."
+        },
+        {
+          "type": "quiz",
+          "question": "Una recta por el origen en ℝ³ necesita:",
+          "options": [
+            "1 ecuación",
+            "2 ecuaciones",
+            "3 ecuaciones",
+            "Ninguna"
+          ],
+          "correct": 1,
+          "explanation": "3 − 1 = 2."
+        },
+        {
+          "type": "quiz",
+          "question": "¿(1, 1, 0) cumple x − y − z = 0?",
+          "options": [
+            "Sí",
+            "No"
+          ],
+          "correct": 0,
+          "explanation": "1 − 1 − 0 = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Gen{(1, 0, 2)} en forma implícita:",
+          "options": [
+            "z = 2x, y = 0",
+            "x + 2z = 0",
+            "y = 2x",
+            "x = 2z, y = 0"
+          ],
+          "correct": 0,
+          "explanation": "Puntos (t, 0, 2t)."
+        },
+        {
+          "type": "quiz",
+          "question": "Una base de x + y + z = 0 es:",
+          "options": [
+            "{(1, 1, 1)}",
+            "{(−1, 1, 0), (−1, 0, 1)}",
+            "{(1, 0, 0), (0, 1, 0)}",
+            "{(1, −1, 0)}"
+          ],
+          "correct": 1,
+          "explanation": "Dos vectores LI que cumplen la ecuación."
+        }
+      ]
+    },
+    {
+      "id": "l07-fundamentales",
+      "title": "Los cuatro espacios fundamentales de una matriz",
+      "summary": "Espacio columna, espacio nulo, espacio renglón Col(Aᵀ) y espacio nulo izquierdo Nul(Aᵀ): bases, dimensiones y ortogonalidad.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Espacio",
+            "Definición",
+            "Vive en",
+            "Dimensión",
+            "Base"
+          ],
+          "rows": [
+            [
+              "Col(A)",
+              "Combinaciones de las columnas: {Ax}",
+              "ℝᵐ",
+              "r",
+              "Columnas pivote de A (original)"
+            ],
+            [
+              "Nul(A)",
+              "Soluciones de Ax = 0",
+              "ℝⁿ",
+              "n − r",
+              "Soluciones especiales (una por variable libre)"
+            ],
+            [
+              "Col(Aᵀ) (renglón)",
+              "Combinaciones de las filas",
+              "ℝⁿ",
+              "r",
+              "Filas no nulas de la forma escalonada"
+            ],
+            [
+              "Nul(Aᵀ) (nulo izquierdo)",
+              "Soluciones de Aᵀy = 0 (yᵀA = 0)",
+              "ℝᵐ",
+              "m − r",
+              "Resolver Aᵀy = 0"
+            ]
+          ],
+          "caption": "A de tamaño m × n y rango r"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Piensa en A como una máquina que recibe vectores de ℝⁿ y entrega vectores de ℝᵐ. **Col(A)** es todo lo que la máquina puede fabricar; **Nul(A)** es lo que la máquina “aplasta” a cero. En ℝⁿ, el espacio renglón y el nulo son perpendiculares; en ℝᵐ, el columna y el nulo izquierdo también.",
+          "title": "Idea"
+        },
+        {
+          "type": "formula",
+          "expression": "Nul(A) ⟂ Col(Aᵀ)  en ℝⁿ        Col(A) ⟂ Nul(Aᵀ)  en ℝᵐ",
+          "caption": "Complementos ortogonales (notas, p. 29)"
+        },
+        {
+          "type": "formula",
+          "expression": "r + (n − r) = n        r + (m − r) = m",
+          "caption": "Teorema del rango"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "A = [1 2 0 1 ; 2 4 1 3 ; 3 6 1 4] (m = 3, n = 4).\nEscalonada: fila 2 − 2·fila 1 → (0 0 1 1); fila 3 − 3·fila 1 → (0 0 1 1); fila 3 − fila 2 → 0.\nR = [1 2 0 1 ; 0 0 1 1 ; 0 0 0 0]: pivotes en columnas 1 y 3 → **r = 2**.",
+          "title": "Ejemplo completo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Espacio",
+            "Base",
+            "Dim"
+          ],
+          "rows": [
+            [
+              "Col(A) ⊂ ℝ³",
+              "{(1, 2, 3), (0, 1, 1)} (columnas 1 y 3 de A)",
+              "2"
+            ],
+            [
+              "Col(Aᵀ) ⊂ ℝ⁴",
+              "{(1, 2, 0, 1), (0, 0, 1, 1)}",
+              "2"
+            ],
+            [
+              "Nul(A) ⊂ ℝ⁴",
+              "x₁ = −2x₂ − x₄, x₃ = −x₄ → {(−2, 1, 0, 0), (−1, 0, −1, 1)}",
+              "4 − 2 = 2"
+            ],
+            [
+              "Nul(Aᵀ) ⊂ ℝ³",
+              "{(−1, −1, 1)}",
+              "3 − 2 = 1"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "(−2, 1, 0, 0)·(1, 2, 0, 1) = −2 + 2 = 0 ✔;  (−1, 0, −1, 1)·(0, 0, 1, 1) = −1 + 1 = 0 ✔: Nul(A) ⟂ espacio renglón.\n(−1, −1, 1)·(1, 2, 3) = 0 ✔ y ·(0, 1, 1) = 0 ✔: Nul(Aᵀ) ⟂ Col(A).",
+          "title": "Verificación de ortogonalidad (producto punto = 0)"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Ax = b tiene solución **si y solo si b ∈ Col(A)**, es decir, si b es ortogonal a Nul(Aᵀ). En el ejemplo: b = (u, v, w) debe cumplir −u − v + w = 0. Es la ecuación implícita de Col(A).",
+          "title": "Para qué sirve"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La base de Col(A) se toma de las columnas de la matriz **original** A (las que tienen pivote), no de la escalonada: las operaciones de fila cambian el espacio columna (pero no el renglón ni el nulo).",
+          "title": "Error típico"
+        },
+        {
+          "type": "interactive",
+          "widget": "la_gauss",
+          "title": "Escalona la matriz y busca los pivotes"
+        },
+        {
+          "type": "quiz",
+          "question": "Si A es 3 × 5 con rango 3, dim Nul(A) =",
+          "options": [
+            "0",
+            "2",
+            "3",
+            "5"
+          ],
+          "correct": 1,
+          "explanation": "n − r = 5 − 3."
+        },
+        {
+          "type": "quiz",
+          "question": "El espacio renglón es ortogonal a:",
+          "options": [
+            "Col(A)",
+            "Nul(A)",
+            "Nul(Aᵀ)",
+            "ℝᵐ"
+          ],
+          "correct": 1,
+          "explanation": "Ambos en ℝⁿ."
+        },
+        {
+          "type": "quiz",
+          "question": "Ax = b tiene solución si b pertenece a:",
+          "options": [
+            "Nul(A)",
+            "Col(A)",
+            "Col(Aᵀ)",
+            "Nul(Aᵀ)"
+          ],
+          "correct": 1,
+          "explanation": "b debe ser combinación de columnas."
+        },
+        {
+          "type": "quiz",
+          "question": "La base de Col(A) se toma de:",
+          "options": [
+            "Columnas pivote de la escalonada",
+            "Columnas pivote de A original",
+            "Filas de A",
+            "Variables libres"
+          ],
+          "correct": 1,
+          "explanation": "La escalonada cambia el espacio columna."
+        },
+        {
+          "type": "quiz",
+          "question": "dim Nul(Aᵀ) para A de m × n y rango r:",
+          "options": [
+            "n − r",
+            "m − r",
+            "r",
+            "m + n"
+          ],
+          "correct": 1,
+          "explanation": "Aᵀ es n × m."
+        }
+      ]
+    },
+    {
+      "id": "l08-producto-interno",
+      "title": "Producto interno canónico y ortogonalidad",
+      "summary": "Producto punto en ℝⁿ, sus propiedades, norma, ángulo y la prueba de ortogonalidad u·v = 0.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "⟨u, v⟩ = u·v = u₁v₁ + u₂v₂ + ⋯ + uₙvₙ = uᵀv",
+          "caption": "Producto interno canónico (euclídeo)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Enunciado"
+          ],
+          "rows": [
+            [
+              "Simetría",
+              "⟨u, v⟩ = ⟨v, u⟩"
+            ],
+            [
+              "Linealidad",
+              "⟨αu + βv, w⟩ = α⟨u, w⟩ + β⟨v, w⟩"
+            ],
+            [
+              "Positividad",
+              "⟨u, u⟩ ≥ 0 y = 0 solo si u = 0"
+            ]
+          ],
+          "caption": "Axiomas de un producto interno"
+        },
+        {
+          "type": "formula",
+          "expression": "‖u‖ = √⟨u, u⟩        cos θ = ⟨u, v⟩ / (‖u‖‖v‖)        d(u, v) = ‖u − v‖"
+        },
+        {
+          "type": "formula",
+          "expression": "u ⟂ v   ⇔   ⟨u, v⟩ = 0",
+          "caption": "Ortogonalidad: la comprobación es que el producto punto dé cero"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El producto punto mide **cuánto apuntan dos vectores en la misma dirección**. Si dan cero, no se “ayudan” en nada: son perpendiculares. En ℝⁿ con n > 3 no se puede dibujar el ángulo, pero el producto punto lo sigue definiendo.",
+          "title": "Idea"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "u = (2, 3, −5), v = (−1, 4, 2): u·v = −2 + 12 − 10 = **0** → u ⟂ v.\nw = (1, 1, 1): u·w = 0 → u ⟂ w también. ¿v ⟂ w? v·w = 5 ≠ 0 → no.",
+          "title": "Ejemplo 1 (notas, p. 49)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Hallar todos los vectores de ℝ³ ortogonales a (1, 2, −1): x + 2y − z = 0, que es un **plano** (el complemento ortogonal de la recta Gen{(1, 2, −1)}). Base: {(−2, 1, 0), (1, 0, 1)}.",
+          "title": "Ejemplo 2: complemento ortogonal"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "Conjunto ortogonal",
+              "Todos los pares tienen producto punto 0"
+            ],
+            [
+              "Conjunto ortonormal",
+              "Ortogonal y cada vector de norma 1"
+            ],
+            [
+              "Pitágoras generalizado",
+              "u ⟂ v ⇒ ‖u + v‖² = ‖u‖² + ‖v‖²"
+            ],
+            [
+              "Complemento ortogonal W⟂",
+              "Todos los vectores ortogonales a cada vector de W"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Un conjunto ortogonal de vectores no nulos es siempre **linealmente independiente**. Por eso las bases ortonormales (como i, j, k) son tan cómodas: las coordenadas se obtienen con productos punto."
+        },
+        {
+          "type": "quiz",
+          "question": "(1, −2, 3)·(4, 2, 0) =",
+          "options": [
+            "0",
+            "8",
+            "−4",
+            "6"
+          ],
+          "correct": 0,
+          "explanation": "4 − 4 + 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos vectores son ortogonales si:",
+          "options": [
+            "Su producto punto es 1",
+            "Su producto punto es 0",
+            "Son paralelos",
+            "Tienen la misma norma"
+          ],
+          "correct": 1,
+          "explanation": "cos 90° = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "‖(2, 3, 6)‖ =",
+          "options": [
+            "11",
+            "7",
+            "√11",
+            "49"
+          ],
+          "correct": 1,
+          "explanation": "√49."
+        },
+        {
+          "type": "quiz",
+          "question": "Los vectores ortogonales a (1, 1, 1) en ℝ³ forman:",
+          "options": [
+            "Una recta",
+            "Un plano",
+            "Todo ℝ³",
+            "Un punto"
+          ],
+          "correct": 1,
+          "explanation": "x + y + z = 0."
+        }
+      ]
+    },
+    {
+      "id": "l09-cambio-base",
+      "title": "Cambio de base y cambio de coordenadas",
+      "summary": "Coordenadas de un vector en una base, la matriz P de B a B′ y cómo pasar de unas coordenadas a otras.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un mismo punto se describe con números distintos según el sistema de referencia: “3 cuadras al norte y 2 al este” o “3,6 cuadras en diagonal”. Una **base** es el sistema de referencia; las **coordenadas** son los números. Cambiar de base es traducir los números sin mover el punto.",
+          "title": "Analogía"
+        },
+        {
+          "type": "formula",
+          "expression": "u = α₁b₁ + ⋯ + αₙbₙ   ⇒   [u]ᴮ = (α₁, …, αₙ)",
+          "caption": "Coordenadas en la base B (únicas)"
+        },
+        {
+          "type": "formula",
+          "expression": "[x]ᴮ′ = P·[x]ᴮ,     P = P(B′ ← B) = [ [b₁]ᴮ′  [b₂]ᴮ′  ⋯  [bₙ]ᴮ′ ]",
+          "caption": "Matriz de cambio de coordenadas de B a B′ (notas, p. 32)"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Las **columnas** de P(B′ ← B) son los vectores de la base **vieja** B escritos en coordenadas de la base **nueva** B′. Para el camino inverso: P(B ← B′) = P(B′ ← B)⁻¹.",
+          "title": "Regla clave"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Base B′ = {(1, 1, 1), (1, 1, 0), (1, 0, 0)} de ℝ³. Para X = (x₁, x₂, x₃):\n(x₁, x₂, x₃) = x₃(1,1,1) + (x₂ − x₃)(1,1,0) + (x₁ − x₂)(1,0,0).\nCoordenadas: **[X]ᴮ′ = (x₃, x₂ − x₃, x₁ − x₂)**. En forma matricial, P(B′ ← E) = [0 0 1 ; 0 1 −1 ; 1 −1 0].\nPor ejemplo X = (4, 3, 1) → (1, 2, 1) en B′. Comprobación: 1(1,1,1) + 2(1,1,0) + 1(1,0,0) = (4, 3, 1) ✔.",
+          "title": "Ejemplo 1 (notas, p. 31–34)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "B = {b₁ = (2, 2), b₂ = (−1, 1)}, B′ = {(1, −1), (0, 2)}.\nb₁ en B′: a(1, −1) + b(0, 2) = (2, 2) → a = 2, b = 2 → [b₁]ᴮ′ = (2, 2).\nb₂ en B′: a = −1, −(−1) + 2b = 1 → b = 0 → [b₂]ᴮ′ = (−1, 0).\n**P(B′ ← B) = [2 −1 ; 2 0].** El vector con [X]ᴮ = (1, 0) tiene [X]ᴮ′ = (2, 2).",
+          "title": "Ejemplo 2 (notas, p. 33)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Para ir de la base canónica E a una base B: resuelve el sistema [b₁ ⋯ bₙ]·c = x (o usa la inversa de la matriz con los bᵢ como columnas).",
+            "Para ir de B a E: x = [b₁ ⋯ bₙ]·[x]ᴮ (combinar).",
+            "Entre dos bases no canónicas: P(B′ ← B) = M(B′)⁻¹·M(B), donde M(·) tiene los vectores de la base como columnas."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La rotación de ejes (coordenadas globales ↔ locales de una barra) es un cambio de base con la matriz [cos θ  sen θ ; −sen θ  cos θ]: es exactamente lo que se usa en la matriz de rigidez de armaduras (siguiente unidad)."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Polinomios: en la base {1, x, x², x³, x⁴}, p = x³ + 3x² − 1 tiene coordenadas (−1, 0, 3, 1, 0). Funciones: en Gen{eʸ, e²ʸ}, 8eʸ − 5e²ʸ tiene coordenadas (8, −5).",
+          "title": "Ejemplo 3: otros espacios"
+        },
+        {
+          "type": "quiz",
+          "question": "Las columnas de P(B′ ← B) son:",
+          "options": [
+            "Los vectores de B′ en coordenadas B",
+            "Los vectores de B en coordenadas B′",
+            "Los vectores canónicos",
+            "Las coordenadas de x"
+          ],
+          "correct": 1,
+          "explanation": "Vieja en términos de la nueva."
+        },
+        {
+          "type": "quiz",
+          "question": "P(B ← B′) es igual a:",
+          "options": [
+            "P(B′ ← B)",
+            "P(B′ ← B)⁻¹",
+            "P(B′ ← B)ᵀ",
+            "I"
+          ],
+          "correct": 1,
+          "explanation": "Camino inverso."
+        },
+        {
+          "type": "quiz",
+          "question": "Coordenadas de (3, 5) en la base {(1, 0), (1, 1)}:",
+          "options": [
+            "(3, 5)",
+            "(−2, 5)",
+            "(5, 3)",
+            "(8, 5)"
+          ],
+          "correct": 1,
+          "explanation": "a(1,0) + b(1,1) = (3,5) → b = 5, a = −2."
+        },
+        {
+          "type": "quiz",
+          "question": "Las coordenadas de un vector en una base son:",
+          "options": [
+            "Únicas",
+            "Infinitas",
+            "Siempre enteras",
+            "Iguales en toda base"
+          ],
+          "correct": 0,
+          "explanation": "Porque la base es LI."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de espacios vectoriales",
+      "summary": "Subespacios, bases, los cuatro espacios fundamentales, cambio de base y polinomios.",
+      "minutes": 45,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuelve cada ejercicio **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Las matrices se escriben por filas separadas con punto y coma: [1 2 ; 3 4].",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "¿Subespacio o no?",
+          "level": 2,
+          "statement": "Decide si son subespacios de ℝ³: W = {(x, y, z) : x + 2y − z = 0} y U = {(x, y, z) : xy = 0}. Si lo son, da base y dimensión.",
+          "steps": [
+            "W: contiene al 0; es el espacio nulo de [1 2 −1], cerrado bajo suma y escalar → subespacio. z = x + 2y → (x, y, x + 2y).",
+            "U: (1, 0, 0) y (0, 1, 0) están en U pero su suma (1, 1, 0) no (1·1 ≠ 0) → no es subespacio."
+          ],
+          "answer": "**W sí: base {(1, 0, 1), (0, 1, 2)}, dim 2. U no (no es cerrado bajo la suma).**"
+        },
+        {
+          "type": "exercise",
+          "title": "Base de un subespacio generado",
+          "level": 2,
+          "statement": "Halla base y dimensión de Gen{(1, 2, −1, 0), (2, 4, 1, 3), (3, 6, 0, 3), (0, 0, 1, 1)}.",
+          "steps": [
+            "v₃ = v₁ + v₂ → sobra.",
+            "v₂ − 2v₁ = (0, 0, 3, 3) = 3v₄ → v₄ = (v₂ − 2v₁)/3 → sobra.",
+            "v₁ y v₂ no son múltiplos."
+          ],
+          "answer": "**Base {v₁, v₂}, dimensión 2**"
+        },
+        {
+          "type": "exercise",
+          "title": "Los cuatro espacios fundamentales",
+          "level": 3,
+          "statement": "Para A = [1 2 1 ; 2 4 3 ; 3 6 4] halla base y dimensión de Col(A), Col(Aᵀ), Nul(A) y Nul(Aᵀ), y verifica la ortogonalidad.",
+          "steps": [
+            "F2 − 2F1 → (0 0 1); F3 − 3F1 → (0 0 1); F3 − F2 → 0. Pivotes en columnas 1 y 3: r = 2.",
+            "Col(A): columnas 1 y 3 de A: (1, 2, 3), (1, 3, 4). Col(Aᵀ): (1, 2, 1), (0, 0, 1).",
+            "Nul(A): z = 0, x = −2y → (−2, 1, 0).",
+            "Nul(Aᵀ): ortogonal a las columnas: (1, 2, 3) × (1, 3, 4) = (−1, −1, 1).",
+            "Verifica: (−2, 1, 0)·(1, 2, 1) = 0 y (−1, −1, 1)·(1, 2, 3) = 0 ✔."
+          ],
+          "answer": "**Col(A): {(1,2,3), (1,3,4)}; renglón: {(1,2,1), (0,0,1)}; Nul(A): {(−2,1,0)}; Nul(Aᵀ): {(−1,−1,1)}. Dimensiones 2, 2, 1, 1.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Matriz de cambio de base",
+          "level": 3,
+          "statement": "En ℝ², B = {(1, 1), (1, −1)} y B′ = {(2, 1), (1, 1)}. Halla P(B′ ← B) y las coordenadas en B′ del vector cuyas coordenadas en B son (3, 1).",
+          "steps": [
+            "(1, 1) = a(2, 1) + b(1, 1) → a = 0, b = 1.",
+            "(1, −1) = a(2, 1) + b(1, 1): 2a + b = 1, a + b = −1 → a = 2, b = −3.",
+            "P = [0 2 ; 1 −3] (columnas).",
+            "P·(3, 1) = (2, 0). Comprobación: el vector es 3(1, 1) + (1, −1) = (4, 2) = 2(2, 1) ✔."
+          ],
+          "answer": "**P = [0 2 ; 1 −3]; coordenadas en B′: (2, 0)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Dependencia de polinomios",
+          "level": 2,
+          "statement": "¿Son linealmente independientes p₁ = 1 + x², p₂ = x − x², p₃ = 2 + x + x² en P₂?",
+          "steps": [
+            "Vectores de coeficientes: (1, 0, 1), (0, 1, −1), (2, 1, 1).",
+            "det [1 0 2 ; 0 1 1 ; 1 −1 1] = 1(1 + 1) + 2(0 − 1) = 0.",
+            "Relación: p₃ = 2p₁ + p₂."
+          ],
+          "answer": "**Son LD: p₃ = 2p₁ + p₂; generan un subespacio de dimensión 2.**"
+        }
+      ]
     }
   ]
 }

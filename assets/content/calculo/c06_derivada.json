@@ -1749,6 +1749,269 @@
           "explanation": "ln x^(5/2) = (5/2) ln x."
         }
       ]
+    },
+    {
+      "id": "l12-laterales",
+      "title": "Derivadas laterales, diferenciabilidad y continuidad",
+      "summary": "f′₊ y f′₋, picos, tangentes verticales y cómo hallar parámetros para que una función por tramos sea derivable.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "f′₊(a) = lím (h→0⁺) [f(a + h) − f(a)]/h        f′₋(a) = lím (h→0⁻) [f(a + h) − f(a)]/h",
+          "caption": "Derivada por la derecha y por la izquierda"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La derivada es la pendiente de la tangente. Si al acercarte a un punto por la izquierda la curva tiene una pendiente y por la derecha otra, hay un **pico** (una esquina): no hay una sola tangente y la derivada no existe.",
+          "title": "Idea"
+        },
+        {
+          "type": "formula",
+          "expression": "f′(a) existe  ⇔  f′₊(a) y f′₋(a) existen y son iguales"
+        },
+        {
+          "type": "heading",
+          "text": "Diferenciabilidad y continuidad"
+        },
+        {
+          "type": "formula",
+          "expression": "f derivable en a  ⇒  f continua en a",
+          "caption": "Teorema (Leithold)"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El recíproco es **falso**: una función continua puede no ser derivable (pico, tangente vertical). Y si f **no** es continua en a, seguro **no** es derivable allí.",
+          "title": "Cuidado"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "En x = 0",
+            "Motivo"
+          ],
+          "rows": [
+            [
+              "|x|",
+              "Continua, no derivable",
+              "Pico: f′₋ = −1, f′₊ = 1"
+            ],
+            [
+              "∛x",
+              "Continua, no derivable",
+              "Tangente vertical: el cociente → ∞"
+            ],
+            [
+              "x|x|",
+              "Derivable, f′(0) = 0",
+              "lím h|h|/h = lím |h| = 0"
+            ],
+            [
+              "⟦x⟧",
+              "No continua → no derivable",
+              "Salto"
+            ],
+            [
+              "x^(2/3)",
+              "Continua, no derivable",
+              "Cúspide: f′₋ → −∞, f′₊ → +∞"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = |x − 3| en a = 3: f(3 + h) − f(3) = |h|.\nf′₊(3) = lím (h→0⁺) |h|/h = 1;  f′₋(3) = lím (h→0⁻) |h|/h = −1.\nSon distintas → **f′(3) no existe** (pico en (3, 0)).",
+          "title": "Ejemplo 1"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x² si x ≤ 1;  2x − 1 si x > 1.\nContinuidad: f(1) = 1 y lím (x→1⁺) (2x − 1) = 1 ✔.\nf′₋(1) = 2·1 = 2 (derivada de x²); f′₊(1) = 2 (derivada de 2x − 1). Iguales → **derivable en 1** con f′(1) = 2.",
+          "title": "Ejemplo 2: se pega suave"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x² si x < 1;  2x si x ≥ 1. Ojo: f(1) = 2 pero lím (x→1⁻) x² = 1: **no es continua**, así que no es derivable.\nSi calculas por definición: f′₋(1) = lím (h→0⁻) [(1 + h)² − 2]/h = lím (−1 + 2h + h²)/h = +∞.\nNo basta con derivar cada tramo: primero verifica continuidad.",
+          "title": "Ejemplo 3: la trampa"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Hallar a y b para que f(x) = x² si x ≤ 2;  ax + b si x > 2 sea derivable en 2.\n1) Continuidad: 4 = 2a + b.\n2) Derivadas laterales iguales: 2·2 = a → **a = 4**.\nEntonces b = 4 − 8 = **−4**. La recta y = 4x − 4 es justamente la tangente a x² en x = 2.",
+          "title": "Ejemplo 4: hallar parámetros"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = ∛x en 0: [f(h) − f(0)]/h = h^(1/3)/h = 1/h^(2/3) → +∞. Tangente **vertical** (x = 0); no hay derivada finita.",
+          "title": "Ejemplo 5: tangente vertical"
+        },
+        {
+          "type": "quiz",
+          "question": "Si f′₋(a) = 3 y f′₊(a) = 3, entonces:",
+          "options": [
+            "f no es derivable",
+            "f′(a) = 3",
+            "f′(a) = 0",
+            "No se puede saber"
+          ],
+          "correct": 1,
+          "explanation": "Laterales iguales."
+        },
+        {
+          "type": "quiz",
+          "question": "|x + 2| no es derivable en:",
+          "options": [
+            "0",
+            "2",
+            "−2",
+            "Ningún punto"
+          ],
+          "correct": 2,
+          "explanation": "Pico en x = −2."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f es derivable en a, entonces:",
+          "options": [
+            "f es continua en a",
+            "f′ es continua en a",
+            "f(a) = 0",
+            "f es creciente"
+          ],
+          "correct": 0,
+          "explanation": "Derivable ⇒ continua."
+        },
+        {
+          "type": "quiz",
+          "question": "f(x) = x² (x ≤ 1), ax + b (x > 1) derivable en 1 exige a =",
+          "options": [
+            "1",
+            "2",
+            "0",
+            "−1"
+          ],
+          "correct": 1,
+          "explanation": "2·1 = a."
+        },
+        {
+          "type": "quiz",
+          "question": "Con a = 2 en la pregunta anterior, b =",
+          "options": [
+            "0",
+            "1",
+            "−1",
+            "2"
+          ],
+          "correct": 2,
+          "explanation": "1 = 2 + b."
+        },
+        {
+          "type": "quiz",
+          "question": "∛x en x = 0 tiene:",
+          "options": [
+            "Pico",
+            "Tangente horizontal",
+            "Tangente vertical",
+            "Salto"
+          ],
+          "correct": 2,
+          "explanation": "El cociente → ∞."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de derivadas",
+      "summary": "Definición, reglas combinadas, rectas tangentes, derivadas de orden n y derivabilidad.",
+      "minutes": 40,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Estos ejercicios son más largos que las preguntas de práctica. Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Verde = básico, naranja = intermedio, rojo = avanzado (nivel examen).",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Derivada por definición",
+          "level": 2,
+          "statement": "Usa la definición para derivar f(x) = 1/√x.",
+          "steps": [
+            "[1/√(x + h) − 1/√x]/h = [√x − √(x + h)]/[h·√x·√(x + h)].",
+            "Multiplica por el conjugado √x + √(x + h): numerador x − (x + h) = −h.",
+            "−1/[√x·√(x + h)·(√x + √(x + h))] → −1/(x·2√x)."
+          ],
+          "answer": "**f′(x) = −1/(2x√x) = −½·x^(−3/2)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Producto con cadena",
+          "level": 3,
+          "statement": "Deriva y simplifica  y = (x² + 1)³·√(2x − 1).",
+          "steps": [
+            "Producto: y′ = 3(x² + 1)²·2x·√(2x − 1) + (x² + 1)³·[2/(2√(2x − 1))].",
+            "y′ = 6x(x² + 1)²√(2x − 1) + (x² + 1)³/√(2x − 1).",
+            "Factor común (x² + 1)²/√(2x − 1): [6x(2x − 1) + (x² + 1)].",
+            "6x(2x − 1) + x² + 1 = 13x² − 6x + 1."
+          ],
+          "answer": "**y′ = (x² + 1)²(13x² − 6x + 1)/√(2x − 1)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Logaritmo que se simplifica",
+          "level": 3,
+          "statement": "Deriva  y = ln √[(1 + sen x)/(1 − sen x)]  y simplifica al máximo.",
+          "steps": [
+            "Propiedades: y = ½[ln(1 + sen x) − ln(1 − sen x)].",
+            "y′ = ½[cos x/(1 + sen x) + cos x/(1 − sen x)].",
+            "Suma: ½·cos x·[(1 − sen x) + (1 + sen x)]/(1 − sen²x) = cos x/cos²x."
+          ],
+          "answer": "**y′ = sec x**",
+          "hint": "Baja la raíz y separa el cociente antes de derivar."
+        },
+        {
+          "type": "exercise",
+          "title": "Tangentes paralelas a una recta",
+          "level": 2,
+          "statement": "Halla las rectas tangentes a y = x³ − 3x + 2 que son paralelas a y = 9x.",
+          "steps": [
+            "Pendiente pedida: 9. y′ = 3x² − 3 = 9 → x² = 4 → x = ±2.",
+            "Puntos: x = 2 → y = 4; x = −2 → y = 0.",
+            "Rectas: y − 4 = 9(x − 2) y y − 0 = 9(x + 2)."
+          ],
+          "answer": "**y = 9x − 14  y  y = 9x + 18**"
+        },
+        {
+          "type": "exercise",
+          "title": "Derivada de orden n",
+          "level": 3,
+          "statement": "Halla una fórmula para la derivada n-ésima de y = x·eˣ.",
+          "steps": [
+            "y′ = eˣ + x eˣ = (x + 1)eˣ.",
+            "y″ = eˣ + (x + 1)eˣ = (x + 2)eˣ.",
+            "y‴ = (x + 3)eˣ. Patrón: cada derivada suma 1."
+          ],
+          "answer": "**y⁽ⁿ⁾ = (x + n)eˣ**"
+        },
+        {
+          "type": "exercise",
+          "title": "Derivabilidad con parámetros",
+          "level": 3,
+          "statement": "Halla a y b para que f(x) = ax² + b si x ≤ 1;  ln x + 2x si x > 1  sea derivable en x = 1.",
+          "steps": [
+            "Continuidad: a + b = ln 1 + 2 = 2.",
+            "Derivadas laterales: izquierda 2a·1 = 2a; derecha 1/x + 2 = 3.",
+            "2a = 3 → a = 3/2; b = 2 − 3/2."
+          ],
+          "answer": "**a = 3/2, b = 1/2**"
+        }
+      ]
     }
   ]
 }

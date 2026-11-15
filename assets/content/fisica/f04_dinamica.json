@@ -391,6 +391,77 @@
           "explanation": "Se equilibran."
         }
       ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de dinámica",
+      "summary": "Sistemas con polea y fricción, bloques en contacto, fricción estática, ascensor y curvas.",
+      "minutes": 35,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuelve cada ejercicio **en papel** con su dibujo o diagrama de cuerpo libre; luego pide la pista, la solución paso a paso o solo la respuesta. Usa g = 9,81 m/s².",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Plano inclinado con polea y fricción",
+          "level": 3,
+          "statement": "Un bloque de 5 kg sobre un plano a 30° (μk = 0,2) está unido por una cuerda y una polea ideal a un bloque colgante de 4 kg. Halla la aceleración y la tensión.",
+          "steps": [
+            "Supón que el de 4 kg baja. Colgante: 4g − T = 4a.",
+            "Plano: T − 5g sen 30° − μk·5g cos 30° = 5a.",
+            "Suma: a = (39,24 − 24,53 − 8,50)/9.",
+            "T = 4(g − a)."
+          ],
+          "answer": "**a ≈ 0,69 m/s²; T ≈ 36,5 N** (a > 0 confirma el sentido supuesto)."
+        },
+        {
+          "type": "exercise",
+          "title": "Bloques en contacto",
+          "level": 2,
+          "statement": "Una fuerza horizontal de 60 N empuja un bloque de 4 kg que a su vez empuja a otro de 6 kg; μk = 0,25 con el piso. Halla la aceleración y la fuerza de contacto.",
+          "steps": [
+            "Sistema: 60 − 0,25·10·9,81 = 10a → a = 3,55 m/s².",
+            "Bloque de 6 kg: C − 0,25·6·9,81 = 6a."
+          ],
+          "answer": "**a ≈ 3,55 m/s²; C = 36 N**"
+        },
+        {
+          "type": "exercise",
+          "title": "Fuerza mínima para mover una caja",
+          "level": 3,
+          "statement": "Una caja de 50 kg descansa sobre un piso con μs = 0,4. Se jala con una cuerda a 30° sobre la horizontal. ¿Qué fuerza P la pone a punto de moverse?",
+          "steps": [
+            "Vertical: N = mg − P sen 30° (la cuerda alivia la normal).",
+            "Horizontal: P cos 30° = μs·N = 0,4(490,5 − 0,5P).",
+            "P(0,866 + 0,2) = 196,2."
+          ],
+          "answer": "**P ≈ 184 N** (menos que los 196 N que haría falta jalando horizontal)."
+        },
+        {
+          "type": "exercise",
+          "title": "Persona en un ascensor",
+          "level": 1,
+          "statement": "Una persona de 70 kg está sobre una báscula en un ascensor que acelera hacia arriba a 1,5 m/s². ¿Qué marca la báscula?",
+          "steps": [
+            "N − mg = ma → N = m(g + a) = 70·11,31."
+          ],
+          "answer": "**N ≈ 792 N (equivale a 80,7 kg)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Velocidad máxima en una curva plana",
+          "level": 2,
+          "statement": "Halla la velocidad máxima a la que un auto toma sin derrapar una curva plana de 50 m de radio si μs = 0,6.",
+          "steps": [
+            "La fricción da la fuerza centrípeta: μs·m·g = m·v²/R.",
+            "v = √(μs·g·R) = √(0,6·9,81·50)."
+          ],
+          "answer": "**v ≈ 17,2 m/s ≈ 62 km/h** (no depende de la masa)."
+        }
+      ]
     }
   ]
 }

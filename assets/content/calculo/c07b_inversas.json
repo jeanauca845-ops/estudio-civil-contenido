@@ -1,0 +1,989 @@
+{
+  "id": "c07b-inversas",
+  "title": "Funciones inversas, exponenciales y logarítmicas",
+  "description": "Existencia de la inversa y propiedad de reflexión, derivada de la inversa, exponencial y logaritmo de base a, sus límites y derivadas, y derivada con exponente real.",
+  "lessons": [
+    {
+      "id": "l01-inversa",
+      "title": "Existencia de la función inversa y propiedad de reflexión",
+      "summary": "Cuándo una función tiene inversa, cómo hallarla, cómo se ve su gráfica y cómo derivarla sin despejarla.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una función es una máquina que convierte x en y. Su **inversa** es la máquina que hace el camino de regreso: recibe y y devuelve la x original. Como un traductor español → inglés y su traductor inglés → español.",
+          "title": "Analogía"
+        },
+        {
+          "type": "formula",
+          "expression": "f⁻¹(f(x)) = x  para todo x de Dom f        f(f⁻¹(y)) = y  para todo y de Dom f⁻¹",
+          "caption": "Definición"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "f⁻¹(x) **no** es 1/f(x). El “−1” indica inversa, no exponente.",
+          "title": "Notación"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Teorema",
+            "Enunciado"
+          ],
+          "rows": [
+            [
+              "Existencia",
+              "f tiene inversa ⇔ f es inyectiva (uno a uno)."
+            ],
+            [
+              "Monotonía",
+              "Si f es estrictamente creciente (o decreciente) en su dominio, tiene inversa."
+            ],
+            [
+              "Criterio con derivada",
+              "Si f′(x) > 0 en todo un intervalo (o f′ < 0), f es inyectiva ahí y tiene inversa."
+            ],
+            [
+              "Dominio y rango",
+              "Dom f⁻¹ = Rango f;  Rango f⁻¹ = Dom f."
+            ],
+            [
+              "Continuidad",
+              "Si f es continua y monótona en un intervalo, f⁻¹ también es continua."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Propiedad de reflexión"
+        },
+        {
+          "type": "formula",
+          "expression": "(a, b) está en la gráfica de f  ⇔  (b, a) está en la gráfica de f⁻¹"
+        },
+        {
+          "type": "text",
+          "text": "Por eso las gráficas de f y f⁻¹ son **simétricas respecto a la recta y = x**: dobla el papel por esa diagonal y una cae sobre la otra."
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/reflexion-inversa.png",
+          "caption": "eˣ y ln x; x² (x ≥ 0) y √x: cada par es reflejo en la recta y = x."
+        },
+        {
+          "type": "heading",
+          "text": "Cómo hallar la inversa"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Verifica que f sea inyectiva (si no, restringe el dominio).",
+            "Escribe y = f(x).",
+            "**Despeja x** en términos de y.",
+            "Intercambia los nombres: escribe x por y. Eso es f⁻¹(x).",
+            "Escribe el dominio de f⁻¹ (= rango de f)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = (2x + 3)/(x − 1).\ny(x − 1) = 2x + 3 → xy − 2x = y + 3 → x(y − 2) = y + 3 → x = (y + 3)/(y − 2).\n**f⁻¹(x) = (x + 3)/(x − 2)**, dominio ℝ − {2}.\nComprobación: f(0) = −3 y f⁻¹(−3) = 0/(−5) = 0 ✔.",
+          "title": "Ejemplo 1"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x² − 4 con x ≥ 0 (restringida para que sea inyectiva). Rango: [−4, ∞).\ny = x² − 4 → x = √(y + 4) (raíz positiva porque x ≥ 0).\n**f⁻¹(x) = √(x + 4)**, dominio [−4, ∞).",
+          "title": "Ejemplo 2: con restricción"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x³ + 2 → y − 2 = x³ → **f⁻¹(x) = ∛(x − 2)**, dominio ℝ.",
+          "title": "Ejemplo 3"
+        },
+        {
+          "type": "heading",
+          "text": "Derivada de la función inversa"
+        },
+        {
+          "type": "formula",
+          "expression": "(f⁻¹)′(d) = 1 / f′(c),   donde f(c) = d   y   f′(c) ≠ 0"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si al reflejar en y = x intercambias x con y, la pendiente Δy/Δx se convierte en Δx/Δy: la pendiente de la inversa es el **recíproco**.",
+          "title": "Por qué"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x³ + x + 1. Hallar (f⁻¹)′(3) sin despejar.\nBusco c con f(c) = 3: c³ + c + 1 = 3 → c = 1 (por tanteo).\nf′(x) = 3x² + 1 → f′(1) = 4.\n**(f⁻¹)′(3) = 1/4.**",
+          "title": "Ejemplo 4"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "f(x) = x⁵ + 2x − 1 (f′ = 5x⁴ + 2 > 0, así que es inyectiva). (f⁻¹)′(2): f(1) = 2, f′(1) = 7 → **1/7**.",
+          "title": "Ejemplo 5"
+        },
+        {
+          "type": "quiz",
+          "question": "Las gráficas de f y f⁻¹ son simétricas respecto a:",
+          "options": [
+            "El eje x",
+            "El eje y",
+            "La recta y = x",
+            "El origen"
+          ],
+          "correct": 2,
+          "explanation": "Propiedad de reflexión."
+        },
+        {
+          "type": "quiz",
+          "question": "Si (2, 7) está en la gráfica de f, en la de f⁻¹ está:",
+          "options": [
+            "(2, 7)",
+            "(7, 2)",
+            "(−2, −7)",
+            "(1/2, 1/7)"
+          ],
+          "correct": 1,
+          "explanation": "Se intercambian coordenadas."
+        },
+        {
+          "type": "quiz",
+          "question": "Inversa de f(x) = 3x − 6:",
+          "options": [
+            "(x + 6)/3",
+            "3x + 6",
+            "1/(3x − 6)",
+            "x/3 − 6"
+          ],
+          "correct": 0,
+          "explanation": "y + 6 = 3x."
+        },
+        {
+          "type": "quiz",
+          "question": "Si f(2) = 5 y f′(2) = 4, (f⁻¹)′(5) =",
+          "options": [
+            "4",
+            "1/4",
+            "1/5",
+            "5"
+          ],
+          "correct": 1,
+          "explanation": "Recíproco de f′(2)."
+        },
+        {
+          "type": "quiz",
+          "question": "x² tiene inversa en:",
+          "options": [
+            "ℝ",
+            "[0, ∞)",
+            "Ningún intervalo",
+            "Solo en ℤ"
+          ],
+          "correct": 1,
+          "explanation": "Ahí es inyectiva."
+        },
+        {
+          "type": "quiz",
+          "question": "Dom f⁻¹ es igual a:",
+          "options": [
+            "Dom f",
+            "Rango f",
+            "ℝ",
+            "Codominio de f⁻¹"
+          ],
+          "correct": 1,
+          "explanation": "Se intercambian."
+        }
+      ]
+    },
+    {
+      "id": "l02-exponencial",
+      "title": "Función exponencial de base a positiva",
+      "summary": "Definición de aˣ, leyes, gráficas para a > 1 y 0 < a < 1, límites y derivada de aᵘ.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "aˣ responde a: “si algo se multiplica por a cada unidad de tiempo, ¿cuánto hay después de x unidades?”. Bacterias que se duplican (a = 2), un material radiactivo que se reduce a la mitad (a = 1/2), dinero con interés.",
+          "title": "Analogía"
+        },
+        {
+          "type": "formula",
+          "expression": "f(x) = aˣ,   a > 0,  a ≠ 1        aˣ = e^(x·ln a)",
+          "caption": "Definición (vale para todo x real)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Ley",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "aˣ·aʸ = aˣ⁺ʸ",
+              "2³·2⁴ = 2⁷"
+            ],
+            [
+              "aˣ / aʸ = aˣ⁻ʸ",
+              "5⁶/5² = 5⁴"
+            ],
+            [
+              "(aˣ)ʸ = aˣʸ",
+              "(3²)⁴ = 3⁸"
+            ],
+            [
+              "(ab)ˣ = aˣbˣ",
+              "6ˣ = 2ˣ3ˣ"
+            ],
+            [
+              "a⁻ˣ = 1/aˣ",
+              "2⁻³ = 1/8"
+            ],
+            [
+              "a⁰ = 1",
+              "Toda exponencial pasa por (0, 1)"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "asset": "assets/images/graficas/exp-log-base.png",
+          "caption": "Izquierda: 2ˣ, 3ˣ y (1/2)ˣ. Derecha: logaritmos, sus reflejos en y = x."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "a > 1",
+            "0 < a < 1"
+          ],
+          "rows": [
+            [
+              "Dominio / rango",
+              "ℝ / (0, ∞)",
+              "ℝ / (0, ∞)"
+            ],
+            [
+              "Monotonía",
+              "Creciente",
+              "Decreciente"
+            ],
+            [
+              "lím (x→+∞) aˣ",
+              "+∞",
+              "0"
+            ],
+            [
+              "lím (x→−∞) aˣ",
+              "0",
+              "+∞"
+            ],
+            [
+              "Asíntota",
+              "y = 0 por la izquierda",
+              "y = 0 por la derecha"
+            ],
+            [
+              "Corte con y",
+              "(0, 1)",
+              "(0, 1)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Derivada"
+        },
+        {
+          "type": "formula",
+          "expression": "d/dx aˣ = aˣ · ln a        d/dx aᵘ = aᵘ · ln a · u′        (caso a = e:  d/dx eᵘ = eᵘ·u′)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "aˣ = e^(x ln a); por la regla de la cadena, su derivada es e^(x ln a)·ln a = aˣ ln a. El factor ln a “corrige” que la base no sea e.",
+          "title": "De dónde sale"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "d/dx 3^(x²) = 3^(x²)·ln 3·2x\nd/dx 2^(sen x) = 2^(sen x)·ln 2·cos x\nd/dx 10⁻ˣ = −10⁻ˣ·ln 10\nd/dx (x·5ˣ) = 5ˣ + x·5ˣ ln 5 = 5ˣ(1 + x ln 5)",
+          "title": "Ejemplos"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Decaimiento: una cantidad con vida media T sigue Q(t) = Q₀·(1/2)^(t/T). Su tasa de cambio es Q′(t) = Q₀·(1/2)^(t/T)·ln(1/2)/T < 0. También: consolidación de suelos, curvas de enfriamiento del hormigón, descarga de un capacitor.",
+          "title": "Aplicación"
+        },
+        {
+          "type": "quiz",
+          "question": "d/dx 2ˣ =",
+          "options": [
+            "x·2ˣ⁻¹",
+            "2ˣ",
+            "2ˣ ln 2",
+            "2ˣ/ln 2"
+          ],
+          "correct": 2,
+          "explanation": "aˣ ln a."
+        },
+        {
+          "type": "quiz",
+          "question": "(1/3)ˣ es:",
+          "options": [
+            "Creciente",
+            "Decreciente",
+            "Constante",
+            "Periódica"
+          ],
+          "correct": 1,
+          "explanation": "0 < a < 1."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→−∞) 4ˣ =",
+          "options": [
+            "+∞",
+            "0",
+            "1",
+            "4"
+          ],
+          "correct": 1,
+          "explanation": "a > 1."
+        },
+        {
+          "type": "quiz",
+          "question": "d/dx 7^(3x) =",
+          "options": [
+            "7^(3x) ln 7",
+            "3·7^(3x) ln 7",
+            "3x·7^(3x−1)",
+            "7^(3x)/3"
+          ],
+          "correct": 1,
+          "explanation": "u′ = 3."
+        },
+        {
+          "type": "quiz",
+          "question": "Toda exponencial aˣ pasa por:",
+          "options": [
+            "(1, 0)",
+            "(0, 1)",
+            "(0, 0)",
+            "(1, 1)"
+          ],
+          "correct": 1,
+          "explanation": "a⁰ = 1."
+        }
+      ]
+    },
+    {
+      "id": "l03-logaritmo",
+      "title": "Función logarítmica de base a y propiedades",
+      "summary": "logₐ x como inversa de aˣ, propiedades, cambio de base, ecuaciones y derivada.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "y = logₐ x   ⇔   aʸ = x        (a > 0, a ≠ 1, x > 0)",
+          "caption": "Definición: el logaritmo es un exponente"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "logₐ x pregunta: “¿a qué exponente hay que elevar a para obtener x?”. log₂ 8 = 3 porque 2³ = 8. Es la inversa de aˣ, por eso su gráfica es el reflejo de aˣ en y = x.",
+          "title": "En palabras"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Fórmula",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Producto",
+              "logₐ(MN) = logₐ M + logₐ N",
+              "log₂ 32 = log₂ 4 + log₂ 8 = 2 + 3"
+            ],
+            [
+              "Cociente",
+              "logₐ(M/N) = logₐ M − logₐ N",
+              "log₃(81/9) = 4 − 2"
+            ],
+            [
+              "Potencia",
+              "logₐ(Mᵖ) = p·logₐ M",
+              "log₁₀ 1000 = 3·log₁₀ 10"
+            ],
+            [
+              "Valores clave",
+              "logₐ 1 = 0;  logₐ a = 1",
+              "ln 1 = 0, ln e = 1"
+            ],
+            [
+              "Inversas",
+              "logₐ(aˣ) = x;  a^(logₐ x) = x",
+              "10^(log 7) = 7"
+            ],
+            [
+              "Cambio de base",
+              "logₐ x = ln x / ln a",
+              "log₂ 10 = ln 10/ln 2 ≈ 3,3219"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "No existen “propiedades” para logₐ(M + N) ni para (logₐ M)·(logₐ N). Error típico: log(x + 3) ≠ log x + log 3.",
+          "title": "Lo que NO se puede"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad de la gráfica",
+            "a > 1",
+            "0 < a < 1"
+          ],
+          "rows": [
+            [
+              "Dominio / rango",
+              "(0, ∞) / ℝ",
+              "(0, ∞) / ℝ"
+            ],
+            [
+              "Monotonía",
+              "Creciente",
+              "Decreciente"
+            ],
+            [
+              "Asíntota vertical",
+              "x = 0 (→ −∞)",
+              "x = 0 (→ +∞)"
+            ],
+            [
+              "Corte con x",
+              "(1, 0)",
+              "(1, 0)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ecuaciones exponenciales y logarítmicas"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "2ˣ = 10 → aplico ln: x ln 2 = ln 10 → **x = ln 10/ln 2 ≈ 3,32**.",
+          "title": "Ejemplo 1"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "log₃(x − 1) + log₃(x + 1) = 1 → log₃(x² − 1) = 1 → x² − 1 = 3 → x = ±2.\nComo x − 1 > 0, se descarta −2: **x = 2**. Siempre verifica el dominio.",
+          "title": "Ejemplo 2"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "e^(2x) − 5eˣ + 6 = 0: con u = eˣ, u² − 5u + 6 = 0 → u = 2 o u = 3 → **x = ln 2 o x = ln 3**.",
+          "title": "Ejemplo 3: cambio de variable"
+        },
+        {
+          "type": "heading",
+          "text": "Derivada"
+        },
+        {
+          "type": "formula",
+          "expression": "d/dx logₐ x = 1/(x·ln a)        d/dx logₐ u = u′/(u·ln a)        d/dx ln|u| = u′/u"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "d/dx log₁₀(x² + 1) = 2x/[(x² + 1) ln 10]\nd/dx log₂(sen x) = cos x/(sen x·ln 2) = cot x/ln 2\nd/dx ln(x³ − 4x) = (3x² − 4)/(x³ − 4x)\nd/dx ln √(x² + 1) = ½·2x/(x² + 1) = x/(x² + 1) (primero baja el exponente con la propiedad).",
+          "title": "Ejemplos"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Escalas logarítmicas: nivel sonoro β = 10·log₁₀(I/I₀) dB; pH = −log₁₀[H⁺]; magnitud de sismos. Útiles cuando una cantidad varía en muchos órdenes de magnitud."
+        },
+        {
+          "type": "quiz",
+          "question": "log₅ 125 =",
+          "options": [
+            "3",
+            "25",
+            "5",
+            "1/3"
+          ],
+          "correct": 0,
+          "explanation": "5³ = 125."
+        },
+        {
+          "type": "quiz",
+          "question": "log₂ 6 − log₂ 3 =",
+          "options": [
+            "log₂ 3",
+            "1",
+            "2",
+            "log₂ 18"
+          ],
+          "correct": 1,
+          "explanation": "log₂(6/3) = log₂ 2."
+        },
+        {
+          "type": "quiz",
+          "question": "d/dx log₃ x =",
+          "options": [
+            "1/x",
+            "1/(x ln 3)",
+            "ln 3/x",
+            "3/x"
+          ],
+          "correct": 1,
+          "explanation": "1/(x ln a)."
+        },
+        {
+          "type": "quiz",
+          "question": "Solución de 3ˣ = 20:",
+          "options": [
+            "20/3",
+            "ln 20/ln 3",
+            "ln 3/ln 20",
+            "log 20 − log 3"
+          ],
+          "correct": 1,
+          "explanation": "Aplicar ln."
+        },
+        {
+          "type": "quiz",
+          "question": "Dominio de log(x − 4):",
+          "options": [
+            "ℝ",
+            "(4, ∞)",
+            "[4, ∞)",
+            "(0, ∞)"
+          ],
+          "correct": 1,
+          "explanation": "x − 4 > 0."
+        },
+        {
+          "type": "quiz",
+          "question": "log(x + 3) es igual a:",
+          "options": [
+            "log x + log 3",
+            "log x · log 3",
+            "No se simplifica",
+            "3 log x"
+          ],
+          "correct": 2,
+          "explanation": "No hay propiedad de la suma."
+        }
+      ]
+    },
+    {
+      "id": "l04-limites-exp-log",
+      "title": "Límites de funciones exponenciales y logarítmicas",
+      "summary": "Límites notables con aˣ, ln y la forma 1^∞, y comparación de crecimiento.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Límite notable",
+            "Valor"
+          ],
+          "rows": [
+            [
+              "lím (x→0) (aˣ − 1)/x",
+              "ln a"
+            ],
+            [
+              "lím (x→0) (eˣ − 1)/x",
+              "1"
+            ],
+            [
+              "lím (x→0) ln(1 + x)/x",
+              "1"
+            ],
+            [
+              "lím (x→0) (1 + x)^(1/x)",
+              "e"
+            ],
+            [
+              "lím (x→∞) (1 + k/x)ˣ",
+              "eᵏ"
+            ],
+            [
+              "lím (x→0⁺) ln x",
+              "−∞"
+            ],
+            [
+              "lím (x→∞) ln x / x",
+              "0 (el logaritmo crece más lento)"
+            ],
+            [
+              "lím (x→∞) xⁿ / eˣ",
+              "0 (la exponencial gana a cualquier potencia)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Orden de crecimiento cuando x → ∞, de más lento a más rápido: **ln x  ≪  xⁿ  ≪  aˣ (a > 1)  ≪  x!**. En una carrera, la exponencial siempre termina ganándole a cualquier potencia.",
+          "title": "Jerarquía"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→0) (5ˣ − 3ˣ)/x = lím [(5ˣ − 1) − (3ˣ − 1)]/x = ln 5 − ln 3 = **ln(5/3)**.",
+          "title": "Ejemplo 1"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→0) (e^(3x) − 1)/x = lím 3·(e^(3x) − 1)/(3x) = **3** (llamo u = 3x).",
+          "title": "Ejemplo 2"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→0) ln(1 + 4x)/x = lím 4·ln(1 + 4x)/(4x) = **4**.",
+          "title": "Ejemplo 3"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→∞) (1 + 2/x)^(3x) = [lím (1 + 2/x)ˣ]³ = (e²)³ = **e⁶**.",
+          "title": "Ejemplo 4: forma 1^∞"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→∞) ((x + 3)/(x − 1))ˣ: (x + 3)/(x − 1) = 1 + 4/(x − 1).\nCon u = x − 1: (1 + 4/u)^(u + 1) → e⁴·1 = **e⁴**.",
+          "title": "Ejemplo 5"
+        },
+        {
+          "type": "formula",
+          "expression": "Para 1^∞:  lím f^g = e^(lím g·(f − 1))",
+          "caption": "Atajo útil"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "lím (x→0) (1 + sen x)^(1/x): f − 1 = sen x, g = 1/x → lím (sen x)/x = 1 → **e**.",
+          "title": "Ejemplo 6: con el atajo"
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) (2ˣ − 1)/x =",
+          "options": [
+            "2",
+            "ln 2",
+            "1",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "Límite notable."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→∞) (1 + 1/x)^(5x) =",
+          "options": [
+            "e",
+            "e⁵",
+            "5",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "(eˣ)⁵."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→∞) x¹⁰⁰/eˣ =",
+          "options": [
+            "∞",
+            "0",
+            "1",
+            "100"
+          ],
+          "correct": 1,
+          "explanation": "La exponencial domina."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0) ln(1 + 2x)/x =",
+          "options": [
+            "1",
+            "2",
+            "1/2",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "Multiplica y divide por 2."
+        },
+        {
+          "type": "quiz",
+          "question": "lím (x→0⁺) ln x =",
+          "options": [
+            "0",
+            "−∞",
+            "+∞",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "Asíntota vertical."
+        }
+      ]
+    },
+    {
+      "id": "l05-exponente-real",
+      "title": "Derivada con exponente real y derivación logarítmica",
+      "summary": "Por qué d/dx xʳ = r·xʳ⁻¹ vale para todo r real, y cómo derivar f(x)^g(x) y productos complicados.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "xʳ = e^(r ln x)  ⇒  d/dx xʳ = e^(r ln x)·(r/x) = r·xʳ⁻¹   (x > 0, r real)",
+          "caption": "Regla de la potencia para cualquier exponente real"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "d/dx x^√2 = √2·x^(√2 − 1);  d/dx x^π = π·x^(π − 1);  d/dx (x² + 1)^e = e·(x² + 1)^(e − 1)·2x.",
+          "title": "Ejemplos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Forma",
+            "Ejemplo",
+            "Regla"
+          ],
+          "rows": [
+            [
+              "Variable ^ constante",
+              "x⁵, x^π",
+              "Potencia: r·xʳ⁻¹"
+            ],
+            [
+              "Constante ^ variable",
+              "5ˣ, πˣ",
+              "Exponencial: aˣ ln a"
+            ],
+            [
+              "Variable ^ variable",
+              "xˣ, (sen x)ˣ, x^(sen x)",
+              "Derivación logarítmica"
+            ]
+          ],
+          "caption": "No confundas las tres formas"
+        },
+        {
+          "type": "heading",
+          "text": "Derivación logarítmica"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Escribe y = f(x).",
+            "Aplica ln a ambos lados y usa propiedades para “bajar” exponentes y separar productos.",
+            "Deriva implícitamente: (1/y)·y′ = …",
+            "Despeja y′ = y·(…) y reemplaza y."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = xˣ → ln y = x ln x → y′/y = ln x + 1 → **y′ = xˣ(ln x + 1)**.",
+          "title": "Ejemplo 1"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = x^(sen x) → ln y = sen x·ln x → y′/y = cos x·ln x + (sen x)/x → **y′ = x^(sen x)·[cos x·ln x + (sen x)/x]**.",
+          "title": "Ejemplo 2"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = (sen x)ˣ → ln y = x·ln(sen x) → y′/y = ln(sen x) + x·cot x → **y′ = (sen x)ˣ·[ln(sen x) + x cot x]**.",
+          "title": "Ejemplo 3"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "y = (x² + 1)³·√(x − 1)/(x + 2)⁴.\nln y = 3 ln(x² + 1) + ½ ln(x − 1) − 4 ln(x + 2).\ny′/y = 6x/(x² + 1) + 1/[2(x − 1)] − 4/(x + 2).\n**y′ = y·[6x/(x² + 1) + 1/(2(x − 1)) − 4/(x + 2)]**. Mucho más corto que con producto y cociente.",
+          "title": "Ejemplo 4: producto complicado"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Error común: derivar xˣ como “x·xˣ⁻¹” (regla de la potencia) o como “xˣ ln x” (regla exponencial). Ninguna de las dos sirve: la base y el exponente cambian a la vez.",
+          "title": "Trampa"
+        },
+        {
+          "type": "quiz",
+          "question": "d/dx x^√3 =",
+          "options": [
+            "√3·x^(√3−1)",
+            "x^√3 ln x",
+            "√3 x^√3",
+            "x^√3/√3"
+          ],
+          "correct": 0,
+          "explanation": "Potencia con exponente real."
+        },
+        {
+          "type": "quiz",
+          "question": "d/dx xˣ =",
+          "options": [
+            "x·xˣ⁻¹",
+            "xˣ ln x",
+            "xˣ(ln x + 1)",
+            "ln x + 1"
+          ],
+          "correct": 2,
+          "explanation": "Derivación logarítmica."
+        },
+        {
+          "type": "quiz",
+          "question": "Para derivar (x + 1)^(x²) conviene:",
+          "options": [
+            "Regla de la potencia",
+            "Regla exponencial",
+            "Derivación logarítmica",
+            "Regla del cociente"
+          ],
+          "correct": 2,
+          "explanation": "Variable a la variable."
+        },
+        {
+          "type": "quiz",
+          "question": "Si ln y = x ln x, entonces y′/y =",
+          "options": [
+            "ln x",
+            "ln x + 1",
+            "1/x",
+            "x"
+          ],
+          "correct": 1,
+          "explanation": "Producto."
+        },
+        {
+          "type": "quiz",
+          "question": "d/dx 3ˣ es de la forma:",
+          "options": [
+            "Potencia",
+            "Exponencial",
+            "Logarítmica",
+            "Variable ^ variable"
+          ],
+          "correct": 1,
+          "explanation": "Base constante."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de inversas, exponenciales y logaritmos",
+      "summary": "Derivada de la inversa, derivación logarítmica, ecuaciones, límites 1^∞ y decaimiento.",
+      "minutes": 35,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Estos ejercicios son más largos que las preguntas de práctica. Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta. Verde = básico, naranja = intermedio, rojo = avanzado (nivel examen).",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Derivada de la inversa sin despejar",
+          "level": 2,
+          "statement": "Sea f(x) = x³ + 2x + 1. Calcula (f⁻¹)′(4).",
+          "steps": [
+            "f′(x) = 3x² + 2 > 0: f es creciente, tiene inversa.",
+            "Busca c con f(c) = 4: c³ + 2c + 1 = 4 → c = 1.",
+            "(f⁻¹)′(4) = 1/f′(1) = 1/5."
+          ],
+          "answer": "**1/5**"
+        },
+        {
+          "type": "exercise",
+          "title": "Variable elevada a un logaritmo",
+          "level": 3,
+          "statement": "Deriva y = x^(ln x).",
+          "steps": [
+            "ln y = ln x · ln x = (ln x)².",
+            "y′/y = 2 ln x · (1/x).",
+            "y′ = y · 2 ln x / x."
+          ],
+          "answer": "**y′ = 2 ln x · x^(ln x − 1)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Ecuación logarítmica",
+          "level": 2,
+          "statement": "Resuelve ln x + ln(x − 3) = ln 10.",
+          "steps": [
+            "Dominio: x > 3.",
+            "ln[x(x − 3)] = ln 10 → x² − 3x − 10 = 0 → (x − 5)(x + 2) = 0.",
+            "x = −2 no está en el dominio."
+          ],
+          "answer": "**x = 5**"
+        },
+        {
+          "type": "exercise",
+          "title": "Límite de la forma 1^∞",
+          "level": 3,
+          "statement": "Calcula lím (x→∞) [(2x + 3)/(2x − 1)]ˣ.",
+          "steps": [
+            "(2x + 3)/(2x − 1) = 1 + 4/(2x − 1): forma 1^∞.",
+            "Atajo: e^(lím g(f − 1)) = e^(lím 4x/(2x − 1)).",
+            "4x/(2x − 1) → 2."
+          ],
+          "answer": "**e²**"
+        },
+        {
+          "type": "exercise",
+          "title": "Producto de logaritmo y exponencial",
+          "level": 2,
+          "statement": "Deriva y = 3ˣ · log₂(x² + 1).",
+          "steps": [
+            "Producto: (3ˣ)′ = 3ˣ ln 3;  [log₂(x² + 1)]′ = 2x/[(x² + 1) ln 2]."
+          ],
+          "answer": "**y′ = 3ˣ [ln 3 · log₂(x² + 1) + 2x/((x² + 1) ln 2)]**"
+        },
+        {
+          "type": "exercise",
+          "title": "Datación con carbono 14",
+          "level": 2,
+          "statement": "La vida media del C-14 es 5 730 años. Una muestra de madera conserva el 35 % de su C-14 original. ¿Qué edad tiene?",
+          "steps": [
+            "Q(t) = Q₀·(1/2)^(t/5730).",
+            "0,35 = (1/2)^(t/5730) → ln 0,35 = (t/5730)·ln 0,5.",
+            "t = 5730·ln 0,35/ln 0,5."
+          ],
+          "answer": "**t ≈ 8 680 años**"
+        }
+      ]
+    }
+  ]
+}

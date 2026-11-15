@@ -283,6 +283,489 @@
           "explanation": "Producto vectorial."
         }
       ]
+    },
+    {
+      "id": "l04-tipos",
+      "title": "Tipos de vectores: posición, estándar, desplazado, ligado, libre y deslizante",
+      "summary": "Cómo se clasifican los vectores según dónde está su origen y si se pueden mover sin cambiar el efecto físico.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un vector tiene **magnitud, dirección y sentido**. Pero en física también importa **dónde se aplica**: no es lo mismo empujar una puerta cerca de las bisagras que en la manija. Según cuánto importe el punto de aplicación, el vector es ligado, deslizante o libre.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Qué es",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Vector posición r",
+              "Va del origen O a un punto P: r = x i + y j + z k",
+              "Ubicación de un nudo de una armadura"
+            ],
+            [
+              "En posición estándar",
+              "Su origen (cola) está en el origen de coordenadas",
+              "r = 3i + 4j dibujado desde (0, 0)"
+            ],
+            [
+              "Desplazado",
+              "Su origen está fuera del origen; se describe con punto inicial y final: AB = B − A",
+              "El vector de A(1, 2) a B(4, 6) es (3, 4)"
+            ],
+            [
+              "Ligado (fijo)",
+              "Tiene un punto de aplicación definido: moverlo cambia el efecto",
+              "Una fuerza sobre un cuerpo deformable; un vector posición"
+            ],
+            [
+              "Deslizante",
+              "Puede moverse a lo largo de su **línea de acción** sin cambiar el efecto",
+              "Fuerza sobre un cuerpo rígido (principio de transmisibilidad)"
+            ],
+            [
+              "Libre",
+              "Puede trasladarse a cualquier punto del espacio",
+              "Un par (momento de un par), un desplazamiento"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Ligado: una chinche clavada en un punto. Deslizante: una cuenta en un hilo: puede correr por el hilo pero no salirse de él. Libre: una moneda sobre la mesa que puedes poner donde quieras.",
+          "title": "Analogía"
+        },
+        {
+          "type": "formula",
+          "expression": "AB = B − A = (xB − xA) i + (yB − yA) j + (zB − zA) k        |AB| = √(dx² + dy² + dz²)",
+          "caption": "Vector desplazado de A a B"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "A(1, −2, 3), B(4, 2, 3). AB = (3, 4, 0), |AB| = 5. El vector en posición estándar equivalente es 3i + 4j, que empieza en el origen.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Dos vectores son **iguales** si tienen la misma magnitud, dirección y sentido, aunque estén en lugares distintos (como vectores libres). Pero dos fuerzas iguales aplicadas en puntos distintos pueden producir **efectos distintos** (giro distinto): por eso en estática se habla de fuerzas **equivalentes**, no solo iguales."
+        },
+        {
+          "type": "quiz",
+          "question": "Una fuerza sobre un cuerpo rígido se comporta como vector:",
+          "options": [
+            "Libre",
+            "Deslizante",
+            "Ligado",
+            "Nulo"
+          ],
+          "correct": 1,
+          "explanation": "Transmisibilidad: se mueve sobre su línea de acción."
+        },
+        {
+          "type": "quiz",
+          "question": "El momento de un par es un vector:",
+          "options": [
+            "Libre",
+            "Deslizante",
+            "Ligado",
+            "Posición"
+          ],
+          "correct": 0,
+          "explanation": "Es igual respecto a cualquier punto."
+        },
+        {
+          "type": "quiz",
+          "question": "Vector de A(2, 1) a B(5, 5):",
+          "options": [
+            "(7, 6)",
+            "(3, 4)",
+            "(−3, −4)",
+            "(2, 1)"
+          ],
+          "correct": 1,
+          "explanation": "B − A."
+        },
+        {
+          "type": "quiz",
+          "question": "Un vector en posición estándar empieza en:",
+          "options": [
+            "Cualquier punto",
+            "El origen",
+            "El punto final",
+            "El eje y"
+          ],
+          "correct": 1,
+          "explanation": "Cola en (0, 0, 0)."
+        }
+      ]
+    },
+    {
+      "id": "l05-segmento",
+      "title": "Vector unitario y fuerza dirigida a lo largo de un segmento",
+      "summary": "λ = AB/|AB| y F = F·λ: la herramienta para cables y barras en 2D y 3D.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "λ = AB / |AB| = (dx i + dy j + dz k)/d        F = F·λ = (F/d)(dx i + dy j + dz k)",
+          "caption": "Expresión vectorial de una fuerza a lo largo de AB (Beer 2.12)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El vector unitario λ es una **flecha de longitud 1** que solo indica hacia dónde apuntar. Para obtener la fuerza, multiplicas esa dirección por la magnitud: como decir “3 kN en esa dirección”.",
+          "title": "Idea"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ubica A (donde la fuerza actúa) y B (hacia donde jala el cable).",
+            "Calcula dx, dy, dz (siempre B − A) y la longitud d.",
+            "λ = (dx, dy, dz)/d. Comprueba que |λ| = 1.",
+            "F = F·λ. Las componentes llevan el signo de dx, dy, dz."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un cable va de A(0, 0, 4) m a B(6, −3, 2) m con tensión 2 100 N.\nAB = (6, −3, −2) m, d = √(36 + 9 + 4) = 7 m.\nλ = (6/7, −3/7, −2/7).\n**F = 2100·λ = (1800 i − 900 j − 600 k) N.**\nÁngulos directores: cos θx = 6/7 → θx = 31,0°; cos θy = −3/7 → 115,4°; cos θz = −2/7 → 106,6°.",
+          "title": "Ejemplo resuelto"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Dos cables tiran de A: T₁ = 1800i − 900j − 600k (N) y T₂ = −1200i + 600j − 900k (N). La resultante es R = 600i − 300j − 1500k N, con |R| = √(600² + 300² + 1500²) ≈ 1 643 N. Suma vectorial = suma de componentes.",
+          "title": "Resultante de fuerzas en 3D"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El orden importa: λ va **desde el punto donde actúa la fuerza hacia donde jala**. Un cable siempre jala (tensión) hacia el otro extremo del cable.",
+          "title": "Sentido"
+        },
+        {
+          "type": "quiz",
+          "question": "Si AB = (2, 3, 6), |AB| =",
+          "options": [
+            "11",
+            "7",
+            "√11",
+            "49"
+          ],
+          "correct": 1,
+          "explanation": "√(4 + 9 + 36)."
+        },
+        {
+          "type": "quiz",
+          "question": "Con AB = (2, 3, 6) y F = 700 N, Fz =",
+          "options": [
+            "600 N",
+            "300 N",
+            "200 N",
+            "700 N"
+          ],
+          "correct": 0,
+          "explanation": "700·6/7."
+        },
+        {
+          "type": "quiz",
+          "question": "|λ| siempre vale:",
+          "options": [
+            "0",
+            "1",
+            "F",
+            "d"
+          ],
+          "correct": 1,
+          "explanation": "Es unitario."
+        },
+        {
+          "type": "quiz",
+          "question": "Para un cable que jala de A hacia B, λ se calcula con:",
+          "options": [
+            "A − B",
+            "B − A",
+            "A + B",
+            "A·B"
+          ],
+          "correct": 1,
+          "explanation": "Desde A hacia B."
+        }
+      ]
+    },
+    {
+      "id": "l06-paralelogramo-proyeccion",
+      "title": "Principio del paralelogramo y proyección de vectores",
+      "summary": "Resultante gráfica y con leyes de coseno y seno; proyección escalar y vectorial sobre una línea.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Dos fuerzas aplicadas en un mismo punto equivalen a una sola: la **diagonal del paralelogramo** construido con ellas (ley experimental, Stevin). La regla del triángulo es lo mismo: pones una flecha a continuación de la otra.",
+          "title": "Principio del paralelogramo"
+        },
+        {
+          "type": "formula",
+          "expression": "R² = P² + Q² + 2PQ cos α    (α = ángulo entre P y Q)        sen β / Q = sen(180° − α) / R"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "P = 40 N y Q = 60 N forman 70° entre sí.\nR² = 1600 + 3600 + 2·40·60·cos 70° = 5200 + 1641,7 → **R ≈ 82,7 N**.\nÁngulo entre R y P: sen β = 60·sen 110°/82,7 → **β ≈ 43,0°**.",
+          "title": "Ejemplo con paralelogramo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En la regla del triángulo, el ángulo **interior** entre las dos flechas es 180° − α. Por eso, con la ley de cosenos “clásica” R² = P² + Q² − 2PQ cos(180° − α), que da lo mismo. Dibuja siempre para no confundirte."
+        },
+        {
+          "type": "heading",
+          "text": "Proyección de un vector sobre una línea"
+        },
+        {
+          "type": "formula",
+          "expression": "Pₒₗ = P·λ = P cos θ  (escalar)        proy = (P·λ) λ  (vector)        cos θ = (P·Q)/(PQ)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La proyección es la **sombra** de P sobre la línea cuando la luz cae perpendicular. Si θ < 90° la sombra apunta hacia el mismo lado que λ (positiva); si θ > 90°, hacia el contrario (negativa).",
+          "title": "Analogía"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "P = (30, 40, 120) N, |P| = 130 N. Línea OA con A(2, −1, 2): λ = (2, −1, 2)/3.\nP·λ = (60 − 40 + 240)/3 = **86,7 N** (componente de P a lo largo de OA).\nVector proyección: 86,7·λ = (57,8; −28,9; 57,8) N.\nÁngulo entre P y OA: cos θ = 86,7/130 → **θ ≈ 48,2°**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "La proyección sirve para saber cuánta fuerza de un cable actúa **a lo largo de una barra** o de un poste (lo que lo comprime) y cuánta es perpendicular (lo que lo flexiona)."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos fuerzas de 30 N y 40 N perpendiculares dan R =",
+          "options": [
+            "70 N",
+            "50 N",
+            "10 N",
+            "35 N"
+          ],
+          "correct": 1,
+          "explanation": "Pitágoras."
+        },
+        {
+          "type": "quiz",
+          "question": "Si P·λ < 0, el ángulo entre P y la línea es:",
+          "options": [
+            "Agudo",
+            "Recto",
+            "Obtuso",
+            "0°"
+          ],
+          "correct": 2,
+          "explanation": "cos θ < 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Proyección de (3, 4, 0) sobre el eje x:",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "0"
+          ],
+          "correct": 0,
+          "explanation": "λ = i."
+        },
+        {
+          "type": "quiz",
+          "question": "Si dos vectores son perpendiculares, su producto punto es:",
+          "options": [
+            "1",
+            "0",
+            "El producto de magnitudes",
+            "−1"
+          ],
+          "correct": 1,
+          "explanation": "cos 90° = 0."
+        }
+      ]
+    },
+    {
+      "id": "l07-triple-producto",
+      "title": "Producto triple escalar y el paralelepípedo",
+      "summary": "(P × Q)·S como volumen, como determinante, criterio de coplanaridad y su uso para el momento respecto a un eje.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "S·(P × Q) = | Sx Sy Sz ; Px Py Pz ; Qx Qy Qz |   (determinante 3 × 3)",
+          "caption": "Producto triple escalar"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "P y Q forman la base de una caja inclinada (paralelepípedo) y S es la arista lateral. |P × Q| es el **área de la base** y su producto punto con S toma la **altura** perpendicular. Resultado: |S·(P × Q)| = **volumen de la caja**.",
+          "title": "Interpretación geométrica"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Se puede rotar cíclicamente sin cambiar el valor: S·(P × Q) = P·(Q × S) = Q·(S × P).",
+            "Intercambiar dos vectores cambia el signo.",
+            "Si vale 0, los tres vectores son **coplanares** (la caja se aplasta: volumen cero)."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "P = (3, 0, 0), Q = (1, 4, 0), S = (1, 1, 5).\nP × Q = (0, 0, 12) → área de la base 12.\nS·(P × Q) = 5·12 = **60** → volumen del paralelepípedo = 60 unidades³.\nCon el determinante: |1 1 5; 3 0 0; 1 4 0| = 60 ✔.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "¿Son coplanares (1, 2, 3), (2, 4, 6) y (0, 1, 1)? Las dos primeras son paralelas, así que el determinante es 0: sí son coplanares.",
+          "title": "Coplanaridad"
+        },
+        {
+          "type": "formula",
+          "expression": "Mₒₗ = λ · (r × F)",
+          "caption": "Momento de F respecto al eje OL (producto triple)"
+        },
+        {
+          "type": "text",
+          "text": "Esta es la aplicación más importante en estática: cuánto **gira** una fuerza un cuerpo alrededor de un eje (una bisagra, un eje de una polea). Se ve en la lección de momentos en 3D."
+        },
+        {
+          "type": "quiz",
+          "question": "|S·(P × Q)| representa:",
+          "options": [
+            "Un área",
+            "Un volumen",
+            "Un ángulo",
+            "Una longitud"
+          ],
+          "correct": 1,
+          "explanation": "Volumen del paralelepípedo."
+        },
+        {
+          "type": "quiz",
+          "question": "Si S·(P × Q) = 0, los vectores son:",
+          "options": [
+            "Perpendiculares",
+            "Coplanares",
+            "Unitarios",
+            "Iguales"
+          ],
+          "correct": 1,
+          "explanation": "Volumen cero."
+        },
+        {
+          "type": "quiz",
+          "question": "Al intercambiar P y Q, el triple producto:",
+          "options": [
+            "No cambia",
+            "Cambia de signo",
+            "Se duplica",
+            "Se anula"
+          ],
+          "correct": 1,
+          "explanation": "P × Q = −Q × P."
+        },
+        {
+          "type": "quiz",
+          "question": "Triple producto de i, j, k:",
+          "options": [
+            "0",
+            "1",
+            "−1",
+            "3"
+          ],
+          "correct": 1,
+          "explanation": "Volumen del cubo unitario."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de vectores",
+      "summary": "Resultantes en 2D y 3D, descomposición en direcciones no perpendiculares, ángulos y áreas.",
+      "minutes": 35,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuelve cada ejercicio **en papel** con su dibujo o diagrama de cuerpo libre; luego pide la pista, la solución paso a paso o solo la respuesta. Usa g = 9,81 m/s².",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Resultante de tres fuerzas coplanares",
+          "level": 2,
+          "statement": "Sobre una argolla actúan 100 N a 30°, 150 N a 135° y 80 N a 250° (ángulos desde +x). Halla la resultante.",
+          "steps": [
+            "Rx = 100 cos 30° + 150 cos 135° + 80 cos 250° = 86,6 − 106,1 − 27,4 = −46,8 N.",
+            "Ry = 100 sen 30° + 150 sen 135° + 80 sen 250° = 50 + 106,1 − 75,2 = 80,9 N.",
+            "R = √(46,8² + 80,9²); ángulo en el 2.º cuadrante: 180° − arctan(80,9/46,8)."
+          ],
+          "answer": "**R ≈ 93,5 N a 120,1°**"
+        },
+        {
+          "type": "exercise",
+          "title": "Dos cables en el espacio",
+          "level": 3,
+          "statement": "Del punto A(0, 0, 6) m salen dos cables: AB hasta B(3, −2, 0) con tensión 700 N y AC hasta C(−2, −3, 0) con tensión 350 N. Halla la fuerza resultante sobre A, su magnitud, sus ángulos directores y el ángulo entre los cables.",
+          "steps": [
+            "AB = (3, −2, −6), |AB| = 7 → T₁ = 700·(3, −2, −6)/7 = (300, −200, −600) N.",
+            "AC = (−2, −3, −6), |AC| = 7 → T₂ = 350·(−2, −3, −6)/7 = (−100, −150, −300) N.",
+            "R = (200, −350, −900) N; |R| = √(200² + 350² + 900²) ≈ 986 N.",
+            "cos θx = 200/986, cos θy = −350/986, cos θz = −900/986.",
+            "Entre cables: cos θ = (AB·AC)/(7·7) = (−6 + 6 + 36)/49."
+          ],
+          "answer": "**R = (200, −350, −900) N, |R| ≈ 986 N; θx ≈ 78,3°, θy ≈ 110,8°, θz ≈ 155,9°; ángulo entre cables ≈ 42,7°**"
+        },
+        {
+          "type": "exercise",
+          "title": "Componentes en ejes no perpendiculares",
+          "level": 3,
+          "statement": "Una fuerza horizontal de 500 N debe descomponerse en dos componentes: una a lo largo de una barra a 30° sobre la horizontal y otra a lo largo de una barra a 45° bajo la horizontal. Halla ambas.",
+          "steps": [
+            "Dibuja el triángulo de fuerzas: los ángulos son 30° (entre F y la primera), 45° (entre F y la segunda) y 105° el restante.",
+            "Ley de senos: Fu/sen 45° = Fv/sen 30° = 500/sen 105°.",
+            "Fu = 500·sen 45°/sen 105°;  Fv = 500·sen 30°/sen 105°."
+          ],
+          "answer": "**Fu ≈ 366 N (barra a 30°); Fv ≈ 259 N (barra a 45°)**",
+          "hint": "No son componentes rectangulares: usa paralelogramo y ley de senos."
+        },
+        {
+          "type": "exercise",
+          "title": "Área de un triángulo en el espacio",
+          "level": 2,
+          "statement": "Halla el área del triángulo de vértices A(1, 0, 2), B(3, 1, 0) y C(0, 4, 1).",
+          "steps": [
+            "AB = (2, 1, −2); AC = (−1, 4, −1).",
+            "AB × AC = (1·(−1) − (−2)·4,  (−2)(−1) − 2·(−1),  2·4 − 1·(−1)) = (7, 4, 9).",
+            "Área = ½·|AB × AC| = ½·√(49 + 16 + 81)."
+          ],
+          "answer": "**Área = ½√146 ≈ 6,04 unidades²**"
+        }
+      ]
     }
   ]
 }

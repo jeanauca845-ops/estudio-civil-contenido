@@ -609,6 +609,722 @@
           "explanation": "Se descuenta."
         }
       ]
+    },
+    {
+      "id": "l06-transmisibilidad-3d",
+      "title": "Principio de transmisibilidad y momento en 3D",
+      "summary": "Por qué una fuerza puede deslizarse sobre su línea de acción, momento r × F con determinante, Varignon y momento respecto a un eje.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "En un cuerpo rígido, una fuerza produce el **mismo efecto** (misma traslación y mismo giro) si se aplica en cualquier punto de su línea de acción. Empujar un auto desde atrás o jalarlo con una cuerda desde adelante, en la misma línea, da el mismo movimiento.",
+          "title": "Principio de transmisibilidad"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Vale para el **equilibrio y el movimiento** del cuerpo rígido, no para los esfuerzos internos: empujar o jalar una barra no es lo mismo para la barra (compresión vs tracción).",
+          "title": "Límite del principio"
+        },
+        {
+          "type": "formula",
+          "expression": "Mₒ = r × F = | i  j  k ; x  y  z ; Fx  Fy  Fz |",
+          "caption": "Momento respecto a O (r va de O a cualquier punto de la línea de acción)"
+        },
+        {
+          "type": "formula",
+          "expression": "Mx = yFz − zFy        My = zFx − xFz        Mz = xFy − yFx"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "F = (100, −200, 50) N actúa en el punto (4, 0, 3) m.\nMx = 0·50 − 3·(−200) = 600\nMy = 3·100 − 4·50 = 100\nMz = 4·(−200) − 0·100 = −800\n**Mₒ = (600 i + 100 j − 800 k) N·m**, |Mₒ| ≈ 1 005 N·m.",
+          "title": "Ejemplo 1"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Por la transmisibilidad, puedes usar como r **cualquier** punto de la línea de acción: el resultado de r × F es el mismo. Elige el punto que deje más ceros.",
+          "title": "Consecuencia práctica"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Teorema de Varignon: el momento de la resultante de varias fuerzas concurrentes es la suma de sus momentos: r × (F₁ + F₂) = r × F₁ + r × F₂."
+        },
+        {
+          "type": "heading",
+          "text": "Momento respecto a un eje"
+        },
+        {
+          "type": "formula",
+          "expression": "Mₒₗ = λ·(r × F) = | λx λy λz ; x y z ; Fx Fy Fz |"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una puerta solo puede girar alrededor de sus bisagras. De todo el momento r × F, solo “sirve” la parte a lo largo del eje de las bisagras: esa es la proyección λ·Mₒ.",
+          "title": "Analogía de la puerta"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Con la fuerza del ejemplo 1 y el eje que pasa por O con dirección λ = (2, 1, 2)/3:\nMₒₗ = λ·Mₒ = (2·600 + 1·100 + 2·(−800))/3 = **−100 N·m** (el signo indica el sentido de giro según la regla de la mano derecha).",
+          "title": "Ejemplo 2"
+        },
+        {
+          "type": "quiz",
+          "question": "El principio de transmisibilidad permite mover una fuerza:",
+          "options": [
+            "A cualquier punto",
+            "A lo largo de su línea de acción",
+            "Paralela a sí misma",
+            "Nunca"
+          ],
+          "correct": 1,
+          "explanation": "Vector deslizante."
+        },
+        {
+          "type": "quiz",
+          "question": "Mz para r = (2, 3, 0) y F = (4, 1, 0):",
+          "options": [
+            "−10",
+            "10",
+            "14",
+            "2"
+          ],
+          "correct": 0,
+          "explanation": "xFy − yFx = 2 − 12."
+        },
+        {
+          "type": "quiz",
+          "question": "El momento respecto a un eje es:",
+          "options": [
+            "Un vector libre",
+            "Un escalar (proyección)",
+            "Siempre cero",
+            "Igual a F"
+          ],
+          "correct": 1,
+          "explanation": "λ·(r × F)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la línea de acción de F corta al eje, Mₒₗ =",
+          "options": [
+            "Máximo",
+            "0",
+            "F·d",
+            "Indeterminado"
+          ],
+          "correct": 1,
+          "explanation": "No hay brazo respecto al eje."
+        }
+      ]
+    },
+    {
+      "id": "l07-reduccion",
+      "title": "Fuerzas equivalentes y reducción de un sistema de fuerzas",
+      "summary": "Sistema fuerza–par en un punto, sistemas equivalentes y cuándo todo se reduce a una sola fuerza.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "R = ΣF        Mᴿₒ = Σ(r × F) + ΣM(pares)",
+          "caption": "Reducción a un sistema fuerza–par en O"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Cualquier conjunto de fuerzas, por complicado que sea, se puede reemplazar por **una fuerza R en O más un par Mᴿₒ**. Es como resumir un libro entero en dos datos: cuánto empuja todo junto y cuánto hace girar respecto a O.",
+          "title": "Idea"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Dos sistemas son **equivalentes** si tienen la misma R y el mismo Mᴿ respecto a un mismo punto. Si es así, producen el mismo efecto sobre el cuerpo rígido.",
+          "title": "Equivalencia"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Caso",
+            "Se reduce a"
+          ],
+          "rows": [
+            [
+              "Fuerzas concurrentes",
+              "Una sola fuerza R por el punto de concurrencia"
+            ],
+            [
+              "Fuerzas coplanares",
+              "Una sola fuerza R (con línea de acción desplazada), salvo que R = 0 → solo un par"
+            ],
+            [
+              "Fuerzas paralelas",
+              "Una sola fuerza R ubicada en x̄ = Σ(Fx)/ΣF"
+            ],
+            [
+              "Caso general en 3D",
+              "Una llave de torsión (siguiente lección)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Sobre una viga horizontal actúan, hacia abajo: 10 kN en x = 1 m, 20 kN en x = 3 m y 15 kN en x = 6 m, más un par de 12 kN·m antihorario.\nR = 45 kN ↓.\nMᴿ en A (x = 0), sentido horario positivo: 10·1 + 20·3 + 15·6 − 12 = 148 kN·m.\nUna sola fuerza equivalente: 45·x = 148 → **x ≈ 3,29 m** desde A.",
+          "title": "Ejemplo 1: reducir a una sola fuerza"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Trasladar una fuerza F = 500 N vertical aplicada en el borde de una ménsula a 0,2 m del eje de una columna: equivale a 500 N en el eje **más un par** de 500·0,2 = **100 N·m**. Esto es lo que causa la flexión de las columnas con carga excéntrica.",
+          "title": "Ejemplo 2: carga excéntrica"
+        },
+        {
+          "type": "quiz",
+          "question": "Un sistema fuerza–par en O tiene:",
+          "options": [
+            "Solo R",
+            "R y Mᴿₒ",
+            "Solo un par",
+            "Tres fuerzas"
+          ],
+          "correct": 1,
+          "explanation": "Resultante y momento."
+        },
+        {
+          "type": "quiz",
+          "question": "Fuerzas paralelas de 5 kN en x = 0 y 15 kN en x = 4 m: x̄ =",
+          "options": [
+            "2 m",
+            "3 m",
+            "1 m",
+            "4 m"
+          ],
+          "correct": 1,
+          "explanation": "(0 + 60)/20."
+        },
+        {
+          "type": "quiz",
+          "question": "Si R = 0 pero Mᴿ ≠ 0, el sistema equivale a:",
+          "options": [
+            "Nada",
+            "Un par",
+            "Una fuerza",
+            "Una llave"
+          ],
+          "correct": 1,
+          "explanation": "Solo hace girar."
+        },
+        {
+          "type": "quiz",
+          "question": "Trasladar una fuerza a otro punto exige agregar:",
+          "options": [
+            "Otra fuerza igual",
+            "Un par igual a su momento respecto al nuevo punto",
+            "Nada",
+            "El peso"
+          ],
+          "correct": 1,
+          "explanation": "Sistema fuerza–par."
+        }
+      ]
+    },
+    {
+      "id": "l08-llave-torsion",
+      "title": "Llave de torsión (torsor)",
+      "summary": "La forma más simple de un sistema 3D: una fuerza y un par colineales. Paso, eje de la llave y cómo calcularlos.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Al apretar un tornillo con un destornillador **empujas** (fuerza a lo largo del eje) y a la vez **giras** (par alrededor del mismo eje). Esa combinación de fuerza y par con la misma dirección se llama **llave de torsión** o torsor.",
+          "title": "Analogía del destornillador"
+        },
+        {
+          "type": "formula",
+          "expression": "M₁ = λ·Mᴿₒ = (R·Mᴿₒ)/R        p = M₁/R   (paso de la llave)",
+          "caption": "Componente del par a lo largo de R"
+        },
+        {
+          "type": "formula",
+          "expression": "r = (R × Mᴿₒ)/R²",
+          "caption": "Punto del eje de la llave más cercano a O"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Reduce el sistema a R y Mᴿₒ en O.",
+            "Calcula M₁ = (R·Mᴿₒ)/R (lo que gira alrededor de R).",
+            "El resto del momento (perpendicular) se elimina **trasladando** R al eje de la llave, que pasa por r = (R × Mᴿₒ)/R².",
+            "La llave es: R actuando por ese eje + el par M₁·λ."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Fuerzas: −300k N en O(0, 0, 0), −200k N en (2, 0, 0) m y 400i N en (0, 3, 0) m.\nR = 400i − 500k N, |R| ≈ 640,3 N.\nMᴿₒ = (2i) × (−200k) + (3j) × (400i) = 400j − 1200k N·m.\nR·Mᴿₒ = 0 + 0 + 600 000 → M₁ = 600 000/640,3 ≈ **937 N·m**; paso p ≈ **1,46 m**.\nEje de la llave: r = (R × Mᴿₒ)/R² = (20, 48, 16)/41 ≈ (0,49; 1,17; 0,39) m.",
+          "title": "Ejemplo resuelto"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si R·Mᴿₒ = 0 (R perpendicular al par), M₁ = 0: el sistema se reduce a **una sola fuerza**. Esto pasa siempre con fuerzas concurrentes, coplanares o paralelas.",
+          "title": "Cuándo no hay llave"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Si el paso p es positivo, el par gira como un tornillo de rosca derecha que avanza en el sentido de R (llave positiva); si es negativo, al revés."
+        },
+        {
+          "type": "quiz",
+          "question": "En una llave de torsión, la fuerza y el par son:",
+          "options": [
+            "Perpendiculares",
+            "Colineales (misma dirección)",
+            "Nulos",
+            "Opuestos siempre"
+          ],
+          "correct": 1,
+          "explanation": "Definición."
+        },
+        {
+          "type": "quiz",
+          "question": "El paso de la llave es:",
+          "options": [
+            "R/M₁",
+            "M₁/R",
+            "R·M",
+            "M₁·R"
+          ],
+          "correct": 1,
+          "explanation": "p = M₁/R."
+        },
+        {
+          "type": "quiz",
+          "question": "Si R·Mᴿₒ = 0, el sistema equivale a:",
+          "options": [
+            "Una llave",
+            "Una sola fuerza (o un par si R = 0)",
+            "Nada",
+            "Dos fuerzas"
+          ],
+          "correct": 1,
+          "explanation": "M₁ = 0."
+        },
+        {
+          "type": "quiz",
+          "question": "Las fuerzas coplanares siempre se reducen a:",
+          "options": [
+            "Una llave",
+            "Una fuerza o un par",
+            "Tres fuerzas",
+            "Un torsor"
+          ],
+          "correct": 1,
+          "explanation": "R está en el plano y M es perpendicular."
+        }
+      ]
+    },
+    {
+      "id": "l09-centros-masa",
+      "title": "Centros de masa y centroides de figuras",
+      "summary": "Centro de masa de partículas, tabla de figuras básicas y el método de la tabla para figuras compuestas y con huecos.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "x̄ = Σ mᵢxᵢ / Σ mᵢ        ȳ = Σ mᵢyᵢ / Σ mᵢ",
+          "caption": "Centro de masa de un sistema de partículas"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Es el **punto de equilibrio**: si apoyas la placa en la punta de un lápiz justo en el centro de masa, no se cae. Para un material homogéneo, el centro de masa coincide con el **centroide** (centro geométrico).",
+          "title": "Analogía"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Masas de 2 kg en (0, 0), 3 kg en (4, 0) y 5 kg en (2, 3).\nx̄ = (0 + 12 + 10)/10 = 2,2 m;  ȳ = (0 + 0 + 15)/10 = 1,5 m. **G = (2,2; 1,5) m.**",
+          "title": "Ejemplo 1: partículas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Figura",
+            "Área",
+            "Centroide (desde la esquina o centro indicado)"
+          ],
+          "rows": [
+            [
+              "Rectángulo b × h",
+              "bh",
+              "(b/2, h/2)"
+            ],
+            [
+              "Triángulo rectángulo b × h",
+              "bh/2",
+              "(b/3, h/3) desde el ángulo recto"
+            ],
+            [
+              "Triángulo cualquiera",
+              "bh/2",
+              "h/3 desde la base (cruce de medianas)"
+            ],
+            [
+              "Círculo de radio r",
+              "πr²",
+              "En el centro"
+            ],
+            [
+              "Semicírculo",
+              "πr²/2",
+              "4r/(3π) ≈ 0,424r desde el diámetro"
+            ],
+            [
+              "Cuarto de círculo",
+              "πr²/4",
+              "(4r/(3π), 4r/(3π)) desde el centro"
+            ],
+            [
+              "Enjuta parabólica (y = kx²)",
+              "bh/3",
+              "(3b/4, 3h/10)"
+            ]
+          ],
+          "caption": "Figuras básicas (Beer, tabla 5.8)"
+        },
+        {
+          "type": "heading",
+          "text": "Método de la tabla para áreas compuestas"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Divide la figura en partes simples y elige un origen.",
+            "Para cada parte anota A, x̄, ȳ y los productos A·x̄, A·ȳ.",
+            "Los **huecos** van con área **negativa**.",
+            "x̄ = ΣAx̄/ΣA,  ȳ = ΣAȳ/ΣA."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Sección en T (mm): ala 200 × 40 arriba y alma 40 × 160 abajo, origen en la base del alma.",
+          "title": "Ejemplo 2: sección T"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parte",
+            "A (mm²)",
+            "ȳ (mm)",
+            "A·ȳ (mm³)"
+          ],
+          "rows": [
+            [
+              "Ala 200 × 40",
+              "8 000",
+              "180",
+              "1 440 000"
+            ],
+            [
+              "Alma 40 × 160",
+              "6 400",
+              "80",
+              "512 000"
+            ],
+            [
+              "Σ",
+              "14 400",
+              "—",
+              "1 952 000"
+            ]
+          ],
+          "caption": "ȳ = 1 952 000/14 400 ≈ 135,6 mm (x̄ = 0 por simetría)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Placa de 300 × 200 mm con un agujero circular de radio 50 mm centrado en (100, 100) mm.\nPlaca: A = 60 000, x̄ = 150. Agujero: A = −7 854, x̄ = 100.\nx̄ = (9 000 000 − 785 398)/52 146 ≈ **157,5 mm** (se corre hacia el lado sin agujero); ȳ = 100 mm por simetría.",
+          "title": "Ejemplo 3: placa con agujero"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El centroide de una sección de viga define el **eje neutro**, donde los esfuerzos de flexión son cero; también es el punto de aplicación de la resultante de una carga distribuida."
+        },
+        {
+          "type": "quiz",
+          "question": "Centro de masa de 1 kg en x = 0 y 3 kg en x = 4 m:",
+          "options": [
+            "2 m",
+            "3 m",
+            "1 m",
+            "4 m"
+          ],
+          "correct": 1,
+          "explanation": "12/4."
+        },
+        {
+          "type": "quiz",
+          "question": "Centroide de un semicírculo de r = 3π cm desde el diámetro:",
+          "options": [
+            "4 cm",
+            "3 cm",
+            "π cm",
+            "2 cm"
+          ],
+          "correct": 0,
+          "explanation": "4r/(3π) = 4."
+        },
+        {
+          "type": "quiz",
+          "question": "Un agujero en el método de la tabla se toma con:",
+          "options": [
+            "Área positiva",
+            "Área negativa",
+            "Área cero",
+            "Se ignora"
+          ],
+          "correct": 1,
+          "explanation": "Se resta."
+        },
+        {
+          "type": "quiz",
+          "question": "Un triángulo de altura 9 m tiene su centroide a qué distancia de la base:",
+          "options": [
+            "3 m",
+            "4,5 m",
+            "6 m",
+            "9 m"
+          ],
+          "correct": 0,
+          "explanation": "h/3."
+        }
+      ]
+    },
+    {
+      "id": "l10-agua",
+      "title": "Cargas distribuidas de agua (presión hidrostática)",
+      "summary": "p = γh, cargas triangulares y trapezoidales sobre muros y compuertas, resultante y reacciones.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "p = γ·h        γ agua = 9,81 kN/m³        w(h) = γ·h·b  (kN/m, en un ancho b)",
+          "caption": "Presión a la profundidad h"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Cuanto más bajas en una piscina, más te aprietan los oídos: la presión crece **linealmente** con la profundidad. Por eso la carga del agua sobre una pared vertical es un **triángulo**: cero en la superficie y máxima en el fondo.",
+          "title": "Analogía"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Situación",
+            "Forma de la carga",
+            "Resultante",
+            "Ubicación"
+          ],
+          "rows": [
+            [
+              "Muro con agua desde la superficie hasta el fondo (altura H)",
+              "Triangular",
+              "R = ½·γ·H²·b",
+              "H/3 desde el fondo"
+            ],
+            [
+              "Compuerta sumergida (borde superior a h₁, inferior a h₂)",
+              "Trapezoidal",
+              "R = ½·γ·(h₁ + h₂)·L·b",
+              "Centroide del trapecio"
+            ],
+            [
+              "Fondo horizontal a profundidad h",
+              "Uniforme",
+              "R = γ·h·A",
+              "Centro del área"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Muro de contención de agua de 6 m de alto, por metro de ancho (b = 1 m).\nR = ½·9,81·6²·1 = **176,6 kN** por metro, a **2 m** del fondo.\nMomento de volteo respecto a la base: 176,6·2 = 353,2 kN·m por metro.",
+          "title": "Ejemplo 1: muro"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Compuerta vertical rectangular de 2 m de alto y 1,5 m de ancho; su borde superior está 1 m bajo la superficie. Tiene bisagra A arriba y se apoya en B abajo.\n• w arriba = 9,81·1·1,5 = 14,72 kN/m; w abajo = 9,81·3·1,5 = 44,15 kN/m.\n• Divido el trapecio: rectángulo 14,72·2 = 29,43 kN a 1 m de A; triángulo ½·(44,15 − 14,72)·2 = 29,43 kN a 4/3 m de A.\n• R = 58,86 kN, a (29,43·1 + 29,43·1,333)/58,86 = **1,167 m** bajo A.\n• ΣMᴀ = 0: B·2 = 58,86·1,167 → **B ≈ 34,3 kN**; ΣF: **A ≈ 24,5 kN**.",
+          "title": "Ejemplo 2: compuerta (carga trapezoidal)"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La resultante **no** actúa en la mitad de la compuerta, sino más abajo (hacia donde la presión es mayor). Siempre parte el trapecio en rectángulo + triángulo.",
+          "title": "Error típico"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Así se diseñan presas, muros de tanques, compuertas de canales y alcantarillas: la estabilidad al volteo y al deslizamiento depende de esta resultante y de su punto de aplicación."
+        },
+        {
+          "type": "interactive",
+          "widget": "fis_beam",
+          "title": "Laboratorio: carga triangular",
+          "params": {
+            "preset": 2
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "La presión del agua a 5 m de profundidad es aprox.:",
+          "options": [
+            "9,81 kPa",
+            "49 kPa",
+            "5 kPa",
+            "98 kPa"
+          ],
+          "correct": 1,
+          "explanation": "9,81·5."
+        },
+        {
+          "type": "quiz",
+          "question": "Resultante sobre un muro de 3 m de agua, por metro de ancho:",
+          "options": [
+            "44,1 kN",
+            "29,4 kN",
+            "88,3 kN",
+            "14,7 kN"
+          ],
+          "correct": 0,
+          "explanation": "½·9,81·9."
+        },
+        {
+          "type": "quiz",
+          "question": "La resultante de la presión sobre un muro con agua hasta arriba actúa a:",
+          "options": [
+            "H/2 del fondo",
+            "H/3 del fondo",
+            "H/3 de la superficie",
+            "En la superficie"
+          ],
+          "correct": 1,
+          "explanation": "Centroide del triángulo."
+        },
+        {
+          "type": "quiz",
+          "question": "Sobre una compuerta sumergida (no llega a la superficie) la carga es:",
+          "options": [
+            "Triangular",
+            "Trapezoidal",
+            "Uniforme",
+            "Nula"
+          ],
+          "correct": 1,
+          "explanation": "p > 0 en el borde superior."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de momentos, reacciones y cargas distribuidas",
+      "summary": "Vigas con carga triangular, voladizo, momento en 3D, reducción, centroides y estabilidad de un muro.",
+      "minutes": 50,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuelve cada ejercicio **en papel** con su dibujo o diagrama de cuerpo libre; luego pide la pista, la solución paso a paso o solo la respuesta. Usa g = 9,81 m/s².",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Viga con carga puntual y triangular",
+          "level": 3,
+          "statement": "Una viga simplemente apoyada de 8 m (A en x = 0, B en x = 8) soporta 30 kN en x = 2 m y una carga triangular que crece de 0 en x = 4 m a 9 kN/m en x = 8 m. Halla las reacciones.",
+          "steps": [
+            "Triangular: W = ½·4·9 = 18 kN, a 2/3 de la base desde el vértice: x = 4 + 8/3 = 6,67 m.",
+            "ΣMA = 0: 8·RB = 30·2 + 18·6,67 = 180 → RB = 22,5 kN.",
+            "ΣFy = 0: RA = 30 + 18 − 22,5."
+          ],
+          "answer": "**RA = 25,5 kN; RB = 22,5 kN**"
+        },
+        {
+          "type": "exercise",
+          "title": "Viga en voladizo",
+          "level": 2,
+          "statement": "Una viga empotrada de 3 m soporta 6 kN/m en toda su longitud, 10 kN en el extremo libre y un par horario de 5 kN·m en el extremo libre (el empotramiento está a la izquierda). Halla las reacciones del empotramiento.",
+          "steps": [
+            "Fuerza vertical: V = 6·3 + 10 = 28 kN hacia arriba.",
+            "Momentos horarios respecto al empotramiento: 18·1,5 + 10·3 + 5 = 62 kN·m.",
+            "El empotramiento responde con un momento igual y opuesto."
+          ],
+          "answer": "**V = 28 kN ↑; M = 62 kN·m antihorario**"
+        },
+        {
+          "type": "exercise",
+          "title": "Momento en el espacio",
+          "level": 2,
+          "statement": "La fuerza F = (−200, 300, 600) N actúa en el punto r = (0,4; 0,3; −0,2) m. Halla el momento respecto al origen y respecto al eje z.",
+          "steps": [
+            "Mx = yFz − zFy = 0,3·600 − (−0,2)·300 = 240.",
+            "My = zFx − xFz = (−0,2)(−200) − 0,4·600 = −200.",
+            "Mz = xFy − yFx = 0,4·300 − 0,3·(−200) = 180."
+          ],
+          "answer": "**Mₒ = (240, −200, 180) N·m, |Mₒ| ≈ 361 N·m; momento respecto al eje z = 180 N·m**"
+        },
+        {
+          "type": "exercise",
+          "title": "Reducción a una sola fuerza",
+          "level": 3,
+          "statement": "Sobre una placa de 4 m × 3 m (origen en la esquina inferior izquierda) actúan: 100 N hacia la derecha en (0, 3), 200 N hacia abajo en (4, 3) y 150 N hacia la izquierda en (4, 0). Redúcelas a una sola fuerza e indica dónde corta su línea de acción al eje x.",
+          "steps": [
+            "R = (100 − 150, −200) = (−50, −200) N; |R| = 206,2 N.",
+            "Mₒ = Σ(xFy − yFx): (0·0 − 3·100) + (4·(−200) − 3·0) + 0 = −1 100 N·m.",
+            "Una sola fuerza en (x, 0): x·Ry = Mₒ → x = −1 100/(−200)."
+          ],
+          "answer": "**R ≈ 206 N (50 ← y 200 ↓), cruza el eje x en x = 5,5 m (fuera de la placa)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Centroide de un perfil en L",
+          "level": 2,
+          "statement": "Un perfil en L está formado por un rectángulo vertical de 20 × 150 mm y uno horizontal de 100 × 20 mm unido a su base por la derecha. Halla el centroide desde la esquina inferior izquierda.",
+          "steps": [
+            "Parte 1: A = 3 000 mm², centro (10, 75). Parte 2: A = 2 000 mm², centro (70, 10).",
+            "x̄ = (3 000·10 + 2 000·70)/5 000.",
+            "ȳ = (3 000·75 + 2 000·10)/5 000."
+          ],
+          "answer": "**x̄ = 34 mm; ȳ = 49 mm**"
+        },
+        {
+          "type": "exercise",
+          "title": "Estabilidad de un muro frente al agua",
+          "level": 3,
+          "statement": "Un muro rectangular de hormigón (24 kN/m³) de 5 m de altura retiene agua hasta su borde superior. ¿Qué ancho de base b necesita para un factor de seguridad al volteo de 1,5? (Analiza 1 m de largo.)",
+          "steps": [
+            "Empuje: R = ½·9,81·5² = 122,6 kN a 5/3 m de la base → momento de volteo 204,4 kN·m.",
+            "Peso: W = 24·b·5 = 120b kN, en b/2 → momento resistente 60b².",
+            "FS = 60b²/204,4 = 1,5 → b² = 5,11."
+          ],
+          "answer": "**b ≈ 2,26 m**"
+        }
+      ]
     }
   ]
 }

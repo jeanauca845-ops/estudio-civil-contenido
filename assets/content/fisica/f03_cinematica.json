@@ -583,6 +583,202 @@
           "explanation": "100/50."
         }
       ]
+    },
+    {
+      "id": "l07-vectorial",
+      "title": "Cinemática vectorial: posición, velocidad y aceleración",
+      "summary": "r(t), v = dr/dt y a = dv/dt como vectores; rapidez, desplazamiento y movimiento con aceleración constante.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "r(t) = x(t) i + y(t) j + z(t) k        v = dr/dt        a = dv/dt = d²r/dt²",
+          "caption": "Relación vectorial"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El vector posición es una **flecha que sigue al móvil** desde el origen. La velocidad es cuánto cambia esa flecha por segundo (y apunta tangente a la trayectoria); la aceleración, cuánto cambia la velocidad. Se deriva **componente por componente**.",
+          "title": "Idea"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "r(t) = (t³ − 3t) i + 2t² j + 4t k (m).\nv(t) = (3t² − 3) i + 4t j + 4 k;  a(t) = 6t i + 4 j.\nEn t = 2 s: r = (2, 8, 8) m; v = (9, 8, 4) m/s, rapidez |v| = √161 ≈ **12,7 m/s**; a = (12, 4, 0) m/s², |a| ≈ **12,6 m/s²**.",
+          "title": "Ejemplo 1"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Magnitud",
+            "Definición"
+          ],
+          "rows": [
+            [
+              "Desplazamiento entre t₁ y t₂",
+              "Δr = r(t₂) − r(t₁)"
+            ],
+            [
+              "Velocidad media",
+              "Δr/Δt"
+            ],
+            [
+              "Rapidez",
+              "|v| (escalar)"
+            ],
+            [
+              "Aceleración media",
+              "Δv/Δt"
+            ],
+            [
+              "Componente tangencial de a",
+              "a·v/|v| (cambia la rapidez)"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Si a es constante:  v = v₀ + a·t        r = r₀ + v₀·t + ½·a·t²",
+          "caption": "Forma vectorial del MRUV (proyectiles: a = −g j)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Proyectil: r₀ = 0, v₀ = (20, 15) m/s, a = (0, −9,81).\nr(t) = 20t i + (15t − 4,905t²) j. Llega al suelo cuando 15t − 4,905t² = 0 → t ≈ 3,06 s; alcance x ≈ 61,2 m.\nEs el mismo tiro parabólico de la lección 5, pero en una sola ecuación vectorial.",
+          "title": "Ejemplo 2: proyectil en forma vectorial"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Para ir de a(t) a v(t) y r(t) hay que hacer el camino inverso de la derivada (integrar). Con aceleración constante basta con las fórmulas de arriba."
+        },
+        {
+          "type": "quiz",
+          "question": "Si r(t) = t² i + 3t j, v(t) =",
+          "options": [
+            "2t i + 3 j",
+            "t i + 3 j",
+            "2 i",
+            "2t i + 3t j"
+          ],
+          "correct": 0,
+          "explanation": "Derivar cada componente."
+        },
+        {
+          "type": "quiz",
+          "question": "La velocidad es siempre:",
+          "options": [
+            "Perpendicular a la trayectoria",
+            "Tangente a la trayectoria",
+            "Igual a la aceleración",
+            "Radial"
+          ],
+          "correct": 1,
+          "explanation": "dr/dt."
+        },
+        {
+          "type": "quiz",
+          "question": "Si v = (3, 4, 0) m/s, la rapidez es:",
+          "options": [
+            "7",
+            "5",
+            "12",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "√(9 + 16)."
+        },
+        {
+          "type": "quiz",
+          "question": "Para un proyectil, el vector aceleración es:",
+          "options": [
+            "(0, 0)",
+            "(0, −g)",
+            "(g, 0)",
+            "Variable"
+          ],
+          "correct": 1,
+          "explanation": "Solo gravedad."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de cinemática",
+      "summary": "Persecución, lanzamiento vertical, proyectil desde altura, movimiento circular y cinemática vectorial.",
+      "minutes": 40,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuelve cada ejercicio **en papel** con su dibujo o diagrama de cuerpo libre; luego pide la pista, la solución paso a paso o solo la respuesta. Usa g = 9,81 m/s².",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Persecución",
+          "level": 3,
+          "statement": "Un auto pasa a 20 m/s constantes junto a una patrulla detenida. La patrulla arranca 2 s después con aceleración 4 m/s². ¿Cuándo y dónde lo alcanza, y con qué velocidad?",
+          "steps": [
+            "Auto: x = 20t. Patrulla (t ≥ 2): x = ½·4·(t − 2)² = 2(t − 2)².",
+            "Igualando: 2(t − 2)² = 20t → t² − 14t + 4 = 0.",
+            "t = (14 + √180)/2 ≈ 13,71 s (la otra raíz, 0,29 s, es anterior al arranque).",
+            "x = 20·13,71; v = 4·(13,71 − 2)."
+          ],
+          "answer": "**t ≈ 13,7 s desde que pasó el auto; x ≈ 274 m; la patrulla va a ≈ 46,8 m/s**"
+        },
+        {
+          "type": "exercise",
+          "title": "Lanzamiento vertical desde una azotea",
+          "level": 2,
+          "statement": "Desde una azotea a 40 m se lanza una piedra hacia arriba a 15 m/s. Halla la altura máxima sobre el suelo, el tiempo hasta llegar al suelo y la velocidad de impacto.",
+          "steps": [
+            "Subida: Δy = v₀²/(2g) = 225/19,62 = 11,47 m → altura máxima 51,47 m.",
+            "y = 40 + 15t − 4,905t² = 0 → t = [15 + √(225 + 784,8)]/9,81.",
+            "v = 15 − 9,81·t."
+          ],
+          "answer": "**H ≈ 51,5 m; t ≈ 4,77 s; v ≈ −31,8 m/s (hacia abajo)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Proyectil desde un acantilado",
+          "level": 3,
+          "statement": "Se dispara un proyectil a 25 m/s y 40° sobre la horizontal desde un acantilado de 20 m. Halla el tiempo de vuelo, el alcance, la altura máxima sobre el suelo y la rapidez de impacto.",
+          "steps": [
+            "vx = 25 cos 40° = 19,15 m/s; vy = 25 sen 40° = 16,07 m/s.",
+            "y: −20 = 16,07t − 4,905t² → t = [16,07 + √(16,07² + 4·4,905·20)]/9,81 ≈ 4,24 s.",
+            "Alcance: 19,15·4,24. Altura máxima: 20 + 16,07²/19,62.",
+            "Impacto: vy = 16,07 − 9,81·4,24 = −25,5 m/s; v = √(19,15² + 25,5²)."
+          ],
+          "answer": "**t ≈ 4,24 s; alcance ≈ 81,2 m; altura máx ≈ 33,2 m; impacto ≈ 31,9 m/s**"
+        },
+        {
+          "type": "exercise",
+          "title": "Frenado en una curva",
+          "level": 2,
+          "statement": "Un auto recorre una curva de 120 m de radio y frena uniformemente de 25 m/s a 15 m/s en 5 s. Halla su aceleración total cuando va a 20 m/s.",
+          "steps": [
+            "Tangencial: at = (15 − 25)/5 = −2 m/s².",
+            "Normal: an = v²/R = 400/120 = 3,33 m/s².",
+            "a = √(at² + an²)."
+          ],
+          "answer": "**a ≈ 3,89 m/s²**"
+        },
+        {
+          "type": "exercise",
+          "title": "Componentes tangencial y normal",
+          "level": 3,
+          "statement": "Una partícula se mueve con r(t) = 3t² i + (t³ − 4t) j (m). En t = 2 s halla v, a, las componentes tangencial y normal de la aceleración y el radio de curvatura.",
+          "steps": [
+            "v = 6t i + (3t² − 4) j → v(2) = (12, 8) m/s, |v| = √208 = 14,42 m/s.",
+            "a = 6 i + 6t j → a(2) = (6, 12) m/s², |a|² = 180.",
+            "at = a·v/|v| = (72 + 96)/14,42 = 11,65 m/s².",
+            "an = √(180 − 11,65²) = 6,66 m/s².",
+            "ρ = v²/an = 208/6,66."
+          ],
+          "answer": "**at ≈ 11,65 m/s²; an ≈ 6,66 m/s²; ρ ≈ 31,2 m**"
+        }
+      ]
     }
   ]
 }
