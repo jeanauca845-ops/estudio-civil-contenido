@@ -460,6 +460,916 @@
           "explanation": "**Ground Sample Distance**: cuánto terreno cubre un píxel."
         }
       ]
+    },
+    {
+      "id": "l06-equipos-dron",
+      "title": "Equipos para fotogrametría: drones, cámaras, GNSS y programas",
+      "summary": "Qué se necesita para levantar con dron: tipos de aeronave, sensores, posicionamiento RTK y PPK, puntos de control y software.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un levantamiento con dron no es «tomar fotos bonitas»: es **medir con fotos**. Hace falta una aeronave que vuele rutas exactas, una cámara de geometría estable, una forma de saber con centímetros **dónde estaba la cámara** o dónde están ciertos puntos del suelo, y un programa que convierta cientos de fotos en un modelo.",
+          "title": "Idea"
+        },
+        {
+          "type": "heading",
+          "text": "1. La aeronave"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Ventajas",
+            "Limitaciones",
+            "Uso típico"
+          ],
+          "rows": [
+            [
+              "**Multirrotor** (cuadricóptero)",
+              "Despega en cualquier sitio, vuela lento y bajo, fácil de operar",
+              "Autonomía de 30 a 55 min; cubre poca área por vuelo",
+              "Lotes, vías, canteras, obras: hasta unas decenas de hectáreas por vuelo"
+            ],
+            [
+              "**Ala fija**",
+              "Mucha autonomía y velocidad: cientos de hectáreas por vuelo",
+              "Necesita espacio para despegar y aterrizar; no puede quedarse quieto",
+              "Áreas grandes, corredores largos, agricultura"
+            ],
+            [
+              "**VTOL** (híbrido)",
+              "Despega vertical y vuela como avión",
+              "Más caro y complejo",
+              "Áreas grandes en terreno difícil"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Ejemplos de equipos usados en topografía",
+            "Tipo"
+          ],
+          "rows": [
+            [
+              "DJI Mavic 3 Enterprise (con módulo RTK)",
+              "Multirrotor compacto con cámara de sensor 4/3 y obturador mecánico"
+            ],
+            [
+              "DJI Matrice 4E",
+              "Multirrotor compacto para cartografía, con RTK"
+            ],
+            [
+              "DJI Matrice 350 RTK o Matrice 400 con cámara Zenmuse P1 o LiDAR Zenmuse L2",
+              "Plataforma grande de carga intercambiable"
+            ],
+            [
+              "DJI Phantom 4 RTK",
+              "Multirrotor clásico de topografía, muy difundido en años anteriores"
+            ],
+            [
+              "Autel EVO II Pro RTK",
+              "Multirrotor con RTK"
+            ],
+            [
+              "eBee X (senseFly / AgEagle), WingtraOne",
+              "Ala fija y VTOL"
+            ]
+          ],
+          "caption": "Los modelos cambian cada año; lo que importa son las características de las columnas siguientes"
+        },
+        {
+          "type": "heading",
+          "text": "2. El sensor"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sensor",
+            "Qué registra",
+            "Producto"
+          ],
+          "rows": [
+            [
+              "Cámara **RGB**",
+              "Fotografía a color",
+              "Ortofoto, nube de puntos, modelo de superficie"
+            ],
+            [
+              "**Multiespectral**",
+              "Bandas separadas, incluidos infrarrojo cercano y borde rojo",
+              "Índices de vegetación (NDVI): agricultura, cobertura del suelo"
+            ],
+            [
+              "**Térmica**",
+              "Radiación infrarroja térmica",
+              "Inspección de fugas, humedad, paneles"
+            ],
+            [
+              "**LiDAR**",
+              "Pulsos láser: distancia a cada punto",
+              "Nube de puntos que **penetra la vegetación** y llega al suelo"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Característica de la cámara",
+            "Por qué importa"
+          ],
+          "rows": [
+            [
+              "Tamaño del sensor y megapíxeles",
+              "Más detalle (GSD menor) a la misma altura"
+            ],
+            [
+              "**Obturador mecánico** (global)",
+              "Evita la deformación de la imagen por el movimiento (efecto de obturador rodante)"
+            ],
+            [
+              "Lente de focal fija y calibrada",
+              "Geometría estable: mediciones confiables"
+            ],
+            [
+              "Estabilizador (gimbal)",
+              "Mantiene la cámara vertical (nadir)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "3. Saber dónde estaba cada foto"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Método",
+            "Cómo funciona",
+            "Precisión típica"
+          ],
+          "rows": [
+            [
+              "GNSS autónomo del dron",
+              "GPS normal, sin correcciones",
+              "Metros: solo sirve con puntos de control"
+            ],
+            [
+              "**RTK** (cinemático en tiempo real)",
+              "El dron recibe correcciones en vuelo desde una **base** propia o desde una red por internet (NTRIP)",
+              "Centímetros"
+            ],
+            [
+              "**PPK** (cinemático con posproceso)",
+              "Dron y base graban datos; las correcciones se calculan después en la oficina",
+              "Centímetros; no depende del enlace de radio en vuelo"
+            ],
+            [
+              "**Puntos de control en tierra (GCP)**",
+              "Dianas visibles en las fotos, medidas con GNSS de precisión o estación total",
+              "Amarran el modelo al terreno y permiten comprobarlo"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Aunque el dron tenga RTK, se colocan siempre algunos **puntos de chequeo** medidos aparte: son la única forma de **demostrar** la precisión del levantamiento. Sin RTK ni PPK, los puntos de control son obligatorios: lo usual son de 5 a 10 bien repartidos (esquinas, centro y cambios fuertes de cota).",
+          "title": "Control y comprobación"
+        },
+        {
+          "type": "heading",
+          "text": "4. Equipo de apoyo en tierra"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Receptor GNSS de doble frecuencia** (base y móvil) o estación total, para medir los puntos de control.",
+            "**Dianas**: placas o marcas pintadas de alto contraste (blanco y negro), de tamaño visible en las fotos (unas 5 a 10 veces el GSD como mínimo).",
+            "Control remoto con pantalla o tableta con la aplicación de planificación.",
+            "Baterías de repuesto, cargadores, tarjetas de memoria, anemómetro.",
+            "Conos y chaleco para delimitar la zona de despegue."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "5. Programas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Etapa",
+            "Programas"
+          ],
+          "rows": [
+            [
+              "Planificar y ejecutar el vuelo",
+              "DJI Pilot 2, DroneDeploy, UgCS, Pix4Dcapture, aplicaciones del fabricante"
+            ],
+            [
+              "Procesar las fotos (fotogrametría)",
+              "Agisoft Metashape, Pix4Dmapper / Pix4Dmatic, DJI Terra, WebODM (OpenDroneMap, libre)"
+            ],
+            [
+              "Usar los productos",
+              "Civil 3D, ArcMap / ArcGIS Pro, QGIS, CloudCompare (nubes de puntos)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "6. Otras plataformas para fotos aéreas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Plataforma",
+            "Sensor",
+            "Uso"
+          ],
+          "rows": [
+            [
+              "Avión tripulado",
+              "Cámaras aerofotogramétricas métricas de gran formato; LiDAR aerotransportado",
+              "Cartografía nacional (como las cartas 1:50 000), ortofotos de cantones enteros"
+            ],
+            [
+              "Satélite",
+              "Sensores ópticos y de radar",
+              "Imágenes de grandes regiones; resolución de decenas de centímetros a decenas de metros"
+            ],
+            [
+              "Dron",
+              "Cámaras pequeñas, LiDAR ligero",
+              "Áreas pequeñas con mucho detalle"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Para cubrir cientos de hectáreas en un solo vuelo conviene un dron de:",
+          "options": [
+            "Multirrotor",
+            "Ala fija",
+            "Juguete",
+            "Cualquiera"
+          ],
+          "correct": 1,
+          "explanation": "Más autonomía y velocidad."
+        },
+        {
+          "type": "quiz",
+          "question": "El sensor que logra medir el suelo bajo la vegetación es:",
+          "options": [
+            "RGB",
+            "Térmico",
+            "LiDAR",
+            "Multiespectral"
+          ],
+          "correct": 2,
+          "explanation": "El láser pasa entre las hojas."
+        },
+        {
+          "type": "quiz",
+          "question": "RTK significa que las correcciones GNSS se aplican:",
+          "options": [
+            "Después, en la oficina",
+            "En tiempo real durante el vuelo",
+            "Nunca",
+            "Solo en tierra"
+          ],
+          "correct": 1,
+          "explanation": "Real Time Kinematic."
+        },
+        {
+          "type": "quiz",
+          "question": "Los puntos de chequeo sirven para:",
+          "options": [
+            "Decorar la ortofoto",
+            "Comprobar la precisión del modelo",
+            "Aumentar la autonomía",
+            "Planificar el vuelo"
+          ],
+          "correct": 1,
+          "explanation": "Verificación independiente."
+        },
+        {
+          "type": "quiz",
+          "question": "Un obturador mecánico es preferible porque:",
+          "options": [
+            "Hace menos ruido",
+            "Evita la deformación por movimiento",
+            "Gasta menos batería",
+            "Da más color"
+          ],
+          "correct": 1,
+          "explanation": "Sin efecto de obturador rodante."
+        },
+        {
+          "type": "quiz",
+          "question": "Para índices de vegetación como el NDVI se usa una cámara:",
+          "options": [
+            "RGB",
+            "Multiespectral",
+            "Térmica",
+            "LiDAR"
+          ],
+          "correct": 1,
+          "explanation": "Necesita el infrarrojo cercano."
+        },
+        {
+          "type": "quiz",
+          "question": "Sin RTK ni PPK, lo indispensable para georreferenciar el modelo son:",
+          "options": [
+            "Las baterías",
+            "Los puntos de control en tierra",
+            "Los filtros",
+            "Las hélices"
+          ],
+          "correct": 1,
+          "explanation": "Amarran el modelo al terreno."
+        },
+        {
+          "type": "quiz",
+          "question": "WebODM y Agisoft Metashape son programas para:",
+          "options": [
+            "Planificar el vuelo",
+            "Procesar las fotos y generar modelos",
+            "Dibujar perfiles",
+            "Editar video"
+          ],
+          "correct": 1,
+          "explanation": "Fotogrametría."
+        }
+      ]
+    },
+    {
+      "id": "l07-plan-vuelo",
+      "title": "Planificar el vuelo: GSD, altura, traslapes y normas",
+      "summary": "Las fórmulas del GSD y de la huella, separación entre fotos y líneas, número de fotos, condiciones de vuelo y lo que exige la regulación ecuatoriana.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "GSD = (H × tamaño del píxel) / f = (H × ancho del sensor) / (f × ancho de la imagen en píxeles)",
+          "caption": "H = altura de vuelo sobre el terreno; f = distancia focal real (mismas unidades que el sensor)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El GSD es **cuánto terreno cabe en un píxel**. Funciona por triángulos semejantes: el píxel es al sensor lo que el GSD es al terreno, y la focal es a la cámara lo que la altura es al vuelo. Si subes al doble, cada píxel cubre el doble.",
+          "title": "Idea"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Cámara con sensor de 13,2 × 8,8 mm, imagen de 5 472 × 3 648 píxeles y focal de 8,8 mm, volando a 100 m.\nTamaño del píxel = 13,2 mm/5 472 = 0,00241 mm (2,41 micras).\nGSD = 100 m × 0,00241/8,8 = 0,0274 m = **2,74 cm por píxel**.\nHuella de cada foto: 5 472 × 0,0274 = **150 m** de ancho por 3 648 × 0,0274 = **100 m** de alto.",
+          "title": "Ejemplo: GSD y huella"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Con la misma cámara, ¿a qué altura volar para un GSD de 2 cm?  H = GSD × f/píxel = 0,02 × 8,8/0,00241 = **73 m**.",
+          "title": "Ejemplo: altura para un GSD dado"
+        },
+        {
+          "type": "heading",
+          "text": "Traslapes y separaciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parámetro",
+            "Valor usual",
+            "Para qué"
+          ],
+          "rows": [
+            [
+              "Traslape frontal (longitudinal)",
+              "75 – 80 %",
+              "Cada punto del terreno aparece en varias fotos seguidas"
+            ],
+            [
+              "Traslape lateral (transversal)",
+              "65 – 70 %",
+              "Une las líneas de vuelo entre sí"
+            ],
+            [
+              "Con vegetación densa o relieve fuerte",
+              "Subir a 85 % y 75 %",
+              "Más coincidencias entre fotos"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Distancia entre fotos = huella en el sentido de avance × (1 − traslape frontal)        Distancia entre líneas = huella transversal × (1 − traslape lateral)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Huella de 150 m (transversal) × 100 m (avance), con 80 % y 70 %:\nEntre fotos: 100 × 0,20 = **20 m**. Entre líneas: 150 × 0,30 = **45 m**.\nTerreno de 400 m × 500 m (20 ha), con líneas de 500 m: 400/45 ≈ 9 líneas; 500/20 = 25 fotos por línea → **unas 225 a 250 fotos**.",
+          "title": "Ejemplo: número de fotos"
+        },
+        {
+          "type": "heading",
+          "text": "Relieve y altura constante"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El GSD depende de la altura **sobre el terreno**. Si despegas desde el fondo de un valle y vuelas a altura fija, sobre las lomas el dron queda más cerca del suelo: el GSD mejora pero **el traslape se reduce** y pueden quedar huecos. En terreno con relieve se usa el **seguimiento del terreno** (terrain follow) con un MDE, o se planifica con la cota más alta.",
+          "title": "Terreno inclinado"
+        },
+        {
+          "type": "heading",
+          "text": "Condiciones del vuelo"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Hora:** cerca del mediodía, con el sol alto: sombras cortas.",
+            "**Cielo:** uniforme (despejado o nublado parejo); evitar nubes sueltas que cambian la luz.",
+            "**Viento:** bajo; con viento fuerte se pierde batería y nitidez.",
+            "**Velocidad:** moderada, para que la foto no salga movida (el desplazamiento durante la exposición debe ser menor que un GSD).",
+            "**Cámara:** apuntando al nadir (vertical) para ortofotos; fotos inclinadas adicionales para fachadas y taludes."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Regulación en Ecuador"
+        },
+        {
+          "type": "text",
+          "text": "La operación de drones está regulada por la **Dirección General de Aviación Civil (DGAC)**, mediante su reglamento de aeronaves pilotadas a distancia (2020). Puntos principales:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Requisito",
+            "Qué establece"
+          ],
+          "rows": [
+            [
+              "Aplicación",
+              "Drones de más de 0,25 kg y hasta 150 kg de masa máxima de despegue"
+            ],
+            [
+              "Altura máxima",
+              "400 pies (122 m) sobre el terreno"
+            ],
+            [
+              "Aeropuertos",
+              "No operar a menos de 9 km de aeródromos o bases aéreas"
+            ],
+            [
+              "Horario",
+              "Entre la salida y la puesta del sol, con buena visibilidad"
+            ],
+            [
+              "Registro",
+              "Obligatorio ante la DGAC"
+            ],
+            [
+              "Seguro",
+              "De responsabilidad por daños a terceros"
+            ]
+          ],
+          "caption": "Verifica siempre la versión vigente del reglamento antes de volar"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "El límite de 122 m condiciona el diseño del vuelo: fija el GSD máximo que puedes obtener con tu cámara y por tanto cuántos vuelos y baterías necesitas para cubrir el área."
+        },
+        {
+          "type": "quiz",
+          "question": "Si se duplica la altura de vuelo, el GSD:",
+          "options": [
+            "Se reduce a la mitad",
+            "Se duplica",
+            "No cambia",
+            "Se cuadruplica"
+          ],
+          "correct": 1,
+          "explanation": "Es proporcional a H."
+        },
+        {
+          "type": "quiz",
+          "question": "Un GSD de 3 cm significa que:",
+          "options": [
+            "El dron vuela a 3 cm",
+            "Cada píxel representa 3 cm de terreno",
+            "El error es de 3 cm",
+            "Hay 3 fotos por metro"
+          ],
+          "correct": 1,
+          "explanation": "Tamaño del píxel en el suelo."
+        },
+        {
+          "type": "quiz",
+          "question": "El traslape frontal recomendado es aproximadamente:",
+          "options": [
+            "10 – 20 %",
+            "40 – 50 %",
+            "75 – 80 %",
+            "100 %"
+          ],
+          "correct": 2,
+          "explanation": "Cada punto en varias fotos."
+        },
+        {
+          "type": "quiz",
+          "question": "Huella de 120 m en el sentido de avance y 75 % de traslape frontal: distancia entre fotos =",
+          "options": [
+            "90 m",
+            "30 m",
+            "45 m",
+            "120 m"
+          ],
+          "correct": 1,
+          "explanation": "120 × 0,25."
+        },
+        {
+          "type": "quiz",
+          "question": "La altura máxima de vuelo permitida por la DGAC es:",
+          "options": [
+            "50 m",
+            "122 m",
+            "300 m",
+            "500 m"
+          ],
+          "correct": 1,
+          "explanation": "400 pies sobre el terreno."
+        },
+        {
+          "type": "quiz",
+          "question": "La distancia mínima a un aeródromo es de:",
+          "options": [
+            "1 km",
+            "5 km",
+            "9 km",
+            "20 km"
+          ],
+          "correct": 2,
+          "explanation": "Según el reglamento."
+        },
+        {
+          "type": "quiz",
+          "question": "Al volar a altura fija sobre un cerro, el traslape sobre la cima:",
+          "options": [
+            "Aumenta",
+            "Disminuye",
+            "No cambia",
+            "Se anula siempre"
+          ],
+          "correct": 1,
+          "explanation": "El dron está más cerca del suelo y la huella es menor."
+        },
+        {
+          "type": "quiz",
+          "question": "La mejor hora para volar, por las sombras, es:",
+          "options": [
+            "Al amanecer",
+            "Cerca del mediodía",
+            "Al atardecer",
+            "De noche"
+          ],
+          "correct": 1,
+          "explanation": "Sol alto, sombras cortas."
+        }
+      ]
+    },
+    {
+      "id": "l08-productos",
+      "title": "De las fotos al plano: proceso, productos y precisión",
+      "summary": "Qué hace el programa de fotogrametría, qué productos entrega, qué precisión esperar, y la fotografía aérea clásica.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "El proceso (structure from motion)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Alineación:** el programa encuentra miles de puntos iguales entre fotos vecinas y calcula la posición y orientación de cada cámara (aerotriangulación). Resultado: nube de puntos dispersa.",
+            "**Georreferenciación:** se marcan los puntos de control en las fotos y se ajusta el bloque.",
+            "**Nube densa:** millones de puntos con coordenadas X, Y, Z y color.",
+            "**Clasificación:** separar el suelo de la vegetación y las construcciones.",
+            "**Modelos:** MDS (todo lo que se ve) y MDT (solo terreno).",
+            "**Ortomosaico:** las fotos corregidas con el modelo y unidas en una sola imagen a escala.",
+            "**Derivados:** curvas de nivel, perfiles, volúmenes, modelo 3D con textura."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Producto",
+            "Formato usual",
+            "Se usa para"
+          ],
+          "rows": [
+            [
+              "Ortomosaico",
+              "GeoTIFF",
+              "Digitalizar planimetría, mapas base"
+            ],
+            [
+              "Nube de puntos",
+              "LAS / LAZ",
+              "Crear superficies en Civil 3D, medir"
+            ],
+            [
+              "MDS / MDT",
+              "GeoTIFF",
+              "Curvas, pendientes, cuencas, volúmenes"
+            ],
+            [
+              "Curvas de nivel",
+              "DXF / SHP",
+              "Planos topográficos"
+            ],
+            [
+              "Modelo 3D texturizado",
+              "OBJ y otros",
+              "Visualización, inspección"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La fotogrametría solo «ve» lo que ve la cámara. En un bosque, el modelo es el de las **copas de los árboles** (MDS), no el del suelo. Para obtener terreno bajo vegetación densa se necesita **LiDAR** o completar con topografía convencional.",
+          "title": "Limitación de la fotogrametría"
+        },
+        {
+          "type": "heading",
+          "text": "Precisión"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Factor",
+            "Efecto"
+          ],
+          "rows": [
+            [
+              "GSD",
+              "Regla práctica: error horizontal de 1 a 2 veces el GSD y vertical de 1 a 3 veces, con buen control"
+            ],
+            [
+              "Control (GCP, RTK, PPK)",
+              "Sin control, el modelo puede estar desplazado varios metros aunque sea internamente coherente"
+            ],
+            [
+              "Traslape y calidad de las fotos",
+              "Fotos movidas o con poco traslape dejan huecos y ruido"
+            ],
+            [
+              "Textura del terreno",
+              "Agua, arena lisa o superficies brillantes no dan puntos de coincidencia"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "RMSE = √( Σ (valor medido en el modelo − valor real)² / n )",
+          "caption": "Error cuadrático medio, calculado en los puntos de chequeo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Método",
+            "Rendimiento",
+            "Precisión",
+            "Mejor para"
+          ],
+          "rows": [
+            [
+              "Estación total",
+              "Cientos de puntos al día",
+              "mm a cm",
+              "Detalle, estructuras, control"
+            ],
+            [
+              "GNSS RTK",
+              "Cientos a miles de puntos al día",
+              "1 – 3 cm",
+              "Terreno abierto"
+            ],
+            [
+              "Dron con cámara",
+              "Millones de puntos por vuelo",
+              "2 – 10 cm",
+              "Áreas abiertas medianas, ortofotos, volúmenes"
+            ],
+            [
+              "Dron con LiDAR",
+              "Millones de puntos por vuelo",
+              "3 – 10 cm",
+              "Terreno con vegetación"
+            ]
+          ],
+          "caption": "Órdenes de magnitud; dependen del equipo y del procedimiento"
+        },
+        {
+          "type": "heading",
+          "text": "Fotografía aérea clásica"
+        },
+        {
+          "type": "formula",
+          "expression": "Escala de la foto = f / H        desplazamiento por relieve: d = r · h / H",
+          "caption": "f = focal; H = altura de vuelo sobre el terreno; r = distancia del punto al centro de la foto; h = altura del objeto"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Cámara de f = 152 mm volando a 3 040 m sobre el terreno: escala = 0,152/3 040 = **1:20 000**.\nUna torre de 60 m de alto que aparece a 80 mm del centro, en una foto tomada a 1 500 m: d = 80 × 60/1 500 = **3,2 mm** de desplazamiento radial hacia afuera.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "text",
+          "text": "En la fotogrametría clásica se vuela con traslape del **60 % longitudinal y 30 % lateral**: cada par de fotos consecutivas forma un **par estereoscópico** que, visto con un estereoscopio, permite percibir el relieve en tres dimensiones y dibujar las curvas de nivel. Así se elaboraron las cartas topográficas. La ortofoto elimina precisamente el desplazamiento por relieve, y por eso se puede medir sobre ella."
+        },
+        {
+          "type": "quiz",
+          "question": "El MDS representa:",
+          "options": [
+            "Solo el terreno",
+            "El terreno más lo que hay encima (árboles, edificios)",
+            "Las curvas de nivel",
+            "La red de drenaje"
+          ],
+          "correct": 1,
+          "explanation": "Modelo digital de superficie."
+        },
+        {
+          "type": "quiz",
+          "question": "La nube de puntos se entrega normalmente en formato:",
+          "options": [
+            "LAS / LAZ",
+            "MXD",
+            "DOCX",
+            "KML"
+          ],
+          "correct": 0,
+          "explanation": "Formato estándar de nubes."
+        },
+        {
+          "type": "quiz",
+          "question": "Con buen control, el error horizontal esperable es del orden de:",
+          "options": [
+            "1 a 2 veces el GSD",
+            "100 veces el GSD",
+            "1 m siempre",
+            "Cero"
+          ],
+          "correct": 0,
+          "explanation": "Regla práctica."
+        },
+        {
+          "type": "quiz",
+          "question": "Foto con f = 150 mm tomada a 1 500 m sobre el terreno. Su escala es:",
+          "options": [
+            "1:1 000",
+            "1:10 000",
+            "1:100 000",
+            "1:150"
+          ],
+          "correct": 1,
+          "explanation": "0,15/1 500."
+        },
+        {
+          "type": "quiz",
+          "question": "La ortofoto se diferencia de la foto aérea en que:",
+          "options": [
+            "Tiene más color",
+            "Tiene escala uniforme, sin desplazamiento por relieve",
+            "Es en blanco y negro",
+            "No está georreferenciada"
+          ],
+          "correct": 1,
+          "explanation": "Está ortorrectificada."
+        },
+        {
+          "type": "quiz",
+          "question": "La fotogrametría falla sobre:",
+          "options": [
+            "Terreno con textura",
+            "Agua y superficies sin textura",
+            "Suelo desnudo",
+            "Pasto corto"
+          ],
+          "correct": 1,
+          "explanation": "No hay puntos de coincidencia."
+        },
+        {
+          "type": "quiz",
+          "question": "El traslape clásico para visión estereoscópica es:",
+          "options": [
+            "60 % longitudinal y 30 % lateral",
+            "10 % y 10 %",
+            "100 % y 100 %",
+            "30 % y 60 %"
+          ],
+          "correct": 0,
+          "explanation": "Pares estereoscópicos."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de fotogrametría",
+      "summary": "Planificación de vuelos y fotografía aérea con números.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "GSD y huella",
+          "level": 2,
+          "statement": "Una cámara tiene sensor de 17,3 × 13,0 mm, imagen de 5 280 × 3 956 píxeles y focal de 12,3 mm. Calcula el tamaño del píxel, el GSD y la huella a 90 m de altura.",
+          "steps": [
+            "Píxel = 17,3/5 280 = 0,003277 mm.",
+            "GSD = 90 m × 0,003277/12,3 = 0,02398 m ≈ 2,4 cm.",
+            "Huella = 5 280 × 0,02398 ≈ 126,6 m por 3 956 × 0,02398 ≈ 94,9 m."
+          ],
+          "answer": "**Píxel ≈ 3,28 micras; GSD ≈ 2,4 cm; huella ≈ 127 m × 95 m**"
+        },
+        {
+          "type": "exercise",
+          "title": "Altura máxima y GSD posible",
+          "level": 2,
+          "statement": "Con la cámara anterior, ¿qué GSD se obtiene a la altura máxima permitida (122 m)? Si el proyecto exige GSD ≤ 2 cm, ¿a qué altura hay que volar?",
+          "steps": [
+            "GSD a 122 m = 122 × 0,003277/12,3 = 0,0325 m = 3,25 cm.",
+            "Para 2 cm: H = 0,02 × 12,3/0,003277 = 75,1 m."
+          ],
+          "answer": "**A 122 m el GSD es 3,25 cm; para 2 cm hay que volar a unos 75 m.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Plan de vuelo completo",
+          "level": 3,
+          "statement": "Hay que levantar un terreno de 600 m × 300 m con huella de 127 m (transversal) × 95 m (avance), traslapes de 80 % frontal y 70 % lateral, y líneas paralelas al lado largo. Halla la separación entre fotos y entre líneas, el número de líneas, las fotos por línea, el total, y el tiempo de vuelo a 8 m/s (sin contar giros).",
+          "steps": [
+            "Entre fotos: 95 × 0,20 = 19 m. Entre líneas: 127 × 0,30 = 38,1 m.",
+            "Líneas: 300/38,1 = 7,9 → 8 líneas (más una de margen: 9).",
+            "Fotos por línea: 600/19 = 31,6 → 32.",
+            "Total ≈ 9 × 32 = 288 fotos.",
+            "Distancia: 9 × 600 = 5 400 m → 5 400/8 = 675 s ≈ 11 min (más giros, despegue y aterrizaje)."
+          ],
+          "answer": "**19 m entre fotos y 38 m entre líneas; 9 líneas de 32 fotos ≈ 288 fotos; unos 11 a 15 minutos: cabe en una batería.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Velocidad máxima sin que la foto salga movida",
+          "level": 3,
+          "statement": "Con GSD de 2,4 cm y un tiempo de exposición de 1/1 000 s, ¿cuál es la velocidad máxima para que el dron se desplace menos de un GSD durante la exposición? ¿Y con 1/250 s?",
+          "steps": [
+            "Desplazamiento = v × t ≤ GSD → v ≤ GSD/t.",
+            "Con 1/1 000 s: v ≤ 0,024/0,001 = 24 m/s.",
+            "Con 1/250 s: v ≤ 0,024/0,004 = 6 m/s."
+          ],
+          "answer": "**24 m/s con 1/1 000 s; solo 6 m/s con 1/250 s.** Con poca luz hay que volar más lento."
+        },
+        {
+          "type": "exercise",
+          "title": "Escala de una fotografía aérea",
+          "level": 2,
+          "statement": "Una foto aérea se tomó con focal de 152 mm desde 4 500 m sobre el nivel del mar, sobre un terreno a 2 600 m de cota. Halla la escala. Si un tramo de vía mide 23 mm en la foto, ¿cuánto mide en el terreno?",
+          "steps": [
+            "Altura sobre el terreno: H = 4 500 − 2 600 = 1 900 m.",
+            "Escala = 0,152/1 900 = 1/12 500.",
+            "Vía: 23 mm × 12 500 = 287 500 mm = 287,5 m."
+          ],
+          "answer": "**Escala 1:12 500; la vía mide 287,5 m.**",
+          "hint": "La altura que cuenta es la que hay sobre el terreno, no sobre el mar."
+        },
+        {
+          "type": "exercise",
+          "title": "Precisión con puntos de chequeo",
+          "level": 3,
+          "statement": "En cinco puntos de chequeo, las diferencias de cota entre el modelo y el GNSS son (cm): +3, −5, +2, −4, +6. Calcula el RMSE vertical. Con GSD de 2,4 cm, ¿es un resultado razonable?",
+          "steps": [
+            "Cuadrados: 9, 25, 4, 16, 36 → suma 90.",
+            "RMSE = √(90/5) = √18 = 4,24 cm.",
+            "Relación con el GSD: 4,24/2,4 ≈ 1,8 veces."
+          ],
+          "answer": "**RMSE ≈ 4,2 cm, unas 1,8 veces el GSD: dentro de lo esperable (1 a 3 veces).**"
+        }
+      ]
     }
   ]
 }

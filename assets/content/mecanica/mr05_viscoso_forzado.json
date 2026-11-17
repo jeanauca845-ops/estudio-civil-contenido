@@ -261,6 +261,603 @@
           "explanation": "tan φ = 2ζ/0 → φ = **90°**."
         }
       ]
+    },
+    {
+      "id": "l04-viscoso-fondo",
+      "title": "Amortiguamiento viscoso a fondo",
+      "summary": "La EDO, el amortiguamiento crítico, los tres casos con sus soluciones y constantes, la envolvente, el decremento logarítmico y cómo medir ζ.",
+      "minutes": 24,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "m·ẍ + c·ẋ + k·x = 0        →        ẍ + 2·ζ·ωn·ẋ + ωn²·x = 0"
+        },
+        {
+          "type": "formula",
+          "expression": "cc = 2·√(k·m) = 2·m·ωn        ζ = c / cc        ωd = ωn·√(1 − ζ²)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un amortiguador viscoso (un pistón en aceite) se opone al movimiento con una fuerza **proporcional a la velocidad**: si te mueves despacio casi no molesta; si te mueves rápido, frena mucho. El factor ζ dice cuánto amortiguamiento hay comparado con el **crítico**, que es el mínimo que impide oscilar.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Caso",
+            "Condición",
+            "Solución",
+            "Comportamiento"
+          ],
+          "rows": [
+            [
+              "Subamortiguado",
+              "ζ < 1",
+              "x = e^(−ζωn·t)·[C₁·cos ωd·t + C₂·sen ωd·t]",
+              "Oscila con amplitud decreciente"
+            ],
+            [
+              "Crítico",
+              "ζ = 1",
+              "x = (C₁ + C₂·t)·e^(−ωn·t)",
+              "Vuelve al equilibrio lo más rápido posible sin oscilar"
+            ],
+            [
+              "Sobreamortiguado",
+              "ζ > 1",
+              "x = C₁·e^(s₁·t) + C₂·e^(s₂·t), con s = ωn·(−ζ ± √(ζ² − 1))",
+              "Vuelve lentamente sin oscilar"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Subamortiguado:  C₁ = x₀        C₂ = (v₀ + ζ·ωn·x₀) / ωd"
+        },
+        {
+          "type": "formula",
+          "expression": "Crítico:  C₁ = x₀        C₂ = v₀ + ωn·x₀"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Magnitud",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Período amortiguado",
+              "τd = 2π/ωd"
+            ],
+            [
+              "Envolvente",
+              "±X·e^(−ζωn·t)"
+            ],
+            [
+              "Decremento logarítmico",
+              "δ = ln(x₁/x₂) = 2πζ/√(1 − ζ²) ≈ 2πζ (si ζ es pequeño)"
+            ],
+            [
+              "Con n ciclos de separación",
+              "δ = (1/n)·ln(x₀/xₙ)"
+            ],
+            [
+              "ζ a partir de δ",
+              "ζ = δ/√(4π² + δ²)"
+            ],
+            [
+              "Ciclos para reducir la amplitud a una fracción p",
+              "n = ln(1/p)/δ"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "m = 10 kg, k = 4 000 N/m, c = 80 N·s/m.\nωn = 20 rad/s; cc = 2·10·20 = 400 N·s/m; **ζ = 0,2** (subamortiguado).\nωd = 20·√0,96 = **19,60 rad/s**; τd = 0,321 s.\nδ = 2π·0,2/√0,96 = **1,283** → cada ciclo la amplitud se divide entre e^1,283 = 3,61.\nPara bajar al 1 %: n = ln 100/1,283 = 3,6 → **4 ciclos**.",
+          "title": "Ejemplo completo"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Con x₀ = 0,05 m y v₀ = 0: C₂ = (0 + 0,2·20·0,05)/19,60 = 0,0102.\nx(t) = e^(−4t)·[0,05·cos 19,6t + 0,0102·sen 19,6t].\nTras un período (t = 0,321 s): x = 0,05·e^(−1,283) = **0,0139 m**.",
+          "title": "La respuesta en el tiempo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sistema real",
+            "ζ típico"
+          ],
+          "rows": [
+            [
+              "Estructuras de acero",
+              "0,02"
+            ],
+            [
+              "Estructuras de hormigón armado",
+              "0,05"
+            ],
+            [
+              "Suspensión de un automóvil",
+              "0,2 – 0,4"
+            ],
+            [
+              "Cierrapuertas, instrumentos de medida",
+              "≈ 1 (crítico)"
+            ]
+          ],
+          "caption": "Valores de referencia"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En el diseño sísmico se suele adoptar ζ = 5 % para edificios de hormigón. Con ese valor la frecuencia amortiguada es prácticamente igual a la natural (ωd = 0,9987·ωn): el amortiguamiento casi no cambia el período, pero sí limita la amplitud."
+        },
+        {
+          "type": "interactive",
+          "widget": "viscous_oscillator",
+          "title": "Laboratorio: cambia ζ y observa los tres casos"
+        },
+        {
+          "type": "quiz",
+          "question": "El amortiguamiento crítico vale:",
+          "options": [
+            "2·m·ωn",
+            "m·ωn",
+            "√(k/m)",
+            "k/m"
+          ],
+          "correct": 0,
+          "explanation": "cc = 2√(km)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si ζ = 0,5 y ωn = 10 rad/s, ωd =",
+          "options": [
+            "5 rad/s",
+            "8,66 rad/s",
+            "10 rad/s",
+            "11,5 rad/s"
+          ],
+          "correct": 1,
+          "explanation": "10·√0,75."
+        },
+        {
+          "type": "quiz",
+          "question": "Con ζ = 1 el sistema:",
+          "options": [
+            "Oscila sin decaer",
+            "Vuelve sin oscilar, lo más rápido posible",
+            "Oscila con amplitud creciente",
+            "No se mueve"
+          ],
+          "correct": 1,
+          "explanation": "Crítico."
+        },
+        {
+          "type": "quiz",
+          "question": "El decremento logarítmico es:",
+          "options": [
+            "x₁ − x₂",
+            "ln(x₁/x₂)",
+            "x₁/x₂",
+            "ζ·ωn"
+          ],
+          "correct": 1,
+          "explanation": "Logaritmo del cociente de amplitudes sucesivas."
+        },
+        {
+          "type": "quiz",
+          "question": "Para ζ pequeño, δ ≈",
+          "options": [
+            "ζ",
+            "2πζ",
+            "πζ",
+            "ζ²"
+          ],
+          "correct": 1,
+          "explanation": "Aproximación usual."
+        },
+        {
+          "type": "quiz",
+          "question": "La envolvente de la respuesta subamortiguada es:",
+          "options": [
+            "Una recta",
+            "Una exponencial decreciente",
+            "Una parábola",
+            "Constante"
+          ],
+          "correct": 1,
+          "explanation": "e^(−ζωn·t)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la amplitud baja a la mitad en cada ciclo, δ =",
+          "options": [
+            "0,5",
+            "0,693",
+            "2",
+            "1"
+          ],
+          "correct": 1,
+          "explanation": "ln 2."
+        },
+        {
+          "type": "quiz",
+          "question": "Al aumentar c (con ζ < 1), el período amortiguado:",
+          "options": [
+            "Disminuye",
+            "Aumenta",
+            "No cambia",
+            "Se anula"
+          ],
+          "correct": 1,
+          "explanation": "ωd baja."
+        }
+      ]
+    },
+    {
+      "id": "l05-forzada-fondo",
+      "title": "Vibración forzada a fondo: resonancia, fase y aislamiento",
+      "summary": "Respuesta permanente, factor de amplificación, ángulo de fase, resonancia, transmisibilidad, desbalance rotatorio y movimiento de la base.",
+      "minutes": 26,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "m·ẍ + c·ẋ + k·x = F₀·sen ωt",
+          "caption": "Fuerza armónica de amplitud F₀ y frecuencia ω"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La respuesta tiene dos partes: la **transitoria** (la vibración libre amortiguada, que desaparece) y la **permanente**, que queda para siempre y oscila a la **frecuencia de la fuerza**, no a la natural. Lo que interesa en diseño es la amplitud de la parte permanente.",
+          "title": "Idea"
+        },
+        {
+          "type": "formula",
+          "expression": "r = ω/ωn        X = (F₀/k) / √[(1 − r²)² + (2ζr)²]        tan φ = 2ζr / (1 − r²)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Zona",
+            "r",
+            "Factor de amplificación M = X/(F₀/k)",
+            "Fase",
+            "Quién domina"
+          ],
+          "rows": [
+            [
+              "Baja frecuencia",
+              "r ≪ 1",
+              "≈ 1",
+              "≈ 0°: en fase con la fuerza",
+              "La rigidez (responde como si la carga fuera estática)"
+            ],
+            [
+              "Resonancia",
+              "r ≈ 1",
+              "≈ 1/(2ζ)",
+              "90°",
+              "El amortiguamiento (lo único que limita la amplitud)"
+            ],
+            [
+              "Alta frecuencia",
+              "r ≫ 1",
+              "≈ 1/r² → 0",
+              "≈ 180°: en oposición",
+              "La masa (la inercia no deja moverse)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Empujar un columpio: si empujas al ritmo natural del columpio (resonancia), cada empujón suma y la amplitud crece mucho con poca fuerza. Si empujas a destiempo, casi no logras nada.",
+          "title": "Analogía"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Sin amortiguamiento (ζ = 0), en r = 1 la amplitud crece sin límite: x = −(F₀/(2·m·ωn))·t·cos ωn·t. Con amortiguamiento, el máximo ocurre en r = √(1 − 2ζ²) (ligeramente antes de 1) y vale M máx = 1/(2ζ·√(1 − ζ²)). Con ζ = 5 %, M ≈ 10: una fuerza pequeña produce diez veces el desplazamiento estático.",
+          "title": "Resonancia"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "m = 20 kg, k = 8 000 N/m (ωn = 20 rad/s), c = 120 N·s/m (ζ = 0,15), F₀ = 100 N, ω = 18 rad/s.\nr = 0,9; desplazamiento estático F₀/k = 0,0125 m.\nM = 1/√[(1 − 0,81)² + (2·0,15·0,9)²] = 1/√(0,0361 + 0,0729) = **3,03**.\nX = 3,03·0,0125 = **0,0379 m**; φ = arctan(0,27/0,19) = **54,9°**.\nEn resonancia exacta (r = 1): X = 0,0125/(2·0,15) = 0,0417 m.",
+          "title": "Ejemplo completo"
+        },
+        {
+          "type": "heading",
+          "text": "Fuerza transmitida y aislamiento"
+        },
+        {
+          "type": "formula",
+          "expression": "TR = Ft/F₀ = √[1 + (2ζr)²] / √[(1 − r²)² + (2ζr)²]",
+          "caption": "Transmisibilidad: fracción de la fuerza que llega a la base"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "r",
+            "TR",
+            "Conclusión"
+          ],
+          "rows": [
+            [
+              "r < √2",
+              "> 1",
+              "La base recibe más fuerza que la aplicada: no hay aislamiento"
+            ],
+            [
+              "r = √2",
+              "= 1",
+              "Punto de cruce, para cualquier ζ"
+            ],
+            [
+              "r > √2",
+              "< 1",
+              "Hay **aislamiento**: mejor cuanto mayor sea r y menor ζ"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Para aislar una máquina se la monta sobre apoyos **blandos** (ωn baja) de modo que r = ω/ωn quede bien por encima de √2. Sin amortiguamiento, TR = 1/(r² − 1). El poco amortiguamiento que se agrega sirve para limitar la amplitud al **pasar por la resonancia** en el arranque y la parada.",
+          "title": "Aislamiento de vibraciones"
+        },
+        {
+          "type": "heading",
+          "text": "Dos casos frecuentes"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Caso",
+            "Excitación",
+            "Respuesta"
+          ],
+          "rows": [
+            [
+              "**Desbalance rotatorio** (masa m₀ con excentricidad e girando a ω; masa total M)",
+              "F₀ = m₀·e·ω²",
+              "M·X/(m₀·e) = r² / √[(1 − r²)² + (2ζr)²]. A alta velocidad X → m₀·e/M"
+            ],
+            [
+              "**Movimiento de la base** y = Y·sen ωt (sismo, vehículo en camino ondulado)",
+              "La base mueve el resorte y el amortiguador",
+              "X/Y = TR (la misma fórmula de transmisibilidad)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Si la fuerza tiene una frecuencia cercana pero no igual a la natural y no hay amortiguamiento, aparecen **pulsaciones** (batimientos): la amplitud crece y decrece lentamente con frecuencia |ω − ωn|/2."
+        },
+        {
+          "type": "interactive",
+          "widget": "forced_vibration",
+          "title": "Laboratorio: curva de resonancia"
+        },
+        {
+          "type": "quiz",
+          "question": "En régimen permanente, el sistema vibra con la frecuencia:",
+          "options": [
+            "Natural ωn",
+            "De la fuerza ω",
+            "Amortiguada ωd",
+            "Cero"
+          ],
+          "correct": 1,
+          "explanation": "La parte transitoria desaparece."
+        },
+        {
+          "type": "quiz",
+          "question": "En resonancia, el factor de amplificación vale aproximadamente:",
+          "options": [
+            "1",
+            "1/(2ζ)",
+            "2ζ",
+            "0"
+          ],
+          "correct": 1,
+          "explanation": "Solo lo limita el amortiguamiento."
+        },
+        {
+          "type": "quiz",
+          "question": "Con ζ = 0,05, la amplificación en resonancia es:",
+          "options": [
+            "5",
+            "10",
+            "20",
+            "0,1"
+          ],
+          "correct": 1,
+          "explanation": "1/(2·0,05)."
+        },
+        {
+          "type": "quiz",
+          "question": "Para r ≫ 1 la amplitud tiende a:",
+          "options": [
+            "Infinito",
+            "Cero",
+            "F₀/k",
+            "1/(2ζ)"
+          ],
+          "correct": 1,
+          "explanation": "Domina la inercia."
+        },
+        {
+          "type": "quiz",
+          "question": "Hay aislamiento de vibraciones cuando:",
+          "options": [
+            "r < 1",
+            "r = 1",
+            "r > √2",
+            "ζ = 1"
+          ],
+          "correct": 2,
+          "explanation": "TR < 1."
+        },
+        {
+          "type": "quiz",
+          "question": "En r = 1 el ángulo de fase es:",
+          "options": [
+            "0°",
+            "45°",
+            "90°",
+            "180°"
+          ],
+          "correct": 2,
+          "explanation": "tan φ → ∞."
+        },
+        {
+          "type": "quiz",
+          "question": "Para aislar una máquina conviene que sus apoyos sean:",
+          "options": [
+            "Muy rígidos",
+            "Blandos (ωn baja)",
+            "De masa nula",
+            "Con ζ = 1"
+          ],
+          "correct": 1,
+          "explanation": "Para que r sea grande."
+        },
+        {
+          "type": "quiz",
+          "question": "La fuerza de un desbalance rotatorio es proporcional a:",
+          "options": [
+            "ω",
+            "ω²",
+            "1/ω",
+            "No depende de ω"
+          ],
+          "correct": 1,
+          "explanation": "m₀·e·ω²."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de amortiguamiento y vibración forzada",
+      "summary": "Clasificación, respuesta en el tiempo, medición de ζ, resonancia, aislamiento y desbalance.",
+      "minutes": 55,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuélvelos **en papel**, con dibujo, nivel de referencia y estados 1 y 2 bien marcados; luego pide la pista, la solución paso a paso o solo la respuesta. Usa g = 9,81 m/s².",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Caracterizar un sistema amortiguado",
+          "level": 2,
+          "statement": "Para m = 10 kg, k = 4 000 N/m y c = 80 N·s/m halla ωn, cc, ζ, ωd, τd, el decremento logarítmico, la razón entre amplitudes sucesivas y el número de ciclos para que la amplitud baje al 1 %.",
+          "steps": [
+            "ωn = √(4 000/10) = 20 rad/s; cc = 2·10·20 = 400 N·s/m; ζ = 80/400 = 0,2.",
+            "ωd = 20·√(1 − 0,04) = 19,60 rad/s; τd = 2π/19,60 = 0,321 s.",
+            "δ = 2π·0,2/√0,96 = 1,283; x₁/x₂ = e^1,283 = 3,61.",
+            "n = ln 100/1,283 = 3,59."
+          ],
+          "answer": "**ωn = 20 rad/s; cc = 400 N·s/m; ζ = 0,2; ωd ≈ 19,6 rad/s; τd ≈ 0,321 s; δ ≈ 1,283; razón ≈ 3,61; 4 ciclos**"
+        },
+        {
+          "type": "exercise",
+          "title": "Respuesta en el tiempo",
+          "level": 3,
+          "statement": "El sistema anterior se suelta con x₀ = 0,05 m y v₀ = 0. Escribe x(t) y calcula el desplazamiento al cabo de un período amortiguado.",
+          "steps": [
+            "ζ·ωn = 4 s⁻¹; C₁ = 0,05; C₂ = (0 + 4·0,05)/19,60 = 0,0102.",
+            "x(t) = e^(−4t)·[0,05·cos 19,6t + 0,0102·sen 19,6t].",
+            "En t = τd el coseno vale 1 y el seno 0: x = 0,05·e^(−4·0,321) = 0,05·e^(−1,283)."
+          ],
+          "answer": "**x(t) = e^(−4t)·[0,05·cos 19,6t + 0,0102·sen 19,6t]; x(τd) ≈ 0,0139 m**"
+        },
+        {
+          "type": "exercise",
+          "title": "Medir el amortiguamiento",
+          "level": 3,
+          "statement": "En un ensayo de vibración libre la amplitud baja de 20 mm a 5 mm en 6 ciclos. La masa es 50 kg y k = 20 000 N/m. Halla δ, ζ y el coeficiente c.",
+          "steps": [
+            "δ = (1/6)·ln(20/5) = 0,2310.",
+            "ζ = δ/√(4π² + δ²) = 0,2310/6,2874 = 0,0367.",
+            "ωn = √(20 000/50) = 20 rad/s; cc = 2·50·20 = 2 000 N·s/m.",
+            "c = ζ·cc."
+          ],
+          "answer": "**δ ≈ 0,231; ζ ≈ 0,037 (3,7 %); c ≈ 73,5 N·s/m**"
+        },
+        {
+          "type": "exercise",
+          "title": "Amortiguamiento crítico",
+          "level": 2,
+          "statement": "Una puerta con cierre automático se modela con m = 2 kg y k = 50 N/m. ¿Qué c da amortiguamiento crítico? Si se suelta desde x₀ = 0,10 m en reposo, ¿dónde está a los 0,5 s?",
+          "steps": [
+            "ωn = √(50/2) = 5 rad/s; cc = 2·2·5 = 20 N·s/m.",
+            "x = (C₁ + C₂·t)·e^(−ωn·t) con C₁ = 0,10 y C₂ = v₀ + ωn·x₀ = 0,5.",
+            "x(0,5) = (0,10 + 0,25)·e^(−2,5) = 0,35·0,0821."
+          ],
+          "answer": "**c = 20 N·s/m; x(0,5 s) ≈ 0,0287 m**"
+        },
+        {
+          "type": "exercise",
+          "title": "Amplitud y fase en vibración forzada",
+          "level": 3,
+          "statement": "Sistema con m = 20 kg, k = 8 000 N/m y c = 120 N·s/m, sometido a F = 100·sen 18t (N). Halla ζ, r, la amplitud permanente, el ángulo de fase y la amplitud que tendría en resonancia.",
+          "steps": [
+            "ωn = 20 rad/s; cc = 800 N·s/m; ζ = 0,15; r = 18/20 = 0,9.",
+            "F₀/k = 0,0125 m.",
+            "M = 1/√[(1 − 0,81)² + (0,27)²] = 1/0,3302 = 3,03 → X = 0,0379 m.",
+            "φ = arctan(0,27/0,19) = 54,9°.",
+            "En r = 1: X = 0,0125/(2·0,15)."
+          ],
+          "answer": "**ζ = 0,15; r = 0,9; X ≈ 0,0379 m; φ ≈ 54,9°; en resonancia X ≈ 0,0417 m**"
+        },
+        {
+          "type": "exercise",
+          "title": "Aislamiento de una máquina",
+          "level": 3,
+          "statement": "Una máquina de 200 kg gira a 1 200 rpm. Se quiere que a la cimentación llegue como máximo el 10 % de la fuerza de desbalance. Despreciando el amortiguamiento, halla la rigidez total de los apoyos y la deflexión estática que tendrán.",
+          "steps": [
+            "ω = 1 200·2π/60 = 125,7 rad/s.",
+            "TR = 1/(r² − 1) = 0,1 → r² = 11 → r = 3,317.",
+            "ωn = 125,7/3,317 = 37,89 rad/s → k = m·ωn² = 200·1 435,6.",
+            "δst = g/ωn² = 9,81/1 435,6."
+          ],
+          "answer": "**k ≈ 287 kN/m en total; deflexión estática ≈ 6,8 mm**",
+          "hint": "Para aislar, r debe superar √2; aquí r ≈ 3,3."
+        },
+        {
+          "type": "exercise",
+          "title": "Desbalance rotatorio",
+          "level": 3,
+          "statement": "Un ventilador de 150 kg sobre apoyos de rigidez total 600 kN/m y ζ = 0,1 tiene un desbalance m₀·e = 0,02 kg·m y gira a 900 rpm. Halla la amplitud de vibración.",
+          "steps": [
+            "ω = 900·2π/60 = 94,25 rad/s; ωn = √(600 000/150) = 63,25 rad/s; r = 1,490.",
+            "r² = 2,221; (1 − r²)² = 1,490; (2ζr)² = 0,0888.",
+            "M·X/(m₀·e) = 2,221/√1,579 = 1,767.",
+            "X = 1,767·0,02/150."
+          ],
+          "answer": "**X ≈ 0,236 mm**"
+        },
+        {
+          "type": "exercise",
+          "title": "Diagnóstico de resonancia",
+          "level": 2,
+          "statement": "Una pasarela peatonal tiene una frecuencia natural vertical de 2,0 Hz y ζ = 1 %. La gente camina a unos 2 pasos por segundo. ¿Qué problema hay y qué soluciones propones?",
+          "steps": [
+            "La frecuencia de excitación (≈ 2 Hz) coincide con la natural: r ≈ 1.",
+            "Amplificación ≈ 1/(2·0,01) = 50 veces la deflexión estática de la fuerza dinámica de los pasos.",
+            "Soluciones: rigidizar para subir la frecuencia natural fuera del rango de paso, agregar masa o cambiar la luz, o instalar amortiguadores de masa sintonizada que aumenten el amortiguamiento efectivo."
+          ],
+          "answer": "**Resonancia con el paso de los peatones (amplificación de unas 50 veces). Se corrige alejando la frecuencia natural del rango de excitación o aumentando el amortiguamiento.**"
+        }
+      ]
     }
   ]
 }

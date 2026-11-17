@@ -273,6 +273,728 @@
           "explanation": "Sistema conservativo: T + V constante → su **derivada es cero**."
         }
       ]
+    },
+    {
+      "id": "l04-mas-fondo",
+      "title": "Movimiento armónico simple a fondo",
+      "summary": "Posición, velocidad y aceleración, relaciones entre ellas, fase, energía y tiempos entre posiciones.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un oscilador es un sistema con una **posición de equilibrio** y una **fuerza restauradora** que siempre lo empuja de vuelta. Al volver llega con velocidad, se pasa, y la fuerza lo frena y lo devuelve otra vez. Si la fuerza es proporcional al desplazamiento, el movimiento es armónico simple.",
+          "title": "Idea"
+        },
+        {
+          "type": "formula",
+          "expression": "x = A·sen(ωn·t + φ)        v = A·ωn·cos(ωn·t + φ)        a = −A·ωn²·sen(ωn·t + φ) = −ωn²·x"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Magnitud",
+            "Valor máximo",
+            "Dónde ocurre"
+          ],
+          "rows": [
+            [
+              "Desplazamiento",
+              "A",
+              "En los extremos (v = 0)"
+            ],
+            [
+              "Velocidad",
+              "A·ωn",
+              "Al pasar por el equilibrio (x = 0)"
+            ],
+            [
+              "Aceleración",
+              "A·ωn²",
+              "En los extremos, dirigida hacia el equilibrio"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "v = ±ωn·√(A² − x²)",
+          "caption": "Velocidad en cualquier posición (sale de la conservación de la energía)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "Amplitud A",
+              "Máximo desplazamiento desde el equilibrio. Depende de las condiciones iniciales"
+            ],
+            [
+              "Frecuencia natural circular ωn",
+              "Rapidez de la oscilación en rad/s. Depende **solo del sistema** (k y m), no de cómo se lo suelte"
+            ],
+            [
+              "Período τ = 2π/ωn",
+              "Tiempo de una oscilación completa"
+            ],
+            [
+              "Frecuencia f = 1/τ",
+              "Oscilaciones por segundo (Hz)"
+            ],
+            [
+              "Ángulo de fase φ",
+              "Indica en qué punto del ciclo estaba el sistema en t = 0"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El período **no depende de la amplitud**: un columpio tarda lo mismo en ir y volver si lo empujas poco o mucho (mientras el ángulo sea pequeño). Lo que cambia con la amplitud son la velocidad y la aceleración máximas.",
+          "title": "Isocronismo"
+        },
+        {
+          "type": "heading",
+          "text": "La imagen del fasor"
+        },
+        {
+          "type": "text",
+          "text": "El movimiento armónico es la **sombra** de un punto que gira en un círculo de radio A con velocidad angular ωn. Una vuelta completa es un período. Esto permite calcular tiempos: ir del equilibrio a la mitad de la amplitud corresponde a un giro de 30°, es decir τ/12; de la mitad al extremo, 60°, es decir τ/6."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tramo",
+            "Ángulo girado",
+            "Tiempo"
+          ],
+          "rows": [
+            [
+              "De x = 0 a x = A/2",
+              "30°",
+              "τ/12"
+            ],
+            [
+              "De x = A/2 a x = A",
+              "60°",
+              "τ/6"
+            ],
+            [
+              "De x = 0 a x = A",
+              "90°",
+              "τ/4"
+            ],
+            [
+              "De un extremo al otro",
+              "180°",
+              "τ/2"
+            ]
+          ],
+          "caption": "El oscilador pasa más tiempo cerca de los extremos, donde va lento"
+        },
+        {
+          "type": "heading",
+          "text": "Energía"
+        },
+        {
+          "type": "formula",
+          "expression": "E = ½·m·v² + ½·k·x² = ½·k·A² = ½·m·(A·ωn)²"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Posición",
+            "Energía cinética",
+            "Energía potencial"
+          ],
+          "rows": [
+            [
+              "x = 0",
+              "Toda: ½kA²",
+              "0"
+            ],
+            [
+              "x = ±A",
+              "0",
+              "Toda: ½kA²"
+            ],
+            [
+              "x = ±A/2",
+              "¾ del total",
+              "¼ del total"
+            ],
+            [
+              "x = ±A/√2",
+              "Mitad",
+              "Mitad"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "m = 5 kg, k = 2 000 N/m, x₀ = 0,03 m, v₀ = −0,8 m/s.\nωn = √(2 000/5) = 20 rad/s; τ = 0,314 s; f = 3,18 Hz.\nA = √(0,03² + (0,8/20)²) = √(0,0009 + 0,0016) = **0,05 m**.\nv máx = 0,05·20 = 1,0 m/s; a máx = 0,05·400 = 20 m/s².\nEnergía: ½·2 000·0,05² = 2,5 J = ½·5·1,0² ✔.",
+          "title": "Ejemplo completo"
+        },
+        {
+          "type": "interactive",
+          "widget": "viscous_oscillator",
+          "title": "Laboratorio: pon ζ = 0 para ver la oscilación libre"
+        },
+        {
+          "type": "quiz",
+          "question": "La frecuencia natural de un oscilador masa–resorte depende de:",
+          "options": [
+            "La amplitud",
+            "k y m",
+            "La velocidad inicial",
+            "El tiempo"
+          ],
+          "correct": 1,
+          "explanation": "ωn = √(k/m)."
+        },
+        {
+          "type": "quiz",
+          "question": "La velocidad es máxima:",
+          "options": [
+            "En los extremos",
+            "Al pasar por el equilibrio",
+            "En x = A/2",
+            "Nunca"
+          ],
+          "correct": 1,
+          "explanation": "Toda la energía es cinética."
+        },
+        {
+          "type": "quiz",
+          "question": "La aceleración es máxima:",
+          "options": [
+            "En el equilibrio",
+            "En los extremos",
+            "En x = A/2",
+            "Es constante"
+          ],
+          "correct": 1,
+          "explanation": "a = −ωn²·x."
+        },
+        {
+          "type": "quiz",
+          "question": "A = 0,1 m y ωn = 5 rad/s. La velocidad cuando x = 0,06 m es:",
+          "options": [
+            "0,5 m/s",
+            "0,4 m/s",
+            "0,3 m/s",
+            "0,8 m/s"
+          ],
+          "correct": 1,
+          "explanation": "5·√(0,01 − 0,0036)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la amplitud se duplica, el período:",
+          "options": [
+            "Se duplica",
+            "No cambia",
+            "Se reduce a la mitad",
+            "Se cuadruplica"
+          ],
+          "correct": 1,
+          "explanation": "No depende de A."
+        },
+        {
+          "type": "quiz",
+          "question": "El tiempo para ir del equilibrio a x = A/2 es:",
+          "options": [
+            "τ/4",
+            "τ/8",
+            "τ/12",
+            "τ/6"
+          ],
+          "correct": 2,
+          "explanation": "Giro de 30°."
+        },
+        {
+          "type": "quiz",
+          "question": "En x = A/2 la energía potencial es:",
+          "options": [
+            "La mitad del total",
+            "Un cuarto del total",
+            "Tres cuartos",
+            "Cero"
+          ],
+          "correct": 1,
+          "explanation": "½k(A/2)²."
+        }
+      ]
+    },
+    {
+      "id": "l05-ecuacion",
+      "title": "Hallar la ecuación del movimiento y la frecuencia natural",
+      "summary": "Dos métodos (Newton y energía), el papel del equilibrio estático, pequeñas oscilaciones y un catálogo de sistemas.",
+      "minutes": 24,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Todo problema de vibración libre sin amortiguamiento se reduce a llevar el sistema a la forma **ẍ + ωn²·x = 0** (o θ̈ + ωn²·θ = 0). Lo que multiplica a x, una vez que el coeficiente de ẍ es 1, es ωn².",
+          "title": "El objetivo"
+        },
+        {
+          "type": "heading",
+          "text": "Método 1: segunda ley"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Elige la coordenada (x o θ) medida **desde el equilibrio estático**.",
+            "Dibuja el diagrama de cuerpo libre en una posición desplazada genérica, con x y ẋ positivos.",
+            "Escribe ΣF = m·ẍ o ΣMₒ = Iₒ·θ̈ (sentido positivo igual al de la coordenada).",
+            "Para ángulos pequeños: sen θ ≈ θ, cos θ ≈ 1.",
+            "Ordena: (inercia)·ẍ + (rigidez)·x = 0 → ωn² = rigidez/inercia."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Método 2: energía"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Escribe T y V en función de la coordenada y su derivada.",
+            "Deriva: d(T + V)/dt = 0 y simplifica el factor común ẋ.",
+            "Llega a la misma forma y lee ωn.",
+            "Atajo: si T = ½·meq·ẋ² y V = ½·keq·x², entonces **ωn = √(keq/meq)**."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si mides la coordenada desde la posición de **equilibrio estático**, el peso y la deformación inicial del resorte se cancelan y **no aparecen** en la ecuación (cuando el peso no produce momento restaurador). En un péndulo, en cambio, el peso **es** la fuerza restauradora y sí aparece.",
+          "title": "El peso: cuándo sí y cuándo no"
+        },
+        {
+          "type": "heading",
+          "text": "Catálogo de sistemas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sistema",
+            "Ecuación",
+            "ωn"
+          ],
+          "rows": [
+            [
+              "Masa–resorte",
+              "m·ẍ + k·x = 0",
+              "√(k/m)"
+            ],
+            [
+              "Masa colgada con deflexión estática δst",
+              "—",
+              "√(g/δst)"
+            ],
+            [
+              "Péndulo simple",
+              "θ̈ + (g/L)·θ = 0",
+              "√(g/L)"
+            ],
+            [
+              "Péndulo físico (cuerpo articulado en O, G a distancia d)",
+              "Iₒ·θ̈ + m·g·d·θ = 0",
+              "√(m·g·d/Iₒ)"
+            ],
+            [
+              "Varilla uniforme colgada de un extremo",
+              "(mL²/3)·θ̈ + m·g·(L/2)·θ = 0",
+              "√(3g/(2L))"
+            ],
+            [
+              "Péndulo de torsión (eje de rigidez κ, disco de inercia J)",
+              "J·θ̈ + κ·θ = 0",
+              "√(κ/J)"
+            ],
+            [
+              "Disco que rueda sin deslizar, con resorte en su centro",
+              "(3/2)·m·ẍ + k·x = 0",
+              "√(2k/(3m))"
+            ],
+            [
+              "Barra horizontal articulada en un extremo, resorte en el otro",
+              "(mL²/3)·θ̈ + k·L²·θ = 0",
+              "√(3k/m)"
+            ],
+            [
+              "Columna de líquido de longitud total L en un tubo en U",
+              "ẍ + (2g/L)·x = 0",
+              "√(2g/L)"
+            ],
+            [
+              "Masa en el extremo de una viga en voladizo (rigidez 3EI/L³)",
+              "m·ẍ + (3EI/L³)·x = 0",
+              "√(3EI/(m·L³))"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Barra uniforme (m = 12 kg, L = 1,2 m) horizontal, articulada en O y sostenida por un resorte vertical k = 4 000 N/m en el otro extremo. Coordenada θ desde el equilibrio.\nMomento restaurador respecto a O: el resorte se deforma L·θ y ejerce k·L·θ con brazo L → k·L²·θ. El peso se cancela con la deformación estática.\n(m·L²/3)·θ̈ + k·L²·θ = 0 → ωn = √(3k/m) = √(1 000) = **31,6 rad/s** (τ = 0,199 s).",
+          "title": "Ejemplo 1: barra con resorte (Newton)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Varilla uniforme de 1 m articulada a L/4 de un extremo (d = L/4 desde G).\nIₒ = m·L²/12 + m·(L/4)² = 7·m·L²/48.\nωn = √(m·g·d/Iₒ) = √(g·(L/4)/(7L²/48)) = √(12g/(7L)) = **4,10 rad/s** (τ = 1,53 s).",
+          "title": "Ejemplo 2: péndulo físico"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Columna de líquido de longitud L en un tubo en U, desplazada x: T = ½·(ρ·A·L)·ẋ²; V = ρ·A·g·x² (una columna de altura x sube y otra baja).\nd/dt: ρ·A·L·ẋ·ẍ + 2·ρ·A·g·x·ẋ = 0 → ẍ + (2g/L)·x = 0 → **ωn = √(2g/L)**.",
+          "title": "Ejemplo 3: tubo en U (energía)"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Un edificio de un piso se modela como una masa (la losa) sobre resortes (las columnas): su período natural τ = 2π·√(m/k) es el dato clave del diseño sísmico. Si el período del suelo se acerca al del edificio, hay resonancia."
+        },
+        {
+          "type": "quiz",
+          "question": "La ecuación 4ẍ + 100x = 0 tiene ωn =",
+          "options": [
+            "25 rad/s",
+            "5 rad/s",
+            "10 rad/s",
+            "0,2 rad/s"
+          ],
+          "correct": 1,
+          "explanation": "√(100/4)."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la coordenada se mide desde el equilibrio estático, en un sistema masa–resorte vertical el peso:",
+          "options": [
+            "Aparece en la EDO",
+            "No aparece",
+            "Duplica ωn",
+            "Cambia el período"
+          ],
+          "correct": 1,
+          "explanation": "Se cancela con la deformación estática."
+        },
+        {
+          "type": "quiz",
+          "question": "Una masa colgada produce una deflexión estática de 9,81 cm. Su ωn es:",
+          "options": [
+            "1 rad/s",
+            "10 rad/s",
+            "100 rad/s",
+            "3,13 rad/s"
+          ],
+          "correct": 1,
+          "explanation": "√(9,81/0,0981)."
+        },
+        {
+          "type": "quiz",
+          "question": "Para un péndulo físico, ωn =",
+          "options": [
+            "√(g/L)",
+            "√(m·g·d/Iₒ)",
+            "√(k/m)",
+            "√(Iₒ/(m·g·d))"
+          ],
+          "correct": 1,
+          "explanation": "Momento restaurador entre inercia."
+        },
+        {
+          "type": "quiz",
+          "question": "En el método de energía se impone:",
+          "options": [
+            "T = V",
+            "d(T + V)/dt = 0",
+            "T + V = 0",
+            "dT/dt = dV/dt"
+          ],
+          "correct": 1,
+          "explanation": "Energía constante."
+        },
+        {
+          "type": "quiz",
+          "question": "Si T = ½·6·ẋ² y V = ½·2 400·x², ωn =",
+          "options": [
+            "400 rad/s",
+            "20 rad/s",
+            "14,1 rad/s",
+            "4,5 rad/s"
+          ],
+          "correct": 1,
+          "explanation": "√(2 400/6)."
+        },
+        {
+          "type": "quiz",
+          "question": "Un péndulo simple de 1 m tiene un período de aproximadamente:",
+          "options": [
+            "1 s",
+            "2 s",
+            "3,1 s",
+            "0,5 s"
+          ],
+          "correct": 1,
+          "explanation": "2π·√(1/9,81)."
+        }
+      ]
+    },
+    {
+      "id": "l06-equivalentes",
+      "title": "Rigidez y masa equivalentes: palancas, poleas y vigas",
+      "summary": "Cómo reducir un sistema con varios elementos a un solo resorte y una sola masa usando la energía.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Muchos sistemas tienen resortes y masas en distintos puntos de un mismo mecanismo. Como todos se mueven «al unísono» (un grado de libertad), se pueden reemplazar por **un resorte equivalente y una masa equivalente** referidos a una sola coordenada, igualando energías.",
+          "title": "Idea"
+        },
+        {
+          "type": "formula",
+          "expression": "½·keq·x² = Σ ½·kᵢ·sᵢ²        ½·meq·ẋ² = Σ (energías cinéticas)        ωn = √(keq/meq)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sistema",
+            "Relación",
+            "Equivalente referido a la masa"
+          ],
+          "rows": [
+            [
+              "Palanca rígida sin masa: resorte a distancia a del pivote y masa a distancia b",
+              "Deformación del resorte = x·(a/b)",
+              "keq = k·(a/b)²"
+            ],
+            [
+              "Masa colgada de una polea móvil; resorte en la cuerda",
+              "El resorte se deforma 2x",
+              "keq = 4k"
+            ],
+            [
+              "Resorte en el eje de una polea móvil; masa en la cuerda",
+              "El resorte se deforma x/2",
+              "keq = k/4"
+            ],
+            [
+              "Disco que rueda sin deslizar",
+              "T = ½·(3/2·m)·ẋ²",
+              "meq = (3/2)·m"
+            ],
+            [
+              "Masa en el centro de una viga simplemente apoyada",
+              "k = 48EI/L³",
+              "ωn = √(48EI/(m·L³))"
+            ],
+            [
+              "Masa en el extremo de un voladizo",
+              "k = 3EI/L³",
+              "ωn = √(3EI/(m·L³))"
+            ],
+            [
+              "Barra axial",
+              "k = EA/L",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Palanca sin masa con pivote en O. Resorte k = 5 000 N/m a 0,2 m del pivote; masa de 4 kg a 0,5 m.\nSi la masa baja x, el resorte se deforma 0,4x: V = ½·5 000·(0,4x)² = ½·800·x² → keq = 800 N/m.\nωn = √(800/4) = **14,1 rad/s**.",
+          "title": "Ejemplo: palanca"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La rigidez equivalente escala con el **cuadrado** de la relación de desplazamientos, no linealmente. Un resorte colocado a la mitad del brazo «vale» la cuarta parte.",
+          "title": "Cuadrado de la relación"
+        },
+        {
+          "type": "quiz",
+          "question": "Un resorte k a distancia a del pivote y una masa a distancia 2a equivalen, referidos a la masa, a:",
+          "options": [
+            "k/2",
+            "k/4",
+            "2k",
+            "4k"
+          ],
+          "correct": 1,
+          "explanation": "(a/2a)² = 1/4."
+        },
+        {
+          "type": "quiz",
+          "question": "La rigidez de un voladizo de longitud L con carga en el extremo es:",
+          "options": [
+            "48EI/L³",
+            "3EI/L³",
+            "EA/L",
+            "EI/L"
+          ],
+          "correct": 1,
+          "explanation": "Deflexión PL³/(3EI)."
+        },
+        {
+          "type": "quiz",
+          "question": "La masa equivalente de un disco que rueda sin deslizar es:",
+          "options": [
+            "m",
+            "1,5·m",
+            "2·m",
+            "0,5·m"
+          ],
+          "correct": 1,
+          "explanation": "T = ¾·m·ẋ²."
+        },
+        {
+          "type": "quiz",
+          "question": "Si keq = 3 200 N/m y meq = 8 kg, el período es:",
+          "options": [
+            "0,314 s",
+            "20 s",
+            "3,14 s",
+            "0,05 s"
+          ],
+          "correct": 0,
+          "explanation": "2π/20."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de vibraciones libres",
+      "summary": "Condiciones iniciales, resortes combinados, barras, péndulos físicos, rodadura y tiempos.",
+      "minutes": 55,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuélvelos **en papel**, con dibujo, nivel de referencia y estados 1 y 2 bien marcados; luego pide la pista, la solución paso a paso o solo la respuesta. Usa g = 9,81 m/s².",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Respuesta con condiciones iniciales",
+          "level": 2,
+          "statement": "Un bloque de 5 kg unido a un resorte de 2 000 N/m se suelta con x₀ = 0,03 m y v₀ = −0,8 m/s. Halla ωn, la amplitud, la ecuación del movimiento, las máximas velocidad y aceleración y el primer instante en que pasa por x = 0.",
+          "steps": [
+            "ωn = √(2 000/5) = 20 rad/s.",
+            "C₁ = x₀ = 0,03; C₂ = v₀/ωn = −0,04 → x = 0,03·cos 20t − 0,04·sen 20t.",
+            "A = √(0,03² + 0,04²) = 0,05 m; v máx = 1,0 m/s; a máx = 20 m/s².",
+            "x = 0 → tan 20t = 0,03/0,04 = 0,75 → 20t = 0,6435 rad."
+          ],
+          "answer": "**ωn = 20 rad/s; A = 0,05 m; x = 0,03·cos 20t − 0,04·sen 20t; v máx = 1,0 m/s; a máx = 20 m/s²; t ≈ 0,032 s**"
+        },
+        {
+          "type": "exercise",
+          "title": "Masa colgada y deflexión estática",
+          "level": 2,
+          "statement": "Al colgar una máquina de un resorte, este se alarga 25 mm. Halla la frecuencia natural en rad/s y en Hz y el período. Si luego se la baja 10 mm más y se suelta, ¿qué velocidad máxima alcanza?",
+          "steps": [
+            "ωn = √(g/δst) = √(9,81/0,025) = 19,81 rad/s.",
+            "f = 19,81/(2π) = 3,15 Hz; τ = 0,317 s.",
+            "A = 0,010 m → v máx = A·ωn."
+          ],
+          "answer": "**ωn ≈ 19,8 rad/s; f ≈ 3,15 Hz; τ ≈ 0,317 s; v máx ≈ 0,198 m/s**",
+          "hint": "No hace falta conocer m ni k."
+        },
+        {
+          "type": "exercise",
+          "title": "Resortes en serie y en paralelo",
+          "level": 2,
+          "statement": "Una masa de 10 kg se apoya en dos resortes de 3 000 y 6 000 N/m. Halla la frecuencia natural (en rad/s y Hz) si están en serie y si están en paralelo.",
+          "steps": [
+            "Serie: 1/keq = 1/3 000 + 1/6 000 → keq = 2 000 N/m → ωn = 14,14 rad/s.",
+            "Paralelo: keq = 9 000 N/m → ωn = 30 rad/s."
+          ],
+          "answer": "**Serie: 14,1 rad/s (2,25 Hz). Paralelo: 30 rad/s (4,77 Hz).**"
+        },
+        {
+          "type": "exercise",
+          "title": "Barra articulada con resorte",
+          "level": 3,
+          "statement": "Una barra uniforme de 12 kg y 1,2 m, horizontal en equilibrio, está articulada en un extremo y sostenida por un resorte vertical de 4 000 N/m en el otro. Halla la ecuación del movimiento para pequeñas oscilaciones, ωn y el período.",
+          "steps": [
+            "Coordenada θ desde el equilibrio: el peso se cancela con la fuerza estática del resorte.",
+            "Momento restaurador: (k·L·θ)·L = k·L²·θ.",
+            "ΣMₒ = Iₒ·θ̈ → (m·L²/3)·θ̈ + k·L²·θ = 0 → θ̈ + (3k/m)·θ = 0.",
+            "ωn = √(3·4 000/12) = √1 000."
+          ],
+          "answer": "**θ̈ + 1 000·θ = 0; ωn ≈ 31,6 rad/s; τ ≈ 0,199 s** (no depende de L)."
+        },
+        {
+          "type": "exercise",
+          "title": "Péndulo físico",
+          "level": 3,
+          "statement": "Una varilla uniforme de 1 m cuelga de un pasador. Halla su período si el pasador está a) en un extremo y b) a 25 cm de un extremo. ¿Qué longitud tendría un péndulo simple equivalente en el caso a)?",
+          "steps": [
+            "a) Iₒ = m·L²/3, d = L/2 → ωn = √(3g/(2L)) = √(14,715) = 3,836 rad/s → τ = 1,638 s.",
+            "Péndulo simple equivalente: g/Leq = 3g/(2L) → Leq = 2L/3 = 0,667 m.",
+            "b) d = 0,25 m; Iₒ = m·L²/12 + m·0,25² = (7/48)·m·L² → ωn = √(12g/(7L)) = 4,101 rad/s → τ = 1,532 s."
+          ],
+          "answer": "**a) τ ≈ 1,64 s (equivale a un péndulo simple de 0,667 m); b) τ ≈ 1,53 s**"
+        },
+        {
+          "type": "exercise",
+          "title": "Cilindro que rueda con resorte",
+          "level": 3,
+          "statement": "Un cilindro macizo de 8 kg rueda sin deslizar y su centro está unido a un resorte horizontal de 1 200 N/m. Halla ωn y el período por el método de la energía. Si se lo suelta con el resorte estirado 5 cm, halla la velocidad máxima de su centro.",
+          "steps": [
+            "T = ½·m·ẋ² + ½·(½·m·r²)·(ẋ/r)² = ¾·m·ẋ²;  V = ½·k·x².",
+            "d/dt: (3/2)·m·ẋ·ẍ + k·x·ẋ = 0 → ẍ + (2k/(3m))·x = 0.",
+            "ωn = √(2·1 200/(3·8)) = √100 = 10 rad/s; τ = 0,628 s.",
+            "v máx = A·ωn = 0,05·10."
+          ],
+          "answer": "**ωn = 10 rad/s; τ ≈ 0,628 s; v máx = 0,5 m/s**"
+        },
+        {
+          "type": "exercise",
+          "title": "Palanca con resorte",
+          "level": 2,
+          "statement": "Una palanca rígida sin masa pivota en O. Un resorte de 5 000 N/m actúa a 0,2 m del pivote y una masa de 4 kg está a 0,5 m. Halla la frecuencia natural.",
+          "steps": [
+            "Si la masa se desplaza x, el resorte se deforma x·(0,2/0,5) = 0,4x.",
+            "keq = 5 000·0,4² = 800 N/m.",
+            "ωn = √(800/4)."
+          ],
+          "answer": "**ωn ≈ 14,1 rad/s (2,25 Hz)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Tiempos dentro de un ciclo",
+          "level": 3,
+          "statement": "Un oscilador tiene amplitud 8 cm y período 1,2 s. ¿Cuánto tarda en ir de x = 0 a x = 4 cm? ¿Y de x = 4 cm a x = 8 cm? ¿Qué velocidad tiene en x = 4 cm?",
+          "steps": [
+            "ωn = 2π/1,2 = 5,236 rad/s.",
+            "De 0 a A/2: sen(ωn·t) = 0,5 → ωn·t = π/6 → t = τ/12 = 0,10 s.",
+            "De A/2 a A: τ/4 − τ/12 = τ/6 = 0,20 s.",
+            "v = ωn·√(A² − x²) = 5,236·√(0,0064 − 0,0016) = 5,236·0,0693."
+          ],
+          "answer": "**0,10 s; 0,20 s; v ≈ 0,363 m/s.** Tarda el doble en recorrer la segunda mitad."
+        },
+        {
+          "type": "exercise",
+          "title": "Líquido en un tubo en U",
+          "level": 2,
+          "statement": "Una columna de agua de 0,8 m de longitud total oscila en un tubo en U. Halla su frecuencia natural y su período.",
+          "steps": [
+            "ωn = √(2g/L) = √(2·9,81/0,8) = √24,525."
+          ],
+          "answer": "**ωn ≈ 4,95 rad/s; τ ≈ 1,27 s**"
+        }
+      ]
     }
   ]
 }

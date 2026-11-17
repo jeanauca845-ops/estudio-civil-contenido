@@ -470,6 +470,1057 @@
           "explanation": "Es el **rótulo** de identificación."
         }
       ]
+    },
+    {
+      "id": "l07-logica",
+      "title": "Cómo piensa Civil 3D: interfaz, objetos y estilos",
+      "summary": "Toolspace, objetos dinámicos, estilos, plantilla y sistema de coordenadas del dibujo.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "AutoCAD dibuja **líneas**; Civil 3D maneja **objetos inteligentes** (puntos, superficies, alineamientos, perfiles) que están conectados entre sí. Si mueves un punto, la superficie se recalcula, las curvas cambian y el perfil se actualiza solo. Lo que ves no es el dato: es el dato **vestido con un estilo**.",
+          "title": "La idea clave"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parte de la interfaz",
+            "Para qué sirve"
+          ],
+          "rows": [
+            [
+              "Cinta (Ribbon): Home, Insert, Annotate, Modify, Analyze…",
+              "Comandos organizados por tarea"
+            ],
+            [
+              "**Toolspace → Prospector**",
+              "Árbol con todos los objetos del dibujo: Points, Point Groups, Surfaces, Alignments, Sites. Aquí se crean, editan y borran"
+            ],
+            [
+              "**Toolspace → Settings**",
+              "Estilos y configuraciones: cómo se ve y se rotula cada tipo de objeto"
+            ],
+            [
+              "Toolspace → Survey y Toolbox",
+              "Base de datos de levantamientos e informes"
+            ],
+            [
+              "**Panorama**",
+              "Ventana flotante con tablas editables (lista de puntos, eventos y errores)"
+            ],
+            [
+              "Properties (Ctrl + 1)",
+              "Propiedades del objeto seleccionado"
+            ],
+            [
+              "Línea de comandos",
+              "Escribir comandos y leer lo que pide el programa"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Si el Toolspace no aparece: pestaña **Home → panel Palettes → Toolspace**, o escribe TOOLSPACE."
+        },
+        {
+          "type": "heading",
+          "text": "Estilos: datos y apariencia van separados"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Objeto",
+            "El estilo controla"
+          ],
+          "rows": [
+            [
+              "Punto",
+              "Marcador (cruz, círculo, árbol) y etiqueta (número, cota, descripción)"
+            ],
+            [
+              "Superficie",
+              "Si se ven triángulos, curvas, bordes, pendientes; el intervalo de curvas y sus colores"
+            ],
+            [
+              "Alineamiento y perfil",
+              "Líneas, estacionamiento, rótulos"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si «no se ven las curvas», casi siempre no es un error del modelo sino del **estilo**: clic en la superficie → Surface Properties → pestaña Information → Surface Style → elige uno que muestre «Contours».",
+          "title": "No se ve no significa no existe"
+        },
+        {
+          "type": "heading",
+          "text": "Empezar bien un dibujo"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Nuevo dibujo con la plantilla métrica: **AutoCAD Civil 3D (Metric) NCS.dwt**. Trae estilos y unidades en metros.",
+            "Toolspace → Settings → clic derecho en el nombre del dibujo → **Edit Drawing Settings**.",
+            "Pestaña **Units and Zone**: unidades en metros, escala del dibujo, y la zona. Para Ecuador continental: categoría **UTM, WGS84 Datum** → **UTM-WGS 1984 datum, Zone 17 South** (código UTM84-17S).",
+            "Pestaña **Ambient Settings**: precisión de coordenadas, cotas, pendientes (en %) y ángulos.",
+            "Guarda como .dwg en una carpeta del proyecto junto a los archivos de puntos."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Asignar la zona permite usar mapas base en línea (Geolocation) y que los datos calcen con los de ArcMap. Si el levantamiento usó coordenadas locales arbitrarias, se deja «No Datum, No Projection»."
+        },
+        {
+          "type": "quiz",
+          "question": "La pestaña del Toolspace donde se crean y administran los objetos es:",
+          "options": [
+            "Settings",
+            "Prospector",
+            "Toolbox",
+            "Layers"
+          ],
+          "correct": 1,
+          "explanation": "El árbol de objetos."
+        },
+        {
+          "type": "quiz",
+          "question": "Si las curvas de nivel no se ven, lo primero que se revisa es:",
+          "options": [
+            "El archivo de puntos",
+            "El estilo de la superficie",
+            "La impresora",
+            "La zona UTM"
+          ],
+          "correct": 1,
+          "explanation": "El estilo decide qué se muestra."
+        },
+        {
+          "type": "quiz",
+          "question": "La zona de coordenadas del dibujo se asigna en:",
+          "options": [
+            "Surface Properties",
+            "Edit Drawing Settings → Units and Zone",
+            "Point Groups",
+            "Layout"
+          ],
+          "correct": 1,
+          "explanation": "Configuración del dibujo."
+        },
+        {
+          "type": "quiz",
+          "question": "Decir que los objetos son «dinámicos» significa que:",
+          "options": [
+            "Se mueven solos",
+            "Se actualizan cuando cambian los datos de los que dependen",
+            "No se pueden editar",
+            "Solo existen en 3D"
+          ],
+          "correct": 1,
+          "explanation": "Están enlazados."
+        },
+        {
+          "type": "quiz",
+          "question": "La plantilla recomendada para trabajar en metros es:",
+          "options": [
+            "acad.dwt",
+            "AutoCAD Civil 3D (Metric) NCS.dwt",
+            "acadiso3D.dwt",
+            "Cualquier .dwg"
+          ],
+          "correct": 1,
+          "explanation": "Trae estilos métricos."
+        }
+      ]
+    },
+    {
+      "id": "l08-puntos-fondo",
+      "title": "Puntos a fondo: formatos, grupos y códigos",
+      "summary": "Formatos de archivo, importación sin errores, grupos de puntos y claves descriptivas.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Formato",
+            "Orden de las columnas",
+            "Ejemplo de línea"
+          ],
+          "rows": [
+            [
+              "PNEZD (comma delimited)",
+              "Punto, Norte, Este, Cota, Descripción",
+              "101,9678350.25,722650.10,2546.32,BORD"
+            ],
+            [
+              "PENZD (comma delimited)",
+              "Punto, Este, Norte, Cota, Descripción",
+              "101,722650.10,9678350.25,2546.32,BORD"
+            ],
+            [
+              "NEZ / ENZ",
+              "Sin número ni descripción",
+              "9678350.25,722650.10,2546.32"
+            ]
+          ],
+          "caption": "P = Point number, N = Northing, E = Easting, Z = elevation, D = Description"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El error más común es elegir **PNEZD cuando el archivo está en PENZD** (o al revés): los puntos aparecen girados y reflejados, o a miles de kilómetros. Pista: en Ecuador (zona 17 S) el **Norte tiene 7 cifras** enteras (9 6xx xxx) y el **Este 6** (7xx xxx).",
+          "title": "Norte y Este invertidos"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Los archivos deben usar **punto** como separador decimal y **coma** entre columnas. Si Excel los guardó con coma decimal, la importación falla o corta los números.",
+          "title": "Separadores"
+        },
+        {
+          "type": "heading",
+          "text": "Importar"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Insert → Points from File** (o Home → Points → Point Creation Tools → Import Points).",
+            "Agrega el archivo (.txt, .csv) y elige el formato; revisa la vista previa.",
+            "Marca **Add Points to Point Group** y crea un grupo con el nombre del levantamiento.",
+            "Acepta y haz **Zoom Extents** (doble clic en la rueda del ratón) para verlos."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Grupos de puntos"
+        },
+        {
+          "type": "text",
+          "text": "Un **Point Group** es una selección con nombre: «TERRENO», «RIO», «VIA», «ESTACIONES». Sirven para aplicar un estilo a muchos puntos, y sobre todo para decidir **qué puntos entran a la superficie**."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Pestaña del grupo",
+            "Uso"
+          ],
+          "rows": [
+            [
+              "Include",
+              "Incluir por número, cota o descripción (With raw descriptions matching: BORD*, EJE*)"
+            ],
+            [
+              "Exclude",
+              "Excluir: por ejemplo los puntos de estación (EST*) o de detalles elevados (POSTE, TAPA) que no son terreno"
+            ],
+            [
+              "Overrides",
+              "Forzar estilo de punto y de etiqueta para el grupo"
+            ],
+            [
+              "Point List",
+              "Ver qué puntos quedaron dentro"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "El orden de los grupos importa (Point Groups → Properties → flechas): el grupo que está **más arriba** impone su estilo. Si pones arriba un grupo con estilo «sin visualización», ocultas todos los puntos de golpe."
+        },
+        {
+          "type": "heading",
+          "text": "Códigos y claves descriptivas"
+        },
+        {
+          "type": "text",
+          "text": "En campo cada punto lleva un **código** (BORD = borde de vía, EJE, RIO, CERCA, TN = terreno natural). Con un **Description Key Set** (Settings → Point → Description Key Sets) cada código se asocia automáticamente a un estilo de punto, un estilo de etiqueta y una capa: al importar, los puntos ya salen clasificados."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Código típico",
+            "Significado",
+            "¿Entra a la superficie?"
+          ],
+          "rows": [
+            [
+              "TN",
+              "Terreno natural",
+              "Sí"
+            ],
+            [
+              "BORD, EJE",
+              "Borde y eje de vía",
+              "Sí, y además generan breaklines"
+            ],
+            [
+              "RIO, QUEB",
+              "Orilla o fondo de cauce",
+              "Sí, con breaklines"
+            ],
+            [
+              "EST, BM",
+              "Estaciones y puntos de control",
+              "Depende; a menudo se excluyen"
+            ],
+            [
+              "POSTE, TAPA, ARBOL",
+              "Detalles",
+              "No (su cota no es la del terreno o no interesa)"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "En el formato PENZD, la segunda columna es:",
+          "options": [
+            "Norte",
+            "Este",
+            "Cota",
+            "Descripción"
+          ],
+          "correct": 1,
+          "explanation": "Point, Easting, Northing, Z, Description."
+        },
+        {
+          "type": "quiz",
+          "question": "Los puntos aparecen girados y lejísimos. Lo más probable es:",
+          "options": [
+            "Estilo equivocado",
+            "Norte y Este intercambiados",
+            "Falta la zona UTM",
+            "Archivo vacío"
+          ],
+          "correct": 1,
+          "explanation": "Formato PNEZD frente a PENZD."
+        },
+        {
+          "type": "quiz",
+          "question": "Un Point Group sirve para:",
+          "options": [
+            "Borrar puntos",
+            "Agrupar puntos para darles estilo y usarlos en superficies",
+            "Cambiar la escala",
+            "Imprimir"
+          ],
+          "correct": 1,
+          "explanation": "Selección con nombre."
+        },
+        {
+          "type": "quiz",
+          "question": "Un punto con código POSTE medido en la punta del poste:",
+          "options": [
+            "Debe entrar a la superficie",
+            "Debe excluirse de la superficie",
+            "Es un breakline",
+            "Es un boundary"
+          ],
+          "correct": 1,
+          "explanation": "Su cota no es la del terreno."
+        },
+        {
+          "type": "quiz",
+          "question": "Las claves descriptivas (Description Keys) asocian el código del punto con:",
+          "options": [
+            "Estilo, etiqueta y capa",
+            "La zona UTM",
+            "El volumen",
+            "El perfil"
+          ],
+          "correct": 0,
+          "explanation": "Clasificación automática."
+        }
+      ]
+    },
+    {
+      "id": "l09-superficies-fondo",
+      "title": "Superficies a fondo: definición, breaklines, boundaries y ediciones",
+      "summary": "Todo lo que se puede agregar a una superficie, los tipos de líneas de quiebre y de contornos, las ediciones y la creación desde curvas de la carta o desde un MDE.",
+      "minutes": 24,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una superficie TIN es una **malla de triángulos** apoyada en los puntos. Civil 3D decide solo cómo unirlos (triangulación de Delaunay), pero no sabe dónde hay un río, una vía o un muro: eso se lo dices con **breaklines**. Y no sabe dónde termina tu levantamiento: eso se lo dices con el **boundary**.",
+          "title": "Idea"
+        },
+        {
+          "type": "heading",
+          "text": "Crear y definir"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Prospector → clic derecho en **Surfaces → Create Surface** → tipo **TIN surface** → nombre y estilo.",
+            "Despliega la superficie → **Definition**. Ahí están las categorías de datos que se pueden agregar."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "En Definition",
+            "Qué agrega"
+          ],
+          "rows": [
+            [
+              "**Point Groups**",
+              "Los puntos de un grupo (lo habitual en un levantamiento)"
+            ],
+            [
+              "**Breaklines**",
+              "Líneas que los triángulos no pueden cruzar"
+            ],
+            [
+              "**Boundaries**",
+              "Límites de la superficie"
+            ],
+            [
+              "**Contours**",
+              "Polilíneas con elevación (curvas digitalizadas de una carta)"
+            ],
+            [
+              "**DEM Files**",
+              "Un modelo ráster (.tif, .asc, .dem)"
+            ],
+            [
+              "**Drawing Objects**",
+              "Puntos, líneas, bloques o textos de AutoCAD con cota"
+            ],
+            [
+              "**Point Files**",
+              "Un archivo de puntos sin crear objetos punto (útil con muchísimos puntos)"
+            ],
+            [
+              "**Edits**",
+              "Ediciones manuales de la malla"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tipos de breakline"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Cuándo se usa"
+          ],
+          "rows": [
+            [
+              "**Standard**",
+              "Polilínea 3D o línea característica que pasa por los puntos, con sus cotas: bordes de vía, orillas, fondo de quebrada. El más usado"
+            ],
+            [
+              "**Proximity**",
+              "Polilínea 2D dibujada cerca de los puntos: Civil 3D la ajusta a los puntos más próximos y toma sus cotas"
+            ],
+            [
+              "**Wall**",
+              "Muros y taludes verticales: guarda una cota arriba y otra abajo en el mismo sitio"
+            ],
+            [
+              "**Non-destructive**",
+              "Mantiene la forma de la malla pero obliga a que haya aristas a lo largo de la línea"
+            ],
+            [
+              "From file",
+              "Importadas de un archivo .flt"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Sin breakline en un río, los triángulos unen un punto de una orilla con uno de la otra y «tapan» el cauce: las curvas cruzan el río en línea recta. Con breaklines en las dos orillas y el fondo, las curvas hacen la **V** correcta.",
+          "title": "Para qué sirven"
+        },
+        {
+          "type": "heading",
+          "text": "Tipos de boundary"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Efecto"
+          ],
+          "rows": [
+            [
+              "**Outer**",
+              "Contorno exterior: elimina los triángulos de fuera (los triángulos largos y falsos del borde)"
+            ],
+            [
+              "**Hide**",
+              "Oculta una zona interior (una laguna, un edificio)"
+            ],
+            [
+              "**Show**",
+              "Vuelve a mostrar una zona dentro de un Hide"
+            ],
+            [
+              "**Data Clip**",
+              "Solo deja entrar los datos que caen dentro: se agrega **antes** de los datos"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Al agregar un Outer, marca **Non-destructive breakline** para que el borde corte los triángulos exactamente por la polilínea en vez de borrarlos enteros."
+        },
+        {
+          "type": "heading",
+          "text": "Ediciones de la malla (Definition → Edits)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Edición",
+            "Para qué"
+          ],
+          "rows": [
+            [
+              "Delete Line",
+              "Quitar triángulos falsos del borde o entre zonas sin datos"
+            ],
+            [
+              "Swap Edge",
+              "Girar la diagonal entre dos triángulos para que siga el terreno"
+            ],
+            [
+              "Add Line",
+              "Forzar una arista"
+            ],
+            [
+              "Delete Point / Modify Point",
+              "Quitar o corregir un punto con cota errónea"
+            ],
+            [
+              "Smooth Surface",
+              "Suavizar interpolando puntos (solo presentación)"
+            ],
+            [
+              "Paste Surface",
+              "Pegar otra superficie encima (por ejemplo la plataforma de un diseño)"
+            ],
+            [
+              "Minimize Flat Areas",
+              "Corrige triángulos planos cuando la superficie viene de curvas"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Detectar errores: en el estilo, activa Triangles y Contours.\n• **«Pinchos»** o curvas concéntricas muy juntas alrededor de un punto → cota mal digitada (falta o sobra un dígito).\n• Curvas a cota 0 → punto sin elevación. En Build (Surface Properties → Definition) usa **Exclude elevations less than**.\n• Triángulos larguísimos en el borde → falta el Outer boundary, o usa **Maximum triangle length**.",
+          "title": "Revisar la superficie"
+        },
+        {
+          "type": "heading",
+          "text": "Superficie desde las curvas de una carta o desde un MDE"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Desde curvas:** las curvas deben ser polilíneas con su **Elevation** correcta (Properties). Definition → **Contours → Add** → selecciónalas. Deja los factores de depuración (weeding) y suplemento por defecto y marca las opciones de **Minimize flat areas**.",
+            "**Desde un MDE:** Definition → **DEM Files → Add** → elige el archivo y su sistema de coordenadas. O crea directamente una **Grid surface**.",
+            "**Hacia ArcMap:** clic derecho en la superficie → **Export to DEM** (GeoTIFF) o exporta las curvas (Surface → Extract Objects) y pásalas a shapefile con MAPEXPORT."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "quiz",
+          "question": "El breakline que se usa para una polilínea 3D que pasa por los puntos es el:",
+          "options": [
+            "Standard",
+            "Proximity",
+            "Wall",
+            "Hide"
+          ],
+          "correct": 0,
+          "explanation": "El más común."
+        },
+        {
+          "type": "quiz",
+          "question": "Los triángulos largos y falsos del borde se eliminan con un boundary:",
+          "options": [
+            "Hide",
+            "Outer",
+            "Show",
+            "Data Clip"
+          ],
+          "correct": 1,
+          "explanation": "Contorno exterior."
+        },
+        {
+          "type": "quiz",
+          "question": "Para ocultar una laguna dentro de la superficie se usa:",
+          "options": [
+            "Outer",
+            "Hide",
+            "Wall",
+            "Swap Edge"
+          ],
+          "correct": 1,
+          "explanation": "Zona interior oculta."
+        },
+        {
+          "type": "quiz",
+          "question": "Unas curvas concéntricas muy apretadas alrededor de un punto indican:",
+          "options": [
+            "Un cerro real siempre",
+            "Probablemente una cota mal digitada",
+            "Un boundary",
+            "Un breakline"
+          ],
+          "correct": 1,
+          "explanation": "Revisar la cota del punto."
+        },
+        {
+          "type": "quiz",
+          "question": "Swap Edge sirve para:",
+          "options": [
+            "Borrar puntos",
+            "Girar la diagonal entre dos triángulos",
+            "Cambiar el estilo",
+            "Exportar"
+          ],
+          "correct": 1,
+          "explanation": "Mejora la triangulación local."
+        },
+        {
+          "type": "quiz",
+          "question": "Un breakline impide que:",
+          "options": [
+            "Los triángulos lo crucen",
+            "Se dibujen curvas",
+            "Se importen puntos",
+            "Se calcule el volumen"
+          ],
+          "correct": 0,
+          "explanation": "Fuerza aristas a lo largo de la línea."
+        },
+        {
+          "type": "quiz",
+          "question": "Para construir una superficie a partir de las curvas de una carta se usa, en Definition:",
+          "options": [
+            "Point Groups",
+            "Contours",
+            "Boundaries",
+            "Edits"
+          ],
+          "correct": 1,
+          "explanation": "Polilíneas con elevación."
+        },
+        {
+          "type": "quiz",
+          "question": "El boundary Data Clip debe agregarse:",
+          "options": [
+            "Al final",
+            "Antes de los datos",
+            "No importa",
+            "Después del Outer"
+          ],
+          "correct": 1,
+          "explanation": "Filtra lo que entra después."
+        }
+      ]
+    },
+    {
+      "id": "l10-hidrologia-c3d",
+      "title": "Agua sobre la superficie: gota de agua, cuencas y áreas de aporte en Civil 3D",
+      "summary": "Flechas de pendiente, Water Drop, análisis Watersheds, Catchment Area y cómo delimitar y medir una cuenca dentro de Civil 3D.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Civil 3D resuelve el mismo problema que ArcMap, pero sobre **triángulos** en vez de celdas: en cada triángulo el agua baja por su línea de máxima pendiente hasta una arista y sigue por el triángulo vecino.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Herramienta",
+            "Dónde está",
+            "Qué hace"
+          ],
+          "rows": [
+            [
+              "**Slope Arrows**",
+              "Surface Properties → Analysis → Slope Arrows (y activarlo en el estilo)",
+              "Flechas que apuntan cuesta abajo en cada triángulo"
+            ],
+            [
+              "**Water Drop** (gota de agua)",
+              "Pestaña Analyze → panel Ground Data → Flow Paths → Water Drop",
+              "Haces clic en un punto y dibuja el **recorrido de una gota** hasta que sale de la superficie o llega a un punto bajo"
+            ],
+            [
+              "**Catchment Area**",
+              "Analyze → Ground Data → Flow Paths → Catchment Area",
+              "Haces clic en un **punto de descarga** y dibuja la polilínea del área que drena hacia él (y marca el punto)"
+            ],
+            [
+              "**Watersheds**",
+              "Surface Properties → Analysis → Watersheds → flecha de ejecutar",
+              "Divide **toda** la superficie en áreas de drenaje y las colorea"
+            ],
+            [
+              "**Create Catchment from Surface**",
+              "Analyze → Ground Data → Catchments",
+              "Crea un objeto «catchment» con su área y su recorrido de flujo más largo, útil para cálculos de drenaje"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Delimitar una cuenca para un punto"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ten la superficie bien construida (con breaklines en los cauces) y que **cubra toda la cuenca**, no solo el sitio de la obra.",
+            "Usa **Water Drop** en varios puntos altos para confirmar hacia dónde corre el agua y ubicar el cauce.",
+            "Ejecuta **Catchment Area** y haz clic sobre el cauce en el punto de salida: se dibuja la polilínea de la cuenca.",
+            "Selecciona la polilínea y lee su **área** en Properties (o con el comando AREA → Object). El perímetro es la longitud de la polilínea.",
+            "Para la longitud del cauce, mide el recorrido de la gota (LIST o Properties → Length)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo de área en el análisis Watersheds",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "Boundary Point",
+              "Drena hacia un punto del borde de la superficie"
+            ],
+            [
+              "Boundary Segment",
+              "Drena hacia un tramo del borde"
+            ],
+            [
+              "Depression",
+              "Drena hacia un punto bajo interior (sumidero)"
+            ],
+            [
+              "Flat Area",
+              "Zona plana, sin dirección de flujo definida"
+            ],
+            [
+              "Multi-Drain",
+              "Puede drenar hacia más de un sitio"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El análisis de Civil 3D solo ve la superficie que tienes. Si tu levantamiento cubre una franja de 100 m, la «cuenca» que obtengas es solo el pedazo dentro de la franja. Para la cuenca hidrográfica completa de un río se trabaja con la **carta 1:50 000 o un MDE** (a mano, en ArcMap, o cargando ese MDE como superficie en Civil 3D).",
+          "title": "Limitación"
+        },
+        {
+          "type": "heading",
+          "text": "Delimitar «a mano» dentro de Civil 3D"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Carga la carta georreferenciada como imagen (MAPIINSERT) o construye la superficie con sus curvas.",
+            "Dibuja una **polilínea 2D cerrada** siguiendo la divisoria con las mismas reglas que en papel.",
+            "Properties → Area y Length dan el área y el perímetro al instante.",
+            "Calca el cauce principal con otra polilínea para su longitud."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Unidades: en un dibujo métrico el área sale en m². Divide entre 1 000 000 para km² o entre 10 000 para hectáreas."
+        },
+        {
+          "type": "quiz",
+          "question": "La herramienta que dibuja el recorrido de una gota sobre la superficie es:",
+          "options": [
+            "Water Drop",
+            "Swap Edge",
+            "Boundary",
+            "Point Group"
+          ],
+          "correct": 0,
+          "explanation": "Analyze → Flow Paths."
+        },
+        {
+          "type": "quiz",
+          "question": "Catchment Area delimita:",
+          "options": [
+            "Toda la superficie",
+            "El área que drena hacia el punto que se indica",
+            "Los puntos de control",
+            "Un perfil"
+          ],
+          "correct": 1,
+          "explanation": "Para un punto de descarga."
+        },
+        {
+          "type": "quiz",
+          "question": "El análisis Watersheds:",
+          "options": [
+            "Divide toda la superficie en áreas de drenaje",
+            "Calcula volúmenes",
+            "Importa puntos",
+            "Crea alineamientos"
+          ],
+          "correct": 0,
+          "explanation": "Se ejecuta en Surface Properties → Analysis."
+        },
+        {
+          "type": "quiz",
+          "question": "Una polilínea cerrada tiene Area = 3 250 000 m². En km² es:",
+          "options": [
+            "325",
+            "32,5",
+            "3,25",
+            "0,325"
+          ],
+          "correct": 2,
+          "explanation": "Entre 1 000 000."
+        },
+        {
+          "type": "quiz",
+          "question": "Para delimitar la cuenca completa de un río grande conviene usar:",
+          "options": [
+            "Solo el levantamiento de detalle del sitio",
+            "La carta 1:50 000 o un MDE que cubra toda la cuenca",
+            "Un perfil",
+            "Las claves descriptivas"
+          ],
+          "correct": 1,
+          "explanation": "La superficie debe cubrir toda la cuenca."
+        },
+        {
+          "type": "quiz",
+          "question": "Un área de tipo «Depression» en el análisis Watersheds drena hacia:",
+          "options": [
+            "El borde",
+            "Un punto bajo interior",
+            "Ningún lado",
+            "Otra superficie"
+          ],
+          "correct": 1,
+          "explanation": "Un sumidero."
+        }
+      ]
+    },
+    {
+      "id": "l11-intercambio",
+      "title": "De Civil 3D a ArcMap y de ArcMap a Civil 3D",
+      "summary": "Cómo pasar puntos, curvas, superficies e imágenes entre los dos programas sin perder la georreferencia.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Los dos programas se complementan: **Civil 3D** para el levantamiento de detalle y el diseño; **ArcMap** para el análisis territorial (cuencas, pendientes, mapas temáticos). La condición para que todo calce es que ambos usen **el mismo sistema de coordenadas**.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Quiero pasar…",
+            "De → a",
+            "Cómo"
+          ],
+          "rows": [
+            [
+              "Polígono de la cuenca o ríos",
+              "ArcMap → Civil 3D",
+              "En Civil 3D: comando **MAPIMPORT** → elegir el .shp → se crean polilíneas. O conectar el shapefile con MAPCONNECT (Data Connect)"
+            ],
+            [
+              "Líneas y polígonos",
+              "Civil 3D → ArcMap",
+              "Comando **MAPEXPORT** → formato SHP, eligiendo el tipo (punto, línea o polígono) y los objetos. ArcMap también abre un .dwg directamente con Add Data"
+            ],
+            [
+              "Superficie",
+              "Civil 3D → ArcMap",
+              "Clic derecho en la superficie → **Export to DEM** (GeoTIFF). O Surface → Extract Objects (curvas) y MAPEXPORT"
+            ],
+            [
+              "MDE",
+              "ArcMap → Civil 3D",
+              "Create Surface → Definition → **DEM Files → Add** (GeoTIFF o ASCII)"
+            ],
+            [
+              "Puntos",
+              "Cualquiera",
+              "Archivo de texto .csv con columnas X, Y, Z: en ArcMap **Add XY Data**; en Civil 3D Points from File"
+            ],
+            [
+              "Carta u ortofoto georreferenciada",
+              "ArcMap → Civil 3D",
+              "Comando **MAPIINSERT**: lee el archivo de georreferencia (.tfw, .jgw) y coloca la imagen en su sitio"
+            ],
+            [
+              "Superficie o alineamientos",
+              "Entre programas de ingeniería",
+              "**LandXML** (Output → Export to LandXML)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Un shapefile exportado sin sistema de coordenadas llega a ArcMap «sin referencia espacial»: en ese caso (y solo en ese) se usa **Define Projection** para decirle en qué sistema está.",
+          "title": "Cuándo sí usar Define Projection"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Para la lámina final: en Civil 3D el plano topográfico con curvas, cuadrícula de coordenadas y rótulo; en ArcMap los mapas temáticos (cuenca, pendientes, uso del suelo) con leyenda, escala, norte y cuadrícula."
+        },
+        {
+          "type": "quiz",
+          "question": "Para traer un shapefile a Civil 3D se usa:",
+          "options": [
+            "MAPIMPORT",
+            "PLOT",
+            "AREA",
+            "SURFACE"
+          ],
+          "correct": 0,
+          "explanation": "Importa datos SIG."
+        },
+        {
+          "type": "quiz",
+          "question": "Para llevar una superficie de Civil 3D a ArcMap como ráster:",
+          "options": [
+            "Export to DEM",
+            "MAPIINSERT",
+            "Swap Edge",
+            "Point Group"
+          ],
+          "correct": 0,
+          "explanation": "Genera un GeoTIFF."
+        },
+        {
+          "type": "quiz",
+          "question": "MAPIINSERT sirve para:",
+          "options": [
+            "Insertar una imagen georreferenciada",
+            "Importar puntos",
+            "Crear un perfil",
+            "Medir áreas"
+          ],
+          "correct": 0,
+          "explanation": "Usa el archivo de georreferencia."
+        },
+        {
+          "type": "quiz",
+          "question": "La condición para que los datos calcen en ambos programas es:",
+          "options": [
+            "Mismo color",
+            "Mismo sistema de coordenadas",
+            "Mismo nombre de archivo",
+            "Misma versión"
+          ],
+          "correct": 1,
+          "explanation": "Datum y proyección iguales."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Casos de Civil 3D para razonar",
+      "summary": "Diagnósticos y decisiones típicas al procesar un levantamiento.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Puntos que aparecen en otro lugar",
+          "level": 2,
+          "statement": "Importas un archivo cuya primera línea es «1,722650.10,9678350.25,2546.32,TN» eligiendo el formato PNEZD. Los puntos aparecen lejísimos y la planta se ve reflejada. Explica el error y la solución.",
+          "steps": [
+            "La segunda columna (722 650) tiene 6 cifras enteras: es un Este. La tercera (9 678 350) tiene 7: es el Norte.",
+            "El archivo está en orden Punto, Este, Norte, Cota, Descripción: PENZD.",
+            "Al leerlo como PNEZD, Civil 3D tomó el Este como Norte y viceversa.",
+            "Borra los puntos e importa de nuevo con PENZD (comma delimited)."
+          ],
+          "answer": "**El archivo es PENZD; hay que reimportarlo con ese formato.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Las curvas cruzan la vía en línea recta",
+          "level": 2,
+          "statement": "En la superficie, las curvas de nivel atraviesan una vía sin marcar los bordes ni la cuneta, aunque esos puntos sí se midieron. ¿Qué falta y cómo se hace?",
+          "steps": [
+            "Faltan las líneas de quiebre: los triángulos unen puntos de un borde con el terreno del otro lado.",
+            "Dibuja polilíneas 3D uniendo en orden los puntos BORD de cada lado, el EJE y el fondo de la cuneta.",
+            "Superficie → Definition → Breaklines → Add → tipo Standard → selecciona las polilíneas.",
+            "La superficie se reconstruye y las curvas quiebran en los bordes."
+          ],
+          "answer": "**Agregar breaklines de tipo Standard por bordes, eje y cuneta.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Un pozo de 250 m en medio del terreno",
+          "level": 2,
+          "statement": "Aparece un grupo de curvas concéntricas muy apretadas alrededor del punto 347. Sus vecinos tienen cotas cercanas a 2 546 m y el 347 figura con 254,69 m. ¿Qué pasó y cómo lo corriges?",
+          "steps": [
+            "La cota está mal digitada: probablemente 2 546,9 se escribió como 254,69.",
+            "Revisa la libreta de campo para confirmar el valor.",
+            "Corrige la elevación del punto (clic derecho en el punto → Edit Points, en Panorama), o exclúyelo del grupo de la superficie si no se puede verificar.",
+            "Reconstruye la superficie (Rebuild)."
+          ],
+          "answer": "**Cota mal digitada: corregirla en Edit Points (o excluir el punto) y reconstruir.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Área de una cuenca dibujada en Civil 3D",
+          "level": 2,
+          "statement": "Calcas la divisoria con una polilínea cerrada y Properties indica Area = 18 432 500 y Length = 21 860 (dibujo en metros). El cauce principal mide 7 950. Halla A, P, L, Kc y Kf.",
+          "steps": [
+            "A = 18 432 500 m² = 18,43 km².",
+            "P = 21,86 km;  L = 7,95 km.",
+            "Kc = 0,282 · 21,86/√18,43 = 0,282 · 21,86/4,293 = 1,44.",
+            "Kf = 18,43/7,95² = 0,29."
+          ],
+          "answer": "**A ≈ 18,43 km²; P = 21,86 km; L = 7,95 km; Kc ≈ 1,44; Kf ≈ 0,29**"
+        },
+        {
+          "type": "exercise",
+          "title": "Volumen entre dos superficies",
+          "level": 3,
+          "statement": "Tienes la superficie del terreno natural y la de una plataforma de diseño. Civil 3D reporta Cut = 4 820 m³ y Fill = 3 150 m³. ¿Cómo se obtuvieron y cuánto material sobra, sin considerar esponjamiento? ¿Y con un esponjamiento del 25 %?",
+          "steps": [
+            "Se crea una TIN volume surface: Create Surface → tipo TIN volume surface → Base: terreno; Comparison: diseño.",
+            "Surface Properties → Statistics → Volume muestra Cut, Fill y Net.",
+            "Neto en banco = 4 820 − 3 150 = 1 670 m³ de corte sobrante.",
+            "El material excavado se esponja: 4 820 × 1,25 = 6 025 m³ sueltos; si el relleno usa 3 150 m³ medidos compactados, lo que hay que transportar depende además del factor de compactación."
+          ],
+          "answer": "**Sobran 1 670 m³ medidos en banco. Lo excavado ocupa unos 6 025 m³ sueltos con 25 % de esponjamiento.**"
+        }
+      ]
     }
   ]
 }

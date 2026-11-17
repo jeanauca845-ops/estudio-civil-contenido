@@ -421,6 +421,1052 @@
           "explanation": "P = F·v = 200·3 = **600 W**."
         }
       ]
+    },
+    {
+      "id": "l06-gravitatoria",
+      "title": "Energía potencial gravitatoria a fondo",
+      "summary": "Qué es, por qué solo importan las diferencias, cómo elegir el nivel de referencia y cómo escribirla en péndulos, planos y cuerpos rígidos.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La energía potencial gravitatoria es **trabajo guardado por la altura**. Subir un bloque cuesta trabajo; ese trabajo no se pierde: queda almacenado y el peso lo devuelve cuando el bloque baja. Es como subir agua a un tanque elevado: después baja sola.",
+          "title": "Idea"
+        },
+        {
+          "type": "formula",
+          "expression": "Vg = m·g·y = W·y",
+          "caption": "y = altura del centro de masa sobre el nivel de referencia (NR); positiva arriba, negativa abajo"
+        },
+        {
+          "type": "formula",
+          "expression": "Trabajo del peso de 1 a 2:  U = −W·(y₂ − y₁) = Vg₁ − Vg₂ = −ΔVg"
+        },
+        {
+          "type": "list",
+          "items": [
+            "El trabajo del peso **no depende del camino**: solo del desnivel entre el punto inicial y el final. Por eso el peso es una fuerza conservativa.",
+            "Si el cuerpo **baja**, el peso hace trabajo positivo y Vg disminuye. Si **sube**, trabajo negativo y Vg aumenta.",
+            "El nivel de referencia se elige **donde convenga** (suele ser el punto más bajo del movimiento): cambiarlo suma la misma constante a V₁ y V₂ y no altera el resultado.",
+            "Una vez elegido, el NR **no se cambia** a mitad del problema.",
+            "En un cuerpo rígido o un sistema, y es la altura del **centro de masa G** de cada cuerpo."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Cómo escribir la altura en los casos típicos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sistema",
+            "Altura (NR en el punto más bajo)",
+            "Vg"
+          ],
+          "rows": [
+            [
+              "Bloque en plano inclinado un ángulo θ, a distancia d del NR medida sobre el plano",
+              "y = d·sen θ",
+              "m·g·d·sen θ"
+            ],
+            [
+              "Péndulo simple de longitud L, desviado θ de la vertical",
+              "y = L·(1 − cos θ)",
+              "m·g·L·(1 − cos θ)"
+            ],
+            [
+              "Varilla uniforme de longitud L articulada en un extremo, girada θ desde la vertical hacia abajo",
+              "y de G = (L/2)·(1 − cos θ)",
+              "m·g·(L/2)·(1 − cos θ)"
+            ],
+            [
+              "Varilla articulada, que cae desde la horizontal hasta la vertical",
+              "G baja L/2",
+              "ΔVg = −m·g·L/2"
+            ],
+            [
+              "Partícula en un aro o rizo de radio R, a un ángulo θ desde el punto más bajo",
+              "y = R·(1 − cos θ)",
+              "m·g·R·(1 − cos θ)"
+            ],
+            [
+              "Cuerpos unidos por una cuerda sobre una polea",
+              "Lo que sube uno lo baja el otro",
+              "Se suma la Vg de cada cuerpo con su signo"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Péndulo de L = 1,2 m y m = 0,5 kg soltado desde θ = 60°. NR en el punto más bajo.\nVg₁ = 0,5 · 9,81 · 1,2 · (1 − cos 60°) = 0,5 · 9,81 · 0,6 = 2,943 J;  Vg₂ = 0.\nToda esa energía pasa a cinética: ½ · 0,5 · v² = 2,943 → **v = 3,43 m/s** en el punto más bajo.",
+          "title": "Ejemplo: péndulo"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Varilla uniforme de 6 kg y 1,5 m, articulada en un extremo, soltada desde la horizontal. Al pasar por la vertical su centro de masa ha bajado 0,75 m: ΔVg = −6 · 9,81 · 0,75 = **−44,1 J**. Esa energía se convierte en energía cinética de rotación.",
+          "title": "Ejemplo: cuerpo rígido"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Errores frecuentes: 1) usar la distancia recorrida sobre el plano en vez de la **altura vertical**; 2) en cuerpos rígidos, usar la altura de un extremo en vez de la del **centro de masa**; 3) olvidar el signo negativo cuando el cuerpo queda **debajo** del nivel de referencia.",
+          "title": "Cuidado"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "La expresión m·g·y vale cerca de la superficie terrestre, donde g es prácticamente constante. Para satélites y órbitas se usa Vg = −G·M·m/r, con el cero en el infinito."
+        },
+        {
+          "type": "quiz",
+          "question": "La energía potencial gravitatoria depende de:",
+          "options": [
+            "El camino recorrido",
+            "La altura respecto al nivel de referencia",
+            "La velocidad",
+            "El tiempo"
+          ],
+          "correct": 1,
+          "explanation": "Vg = m·g·y."
+        },
+        {
+          "type": "quiz",
+          "question": "Cambiar el nivel de referencia cambia:",
+          "options": [
+            "La velocidad final calculada",
+            "Los valores de V₁ y V₂ pero no su diferencia",
+            "El trabajo del peso",
+            "La masa"
+          ],
+          "correct": 1,
+          "explanation": "Solo importan las diferencias."
+        },
+        {
+          "type": "quiz",
+          "question": "Un péndulo de longitud L desviado θ está, sobre su punto más bajo, a una altura:",
+          "options": [
+            "L·cos θ",
+            "L·sen θ",
+            "L·(1 − cos θ)",
+            "L·θ"
+          ],
+          "correct": 2,
+          "explanation": "L menos la proyección vertical."
+        },
+        {
+          "type": "quiz",
+          "question": "En una varilla uniforme, la altura que se usa en Vg es la de:",
+          "options": [
+            "El extremo libre",
+            "El centro de masa",
+            "La articulación",
+            "Cualquier punto"
+          ],
+          "correct": 1,
+          "explanation": "El peso actúa en G."
+        },
+        {
+          "type": "quiz",
+          "question": "Un bloque de 2 kg baja 3 m medidos sobre un plano a 30°. El trabajo del peso es:",
+          "options": [
+            "58,9 J",
+            "29,4 J",
+            "−29,4 J",
+            "51,0 J"
+          ],
+          "correct": 1,
+          "explanation": "2·9,81·3·sen 30°."
+        },
+        {
+          "type": "quiz",
+          "question": "Si un cuerpo queda 0,4 m debajo del NR, su Vg es:",
+          "options": [
+            "Positiva",
+            "Negativa",
+            "Cero",
+            "No está definida"
+          ],
+          "correct": 1,
+          "explanation": "y = −0,4 m."
+        }
+      ]
+    },
+    {
+      "id": "l07-elastica",
+      "title": "Energía potencial elástica a fondo",
+      "summary": "Deformación medida desde la longitud natural, resortes inclinados, resortes sueltos, resortes de torsión y combinaciones.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un resorte deformado es una **batería mecánica**: guarda el trabajo que costó estirarlo o comprimirlo y lo devuelve al soltarlo. Guarda lo mismo estirado que comprimido, porque la energía depende del cuadrado de la deformación.",
+          "title": "Idea"
+        },
+        {
+          "type": "formula",
+          "expression": "Ve = ½·k·s²        s = longitud actual − longitud natural (L − L₀)",
+          "caption": "Siempre positiva o cero"
+        },
+        {
+          "type": "formula",
+          "expression": "Trabajo del resorte de 1 a 2:  U = −(½·k·s₂² − ½·k·s₁²) = Ve₁ − Ve₂"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "s es la **deformación**, no la posición ni el desplazamiento del bloque. Si el resorte ya estaba deformado en el estado 1, hay que calcular s₁ y s₂ por separado: **½k(s₂ − s₁)² es incorrecto**; lo correcto es ½k·s₂² − ½k·s₁².",
+          "title": "El error más común"
+        },
+        {
+          "type": "heading",
+          "text": "Cómo hallar la deformación"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Situación",
+            "Deformación s"
+          ],
+          "rows": [
+            [
+              "Resorte en la dirección del movimiento, sin deformar en x = 0",
+              "s = x"
+            ],
+            [
+              "Resorte con deformación previa s₀ (precomprimido)",
+              "s = s₀ + x"
+            ],
+            [
+              "Resorte **inclinado**: un extremo fijo a una distancia perpendicular d de la guía y el collarín a x del pie de la perpendicular",
+              "s = √(x² + d²) − L₀"
+            ],
+            [
+              "Resorte que rodea a una polea o va unido a una cuerda",
+              "Lo que se desplaza el extremo de la cuerda"
+            ],
+            [
+              "Resorte **suelto** (parachoques): no está unido al cuerpo",
+              "s = 0 mientras no haya contacto; solo puede comprimirse"
+            ],
+            [
+              "Resorte de torsión de constante κ",
+              "Ve = ½·κ·θ², con θ en radianes"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un collarín desliza por una barra horizontal lisa. El resorte (k = 600 N/m, L₀ = 0,2 m) tiene su extremo fijo 0,3 m por debajo de la barra.\nCon el collarín a x = 0,4 m: longitud = √(0,4² + 0,3²) = 0,5 m → s₁ = 0,3 m → Ve₁ = ½·600·0,3² = **27 J**.\nCon el collarín en x = 0: longitud = 0,3 m → s₂ = 0,1 m → Ve₂ = ½·600·0,1² = **3 J**.\nEl resorte entrega 24 J al collarín.",
+          "title": "Ejemplo: resorte inclinado"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un resorte de k = 1 500 N/m se comprime 8 cm y luego 4 cm más. Energía adicional almacenada: ½·1 500·(0,12² − 0,08²) = 750·(0,0144 − 0,0064) = **6 J** (y no ½·1 500·0,04² = 1,2 J).",
+          "title": "Ejemplo: deformación previa"
+        },
+        {
+          "type": "heading",
+          "text": "Resortes combinados"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Conexión",
+            "Rigidez equivalente",
+            "Idea"
+          ],
+          "rows": [
+            [
+              "Paralelo (misma deformación)",
+              "keq = k₁ + k₂",
+              "Las fuerzas se suman: más rígido"
+            ],
+            [
+              "Serie (misma fuerza)",
+              "1/keq = 1/k₁ + 1/k₂",
+              "Las deformaciones se suman: más blando que el menor"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "La fuerza del resorte se obtiene de la energía: F = −dVe/ds = −k·s. Esa relación F = −dV/dx es la que se usa en los diagramas de energía potencial de la unidad siguiente."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Topes de ascensores, amortiguadores de vehículos, aisladores sísmicos y apoyos elastoméricos de puentes se dimensionan con esta energía: deben absorber ½·m·v² sin superar su deformación máxima."
+        },
+        {
+          "type": "quiz",
+          "question": "La energía de un resorte comprimido 5 cm, comparada con la del mismo resorte estirado 5 cm, es:",
+          "options": [
+            "Mayor",
+            "Menor",
+            "Igual",
+            "Negativa"
+          ],
+          "correct": 2,
+          "explanation": "Depende de s²."
+        },
+        {
+          "type": "quiz",
+          "question": "k = 800 N/m y s = 0,05 m. Ve =",
+          "options": [
+            "20 J",
+            "1 J",
+            "2 J",
+            "40 J"
+          ],
+          "correct": 1,
+          "explanation": "½·800·0,0025."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la deformación se duplica, la energía elástica:",
+          "options": [
+            "Se duplica",
+            "Se cuadruplica",
+            "No cambia",
+            "Se reduce a la mitad"
+          ],
+          "correct": 1,
+          "explanation": "Cuadrática."
+        },
+        {
+          "type": "quiz",
+          "question": "Un resorte de L₀ = 0,3 m une un punto fijo con un collarín que está a 0,5 m de ese punto. Su deformación es:",
+          "options": [
+            "0,5 m",
+            "0,2 m",
+            "0,8 m",
+            "0,3 m"
+          ],
+          "correct": 1,
+          "explanation": "L − L₀."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos resortes de 400 N/m en paralelo equivalen a:",
+          "options": [
+            "200 N/m",
+            "400 N/m",
+            "800 N/m",
+            "1 600 N/m"
+          ],
+          "correct": 2,
+          "explanation": "Se suman."
+        },
+        {
+          "type": "quiz",
+          "question": "Dos resortes de 400 N/m en serie equivalen a:",
+          "options": [
+            "200 N/m",
+            "400 N/m",
+            "800 N/m",
+            "100 N/m"
+          ],
+          "correct": 0,
+          "explanation": "1/k = 1/400 + 1/400."
+        },
+        {
+          "type": "quiz",
+          "question": "Un resorte suelto (no unido al bloque) puede:",
+          "options": [
+            "Solo comprimirse",
+            "Solo estirarse",
+            "Ambas",
+            "Ninguna"
+          ],
+          "correct": 0,
+          "explanation": "No puede jalar al bloque."
+        }
+      ]
+    },
+    {
+      "id": "l08-conservacion-fondo",
+      "title": "Cuándo la energía se conserva y cómo usarlo",
+      "summary": "Qué fuerzas trabajan y cuáles no, el procedimiento paso a paso y tres ejemplos completos.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "T₁ + V₁ = T₂ + V₂        con V = Vg + Ve",
+          "caption": "Vale cuando solo trabajan fuerzas conservativas"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La energía mecánica es como **dinero en dos cuentas**: cinética (T) y potencial (V). Si solo actúan fuerzas conservativas, el dinero pasa de una cuenta a otra pero el total no cambia. Las fuerzas no conservativas son depósitos o retiros desde afuera.",
+          "title": "Idea"
+        },
+        {
+          "type": "heading",
+          "text": "Clasifica las fuerzas antes de escribir nada"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Fuerza",
+            "Tipo",
+            "Cómo entra en la ecuación"
+          ],
+          "rows": [
+            [
+              "Peso",
+              "Conservativa",
+              "En Vg"
+            ],
+            [
+              "Resorte",
+              "Conservativa",
+              "En Ve"
+            ],
+            [
+              "Normal sobre una superficie fija",
+              "No trabaja (perpendicular al movimiento)",
+              "No aparece"
+            ],
+            [
+              "Tensión de una cuerda inextensible entre dos cuerpos del sistema",
+              "Trabajo interno neto cero",
+              "No aparece si se analiza el sistema completo"
+            ],
+            [
+              "Tensión de un péndulo",
+              "No trabaja (perpendicular a la trayectoria)",
+              "No aparece"
+            ],
+            [
+              "Reacción en un pasador fijo sin fricción",
+              "No trabaja (el punto no se mueve)",
+              "No aparece"
+            ],
+            [
+              "Fricción en rodadura **sin deslizamiento**",
+              "No trabaja (el punto de contacto no desliza)",
+              "No aparece"
+            ],
+            [
+              "Fricción cinética",
+              "No conservativa",
+              "Trabajo negativo: −μ·N·d"
+            ],
+            [
+              "Fuerza aplicada, motor, arrastre",
+              "No conservativa",
+              "Su trabajo se suma"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si en tu lista solo quedan peso y resortes haciendo trabajo, **la energía se conserva**. Si aparece fricción cinética o una fuerza aplicada, usa T₁ + V₁ + ΣU(no conservativas) = T₂ + V₂.",
+          "title": "La decisión"
+        },
+        {
+          "type": "heading",
+          "text": "Procedimiento"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Dibuja el sistema en el **estado 1** y en el **estado 2**.",
+            "Elige el **nivel de referencia** y márcalo.",
+            "Escribe T₁ y T₂ (¿parte del reposo?, ¿se detiene?). En un punto de retorno o de máxima deformación, v = 0.",
+            "Escribe Vg₁, Vg₂ (alturas con signo) y Ve₁, Ve₂ (deformaciones desde la longitud natural).",
+            "Si hay varios cuerpos, relaciona sus velocidades y desplazamientos (cinemática).",
+            "Plantea la ecuación y despeja. Revisa signos y unidades."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un bloque de 2 kg cae desde 0,5 m sobre un resorte vertical sin deformar de k = 1 500 N/m. Compresión máxima x:\nNR en la posición de máxima compresión. Estado 1: reposo a (0,5 + x) sobre el NR. Estado 2: reposo, resorte comprimido x.\n2·9,81·(0,5 + x) = ½·1 500·x² → 750x² − 19,62x − 9,81 = 0 → **x = 0,128 m**.\nOjo: el bloque sigue bajando mientras el resorte se comprime, por eso la altura es (0,5 + x).",
+          "title": "Ejemplo 1: caída sobre un resorte"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "En el mismo problema, la **velocidad máxima** no ocurre al tocar el resorte, sino donde la fuerza neta es cero: k·x = m·g → x = 19,62/1 500 = 0,0131 m.\nv² = 2g(0,5 + 0,0131) − (k/m)x² = 10,067 − 0,128 → **v máx = 3,15 m/s**.",
+          "title": "Ejemplo 2: dónde es máxima la velocidad"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Péndulo de m = 0,5 kg y L = 1,2 m soltado desde 60°. En el punto más bajo v² = 2gL(1 − cos 60°) = gL.\nLa energía da la velocidad; la **tensión** sale de la segunda ley en dirección normal: T − mg = m·v²/L → T = mg + mg = **2mg = 9,81 N**.",
+          "title": "Ejemplo 3: energía más segunda ley"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La energía da **velocidades y posiciones**, no fuerzas ni tiempos. Para fuerzas (tensión, normal, reacciones) se combina con ΣF = m·a en la dirección normal (aₙ = v²/ρ). Para tiempos hay que integrar o usar la ecuación del movimiento.",
+          "title": "Qué da y qué no da la energía"
+        },
+        {
+          "type": "quiz",
+          "question": "La energía mecánica se conserva si:",
+          "options": [
+            "Hay fricción cinética",
+            "Solo trabajan fuerzas conservativas",
+            "Actúa un motor",
+            "El cuerpo es rígido"
+          ],
+          "correct": 1,
+          "explanation": "Peso y resortes."
+        },
+        {
+          "type": "quiz",
+          "question": "La fuerza normal sobre una superficie fija:",
+          "options": [
+            "Hace trabajo positivo",
+            "No hace trabajo",
+            "Hace trabajo negativo",
+            "Es conservativa y aparece en V"
+          ],
+          "correct": 1,
+          "explanation": "Es perpendicular al desplazamiento."
+        },
+        {
+          "type": "quiz",
+          "question": "En el punto de máxima compresión de un resorte, la velocidad del bloque es:",
+          "options": [
+            "Máxima",
+            "Cero",
+            "Igual a la inicial",
+            "Negativa"
+          ],
+          "correct": 1,
+          "explanation": "Punto de retorno."
+        },
+        {
+          "type": "quiz",
+          "question": "La velocidad máxima de un bloque que cae sobre un resorte vertical ocurre cuando:",
+          "options": [
+            "Toca el resorte",
+            "k·x = m·g",
+            "El resorte está en su máxima compresión",
+            "x = 0"
+          ],
+          "correct": 1,
+          "explanation": "Fuerza neta cero."
+        },
+        {
+          "type": "quiz",
+          "question": "La fricción en un disco que rueda sin deslizar:",
+          "options": [
+            "Disipa energía",
+            "No hace trabajo",
+            "Hace trabajo positivo",
+            "No existe"
+          ],
+          "correct": 1,
+          "explanation": "El punto de contacto tiene velocidad cero."
+        },
+        {
+          "type": "quiz",
+          "question": "Con el método de energía se obtiene directamente:",
+          "options": [
+            "El tiempo",
+            "La velocidad en una posición",
+            "La tensión",
+            "La aceleración"
+          ],
+          "correct": 1,
+          "explanation": "Relaciona estados, no instantes."
+        },
+        {
+          "type": "quiz",
+          "question": "Un péndulo se suelta desde la horizontal. En el punto más bajo la tensión vale:",
+          "options": [
+            "mg",
+            "2mg",
+            "3mg",
+            "0"
+          ],
+          "correct": 2,
+          "explanation": "v² = 2gL → T = mg + 2mg."
+        }
+      ]
+    },
+    {
+      "id": "l09-no-conservativas",
+      "title": "Trabajo y energía con fricción y fuerzas aplicadas",
+      "summary": "La ecuación general, el trabajo de la fricción, el rebote, y cuándo conviene este método frente a la segunda ley.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "T₁ + V₁ + ΣU(no cons.) = T₂ + V₂",
+          "caption": "ΣU(no cons.) es negativo para la fricción y positivo para una fuerza que empuja en el sentido del movimiento"
+        },
+        {
+          "type": "formula",
+          "expression": "Trabajo de la fricción cinética:  Uf = −μk·N·d",
+          "caption": "d = distancia recorrida (no el desplazamiento neto)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La fricción es un **peaje** que se paga por cada metro recorrido, vayas o vuelvas. Por eso su trabajo depende del camino, y por eso un cuerpo que va y regresa paga dos veces.",
+          "title": "Idea"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "N **no siempre es m·g**: en un plano inclinado es m·g·cos θ; si hay una fuerza con componente vertical, cambia. Calcula N con ΣF = 0 en la dirección perpendicular antes de usar μ·N.",
+          "title": "La normal"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Bloque de 5 kg soltado en un plano a 30° con μk = 0,2; recorre 2 m y choca con un resorte de k = 2 000 N/m. Compresión máxima x:\nN = 5·9,81·cos 30° = 42,48 N → fricción = 8,50 N. Componente del peso: 5·9,81·sen 30° = 24,53 N.\nNR en el punto más bajo. 0 + m·g·(2 + x)·sen 30° − 8,50·(2 + x) = ½·2 000·x²\n16,03·(2 + x) = 1 000·x² → 1 000x² − 16,03x − 32,06 = 0 → **x = 0,187 m**.",
+          "title": "Ejemplo 1: plano con fricción y resorte"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "¿Rebota? En x = 0,187 m el resorte empuja con k·x = 374 N, muy por encima del peso tangencial más la fricción estática máxima: sí rebota.\nSubida desde la máxima compresión una distancia d′: ½·2 000·0,187² = (24,53 + 8,50)·d′ → 35,06 = 33,03·d′ → **d′ = 1,06 m**.\nBajó 2,187 m y solo sube 1,06 m: la diferencia de energía se la llevó la fricción en la ida y en la vuelta.",
+          "title": "Ejemplo 2: el rebote"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Bloque A de 8 kg sobre una mesa (μk = 0,25) unido por una cuerda y una polea ideal a un bloque B de 6 kg que cuelga. Velocidad tras moverse 1,5 m desde el reposo, analizando el sistema completo:\nB baja 1,5 m: −ΔVg = 6·9,81·1,5 = 88,29 J. Fricción sobre A: −0,25·8·9,81·1,5 = −29,43 J.\n½·(8 + 6)·v² = 88,29 − 29,43 → **v = 2,90 m/s**.",
+          "title": "Ejemplo 3: sistema con polea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Usa trabajo y energía cuando…",
+            "Usa la segunda ley cuando…"
+          ],
+          "rows": [
+            [
+              "Se pide una **velocidad** tras cierto recorrido",
+              "Se pide una **aceleración** o una **fuerza** en un instante"
+            ],
+            [
+              "Las fuerzas varían con la posición (resortes)",
+              "Se pide el **tiempo**"
+            ],
+            [
+              "Hay varios cuerpos conectados y solo interesa el estado final",
+              "Se necesitan reacciones internas"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Potencia: P = F·v        Eficiencia: η = potencia útil / potencia de entrada"
+        },
+        {
+          "type": "quiz",
+          "question": "El trabajo de la fricción cinética es:",
+          "options": [
+            "Siempre positivo",
+            "Siempre negativo",
+            "Cero",
+            "Independiente del camino"
+          ],
+          "correct": 1,
+          "explanation": "Se opone al movimiento."
+        },
+        {
+          "type": "quiz",
+          "question": "En un plano inclinado un ángulo θ, la normal sobre un bloque vale:",
+          "options": [
+            "m·g",
+            "m·g·sen θ",
+            "m·g·cos θ",
+            "m·g·tan θ"
+          ],
+          "correct": 2,
+          "explanation": "Componente perpendicular del peso."
+        },
+        {
+          "type": "quiz",
+          "question": "Un bloque de 4 kg desliza 3 m sobre un piso horizontal con μk = 0,5. El trabajo de la fricción es:",
+          "options": [
+            "−58,9 J",
+            "58,9 J",
+            "−19,6 J",
+            "−117,7 J"
+          ],
+          "correct": 0,
+          "explanation": "−0,5·4·9,81·3."
+        },
+        {
+          "type": "quiz",
+          "question": "Si un cuerpo va y vuelve por el mismo camino con fricción, el trabajo total de la fricción es:",
+          "options": [
+            "Cero",
+            "El doble del de ida",
+            "Positivo",
+            "La mitad"
+          ],
+          "correct": 1,
+          "explanation": "Se paga en ambos sentidos."
+        },
+        {
+          "type": "quiz",
+          "question": "Para hallar la tensión de una cuerda en un instante conviene:",
+          "options": [
+            "Solo energía",
+            "La segunda ley (a veces junto con energía)",
+            "Solo potencia",
+            "Ninguna"
+          ],
+          "correct": 1,
+          "explanation": "La energía no da fuerzas directamente."
+        },
+        {
+          "type": "quiz",
+          "question": "Un motor entrega 2 kW con eficiencia de 80 %. Consume:",
+          "options": [
+            "1,6 kW",
+            "2,5 kW",
+            "2,0 kW",
+            "0,4 kW"
+          ],
+          "correct": 1,
+          "explanation": "2/0,8."
+        }
+      ]
+    },
+    {
+      "id": "l10-cuerpo-rigido",
+      "title": "Energía en cuerpos rígidos y sistemas",
+      "summary": "Energía cinética de traslación y rotación, rodadura sin deslizamiento, momentos de inercia y ejemplos clásicos.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "T = ½·m·vG² + ½·IG·ω²        (movimiento plano general)"
+        },
+        {
+          "type": "formula",
+          "expression": "T = ½·Iₒ·ω²        (rotación alrededor de un eje fijo O; Iₒ = IG + m·d²)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un cuerpo rígido guarda energía cinética de dos formas: por **trasladarse** (su centro de masa se mueve) y por **girar** alrededor de su centro de masa. Una rueda que rueda tiene las dos a la vez; por eso llega abajo más lenta que un bloque que desliza sin fricción: parte de la energía se fue a hacerla girar.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Cuerpo",
+            "IG",
+            "Respecto a un extremo o borde"
+          ],
+          "rows": [
+            [
+              "Varilla delgada de longitud L",
+              "m·L²/12",
+              "m·L²/3 (extremo)"
+            ],
+            [
+              "Disco o cilindro macizo de radio r",
+              "½·m·r²",
+              "(3/2)·m·r² (punto del borde)"
+            ],
+            [
+              "Aro delgado",
+              "m·r²",
+              "2·m·r²"
+            ],
+            [
+              "Esfera maciza",
+              "(2/5)·m·r²",
+              "(7/5)·m·r²"
+            ],
+            [
+              "Placa rectangular a × b (eje perpendicular)",
+              "m·(a² + b²)/12",
+              "—"
+            ]
+          ],
+          "caption": "Teorema de ejes paralelos: I = IG + m·d²"
+        },
+        {
+          "type": "formula",
+          "expression": "Rodadura sin deslizamiento:  vG = ω·r"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Cuerpo que rueda",
+            "T total",
+            "Velocidad tras bajar una altura h"
+          ],
+          "rows": [
+            [
+              "Disco o cilindro macizo",
+              "¾·m·v²",
+              "v = √(4gh/3)"
+            ],
+            [
+              "Esfera maciza",
+              "(7/10)·m·v²",
+              "v = √(10gh/7)"
+            ],
+            [
+              "Aro",
+              "m·v²",
+              "v = √(gh)"
+            ],
+            [
+              "Bloque sin fricción (no rueda)",
+              "½·m·v²",
+              "v = √(2gh)"
+            ]
+          ],
+          "caption": "Mientras más masa lejos del eje, más lento baja"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Varilla de 6 kg y 1,5 m articulada en un extremo, soltada desde la horizontal. Al pasar por la vertical:\nm·g·(L/2) = ½·(m·L²/3)·ω² → ω = √(3g/L) = √(19,62) = **4,43 rad/s**.\nVelocidad del extremo: ω·L = 6,64 m/s. Reacción vertical en el pasador (ΣF normal en G): O = m·g + m·ω²·(L/2) = 58,86 + 88,29 = **147,2 N = 2,5·m·g**.",
+          "title": "Ejemplo 1: varilla que cae"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Un bloque de 10 kg cuelga de una cuerda enrollada en un tambor (disco macizo de 20 kg y 0,3 m de radio). Velocidad del bloque tras bajar 2 m:\n10·9,81·2 = ½·10·v² + ½·(½·20·0,3²)·(v/0,3)² = ½·(10 + 10)·v² → v² = 19,62 → **v = 4,43 m/s**.\nEl tambor «se comporta» como una masa adicional de ½·M.",
+          "title": "Ejemplo 2: bloque y tambor"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En un sistema, T es la suma de las energías cinéticas de todos los cuerpos y V la suma de todas las potenciales. Las fuerzas internas (pasadores sin fricción, cuerdas inextensibles) no aparecen."
+        },
+        {
+          "type": "quiz",
+          "question": "Un disco que rueda sin deslizar tiene energía cinética:",
+          "options": [
+            "½·m·v²",
+            "¾·m·v²",
+            "m·v²",
+            "¼·m·v²"
+          ],
+          "correct": 1,
+          "explanation": "½mv² + ½(½mr²)(v/r)²."
+        },
+        {
+          "type": "quiz",
+          "question": "El momento de inercia de una varilla respecto a un extremo es:",
+          "options": [
+            "m·L²/12",
+            "m·L²/3",
+            "m·L²/2",
+            "m·L²"
+          ],
+          "correct": 1,
+          "explanation": "Ejes paralelos: mL²/12 + m(L/2)²."
+        },
+        {
+          "type": "quiz",
+          "question": "En una pendiente, sin deslizar, llega primero abajo:",
+          "options": [
+            "El aro",
+            "El disco",
+            "La esfera maciza",
+            "Llegan juntos"
+          ],
+          "correct": 2,
+          "explanation": "Menor fracción de energía en rotación."
+        },
+        {
+          "type": "quiz",
+          "question": "La condición de rodadura sin deslizamiento es:",
+          "options": [
+            "v = ω/r",
+            "v = ω·r",
+            "v = ω·r²",
+            "v = 0"
+          ],
+          "correct": 1,
+          "explanation": "El punto de contacto no desliza."
+        },
+        {
+          "type": "quiz",
+          "question": "Una varilla articulada en un extremo se suelta desde la horizontal. Al pasar por la vertical ω vale:",
+          "options": [
+            "√(g/L)",
+            "√(3g/L)",
+            "√(2g/L)",
+            "√(6g/L)"
+          ],
+          "correct": 1,
+          "explanation": "mgL/2 = ½(mL²/3)ω²."
+        },
+        {
+          "type": "quiz",
+          "question": "El teorema de ejes paralelos dice que:",
+          "options": [
+            "I = IG − m·d²",
+            "I = IG + m·d²",
+            "I = IG·d²",
+            "I = m·d"
+          ],
+          "correct": 1,
+          "explanation": "Siempre aumenta al alejarse de G."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de trabajo y energía",
+      "summary": "Diez problemas de examen: collarines con resortes, planos con fricción, rizos, péndulos, cuerpos rígidos y sistemas.",
+      "minutes": 70,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuélvelos **en papel**, con dibujo, nivel de referencia y estados 1 y 2 bien marcados; luego pide la pista, la solución paso a paso o solo la respuesta. Usa g = 9,81 m/s².",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Collarín con resorte inclinado",
+          "level": 2,
+          "statement": "Un collarín de 2 kg desliza por una barra horizontal lisa. Un resorte de k = 600 N/m y longitud natural 0,2 m tiene su otro extremo fijo 0,3 m por debajo de la barra. El collarín se suelta desde el reposo a 0,4 m del pie de la perpendicular. Halla su velocidad al pasar por ese pie.",
+          "steps": [
+            "Solo trabaja el resorte (la barra es horizontal y lisa): se conserva la energía.",
+            "Estado 1: longitud √(0,4² + 0,3²) = 0,5 m → s₁ = 0,3 m.",
+            "Estado 2: longitud 0,3 m → s₂ = 0,1 m.",
+            "½·600·0,3² = ½·2·v² + ½·600·0,1² → 27 = v² + 3."
+          ],
+          "answer": "**v = 4,90 m/s**",
+          "hint": "La deformación es la longitud del resorte menos su longitud natural."
+        },
+        {
+          "type": "exercise",
+          "title": "Collarín en barra vertical",
+          "level": 3,
+          "statement": "Un collarín de 3 kg desliza por una barra vertical lisa. Un resorte de k = 500 N/m y longitud natural 0,4 m está anclado a 0,4 m de la barra, a la altura de la posición A. El collarín se suelta desde el reposo en A. Halla su velocidad tras bajar 0,3 m y la distancia máxima que baja.",
+          "steps": [
+            "En A el resorte está horizontal y sin deformar: T₁ = 0, Ve₁ = 0. NR en la posición final.",
+            "Tras bajar 0,3 m: longitud √(0,3² + 0,4²) = 0,5 m → s = 0,1 m.",
+            "3·9,81·0,3 = ½·3·v² + ½·500·0,1² → 8,829 = 1,5v² + 2,5 → v = 2,05 m/s.",
+            "Distancia máxima y (v = 0): 3·9,81·y = ½·500·(√(y² + 0,16) − 0,4)².",
+            "Se resuelve por tanteo o calculadora: y ≈ 0,504 m."
+          ],
+          "answer": "**v ≈ 2,05 m/s; baja como máximo ≈ 0,50 m**"
+        },
+        {
+          "type": "exercise",
+          "title": "Plano con fricción, resorte y rebote",
+          "level": 3,
+          "statement": "Un bloque de 5 kg se suelta en un plano a 30° con μk = 0,2 y desliza 2 m antes de tocar un resorte de k = 2 000 N/m. Halla la compresión máxima y cuánto sube el bloque en el rebote, medido desde el punto de máxima compresión.",
+          "steps": [
+            "Peso tangencial: 5·9,81·sen 30° = 24,53 N. Fricción: 0,2·5·9,81·cos 30° = 8,50 N.",
+            "Bajada: (24,53 − 8,50)·(2 + x) = ½·2 000·x² → 1 000x² − 16,03x − 32,06 = 0.",
+            "x = [16,03 + √(16,03² + 4·1 000·32,06)]/2 000 = 0,187 m.",
+            "Subida: ½·2 000·0,187² = (24,53 + 8,50)·d′ → 35,06 = 33,03·d′."
+          ],
+          "answer": "**x ≈ 0,187 m; rebota ≈ 1,06 m** (queda 1,13 m por debajo del punto de partida)."
+        },
+        {
+          "type": "exercise",
+          "title": "Rizo vertical",
+          "level": 3,
+          "statement": "Una partícula de 0,2 kg desliza sin fricción por una pista que termina en un rizo de radio 0,8 m. a) ¿Desde qué altura mínima debe soltarse para completar el rizo? b) Si se suelta desde 3 m, halla la normal en el punto más bajo y en el más alto.",
+          "steps": [
+            "En lo más alto, con el mínimo, la normal es cero: m·g = m·v²/R → v² = g·R.",
+            "Energía: m·g·h = m·g·(2R) + ½·m·g·R → h = 2,5·R = 2,0 m.",
+            "Desde 3 m, abajo: v² = 2·9,81·3 = 58,86 → N = m·g + m·v²/R = 1,962 + 14,715.",
+            "Arriba: v² = 2·9,81·(3 − 1,6) = 27,47 → N = m·v²/R − m·g = 6,867 − 1,962."
+          ],
+          "answer": "**a) h mín = 2,5R = 2,0 m. b) N abajo ≈ 16,7 N; N arriba ≈ 4,9 N**"
+        },
+        {
+          "type": "exercise",
+          "title": "Caída sobre un resorte vertical",
+          "level": 2,
+          "statement": "Un bloque de 2 kg se deja caer desde 0,5 m sobre un resorte vertical de k = 1 500 N/m. Halla la compresión máxima y la velocidad máxima del bloque.",
+          "steps": [
+            "Máxima compresión: 2·9,81·(0,5 + x) = 750x² → 750x² − 19,62x − 9,81 = 0 → x = 0,128 m.",
+            "Velocidad máxima donde k·x = m·g: x = 0,0131 m.",
+            "v² = 2·9,81·(0,5131) − (1 500/2)·0,0131² = 10,067 − 0,128."
+          ],
+          "answer": "**x máx ≈ 0,128 m; v máx ≈ 3,15 m/s**"
+        },
+        {
+          "type": "exercise",
+          "title": "Salto con cuerda elástica",
+          "level": 3,
+          "statement": "Una persona de 70 kg salta desde el reposo atada a una cuerda elástica de 20 m de longitud natural y k = 100 N/m. Halla la distancia máxima de caída, la velocidad máxima y la aceleración en el punto más bajo.",
+          "steps": [
+            "Caída total 20 + x: 70·9,81·(20 + x) = ½·100·x² → 50x² − 686,7x − 13 734 = 0 → x = 24,81 m.",
+            "Velocidad máxima donde k·x = m·g: x = 6,867 m.",
+            "v² = 2·9,81·26,867 − (100/70)·6,867² = 527,1 − 67,4 → v = 21,4 m/s.",
+            "Abajo: a = (k·x − m·g)/m = (2 480,7 − 686,7)/70 = 25,6 m/s² hacia arriba."
+          ],
+          "answer": "**Cae ≈ 44,8 m; v máx ≈ 21,4 m/s; a ≈ 25,6 m/s² (2,6 g) hacia arriba en el punto más bajo**"
+        },
+        {
+          "type": "exercise",
+          "title": "Varilla que gira y reacción en el pasador",
+          "level": 3,
+          "statement": "Una varilla uniforme de 6 kg y 1,5 m está articulada en un extremo y se suelta desde la horizontal. Halla su velocidad angular y la reacción en el pasador al pasar por la vertical.",
+          "steps": [
+            "G baja L/2 = 0,75 m: 6·9,81·0,75 = ½·(6·1,5²/3)·ω² → 44,15 = 2,25·ω².",
+            "ω = 4,43 rad/s.",
+            "En la vertical, la aceleración de G es normal: aₙ = ω²·(L/2) = 14,72 m/s² hacia el pasador.",
+            "O − m·g = m·aₙ → O = 58,86 + 88,29."
+          ],
+          "answer": "**ω ≈ 4,43 rad/s; reacción vertical ≈ 147 N (2,5 veces el peso)**"
+        },
+        {
+          "type": "exercise",
+          "title": "Bloque y tambor",
+          "level": 2,
+          "statement": "Un bloque de 10 kg cuelga de una cuerda enrollada en un tambor macizo de 20 kg y 0,3 m de radio, que gira sin fricción. Parte del reposo. Halla la velocidad del bloque tras descender 2 m.",
+          "steps": [
+            "T = ½·10·v² + ½·(½·20·0,3²)·(v/0,3)² = 5v² + 5v² = 10v².",
+            "10·9,81·2 = 10v²."
+          ],
+          "answer": "**v ≈ 4,43 m/s**"
+        },
+        {
+          "type": "exercise",
+          "title": "Dos bloques con fricción",
+          "level": 2,
+          "statement": "El bloque A (8 kg) está sobre una mesa con μk = 0,25 y está unido por una cuerda y una polea ideal al bloque B (6 kg), que cuelga. Parten del reposo. Halla la velocidad tras recorrer 1,5 m.",
+          "steps": [
+            "Trabajo del peso de B: 6·9,81·1,5 = 88,29 J.",
+            "Trabajo de la fricción sobre A: −0,25·8·9,81·1,5 = −29,43 J.",
+            "½·(8 + 6)·v² = 58,86."
+          ],
+          "answer": "**v ≈ 2,90 m/s**"
+        },
+        {
+          "type": "exercise",
+          "title": "Cilindro que rueda y resorte",
+          "level": 3,
+          "statement": "Un cilindro macizo de 8 kg rueda sin deslizar por un plano horizontal a 3 m/s y su centro choca con un resorte de k = 1 200 N/m. Halla la compresión máxima del resorte.",
+          "steps": [
+            "Energía cinética inicial: ¾·m·v² = 0,75·8·9 = 54 J (traslación más rotación).",
+            "En la compresión máxima se detiene: 54 = ½·1 200·x².",
+            "x² = 0,09."
+          ],
+          "answer": "**x = 0,30 m** (si se olvidara la rotación saldría 0,245 m).",
+          "hint": "La fricción de rodadura no trabaja, pero la rotación sí guarda energía."
+        }
+      ]
     }
   ]
 }

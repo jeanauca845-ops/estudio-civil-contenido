@@ -1,0 +1,1202 @@
+{
+  "id": "gm01b-carta",
+  "title": "La carta topográfica 1:50 000",
+  "description": "Cómo leer y usar una carta del IGM: información marginal, escala, coordenadas, relieve, pendientes, perfiles y áreas, todo a mano.",
+  "lessons": [
+    {
+      "id": "l01-carta",
+      "title": "Qué es una carta 1:50 000 y qué información trae",
+      "summary": "Escala, cobertura de una hoja, información marginal, colores, datum y zona UTM.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Una **carta topográfica** es un mapa a escala media que representa con precisión el relieve (curvas de nivel), la hidrografía, las vías, los poblados y los nombres de un sector. En Ecuador la produce el **Instituto Geográfico Militar (IGM)**. La escala 1:50 000 es la base de los estudios de **prefactibilidad**: ubicación de obras, trazado preliminar de vías y canales, y sobre todo **delimitación de cuencas**.",
+          "title": "Carta topográfica"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Piensa en la carta como una **foto del terreno tomada desde muy alto y luego dibujada con símbolos**: no ves cada casa ni cada árbol, pero sí la forma de las montañas, por dónde corren los ríos y cómo llegar de un sitio a otro.",
+          "title": "Idea"
+        },
+        {
+          "type": "heading",
+          "text": "Qué significa 1:50 000"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "En la carta",
+            "En el terreno"
+          ],
+          "rows": [
+            [
+              "1 mm",
+              "50 m"
+            ],
+            [
+              "1 cm",
+              "500 m = 0,5 km"
+            ],
+            [
+              "2 cm",
+              "1 km (un cuadro de la cuadrícula)"
+            ],
+            [
+              "1 cm²",
+              "0,25 km² = 25 ha"
+            ],
+            [
+              "4 cm² (un cuadro)",
+              "1 km² = 100 ha"
+            ],
+            [
+              "1 mm²",
+              "2 500 m² = 0,25 ha"
+            ],
+            [
+              "0,2 mm (grosor de una línea fina)",
+              "10 m: es la **precisión gráfica** de la carta"
+            ]
+          ],
+          "caption": "Equivalencias que conviene saber de memoria"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "No tiene sentido leer en una carta 1:50 000 distancias con precisión de centímetros: lo mejor que da el papel son unos **10 m**. Para diseño definitivo se necesita topografía de detalle (1:1 000, 1:500).",
+          "title": "Límite de la carta"
+        },
+        {
+          "type": "heading",
+          "text": "Cuánto terreno cubre una hoja"
+        },
+        {
+          "type": "text",
+          "text": "Cada hoja 1:50 000 del IGM cubre **10 minutos de latitud por 15 minutos de longitud**. Cerca del ecuador eso es aproximadamente **18,4 km × 27,8 km** (unos 510 km²), que en el papel son unos 37 cm × 56 cm.\nCada hoja tiene un **nombre** (el del poblado o rasgo más importante) y un **código** de la serie. En el margen hay un **índice de hojas adyacentes** que indica qué carta continúa hacia cada lado: se usa cuando la cuenca o el proyecto se sale de la hoja."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Escala",
+            "Uso típico",
+            "1 cm equivale a"
+          ],
+          "rows": [
+            [
+              "1:250 000",
+              "Planificación regional",
+              "2,5 km"
+            ],
+            [
+              "1:100 000",
+              "Estudios generales, geología regional",
+              "1 km"
+            ],
+            [
+              "1:50 000",
+              "Cuencas, prefactibilidad de obras",
+              "500 m"
+            ],
+            [
+              "1:25 000",
+              "Estudios más detallados",
+              "250 m"
+            ],
+            [
+              "1:5 000 – 1:1 000",
+              "Catastro y diseño (topografía propia)",
+              "50 m – 10 m"
+            ]
+          ],
+          "caption": "Mientras más grande el denominador, más pequeña la escala y menos detalle"
+        },
+        {
+          "type": "heading",
+          "text": "Información marginal: lo primero que se lee"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Para qué sirve"
+          ],
+          "rows": [
+            [
+              "Nombre y código de la hoja",
+              "Identificar la carta y pedir las vecinas"
+            ],
+            [
+              "Escala numérica y **escala gráfica**",
+              "Convertir medidas; la gráfica sigue siendo válida si la carta se fotocopia ampliada o reducida"
+            ],
+            [
+              "**Equidistancia** de curvas de nivel",
+              "Diferencia de cota entre curvas consecutivas (en 1:50 000 normalmente **20 m**, con curvas índice cada 100 m). Léela siempre: puede cambiar"
+            ],
+            [
+              "Leyenda de signos convencionales",
+              "Significado de cada símbolo"
+            ],
+            [
+              "Datum horizontal y vertical",
+              "Sistema de referencia de las coordenadas y de las cotas (nivel medio del mar)"
+            ],
+            [
+              "Proyección y zona UTM",
+              "Sistema de la cuadrícula (en la Sierra y Costa al sur de la línea ecuatorial: **zona 17 Sur**)"
+            ],
+            [
+              "Diagrama de declinación",
+              "Ángulos entre los tres nortes (geográfico, de cuadrícula y magnético)"
+            ],
+            [
+              "Índice de hojas adyacentes",
+              "Qué cartas rodean a esta"
+            ],
+            [
+              "Fechas de levantamiento y edición",
+              "Qué tan actualizada está (vías y poblados cambian; el relieve casi no)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Colores convencionales"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Color",
+            "Representa"
+          ],
+          "rows": [
+            [
+              "Sepia o café",
+              "Relieve: curvas de nivel y cotas"
+            ],
+            [
+              "Azul",
+              "Hidrografía: ríos, quebradas, lagunas, pantanos"
+            ],
+            [
+              "Negro",
+              "Obras humanas, límites, cuadrícula y nombres"
+            ],
+            [
+              "Rojo",
+              "Vías principales y zonas urbanas"
+            ],
+            [
+              "Verde",
+              "Vegetación: bosques y cultivos"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Datum y zona: el detalle que más errores causa"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Las cartas antiguas del IGM están en el datum **PSAD56**; las nuevas y el GPS trabajan en **WGS84 / SIRGAS**. Las coordenadas del **mismo punto** difieren en **cientos de metros** entre uno y otro. Antes de pasar un punto del GPS a la carta, o de georreferenciarla en ArcMap, mira en el margen qué datum usa.",
+          "title": "PSAD56 frente a WGS84"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Zona UTM",
+            "Dónde"
+          ],
+          "rows": [
+            [
+              "17 Sur",
+              "Costa y Sierra al sur de la línea ecuatorial (Cuenca, Guayaquil, Loja)"
+            ],
+            [
+              "17 Norte",
+              "Al norte de la línea ecuatorial en la misma franja (parte de Esmeraldas, Carchi, Imbabura)"
+            ],
+            [
+              "18 Sur / 18 Norte",
+              "Amazonía, al este del meridiano 78° O"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En el hemisferio sur la coordenada Norte de UTM lleva un **falso norte de 10 000 000 m**: por eso en Cuenca las coordenadas Norte son del orden de 9 680 000 m. El Este lleva un falso este de 500 000 m en el meridiano central de la zona."
+        },
+        {
+          "type": "quiz",
+          "question": "En una carta 1:50 000, 3 cm representan:",
+          "options": [
+            "150 m",
+            "1,5 km",
+            "15 km",
+            "500 m"
+          ],
+          "correct": 1,
+          "explanation": "3 × 500 m."
+        },
+        {
+          "type": "quiz",
+          "question": "Un cuadro de la cuadrícula kilométrica en 1:50 000 mide en el papel:",
+          "options": [
+            "1 cm",
+            "2 cm",
+            "5 cm",
+            "10 cm"
+          ],
+          "correct": 1,
+          "explanation": "1 km / 50 000 = 2 cm."
+        },
+        {
+          "type": "quiz",
+          "question": "La equidistancia es:",
+          "options": [
+            "La distancia horizontal entre curvas",
+            "La diferencia de cota entre curvas consecutivas",
+            "La escala gráfica",
+            "El ancho de la hoja"
+          ],
+          "correct": 1,
+          "explanation": "Es un desnivel constante."
+        },
+        {
+          "type": "quiz",
+          "question": "La precisión gráfica de una carta 1:50 000 es de aproximadamente:",
+          "options": [
+            "1 cm",
+            "1 m",
+            "10 m",
+            "500 m"
+          ],
+          "correct": 2,
+          "explanation": "0,2 mm × 50 000."
+        },
+        {
+          "type": "quiz",
+          "question": "Las curvas de nivel se dibujan en color:",
+          "options": [
+            "Azul",
+            "Sepia o café",
+            "Verde",
+            "Rojo"
+          ],
+          "correct": 1,
+          "explanation": "Relieve en sepia."
+        },
+        {
+          "type": "quiz",
+          "question": "Cuenca (Azuay) está en la zona UTM:",
+          "options": [
+            "17 Sur",
+            "18 Sur",
+            "17 Norte",
+            "16 Sur"
+          ],
+          "correct": 0,
+          "explanation": "Sierra sur del Ecuador."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la carta está en PSAD56 y el GPS en WGS84, las coordenadas de un punto:",
+          "options": [
+            "Coinciden",
+            "Difieren en cientos de metros",
+            "Difieren en milímetros",
+            "No se pueden comparar nunca"
+          ],
+          "correct": 1,
+          "explanation": "Hay que transformar de un datum al otro."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué es útil la escala gráfica?",
+          "options": [
+            "Es más bonita",
+            "Sigue valiendo si la carta se amplía o reduce al copiarla",
+            "Indica el norte",
+            "Da la equidistancia"
+          ],
+          "correct": 1,
+          "explanation": "La barra cambia junto con el dibujo."
+        }
+      ]
+    },
+    {
+      "id": "l02-medir",
+      "title": "Medir distancias y áreas sobre la carta",
+      "summary": "Distancias rectas y curvas, distancia real con desnivel, y cuatro métodos para medir áreas a mano.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "Distancia real = distancia en la carta × denominador de la escala        D (m) = d (mm) × 50",
+          "caption": "Para 1:50 000"
+        },
+        {
+          "type": "heading",
+          "text": "Distancias"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Qué medir",
+            "Cómo"
+          ],
+          "rows": [
+            [
+              "Tramo recto",
+              "Con regla, en mm, y multiplicar por 50 para obtener metros"
+            ],
+            [
+              "Línea curva (río, vía, divisoria)",
+              "Con un **hilo** que se acomoda sobre la línea y luego se estira sobre la regla; o con **curvímetro** (ruedita que se hace rodar); o con **compás** de abertura fija pequeña, contando pasos"
+            ],
+            [
+              "Con la escala gráfica",
+              "Se marca la distancia en el borde de un papel y se lleva a la barra de escala"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Entre dos puentes hay 7,4 cm en línea recta: D = 74 mm × 50 = **3 700 m**.\nUn río medido con hilo da 23,6 cm: L = 236 × 50 = **11 800 m = 11,8 km**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La carta da la **distancia horizontal** (reducida). La distancia real sobre el terreno inclinado es mayor: D real = √(Dh² + Δh²). Con 1 000 m horizontales y 300 m de desnivel: √(1000² + 300²) = 1 044 m. En pendientes suaves casi no se nota; en laderas fuertes sí.",
+          "title": "Horizontal no es lo mismo que real"
+        },
+        {
+          "type": "heading",
+          "text": "Áreas: cuatro métodos a mano"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Método",
+            "Procedimiento",
+            "Cuándo usarlo"
+          ],
+          "rows": [
+            [
+              "**Cuadrícula** (conteo)",
+              "Contar cuadros completos + la mitad de los cuadros parciales. En 1:50 000 cada cuadro de la cuadrícula es 1 km²",
+              "El más rápido para cuencas"
+            ],
+            [
+              "**Papel milimetrado** transparente",
+              "Igual, pero con cuadritos de 1 mm (0,25 ha) o de 1 cm (25 ha)",
+              "Áreas pequeñas o irregulares"
+            ],
+            [
+              "**Figuras geométricas**",
+              "Dividir en triángulos y trapecios, medir bases y alturas",
+              "Polígonos de lados rectos"
+            ],
+            [
+              "**Planímetro**",
+              "Instrumento que se recorre por el contorno y da el área",
+              "Si se dispone de él; el más preciso"
+            ],
+            [
+              "**Coordenadas (Gauss)**",
+              "Con las coordenadas de los vértices: A = ½ |Σ (xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|",
+              "Polígonos con vértices conocidos"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Una cuenca ocupa 37 cuadros completos y 22 cuadros parciales de la cuadrícula de 1 km:\nA ≈ 37 + 22/2 = **48 km²**.\nPara afinar, en lugar de «la mitad» se estima cada parcial en décimas (0,3; 0,7…) y se suman.",
+          "title": "Ejemplo: conteo de cuadros"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Sobre papel milimetrado una microcuenca ocupa 9 cuadros de 1 cm² completos y 14 parciales: 9 + 7 = 16 cm² → 16 × 0,25 km² = **4 km²**.",
+          "title": "Ejemplo: papel milimetrado"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Terreno de vértices (en m): A(0, 0), B(400, 0), C(500, 300), D(100, 400).\nΣ = (0·0 − 400·0) + (400·300 − 500·0) + (500·400 − 100·300) + (100·0 − 0·400) = 0 + 120 000 + 170 000 + 0 = 290 000.\nA = ½ · 290 000 = **145 000 m² = 14,5 ha**.",
+          "title": "Ejemplo: fórmula de Gauss"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Repite la medición dos o tres veces y promedia. En un examen, escribe el método usado y la equivalencia (1 cuadro = 1 km²): el procedimiento vale tanto como el número."
+        },
+        {
+          "type": "quiz",
+          "question": "Un cauce mide 18,4 cm con hilo sobre una carta 1:50 000. Su longitud es:",
+          "options": [
+            "920 m",
+            "9,2 km",
+            "92 km",
+            "3,68 km"
+          ],
+          "correct": 1,
+          "explanation": "184 mm × 50 = 9 200 m."
+        },
+        {
+          "type": "quiz",
+          "question": "Una cuenca ocupa 20 cuadros completos y 12 parciales (cuadrícula de 1 km). Su área es aprox.:",
+          "options": [
+            "32 km²",
+            "26 km²",
+            "20 km²",
+            "14 km²"
+          ],
+          "correct": 1,
+          "explanation": "20 + 6."
+        },
+        {
+          "type": "quiz",
+          "question": "Para medir una línea sinuosa en la carta se usa:",
+          "options": [
+            "Transportador",
+            "Hilo o curvímetro",
+            "Nivel",
+            "Planímetro"
+          ],
+          "correct": 1,
+          "explanation": "El planímetro mide áreas."
+        },
+        {
+          "type": "quiz",
+          "question": "8 cm² en una carta 1:50 000 equivalen a:",
+          "options": [
+            "2 km²",
+            "4 km²",
+            "8 km²",
+            "0,5 km²"
+          ],
+          "correct": 0,
+          "explanation": "8 × 0,25."
+        },
+        {
+          "type": "quiz",
+          "question": "La distancia que da la carta es:",
+          "options": [
+            "La inclinada",
+            "La horizontal",
+            "La vertical",
+            "La geodésica curva"
+          ],
+          "correct": 1,
+          "explanation": "Proyección sobre el plano."
+        },
+        {
+          "type": "quiz",
+          "question": "Con 2 000 m horizontales y 500 m de desnivel, la distancia inclinada es aprox.:",
+          "options": [
+            "2 500 m",
+            "2 062 m",
+            "2 000 m",
+            "1 936 m"
+          ],
+          "correct": 1,
+          "explanation": "√(2000² + 500²)."
+        }
+      ]
+    },
+    {
+      "id": "l03-coordenadas",
+      "title": "Coordenadas, rumbos y los tres nortes",
+      "summary": "Leer coordenadas UTM de un punto, ubicar un punto dado, distancia y azimut por coordenadas, y declinación.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La cuadrícula UTM funciona como las calles numeradas de una ciudad: las líneas verticales dan el **Este** y las horizontales el **Norte**. Cualquier punto queda ubicado diciendo «tantos metros al este de esta línea y tantos al norte de esta otra».",
+          "title": "Idea"
+        },
+        {
+          "type": "heading",
+          "text": "Leer las coordenadas de un punto"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ubica el cuadro que contiene el punto y lee los valores de su esquina **inferior izquierda** (suroeste): línea vertical de la izquierda (Este) y línea horizontal de abajo (Norte).",
+            "Mide en mm la distancia del punto a la línea **izquierda** y multiplícala por 50: son los metros que se suman al Este.",
+            "Mide en mm la distancia a la línea de **abajo** y multiplícala por 50: se suman al Norte.",
+            "Escribe primero el Este y luego el Norte, con la zona: «17 S, E 722 650, N 9 678 350»."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "El punto está en el cuadro cuya esquina suroeste es E = 722 000, N = 9 678 000. Se miden 13 mm hacia la derecha y 7 mm hacia arriba.\nE = 722 000 + 13 × 50 = **722 650 m**;  N = 9 678 000 + 7 × 50 = **9 678 350 m**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Regla para no confundirse: **«primero a la derecha, luego hacia arriba»** (se lee como un gráfico x, y). En los márgenes los números de la cuadrícula aparecen abreviados, con dos cifras grandes: 22 significa 722 000."
+        },
+        {
+          "type": "heading",
+          "text": "Ubicar un punto con coordenadas dadas"
+        },
+        {
+          "type": "text",
+          "text": "Es el proceso inverso: resta la esquina suroeste del cuadro y divide entre 50 para obtener los milímetros.\nPunto E = 724 380, N = 9 681 900: está en el cuadro 724 – 9 681; a 380/50 = 7,6 mm de la línea izquierda y 900/50 = 18 mm de la de abajo."
+        },
+        {
+          "type": "heading",
+          "text": "Distancia y azimut entre dos puntos"
+        },
+        {
+          "type": "formula",
+          "expression": "ΔE = E₂ − E₁        ΔN = N₂ − N₁        D = √(ΔE² + ΔN²)        Az = arctan(ΔE / ΔN) corregido por cuadrante"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Signos",
+            "Cuadrante",
+            "Azimut"
+          ],
+          "rows": [
+            [
+              "ΔE +, ΔN +",
+              "NE",
+              "Az = α"
+            ],
+            [
+              "ΔE +, ΔN −",
+              "SE",
+              "Az = 180° − α"
+            ],
+            [
+              "ΔE −, ΔN −",
+              "SO",
+              "Az = 180° + α"
+            ],
+            [
+              "ΔE −, ΔN +",
+              "NO",
+              "Az = 360° − α"
+            ]
+          ],
+          "caption": "α = arctan(|ΔE| / |ΔN|)"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "A(722 650; 9 678 350) y B(725 150; 9 676 850).\nΔE = +2 500; ΔN = −1 500. D = √(2500² + 1500²) = **2 915 m**.\nα = arctan(2500/1500) = 59,0°; cuadrante SE → **Az = 121,0°** (rumbo S 59,0° E).",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "Los tres nortes"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Norte",
+            "Qué es",
+            "Dónde se usa"
+          ],
+          "rows": [
+            [
+              "Geográfico o verdadero (NV)",
+              "Dirección al polo norte geográfico (meridianos)",
+              "Coordenadas geográficas"
+            ],
+            [
+              "De cuadrícula (NC)",
+              "Dirección de las líneas verticales de la cuadrícula UTM",
+              "Azimuts medidos en la carta o calculados con coordenadas"
+            ],
+            [
+              "Magnético (NM)",
+              "Hacia donde apunta la brújula",
+              "Trabajo de campo con brújula"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "El ángulo entre el norte verdadero y el magnético es la **declinación magnética**; entre el verdadero y el de cuadrícula, la **convergencia**. Ambos están en el diagrama del margen. En Ecuador la declinación es de pocos grados y cambia un poco cada año, por eso el diagrama indica el año y la variación anual."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Un rumbo medido con brújula en el campo **no** se dibuja directamente en la carta: primero se corrige con la declinación del diagrama. En distancias largas, un error de 3° desvía unos 52 m por cada kilómetro.",
+          "title": "Brújula y carta"
+        },
+        {
+          "type": "quiz",
+          "question": "Para leer coordenadas se parte de la esquina del cuadro:",
+          "options": [
+            "Superior derecha",
+            "Inferior izquierda",
+            "Superior izquierda",
+            "Centro"
+          ],
+          "correct": 1,
+          "explanation": "Suroeste: se suma hacia la derecha y hacia arriba."
+        },
+        {
+          "type": "quiz",
+          "question": "Esquina SO: E 730 000, N 9 690 000. El punto está 9 mm a la derecha y 16 mm arriba. Sus coordenadas:",
+          "options": [
+            "730 450; 9 690 800",
+            "730 900; 9 691 600",
+            "730 800; 9 690 450",
+            "730 090; 9 690 160"
+          ],
+          "correct": 0,
+          "explanation": "9 × 50 = 450; 16 × 50 = 800."
+        },
+        {
+          "type": "quiz",
+          "question": "ΔE = −300 m y ΔN = −400 m. El azimut es:",
+          "options": [
+            "36,9°",
+            "143,1°",
+            "216,9°",
+            "323,1°"
+          ],
+          "correct": 2,
+          "explanation": "Cuadrante SO: 180° + 36,9°."
+        },
+        {
+          "type": "quiz",
+          "question": "La brújula apunta al norte:",
+          "options": [
+            "Verdadero",
+            "De cuadrícula",
+            "Magnético",
+            "Astronómico"
+          ],
+          "correct": 2,
+          "explanation": "Sigue el campo magnético."
+        },
+        {
+          "type": "quiz",
+          "question": "El ángulo entre el norte verdadero y el magnético se llama:",
+          "options": [
+            "Convergencia",
+            "Declinación",
+            "Azimut",
+            "Rumbo"
+          ],
+          "correct": 1,
+          "explanation": "Declinación magnética."
+        },
+        {
+          "type": "quiz",
+          "question": "Entre A(0; 0) y B(600; 800) m la distancia es:",
+          "options": [
+            "1 400 m",
+            "1 000 m",
+            "700 m",
+            "200 m"
+          ],
+          "correct": 1,
+          "explanation": "√(600² + 800²)."
+        }
+      ]
+    },
+    {
+      "id": "l04-relieve",
+      "title": "Leer el relieve: curvas de nivel, cotas y pendientes",
+      "summary": "Reglas de las curvas, formas del terreno, interpolación de cotas, pendiente entre dos puntos y trazado de una línea de pendiente constante.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Imagina que inundas el terreno por etapas, subiendo el agua de 20 en 20 metros. Cada **orilla** que deja el agua es una curva de nivel. Donde las orillas quedan muy juntas el terreno es empinado; donde quedan separadas, es suave.",
+          "title": "Idea"
+        },
+        {
+          "type": "heading",
+          "text": "Reglas que siempre se cumplen"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Todos los puntos de una curva tienen la **misma cota**.",
+            "Las curvas **nunca se cruzan** ni se bifurcan (salvo en cornisas o acantilados verticales, donde se juntan).",
+            "Toda curva **se cierra** sobre sí misma, dentro o fuera de la hoja.",
+            "Curvas **juntas** = pendiente fuerte; **separadas** = pendiente suave; **igualmente espaciadas** = pendiente uniforme.",
+            "El agua corre **perpendicular** a las curvas, hacia las cotas menores (línea de máxima pendiente).",
+            "Al cruzar un río o quebrada, las curvas forman una **V cuya punta apunta aguas arriba**.",
+            "En una divisoria (filo, loma), las curvas forman una **U o V cuya punta apunta hacia abajo** (hacia las cotas menores)."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Forma del terreno",
+            "Cómo se ve en las curvas"
+          ],
+          "rows": [
+            [
+              "Cumbre o cerro",
+              "Curvas cerradas concéntricas; la cota aumenta hacia el centro"
+            ],
+            [
+              "Depresión u hoyo",
+              "Curvas cerradas con pequeñas marcas hacia adentro; la cota disminuye hacia el centro"
+            ],
+            [
+              "Quebrada o vaguada",
+              "V con la punta hacia las cotas mayores; por el eje pasa el cauce"
+            ],
+            [
+              "Divisoria, filo o loma",
+              "U o V con la punta hacia las cotas menores"
+            ],
+            [
+              "Collado o silla (paso)",
+              "Punto bajo entre dos cumbres y a la vez punto alto entre dos quebradas: las curvas forman un «reloj de arena»"
+            ],
+            [
+              "Ladera uniforme",
+              "Curvas paralelas igualmente espaciadas"
+            ],
+            [
+              "Ladera cóncava",
+              "Curvas juntas arriba y separadas abajo"
+            ],
+            [
+              "Ladera convexa",
+              "Curvas separadas arriba y juntas abajo"
+            ],
+            [
+              "Llanura o terraza",
+              "Curvas muy separadas"
+            ],
+            [
+              "Acantilado",
+              "Curvas casi superpuestas"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Para saber si una V es quebrada o filo, **lee las cotas**: si la punta de la V señala hacia las curvas de mayor cota, es una quebrada (el agua baja por ahí); si señala hacia las de menor cota, es un filo. Las divisorias de las cuencas pasan por los filos y los collados.",
+          "title": "Quebrada o filo"
+        },
+        {
+          "type": "heading",
+          "text": "Cota de un punto por interpolación"
+        },
+        {
+          "type": "formula",
+          "expression": "Cota = cota inferior + equidistancia × (d₁ / d)",
+          "caption": "d₁: distancia del punto a la curva inferior; d: distancia entre las dos curvas, medidas sobre la línea de máxima pendiente"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "El punto está entre las curvas 2 840 y 2 860. Las curvas están separadas 9 mm y el punto queda a 3 mm de la curva 2 840.\nCota = 2 840 + 20 × (3/9) = **2 846,7 m ≈ 2 847 m**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "Pendiente entre dos puntos"
+        },
+        {
+          "type": "formula",
+          "expression": "S (%) = (Δh / Dh) × 100        ángulo = arctan(Δh / Dh)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Pendiente",
+            "Ángulo",
+            "Terreno"
+          ],
+          "rows": [
+            [
+              "2 %",
+              "1,1°",
+              "Casi plano"
+            ],
+            [
+              "10 %",
+              "5,7°",
+              "Ondulado"
+            ],
+            [
+              "25 %",
+              "14,0°",
+              "Inclinado"
+            ],
+            [
+              "50 %",
+              "26,6°",
+              "Escarpado"
+            ],
+            [
+              "100 %",
+              "45°",
+              "Muy escarpado"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Entre A y B hay 16 mm en la carta y se cruzan 4 intervalos de curvas (equidistancia 20 m).\nDh = 16 × 50 = 800 m; Δh = 4 × 20 = 80 m.\nS = 80/800 = **10 %** (5,7°).",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "Trazar una línea de pendiente constante (línea de ceros)"
+        },
+        {
+          "type": "text",
+          "text": "Para un trazado preliminar de vía o canal se busca una línea que suba con pendiente fija. Se calcula cuánta distancia horizontal hay que avanzar para pasar de una curva a la siguiente y se lleva con el compás de curva en curva."
+        },
+        {
+          "type": "formula",
+          "expression": "a = equidistancia / pendiente        en la carta: a (mm) = a (m) / 50"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Vía con pendiente del 8 % y equidistancia 20 m: a = 20/0,08 = 250 m → **5 mm** en la carta. Con el compás abierto 5 mm se va marcando de una curva a la siguiente. Si la abertura no alcanza la siguiente curva, el terreno es más suave que el 8 % y se puede ir en línea recta.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "interactive",
+          "widget": "slope_calc",
+          "title": "Calculadora de pendientes"
+        },
+        {
+          "type": "quiz",
+          "question": "Las curvas de nivel muy juntas indican:",
+          "options": [
+            "Terreno plano",
+            "Pendiente fuerte",
+            "Un río",
+            "Una depresión"
+          ],
+          "correct": 1,
+          "explanation": "Mucho desnivel en poca distancia."
+        },
+        {
+          "type": "quiz",
+          "question": "Al cruzar una quebrada, la V de las curvas apunta:",
+          "options": [
+            "Aguas abajo",
+            "Aguas arriba",
+            "Al norte",
+            "Al este"
+          ],
+          "correct": 1,
+          "explanation": "Hacia las cotas mayores."
+        },
+        {
+          "type": "quiz",
+          "question": "Punto entre las curvas 3 100 y 3 120, a 2 mm de la 3 100; las curvas distan 8 mm. Su cota es:",
+          "options": [
+            "3 105 m",
+            "3 110 m",
+            "3 115 m",
+            "3 102 m"
+          ],
+          "correct": 0,
+          "explanation": "3 100 + 20 × 2/8."
+        },
+        {
+          "type": "quiz",
+          "question": "25 mm en la carta 1:50 000 y 5 intervalos de 20 m. La pendiente es:",
+          "options": [
+            "4 %",
+            "8 %",
+            "12,5 %",
+            "20 %"
+          ],
+          "correct": 1,
+          "explanation": "100 m / 1 250 m."
+        },
+        {
+          "type": "quiz",
+          "question": "Una pendiente del 100 % equivale a:",
+          "options": [
+            "90°",
+            "45°",
+            "60°",
+            "100°"
+          ],
+          "correct": 1,
+          "explanation": "Δh = Dh."
+        },
+        {
+          "type": "quiz",
+          "question": "Para una línea del 5 % con equidistancia 20 m, la abertura del compás en 1:50 000 es:",
+          "options": [
+            "4 mm",
+            "8 mm",
+            "2 mm",
+            "10 mm"
+          ],
+          "correct": 1,
+          "explanation": "20/0,05 = 400 m → 8 mm."
+        },
+        {
+          "type": "quiz",
+          "question": "Un collado es:",
+          "options": [
+            "La cima de un cerro",
+            "El punto bajo entre dos cumbres",
+            "El fondo de una laguna",
+            "Una curva índice"
+          ],
+          "correct": 1,
+          "explanation": "Un paso o silla."
+        },
+        {
+          "type": "quiz",
+          "question": "El agua escurre en dirección:",
+          "options": [
+            "Paralela a las curvas",
+            "Perpendicular a las curvas, hacia abajo",
+            "Hacia el norte",
+            "A lo largo de la divisoria"
+          ],
+          "correct": 1,
+          "explanation": "Máxima pendiente."
+        }
+      ]
+    },
+    {
+      "id": "l05-perfil",
+      "title": "Perfil topográfico a mano",
+      "summary": "Cómo construir el perfil del terreno a lo largo de una línea, qué es la exageración vertical y para qué sirve.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "definicion",
+          "text": "Un **perfil topográfico** es un corte vertical del terreno a lo largo de una línea: muestra cómo sube y baja la cota conforme se avanza. Es la base del perfil longitudinal de una vía, de un canal o del cauce principal de una cuenca.",
+          "title": "Perfil"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Traza en la carta la línea AB del perfil.",
+            "Coloca el borde de una tira de papel sobre AB y marca los extremos y **cada cruce con una curva de nivel**, anotando su cota. Marca también ríos, filos y vías.",
+            "En papel milimetrado dibuja el eje horizontal (distancias, a la escala de la carta u otra) y el vertical (cotas).",
+            "Lleva las marcas de la tira al eje horizontal y sube cada una hasta su cota.",
+            "Une los puntos con una línea **suave**, no con rectas quebradas: en las cumbres y los fondos el terreno pasa por encima o por debajo de la última curva sin alcanzar la siguiente.",
+            "Rotula: escalas, exageración vertical, extremos y orientación (A – B, rumbo)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Exageración vertical"
+        },
+        {
+          "type": "formula",
+          "expression": "Exageración vertical = escala vertical / escala horizontal = denominador horizontal / denominador vertical"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Escala horizontal 1:50 000 y vertical 1:5 000 → exageración = 50 000/5 000 = **10 veces**. Un cerro de 400 m de alto se dibuja con 8 cm de altura, cuando a escala real mediría solo 8 mm.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El perfil exagerado sirve para **ver** el relieve, pero las pendientes que aparecen dibujadas no son reales. Las pendientes se **calculan** con los números (Δh/Dh), nunca midiendo el ángulo en un perfil exagerado.",
+          "title": "Cuidado"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Uso del perfil",
+            "Qué se obtiene"
+          ],
+          "rows": [
+            [
+              "Cauce principal de una cuenca",
+              "Pendiente media del cauce y cambios de pendiente (saltos, tramos planos)"
+            ],
+            [
+              "Vía o canal",
+              "Cortes y rellenos, rasante"
+            ],
+            [
+              "Intervisibilidad",
+              "Si desde A se ve B (línea recta entre ambos sin que el terreno la corte)"
+            ],
+            [
+              "Geología",
+              "Base del corte geológico"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Escala horizontal 1:50 000 y vertical 1:2 500. La exageración vertical es:",
+          "options": [
+            "5",
+            "10",
+            "20",
+            "25"
+          ],
+          "correct": 2,
+          "explanation": "50 000/2 500."
+        },
+        {
+          "type": "quiz",
+          "question": "En la tira de papel se marcan:",
+          "options": [
+            "Solo los extremos",
+            "Los cruces con cada curva de nivel y su cota",
+            "Las coordenadas",
+            "La declinación"
+          ],
+          "correct": 1,
+          "explanation": "Son los puntos del perfil."
+        },
+        {
+          "type": "quiz",
+          "question": "Las pendientes reales se obtienen:",
+          "options": [
+            "Midiendo el ángulo en el perfil exagerado",
+            "Con Δh/Dh",
+            "Con la escala gráfica",
+            "Con el planímetro"
+          ],
+          "correct": 1,
+          "explanation": "El dibujo exagerado las deforma."
+        },
+        {
+          "type": "quiz",
+          "question": "El perfil del cauce principal sirve para hallar:",
+          "options": [
+            "El área de la cuenca",
+            "La pendiente media del cauce",
+            "El orden de Strahler",
+            "El coeficiente de compacidad"
+          ],
+          "correct": 1,
+          "explanation": "Desnivel entre longitud."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos con la carta 1:50 000",
+      "summary": "Problemas completos de medición, coordenadas, pendientes y perfiles.",
+      "minutes": 35,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuélvelos **en papel** con calculadora; luego pide la pista, la solución paso a paso o solo la respuesta.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Distancia, desnivel y pendiente de una conducción",
+          "level": 2,
+          "statement": "En una carta 1:50 000 (equidistancia 20 m) una tubería va en línea recta de la captación C a un tanque T. Se miden 6,8 cm y se cruzan 11 intervalos de curvas bajando. Halla la distancia horizontal, el desnivel, la pendiente media y la longitud real de tubería.",
+          "steps": [
+            "Dh = 68 mm × 50 = 3 400 m.",
+            "Δh = 11 × 20 = 220 m.",
+            "S = 220/3 400 = 0,0647 → 6,47 %.",
+            "Longitud real = √(3 400² + 220²) = 3 407 m."
+          ],
+          "answer": "**Dh = 3 400 m; Δh = 220 m; S ≈ 6,5 %; L ≈ 3 407 m** (apenas 7 m más que la horizontal)."
+        },
+        {
+          "type": "exercise",
+          "title": "Coordenadas, distancia y azimut",
+          "level": 2,
+          "statement": "Punto P: cuadro con esquina SO (718 000; 9 684 000), a 24 mm a la derecha y 5 mm arriba. Punto Q: cuadro con esquina SO (716 000; 9 686 000), a 8 mm a la derecha y 12 mm arriba. Halla las coordenadas, la distancia PQ y el azimut de P a Q.",
+          "steps": [
+            "P: E = 718 000 + 1 200 = 719 200; N = 9 684 000 + 250 = 9 684 250.",
+            "Q: E = 716 000 + 400 = 716 400; N = 9 686 000 + 600 = 9 686 600.",
+            "ΔE = −2 800; ΔN = +2 350 → cuadrante NO.",
+            "D = √(2 800² + 2 350²) = 3 655 m.",
+            "α = arctan(2 800/2 350) = 50,0° → Az = 360° − 50,0°."
+          ],
+          "answer": "**P(719 200; 9 684 250), Q(716 400; 9 686 600); D ≈ 3 655 m; Az ≈ 310,0°** (N 50° O)."
+        },
+        {
+          "type": "exercise",
+          "title": "Área de un embalse por coordenadas",
+          "level": 2,
+          "statement": "El espejo de agua de un reservorio tiene vértices (m): A(0, 0), B(300, 50), C(350, 250), D(150, 350), E(−50, 200). Calcula el área con la fórmula de Gauss.",
+          "steps": [
+            "Productos cruzados xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ: AB: 0·50 − 300·0 = 0.",
+            "BC: 300·250 − 350·50 = 57 500.",
+            "CD: 350·350 − 150·250 = 85 000.",
+            "DE: 150·200 − (−50)·350 = 47 500.",
+            "EA: (−50)·0 − 0·200 = 0.",
+            "Suma = 190 000 → A = ½ · 190 000."
+          ],
+          "answer": "**A = 95 000 m² = 9,5 ha**"
+        },
+        {
+          "type": "exercise",
+          "title": "Trazado de un canal de pendiente constante",
+          "level": 3,
+          "statement": "Se quiere trazar en la carta 1:50 000 (equidistancia 20 m) un canal con pendiente del 0,4 % desde la cota 2 900 hasta la 2 880. ¿Qué longitud tiene? ¿Cuántos centímetros son en la carta? ¿Qué conclusión sacas?",
+          "steps": [
+            "Para bajar 20 m con 0,4 %: L = 20/0,004 = 5 000 m.",
+            "En la carta: 5 000 m / 500 m por cm = 10 cm.",
+            "El canal recorre 10 cm de carta entre dos curvas consecutivas: va **casi paralelo a las curvas de nivel**, rodeando las lomas y entrando en las quebradas."
+          ],
+          "answer": "**L = 5 km = 10 cm en la carta.** Un canal de pendiente suave sigue prácticamente una curva de nivel."
+        },
+        {
+          "type": "exercise",
+          "title": "Perfil y pendiente por tramos de un cauce",
+          "level": 3,
+          "statement": "Sobre el cauce principal se midieron con hilo estas distancias acumuladas desde la salida y las cotas: 0 km – 2 540 m; 4,0 km – 2 700 m; 8,5 km – 3 100 m; 12,5 km – 3 860 m. Halla la pendiente de cada tramo, la pendiente media y di cómo es el perfil.",
+          "steps": [
+            "Tramo 1: (2 700 − 2 540)/4 000 = 4,0 %.",
+            "Tramo 2: (3 100 − 2 700)/4 500 = 8,9 %.",
+            "Tramo 3: (3 860 − 3 100)/4 000 = 19,0 %.",
+            "Media: (3 860 − 2 540)/12 500 = 10,56 %."
+          ],
+          "answer": "**4,0 %, 8,9 % y 19,0 %; media 10,6 %.** Perfil cóncavo: muy empinado en la cabecera y suave cerca de la salida, típico de un río de montaña."
+        },
+        {
+          "type": "exercise",
+          "title": "Interpolación y pendiente de una ladera",
+          "level": 2,
+          "statement": "El punto M está entre las curvas 3 020 y 3 040 (separadas 6 mm), a 4,5 mm de la 3 020. El punto N está sobre la curva 2 940. Entre M y N hay 22 mm. Halla la cota de M y la pendiente de la ladera.",
+          "steps": [
+            "Cota M = 3 020 + 20 × (4,5/6) = 3 035 m.",
+            "Δh = 3 035 − 2 940 = 95 m.",
+            "Dh = 22 × 50 = 1 100 m.",
+            "S = 95/1 100."
+          ],
+          "answer": "**Cota de M = 3 035 m; S ≈ 8,6 % (4,9°)**"
+        }
+      ]
+    }
+  ]
+}

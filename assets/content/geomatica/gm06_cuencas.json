@@ -414,6 +414,1108 @@
           "explanation": "tc ∝ S^−0,385: más pendiente, **menor tc**."
         }
       ]
+    },
+    {
+      "id": "l05-a-mano",
+      "title": "Delimitar una cuenca a mano sobre la carta 1:50 000",
+      "summary": "Procedimiento completo, reglas de oro, casos difíciles y cómo comprobar el trazo.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Delimitar una cuenca es contestar una pregunta para cada punto del terreno: **«si aquí cae una gota de lluvia, ¿termina pasando por mi punto de salida?»**. Todo lo que contesta «sí» está dentro. La divisoria es la frontera entre el «sí» y el «no».",
+          "title": "La idea"
+        },
+        {
+          "type": "heading",
+          "text": "Materiales"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Carta 1:50 000 (o las hojas vecinas pegadas si la cuenca se sale).",
+            "Papel calco o acetato, lápiz, borrador, lápices de colores (azul para cauces, rojo para la divisoria).",
+            "Regla, hilo o curvímetro, papel milimetrado transparente o planímetro."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Procedimiento"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Marca el punto de salida** (cierre) exactamente sobre el cauce: el sitio de la captación, el puente o la alcantarilla. La cuenca se define para ese punto.",
+            "**Resalta en azul la red de drenaje** aguas arriba del punto: el cauce principal y todos sus afluentes, incluidas las quebradas que no están dibujadas pero que se reconocen por las V de las curvas.",
+            "**Identifica los cauces vecinos** que NO llegan a tu punto (los de las cuencas de al lado). La divisoria debe pasar entre los tuyos y los ajenos.",
+            "**Marca los puntos altos** que rodean la red: cumbres, cotas, filos y collados.",
+            "Desde el punto de salida, **sube por un lado perpendicular a las curvas** hasta alcanzar el filo, y síguelo uniendo cumbres y collados.",
+            "Rodea toda la red de drenaje por las partes más altas y **baja por el otro lado** hasta cerrar en el punto de salida.",
+            "**Comprueba** con la prueba de la gota en varios puntos cercanos a la línea, por dentro y por fuera."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Reglas de oro"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Regla",
+            "Por qué"
+          ],
+          "rows": [
+            [
+              "La divisoria **nunca cruza un cauce**, salvo en el punto de salida",
+              "Si lo cruza, parte del agua de ese cauce quedaría fuera o entraría agua ajena"
+            ],
+            [
+              "Corta las curvas de nivel **perpendicularmente**",
+              "Sigue la línea del filo, que es la de máxima pendiente vista desde arriba"
+            ],
+            [
+              "Pasa por **cumbres y collados**",
+              "Entre dos cumbres, el punto más bajo de la divisoria es el collado"
+            ],
+            [
+              "Sigue las U o V que **apuntan hacia abajo** (filos), nunca las que apuntan hacia arriba (quebradas)",
+              "Los filos separan aguas; las quebradas las juntan"
+            ],
+            [
+              "Entre dos cauces de cuencas distintas, pasa **por la mitad**, por la parte más alta",
+              "A cada lado el agua va hacia un cauce diferente"
+            ],
+            [
+              "En el punto de salida, llega **perpendicular al cauce** por ambas orillas",
+              "La cuenca se cierra justo ahí"
+            ],
+            [
+              "Es una línea **cerrada**",
+              "Delimita un área"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Casos difíciles"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Situación",
+            "Qué hacer"
+          ],
+          "rows": [
+            [
+              "Zona plana (llanura, páramo ondulado)",
+              "Las curvas están muy separadas: guíate por las cotas sueltas y por la dirección de los cauces; la divisoria queda a media distancia entre cauces vecinos"
+            ],
+            [
+              "Collado",
+              "La divisoria lo cruza de cumbre a cumbre, pasando por su punto más bajo"
+            ],
+            [
+              "Lagunas sin salida",
+              "Si no desaguan a tu red, forman una cuenca endorreica aparte y quedan fuera"
+            ],
+            [
+              "Canales y trasvases",
+              "Son obras humanas: se anotan, pero la divisoria natural no los considera"
+            ],
+            [
+              "La cuenca se sale de la hoja",
+              "Se usa el índice de hojas adyacentes y se continúa en la carta vecina"
+            ],
+            [
+              "Zona urbana",
+              "El drenaje real lo definen calles y alcantarillado; la carta solo da una aproximación"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Errores que más quitan puntos: 1) cruzar un afluente; 2) dejar fuera una quebrada que sí llega al punto; 3) cerrar la cuenca en la confluencia equivocada; 4) dibujar la divisoria por el fondo de una quebrada vecina; 5) no cerrar la línea en el punto de salida.",
+          "title": "Errores típicos"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "La jerarquía habitual es: **región o sistema hidrográfico → cuenca → subcuenca → microcuenca**. Los límites de área entre una categoría y otra cambian según el autor y la institución; lo importante es que cada subcuenca es la cuenca de un afluente."
+        },
+        {
+          "type": "interactive",
+          "widget": "d8_watershed",
+          "title": "Compáralo con lo que hace el computador"
+        },
+        {
+          "type": "quiz",
+          "question": "La divisoria de aguas cruza un cauce:",
+          "options": [
+            "Nunca",
+            "Solo en el punto de salida",
+            "En cada confluencia",
+            "Donde haya un puente"
+          ],
+          "correct": 1,
+          "explanation": "Solo en el cierre."
+        },
+        {
+          "type": "quiz",
+          "question": "La divisoria pasa por:",
+          "options": [
+            "El fondo de las quebradas",
+            "Cumbres, filos y collados",
+            "Las curvas índice",
+            "Los caminos"
+          ],
+          "correct": 1,
+          "explanation": "Las partes más altas."
+        },
+        {
+          "type": "quiz",
+          "question": "Respecto a las curvas de nivel, la divisoria las corta:",
+          "options": [
+            "En paralelo",
+            "Perpendicularmente",
+            "A 45°",
+            "No las corta"
+          ],
+          "correct": 1,
+          "explanation": "Va por la línea del filo."
+        },
+        {
+          "type": "quiz",
+          "question": "Si cambia el punto de salida, la cuenca:",
+          "options": [
+            "No cambia",
+            "Cambia",
+            "Se duplica siempre",
+            "Desaparece"
+          ],
+          "correct": 1,
+          "explanation": "La cuenca se define para un punto."
+        },
+        {
+          "type": "quiz",
+          "question": "Para distinguir un filo de una quebrada se mira:",
+          "options": [
+            "El color",
+            "Hacia qué cotas apunta la V",
+            "El grosor de la curva",
+            "La cuadrícula"
+          ],
+          "correct": 1,
+          "explanation": "Hacia abajo: filo; hacia arriba: quebrada."
+        },
+        {
+          "type": "quiz",
+          "question": "El primer paso para delimitar a mano es:",
+          "options": [
+            "Medir el área",
+            "Marcar el punto de salida",
+            "Contar cauces",
+            "Dibujar el perfil"
+          ],
+          "correct": 1,
+          "explanation": "Todo depende del cierre."
+        },
+        {
+          "type": "quiz",
+          "question": "Entre dos cumbres, la divisoria pasa por:",
+          "options": [
+            "El collado",
+            "La quebrada más cercana",
+            "Una línea recta cualquiera",
+            "El río"
+          ],
+          "correct": 0,
+          "explanation": "El punto más bajo de la línea de cumbres."
+        }
+      ]
+    },
+    {
+      "id": "l06-medir",
+      "title": "Medir la cuenca a mano",
+      "summary": "Área, perímetro, longitudes, cotas y desniveles: los datos de partida de todos los parámetros.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Dato",
+            "Símbolo",
+            "Cómo se mide a mano"
+          ],
+          "rows": [
+            [
+              "Área",
+              "A (km²)",
+              "Conteo de cuadros de la cuadrícula de 1 km (completos + ½ de los parciales), papel milimetrado o planímetro"
+            ],
+            [
+              "Perímetro",
+              "P (km)",
+              "Hilo sobre la divisoria; cm × 0,5"
+            ],
+            [
+              "Longitud del cauce principal",
+              "L (km)",
+              "Hilo sobre el cauce más largo, desde la salida hasta su naciente (y, para algunas fórmulas, prolongado hasta la divisoria)"
+            ],
+            [
+              "Longitud axial",
+              "La (km)",
+              "Recta desde la salida hasta el punto más lejano de la divisoria"
+            ],
+            [
+              "Ancho medio",
+              "B = A / La",
+              "Se calcula"
+            ],
+            [
+              "Longitud total de cauces",
+              "Lt (km)",
+              "Hilo sobre todos los cauces, sumando"
+            ],
+            [
+              "Cota máxima y mínima de la cuenca",
+              "Hmáx, Hmín",
+              "La cumbre más alta de la divisoria y la cota del punto de salida"
+            ],
+            [
+              "Cotas del cauce",
+              "—",
+              "Cota de la naciente y de la salida, por interpolación"
+            ],
+            [
+              "Áreas entre curvas",
+              "aᵢ",
+              "Conteo de cuadros por franjas de cota (para la curva hipsométrica)"
+            ],
+            [
+              "Longitud de las curvas de nivel dentro de la cuenca",
+              "ΣLc",
+              "Hilo sobre cada curva (para la pendiente media por Alvord)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Cuenca del río de ejemplo (se usará en toda la unidad):\n• Conteo: 37 cuadros completos y 22 parciales → **A = 48 km²**.\n• Divisoria con hilo: 64 cm → **P = 32 km**.\n• Cauce principal: 25 cm → **L = 12,5 km**.\n• Todos los cauces: 172 cm → **Lt = 86 km**.\n• Cota de la salida 2 540 m; naciente del cauce 3 860 m; cumbre más alta 3 900 m.",
+          "title": "Datos de la cuenca de ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Mide siempre en **las mismas unidades** que pide cada fórmula: unas usan km y otras m; unas la pendiente en m/m y otras en %. La mayoría de los errores en los parámetros son de unidades.",
+          "title": "Unidades"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "El cauce principal es el que, en cada confluencia, se sigue por el brazo **más largo** (o el de mayor área de aporte) hasta la cabecera."
+        },
+        {
+          "type": "quiz",
+          "question": "Con hilo, la divisoria mide 46 cm en la carta 1:50 000. El perímetro es:",
+          "options": [
+            "23 km",
+            "46 km",
+            "92 km",
+            "4,6 km"
+          ],
+          "correct": 0,
+          "explanation": "46 × 0,5 km."
+        },
+        {
+          "type": "quiz",
+          "question": "El ancho medio de una cuenca se calcula como:",
+          "options": [
+            "P/A",
+            "A/La",
+            "L/A",
+            "A·La"
+          ],
+          "correct": 1,
+          "explanation": "Área entre longitud axial."
+        },
+        {
+          "type": "quiz",
+          "question": "La cota mínima de la cuenca es la de:",
+          "options": [
+            "La cumbre",
+            "El punto de salida",
+            "La naciente",
+            "El centroide"
+          ],
+          "correct": 1,
+          "explanation": "El punto más bajo."
+        },
+        {
+          "type": "quiz",
+          "question": "En una confluencia, el cauce principal sigue por:",
+          "options": [
+            "El brazo más corto",
+            "El brazo más largo",
+            "El de la derecha",
+            "Cualquiera"
+          ],
+          "correct": 1,
+          "explanation": "Por convención."
+        }
+      ]
+    },
+    {
+      "id": "l07-parametros",
+      "title": "Parámetros de forma, relieve y drenaje a fondo",
+      "summary": "Compacidad, factor de forma, elongación, rectángulo equivalente, pendientes, curva hipsométrica, elevación media y red de drenaje, con la cuenca de ejemplo.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Los parámetros morfométricos son el **«examen médico» de la cuenca**: con unos pocos números se sabe si es redonda o alargada, empinada o plana, bien o mal drenada, y por tanto si responderá a una lluvia con una crecida rápida y alta o lenta y baja.",
+          "title": "Para qué sirven"
+        },
+        {
+          "type": "heading",
+          "text": "1. Forma"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parámetro",
+            "Fórmula",
+            "Lectura"
+          ],
+          "rows": [
+            [
+              "Coeficiente de compacidad (Gravelius)",
+              "Kc = 0,282 · P / √A",
+              "Compara el perímetro con el de un círculo de igual área. Kc = 1: círculo. Cuanto mayor, más alargada o irregular"
+            ],
+            [
+              "Factor de forma (Horton)",
+              "Kf = A / L²",
+              "Bajo (< 0,3): alargada, crecidas más lentas. Alto (hacia 0,79, el del círculo): achatada, crecidas más violentas"
+            ],
+            [
+              "Relación de elongación (Schumm)",
+              "Re = 1,128 · √A / L",
+              "Diámetro del círculo de igual área entre la longitud. Cerca de 1: redonda; 0,6 – 0,8: relieve fuerte, alargada"
+            ],
+            [
+              "Ancho medio",
+              "B = A / L",
+              "km"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Kc",
+            "Forma",
+            "Tendencia a crecidas"
+          ],
+          "rows": [
+            [
+              "1,00 – 1,25",
+              "Casi redonda a oval redonda",
+              "Alta"
+            ],
+            [
+              "1,25 – 1,50",
+              "Oval redonda a oval oblonga",
+              "Media"
+            ],
+            [
+              "1,50 – 1,75",
+              "Oval oblonga a rectangular oblonga",
+              "Baja"
+            ],
+            [
+              "> 1,75",
+              "Muy alargada o muy irregular",
+              "Muy baja"
+            ]
+          ],
+          "caption": "Clasificación usual del coeficiente de compacidad"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Kc = 0,282 · 32/√48 = 0,282 · 32/6,928 = **1,30** → oval redonda a oval oblonga.\nKf = 48/12,5² = **0,31** → algo alargada.\nRe = 1,128 · 6,928/12,5 = **0,63**.\nB = 48/12,5 = **3,84 km**.",
+          "title": "Cuenca de ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "En una cuenca **redonda** el agua de todos los bordes llega a la salida casi al mismo tiempo: el caudal se concentra y el pico es alto. En una **alargada** el agua de la cabecera llega mucho después que la de abajo: el pico se reparte en el tiempo.",
+          "title": "Por qué importa la forma"
+        },
+        {
+          "type": "heading",
+          "text": "2. Rectángulo equivalente"
+        },
+        {
+          "type": "text",
+          "text": "Es un rectángulo con la **misma área y el mismo perímetro** que la cuenca, en el que las curvas de nivel se dibujan como rectas paralelas al lado menor. Permite comparar cuencas."
+        },
+        {
+          "type": "formula",
+          "expression": "L = (Kc·√A / 1,128) · [1 + √(1 − (1,128/Kc)²)]        l = (Kc·√A / 1,128) · [1 − √(1 − (1,128/Kc)²)]"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Kc·√A/1,128 = 1,3025 · 6,928/1,128 = 8,00.  (1,128/1,3025)² = 0,750 → √(1 − 0,750) = 0,500.\nL = 8,00 · 1,5 = **12,0 km**;  l = 8,00 · 0,5 = **4,0 km**.\nComprobación: 12 × 4 = 48 km² ✔ y 2(12 + 4) = 32 km ✔.",
+          "title": "Cuenca de ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "3. Relieve"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parámetro",
+            "Fórmula",
+            "Notas"
+          ],
+          "rows": [
+            [
+              "Desnivel total",
+              "H = Hmáx − Hmín",
+              "m"
+            ],
+            [
+              "Pendiente media del cauce",
+              "S = (cota naciente − cota salida) / L",
+              "m/m o %; la más usada en el tiempo de concentración"
+            ],
+            [
+              "Pendiente del cauce (Taylor y Schwarz)",
+              "S = [ L / Σ(lᵢ/√sᵢ) ]²",
+              "Divide el cauce en tramos; pesa más los tramos planos"
+            ],
+            [
+              "Pendiente media de la cuenca (Alvord)",
+              "Sc = D · ΣLc / A",
+              "D = equidistancia; ΣLc = longitud total de curvas de nivel dentro de la cuenca"
+            ],
+            [
+              "Elevación media",
+              "Em = Σ(aᵢ · eᵢ) / A",
+              "eᵢ = cota media de cada franja; aᵢ = su área"
+            ],
+            [
+              "Curva hipsométrica",
+              "% de área sobre cada cota",
+              "Ver abajo"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Cauce: S = (3 860 − 2 540)/12 500 = **0,1056 = 10,6 %**.\nAlvord: con curvas cada 100 m (D = 0,1 km) y ΣLc = 96 km: Sc = 0,1 · 96/48 = **0,20 = 20 %**.",
+          "title": "Cuenca de ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "4. Curva hipsométrica paso a paso"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Divide la cuenca en **franjas de cota** (por ejemplo cada 200 m) usando las curvas índice.",
+            "Mide el **área de cada franja** (conteo de cuadros). La suma debe dar el área total.",
+            "Calcula para cada cota el **área acumulada que queda por encima** y exprésala en % del total.",
+            "Grafica: eje horizontal = % de área sobre la cota (0 a 100); eje vertical = cota.",
+            "La cota que corresponde al 50 % es la **elevación mediana**. La **elevación media** se calcula con Σ(aᵢ·eᵢ)/A."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Franja (m)",
+            "Área aᵢ (km²)",
+            "Cota media eᵢ",
+            "% de área sobre la cota inferior"
+          ],
+          "rows": [
+            [
+              "2 540 – 2 800",
+              "5,2",
+              "2 670",
+              "100,0"
+            ],
+            [
+              "2 800 – 3 000",
+              "9,6",
+              "2 900",
+              "89,2"
+            ],
+            [
+              "3 000 – 3 200",
+              "13,4",
+              "3 100",
+              "69,2"
+            ],
+            [
+              "3 200 – 3 400",
+              "10,8",
+              "3 300",
+              "41,2"
+            ],
+            [
+              "3 400 – 3 600",
+              "6,1",
+              "3 500",
+              "18,7"
+            ],
+            [
+              "3 600 – 3 900",
+              "2,9",
+              "3 750",
+              "6,0"
+            ]
+          ],
+          "caption": "Cuenca de ejemplo: suma de áreas = 48,0 km²"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Em = (5,2·2 670 + 9,6·2 900 + 13,4·3 100 + 10,8·3 300 + 6,1·3 500 + 2,9·3 750)/48 = 151 129/48 ≈ **3 149 m**.\nLa elevación mediana (50 %) cae entre 3 000 m (69,2 %) y 3 200 m (41,2 %): interpolando, 3 000 + 200·(69,2 − 50)/(69,2 − 41,2) ≈ **3 137 m**.",
+          "title": "Elevación media y mediana"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Forma de la curva",
+            "Etapa",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "Convexa (la mayor parte del área está en cotas altas)",
+              "Juventud",
+              "Mucho relieve por erosionar; gran potencial erosivo"
+            ],
+            [
+              "En S, intermedia",
+              "Madurez",
+              "Equilibrio"
+            ],
+            [
+              "Cóncava (la mayor parte del área en cotas bajas)",
+              "Vejez",
+              "Cuenca ya erosionada, sedimentaria"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "5. Red de drenaje"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parámetro",
+            "Fórmula",
+            "Lectura"
+          ],
+          "rows": [
+            [
+              "Orden de la cuenca (Strahler)",
+              "El del cauce en la salida",
+              "Más orden = red más desarrollada"
+            ],
+            [
+              "Densidad de drenaje",
+              "Dd = Lt / A  (km/km²)",
+              "< 1: pobre; 1 – 2: moderada; > 2 – 3: alta. Alta = suelo poco permeable, respuesta rápida"
+            ],
+            [
+              "Frecuencia de cauces",
+              "F = N.º de cauces / A",
+              "cauces por km²"
+            ],
+            [
+              "Relación de bifurcación",
+              "Rb = Nᵤ / Nᵤ₊₁",
+              "Normalmente entre 3 y 5; valores altos indican cuencas alargadas con control estructural"
+            ],
+            [
+              "Sinuosidad del cauce",
+              "Longitud del cauce / longitud recta del valle",
+              "1: recto; > 1,5: meándrico"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Dd = 86/48 = **1,79 km/km²** → drenaje moderado.\nSi la red tiene 34 cauces de orden 1, 9 de orden 2, 2 de orden 3 y 1 de orden 4: Rb = 34/9 = 3,8; 9/2 = 4,5; 2/1 = 2,0 → media ≈ 3,4. Orden de la cuenca: **4**.",
+          "title": "Cuenca de ejemplo"
+        },
+        {
+          "type": "interactive",
+          "widget": "basin_morphometry",
+          "title": "Calculadora morfométrica"
+        },
+        {
+          "type": "quiz",
+          "question": "Un coeficiente de compacidad Kc = 1,0 corresponde a una cuenca:",
+          "options": [
+            "Cuadrada",
+            "Circular",
+            "Triangular",
+            "Muy alargada"
+          ],
+          "correct": 1,
+          "explanation": "Mismo perímetro que el círculo de igual área."
+        },
+        {
+          "type": "quiz",
+          "question": "A = 100 km² y P = 50 km. Kc =",
+          "options": [
+            "1,41",
+            "0,50",
+            "2,00",
+            "1,13"
+          ],
+          "correct": 0,
+          "explanation": "0,282 · 50/10."
+        },
+        {
+          "type": "quiz",
+          "question": "Una cuenca redonda, frente a una alargada de igual área, tiende a producir:",
+          "options": [
+            "Picos de crecida menores",
+            "Picos de crecida mayores",
+            "El mismo hidrograma",
+            "Menos escorrentía total"
+          ],
+          "correct": 1,
+          "explanation": "El agua llega concentrada."
+        },
+        {
+          "type": "quiz",
+          "question": "A = 60 km² y L = 15 km. El factor de forma es:",
+          "options": [
+            "4,0",
+            "0,27",
+            "0,52",
+            "3,75"
+          ],
+          "correct": 1,
+          "explanation": "60/225."
+        },
+        {
+          "type": "quiz",
+          "question": "La curva hipsométrica relaciona:",
+          "options": [
+            "Caudal y tiempo",
+            "Cota y porcentaje de área",
+            "Pendiente y longitud",
+            "Lluvia e infiltración"
+          ],
+          "correct": 1,
+          "explanation": "Distribución del área por alturas."
+        },
+        {
+          "type": "quiz",
+          "question": "Una curva hipsométrica convexa indica una cuenca:",
+          "options": [
+            "Joven",
+            "Vieja",
+            "Plana",
+            "Endorreica"
+          ],
+          "correct": 0,
+          "explanation": "Mucha área en cotas altas."
+        },
+        {
+          "type": "quiz",
+          "question": "Lt = 120 km y A = 40 km². Dd =",
+          "options": [
+            "0,33 km/km²",
+            "3,0 km/km²",
+            "160",
+            "80"
+          ],
+          "correct": 1,
+          "explanation": "120/40."
+        },
+        {
+          "type": "quiz",
+          "question": "Una densidad de drenaje alta sugiere:",
+          "options": [
+            "Suelos muy permeables",
+            "Suelos poco permeables y respuesta rápida",
+            "Cuenca plana",
+            "Ausencia de lluvias"
+          ],
+          "correct": 1,
+          "explanation": "El agua escurre en lugar de infiltrarse."
+        },
+        {
+          "type": "quiz",
+          "question": "El rectángulo equivalente tiene, respecto a la cuenca:",
+          "options": [
+            "Igual área y perímetro",
+            "Igual área solamente",
+            "Igual longitud de cauce",
+            "Igual pendiente"
+          ],
+          "correct": 0,
+          "explanation": "Por definición."
+        },
+        {
+          "type": "quiz",
+          "question": "En el método de Alvord se necesita:",
+          "options": [
+            "La longitud total de las curvas de nivel dentro de la cuenca",
+            "El orden de Strahler",
+            "La lluvia",
+            "El perímetro"
+          ],
+          "correct": 0,
+          "explanation": "Sc = D·ΣLc/A."
+        }
+      ]
+    },
+    {
+      "id": "l08-tc-caudal",
+      "title": "Tiempo de concentración y caudal de diseño",
+      "summary": "Fórmulas con sus unidades, comparación con la cuenca de ejemplo y el método racional.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El tiempo de concentración es **lo que tarda en llegar a la salida la gota que cae en el punto más lejano**. Si llueve con intensidad constante durante ese tiempo o más, toda la cuenca está aportando a la vez y el caudal llega a su máximo.",
+          "title": "Recordatorio"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Fórmula",
+            "Expresión",
+            "Unidades"
+          ],
+          "rows": [
+            [
+              "Kirpich",
+              "tc = 0,0195 · L^0,77 · S^(−0,385)",
+              "L en m, S en m/m, tc en min"
+            ],
+            [
+              "California (Culverts Practice)",
+              "tc = 0,0195 · (L³/H)^0,385",
+              "L en m, H = desnivel del cauce en m, tc en min. Es Kirpich escrita con H"
+            ],
+            [
+              "Témez",
+              "tc = 0,3 · (L / S^0,25)^0,76",
+              "L en km, S en m/m, tc en horas"
+            ],
+            [
+              "Giandotti",
+              "tc = (4·√A + 1,5·L) / (0,8·√H)",
+              "A en km², L en km, H = elevación media − cota de salida (m), tc en horas"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Datos: L = 12,5 km, S = 0,1056, A = 48 km², elevación media 3 149 m, salida 2 540 m (H ≈ 610 m).\n• Kirpich: 0,0195 · 12 500^0,77 · 0,1056^(−0,385) = **66 min** (1,1 h).\n• Témez: 0,3 · (12,5/0,1056^0,25)^0,76 = **3,1 h**.\n• Giandotti: (4·6,928 + 1,5·12,5)/(0,8·√610) = 46,46/19,76 = **2,4 h**.",
+          "title": "Cuenca de ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Las fórmulas dan resultados muy distintos (aquí de 1,1 a 3,1 horas) porque cada una se ajustó con cuencas diferentes: Kirpich con cuencas pequeñas y empinadas, y tiende a dar tiempos cortos. En un estudio se calculan varias, se descartan las extremas y se **justifica** el valor adoptado.",
+          "title": "Por qué no coinciden"
+        },
+        {
+          "type": "heading",
+          "text": "Método racional"
+        },
+        {
+          "type": "formula",
+          "expression": "Q = C · i · A / 3,6",
+          "caption": "Q en m³/s, i en mm/h, A en km². (Con A en hectáreas: Q = C·i·A/360)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término",
+            "Significado",
+            "De dónde sale"
+          ],
+          "rows": [
+            [
+              "C",
+              "Coeficiente de escorrentía (0 a 1): fracción de la lluvia que escurre",
+              "Tablas según cobertura, suelo y pendiente"
+            ],
+            [
+              "i",
+              "Intensidad de la lluvia de duración igual a tc y período de retorno T",
+              "Curvas intensidad – duración – frecuencia (IDF) de la zona"
+            ],
+            [
+              "A",
+              "Área de la cuenca",
+              "Delimitación"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Cobertura",
+            "C aproximado"
+          ],
+          "rows": [
+            [
+              "Bosque, páramo bien conservado",
+              "0,10 – 0,30"
+            ],
+            [
+              "Pastos",
+              "0,25 – 0,45"
+            ],
+            [
+              "Cultivos",
+              "0,30 – 0,60"
+            ],
+            [
+              "Zona residencial",
+              "0,40 – 0,70"
+            ],
+            [
+              "Pavimento, techos",
+              "0,80 – 0,95"
+            ]
+          ],
+          "caption": "Aumenta con la pendiente y con suelos arcillosos"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Microcuenca de 3,2 km², C = 0,45 e intensidad de diseño 42 mm/h: Q = 0,45 · 42 · 3,2/3,6 = **16,8 m³/s**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El método racional supone lluvia uniforme sobre toda la cuenca, así que solo es confiable en **cuencas pequeñas** (del orden de unos pocos km²; el límite exacto depende de la norma que se aplique). En cuencas mayores se usan hidrogramas unitarios o modelos como HEC-HMS.",
+          "title": "Límite del método"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Período de retorno T: una crecida de T = 25 años tiene probabilidad 1/25 = 4 % de ser igualada o superada en un año cualquiera. Las alcantarillas se diseñan con T de 10 a 25 años, los puentes con 50 a 100 y las obras cuya falla es catastrófica, con mucho más."
+        },
+        {
+          "type": "quiz",
+          "question": "En la fórmula de Kirpich, al aumentar la pendiente el tiempo de concentración:",
+          "options": [
+            "Aumenta",
+            "Disminuye",
+            "No cambia",
+            "Se duplica"
+          ],
+          "correct": 1,
+          "explanation": "El exponente de S es negativo."
+        },
+        {
+          "type": "quiz",
+          "question": "Q = C·i·A/3,6 con C = 0,5, i = 36 mm/h, A = 2 km². Q =",
+          "options": [
+            "10 m³/s",
+            "36 m³/s",
+            "3,6 m³/s",
+            "100 m³/s"
+          ],
+          "correct": 0,
+          "explanation": "0,5·36·2/3,6."
+        },
+        {
+          "type": "quiz",
+          "question": "La intensidad de diseño se toma para una duración igual a:",
+          "options": [
+            "24 horas",
+            "El tiempo de concentración",
+            "1 minuto",
+            "El período de retorno"
+          ],
+          "correct": 1,
+          "explanation": "Así toda la cuenca aporta."
+        },
+        {
+          "type": "quiz",
+          "question": "Un coeficiente C = 0,9 es típico de:",
+          "options": [
+            "Bosque",
+            "Pavimento",
+            "Pastos",
+            "Páramo"
+          ],
+          "correct": 1,
+          "explanation": "Casi toda la lluvia escurre."
+        },
+        {
+          "type": "quiz",
+          "question": "Una crecida de período de retorno 50 años tiene en un año una probabilidad de:",
+          "options": [
+            "50 %",
+            "2 %",
+            "5 %",
+            "0,5 %"
+          ],
+          "correct": 1,
+          "explanation": "1/50."
+        },
+        {
+          "type": "quiz",
+          "question": "El método racional es apropiado para cuencas:",
+          "options": [
+            "Muy grandes",
+            "Pequeñas",
+            "De cualquier tamaño",
+            "Solo urbanas"
+          ],
+          "correct": 1,
+          "explanation": "Supone lluvia uniforme."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de cuencas",
+      "summary": "Problemas completos como los que pueden tomar en el examen: medir, calcular parámetros, hipsometría, orden de cauces y caudal.",
+      "minutes": 45,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Parámetros de forma completos",
+          "level": 2,
+          "statement": "En una carta 1:50 000 una cuenca ocupa 52 cuadros completos y 28 parciales de la cuadrícula de 1 km; la divisoria mide 86 cm con hilo y el cauce principal 31 cm. Halla A, P, L, Kc, Kf, Re y comenta la forma.",
+          "steps": [
+            "A = 52 + 28/2 = 66 km².",
+            "P = 86 × 0,5 = 43 km;  L = 31 × 0,5 = 15,5 km.",
+            "Kc = 0,282 · 43/√66 = 0,282 · 43/8,124 = 1,49.",
+            "Kf = 66/15,5² = 0,27.",
+            "Re = 1,128 · 8,124/15,5 = 0,59."
+          ],
+          "answer": "**A = 66 km², P = 43 km, L = 15,5 km; Kc ≈ 1,49; Kf ≈ 0,27; Re ≈ 0,59.** Cuenca oval oblonga, alargada: crecidas menos violentas que en una redonda de igual área."
+        },
+        {
+          "type": "exercise",
+          "title": "Rectángulo equivalente",
+          "level": 3,
+          "statement": "Para una cuenca con A = 48 km² y P = 32 km halla los lados del rectángulo equivalente y compruébalos.",
+          "steps": [
+            "Kc = 0,282 · 32/√48 = 1,3025.",
+            "Kc·√A/1,128 = 1,3025 · 6,928/1,128 = 8,00.",
+            "(1,128/Kc)² = 0,750 → √(1 − 0,750) = 0,500.",
+            "L = 8,00(1 + 0,5) = 12,0 km;  l = 8,00(1 − 0,5) = 4,0 km.",
+            "Comprobación: L·l = 48 km² y 2(L + l) = 32 km."
+          ],
+          "answer": "**L = 12 km, l = 4 km**",
+          "hint": "Comprueba siempre con el área y el perímetro."
+        },
+        {
+          "type": "exercise",
+          "title": "Curva hipsométrica y elevación media",
+          "level": 3,
+          "statement": "Áreas entre curvas de una cuenca (km²): 1 800 – 2 000 m: 3,0; 2 000 – 2 200 m: 7,5; 2 200 – 2 400 m: 12,0; 2 400 – 2 600 m: 5,5; 2 600 – 2 800 m: 2,0. Construye la tabla de la curva hipsométrica, halla la elevación media y la mediana.",
+          "steps": [
+            "Área total = 30,0 km².",
+            "% de área sobre cada cota: sobre 1 800: 100 %; sobre 2 000: 27/30 = 90,0 %; sobre 2 200: 19,5/30 = 65,0 %; sobre 2 400: 7,5/30 = 25,0 %; sobre 2 600: 2/30 = 6,7 %; sobre 2 800: 0 %.",
+            "Elevación media = (3,0·1 900 + 7,5·2 100 + 12,0·2 300 + 5,5·2 500 + 2,0·2 700)/30 = 68 200/30.",
+            "Mediana (50 %): entre 2 200 (65 %) y 2 400 (25 %): 2 200 + 200·(65 − 50)/(65 − 25)."
+          ],
+          "answer": "**Elevación media ≈ 2 273 m; mediana ≈ 2 275 m.** La curva tiene forma de S: cuenca en etapa de madurez."
+        },
+        {
+          "type": "exercise",
+          "title": "Orden de cauces y relación de bifurcación",
+          "level": 2,
+          "statement": "Una red tiene 21 cauces de orden 1, 6 de orden 2, 2 de orden 3 y 1 de orden 4, con longitud total de 54 km en una cuenca de 27 km². Halla el orden de la cuenca, las relaciones de bifurcación, la densidad de drenaje y la frecuencia de cauces.",
+          "steps": [
+            "Orden de la cuenca: el mayor, 4.",
+            "Rb: 21/6 = 3,5;  6/2 = 3,0;  2/1 = 2,0 → media 2,8.",
+            "Dd = 54/27 = 2,0 km/km².",
+            "F = (21 + 6 + 2 + 1)/27 = 30/27 = 1,11 cauces/km²."
+          ],
+          "answer": "**Orden 4; Rb = 3,5; 3,0; 2,0 (media 2,8); Dd = 2,0 km/km² (drenaje moderado a alto); F ≈ 1,1 cauces/km²**"
+        },
+        {
+          "type": "exercise",
+          "title": "Pendientes del cauce y de la cuenca",
+          "level": 3,
+          "statement": "Cauce principal de 9,6 km con cota de naciente 3 420 m y de salida 2 700 m. Dentro de la cuenca (A = 30 km²) las curvas de nivel cada 100 m suman 81 km. Halla la pendiente media del cauce y la pendiente media de la cuenca por Alvord.",
+          "steps": [
+            "Cauce: S = (3 420 − 2 700)/9 600 = 0,075.",
+            "Alvord: Sc = D·ΣLc/A = 0,1 km · 81 km/30 km² = 0,27."
+          ],
+          "answer": "**S cauce = 7,5 %; pendiente media de la cuenca = 27 %** (las laderas son mucho más empinadas que el cauce, como es habitual)."
+        },
+        {
+          "type": "exercise",
+          "title": "Tiempo de concentración por tres métodos",
+          "level": 3,
+          "statement": "Para la cuenca anterior (L = 9,6 km, S = 0,075, A = 30 km², elevación media 3 020 m, salida 2 700 m) calcula tc por Kirpich, Témez y Giandotti.",
+          "steps": [
+            "Kirpich: 0,0195 · 9 600^0,77 · 0,075^(−0,385) = 0,0195 · 1 165,0 · 2,711 ≈ 61,6 min.",
+            "Témez: 0,3 · (9,6/0,075^0,25)^0,76 = 0,3 · (9,6/0,5233)^0,76 = 0,3 · 9,13 ≈ 2,74 h.",
+            "Giandotti: H = 3 020 − 2 700 = 320 m; (4·√30 + 1,5·9,6)/(0,8·√320) = 36,31/14,31 ≈ 2,54 h."
+          ],
+          "answer": "**Kirpich ≈ 62 min; Témez ≈ 2,7 h; Giandotti ≈ 2,5 h.** Kirpich queda muy por debajo; se adoptaría un valor cercano a 2,5 h justificándolo."
+        },
+        {
+          "type": "exercise",
+          "title": "Caudal de diseño de una alcantarilla",
+          "level": 2,
+          "statement": "Una vía cruza una quebrada cuya microcuenca mide 1,8 km²: 60 % pastos (C = 0,35) y 40 % cultivos (C = 0,50). La intensidad para tc y T = 25 años es 55 mm/h. Halla el caudal de diseño.",
+          "steps": [
+            "C ponderado = 0,6·0,35 + 0,4·0,50 = 0,41.",
+            "Q = C·i·A/3,6 = 0,41 · 55 · 1,8/3,6."
+          ],
+          "answer": "**Q ≈ 11,3 m³/s**",
+          "hint": "Pondera C con las áreas."
+        },
+        {
+          "type": "exercise",
+          "title": "Efecto de cambiar el punto de salida",
+          "level": 2,
+          "statement": "Una cuenca de 48 km² tiene, 3 km aguas abajo de su salida, una confluencia con un afluente cuya cuenca mide 19 km²; el tramo intermedio aporta 2,5 km². Si el puente se construye justo aguas abajo de la confluencia, ¿qué área de cuenca se usa?",
+          "steps": [
+            "El nuevo punto recibe: la cuenca original, el área intermedia y la cuenca del afluente.",
+            "A = 48 + 2,5 + 19."
+          ],
+          "answer": "**A = 69,5 km²**: mover el punto de salida 3 km aumentó la cuenca un 45 %."
+        }
+      ]
     }
   ]
 }

@@ -828,6 +828,81 @@
           "explanation": "|x₂| = 0,10 − 4·0,01 = 0,06 m → E = ½·200·0,06² = **0,36 J**."
         }
       ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de fricción seca",
+      "summary": "Semiciclos hasta detenerse, energía disipada, identificación de μ y arranque con velocidad inicial.",
+      "minutes": 35,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuélvelos **en papel**, con dibujo, nivel de referencia y estados 1 y 2 bien marcados; luego pide la pista, la solución paso a paso o solo la respuesta. Usa g = 9,81 m/s².",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Recordatorio: Δ = μ·m·g/k. En cada **semiciclo** la amplitud disminuye 2Δ (y 4Δ por ciclo completo). El bloque queda detenido cuando termina un semiciclo con |x| ≤ Δ. Cada semiciclo dura π/ωn.",
+          "title": "Fórmulas clave"
+        },
+        {
+          "type": "exercise",
+          "title": "Cuándo y dónde se detiene",
+          "level": 3,
+          "statement": "Un bloque de 2 kg unido a un resorte de 800 N/m sobre una superficie con μ = 0,15 se suelta desde x₀ = 0,10 m sin velocidad. Halla el número de semiciclos, la posición final, el tiempo total, la energía disipada y la distancia total recorrida.",
+          "steps": [
+            "Δ = 0,15·2·9,81/800 = 0,003679 m; 2Δ = 0,007358 m.",
+            "Semiciclos: n ≥ (x₀ − Δ)/(2Δ) = (0,10 − 0,003679)/0,007358 = 13,09 → n = 14.",
+            "Tras 13 semiciclos está en x₁₃ = −(0,10 − 13·0,007358) = −0,00435 m; como |x₁₃| > Δ, arranca una vez más. Ese último semiciclo oscila alrededor de −Δ y termina en −2Δ − x₁₃ = −0,00736 + 0,00435 = −0,0030 m, sin cruzar el origen.",
+            "ωn = √(800/2) = 20 rad/s → tiempo = 14·π/20 = 2,20 s.",
+            "Energía disipada = ½·800·(0,10² − 0,00301²) = 3,996 J.",
+            "Distancia = 3,996/(0,15·2·9,81) = 1,358 m."
+          ],
+          "answer": "**14 semiciclos; se detiene en x ≈ −0,0030 m a los ≈ 2,20 s; disipa ≈ 4,00 J tras recorrer ≈ 1,36 m**",
+          "hint": "Verifica que |x final| ≤ Δ."
+        },
+        {
+          "type": "exercise",
+          "title": "Identificar el coeficiente de fricción",
+          "level": 2,
+          "statement": "En un ensayo con m = 1,5 kg y k = 300 N/m la amplitud baja de 60 mm a 36 mm en 4 ciclos completos. Halla μ.",
+          "steps": [
+            "Pérdida total: 24 mm en 4 ciclos → 6 mm por ciclo.",
+            "Por ciclo se pierden 4Δ → Δ = 1,5 mm.",
+            "μ = k·Δ/(m·g) = 300·0,0015/(1,5·9,81)."
+          ],
+          "answer": "**μ ≈ 0,031**",
+          "hint": "En fricción seca la amplitud decae en línea recta: la pérdida por ciclo es constante."
+        },
+        {
+          "type": "exercise",
+          "title": "Arranque con velocidad inicial",
+          "level": 3,
+          "statement": "Un bloque de 4 kg (k = 400 N/m, μ = 0,2) está en x = 0 con el resorte sin deformar y recibe una velocidad de 1,2 m/s. Halla el primer desplazamiento máximo, las siguientes posiciones extremas y dónde se detiene.",
+          "steps": [
+            "Primer cuarto de ciclo, por trabajo y energía: ½·4·1,2² = ½·400·x₁² + 0,2·4·9,81·x₁ → 200x₁² + 7,848x₁ − 2,88 = 0 → x₁ = 0,1020 m.",
+            "Δ = 0,2·4·9,81/400 = 0,01962 m; 2Δ = 0,03924 m.",
+            "x₂ = −(0,1020 − 0,0392) = −0,0627 m;  x₃ = +(0,0627 − 0,0392) = +0,0235 m.",
+            "|x₃| = 0,0235 > Δ: todavía arranca. Ese semiciclo oscila alrededor de +Δ, así que termina en x₄ = 2Δ − x₃ = 0,0392 − 0,0235 = +0,0157 m: no llega a cruzar el origen.",
+            "|x₄| = 0,0157 < Δ: se queda detenido."
+          ],
+          "answer": "**x₁ ≈ 0,102 m; luego −0,063 m, +0,023 m y se detiene en x ≈ +0,016 m**"
+        },
+        {
+          "type": "exercise",
+          "title": "Comparar con amortiguamiento viscoso",
+          "level": 2,
+          "statement": "Explica tres diferencias entre la vibración con fricción seca y con amortiguamiento viscoso subamortiguado.",
+          "steps": [
+            "Envolvente: lineal (rectas) en fricción seca; exponencial en viscoso.",
+            "Frecuencia: con fricción seca se mantiene ωn; con viscoso baja a ωd = ωn·√(1 − ζ²).",
+            "Final: con fricción seca se detiene en un tiempo finito y puede quedar fuera del origen (dentro de ±Δ); con viscoso tiende al origen sin detenerse nunca teóricamente."
+          ],
+          "answer": "**Decaimiento lineal frente a exponencial; frecuencia ωn frente a ωd; detención en tiempo finito con posible desplazamiento residual frente a decaimiento asintótico hacia cero.**"
+        }
+      ]
     }
   ]
 }

@@ -77,6 +77,7 @@
       "color": "#00897B",
       "units": [
         "assets/content/geomatica/gm01_fundamentos.json",
+        "assets/content/geomatica/gm01b_carta.json",
         "assets/content/geomatica/gm02_topografia.json",
         "assets/content/geomatica/gm03_modelos.json",
         "assets/content/geomatica/gm04_civil3d.json",

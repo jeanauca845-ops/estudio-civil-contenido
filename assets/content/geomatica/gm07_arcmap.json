@@ -688,6 +688,1143 @@
           "explanation": "QGIS ofrece GRASS y SAGA para hidrología."
         }
       ]
+    },
+    {
+      "id": "l08-georreferenciar",
+      "title": "Georreferenciar y digitalizar una carta escaneada",
+      "summary": "Llevar la carta 1:50 000 en papel a ArcMap: puntos de control, error RMS, rectificación y digitalización de curvas y ríos.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una carta escaneada es solo una **foto**: ArcMap no sabe dónde queda. **Georreferenciar** es «clavarla» en su sitio diciéndole las coordenadas reales de varios puntos que se reconocen en la imagen. Las mejores «chinchetas» son los **cruces de la cuadrícula**, porque sus coordenadas están impresas.",
+          "title": "Idea"
+        },
+        {
+          "type": "heading",
+          "text": "Antes de empezar"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Escanea la carta completa, plana, a **300 ppp** o más, en TIFF o JPG.",
+            "Abre ArcMap y asigna al marco de datos el sistema de la carta: **View → Data Frame Properties → Coordinate System** → Projected → UTM → el datum que diga el margen (por ejemplo «PSAD 1956 UTM Zone 17S» o «WGS 1984 UTM Zone 17S»).",
+            "Agrega la imagen con **Add Data**. Si pregunta por pirámides, acepta.",
+            "Activa la barra: **Customize → Toolbars → Georeferencing**."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Georreferenciar"
+        },
+        {
+          "type": "list",
+          "items": [
+            "En la barra, elige la imagen en la lista **Layer** y desmarca **Auto Adjust** mientras colocas los primeros puntos.",
+            "Con **Add Control Points** haz clic sobre un cruce de la cuadrícula, luego **clic derecho → Input X and Y** y escribe sus coordenadas (X = Este, Y = Norte).",
+            "Repite en al menos **4 cruces bien repartidos** (las cuatro esquinas y, mejor, algunos intermedios).",
+            "Abre **View Link Table**: muestra el **residual** de cada punto y el **error RMS total**. Elimina y repite el punto que tenga un residual muy alto.",
+            "Elige la transformación: **1st Order Polynomial (Affine)** basta para una carta bien escaneada.",
+            "Guarda: **Georeferencing → Rectify** (crea una imagen nueva ya ubicada) o **Update Georeferencing** (guarda la ubicación junto a la imagen original)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Transformación",
+            "Puntos mínimos",
+            "Corrige"
+          ],
+          "rows": [
+            [
+              "Orden 1 (afín)",
+              "3",
+              "Traslación, escala, rotación e inclinación"
+            ],
+            [
+              "Orden 2",
+              "6",
+              "Además, curvaturas suaves (papel deformado)"
+            ],
+            [
+              "Orden 3",
+              "10",
+              "Deformaciones más complejas; puede distorsionar si hay pocos puntos"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El error RMS debe ser **menor que la precisión gráfica de la carta**: para 1:50 000, bajo unos 10 m (lo ideal, menos de 5 m). Un RMS bajo no garantiza nada si todos los puntos están en un mismo sector: tienen que estar **repartidos**.",
+          "title": "Cuánto error aceptar"
+        },
+        {
+          "type": "heading",
+          "text": "Digitalizar (vectorizar)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "En **Catalog**, clic derecho en la carpeta → **New → Shapefile**. Crea uno por tema: «curvas» (Polyline), «rios» (Polyline), «cotas» (Point), con el **mismo sistema de coordenadas**.",
+            "Abre la tabla de «curvas» y agrega un campo numérico **COTA** (Add Field, tipo Short o Double).",
+            "Barra **Editor → Start Editing**, elige la capa y en **Create Features** la plantilla de línea.",
+            "Calca cada curva con clics; termina con doble clic o F2. Escribe su cota en la tabla o en la ventana **Attributes**.",
+            "Activa **Snapping** para que los ríos se unan exactamente en las confluencias.",
+            "**Editor → Save Edits** con frecuencia y **Stop Editing** al terminar."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "No hace falta digitalizar todas las curvas de la hoja: solo las de la zona de la cuenca con un margen alrededor. Incluye siempre las **cotas sueltas** de las cumbres: mejoran mucho el modelo."
+        },
+        {
+          "type": "quiz",
+          "question": "Los mejores puntos de control para georreferenciar una carta son:",
+          "options": [
+            "Los nombres de los pueblos",
+            "Los cruces de la cuadrícula",
+            "Las curvas de nivel",
+            "Los ríos"
+          ],
+          "correct": 1,
+          "explanation": "Sus coordenadas están impresas."
+        },
+        {
+          "type": "quiz",
+          "question": "Una transformación afín (orden 1) necesita como mínimo:",
+          "options": [
+            "1 punto",
+            "3 puntos",
+            "6 puntos",
+            "10 puntos"
+          ],
+          "correct": 1,
+          "explanation": "Se recomiendan 4 o más."
+        },
+        {
+          "type": "quiz",
+          "question": "El error RMS indica:",
+          "options": [
+            "El tamaño de la imagen",
+            "Qué tan bien ajustan los puntos de control",
+            "La escala",
+            "La declinación"
+          ],
+          "correct": 1,
+          "explanation": "Promedio cuadrático de los residuales."
+        },
+        {
+          "type": "quiz",
+          "question": "Para digitalizar curvas de nivel se crea un shapefile de tipo:",
+          "options": [
+            "Point",
+            "Polyline",
+            "Polygon",
+            "Raster"
+          ],
+          "correct": 1,
+          "explanation": "Son líneas, con un campo de cota."
+        },
+        {
+          "type": "quiz",
+          "question": "Rectify sirve para:",
+          "options": [
+            "Borrar los puntos",
+            "Crear una imagen nueva ya georreferenciada",
+            "Cambiar el datum",
+            "Calcular áreas"
+          ],
+          "correct": 1,
+          "explanation": "Guarda el resultado permanentemente."
+        },
+        {
+          "type": "quiz",
+          "question": "Si la carta está en PSAD56, el marco de datos debe ponerse en:",
+          "options": [
+            "WGS84 siempre",
+            "PSAD56, el datum de la carta",
+            "Coordenadas geográficas",
+            "No importa"
+          ],
+          "correct": 1,
+          "explanation": "Las coordenadas impresas están en ese datum."
+        }
+      ]
+    },
+    {
+      "id": "l09-mde",
+      "title": "Conseguir o construir el modelo digital de elevación",
+      "summary": "MDE gratuitos y sus resoluciones, cómo prepararlos (mosaico, proyección, recorte) y cómo generar un MDE a partir de curvas de nivel.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Todo el análisis de cuencas en ArcMap parte de un **MDE**: una cuadrícula de celdas donde cada una guarda su cota. Si el MDE es malo, la cuenca sale mal por más que los pasos estén bien hechos.",
+          "title": "Idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Fuente",
+            "Resolución aproximada",
+            "Comentario"
+          ],
+          "rows": [
+            [
+              "SRTM (NASA)",
+              "30 m",
+              "El más usado; cobertura mundial"
+            ],
+            [
+              "ALOS PALSAR (JAXA / ASF)",
+              "12,5 m",
+              "Remuestreado; muy usado en estudios de cuencas"
+            ],
+            [
+              "Copernicus GLO-30 (ESA)",
+              "30 m",
+              "Reciente y de buena calidad"
+            ],
+            [
+              "ASTER GDEM",
+              "30 m",
+              "Con más ruido que SRTM"
+            ],
+            [
+              "Curvas de la carta 1:50 000",
+              "20 – 30 m",
+              "Se interpola con Topo to Raster"
+            ],
+            [
+              "Levantamiento con dron o LiDAR",
+              "cm a dm",
+              "Para áreas pequeñas y diseño"
+            ]
+          ],
+          "caption": "En Ecuador también existen modelos de mayor detalle producidos por instituciones públicas; pregunta cuál pide tu profesor"
+        },
+        {
+          "type": "heading",
+          "text": "Preparar un MDE descargado"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Si la cuenca cae en varias teselas: **Data Management → Raster → Raster Dataset → Mosaic To New Raster**.",
+            "**Proyectar** a UTM: Data Management → Projections and Transformations → Raster → **Project Raster**. Sistema de salida WGS 1984 UTM Zone 17S; remuestreo **BILINEAR** (o CUBIC); tamaño de celda en metros (30 o 12,5).",
+            "**Recortar** con un rectángulo holgado alrededor de la cuenca: Spatial Analyst → Extraction → **Extract by Mask**.",
+            "En **Geoprocessing → Environments** fija: Workspace, Output Coordinate System, **Cell Size** y **Snap Raster** iguales al MDE, para que todos los ráster calcen celda con celda."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Define Projection** solo le pone la etiqueta del sistema a un dato que no la tiene; **no mueve nada**. **Project** (o Project Raster) sí transforma las coordenadas a otro sistema. Confundirlas es el error más frecuente: el dato aparece a miles de kilómetros o las áreas salen en «grados cuadrados».",
+          "title": "Define Projection no es Project"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Los MDE descargados vienen en coordenadas **geográficas** (grados). Si no los proyectas a UTM, las pendientes y las áreas salen mal porque las unidades horizontales (grados) no coinciden con las verticales (metros).",
+          "title": "Proyecta siempre"
+        },
+        {
+          "type": "heading",
+          "text": "Construir el MDE desde curvas de nivel"
+        },
+        {
+          "type": "text",
+          "text": "**Spatial Analyst → Interpolation → Topo to Raster** está pensada para producir modelos hidrológicamente correctos a partir de curvas."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Entrada",
+            "Tipo (Type)",
+            "Campo"
+          ],
+          "rows": [
+            [
+              "Curvas de nivel",
+              "Contour",
+              "COTA"
+            ],
+            [
+              "Cotas sueltas",
+              "PointElevation",
+              "COTA"
+            ],
+            [
+              "Ríos",
+              "Stream",
+              "—"
+            ],
+            [
+              "Lagunas",
+              "Lake",
+              "—"
+            ],
+            [
+              "Límite del área",
+              "Boundary",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Output cell size:** para una carta 1:50 000 con equidistancia 20 m, entre 20 y 30 m. Una celda más pequeña no agrega información real.",
+            "Marca **Enforce** en drenaje para que elimine sumideros.",
+            "Alternativa: 3D Analyst → **Create TIN** con las curvas y luego **TIN to Raster**."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Regla práctica: el tamaño de celda no debería ser menor que la mitad de la distancia horizontal típica entre curvas. Con curvas cada 20 m en terreno del 20 % de pendiente, las curvas distan unos 100 m: una celda de 20 a 30 m es razonable."
+        },
+        {
+          "type": "quiz",
+          "question": "Un MDE es:",
+          "options": [
+            "Un shapefile de puntos",
+            "Un ráster con la cota en cada celda",
+            "Una ortofoto",
+            "Una tabla"
+          ],
+          "correct": 1,
+          "explanation": "Modelo digital de elevación."
+        },
+        {
+          "type": "quiz",
+          "question": "Define Projection:",
+          "options": [
+            "Transforma las coordenadas",
+            "Solo asigna la etiqueta del sistema",
+            "Recorta el ráster",
+            "Rellena sumideros"
+          ],
+          "correct": 1,
+          "explanation": "No mueve los datos."
+        },
+        {
+          "type": "quiz",
+          "question": "Para pasar un MDE de grados a UTM se usa:",
+          "options": [
+            "Define Projection",
+            "Project Raster",
+            "Fill",
+            "Clip"
+          ],
+          "correct": 1,
+          "explanation": "Reproyecta y remuestrea."
+        },
+        {
+          "type": "quiz",
+          "question": "La herramienta para crear un MDE a partir de curvas de nivel es:",
+          "options": [
+            "Topo to Raster",
+            "Flow Direction",
+            "Raster to Polygon",
+            "Snap Pour Point"
+          ],
+          "correct": 0,
+          "explanation": "Interpolación hidrológicamente correcta."
+        },
+        {
+          "type": "quiz",
+          "question": "El remuestreo recomendado al proyectar un MDE es:",
+          "options": [
+            "NEAREST",
+            "BILINEAR",
+            "MAJORITY",
+            "Ninguno"
+          ],
+          "correct": 1,
+          "explanation": "Es un dato continuo; NEAREST deja escalones."
+        },
+        {
+          "type": "quiz",
+          "question": "SRTM tiene una resolución aproximada de:",
+          "options": [
+            "1 m",
+            "30 m",
+            "500 m",
+            "1 km"
+          ],
+          "correct": 1,
+          "explanation": "Un segundo de arco."
+        }
+      ]
+    },
+    {
+      "id": "l10-cuenca-valores",
+      "title": "Cuenca en ArcMap: guía completa con los valores que se escriben",
+      "summary": "Cada herramienta de Hydrology con sus parámetros, qué revisar en el resultado y cómo terminar con el polígono de la cuenca.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Activa primero la extensión: **Customize → Extensions → Spatial Analyst**. Sin esto las herramientas dan error de licencia. Todas están en **ArcToolbox → Spatial Analyst Tools → Hydrology**.",
+          "title": "Antes de empezar"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "N.º",
+            "Herramienta",
+            "Qué se pone",
+            "Qué revisar"
+          ],
+          "rows": [
+            [
+              "1",
+              "**Fill**",
+              "Input: MDE proyectado. Z limit: vacío",
+              "El resultado se parece al MDE; solo cambian las depresiones"
+            ],
+            [
+              "2",
+              "**Flow Direction**",
+              "Input: el Fill. Método D8. «Force all edge cells to flow outward»: sin marcar",
+              "Solo aparecen los valores 1, 2, 4, 8, 16, 32, 64 y 128. Si hay otros, faltó el Fill"
+            ],
+            [
+              "3",
+              "**Flow Accumulation**",
+              "Input: Flow Direction. Tipo FLOAT o INTEGER",
+              "Se ve casi todo negro con líneas blancas: son los cauces. El máximo está en la salida"
+            ],
+            [
+              "4",
+              "**Con** (o Raster Calculator)",
+              "Con(\"facc\" > 1000, 1). El umbral se ajusta",
+              "Red de cauces con valor 1 y el resto NoData"
+            ],
+            [
+              "5",
+              "**Stream Order**",
+              "Stream raster + Flow Direction. Método STRAHLER",
+              "Órdenes 1, 2, 3…"
+            ],
+            [
+              "6",
+              "**Stream to Feature**",
+              "Stream Order + Flow Direction. Simplify: sin marcar",
+              "Líneas con el campo grid code = orden"
+            ],
+            [
+              "7",
+              "Punto de salida",
+              "Shapefile de punto nuevo; un punto sobre el cauce, con Editor",
+              "Debe caer sobre una celda de acumulación alta"
+            ],
+            [
+              "8",
+              "**Snap Pour Point**",
+              "Punto + Flow Accumulation. Snap distance: 2 a 3 celdas (60 – 90 m con celda de 30 m)",
+              "El punto se mueve a la celda de mayor acumulación cercana"
+            ],
+            [
+              "9",
+              "**Watershed**",
+              "Input flow direction: **Flow Direction**. Pour point: el del paso 8",
+              "Mancha con la forma de la cuenca"
+            ],
+            [
+              "10",
+              "**Raster to Polygon**",
+              "Conversion Tools → From Raster. Simplify polygons a criterio",
+              "Polígono de la cuenca"
+            ],
+            [
+              "11",
+              "**Clip** / Extract by Mask",
+              "Recortar ríos (Analysis → Clip) y MDE (Extract by Mask) con la cuenca",
+              "Datos solo de la cuenca"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Entender el umbral de acumulación"
+        },
+        {
+          "type": "formula",
+          "expression": "Área mínima de aporte = umbral (celdas) × tamaño de celda²"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Celda",
+            "Umbral",
+            "Área de aporte para que haya «cauce»"
+          ],
+          "rows": [
+            [
+              "30 m",
+              "1 000 celdas",
+              "0,90 km²"
+            ],
+            [
+              "30 m",
+              "500 celdas",
+              "0,45 km²"
+            ],
+            [
+              "12,5 m",
+              "1 000 celdas",
+              "0,16 km²"
+            ],
+            [
+              "12,5 m",
+              "5 000 celdas",
+              "0,78 km²"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Umbral bajo → muchos cauces (red muy densa, orden mayor). Umbral alto → pocos cauces. Se ajusta hasta que la red generada se parezca a los ríos de la carta 1:50 000. **El umbral cambia la red, la densidad de drenaje y el orden, pero no cambia la cuenca.**"
+        },
+        {
+          "type": "heading",
+          "text": "Códigos de dirección de flujo (D8)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Dirección",
+            "E",
+            "SE",
+            "S",
+            "SO",
+            "O",
+            "NO",
+            "N",
+            "NE"
+          ],
+          "rows": [
+            [
+              "Código",
+              "1",
+              "2",
+              "4",
+              "8",
+              "16",
+              "32",
+              "64",
+              "128"
+            ]
+          ],
+          "caption": "Cada celda vierte a UNA de sus 8 vecinas: la de mayor pendiente de bajada"
+        },
+        {
+          "type": "interactive",
+          "widget": "d8_watershed",
+          "title": "Simulador D8"
+        },
+        {
+          "type": "heading",
+          "text": "Herramientas relacionadas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Herramienta",
+            "Para qué"
+          ],
+          "rows": [
+            [
+              "**Basin**",
+              "Delimita automáticamente todas las cuencas del MDE hasta el borde (sin punto de salida)"
+            ],
+            [
+              "**Flow Length**",
+              "Distancia de flujo aguas arriba o aguas abajo; su máximo es la longitud del recorrido más largo"
+            ],
+            [
+              "**Sink**",
+              "Localiza los sumideros antes del Fill"
+            ],
+            [
+              "**Stream Link**",
+              "Da un identificador a cada tramo entre confluencias (para subcuencas)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Diagnóstico rápido:\n• Cuenca diminuta (unas pocas celdas): el punto no cayó en el cauce → repite Snap Pour Point con más distancia.\n• Cuenca cortada en línea recta: el MDE recortado era muy pequeño.\n• Red entrecortada: no se hizo Fill.\n• Error de licencia: falta activar Spatial Analyst.\n• Áreas absurdas: el MDE está en grados.",
+          "title": "Si algo sale mal"
+        },
+        {
+          "type": "quiz",
+          "question": "En la herramienta Watershed, como «flow direction» se ingresa:",
+          "options": [
+            "El MDE",
+            "El Fill",
+            "El ráster de Flow Direction",
+            "El Flow Accumulation"
+          ],
+          "correct": 2,
+          "explanation": "Watershed sigue las direcciones."
+        },
+        {
+          "type": "quiz",
+          "question": "Snap Pour Point necesita, además del punto:",
+          "options": [
+            "El MDE original",
+            "El Flow Accumulation",
+            "El Stream Order",
+            "El polígono"
+          ],
+          "correct": 1,
+          "explanation": "Busca la celda de mayor acumulación."
+        },
+        {
+          "type": "quiz",
+          "question": "Con celda de 30 m, un umbral de 2 000 celdas equivale a un área de aporte de:",
+          "options": [
+            "0,06 km²",
+            "1,8 km²",
+            "18 km²",
+            "60 km²"
+          ],
+          "correct": 1,
+          "explanation": "2 000 × 900 m²."
+        },
+        {
+          "type": "quiz",
+          "question": "Al bajar el umbral de acumulación, la red de cauces:",
+          "options": [
+            "Se vuelve más densa",
+            "Se vuelve menos densa",
+            "No cambia",
+            "Desaparece"
+          ],
+          "correct": 0,
+          "explanation": "Más celdas califican como cauce."
+        },
+        {
+          "type": "quiz",
+          "question": "Cambiar el umbral cambia:",
+          "options": [
+            "El área de la cuenca",
+            "La red y la densidad de drenaje",
+            "El MDE",
+            "La proyección"
+          ],
+          "correct": 1,
+          "explanation": "La cuenca depende del punto y del flujo."
+        },
+        {
+          "type": "quiz",
+          "question": "En el código D8, el valor 4 significa que la celda vierte hacia el:",
+          "options": [
+            "Este",
+            "Sur",
+            "Oeste",
+            "Norte"
+          ],
+          "correct": 1,
+          "explanation": "1 E, 2 SE, 4 S."
+        },
+        {
+          "type": "quiz",
+          "question": "La herramienta Fill:",
+          "options": [
+            "Recorta el MDE",
+            "Rellena sumideros",
+            "Calcula pendientes",
+            "Dibuja curvas"
+          ],
+          "correct": 1,
+          "explanation": "Para que el flujo no se corte."
+        },
+        {
+          "type": "quiz",
+          "question": "Una cuenca que sale de solo 3 celdas indica que:",
+          "options": [
+            "El MDE es malo",
+            "El punto de salida no cayó sobre el cauce",
+            "Falta Stream Order",
+            "El umbral es alto"
+          ],
+          "correct": 1,
+          "explanation": "Hay que ajustarlo al cauce."
+        }
+      ]
+    },
+    {
+      "id": "l11-morfometria-arcmap",
+      "title": "Morfometría, hipsometría y pendientes en ArcMap",
+      "summary": "Cómo sacar de ArcMap cada número de la ficha de la cuenca: áreas, longitudes, cotas, pendiente media, áreas por franjas de cota y longitud de cauces por orden.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Dato",
+            "Procedimiento en ArcMap"
+          ],
+          "rows": [
+            [
+              "Área y perímetro",
+              "Tabla de atributos de la cuenca → **Add Field** (Double) → clic derecho en el campo → **Calculate Geometry** → Area (km²) / Perimeter (km)"
+            ],
+            [
+              "Longitud de cada cauce",
+              "En la capa de ríos recortada: Add Field → Calculate Geometry → Length (km)"
+            ],
+            [
+              "Longitud total de cauces y por orden",
+              "Clic derecho en el campo de orden (grid code) → **Summarize** → suma de la longitud. O **Statistics** sobre el campo de longitud para el total"
+            ],
+            [
+              "Longitud del cauce principal",
+              "Seleccionar sus tramos y ver Statistics; o **Flow Length** (DOWNSTREAM) y tomar el máximo dentro de la cuenca"
+            ],
+            [
+              "Cotas mínima, máxima y media",
+              "Spatial Analyst → Zonal → **Zonal Statistics as Table** (zona: cuenca; valor: MDE). Da MIN, MAX, MEAN, RANGE"
+            ],
+            [
+              "Pendiente media de la cuenca",
+              "Spatial Analyst → Surface → **Slope** (PERCENT RISE) sobre el MDE y luego Zonal Statistics as Table → MEAN"
+            ],
+            [
+              "Centroide",
+              "Add Field X, Y → Calculate Geometry → X/Y Coordinate of Centroid"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Curva hipsométrica en ArcMap"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Recorta el MDE con la cuenca (**Extract by Mask**).",
+            "**Reclassify** (Spatial Analyst → Reclass): define las franjas de cota (por ejemplo cada 200 m) y asígnales los valores 1, 2, 3…",
+            "Abre la tabla del ráster reclasificado: el campo **COUNT** es el número de celdas de cada franja.",
+            "Área de cada franja = COUNT × tamaño de celda² (con celda de 30 m, cada celda son 900 m²).",
+            "Lleva la tabla a Excel, calcula el área acumulada sobre cada cota en % y grafica."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Con celda de 30 m, la franja 3 000 – 3 200 tiene COUNT = 14 889 celdas: área = 14 889 × 900 m² = 13 400 100 m² ≈ **13,4 km²**.",
+          "title": "Ejemplo"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Alternativas para las áreas por franja: **Tabulate Area** (zona: cuenca; clase: ráster reclasificado) o **Zonal Geometry as Table**."
+        },
+        {
+          "type": "heading",
+          "text": "Mapa de pendientes de la cuenca"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Slope** con salida en PERCENT RISE.",
+            "**Reclassify** en rangos (por ejemplo 0 – 5, 5 – 12, 12 – 25, 25 – 50, 50 – 70, > 70 %).",
+            "Simbología por colores (verde a rojo) y leyenda con los rangos.",
+            "Con la tabla del reclasificado obtienes el % del área en cada rango."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Con un Z-factor incorrecto las pendientes salen disparatadas. Si X, Y y Z están en metros (MDE en UTM), **Z factor = 1**.",
+          "title": "Z factor"
+        },
+        {
+          "type": "interactive",
+          "widget": "basin_morphometry",
+          "title": "Pasa aquí tus resultados"
+        },
+        {
+          "type": "quiz",
+          "question": "Para obtener el área de un polígono en km² se usa:",
+          "options": [
+            "Field Calculator con una suma",
+            "Calculate Geometry",
+            "Zonal Statistics",
+            "Slope"
+          ],
+          "correct": 1,
+          "explanation": "Sobre un campo numérico."
+        },
+        {
+          "type": "quiz",
+          "question": "La cota media de la cuenca se obtiene con:",
+          "options": [
+            "Zonal Statistics as Table",
+            "Stream Order",
+            "Clip",
+            "Fill"
+          ],
+          "correct": 0,
+          "explanation": "Zona: cuenca; valor: MDE."
+        },
+        {
+          "type": "quiz",
+          "question": "En un ráster de 12,5 m, 6 400 celdas equivalen a:",
+          "options": [
+            "1 km²",
+            "0,8 km²",
+            "10 km²",
+            "0,08 km²"
+          ],
+          "correct": 0,
+          "explanation": "6 400 × 156,25 m² = 1 000 000 m²."
+        },
+        {
+          "type": "quiz",
+          "question": "Para agrupar el MDE en franjas de cota se usa:",
+          "options": [
+            "Reclassify",
+            "Project",
+            "Watershed",
+            "Buffer"
+          ],
+          "correct": 0,
+          "explanation": "Reclasifica rangos."
+        },
+        {
+          "type": "quiz",
+          "question": "Con el MDE en UTM y cotas en metros, el Z factor de Slope es:",
+          "options": [
+            "0",
+            "1",
+            "111 120",
+            "0,3048"
+          ],
+          "correct": 1,
+          "explanation": "Mismas unidades."
+        },
+        {
+          "type": "quiz",
+          "question": "Summarize sobre el campo de orden sirve para:",
+          "options": [
+            "Sumar longitudes por orden",
+            "Proyectar",
+            "Rellenar sumideros",
+            "Georreferenciar"
+          ],
+          "correct": 0,
+          "explanation": "Estadísticas por categoría."
+        }
+      ]
+    },
+    {
+      "id": "l12-teoria-examen",
+      "title": "Teoría de SIG y ArcMap que suelen preguntar",
+      "summary": "Vector y ráster, formatos, sistemas de coordenadas, y el estado actual de ArcMap.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Modelo",
+            "Representa con",
+            "Ejemplos",
+            "Bueno para"
+          ],
+          "rows": [
+            [
+              "**Vectorial**",
+              "Puntos, líneas y polígonos con tabla de atributos",
+              "Ríos, vías, cuenca, puntos de control",
+              "Objetos con límites definidos, mediciones exactas"
+            ],
+            [
+              "**Ráster**",
+              "Una cuadrícula de celdas (píxeles) con un valor",
+              "MDE, pendientes, ortofotos, imágenes satelitales",
+              "Fenómenos continuos, análisis de superficies"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Formato",
+            "Qué es"
+          ],
+          "rows": [
+            [
+              "Shapefile (.shp)",
+              "Vector; en realidad son varios archivos: .shp (geometría), .shx (índice), .dbf (tabla), .prj (sistema de coordenadas). Hay que copiarlos todos juntos"
+            ],
+            [
+              "Geodatabase (.gdb)",
+              "Carpeta-base de datos de Esri que guarda vectores, ráster y tablas"
+            ],
+            [
+              "GeoTIFF (.tif)",
+              "Ráster georreferenciado"
+            ],
+            [
+              ".mxd",
+              "Documento de mapa de ArcMap: guarda capas, simbología y diseño, pero **no los datos** (solo las rutas)"
+            ],
+            [
+              "KML / KMZ",
+              "Formato de Google Earth"
+            ],
+            [
+              ".dwg / .dxf",
+              "Dibujos de AutoCAD y Civil 3D, que ArcMap puede leer"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si envías solo el .mxd, quien lo abra verá signos de exclamación rojos: faltan los datos. Entrega la carpeta completa, o marca **File → Map Document Properties → Store relative pathnames** y comprime todo junto.",
+          "title": "El .mxd no contiene los datos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sistema",
+            "Unidades",
+            "Uso"
+          ],
+          "rows": [
+            [
+              "Geográfico (latitud, longitud)",
+              "Grados",
+              "Ubicación global; no sirve para medir áreas ni pendientes directamente"
+            ],
+            [
+              "Proyectado (UTM)",
+              "Metros",
+              "Medir distancias, áreas y pendientes"
+            ],
+            [
+              "Datum",
+              "—",
+              "Define el elipsoide y su posición: WGS84, SIRGAS, PSAD56"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Componente de ArcGIS Desktop",
+            "Función"
+          ],
+          "rows": [
+            [
+              "ArcMap",
+              "Visualizar, editar, analizar y componer mapas"
+            ],
+            [
+              "ArcCatalog (o ventana Catalog)",
+              "Administrar archivos y crear datos nuevos"
+            ],
+            [
+              "ArcToolbox",
+              "Caja de herramientas de geoprocesamiento"
+            ],
+            [
+              "Extensiones",
+              "Spatial Analyst (ráster, hidrología), 3D Analyst (TIN, superficies)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Esri retiró ArcMap (ArcGIS Desktop) el **1 de marzo de 2026**: ya no recibe actualizaciones ni soporte, y su reemplazo es **ArcGIS Pro**. Se sigue usando en muchas universidades porque los conceptos y las herramientas de Hydrology son los mismos y tienen el mismo nombre en ArcGIS Pro; en QGIS existen equivalentes libres.",
+          "title": "ArcMap hoy"
+        },
+        {
+          "type": "quiz",
+          "question": "Un MDE es un dato de tipo:",
+          "options": [
+            "Vectorial",
+            "Ráster",
+            "Tabular",
+            "CAD"
+          ],
+          "correct": 1,
+          "explanation": "Cuadrícula de celdas."
+        },
+        {
+          "type": "quiz",
+          "question": "El archivo .prj de un shapefile guarda:",
+          "options": [
+            "La geometría",
+            "La tabla de atributos",
+            "El sistema de coordenadas",
+            "La simbología"
+          ],
+          "correct": 2,
+          "explanation": "Proyección."
+        },
+        {
+          "type": "quiz",
+          "question": "El archivo .mxd guarda:",
+          "options": [
+            "Los datos",
+            "Las rutas a los datos, la simbología y el diseño",
+            "Solo la tabla",
+            "El MDE"
+          ],
+          "correct": 1,
+          "explanation": "No contiene los datos."
+        },
+        {
+          "type": "quiz",
+          "question": "Para medir áreas correctamente los datos deben estar en:",
+          "options": [
+            "Coordenadas geográficas",
+            "Un sistema proyectado como UTM",
+            "Cualquiera",
+            "KML"
+          ],
+          "correct": 1,
+          "explanation": "Unidades en metros."
+        },
+        {
+          "type": "quiz",
+          "question": "La extensión necesaria para las herramientas de Hydrology es:",
+          "options": [
+            "3D Analyst",
+            "Spatial Analyst",
+            "Network Analyst",
+            "Publisher"
+          ],
+          "correct": 1,
+          "explanation": "Análisis ráster."
+        },
+        {
+          "type": "quiz",
+          "question": "La cuenca delimitada (polígono) es un dato:",
+          "options": [
+            "Ráster",
+            "Vectorial",
+            "Imagen",
+            "TIN"
+          ],
+          "correct": 1,
+          "explanation": "Tras Raster to Polygon."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Ejercicios complejos de ArcMap y cuencas",
+      "summary": "Casos para razonar como en el examen práctico o teórico.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Resuélvelos **en papel**; luego pide la pista, la solución paso a paso o solo la respuesta.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Planificar el análisis",
+          "level": 2,
+          "statement": "Te entregan un MDE SRTM de 30 m en coordenadas geográficas WGS84 y las coordenadas UTM del sitio de una captación. Enumera, en orden, las herramientas que usarías hasta obtener el área de la cuenca en km².",
+          "steps": [
+            "Project Raster a WGS 1984 UTM Zone 17S (bilinear, celda 30 m).",
+            "Extract by Mask con un rectángulo amplio (opcional).",
+            "Fill → Flow Direction → Flow Accumulation.",
+            "Crear el punto de la captación (shapefile de punto o Add XY Data) y aplicar Snap Pour Point sobre el Flow Accumulation.",
+            "Watershed (Flow Direction + punto ajustado).",
+            "Raster to Polygon → Add Field → Calculate Geometry (km²)."
+          ],
+          "answer": "**Project Raster → Fill → Flow Direction → Flow Accumulation → punto + Snap Pour Point → Watershed → Raster to Polygon → Calculate Geometry.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Área a partir del número de celdas",
+          "level": 2,
+          "statement": "El ráster de la cuenca (salida de Watershed) tiene COUNT = 76 800 celdas con celda de 12,5 m. ¿Cuál es el área? ¿Cuántas celdas tendría con un MDE de 30 m?",
+          "steps": [
+            "Área de una celda = 12,5² = 156,25 m².",
+            "A = 76 800 × 156,25 = 12 000 000 m² = 12 km².",
+            "Con 30 m: 12 000 000/900."
+          ],
+          "answer": "**A = 12 km²; con celda de 30 m serían unas 13 333 celdas.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Elegir el umbral",
+          "level": 3,
+          "statement": "Con un MDE de 12,5 m quieres que la red generada empiece donde el área de aporte es de 0,5 km², como en la carta. ¿Qué umbral pones en Con? Si luego usas 500 celdas, ¿qué pasa con la densidad de drenaje y con el área de la cuenca?",
+          "steps": [
+            "Umbral = 500 000 m² / 156,25 m² = 3 200 celdas.",
+            "Con 500 celdas el área de aporte mínima baja a 0,078 km²: aparecen muchos más cauces.",
+            "La longitud total de cauces aumenta → Dd aumenta y probablemente sube el orden.",
+            "La cuenca la definen Flow Direction y el punto de salida: no cambia."
+          ],
+          "answer": "**Umbral ≈ 3 200 celdas. Con 500 celdas la red es mucho más densa (mayor Dd y orden), pero el área de la cuenca es la misma.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Diagnóstico de un resultado extraño",
+          "level": 3,
+          "statement": "Un compañero obtiene una cuenca de 0,0036 km² para un río que claramente drena varios km². Usó Fill, Flow Direction, Flow Accumulation y Watershed con el punto dibujado «a ojo». MDE de 30 m. ¿Qué pasó y cómo se corrige?",
+          "steps": [
+            "0,0036 km² = 3 600 m² = 4 celdas de 900 m².",
+            "El punto cayó en una celda de ladera junto al cauce, no en la celda del cauce.",
+            "Solución: Snap Pour Point con el Flow Accumulation y una distancia de 60 a 90 m, y usar ese resultado en Watershed.",
+            "Verificar con Identify que la celda del punto tiene una acumulación alta."
+          ],
+          "answer": "**El punto de salida no está sobre el cauce: falta Snap Pour Point.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Georreferenciación",
+          "level": 2,
+          "statement": "Georreferencias una carta 1:50 000 con 5 puntos de control y obtienes residuales (m) de 3,1; 2,4; 4,0; 18,6 y 3,5. ¿Qué harías? Calcula el RMS antes y después.",
+          "steps": [
+            "RMS inicial = √[(3,1² + 2,4² + 4,0² + 18,6² + 3,5²)/5] = √(389,6/5) = 8,8 m.",
+            "El punto de 18,6 m está mal digitado o mal marcado: se elimina y se vuelve a colocar.",
+            "RMS con los otros 4 = √[(9,61 + 5,76 + 16,0 + 12,25)/4] = √(43,62/4) = 3,3 m."
+          ],
+          "answer": "**Rehacer el punto de 18,6 m: el RMS baja de 8,8 m a unos 3,3 m, por debajo de la precisión gráfica (10 m).**"
+        },
+        {
+          "type": "exercise",
+          "title": "Hipsometría desde la tabla del ráster",
+          "level": 3,
+          "statement": "Tabla del MDE reclasificado (celda 30 m): franja 1 (2 400 – 2 600 m): 8 000 celdas; franja 2 (2 600 – 2 800): 14 000; franja 3 (2 800 – 3 000): 10 000; franja 4 (3 000 – 3 200): 4 000. Halla el área de cada franja, el área total y el % de área sobre 2 800 m.",
+          "steps": [
+            "Cada celda = 900 m² = 0,0009 km².",
+            "Áreas: 7,2; 12,6; 9,0 y 3,6 km².",
+            "Total = 32,4 km².",
+            "Sobre 2 800 m: 9,0 + 3,6 = 12,6 km² → 12,6/32,4."
+          ],
+          "answer": "**7,2; 12,6; 9,0 y 3,6 km²; total 32,4 km²; el 38,9 % del área está sobre los 2 800 m.**"
+        }
+      ]
     }
   ]
 }
