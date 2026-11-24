@@ -1,0 +1,3375 @@
+{
+  "id": "en06-tecnico",
+  "title": "Inglés técnico para ingeniería civil",
+  "description": "Leer números y fórmulas en voz alta, y el vocabulario de materiales, estructuras, suelos, agua, topografía, obra y redacción de informes.",
+  "lessons": [
+    {
+      "id": "l01-numeros-formulas",
+      "title": "Números, unidades y fórmulas en voz alta",
+      "summary": "Decimales, fracciones, potencias, operaciones, letras griegas y cómo leer una ecuación.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En inglés el decimal es un **punto** y los miles se separan con **coma**: 2,500.75 = dos mil quinientos coma setenta y cinco. Es al revés que en Ecuador. Un error aquí cambia una carga en un factor de mil.",
+          "title": "Punto y coma al revés"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Se escribe",
+            "Se lee"
+          ],
+          "rows": [
+            [
+              "3.14",
+              "three point one four"
+            ],
+            [
+              "0.05",
+              "zero point zero five / point oh five"
+            ],
+            [
+              "2,500",
+              "two thousand five hundred"
+            ],
+            [
+              "1/2, 1/3, 1/4, 3/4",
+              "one half, one third, one quarter, three quarters"
+            ],
+            [
+              "25 %",
+              "twenty-five per cent"
+            ],
+            [
+              "10³",
+              "ten cubed / ten to the power of three"
+            ],
+            [
+              "x²",
+              "x squared"
+            ],
+            [
+              "xⁿ",
+              "x to the power of n / x to the n"
+            ],
+            [
+              "√x",
+              "the square root of x"
+            ],
+            [
+              "∛x",
+              "the cube root of x"
+            ],
+            [
+              "1.5 × 10⁶",
+              "one point five times ten to the sixth"
+            ],
+            [
+              "−5 °C",
+              "minus five degrees Celsius"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Símbolo",
+            "Se lee",
+            "Símbolo",
+            "Se lee"
+          ],
+          "rows": [
+            [
+              "+",
+              "plus",
+              "=",
+              "equals / is equal to"
+            ],
+            [
+              "−",
+              "minus",
+              "≠",
+              "is not equal to"
+            ],
+            [
+              "×",
+              "times / multiplied by",
+              "≈",
+              "is approximately equal to"
+            ],
+            [
+              "÷ o /",
+              "divided by / over",
+              ">",
+              "is greater than"
+            ],
+            [
+              "±",
+              "plus or minus",
+              "<",
+              "is less than"
+            ],
+            [
+              "%",
+              "per cent",
+              "≥",
+              "is greater than or equal to"
+            ],
+            [
+              "∝",
+              "is proportional to",
+              "Σ",
+              "the sum of"
+            ],
+            [
+              "dy/dx",
+              "the derivative of y with respect to x (d y d x)",
+              "∫",
+              "the integral of"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "σ = F / A → «sigma equals F over A» o «stress equals force divided by area».\nδ = 5wL⁴ / (384EI) → «delta equals five w L to the fourth over three hundred and eighty-four E I».\nv = √(2gh) → «v equals the square root of two g h».",
+          "title": "Leer ecuaciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Letra",
+            "Nombre",
+            "Suena como",
+            "Uso típico"
+          ],
+          "rows": [
+            [
+              "α",
+              "alpha",
+              "álfa",
+              "ángulo, coeficiente"
+            ],
+            [
+              "β",
+              "beta",
+              "bíta / béita",
+              "ángulo"
+            ],
+            [
+              "γ",
+              "gamma",
+              "gáma",
+              "peso específico"
+            ],
+            [
+              "δ, Δ",
+              "delta",
+              "délta",
+              "deflexión, variación"
+            ],
+            [
+              "ε",
+              "epsilon",
+              "épsilon",
+              "deformación unitaria"
+            ],
+            [
+              "θ",
+              "theta",
+              "zíta / zéita",
+              "ángulo"
+            ],
+            [
+              "μ",
+              "mu",
+              "miu",
+              "fricción, micro"
+            ],
+            [
+              "ρ",
+              "rho",
+              "rou",
+              "densidad"
+            ],
+            [
+              "σ",
+              "sigma",
+              "sígma",
+              "esfuerzo normal"
+            ],
+            [
+              "τ",
+              "tau",
+              "tau",
+              "esfuerzo cortante"
+            ],
+            [
+              "φ",
+              "phi",
+              "fai",
+              "ángulo de fricción"
+            ],
+            [
+              "ω",
+              "omega",
+              "oumíga / oumega",
+              "velocidad angular"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "metre / meter (m)",
+              "metro",
+              "The span is 6 metres."
+            ],
+            [
+              "square metre (m²)",
+              "metro cuadrado",
+              "an area of 20 square metres"
+            ],
+            [
+              "cubic metre (m³)",
+              "metro cúbico",
+              "ten cubic metres of concrete"
+            ],
+            [
+              "kilonewton (kN)",
+              "kilonewton",
+              "a load of 50 kilonewtons"
+            ],
+            [
+              "kN/m",
+              "kilonewton por metro",
+              "kilonewtons per metre"
+            ],
+            [
+              "megapascal (MPa)",
+              "megapascal",
+              "a strength of 28 megapascals"
+            ],
+            [
+              "m/s, m/s²",
+              "metros por segundo (al cuadrado)",
+              "metres per second (squared)"
+            ],
+            [
+              "inch, foot, yard, mile",
+              "pulgada (2,54 cm), pie (30,48 cm), yarda, milla",
+              "a 2-inch pipe"
+            ],
+            [
+              "pound (lb), psi, kip",
+              "libra, libra por pulgada cuadrada, mil libras",
+              "3,000 psi concrete"
+            ]
+          ],
+          "caption": "Unidades"
+        },
+        {
+          "type": "quiz",
+          "question": "En inglés, 1,250.5 significa:",
+          "options": [
+            "Uno coma dos cinco",
+            "Mil doscientos cincuenta coma cinco",
+            "Un millón",
+            "Uno punto dos"
+          ],
+          "correct": 1,
+          "explanation": "Coma de miles, punto decimal."
+        },
+        {
+          "type": "quiz",
+          "question": "x² se lee:",
+          "options": [
+            "x two",
+            "x squared",
+            "x cubed",
+            "two x"
+          ],
+          "correct": 1,
+          "explanation": "Al cuadrado."
+        },
+        {
+          "type": "quiz",
+          "question": "«F over A» significa:",
+          "options": [
+            "F por A",
+            "F sobre A (dividido)",
+            "F más A",
+            "F encima de A en el plano"
+          ],
+          "correct": 1,
+          "explanation": "División."
+        },
+        {
+          "type": "quiz",
+          "question": "σ se llama:",
+          "options": [
+            "delta",
+            "sigma",
+            "tau",
+            "rho"
+          ],
+          "correct": 1,
+          "explanation": "Esfuerzo normal."
+        },
+        {
+          "type": "quiz",
+          "question": "«kN per metre» es:",
+          "options": [
+            "kN·m",
+            "kN/m",
+            "kN/m²",
+            "kN²"
+          ],
+          "correct": 1,
+          "explanation": "Per = por, dividido."
+        },
+        {
+          "type": "quiz",
+          "question": "√x se lee:",
+          "options": [
+            "the square of x",
+            "the square root of x",
+            "x squared",
+            "root x two"
+          ],
+          "correct": 1,
+          "explanation": "Raíz cuadrada."
+        }
+      ]
+    },
+    {
+      "id": "l02-formas-dibujos",
+      "title": "Formas, dimensiones y planos",
+      "summary": "Describir geometría y leer la terminología de un plano.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Adjetivo",
+            "Sustantivo (dimensión)",
+            "Español"
+          ],
+          "rows": [
+            [
+              "long",
+              "length",
+              "longitud, largo"
+            ],
+            [
+              "wide",
+              "width",
+              "ancho"
+            ],
+            [
+              "high",
+              "height",
+              "altura"
+            ],
+            [
+              "deep",
+              "depth",
+              "profundidad; peralte (de una viga)"
+            ],
+            [
+              "thick",
+              "thickness",
+              "espesor"
+            ],
+            [
+              "—",
+              "diameter / radius",
+              "diámetro / radio"
+            ],
+            [
+              "—",
+              "area / volume",
+              "área / volumen"
+            ],
+            [
+              "—",
+              "span",
+              "luz (distancia entre apoyos)"
+            ],
+            [
+              "—",
+              "spacing",
+              "separación, espaciamiento"
+            ],
+            [
+              "—",
+              "slope / gradient",
+              "pendiente"
+            ],
+            [
+              "—",
+              "clearance",
+              "gálibo, holgura"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "The beam is 6 m long, 300 mm wide and 500 mm deep.",
+              "La viga mide 6 m de largo, 300 mm de ancho y 500 mm de peralte."
+            ],
+            [
+              "The slab has a thickness of 200 mm.",
+              "La losa tiene un espesor de 200 mm."
+            ],
+            [
+              "a 6-metre span",
+              "una luz de 6 metros"
+            ],
+            [
+              "bars at 150 mm spacing / at 150 mm centres",
+              "barras cada 150 mm"
+            ],
+            [
+              "a 2 % slope",
+              "una pendiente del 2 %"
+            ]
+          ],
+          "caption": "Cómo dar dimensiones"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Cuando la medida va **antes** del sustantivo, la unidad va en **singular y con guion**: «a 6-**metre** beam», «a 200-**millimetre** slab», «a three-**storey** building»."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "square, rectangle, triangle, circle",
+              "cuadrado, rectángulo, triángulo, círculo",
+              "a rectangular cross-section"
+            ],
+            [
+              "cylinder, sphere, cone, cube",
+              "cilindro, esfera, cono, cubo",
+              "a cylindrical tank"
+            ],
+            [
+              "straight / curved",
+              "recto / curvo",
+              "a curved beam"
+            ],
+            [
+              "parallel / perpendicular",
+              "paralelo / perpendicular",
+              "parallel to the axis"
+            ],
+            [
+              "horizontal / vertical / inclined",
+              "horizontal / vertical / inclinado",
+              "an inclined member"
+            ],
+            [
+              "edge, corner, surface, face",
+              "borde, esquina, superficie, cara",
+              "the top surface"
+            ],
+            [
+              "top / bottom",
+              "parte superior / inferior",
+              "bottom reinforcement"
+            ],
+            [
+              "axis (plural: axes)",
+              "eje",
+              "the neutral axis"
+            ],
+            [
+              "centre line",
+              "eje, línea central",
+              "the centre line of the road"
+            ]
+          ],
+          "caption": "Formas y posiciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "drawing",
+              "plano",
+              "structural drawings"
+            ],
+            [
+              "plan view",
+              "vista en planta",
+              "see the plan view"
+            ],
+            [
+              "elevation",
+              "alzado, vista frontal; cota",
+              "north elevation"
+            ],
+            [
+              "section / cross-section",
+              "corte / sección transversal",
+              "Section A–A"
+            ],
+            [
+              "detail",
+              "detalle",
+              "Detail 3"
+            ],
+            [
+              "scale",
+              "escala",
+              "scale 1:50"
+            ],
+            [
+              "layout",
+              "distribución, disposición",
+              "site layout"
+            ],
+            [
+              "dimension",
+              "cota, medida",
+              "all dimensions in mm"
+            ],
+            [
+              "grid line",
+              "eje de la retícula",
+              "grid line B"
+            ],
+            [
+              "level",
+              "nivel",
+              "finished floor level"
+            ],
+            [
+              "title block",
+              "rótulo, membrete",
+              "—"
+            ],
+            [
+              "as-built drawings",
+              "planos como fue construido",
+              "—"
+            ],
+            [
+              "not to scale (NTS)",
+              "sin escala",
+              "—"
+            ]
+          ],
+          "caption": "Planos"
+        },
+        {
+          "type": "quiz",
+          "question": "«Depth» de una viga es su:",
+          "options": [
+            "ancho",
+            "peralte (altura de la sección)",
+            "longitud",
+            "espesor de pintura"
+          ],
+          "correct": 1,
+          "explanation": "Deep → depth."
+        },
+        {
+          "type": "quiz",
+          "question": "«Span» significa:",
+          "options": [
+            "separación entre barras",
+            "luz entre apoyos",
+            "espesor",
+            "pendiente"
+          ],
+          "correct": 1,
+          "explanation": "Distancia entre apoyos."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "a 6-metres beam",
+            "a 6-metre beam",
+            "a beam 6 metre",
+            "a 6 metres beam long"
+          ],
+          "correct": 1,
+          "explanation": "Singular con guion."
+        },
+        {
+          "type": "quiz",
+          "question": "«Plan view» es:",
+          "options": [
+            "vista en planta",
+            "plan de trabajo",
+            "alzado",
+            "perspectiva"
+          ],
+          "correct": 0,
+          "explanation": "Vista desde arriba."
+        },
+        {
+          "type": "quiz",
+          "question": "«Cross-section» es:",
+          "options": [
+            "cruce",
+            "sección transversal",
+            "esquina",
+            "corte de energía"
+          ],
+          "correct": 1,
+          "explanation": "Sección."
+        },
+        {
+          "type": "quiz",
+          "question": "«Width» significa:",
+          "options": [
+            "largo",
+            "ancho",
+            "alto",
+            "peso"
+          ],
+          "correct": 1,
+          "explanation": "Wide → width."
+        }
+      ]
+    },
+    {
+      "id": "l03-materiales",
+      "title": "Materiales y sus propiedades",
+      "summary": "Hormigón, acero, madera, mampostería y el vocabulario de la mecánica de materiales.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "concrete",
+              "hormigón (concreto)",
+              "Concrete is strong in compression."
+            ],
+            [
+              "cement",
+              "cemento (el polvo)",
+              "Portland cement"
+            ],
+            [
+              "aggregate (fine / coarse)",
+              "árido (fino / grueso)",
+              "coarse aggregate"
+            ],
+            [
+              "sand / gravel",
+              "arena / grava",
+              "sand and gravel"
+            ],
+            [
+              "mortar / grout",
+              "mortero / lechada",
+              "cement mortar"
+            ],
+            [
+              "reinforced concrete (RC)",
+              "hormigón armado",
+              "an RC frame"
+            ],
+            [
+              "prestressed / precast concrete",
+              "hormigón pretensado / prefabricado",
+              "precast beams"
+            ],
+            [
+              "reinforcement / rebar",
+              "armadura / barra corrugada",
+              "16 mm rebar"
+            ],
+            [
+              "stirrup / tie",
+              "estribo",
+              "stirrups at 100 mm"
+            ],
+            [
+              "steel",
+              "acero",
+              "structural steel"
+            ],
+            [
+              "timber / wood",
+              "madera (estructural)",
+              "timber beams"
+            ],
+            [
+              "masonry / brick / block",
+              "mampostería / ladrillo / bloque",
+              "a masonry wall"
+            ],
+            [
+              "asphalt",
+              "asfalto",
+              "asphalt pavement"
+            ],
+            [
+              "admixture",
+              "aditivo",
+              "a water-reducing admixture"
+            ],
+            [
+              "water–cement ratio",
+              "relación agua–cemento",
+              "a w/c ratio of 0.5"
+            ],
+            [
+              "mix design",
+              "dosificación",
+              "concrete mix design"
+            ],
+            [
+              "curing",
+              "curado",
+              "28 days of curing"
+            ],
+            [
+              "slump",
+              "asentamiento (cono de Abrams)",
+              "a slump of 80 mm"
+            ]
+          ],
+          "caption": "Materiales"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "strength",
+              "resistencia",
+              "compressive strength"
+            ],
+            [
+              "compressive / tensile / shear strength",
+              "resistencia a compresión / tracción / corte",
+              "tensile strength of steel"
+            ],
+            [
+              "yield strength",
+              "límite de fluencia",
+              "fy = 420 MPa"
+            ],
+            [
+              "stress",
+              "esfuerzo, tensión",
+              "normal stress"
+            ],
+            [
+              "strain",
+              "deformación unitaria",
+              "stress–strain curve"
+            ],
+            [
+              "stiffness",
+              "rigidez",
+              "bending stiffness"
+            ],
+            [
+              "modulus of elasticity / Young's modulus",
+              "módulo de elasticidad",
+              "E = 200 GPa"
+            ],
+            [
+              "ductile / brittle",
+              "dúctil / frágil",
+              "a brittle failure"
+            ],
+            [
+              "elastic / plastic",
+              "elástico / plástico",
+              "elastic range"
+            ],
+            [
+              "density / unit weight",
+              "densidad / peso específico",
+              "unit weight of 24 kN/m³"
+            ],
+            [
+              "creep / shrinkage",
+              "fluencia lenta / retracción",
+              "creep and shrinkage"
+            ],
+            [
+              "fatigue",
+              "fatiga",
+              "fatigue cracking"
+            ],
+            [
+              "corrosion / rust",
+              "corrosión / óxido",
+              "corrosion of reinforcement"
+            ],
+            [
+              "crack / cracking",
+              "grieta, fisura / fisuración",
+              "shrinkage cracks"
+            ],
+            [
+              "failure",
+              "falla, rotura",
+              "shear failure"
+            ],
+            [
+              "durability",
+              "durabilidad",
+              "—"
+            ],
+            [
+              "toughness / hardness",
+              "tenacidad / dureza",
+              "—"
+            ]
+          ],
+          "caption": "Propiedades y comportamiento"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Stress** es el esfuerzo (fuerza por unidad de área) y **strain** es la deformación unitaria: no son lo mismo y se confunden por su parecido. **Tension** es tracción, y **stress** se traduce a veces como «tensión»: fíjate en el contexto.",
+          "title": "Stress y strain"
+        },
+        {
+          "type": "quiz",
+          "question": "«Reinforced concrete» es:",
+          "options": [
+            "hormigón reforzado con fibras",
+            "hormigón armado",
+            "cemento",
+            "hormigón simple"
+          ],
+          "correct": 1,
+          "explanation": "Con armadura de acero."
+        },
+        {
+          "type": "quiz",
+          "question": "«Strain» significa:",
+          "options": [
+            "esfuerzo",
+            "deformación unitaria",
+            "resistencia",
+            "rigidez"
+          ],
+          "correct": 1,
+          "explanation": "Stress es esfuerzo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Yield strength» es:",
+          "options": [
+            "resistencia última",
+            "límite de fluencia",
+            "módulo de elasticidad",
+            "dureza"
+          ],
+          "correct": 1,
+          "explanation": "Donde empieza a fluir."
+        },
+        {
+          "type": "quiz",
+          "question": "Un material «brittle» es:",
+          "options": [
+            "dúctil",
+            "frágil",
+            "elástico",
+            "blando"
+          ],
+          "correct": 1,
+          "explanation": "Se rompe sin avisar."
+        },
+        {
+          "type": "quiz",
+          "question": "«Stiffness» significa:",
+          "options": [
+            "resistencia",
+            "rigidez",
+            "esbeltez",
+            "dureza"
+          ],
+          "correct": 1,
+          "explanation": "Oposición a deformarse."
+        },
+        {
+          "type": "quiz",
+          "question": "«Rebar» es:",
+          "options": [
+            "un estribo",
+            "una barra de refuerzo",
+            "un encofrado",
+            "un aditivo"
+          ],
+          "correct": 1,
+          "explanation": "Reinforcing bar."
+        },
+        {
+          "type": "quiz",
+          "question": "«Curing» del hormigón es el:",
+          "options": [
+            "vertido",
+            "curado",
+            "mezclado",
+            "vibrado"
+          ],
+          "correct": 1,
+          "explanation": "Mantener la humedad."
+        }
+      ]
+    },
+    {
+      "id": "l04-estructuras",
+      "title": "Estructuras, cargas y análisis",
+      "summary": "Elementos estructurales, tipos de carga, fuerzas internas, apoyos y vibraciones.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "beam / girder",
+              "viga / viga principal",
+              "a simply supported beam"
+            ],
+            [
+              "column",
+              "columna",
+              "an RC column"
+            ],
+            [
+              "slab",
+              "losa",
+              "a two-way slab"
+            ],
+            [
+              "wall / shear wall",
+              "muro / muro de corte",
+              "a retaining wall"
+            ],
+            [
+              "footing",
+              "zapata",
+              "an isolated footing"
+            ],
+            [
+              "foundation",
+              "cimentación",
+              "deep foundations"
+            ],
+            [
+              "pile",
+              "pilote",
+              "driven piles"
+            ],
+            [
+              "frame",
+              "pórtico",
+              "a moment-resisting frame"
+            ],
+            [
+              "truss",
+              "armadura, cercha",
+              "a roof truss"
+            ],
+            [
+              "member",
+              "elemento, barra",
+              "truss members"
+            ],
+            [
+              "joint / node",
+              "nudo",
+              "a pinned joint"
+            ],
+            [
+              "arch / cable",
+              "arco / cable",
+              "a cable-stayed bridge"
+            ],
+            [
+              "cantilever",
+              "voladizo",
+              "a cantilever beam"
+            ],
+            [
+              "bracing",
+              "arriostramiento",
+              "cross bracing"
+            ],
+            [
+              "deck",
+              "tablero",
+              "the bridge deck"
+            ],
+            [
+              "abutment / pier",
+              "estribo / pila (de puente)",
+              "the bridge pier"
+            ],
+            [
+              "storey / floor",
+              "piso, planta",
+              "a ten-storey building"
+            ],
+            [
+              "roof",
+              "cubierta",
+              "a flat roof"
+            ]
+          ],
+          "caption": "Elementos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "load",
+              "carga",
+              "the applied load"
+            ],
+            [
+              "dead load / live load",
+              "carga muerta / carga viva",
+              "dead and live loads"
+            ],
+            [
+              "wind / snow / seismic load",
+              "carga de viento / nieve / sísmica",
+              "seismic loads"
+            ],
+            [
+              "point (concentrated) load",
+              "carga puntual",
+              "a point load of 20 kN"
+            ],
+            [
+              "distributed load",
+              "carga distribuida",
+              "a uniformly distributed load (UDL)"
+            ],
+            [
+              "self-weight",
+              "peso propio",
+              "including self-weight"
+            ],
+            [
+              "axial force",
+              "fuerza axial",
+              "axial compression"
+            ],
+            [
+              "shear force",
+              "fuerza cortante",
+              "shear force diagram"
+            ],
+            [
+              "bending moment",
+              "momento flector",
+              "bending moment diagram"
+            ],
+            [
+              "torsion / torque",
+              "torsión / par",
+              "torsional moment"
+            ],
+            [
+              "tension / compression",
+              "tracción / compresión",
+              "in tension"
+            ],
+            [
+              "deflection",
+              "deflexión, flecha",
+              "maximum deflection"
+            ],
+            [
+              "displacement",
+              "desplazamiento",
+              "lateral displacement"
+            ],
+            [
+              "buckling",
+              "pandeo",
+              "column buckling"
+            ],
+            [
+              "support / reaction",
+              "apoyo / reacción",
+              "support reactions"
+            ],
+            [
+              "pinned / roller / fixed support",
+              "apoyo articulado / de rodillo / empotrado",
+              "a fixed support"
+            ],
+            [
+              "hinge",
+              "articulación, rótula",
+              "a plastic hinge"
+            ],
+            [
+              "equilibrium",
+              "equilibrio",
+              "equations of equilibrium"
+            ],
+            [
+              "free-body diagram",
+              "diagrama de cuerpo libre",
+              "draw the free-body diagram"
+            ],
+            [
+              "resultant",
+              "resultante",
+              "the resultant force"
+            ],
+            [
+              "centroid / centre of mass",
+              "centroide / centro de masa",
+              "—"
+            ],
+            [
+              "moment of inertia",
+              "momento de inercia",
+              "second moment of area"
+            ],
+            [
+              "factor of safety",
+              "factor de seguridad",
+              "a factor of safety of 1.5"
+            ]
+          ],
+          "caption": "Cargas y análisis"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "vibration",
+              "vibración",
+              "free vibration"
+            ],
+            [
+              "natural frequency / period",
+              "frecuencia natural / período",
+              "the fundamental period"
+            ],
+            [
+              "damping",
+              "amortiguamiento",
+              "viscous damping"
+            ],
+            [
+              "damping ratio",
+              "factor de amortiguamiento",
+              "a damping ratio of 5 %"
+            ],
+            [
+              "resonance",
+              "resonancia",
+              "at resonance"
+            ],
+            [
+              "spring / stiffness",
+              "resorte / rigidez",
+              "spring constant k"
+            ],
+            [
+              "amplitude",
+              "amplitud",
+              "—"
+            ],
+            [
+              "kinetic / potential energy",
+              "energía cinética / potencial",
+              "elastic potential energy"
+            ],
+            [
+              "work",
+              "trabajo",
+              "work–energy principle"
+            ],
+            [
+              "friction",
+              "fricción",
+              "dry (Coulomb) friction"
+            ],
+            [
+              "earthquake",
+              "terremoto, sismo",
+              "earthquake-resistant design"
+            ]
+          ],
+          "caption": "Dinámica y vibraciones"
+        },
+        {
+          "type": "quiz",
+          "question": "«Beam» es:",
+          "options": [
+            "columna",
+            "viga",
+            "losa",
+            "zapata"
+          ],
+          "correct": 1,
+          "explanation": "Elemento horizontal a flexión."
+        },
+        {
+          "type": "quiz",
+          "question": "«Bending moment» es:",
+          "options": [
+            "fuerza cortante",
+            "momento flector",
+            "momento torsor",
+            "fuerza axial"
+          ],
+          "correct": 1,
+          "explanation": "Flexión."
+        },
+        {
+          "type": "quiz",
+          "question": "«Dead load» es:",
+          "options": [
+            "carga viva",
+            "carga muerta",
+            "carga sísmica",
+            "carga puntual"
+          ],
+          "correct": 1,
+          "explanation": "Peso permanente."
+        },
+        {
+          "type": "quiz",
+          "question": "«Cantilever» es:",
+          "options": [
+            "voladizo",
+            "arriostramiento",
+            "pórtico",
+            "pilote"
+          ],
+          "correct": 0,
+          "explanation": "Empotrado en un extremo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Buckling» es:",
+          "options": [
+            "pandeo",
+            "fluencia",
+            "fatiga",
+            "corte"
+          ],
+          "correct": 0,
+          "explanation": "Inestabilidad por compresión."
+        },
+        {
+          "type": "quiz",
+          "question": "«Truss» es:",
+          "options": [
+            "pórtico",
+            "armadura o cercha",
+            "muro",
+            "tablero"
+          ],
+          "correct": 1,
+          "explanation": "Barras articuladas."
+        },
+        {
+          "type": "quiz",
+          "question": "«Damping» es:",
+          "options": [
+            "rigidez",
+            "amortiguamiento",
+            "resonancia",
+            "frecuencia"
+          ],
+          "correct": 1,
+          "explanation": "Disipación de energía."
+        },
+        {
+          "type": "quiz",
+          "question": "«Free-body diagram» es:",
+          "options": [
+            "diagrama de flujo",
+            "diagrama de cuerpo libre",
+            "diagrama de momentos",
+            "plano libre"
+          ],
+          "correct": 1,
+          "explanation": "DCL."
+        }
+      ]
+    },
+    {
+      "id": "l05-suelos-geologia",
+      "title": "Suelos, geología y geotecnia",
+      "summary": "Tipos de suelo y roca, estructuras geológicas, ensayos y obras geotécnicas.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "soil",
+              "suelo",
+              "soil mechanics"
+            ],
+            [
+              "clay / silt / sand / gravel",
+              "arcilla / limo / arena / grava",
+              "silty clay"
+            ],
+            [
+              "boulder / cobble",
+              "bloque / canto rodado",
+              "—"
+            ],
+            [
+              "fine-grained / coarse-grained",
+              "de grano fino / grueso",
+              "coarse-grained soils"
+            ],
+            [
+              "cohesive / granular",
+              "cohesivo / granular",
+              "cohesive soils"
+            ],
+            [
+              "topsoil",
+              "capa vegetal",
+              "remove the topsoil"
+            ],
+            [
+              "fill / backfill",
+              "relleno",
+              "compacted fill"
+            ],
+            [
+              "bedrock",
+              "roca madre, basamento",
+              "depth to bedrock"
+            ],
+            [
+              "groundwater / water table",
+              "agua subterránea / nivel freático",
+              "the water table"
+            ],
+            [
+              "moisture (water) content",
+              "contenido de humedad",
+              "optimum moisture content"
+            ],
+            [
+              "grain size distribution",
+              "granulometría",
+              "sieve analysis"
+            ],
+            [
+              "Atterberg limits",
+              "límites de Atterberg",
+              "liquid limit, plastic limit"
+            ],
+            [
+              "void ratio / porosity",
+              "relación de vacíos / porosidad",
+              "—"
+            ],
+            [
+              "permeability",
+              "permeabilidad",
+              "—"
+            ]
+          ],
+          "caption": "Suelos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "igneous / sedimentary / metamorphic rock",
+              "roca ígnea / sedimentaria / metamórfica",
+              "sedimentary rocks"
+            ],
+            [
+              "granite, basalt, sandstone, limestone, shale",
+              "granito, basalto, arenisca, caliza, lutita",
+              "—"
+            ],
+            [
+              "mineral / crystal / grain",
+              "mineral / cristal / grano",
+              "—"
+            ],
+            [
+              "hardness (Mohs scale)",
+              "dureza (escala de Mohs)",
+              "—"
+            ],
+            [
+              "cleavage / fracture",
+              "clivaje (exfoliación) / fractura",
+              "—"
+            ],
+            [
+              "weathering / erosion",
+              "meteorización / erosión",
+              "chemical weathering"
+            ],
+            [
+              "layer / bed / stratum (plural: strata)",
+              "capa / estrato",
+              "horizontal strata"
+            ],
+            [
+              "fault / fold / joint",
+              "falla / pliegue / diaclasa",
+              "a normal fault"
+            ],
+            [
+              "strike and dip",
+              "rumbo y buzamiento",
+              "strike N30°E, dip 45°SE"
+            ],
+            [
+              "outcrop",
+              "afloramiento",
+              "a rock outcrop"
+            ],
+            [
+              "plate tectonics",
+              "tectónica de placas",
+              "a subduction zone"
+            ],
+            [
+              "geologic map",
+              "mapa geológico",
+              "—"
+            ],
+            [
+              "stereonet",
+              "red estereográfica",
+              "—"
+            ],
+            [
+              "borehole / core",
+              "perforación / testigo",
+              "borehole logs"
+            ]
+          ],
+          "caption": "Geología"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "bearing capacity",
+              "capacidad portante",
+              "allowable bearing capacity"
+            ],
+            [
+              "settlement",
+              "asentamiento",
+              "differential settlement"
+            ],
+            [
+              "consolidation",
+              "consolidación",
+              "—"
+            ],
+            [
+              "compaction",
+              "compactación",
+              "Proctor compaction test"
+            ],
+            [
+              "shear strength",
+              "resistencia al corte",
+              "cohesion and friction angle"
+            ],
+            [
+              "slope stability",
+              "estabilidad de taludes",
+              "—"
+            ],
+            [
+              "landslide",
+              "deslizamiento",
+              "a landslide-prone area"
+            ],
+            [
+              "retaining wall",
+              "muro de contención",
+              "—"
+            ],
+            [
+              "excavation / trench",
+              "excavación / zanja",
+              "—"
+            ],
+            [
+              "embankment / cut",
+              "terraplén / corte",
+              "cut and fill"
+            ],
+            [
+              "liquefaction",
+              "licuación",
+              "—"
+            ],
+            [
+              "site investigation",
+              "estudio de suelos, exploración",
+              "—"
+            ],
+            [
+              "shallow / deep foundation",
+              "cimentación superficial / profunda",
+              "—"
+            ],
+            [
+              "standard penetration test (SPT)",
+              "ensayo de penetración estándar",
+              "SPT blow count"
+            ]
+          ],
+          "caption": "Geotecnia"
+        },
+        {
+          "type": "quiz",
+          "question": "«Clay» es:",
+          "options": [
+            "arena",
+            "arcilla",
+            "limo",
+            "grava"
+          ],
+          "correct": 1,
+          "explanation": "Suelo fino cohesivo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Settlement» es:",
+          "options": [
+            "asentamiento",
+            "cimentación",
+            "compactación",
+            "talud"
+          ],
+          "correct": 0,
+          "explanation": "Hundimiento del suelo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Strike and dip» es:",
+          "options": [
+            "corte y relleno",
+            "rumbo y buzamiento",
+            "falla y pliegue",
+            "carga y descarga"
+          ],
+          "correct": 1,
+          "explanation": "Orientación de un plano."
+        },
+        {
+          "type": "quiz",
+          "question": "«Water table» es:",
+          "options": [
+            "tabla de aguas",
+            "nivel freático",
+            "tanque de agua",
+            "mesa mojada"
+          ],
+          "correct": 1,
+          "explanation": "Superficie del agua subterránea."
+        },
+        {
+          "type": "quiz",
+          "question": "«Bearing capacity» es:",
+          "options": [
+            "capacidad portante",
+            "capacidad de rodamiento",
+            "rumbo",
+            "capacidad de drenaje"
+          ],
+          "correct": 0,
+          "explanation": "Carga que resiste el suelo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Landslide» es:",
+          "options": [
+            "terraplén",
+            "deslizamiento",
+            "afloramiento",
+            "excavación"
+          ],
+          "correct": 1,
+          "explanation": "Movimiento de ladera."
+        },
+        {
+          "type": "quiz",
+          "question": "«Weathering» es:",
+          "options": [
+            "clima",
+            "meteorización",
+            "erosión eólica solamente",
+            "sedimentación"
+          ],
+          "correct": 1,
+          "explanation": "Alteración de la roca."
+        }
+      ]
+    },
+    {
+      "id": "l06-agua",
+      "title": "Agua: hidrología, hidráulica y saneamiento",
+      "summary": "Cuencas, lluvia, caudales, obras hidráulicas y química del agua.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "watershed / catchment / drainage basin",
+              "cuenca hidrográfica",
+              "the catchment area"
+            ],
+            [
+              "divide / watershed boundary",
+              "divisoria de aguas",
+              "the drainage divide"
+            ],
+            [
+              "outlet / pour point",
+              "punto de salida",
+              "the basin outlet"
+            ],
+            [
+              "stream / river / creek",
+              "cauce / río / quebrada",
+              "the main stream"
+            ],
+            [
+              "tributary",
+              "afluente",
+              "—"
+            ],
+            [
+              "stream order",
+              "orden de cauces",
+              "Strahler stream order"
+            ],
+            [
+              "drainage density",
+              "densidad de drenaje",
+              "—"
+            ],
+            [
+              "upstream / downstream",
+              "aguas arriba / aguas abajo",
+              "2 km downstream"
+            ],
+            [
+              "rainfall / precipitation",
+              "lluvia / precipitación",
+              "annual rainfall"
+            ],
+            [
+              "rainfall intensity",
+              "intensidad de lluvia",
+              "in mm per hour"
+            ],
+            [
+              "runoff",
+              "escorrentía",
+              "surface runoff"
+            ],
+            [
+              "infiltration",
+              "infiltración",
+              "—"
+            ],
+            [
+              "evaporation",
+              "evaporación",
+              "—"
+            ],
+            [
+              "time of concentration",
+              "tiempo de concentración",
+              "—"
+            ],
+            [
+              "return period",
+              "período de retorno",
+              "a 50-year return period"
+            ],
+            [
+              "flood / flooding",
+              "crecida, inundación",
+              "flood-prone areas"
+            ],
+            [
+              "hydrograph",
+              "hidrograma",
+              "—"
+            ],
+            [
+              "peak flow / discharge",
+              "caudal máximo / caudal",
+              "peak discharge"
+            ],
+            [
+              "flow rate",
+              "caudal",
+              "in cubic metres per second"
+            ],
+            [
+              "slope",
+              "pendiente",
+              "channel slope"
+            ]
+          ],
+          "caption": "Hidrología"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "pipe / channel / culvert",
+              "tubería / canal / alcantarilla",
+              "a box culvert"
+            ],
+            [
+              "dam / reservoir",
+              "presa / embalse",
+              "an earth dam"
+            ],
+            [
+              "weir / spillway",
+              "vertedero / aliviadero",
+              "—"
+            ],
+            [
+              "intake",
+              "captación, toma",
+              "the water intake"
+            ],
+            [
+              "pump / valve",
+              "bomba / válvula",
+              "—"
+            ],
+            [
+              "head / head loss",
+              "carga hidráulica / pérdida de carga",
+              "a head of 20 m"
+            ],
+            [
+              "pressure",
+              "presión",
+              "hydrostatic pressure"
+            ],
+            [
+              "velocity",
+              "velocidad",
+              "flow velocity"
+            ],
+            [
+              "open-channel flow / pipe flow",
+              "flujo en canales / en tuberías",
+              "—"
+            ],
+            [
+              "roughness",
+              "rugosidad",
+              "Manning's roughness coefficient"
+            ],
+            [
+              "drainage / sewer",
+              "drenaje / alcantarilla sanitaria",
+              "storm sewer"
+            ],
+            [
+              "water supply",
+              "abastecimiento de agua",
+              "—"
+            ],
+            [
+              "wastewater / sewage",
+              "aguas residuales",
+              "wastewater treatment plant"
+            ],
+            [
+              "treatment",
+              "tratamiento",
+              "—"
+            ],
+            [
+              "drinking (potable) water",
+              "agua potable",
+              "—"
+            ],
+            [
+              "hardness",
+              "dureza (del agua)",
+              "hard water"
+            ],
+            [
+              "hydrogen bond",
+              "puente de hidrógeno",
+              "—"
+            ]
+          ],
+          "caption": "Hidráulica y saneamiento"
+        },
+        {
+          "type": "quiz",
+          "question": "«Watershed» es:",
+          "options": [
+            "cobertizo de agua",
+            "cuenca hidrográfica",
+            "tanque",
+            "divisoria solamente"
+          ],
+          "correct": 1,
+          "explanation": "También catchment o drainage basin."
+        },
+        {
+          "type": "quiz",
+          "question": "«Runoff» es:",
+          "options": [
+            "infiltración",
+            "escorrentía",
+            "evaporación",
+            "caudal base"
+          ],
+          "correct": 1,
+          "explanation": "Agua que escurre."
+        },
+        {
+          "type": "quiz",
+          "question": "«Downstream» es:",
+          "options": [
+            "aguas arriba",
+            "aguas abajo",
+            "en la orilla",
+            "bajo el agua"
+          ],
+          "correct": 1,
+          "explanation": "En el sentido del flujo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Culvert» es:",
+          "options": [
+            "presa",
+            "alcantarilla (bajo una vía)",
+            "vertedero",
+            "bomba"
+          ],
+          "correct": 1,
+          "explanation": "Conducto que cruza bajo un terraplén."
+        },
+        {
+          "type": "quiz",
+          "question": "«Return period» es:",
+          "options": [
+            "período de retorno",
+            "tiempo de concentración",
+            "tiempo de viaje",
+            "duración"
+          ],
+          "correct": 0,
+          "explanation": "Recurrencia de una crecida."
+        },
+        {
+          "type": "quiz",
+          "question": "«Flow rate» es:",
+          "options": [
+            "velocidad",
+            "caudal",
+            "presión",
+            "pendiente"
+          ],
+          "correct": 1,
+          "explanation": "Volumen por tiempo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Tributary» es:",
+          "options": [
+            "afluente",
+            "divisoria",
+            "salida",
+            "embalse"
+          ],
+          "correct": 0,
+          "explanation": "Cauce que desemboca en otro."
+        }
+      ]
+    },
+    {
+      "id": "l07-topografia",
+      "title": "Topografía, geomática y SIG",
+      "summary": "Levantamientos, equipos, coordenadas, modelos del terreno, drones y los términos de ArcGIS y Civil 3D.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "survey / surveying",
+              "levantamiento / topografía",
+              "a topographic survey"
+            ],
+            [
+              "surveyor",
+              "topógrafo",
+              "—"
+            ],
+            [
+              "total station",
+              "estación total",
+              "set up the total station"
+            ],
+            [
+              "level / levelling",
+              "nivel / nivelación",
+              "differential levelling"
+            ],
+            [
+              "benchmark (BM)",
+              "punto de cota conocida",
+              "—"
+            ],
+            [
+              "control point",
+              "punto de control",
+              "ground control points (GCPs)"
+            ],
+            [
+              "elevation / height",
+              "cota, elevación",
+              "an elevation of 2,540 m"
+            ],
+            [
+              "contour line",
+              "curva de nivel",
+              "contour interval of 20 m"
+            ],
+            [
+              "slope / gradient",
+              "pendiente",
+              "a slope map"
+            ],
+            [
+              "bearing / azimuth",
+              "rumbo / azimut",
+              "an azimuth of 121°"
+            ],
+            [
+              "northing / easting",
+              "coordenada norte / este",
+              "—"
+            ],
+            [
+              "coordinates / grid",
+              "coordenadas / cuadrícula",
+              "UTM coordinates"
+            ],
+            [
+              "datum / projection",
+              "datum / proyección",
+              "WGS84 datum"
+            ],
+            [
+              "scale",
+              "escala",
+              "a 1:50,000 map"
+            ],
+            [
+              "topographic map / sheet",
+              "carta topográfica / hoja",
+              "—"
+            ],
+            [
+              "traverse",
+              "poligonal",
+              "a closed traverse"
+            ],
+            [
+              "boundary",
+              "límite, lindero, contorno",
+              "the property boundary"
+            ],
+            [
+              "cross-section / profile",
+              "sección transversal / perfil",
+              "longitudinal profile"
+            ],
+            [
+              "cut and fill volumes",
+              "volúmenes de corte y relleno",
+              "—"
+            ],
+            [
+              "alignment",
+              "alineamiento",
+              "road alignment"
+            ]
+          ],
+          "caption": "Topografía"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "GIS (geographic information system)",
+              "SIG",
+              "—"
+            ],
+            [
+              "layer",
+              "capa",
+              "add a layer"
+            ],
+            [
+              "raster / vector",
+              "ráster / vector",
+              "—"
+            ],
+            [
+              "shapefile / feature class",
+              "shapefile / clase de entidad",
+              "—"
+            ],
+            [
+              "attribute table / field",
+              "tabla de atributos / campo",
+              "add a field"
+            ],
+            [
+              "DEM (digital elevation model)",
+              "MDE",
+              "a 30 m DEM"
+            ],
+            [
+              "TIN",
+              "red irregular de triángulos",
+              "a TIN surface"
+            ],
+            [
+              "cell size / resolution",
+              "tamaño de celda / resolución",
+              "—"
+            ],
+            [
+              "flow direction / flow accumulation",
+              "dirección / acumulación de flujo",
+              "—"
+            ],
+            [
+              "fill / sink",
+              "relleno / sumidero",
+              "fill the sinks"
+            ],
+            [
+              "georeference",
+              "georreferenciar",
+              "—"
+            ],
+            [
+              "clip / buffer / merge",
+              "recortar / área de influencia / unir",
+              "—"
+            ],
+            [
+              "remote sensing",
+              "teledetección",
+              "—"
+            ],
+            [
+              "drone / UAV / UAS",
+              "dron",
+              "a UAV survey"
+            ],
+            [
+              "photogrammetry",
+              "fotogrametría",
+              "—"
+            ],
+            [
+              "overlap (front / side)",
+              "traslape (frontal / lateral)",
+              "80 % front overlap"
+            ],
+            [
+              "ground sampling distance (GSD)",
+              "tamaño del píxel en el terreno",
+              "—"
+            ],
+            [
+              "orthophoto / orthomosaic",
+              "ortofoto / ortomosaico",
+              "—"
+            ],
+            [
+              "point cloud",
+              "nube de puntos",
+              "—"
+            ],
+            [
+              "breakline",
+              "línea de quiebre",
+              "—"
+            ],
+            [
+              "land use / land cover",
+              "uso del suelo / cobertura",
+              "—"
+            ]
+          ],
+          "caption": "SIG, modelos y drones"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Los programas están en inglés: reconocer estas palabras en los menús de ArcMap y Civil 3D (Add Data, Clip, Fill, Flow Direction, Surface, Breaklines, Boundary, Contours, Layout) es ya entender la mitad de lo que hace cada herramienta."
+        },
+        {
+          "type": "quiz",
+          "question": "«Contour line» es:",
+          "options": [
+            "línea de contorno del lote",
+            "curva de nivel",
+            "línea de quiebre",
+            "eje"
+          ],
+          "correct": 1,
+          "explanation": "Une puntos de igual cota."
+        },
+        {
+          "type": "quiz",
+          "question": "«Survey» es:",
+          "options": [
+            "encuesta o levantamiento",
+            "supervisión",
+            "servicio",
+            "superficie"
+          ],
+          "correct": 0,
+          "explanation": "En topografía, levantamiento."
+        },
+        {
+          "type": "quiz",
+          "question": "«DEM» es:",
+          "options": [
+            "modelo digital de elevación",
+            "diseño de mezcla",
+            "datum",
+            "dron"
+          ],
+          "correct": 0,
+          "explanation": "Digital elevation model."
+        },
+        {
+          "type": "quiz",
+          "question": "«Overlap» en un vuelo es:",
+          "options": [
+            "altura",
+            "traslape",
+            "velocidad",
+            "huella"
+          ],
+          "correct": 1,
+          "explanation": "Porción común entre fotos."
+        },
+        {
+          "type": "quiz",
+          "question": "«Layer» en un SIG es:",
+          "options": [
+            "capa",
+            "tabla",
+            "celda",
+            "proyección"
+          ],
+          "correct": 0,
+          "explanation": "Conjunto de datos de un tema."
+        },
+        {
+          "type": "quiz",
+          "question": "«Traverse» es:",
+          "options": [
+            "poligonal",
+            "nivelación",
+            "travesaño",
+            "perfil"
+          ],
+          "correct": 0,
+          "explanation": "Serie de lados y ángulos."
+        },
+        {
+          "type": "quiz",
+          "question": "«Benchmark» es:",
+          "options": [
+            "banco de trabajo",
+            "punto de cota conocida",
+            "marca de agua",
+            "estación total"
+          ],
+          "correct": 1,
+          "explanation": "Referencia altimétrica."
+        }
+      ]
+    },
+    {
+      "id": "l08-obra",
+      "title": "La obra: construcción, gestión y seguridad",
+      "summary": "Procesos, equipos, personas y documentos de un proyecto.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "construction site / job site",
+              "obra",
+              "on site"
+            ],
+            [
+              "formwork / shuttering",
+              "encofrado",
+              "remove the formwork"
+            ],
+            [
+              "scaffolding",
+              "andamio",
+              "—"
+            ],
+            [
+              "to pour / cast / place concrete",
+              "verter, colar el hormigón",
+              "The slab was poured on Monday."
+            ],
+            [
+              "to vibrate / to cure",
+              "vibrar / curar",
+              "—"
+            ],
+            [
+              "to excavate / to backfill / to compact",
+              "excavar / rellenar / compactar",
+              "—"
+            ],
+            [
+              "earthworks",
+              "movimiento de tierras",
+              "—"
+            ],
+            [
+              "crane / excavator / loader / roller",
+              "grúa / excavadora / cargadora / rodillo",
+              "a tower crane"
+            ],
+            [
+              "concrete mixer / pump",
+              "mezcladora / bomba de hormigón",
+              "—"
+            ],
+            [
+              "to lay / to install / to assemble",
+              "colocar / instalar / montar",
+              "lay the pipes"
+            ],
+            [
+              "finishes",
+              "acabados",
+              "—"
+            ],
+            [
+              "demolition",
+              "demolición",
+              "—"
+            ],
+            [
+              "maintenance / repair / retrofit",
+              "mantenimiento / reparación / reforzamiento",
+              "seismic retrofit"
+            ]
+          ],
+          "caption": "Procesos y equipos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "owner / client",
+              "dueño / cliente",
+              "—"
+            ],
+            [
+              "contractor / subcontractor",
+              "contratista / subcontratista",
+              "the main contractor"
+            ],
+            [
+              "site engineer / supervisor / foreman",
+              "residente de obra / fiscalizador / maestro mayor",
+              "—"
+            ],
+            [
+              "designer / consultant",
+              "diseñador / consultor",
+              "—"
+            ],
+            [
+              "bid / tender",
+              "oferta / licitación",
+              "submit a bid"
+            ],
+            [
+              "contract / specifications",
+              "contrato / especificaciones",
+              "technical specifications"
+            ],
+            [
+              "bill of quantities (BOQ)",
+              "presupuesto por rubros, tabla de cantidades",
+              "—"
+            ],
+            [
+              "budget / cost estimate",
+              "presupuesto / estimación de costos",
+              "—"
+            ],
+            [
+              "schedule / deadline / milestone",
+              "cronograma / fecha límite / hito",
+              "behind schedule"
+            ],
+            [
+              "delay",
+              "retraso",
+              "a two-week delay"
+            ],
+            [
+              "quality control",
+              "control de calidad",
+              "—"
+            ],
+            [
+              "building code / standard",
+              "código de construcción / norma",
+              "according to the code"
+            ],
+            [
+              "permit / approval",
+              "permiso / aprobación",
+              "a building permit"
+            ],
+            [
+              "feasibility study",
+              "estudio de factibilidad",
+              "—"
+            ],
+            [
+              "environmental impact assessment",
+              "evaluación de impacto ambiental",
+              "—"
+            ]
+          ],
+          "caption": "Personas y documentos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "safety / hazard / risk",
+              "seguridad / peligro / riesgo",
+              "safety first"
+            ],
+            [
+              "personal protective equipment (PPE)",
+              "equipo de protección personal",
+              "—"
+            ],
+            [
+              "helmet (hard hat), gloves, boots, harness, goggles",
+              "casco, guantes, botas, arnés, gafas",
+              "Hard hats must be worn."
+            ],
+            [
+              "warning / danger / caution",
+              "advertencia / peligro / precaución",
+              "—"
+            ],
+            [
+              "accident / injury",
+              "accidente / lesión",
+              "—"
+            ],
+            [
+              "keep out / no entry",
+              "no pasar",
+              "—"
+            ]
+          ],
+          "caption": "Seguridad"
+        },
+        {
+          "type": "quiz",
+          "question": "«Formwork» es:",
+          "options": [
+            "armadura",
+            "encofrado",
+            "andamio",
+            "acabado"
+          ],
+          "correct": 1,
+          "explanation": "Molde del hormigón."
+        },
+        {
+          "type": "quiz",
+          "question": "«To pour concrete» es:",
+          "options": [
+            "curar el hormigón",
+            "verter el hormigón",
+            "mezclar el hormigón",
+            "romper el hormigón"
+          ],
+          "correct": 1,
+          "explanation": "Colar."
+        },
+        {
+          "type": "quiz",
+          "question": "«Contractor» es:",
+          "options": [
+            "contrato",
+            "contratista",
+            "cliente",
+            "consultor"
+          ],
+          "correct": 1,
+          "explanation": "Quien ejecuta la obra."
+        },
+        {
+          "type": "quiz",
+          "question": "«Behind schedule» significa:",
+          "options": [
+            "adelantado",
+            "atrasado",
+            "a tiempo",
+            "sin cronograma"
+          ],
+          "correct": 1,
+          "explanation": "Con retraso."
+        },
+        {
+          "type": "quiz",
+          "question": "«PPE» es:",
+          "options": [
+            "plan de obra",
+            "equipo de protección personal",
+            "permiso",
+            "presupuesto"
+          ],
+          "correct": 1,
+          "explanation": "Personal protective equipment."
+        },
+        {
+          "type": "quiz",
+          "question": "«Tender» en construcción es:",
+          "options": [
+            "tierno",
+            "licitación",
+            "entrega",
+            "tensor"
+          ],
+          "correct": 1,
+          "explanation": "Proceso de ofertas."
+        }
+      ]
+    },
+    {
+      "id": "l09-redaccion",
+      "title": "Leer y escribir en ingeniería: artículos, informes y correos",
+      "summary": "La estructura de un artículo, frases hechas para describir métodos, figuras y resultados, y el correo profesional.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Sección",
+            "Qué contiene",
+            "Tiempo verbal típico"
+          ],
+          "rows": [
+            [
+              "Abstract",
+              "Resumen: problema, método, resultado principal, conclusión",
+              "Presente y pasado"
+            ],
+            [
+              "Introduction",
+              "Contexto, antecedentes, vacío de conocimiento y objetivo",
+              "Presente y present perfect"
+            ],
+            [
+              "Methods / Methodology",
+              "Qué se hizo y cómo",
+              "Pasado, en pasiva"
+            ],
+            [
+              "Results",
+              "Lo que se encontró, con tablas y figuras",
+              "Pasado; presente para describir figuras"
+            ],
+            [
+              "Discussion",
+              "Qué significan los resultados, limitaciones",
+              "Presente, con matices (may, suggest)"
+            ],
+            [
+              "Conclusions",
+              "Hallazgos principales y trabajo futuro",
+              "Presente y present perfect"
+            ],
+            [
+              "References",
+              "Fuentes citadas",
+              "—"
+            ]
+          ],
+          "caption": "Estructura de un artículo o informe técnico"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Para leer rápido un artículo: primero el **título** y el **abstract**; luego las **figuras y tablas** con sus pies; después las **conclusiones**. Solo si te sirve, lee el resto. Con el vocabulario de esta unidad, esa lectura ya es posible.",
+          "title": "Cómo leer un artículo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Para…",
+            "Frases"
+          ],
+          "rows": [
+            [
+              "Presentar el objetivo",
+              "The aim of this study is to… / This paper presents… / This report describes…"
+            ],
+            [
+              "Describir el método",
+              "Samples were collected from… / The tests were carried out according to… / The model was calibrated using…"
+            ],
+            [
+              "Referirse a figuras y tablas",
+              "As shown in Figure 2,… / Table 3 summarizes… / Figure 4 illustrates the relationship between…"
+            ],
+            [
+              "Describir tendencias",
+              "increases / decreases / remains constant / rises sharply / drops gradually / reaches a peak / levels off / fluctuates"
+            ],
+            [
+              "Comparar",
+              "X is 20 % higher than Y / twice as large as / slightly lower than / in good agreement with"
+            ],
+            [
+              "Expresar causa y efecto",
+              "This results in… / leads to… / is caused by… / is due to…"
+            ],
+            [
+              "Matizar",
+              "The results suggest that… / This may be attributed to… / It appears that…"
+            ],
+            [
+              "Concluir",
+              "It can be concluded that… / The findings indicate that… / Further research is needed to…"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Verbo de tendencia",
+            "Español",
+            "Sustantivo",
+            "Adverbios"
+          ],
+          "rows": [
+            [
+              "increase, rise, grow",
+              "aumentar, subir",
+              "an increase, a rise",
+              "sharply (bruscamente), steadily (de forma constante)"
+            ],
+            [
+              "decrease, fall, drop, decline",
+              "disminuir, bajar",
+              "a decrease, a fall",
+              "gradually (gradualmente), slightly (ligeramente)"
+            ],
+            [
+              "remain constant, level off",
+              "mantenerse, estabilizarse",
+              "—",
+              "significantly (considerablemente)"
+            ],
+            [
+              "peak",
+              "alcanzar el máximo",
+              "a peak",
+              "rapidly, slowly"
+            ]
+          ],
+          "caption": "Describir un gráfico"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "«This study evaluates the effect of curing time on the compressive strength of concrete. Thirty cylindrical specimens were cast and tested at 7, 14 and 28 days. The results show that strength increased by 35 % between 7 and 28 days. It is concluded that adequate curing is essential to reach the design strength.»\n\nTraducción: «Este estudio evalúa el efecto del tiempo de curado en la resistencia a compresión del hormigón. Se fabricaron treinta probetas cilíndricas y se ensayaron a los 7, 14 y 28 días. Los resultados muestran que la resistencia aumentó un 35 % entre los 7 y los 28 días. Se concluye que un curado adecuado es esencial para alcanzar la resistencia de diseño.»",
+          "title": "Un abstract de ejemplo"
+        },
+        {
+          "type": "heading",
+          "text": "Correo profesional"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parte",
+            "Formal",
+            "Menos formal"
+          ],
+          "rows": [
+            [
+              "Saludo",
+              "Dear Mr. / Ms. / Dr. Smith,  —  Dear Sir or Madam,",
+              "Hello John,  /  Hi John,"
+            ],
+            [
+              "Motivo",
+              "I am writing to enquire about… / I am writing regarding…",
+              "I'm writing about…"
+            ],
+            [
+              "Adjuntos",
+              "Please find attached the report.",
+              "I've attached the report."
+            ],
+            [
+              "Pedir algo",
+              "Could you please send me…? / I would be grateful if you could…",
+              "Can you send me…?"
+            ],
+            [
+              "Dar seguimiento",
+              "I am following up on my previous email.",
+              "Just checking in about…"
+            ],
+            [
+              "Disculparse",
+              "I apologise for the delay.",
+              "Sorry for the late reply."
+            ],
+            [
+              "Cierre",
+              "I look forward to hearing from you.",
+              "Talk soon."
+            ],
+            [
+              "Despedida",
+              "Yours sincerely, / Kind regards,",
+              "Best, / Thanks,"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Tras «I look forward to» va **-ing**: «I look forward to **hearing** from you» (el «to» aquí es preposición). Es el error más frecuente en correos.",
+          "title": "Look forward to + -ing"
+        },
+        {
+          "type": "quiz",
+          "question": "La sección que explica qué se hizo y cómo es:",
+          "options": [
+            "Abstract",
+            "Methods",
+            "Discussion",
+            "References"
+          ],
+          "correct": 1,
+          "explanation": "Metodología."
+        },
+        {
+          "type": "quiz",
+          "question": "«As shown in Figure 2» significa:",
+          "options": [
+            "Como se muestra en la figura 2",
+            "Mostrar la figura 2",
+            "La figura 2 demostró",
+            "Según figura"
+          ],
+          "correct": 0,
+          "explanation": "Fórmula habitual."
+        },
+        {
+          "type": "quiz",
+          "question": "«The load rose sharply» significa que la carga:",
+          "options": [
+            "bajó poco a poco",
+            "subió bruscamente",
+            "se mantuvo",
+            "osciló"
+          ],
+          "correct": 1,
+          "explanation": "Rise sharply."
+        },
+        {
+          "type": "quiz",
+          "question": "«Levels off» significa:",
+          "options": [
+            "sube de nivel",
+            "se estabiliza",
+            "se nivela el terreno",
+            "cae"
+          ],
+          "correct": 1,
+          "explanation": "Deja de cambiar."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "I look forward to hear from you",
+            "I look forward to hearing from you",
+            "I look forward hearing you",
+            "I am look forward to hear"
+          ],
+          "correct": 1,
+          "explanation": "To + -ing."
+        },
+        {
+          "type": "quiz",
+          "question": "«Please find attached» se usa para:",
+          "options": [
+            "Saludar",
+            "Indicar un archivo adjunto",
+            "Despedirse",
+            "Pedir disculpas"
+          ],
+          "correct": 1,
+          "explanation": "Adjuntos."
+        },
+        {
+          "type": "quiz",
+          "question": "El método de un artículo se escribe sobre todo en:",
+          "options": [
+            "Futuro activo",
+            "Pasado en voz pasiva",
+            "Imperativo",
+            "Presente continuo"
+          ],
+          "correct": 1,
+          "explanation": "Samples were collected…"
+        }
+      ]
+    },
+    {
+      "id": "l10-ciencias-basicas",
+      "title": "Matemáticas, física y química en inglés",
+      "summary": "El vocabulario de las materias que ya estudias: cálculo, álgebra lineal, física y química.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "function / variable / constant",
+              "función / variable / constante",
+              "a function of x"
+            ],
+            [
+              "domain / range",
+              "dominio / rango",
+              "—"
+            ],
+            [
+              "graph / plot / curve",
+              "gráfica / gráfico / curva",
+              "plot the function"
+            ],
+            [
+              "slope / intercept",
+              "pendiente / corte con el eje",
+              "the y-intercept"
+            ],
+            [
+              "limit",
+              "límite",
+              "the limit as x approaches zero"
+            ],
+            [
+              "continuous / discontinuous",
+              "continua / discontinua",
+              "—"
+            ],
+            [
+              "derivative / to differentiate",
+              "derivada / derivar",
+              "the first derivative"
+            ],
+            [
+              "chain rule / product rule",
+              "regla de la cadena / del producto",
+              "—"
+            ],
+            [
+              "implicit differentiation",
+              "derivación implícita",
+              "—"
+            ],
+            [
+              "rate of change / related rates",
+              "tasa de variación / tasas relacionadas",
+              "—"
+            ],
+            [
+              "maximum / minimum (plural: maxima / minima)",
+              "máximo / mínimo",
+              "a local maximum"
+            ],
+            [
+              "critical point / inflection point",
+              "punto crítico / de inflexión",
+              "—"
+            ],
+            [
+              "increasing / decreasing",
+              "creciente / decreciente",
+              "—"
+            ],
+            [
+              "concave up / concave down",
+              "cóncava hacia arriba / hacia abajo",
+              "—"
+            ],
+            [
+              "asymptote",
+              "asíntota",
+              "a vertical asymptote"
+            ],
+            [
+              "integral / to integrate",
+              "integral / integrar",
+              "—"
+            ],
+            [
+              "tangent line",
+              "recta tangente",
+              "—"
+            ]
+          ],
+          "caption": "Cálculo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "matrix (plural: matrices)",
+              "matriz",
+              "a 3 by 3 matrix"
+            ],
+            [
+              "row / column",
+              "fila / columna",
+              "—"
+            ],
+            [
+              "determinant / inverse / transpose",
+              "determinante / inversa / transpuesta",
+              "—"
+            ],
+            [
+              "system of linear equations",
+              "sistema de ecuaciones lineales",
+              "—"
+            ],
+            [
+              "Gaussian elimination",
+              "eliminación gaussiana",
+              "—"
+            ],
+            [
+              "vector / scalar",
+              "vector / escalar",
+              "—"
+            ],
+            [
+              "dot product / cross product",
+              "producto punto / producto cruz",
+              "—"
+            ],
+            [
+              "vector space / subspace",
+              "espacio vectorial / subespacio",
+              "—"
+            ],
+            [
+              "basis / dimension / span",
+              "base / dimensión / espacio generado",
+              "—"
+            ],
+            [
+              "linearly independent",
+              "linealmente independiente",
+              "—"
+            ],
+            [
+              "linear transformation",
+              "transformación lineal",
+              "—"
+            ],
+            [
+              "kernel (null space) / image (range)",
+              "núcleo / imagen",
+              "—"
+            ],
+            [
+              "eigenvalue / eigenvector",
+              "valor propio / vector propio",
+              "—"
+            ],
+            [
+              "one-to-one / onto",
+              "inyectiva / sobreyectiva",
+              "—"
+            ]
+          ],
+          "caption": "Álgebra lineal"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español",
+            "Ejemplo de uso"
+          ],
+          "rows": [
+            [
+              "force / mass / weight",
+              "fuerza / masa / peso",
+              "—"
+            ],
+            [
+              "velocity / speed / acceleration",
+              "velocidad (vector) / rapidez / aceleración",
+              "—"
+            ],
+            [
+              "displacement / distance",
+              "desplazamiento / distancia",
+              "—"
+            ],
+            [
+              "momentum / impulse",
+              "cantidad de movimiento / impulso",
+              "—"
+            ],
+            [
+              "moment / torque",
+              "momento / par",
+              "—"
+            ],
+            [
+              "statics / dynamics / kinematics",
+              "estática / dinámica / cinemática",
+              "—"
+            ],
+            [
+              "rigid body / particle",
+              "cuerpo rígido / partícula",
+              "—"
+            ],
+            [
+              "atom / molecule / ion",
+              "átomo / molécula / ion",
+              "—"
+            ],
+            [
+              "electron / proton / neutron",
+              "electrón / protón / neutrón",
+              "—"
+            ],
+            [
+              "periodic table / element",
+              "tabla periódica / elemento",
+              "—"
+            ],
+            [
+              "chemical bond (ionic, covalent, metallic)",
+              "enlace químico",
+              "a covalent bond"
+            ],
+            [
+              "electronegativity",
+              "electronegatividad",
+              "—"
+            ],
+            [
+              "solution / solvent / solute",
+              "disolución / disolvente / soluto",
+              "—"
+            ],
+            [
+              "acid / base",
+              "ácido / base",
+              "—"
+            ]
+          ],
+          "caption": "Física y química"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Speed** es la rapidez (escalar) y **velocity** la velocidad (vector). **Weight** es el peso (una fuerza, en newtons) y **mass** la masa (en kilogramos). **Momentum** es cantidad de movimiento; **moment** es momento de una fuerza: no se confunden en inglés como a veces en español.",
+          "title": "Pares que no son sinónimos"
+        },
+        {
+          "type": "quiz",
+          "question": "«Derivative» es:",
+          "options": [
+            "derivada",
+            "integral",
+            "límite",
+            "pendiente"
+          ],
+          "correct": 0,
+          "explanation": "Cálculo diferencial."
+        },
+        {
+          "type": "quiz",
+          "question": "«Eigenvalue» es:",
+          "options": [
+            "determinante",
+            "valor propio",
+            "matriz inversa",
+            "núcleo"
+          ],
+          "correct": 1,
+          "explanation": "Del alemán eigen, propio."
+        },
+        {
+          "type": "quiz",
+          "question": "«Slope» de una recta es su:",
+          "options": [
+            "corte con el eje",
+            "pendiente",
+            "longitud",
+            "dominio"
+          ],
+          "correct": 1,
+          "explanation": "Inclinación."
+        },
+        {
+          "type": "quiz",
+          "question": "«Dot product» es:",
+          "options": [
+            "producto cruz",
+            "producto punto",
+            "producto de matrices",
+            "determinante"
+          ],
+          "correct": 1,
+          "explanation": "Producto escalar."
+        },
+        {
+          "type": "quiz",
+          "question": "«Momentum» es:",
+          "options": [
+            "momento de una fuerza",
+            "cantidad de movimiento",
+            "instante",
+            "impulso angular siempre"
+          ],
+          "correct": 1,
+          "explanation": "Masa por velocidad."
+        },
+        {
+          "type": "quiz",
+          "question": "«Rate of change» es:",
+          "options": [
+            "tasa de variación",
+            "cambio de tasa de interés",
+            "velocidad de la luz",
+            "rango"
+          ],
+          "correct": 0,
+          "explanation": "Derivada respecto al tiempo."
+        },
+        {
+          "type": "quiz",
+          "question": "«The limit as x approaches zero» significa:",
+          "options": [
+            "El límite cuando x tiende a cero",
+            "El límite de cero",
+            "x es el límite",
+            "El límite se acerca"
+          ],
+          "correct": 0,
+          "explanation": "Approach = acercarse, tender a."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Práctica: traducción y lectura técnica",
+      "summary": "Oraciones técnicas en ambos sentidos y un texto para comprender.",
+      "minutes": 35,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Escribe tu respuesta **en papel o dila en voz alta** antes de ver la solución. Traducir en ambos sentidos es el mejor ejercicio para fijar la gramática.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Dimensiones",
+          "level": 2,
+          "statement": "Traduce al inglés: «La viga tiene 6 m de luz, 300 mm de ancho y 500 mm de peralte.»",
+          "steps": [
+            "Span = luz; depth = peralte. También: «The beam is 300 mm wide and 500 mm deep.»"
+          ],
+          "answer": "**The beam has a span of 6 m, a width of 300 mm and a depth of 500 mm.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Proceso en pasiva",
+          "level": 2,
+          "statement": "Traduce al inglés: «El hormigón se vierte en el encofrado, se vibra y se cura durante siete días.»",
+          "steps": [
+            "Present simple pasivo; el auxiliar is no se repite."
+          ],
+          "answer": "**The concrete is poured into the formwork, vibrated and cured for seven days.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Cargas",
+          "level": 3,
+          "statement": "Traduce al inglés: «La losa transfiere la carga muerta y la carga viva a las vigas, que la transmiten a las columnas.»",
+          "steps": [
+            "Relativa con which; verbos en present simple."
+          ],
+          "answer": "**The slab transfers the dead load and the live load to the beams, which transmit it to the columns.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Suelos",
+          "level": 3,
+          "statement": "Traduce al inglés: «El nivel freático está a dos metros de profundidad; por lo tanto, se necesita un sistema de drenaje.»",
+          "steps": [
+            "Water table; at a depth of; therefore; pasiva is required."
+          ],
+          "answer": "**The water table is at a depth of two metres; therefore, a drainage system is required.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Hidrología",
+          "level": 3,
+          "statement": "Traduce al inglés: «La cuenca tiene un área de 48 km² y un tiempo de concentración de dos horas y media.»",
+          "steps": [
+            "Catchment o watershed; «two and a half hours»."
+          ],
+          "answer": "**The catchment has an area of 48 square kilometres and a time of concentration of two and a half hours.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Topografía",
+          "level": 2,
+          "statement": "Traduce al inglés: «Se levantó el terreno con un dron y se generaron curvas de nivel cada metro.»",
+          "steps": [
+            "Pasiva en pasado; «one-metre intervals» (singular con guion)."
+          ],
+          "answer": "**The site was surveyed with a drone, and contour lines were generated at one-metre intervals.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Resultado de un ensayo",
+          "level": 3,
+          "statement": "Traduce al inglés: «La resistencia a compresión aumentó un 20 % cuando se redujo la relación agua–cemento.»",
+          "steps": [
+            "Increase by + porcentaje; pasiva was reduced."
+          ],
+          "answer": "**The compressive strength increased by 20 % when the water–cement ratio was reduced.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Del inglés al español",
+          "level": 2,
+          "statement": "Traduce al español: «The retaining wall failed due to poor drainage. If weep holes had been installed, the water pressure behind the wall would have been much lower.»",
+          "steps": [
+            "«failed due to poor drainage»: falló por un drenaje deficiente.",
+            "«weep holes»: mechinales o barbacanas (orificios de drenaje del muro).",
+            "Tercer condicional en pasiva: «if… had been installed, … would have been…»."
+          ],
+          "answer": "**«El muro de contención falló por un drenaje deficiente. Si se hubieran instalado mechinales, la presión del agua detrás del muro habría sido mucho menor.»**"
+        },
+        {
+          "type": "exercise",
+          "title": "Comprensión de lectura",
+          "level": 3,
+          "statement": "Lee y responde en español. «A simply supported reinforced concrete beam with a span of 5 m was tested under a point load applied at midspan. The first cracks appeared at a load of 18 kN. The beam failed in shear at 62 kN, which was 15 % lower than the predicted capacity. This difference may be attributed to the low stirrup ratio.»\na) ¿Qué tipo de viga y de carga se usó? b) ¿Cuándo aparecieron las primeras fisuras? c) ¿Cómo falló y con qué carga? d) ¿Qué explicación se propone?",
+          "steps": [
+            "a) «simply supported reinforced concrete beam… point load applied at midspan»: viga de hormigón armado simplemente apoyada, de 5 m de luz, con carga puntual en el centro de la luz.",
+            "b) «first cracks appeared at a load of 18 kN»: con 18 kN.",
+            "c) «failed in shear at 62 kN»: falló por corte con 62 kN, un 15 % menos que la capacidad prevista.",
+            "d) «may be attributed to the low stirrup ratio»: podría deberse a la baja cuantía de estribos (afirmación matizada con may)."
+          ],
+          "answer": "**a) Viga de hormigón armado simplemente apoyada (5 m) con carga puntual en el centro. b) A los 18 kN. c) Por corte, a 62 kN (15 % menos de lo previsto). d) Posiblemente por la baja cuantía de estribos.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Leer una fórmula en voz alta",
+          "level": 2,
+          "statement": "Escribe cómo se lee en inglés: M = wL²/8 y τ = VQ/(Ib).",
+          "steps": [
+            "Usa «equals», «over» y «squared»."
+          ],
+          "answer": "**«M equals w L squared over eight.»  «Tau equals V Q over I b.»**"
+        },
+        {
+          "type": "exercise",
+          "title": "Escribir un correo",
+          "level": 3,
+          "statement": "Redacta en inglés un correo breve y formal al Dr. Miller: le envías adjunto el informe de laboratorio, te disculpas por la demora y le pides que te confirme la fecha de la reunión.",
+          "steps": [
+            "Saludo: «Dear Dr. Miller,».",
+            "Adjunto: «Please find attached the laboratory report.»",
+            "Disculpa: «I apologise for the delay.»",
+            "Petición: «Could you please confirm the date of the meeting?»",
+            "Cierre: «I look forward to hearing from you. Kind regards,» y tu nombre."
+          ],
+          "answer": "**Dear Dr. Miller,\nPlease find attached the laboratory report. I apologise for the delay in sending it. Could you please confirm the date of the meeting?\nI look forward to hearing from you.\nKind regards,\n(tu nombre)**"
+        }
+      ]
+    }
+  ]
+}

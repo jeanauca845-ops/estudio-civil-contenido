@@ -1,0 +1,2090 @@
+{
+  "id": "q00-materia",
+  "title": "La materia: propiedades, estados y energía",
+  "description": "Inicio de la materia: definiciones, clasificación de propiedades (y por qué el calor no es una), estados, temperatura, calor, clasificación de la materia y conversiones",
+  "lessons": [
+    {
+      "id": "l01-conceptos",
+      "title": "Química, materia, masa y volumen",
+      "summary": "Las definiciones exactas con que empieza la materia.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Las cuatro definiciones base"
+        },
+        {
+          "type": "text",
+          "text": "La materia empieza con definiciones cortas que suelen preguntarse tal cual. Conviene saberlas con las mismas palabras del apunte."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Concepto",
+            "Definición",
+            "Unidades"
+          ],
+          "rows": [
+            [
+              "Química",
+              "Ciencia que estudia la materia en cuanto a su concepto, composición, clasificación y transformación",
+              "—"
+            ],
+            [
+              "Materia",
+              "Todo aquello que tiene masa y ocupa un lugar en el espacio",
+              "—"
+            ],
+            [
+              "Masa",
+              "Cantidad de materia que posee un cuerpo",
+              "g, kg, oz"
+            ],
+            [
+              "Volumen",
+              "Espacio ocupado por un cuerpo",
+              "L, mL, m³"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La **masa** es la cantidad de materia y no cambia si el cuerpo va a la Luna. El **peso** es la fuerza con que la gravedad atrae esa masa (P = m · g) y sí cambia. Por eso la masa se mide en kg y el peso en newtons.",
+          "title": "Masa no es lo mismo que peso"
+        },
+        {
+          "type": "heading",
+          "text": "¿Qué es materia y qué no?"
+        },
+        {
+          "type": "text",
+          "text": "Para decidir si algo es materia, pregúntate: ¿tiene masa? ¿ocupa espacio? Si ambas respuestas son sí, es materia."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Ejemplo",
+            "¿Es materia?",
+            "Por qué"
+          ],
+          "rows": [
+            [
+              "El aire",
+              "Sí",
+              "Tiene masa (un globo inflado pesa más) y ocupa espacio"
+            ],
+            [
+              "El agua, una roca, el acero",
+              "Sí",
+              "Masa y volumen"
+            ],
+            [
+              "La luz",
+              "No",
+              "Es energía (radiación electromagnética), no tiene masa en reposo"
+            ],
+            [
+              "El calor",
+              "No",
+              "Es energía en tránsito"
+            ],
+            [
+              "El sonido",
+              "No",
+              "Es una onda que viaja a través de la materia, no es materia en sí"
+            ],
+            [
+              "Un pensamiento o el tiempo",
+              "No",
+              "No tienen masa ni ocupan espacio"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Un error frecuente es decir que el aire no es materia porque no se ve. Lo que define la materia es tener masa y ocupar espacio, no que sea visible."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la definición de materia?",
+          "options": [
+            "Todo lo que se puede ver y tocar",
+            "Todo aquello que tiene masa y ocupa un lugar en el espacio",
+            "Todo lo que tiene energía",
+            "Todo lo que está formado por moléculas"
+          ],
+          "correct": 1,
+          "explanation": "Materia: **tiene masa y ocupa espacio**. No hace falta verla (el aire es materia)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál de estos NO es materia?",
+          "options": [
+            "El aire",
+            "El vapor de agua",
+            "La luz",
+            "El polvo"
+          ],
+          "correct": 2,
+          "explanation": "La **luz** es energía. Aire, vapor y polvo tienen masa."
+        },
+        {
+          "type": "quiz",
+          "question": "La química estudia la materia en cuanto a su…",
+          "options": [
+            "Movimiento y fuerzas",
+            "Concepto, composición, clasificación y transformación",
+            "Forma y tamaño solamente",
+            "Origen en el universo"
+          ],
+          "correct": 1,
+          "explanation": "Definición del apunte: concepto, composición, clasificación y **transformación**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un astronauta lleva 10 kg de herramientas a la Luna. ¿Qué cambia?",
+          "options": [
+            "La masa",
+            "El peso",
+            "Ambos",
+            "Ninguno"
+          ],
+          "correct": 1,
+          "explanation": "La masa sigue siendo 10 kg; el **peso** baja porque la gravedad lunar es menor."
+        },
+        {
+          "type": "quiz",
+          "question": "¿En qué unidad NO se expresa la masa?",
+          "options": [
+            "g",
+            "kg",
+            "oz",
+            "mL"
+          ],
+          "correct": 3,
+          "explanation": "mL es unidad de **volumen**."
+        }
+      ]
+    },
+    {
+      "id": "l02-propiedades",
+      "title": "Propiedades de la materia y cómo clasificarlas",
+      "summary": "Las tres clasificaciones, la tabla de ejemplos y por qué el calor no es una propiedad.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "¿Qué es una propiedad?"
+        },
+        {
+          "type": "text",
+          "text": "Las propiedades son cualidades o atributos que permiten **caracterizar, definir e identificar** a la materia.\nCada propiedad se clasifica de tres maneras a la vez. En el examen suelen pedir las tres para un mismo caso, por ejemplo: «el punto de ebullición es específica, intensiva y física»."
+        },
+        {
+          "type": "heading",
+          "text": "Clasificación 1: según su capacidad para identificar la materia"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Qué significa",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Generales",
+              "Las tiene toda la materia; no sirven para distinguir una sustancia de otra",
+              "Masa, peso, volumen, porosidad, inercia"
+            ],
+            [
+              "Específicas",
+              "Ayudan a identificar y diferenciar una sustancia de otra",
+              "Densidad, punto de ebullición, punto de fusión, calor específico, color, dureza"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Truco: si dos sustancias distintas pueden tener el mismo valor sin problema (1 kg de hierro y 1 kg de algodón), la propiedad es **general**. Si el valor delata de qué sustancia se trata (el agua hierve a 100 °C a 1 atm, el etanol a 78 °C), es **específica**."
+        },
+        {
+          "type": "heading",
+          "text": "Clasificación 2: según la cantidad de materia"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Otro nombre",
+            "Qué significa",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Extensivas",
+              "Extrínsecas",
+              "Dependen de la cantidad de materia",
+              "Masa, peso, volumen"
+            ],
+            [
+              "Intensivas",
+              "Intrínsecas",
+              "No dependen de la cantidad de materia",
+              "Densidad, punto de ebullición, calor específico"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Prueba mental: parte la muestra por la mitad. Si el valor también se parte a la mitad, es **extensiva** (la mitad del agua tiene la mitad del volumen). Si el valor queda igual, es **intensiva** (la mitad del agua sigue hirviendo a 100 °C y sigue teniendo densidad 1 g/cm³)."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "La densidad es masa ÷ volumen. Las dos son extensivas, pero al dividirlas el tamaño se cancela y el resultado es **intensivo**. Lo mismo pasa con el calor específico (energía por kilogramo).",
+          "title": "Extensiva ÷ extensiva = intensiva"
+        },
+        {
+          "type": "heading",
+          "text": "Clasificación 3: según su comportamiento"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Qué significa",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Físicas",
+              "Se miden sin cambiar la composición; se perciben con los sentidos o con mediciones físicas",
+              "Color, tacto, conductividad eléctrica, densidad, punto de ebullición"
+            ],
+            [
+              "Químicas",
+              "Solo se manifiestan cuando la sustancia se transforma en otra",
+              "Oxidación del hierro (Fe → Fe₂O₃), combustibilidad, inflamabilidad, reactividad, corrosión"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pregunta clave: para observar esa propiedad, ¿la sustancia tiene que convertirse en otra? Para ver si el hierro se oxida, tiene que formarse óxido: química. Para medir la densidad del hierro, el hierro sigue siendo hierro: física."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Al hervir, el agua pasa a vapor, pero el vapor sigue siendo H₂O. Cambiar de estado no cambia la composición, así que el punto de ebullición es una propiedad **física**.",
+          "title": "El punto de ebullición es físico aunque «cambie» el agua"
+        },
+        {
+          "type": "heading",
+          "text": "Tabla de ejemplos para el examen"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Identificación",
+            "Cantidad",
+            "Comportamiento"
+          ],
+          "rows": [
+            [
+              "Densidad",
+              "Específica",
+              "Intensiva",
+              "Física"
+            ],
+            [
+              "Punto de ebullición",
+              "Específica",
+              "Intensiva",
+              "Física"
+            ],
+            [
+              "Punto de fusión",
+              "Específica",
+              "Intensiva",
+              "Física"
+            ],
+            [
+              "Calor específico",
+              "Específica",
+              "Intensiva",
+              "Física"
+            ],
+            [
+              "Calor latente de fusión",
+              "Específica",
+              "Intensiva",
+              "Física"
+            ],
+            [
+              "Conductividad eléctrica",
+              "Específica",
+              "Intensiva",
+              "Física"
+            ],
+            [
+              "Color, olor, dureza",
+              "Específica",
+              "Intensiva",
+              "Física"
+            ],
+            [
+              "Masa",
+              "General",
+              "Extensiva",
+              "Física"
+            ],
+            [
+              "Peso",
+              "General",
+              "Extensiva",
+              "Física"
+            ],
+            [
+              "Volumen",
+              "General",
+              "Extensiva",
+              "Física"
+            ],
+            [
+              "Corrosión",
+              "Específica",
+              "Intensiva",
+              "Química"
+            ],
+            [
+              "Oxidación",
+              "Específica",
+              "Intensiva",
+              "Química"
+            ],
+            [
+              "Combustibilidad, inflamabilidad",
+              "Específica",
+              "Intensiva",
+              "Química"
+            ]
+          ],
+          "caption": "Las cinco primeras filas y las de peso y corrosión son exactamente los ejemplos del apunte."
+        },
+        {
+          "type": "text",
+          "text": "Fíjate en el patrón: las propiedades **químicas** de la tabla son siempre específicas e intensivas, y las **generales** de la tabla son extensivas. No es una regla absoluta, pero ayuda a detectar errores."
+        },
+        {
+          "type": "heading",
+          "text": "Lo que NO es una propiedad de la materia"
+        },
+        {
+          "type": "text",
+          "text": "En los exámenes suelen colar en la lista cosas que no son propiedades, para ver si las detectas. Las dos más comunes son el **calor** y la **temperatura**."
+        },
+        {
+          "type": "heading",
+          "text": "¿Por qué el calor NO es una propiedad?"
+        },
+        {
+          "type": "text",
+          "text": "El calor es **energía en tránsito** que pasa de un cuerpo a otro porque hay una diferencia de temperatura. Solo existe mientras está pasando.\nUna propiedad es algo que el cuerpo **tiene**: la densidad, el color, la masa. Un cuerpo no «tiene calor». Lo que tiene es energía interna; el calor es el nombre de esa energía solo mientras cruza de un cuerpo a otro.\nAdemás, el calor no sirve para identificar la sustancia: depende del proceso (cuánto tiempo calientas, con qué fuente), no de qué sustancia es."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Piensa en un tanque y la lluvia. El tanque **contiene** agua (como el cuerpo contiene energía interna). La lluvia es agua **que va cayendo** (como el calor es energía que va pasando). Nadie dice «el tanque contiene lluvia»: cuando la lluvia llega, ya es agua del tanque. Igual, nadie debería decir «el cuerpo contiene calor».",
+          "title": "La analogía del tanque y la lluvia"
+        },
+        {
+          "type": "heading",
+          "text": "¿Y el calor específico sí lo es? Sí"
+        },
+        {
+          "type": "text",
+          "text": "Aquí está la trampa: **calor** no es propiedad, pero **calor específico** sí. El calor específico es la energía necesaria para subir 1 °C la temperatura de 1 kg (o 1 g) de una sustancia. Es un valor fijo y característico de cada sustancia: el agua tiene 4186 J/(kg·°C), el hierro unos 450 J/(kg·°C).\nPor eso es específica (identifica la sustancia), intensiva (no depende de cuánta hay) y física."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término",
+            "¿Propiedad?",
+            "Por qué"
+          ],
+          "rows": [
+            [
+              "Calor (Q)",
+              "No",
+              "Energía en tránsito; depende del proceso, no de la sustancia"
+            ],
+            [
+              "Calor específico (c)",
+              "Sí: específica, intensiva, física",
+              "Valor fijo de cada sustancia"
+            ],
+            [
+              "Calor latente (Q = m · L) de un proceso",
+              "No",
+              "Es la energía que se transfirió en ese cambio de estado"
+            ],
+            [
+              "Calor latente de fusión o vaporización (L)",
+              "Sí: específica, intensiva, física",
+              "Valor fijo de cada sustancia (agua: 334 kJ/kg al fundir)"
+            ],
+            [
+              "Capacidad calorífica de un cuerpo",
+              "Sí, pero extensiva",
+              "Depende del tamaño: una olla grande necesita más energía que una pequeña"
+            ],
+            [
+              "Temperatura",
+              "No (según el apunte del curso)",
+              "Indica el estado de agitación de las partículas en ese momento; no identifica la sustancia"
+            ],
+            [
+              "Punto de ebullición",
+              "Sí: específica, intensiva, física",
+              "Es una temperatura **característica** de la sustancia"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "¿Por qué la temperatura no, si el punto de ebullición sí?"
+        },
+        {
+          "type": "text",
+          "text": "La temperatura que tiene un cuerpo en un momento dado depende de su entorno: un trozo de hierro y uno de madera en la misma habitación están a 20 °C. Ese valor no te dice qué sustancia es, y cambia si lo pones al sol.\nEl punto de ebullición, en cambio, es una temperatura **concreta y propia de cada sustancia**: el agua siempre hierve a 100 °C a 1 atm. Por eso sí identifica."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En algunos libros de termodinámica la temperatura aparece como «propiedad intensiva de estado». En este curso el apunte dice expresamente que **no es una propiedad de la materia**, así que en el examen responde según el apunte.",
+          "title": "Ojo con otros libros"
+        },
+        {
+          "type": "quiz",
+          "question": "Clasifica el **punto de ebullición**.",
+          "options": [
+            "General, extensiva, física",
+            "Específica, intensiva, física",
+            "Específica, intensiva, química",
+            "General, intensiva, química"
+          ],
+          "correct": 1,
+          "explanation": "Identifica la sustancia (específica), no depende de la cantidad (intensiva) y no cambia la composición (física)."
+        },
+        {
+          "type": "quiz",
+          "question": "Clasifica el **peso**.",
+          "options": [
+            "General, extensiva, física",
+            "Específica, extensiva, física",
+            "General, intensiva, física",
+            "Específica, intensiva, química"
+          ],
+          "correct": 0,
+          "explanation": "Lo tiene toda la materia y depende de cuánta hay: **general, extensiva, física**."
+        },
+        {
+          "type": "quiz",
+          "question": "Clasifica la **corrosión**.",
+          "options": [
+            "General, extensiva, química",
+            "Específica, intensiva, física",
+            "Específica, intensiva, química",
+            "General, intensiva, química"
+          ],
+          "correct": 2,
+          "explanation": "Implica transformación química (el metal pasa a óxido): **específica, intensiva, química**."
+        },
+        {
+          "type": "quiz",
+          "question": "Clasifica el **calor específico**.",
+          "options": [
+            "No es una propiedad",
+            "General, extensiva, física",
+            "Específica, intensiva, física",
+            "Específica, intensiva, química"
+          ],
+          "correct": 2,
+          "explanation": "El calor específico **sí** es propiedad: valor fijo de cada sustancia, independiente de la cantidad."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el **calor** no es una propiedad de la materia?",
+          "options": [
+            "Porque no se puede medir",
+            "Porque es energía en tránsito por una diferencia de temperatura; el cuerpo no lo posee",
+            "Porque es una propiedad química",
+            "Porque depende solo de la masa"
+          ],
+          "correct": 1,
+          "explanation": "El calor solo existe mientras pasa de un cuerpo a otro. Un cuerpo tiene energía interna, no calor."
+        },
+        {
+          "type": "quiz",
+          "question": "En una lista aparecen: densidad, calor, masa, color. ¿Cuál NO es una propiedad?",
+          "options": [
+            "Densidad",
+            "Calor",
+            "Masa",
+            "Color"
+          ],
+          "correct": 1,
+          "explanation": "El **calor** es energía en tránsito."
+        },
+        {
+          "type": "quiz",
+          "question": "La densidad es masa/volumen. Masa y volumen son extensivas. ¿Qué es la densidad?",
+          "options": [
+            "Extensiva",
+            "Intensiva",
+            "Depende del cuerpo",
+            "No es propiedad"
+          ],
+          "correct": 1,
+          "explanation": "El cociente de dos extensivas es **intensivo**: el tamaño se cancela."
+        },
+        {
+          "type": "quiz",
+          "question": "Partes un lingote de oro por la mitad. ¿Qué propiedad cambia?",
+          "options": [
+            "Densidad",
+            "Punto de fusión",
+            "Masa",
+            "Color"
+          ],
+          "correct": 2,
+          "explanation": "La **masa** se reduce a la mitad: extensiva. Las demás son intensivas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es una propiedad **química**?",
+          "options": [
+            "Conductividad eléctrica",
+            "Punto de fusión",
+            "Inflamabilidad",
+            "Densidad"
+          ],
+          "correct": 2,
+          "explanation": "Para saber si algo es inflamable, tiene que arder: se transforma. **Química**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es una propiedad **general**?",
+          "options": [
+            "Densidad",
+            "Volumen",
+            "Punto de ebullición",
+            "Color"
+          ],
+          "correct": 1,
+          "explanation": "Toda materia tiene **volumen** y no sirve para identificarla."
+        },
+        {
+          "type": "quiz",
+          "question": "Extrínseca es sinónimo de…",
+          "options": [
+            "Intensiva",
+            "Extensiva",
+            "Química",
+            "Específica"
+          ],
+          "correct": 1,
+          "explanation": "Extensivas = **extrínsecas**; intensivas = intrínsecas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué es propiedad: la **temperatura** de un cuerpo o su **punto de fusión**?",
+          "options": [
+            "La temperatura",
+            "El punto de fusión",
+            "Ambas",
+            "Ninguna"
+          ],
+          "correct": 1,
+          "explanation": "Según el apunte, la temperatura no es propiedad; el **punto de fusión** sí (específica, intensiva, física)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿El calor latente de fusión del hielo (334 kJ/kg) es propiedad?",
+          "options": [
+            "No, porque es calor",
+            "Sí: específica, intensiva, física",
+            "Sí: general, extensiva, física",
+            "Sí, pero química"
+          ],
+          "correct": 1,
+          "explanation": "L es un valor **fijo por kilogramo** de cada sustancia. La energía Q = m·L que se transfiere en un proceso concreto no es propiedad, pero L sí."
+        }
+      ]
+    },
+    {
+      "id": "l03-estados",
+      "title": "Teoría cinético-molecular y estados de agregación",
+      "summary": "Sólido, líquido y gas comparados, y los seis cambios de estado.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "La idea de la teoría cinético-molecular"
+        },
+        {
+          "type": "text",
+          "text": "La materia está formada por partículas en movimiento continuo. Entre ellas actúan fuerzas de **atracción** (las mantienen juntas) y de **repulsión** (las separan). El estado depende de cuál gana y de cuánta energía cinética tienen las partículas."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Característica",
+            "Sólido",
+            "Líquido",
+            "Gas"
+          ],
+          "rows": [
+            [
+              "Fuerzas",
+              "Atracción > repulsión",
+              "Atracción ≈ repulsión",
+              "Repulsión > atracción"
+            ],
+            [
+              "Movimiento",
+              "Vibratorio (no se desplazan)",
+              "Limitado (se deslizan)",
+              "Libre, energía cinética alta"
+            ],
+            [
+              "Forma",
+              "Definida",
+              "La del recipiente",
+              "La del recipiente"
+            ],
+            [
+              "Volumen",
+              "Fijo",
+              "Fijo",
+              "No tiene: se expande"
+            ],
+            [
+              "Compresibilidad",
+              "Nula",
+              "Muy baja",
+              "Alta"
+            ],
+            [
+              "Densidad",
+              "Alta",
+              "Media",
+              "Baja"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "El agua es la excepción famosa: el hielo es **menos** denso que el agua líquida y por eso flota. Lo verás en la unidad del agua."
+        },
+        {
+          "type": "heading",
+          "text": "Los seis cambios de estado"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "De",
+            "A",
+            "Nombre",
+            "¿Absorbe o libera energía?"
+          ],
+          "rows": [
+            [
+              "Sólido",
+              "Líquido",
+              "Fusión",
+              "Absorbe"
+            ],
+            [
+              "Líquido",
+              "Gas",
+              "Evaporación o vaporización",
+              "Absorbe"
+            ],
+            [
+              "Sólido",
+              "Gas",
+              "Sublimación",
+              "Absorbe"
+            ],
+            [
+              "Gas",
+              "Líquido",
+              "Condensación",
+              "Libera"
+            ],
+            [
+              "Líquido",
+              "Sólido",
+              "Solidificación",
+              "Libera"
+            ],
+            [
+              "Gas",
+              "Sólido",
+              "Sublimación inversa o deposición",
+              "Libera"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Regla para recordar: hacia el gas (más desorden) se **absorbe** energía; hacia el sólido (más orden) se **libera**.\nLos cambios de estado son transformaciones **físicas**: la sustancia sigue siendo la misma."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La **evaporación** ocurre solo en la superficie y a cualquier temperatura (un charco se seca al sol). La **ebullición** ocurre en todo el líquido y solo a la temperatura de ebullición (aparecen burbujas dentro). Ambas son vaporización.",
+          "title": "Evaporación y ebullición no son idénticas"
+        },
+        {
+          "type": "text",
+          "text": "Ejemplos de sublimación: el hielo seco (CO₂ sólido) que «humea», la naftalina que desaparece en el armario. Ejemplo de deposición: la escarcha que se forma directamente del vapor del aire en una noche helada."
+        },
+        {
+          "type": "quiz",
+          "question": "En un gas, ¿qué fuerza predomina?",
+          "options": [
+            "Atracción",
+            "Repulsión",
+            "Están equilibradas",
+            "Ninguna"
+          ],
+          "correct": 1,
+          "explanation": "En los gases la **repulsión** supera a la atracción: las partículas se separan y se expanden."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué estado tiene volumen fijo pero forma variable?",
+          "options": [
+            "Sólido",
+            "Líquido",
+            "Gas",
+            "Ninguno"
+          ],
+          "correct": 1,
+          "explanation": "El **líquido** adopta la forma del recipiente pero mantiene su volumen."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cómo se llama el paso de gas a sólido?",
+          "options": [
+            "Sublimación",
+            "Condensación",
+            "Sublimación inversa (deposición)",
+            "Solidificación"
+          ],
+          "correct": 2,
+          "explanation": "Gas → sólido directo: **sublimación inversa** o deposición."
+        },
+        {
+          "type": "quiz",
+          "question": "El hielo seco pasa directamente a gas. ¿Cómo se llama?",
+          "options": [
+            "Fusión",
+            "Evaporación",
+            "Sublimación",
+            "Deposición"
+          ],
+          "correct": 2,
+          "explanation": "Sólido → gas: **sublimación**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿En qué estado la compresibilidad es nula?",
+          "options": [
+            "Sólido",
+            "Líquido",
+            "Gas",
+            "Plasma"
+          ],
+          "correct": 0,
+          "explanation": "Las partículas del **sólido** ya están juntas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué cambio de estado libera energía?",
+          "options": [
+            "Fusión",
+            "Sublimación",
+            "Condensación",
+            "Vaporización"
+          ],
+          "correct": 2,
+          "explanation": "Hacia un estado más ordenado se libera: **condensación**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Un cambio de estado es una transformación física o química?",
+          "options": [
+            "Física",
+            "Química",
+            "Depende de la sustancia",
+            "Nuclear"
+          ],
+          "correct": 0,
+          "explanation": "La composición no cambia: hielo, agua y vapor son H₂O. **Física**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la diferencia entre evaporación y ebullición?",
+          "options": [
+            "Ninguna",
+            "La evaporación es en la superficie y a cualquier temperatura; la ebullición es en todo el líquido a una temperatura fija",
+            "La ebullición es química",
+            "La evaporación solo ocurre en sólidos"
+          ],
+          "correct": 1,
+          "explanation": "Ambas son vaporización, pero la **evaporación** es superficial y la **ebullición** ocurre en todo el volumen."
+        }
+      ]
+    },
+    {
+      "id": "l04-temperatura",
+      "title": "Temperatura y escalas",
+      "summary": "Absolutas y relativas, las cuatro escalas y cómo convertir.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "¿Qué es la temperatura?"
+        },
+        {
+          "type": "text",
+          "text": "La temperatura es una **magnitud escalar** que indica la **energía cinética promedio** de las partículas de un cuerpo. Mientras más rápido se agitan, mayor es la temperatura.\nSegún el apunte del curso, la temperatura **no es una propiedad de la materia**: mide el estado de agitación en ese momento, no identifica a la sustancia."
+        },
+        {
+          "type": "heading",
+          "text": "Escalas absolutas y relativas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Escalas",
+            "Característica"
+          ],
+          "rows": [
+            [
+              "Absolutas",
+              "Kelvin (K) y Rankine (°R)",
+              "Su mínimo es el cero absoluto (0); no tienen valores negativos"
+            ],
+            [
+              "Relativas",
+              "Celsius (°C) y Fahrenheit (°F)",
+              "Admiten valores negativos"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Kelvin se escribe **K**, sin el símbolo de grado: 300 K, no 300 °K. Rankine sí lleva grado: °R.",
+          "title": "Detalle de escritura"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Punto del agua",
+            "°C",
+            "°F",
+            "K",
+            "°R"
+          ],
+          "rows": [
+            [
+              "Ebullición",
+              "100",
+              "212",
+              "373.15",
+              "671.67"
+            ],
+            [
+              "Congelación",
+              "0",
+              "32",
+              "273.15",
+              "491.67"
+            ],
+            [
+              "Cero absoluto",
+              "−273.15",
+              "−459.67",
+              "0",
+              "0"
+            ]
+          ],
+          "caption": "En el apunte los valores Rankine aparecen redondeados: 672, 492 y −460."
+        },
+        {
+          "type": "heading",
+          "text": "Fórmulas de conversión"
+        },
+        {
+          "type": "formula",
+          "expression": "°C / 5 = (°F − 32) / 9 = (K − 273.15) / 5 = (°R − 491.67) / 9",
+          "caption": "Relación general entre las cuatro escalas"
+        },
+        {
+          "type": "list",
+          "items": [
+            "°F = (9/5)·°C + 32",
+            "°C = (°F − 32)·5/9",
+            "K = °C + 273.15",
+            "°R = °F + 459.67"
+          ],
+          "ordered": false
+        },
+        {
+          "type": "text",
+          "text": "Kelvin y Celsius tienen el mismo tamaño de grado: solo se desplaza el cero. Fahrenheit y Rankine también tienen el mismo tamaño entre sí, pero un grado °F es más pequeño: 1 °C equivale a 1.8 °F."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Una **diferencia** de temperatura no se convierte igual que una temperatura. Si el agua sube 20 °C, también subió **20 K** (no 293 K) y **36 °F** (no 68 °F). En las diferencias no se suma 273.15 ni 32.",
+          "title": "Trampa: ΔT"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Igualando °C = °F: x = 1.8x + 32 → x = −40. A **−40** las dos escalas marcan lo mismo.",
+          "title": "El punto donde °C y °F coinciden"
+        },
+        {
+          "type": "exercise",
+          "title": "Convertir 25 °C a las otras escalas",
+          "level": 1,
+          "statement": "Una muestra está a 25 °C. Exprésala en °F, K y °R.",
+          "steps": [
+            "°F = 1.8 · 25 + 32 = 45 + 32 = 77 °F",
+            "K = 25 + 273.15 = 298.15 K",
+            "°R = 77 + 459.67 = 536.67 °R"
+          ],
+          "answer": "77 °F; 298.15 K; 536.67 °R"
+        },
+        {
+          "type": "exercise",
+          "title": "Fiebre en Fahrenheit",
+          "level": 1,
+          "statement": "Un termómetro marca 98.6 °F. ¿Cuántos grados Celsius son?",
+          "steps": [
+            "°C = (98.6 − 32) · 5/9",
+            "°C = 66.6 · 5/9 = 37 °C"
+          ],
+          "answer": "37 °C"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué indica la temperatura?",
+          "options": [
+            "La cantidad de calor de un cuerpo",
+            "La energía cinética promedio de sus partículas",
+            "La masa de sus partículas",
+            "La energía total del cuerpo"
+          ],
+          "correct": 1,
+          "explanation": "Temperatura = **energía cinética promedio** de las partículas. No es la cantidad de calor."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuáles son escalas absolutas?",
+          "options": [
+            "Celsius y Fahrenheit",
+            "Kelvin y Rankine",
+            "Celsius y Kelvin",
+            "Fahrenheit y Rankine"
+          ],
+          "correct": 1,
+          "explanation": "**Kelvin y Rankine** empiezan en el cero absoluto."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuánto es 0 °C en Kelvin?",
+          "options": [
+            "0 K",
+            "32 K",
+            "273.15 K",
+            "−273.15 K"
+          ],
+          "correct": 2,
+          "explanation": "K = °C + 273.15 = **273.15 K**."
+        },
+        {
+          "type": "quiz",
+          "question": "El agua se calienta de 20 °C a 50 °C. ¿Cuánto subió en Kelvin?",
+          "options": [
+            "30 K",
+            "303.15 K",
+            "323.15 K",
+            "54 K"
+          ],
+          "correct": 0,
+          "explanation": "En una **diferencia** el desplazamiento se cancela: 30 °C = **30 K**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿A qué temperatura coinciden Celsius y Fahrenheit?",
+          "options": [
+            "0",
+            "32",
+            "−40",
+            "100"
+          ],
+          "correct": 2,
+          "explanation": "**−40 °C = −40 °F**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué escala puede tener valores negativos?",
+          "options": [
+            "Kelvin",
+            "Rankine",
+            "Celsius",
+            "Ninguna"
+          ],
+          "correct": 2,
+          "explanation": "**Celsius** (y Fahrenheit) son relativas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cómo se escribe correctamente?",
+          "options": [
+            "300 °K",
+            "300 K",
+            "300 ºK grados",
+            "300 Kº"
+          ],
+          "correct": 1,
+          "explanation": "Kelvin va **sin** símbolo de grado: 300 K."
+        },
+        {
+          "type": "quiz",
+          "question": "Punto de ebullición del agua en °F:",
+          "options": [
+            "100 °F",
+            "180 °F",
+            "212 °F",
+            "373 °F"
+          ],
+          "correct": 2,
+          "explanation": "**212 °F** (a 1 atm)."
+        }
+      ]
+    },
+    {
+      "id": "l05-energia-calor",
+      "title": "Energía, calor y transferencia de calor",
+      "summary": "Energía cinética y potencial, calor sensible y latente, calor específico y los tres mecanismos.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Energía"
+        },
+        {
+          "type": "text",
+          "text": "La **energía** es la capacidad de un cuerpo para realizar trabajo."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Asociada a",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Cinética (Ec)",
+              "Movimiento",
+              "Un camión en marcha"
+            ],
+            [
+              "Potencial (Ep)",
+              "Posición",
+              "Agua en lo alto de una represa"
+            ],
+            [
+              "Mecánica (Em)",
+              "Suma de las dos",
+              "Em = Ec + Ep"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Calor (Q)"
+        },
+        {
+          "type": "text",
+          "text": "El **calor** es energía en tránsito debido a una diferencia de temperatura (ΔT). Siempre fluye espontáneamente del cuerpo más caliente al más frío, hasta que se igualan.\nRecuerda: el calor **no es una propiedad de la materia**."
+        },
+        {
+          "type": "heading",
+          "text": "Calor sensible y calor latente"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Qué hace",
+            "Fórmula"
+          ],
+          "rows": [
+            [
+              "Calor sensible",
+              "Cambia la temperatura del cuerpo (se «siente» con un termómetro)",
+              "Q = m · c · ΔT"
+            ],
+            [
+              "Calor latente",
+              "No cambia la temperatura; se usa para cambiar de estado",
+              "Q = m · L"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Durante un cambio de estado la temperatura se queda fija: el agua que hierve sigue a 100 °C aunque sigas calentando, porque toda la energía se usa para separar las moléculas."
+        },
+        {
+          "type": "formula",
+          "expression": "Q = m · c · ΔT",
+          "caption": "Calor sensible: m masa, c calor específico, ΔT = Tfinal − Tinicial"
+        },
+        {
+          "type": "formula",
+          "expression": "Q = m · L",
+          "caption": "Calor latente: L de fusión o de vaporización"
+        },
+        {
+          "type": "heading",
+          "text": "Calor específico"
+        },
+        {
+          "type": "text",
+          "text": "Es la cantidad de energía necesaria para subir **1 °C** la temperatura de **1 kg** (o 1 g) de una sustancia. Sí es una propiedad: específica, intensiva y física."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sustancia",
+            "c en J/(kg·°C)"
+          ],
+          "rows": [
+            [
+              "Agua líquida",
+              "4186"
+            ],
+            [
+              "Hielo",
+              "≈ 2090"
+            ],
+            [
+              "Vapor de agua",
+              "≈ 2010"
+            ],
+            [
+              "Concreto",
+              "≈ 880"
+            ],
+            [
+              "Aluminio",
+              "≈ 900"
+            ],
+            [
+              "Hierro o acero",
+              "≈ 450"
+            ],
+            [
+              "Cobre",
+              "≈ 385"
+            ]
+          ],
+          "caption": "El valor del agua es del apunte; los demás son aproximados de tablas."
+        },
+        {
+          "type": "text",
+          "text": "El agua tiene un calor específico muy alto: cuesta mucha energía calentarla y tarda en enfriarse. Por eso regula el clima de las costas y se usa para curar el concreto."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si Q sale **positivo**, el cuerpo absorbió calor (se calentó). Si sale **negativo**, lo cedió (se enfrió).",
+          "title": "El signo de Q"
+        },
+        {
+          "type": "heading",
+          "text": "Mecanismos de transferencia de calor"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Mecanismo",
+            "Cómo ocurre",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Conducción",
+              "Por contacto directo entre cuerpos",
+              "El mango metálico de una olla se calienta"
+            ],
+            [
+              "Convección",
+              "Por movimiento de fluidos: lo caliente (menos denso) sube y lo frío baja",
+              "El agua que circula al hervir, las brisas"
+            ],
+            [
+              "Radiación",
+              "Mediante ondas electromagnéticas; no necesita materia",
+              "El calor del Sol que llega por el vacío"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La radiación es el único mecanismo que funciona en el **vacío**. La convección solo ocurre en **fluidos** (líquidos y gases), nunca en sólidos."
+        },
+        {
+          "type": "exercise",
+          "title": "Calentar agua",
+          "level": 1,
+          "statement": "¿Cuánta energía se necesita para calentar 500 g de agua de 20 °C a 80 °C? (c = 4186 J/(kg·°C))",
+          "steps": [
+            "Pasa la masa a kg: m = 0.5 kg",
+            "ΔT = 80 − 20 = 60 °C",
+            "Q = 0.5 · 4186 · 60 = 125 580 J"
+          ],
+          "answer": "Q ≈ 125 580 J ≈ 125.6 kJ",
+          "hint": "Cuidado: c está por kilogramo, así que la masa va en kg."
+        },
+        {
+          "type": "exercise",
+          "title": "De hielo a vapor (calor sensible y latente)",
+          "level": 3,
+          "statement": "Calcula la energía para llevar 2 kg de hielo a −10 °C hasta vapor a 100 °C. Datos: c hielo = 2090, c agua = 4186 J/(kg·°C); Lf = 334 000 J/kg; Lv = 2 260 000 J/kg.",
+          "steps": [
+            "Tramo 1, calentar el hielo de −10 a 0 °C: Q₁ = 2 · 2090 · 10 = 41 800 J",
+            "Tramo 2, fundir a 0 °C: Q₂ = 2 · 334 000 = 668 000 J",
+            "Tramo 3, calentar el agua de 0 a 100 °C: Q₃ = 2 · 4186 · 100 = 837 200 J",
+            "Tramo 4, vaporizar a 100 °C: Q₄ = 2 · 2 260 000 = 4 520 000 J",
+            "Total: Q = 41 800 + 668 000 + 837 200 + 4 520 000 = 6 067 000 J"
+          ],
+          "answer": "Q ≈ 6.07 × 10⁶ J (6.07 MJ). La vaporización sola es casi tres cuartas partes del total.",
+          "hint": "Separa por tramos: cada vez que cambia el estado se usa Q = m·L, y entre cambios Q = m·c·ΔT."
+        },
+        {
+          "type": "exercise",
+          "title": "Equilibrio térmico",
+          "level": 2,
+          "statement": "Se mezclan 0.2 kg de agua a 90 °C con una pieza de hierro de 0.3 kg a 20 °C (c hierro = 450 J/(kg·°C)). ¿A qué temperatura final llegan? Ignora pérdidas.",
+          "steps": [
+            "El calor que cede el agua lo gana el hierro: m₁·c₁·(90 − T) = m₂·c₂·(T − 20)",
+            "0.2 · 4186 · (90 − T) = 0.3 · 450 · (T − 20)",
+            "837.2 · (90 − T) = 135 · (T − 20)",
+            "75 348 − 837.2T = 135T − 2700",
+            "78 048 = 972.2T → T ≈ 80.3 °C"
+          ],
+          "answer": "T ≈ 80.3 °C: queda cerca de la del agua porque el agua tiene un calor específico mucho mayor."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué es el calor?",
+          "options": [
+            "La temperatura de un cuerpo",
+            "Energía en tránsito por una diferencia de temperatura",
+            "Una propiedad intensiva",
+            "La energía cinética de un cuerpo"
+          ],
+          "correct": 1,
+          "explanation": "Calor = **energía en tránsito** por ΔT."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué calor cambia la temperatura de un cuerpo?",
+          "options": [
+            "Latente",
+            "Sensible",
+            "Específico",
+            "Radiante"
+          ],
+          "correct": 1,
+          "explanation": "El calor **sensible** (Q = m·c·ΔT)."
+        },
+        {
+          "type": "quiz",
+          "question": "Mientras el agua hierve, ¿qué pasa con su temperatura si sigues calentando?",
+          "options": [
+            "Sube",
+            "Baja",
+            "Se mantiene constante",
+            "Oscila"
+          ],
+          "correct": 2,
+          "explanation": "Se usa calor **latente**: la temperatura se mantiene en 100 °C hasta que todo se vaporiza."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el calor específico del agua según el apunte?",
+          "options": [
+            "1000 J/(kg·°C)",
+            "4186 J/(kg·°C)",
+            "450 J/(kg·°C)",
+            "334 J/(kg·°C)"
+          ],
+          "correct": 1,
+          "explanation": "**4186 J/(kg·°C)**, es decir 1 cal/(g·°C)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué mecanismo funciona en el vacío?",
+          "options": [
+            "Conducción",
+            "Convección",
+            "Radiación",
+            "Ninguno"
+          ],
+          "correct": 2,
+          "explanation": "La **radiación** viaja como ondas electromagnéticas."
+        },
+        {
+          "type": "quiz",
+          "question": "El aire caliente sube y el frío baja en una habitación. ¿Qué mecanismo es?",
+          "options": [
+            "Conducción",
+            "Convección",
+            "Radiación",
+            "Sublimación"
+          ],
+          "correct": 1,
+          "explanation": "Movimiento de un fluido por diferencia de densidad: **convección**."
+        },
+        {
+          "type": "quiz",
+          "question": "Tocas una varilla de acero al sol y quema. ¿Cómo pasa el calor de la varilla a tu mano?",
+          "options": [
+            "Conducción",
+            "Convección",
+            "Radiación",
+            "Latente"
+          ],
+          "correct": 0,
+          "explanation": "Contacto directo: **conducción**."
+        },
+        {
+          "type": "quiz",
+          "question": "Energía mecánica es…",
+          "options": [
+            "Ec − Ep",
+            "Ec + Ep",
+            "Ec · Ep",
+            "Solo Ep"
+          ],
+          "correct": 1,
+          "explanation": "**Em = Ec + Ep**."
+        },
+        {
+          "type": "quiz",
+          "question": "La energía es…",
+          "options": [
+            "La capacidad de un cuerpo para realizar trabajo",
+            "Lo mismo que el calor",
+            "Una propiedad química",
+            "La masa en movimiento"
+          ],
+          "correct": 0,
+          "explanation": "Definición del apunte: **capacidad para ejercer trabajo**."
+        }
+      ]
+    },
+    {
+      "id": "l06-clasificacion",
+      "title": "Composición y clasificación de la materia",
+      "summary": "Sustancias puras (elementos y compuestos) y mezclas (homogéneas, heterogéneas, por tamaño de partícula).",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "El esquema completo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Grupo",
+            "Tipo",
+            "Formado por",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Sustancia pura",
+              "Elemento",
+              "Un solo tipo de átomo",
+              "Fe, Cu, O₂, O₃, diamante (C)"
+            ],
+            [
+              "Sustancia pura",
+              "Compuesto",
+              "Dos o más elementos unidos químicamente en proporción fija",
+              "H₂O, NaCl, CO₂, CaCO₃"
+            ],
+            [
+              "Mezcla",
+              "Homogénea",
+              "Sustancias unidas físicamente; se ve una sola fase",
+              "Agua con sal, aire, acero, latón"
+            ],
+            [
+              "Mezcla",
+              "Heterogénea",
+              "Sustancias unidas físicamente; se distinguen fases",
+              "Concreto, arena con agua, granito"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Diferencia clave: en un **compuesto** los elementos se unen **químicamente** y solo se separan con una reacción. En una **mezcla** la unión es **física** y se separan con métodos físicos (filtrar, decantar, evaporar, destilar)."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "O₂ y O₃ son moléculas, pero de **un solo elemento**: siguen siendo elementos, no compuestos. Para ser compuesto se necesitan **dos o más elementos distintos**.",
+          "title": "Molécula no significa compuesto"
+        },
+        {
+          "type": "heading",
+          "text": "Las mezclas según el tamaño de partícula"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Tamaño de partícula",
+            "¿Se separa sola al reposar?",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Disolución",
+              "Menor a 1 nm",
+              "No",
+              "Agua con sal, aire, vinagre"
+            ],
+            [
+              "Coloide",
+              "Entre 1 y 1000 nm",
+              "No",
+              "Leche, gelatina, niebla, humo, pintura"
+            ],
+            [
+              "Suspensión",
+              "Mayor a 1000 nm",
+              "Sí: sedimenta",
+              "Agua turbia con arcilla, jarabes de «agitar antes de usar»"
+            ]
+          ],
+          "caption": "Los tamaños son los rangos habituales de los libros."
+        },
+        {
+          "type": "text",
+          "text": "Los coloides se reconocen por el **efecto Tyndall**: un haz de luz se ve atravesándolos (como la luz de un faro en la niebla), mientras que en una disolución no se ve.\nEn ingeniería civil: el agua de un río con sedimentos es una suspensión; por eso se usan desarenadores para que las partículas se depositen."
+        },
+        {
+          "type": "quiz",
+          "question": "El agua (H₂O) es…",
+          "options": [
+            "Un elemento",
+            "Un compuesto",
+            "Una mezcla homogénea",
+            "Una mezcla heterogénea"
+          ],
+          "correct": 1,
+          "explanation": "Dos elementos (H y O) unidos químicamente en proporción fija: **compuesto**."
+        },
+        {
+          "type": "quiz",
+          "question": "El ozono (O₃) es…",
+          "options": [
+            "Un compuesto, porque es una molécula",
+            "Un elemento",
+            "Una mezcla",
+            "Un ion"
+          ],
+          "correct": 1,
+          "explanation": "Solo tiene oxígeno: **elemento**, aunque esté en forma de molécula."
+        },
+        {
+          "type": "quiz",
+          "question": "El aire es…",
+          "options": [
+            "Un compuesto",
+            "Un elemento",
+            "Una mezcla homogénea",
+            "Una mezcla heterogénea"
+          ],
+          "correct": 2,
+          "explanation": "N₂, O₂, Ar, CO₂… mezclados físicamente y en una sola fase: **mezcla homogénea**."
+        },
+        {
+          "type": "quiz",
+          "question": "El concreto es…",
+          "options": [
+            "Un compuesto",
+            "Una mezcla homogénea",
+            "Una mezcla heterogénea",
+            "Un elemento"
+          ],
+          "correct": 2,
+          "explanation": "Se distinguen grava, arena y pasta: **heterogénea**."
+        },
+        {
+          "type": "quiz",
+          "question": "El acero (hierro + carbono) es…",
+          "options": [
+            "Un compuesto",
+            "Un elemento",
+            "Una mezcla homogénea (aleación)",
+            "Una suspensión"
+          ],
+          "correct": 2,
+          "explanation": "Las aleaciones son **mezclas homogéneas** (disoluciones sólidas)."
+        },
+        {
+          "type": "quiz",
+          "question": "La leche es un ejemplo de…",
+          "options": [
+            "Disolución",
+            "Coloide",
+            "Suspensión",
+            "Elemento"
+          ],
+          "correct": 1,
+          "explanation": "Partículas de grasa de tamaño intermedio: **coloide**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué mezcla sedimenta si se deja en reposo?",
+          "options": [
+            "Disolución",
+            "Coloide",
+            "Suspensión",
+            "Ninguna"
+          ],
+          "correct": 2,
+          "explanation": "Las partículas grandes de la **suspensión** caen por gravedad."
+        },
+        {
+          "type": "quiz",
+          "question": "Los elementos están formados por…",
+          "options": [
+            "Moléculas de distintos elementos",
+            "Átomos de un solo tipo",
+            "Mezclas",
+            "Iones de distinto signo"
+          ],
+          "correct": 1,
+          "explanation": "Elemento: un solo tipo de **átomo** (que a su vez tiene partículas subatómicas)."
+        },
+        {
+          "type": "quiz",
+          "question": "Una mezcla es una unión…",
+          "options": [
+            "Química",
+            "Física",
+            "Nuclear",
+            "Iónica"
+          ],
+          "correct": 1,
+          "explanation": "Mezcla = unión **física** de dos o más sustancias puras."
+        }
+      ]
+    },
+    {
+      "id": "l07-conversiones",
+      "title": "Formulario de conversiones",
+      "summary": "Masa, volumen, densidad, presión y energía.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Masa"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Equivalencia"
+          ],
+          "rows": [
+            [
+              "1 kg = 1000 g"
+            ],
+            [
+              "1 g = 1000 mg"
+            ],
+            [
+              "1 lb = 0.453 kg"
+            ],
+            [
+              "1 t = 1000 kg"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Volumen"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Equivalencia"
+          ],
+          "rows": [
+            [
+              "1 L = 1 dm³"
+            ],
+            [
+              "1 dm³ = 1000 cm³"
+            ],
+            [
+              "1 L = 1000 mL"
+            ],
+            [
+              "1 cm³ = 1 mL"
+            ],
+            [
+              "1 m³ = 1000 L"
+            ],
+            [
+              "1 L = 0.001 m³"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Para cambiar unidades cúbicas eleva al cubo el factor lineal: 1 m = 100 cm, así que 1 m³ = 100³ cm³ = 1 000 000 cm³."
+        },
+        {
+          "type": "heading",
+          "text": "Densidad"
+        },
+        {
+          "type": "formula",
+          "expression": "ρ = m / V",
+          "caption": "m masa, V volumen"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Equivalencia"
+          ],
+          "rows": [
+            [
+              "1 g/cm³ = 1000 kg/m³"
+            ],
+            [
+              "1 kg/m³ = 1 g/L"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Presión"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Equivalencia"
+          ],
+          "rows": [
+            [
+              "1 atm = 101 325 Pa = 760 mmHg"
+            ],
+            [
+              "1 mmHg = 133.322 Pa"
+            ],
+            [
+              "1 kPa = 1000 Pa"
+            ],
+            [
+              "1 MPa = 1000 kPa"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Energía"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Equivalencia"
+          ],
+          "rows": [
+            [
+              "1 kJ = 1000 J"
+            ],
+            [
+              "1 cal = 4.184 J"
+            ],
+            [
+              "1 kcal = 1000 cal = 4184 J"
+            ],
+            [
+              "1 Wh = 3600 J"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Escribe la cantidad, multiplica por una fracción que valga 1 (por ejemplo 1000 g / 1 kg) y cancela las unidades. Si las unidades no se cancelan, la fracción está al revés.",
+          "title": "Método del factor de conversión"
+        },
+        {
+          "type": "exercise",
+          "title": "Densidad del concreto",
+          "level": 1,
+          "statement": "Un concreto tiene una densidad de 2.4 g/cm³. Exprésala en kg/m³.",
+          "steps": [
+            "1 g/cm³ = 1000 kg/m³",
+            "2.4 · 1000 = 2400 kg/m³"
+          ],
+          "answer": "2400 kg/m³"
+        },
+        {
+          "type": "exercise",
+          "title": "Energía en julios",
+          "level": 1,
+          "statement": "Convierte 500 kcal y 3 kWh a julios.",
+          "steps": [
+            "500 kcal · 4184 J/kcal = 2 092 000 J",
+            "1 kWh = 1000 Wh = 3 600 000 J",
+            "3 kWh = 10 800 000 J"
+          ],
+          "answer": "500 kcal ≈ 2.09 × 10⁶ J; 3 kWh = 1.08 × 10⁷ J"
+        },
+        {
+          "type": "exercise",
+          "title": "Masa de un tanque de agua",
+          "level": 2,
+          "statement": "Un tanque cúbico de 1.5 m de lado está lleno de agua (ρ = 1 g/cm³). ¿Qué masa de agua contiene, en kg y en toneladas?",
+          "steps": [
+            "V = 1.5³ = 3.375 m³",
+            "ρ = 1 g/cm³ = 1000 kg/m³",
+            "m = ρ · V = 1000 · 3.375 = 3375 kg",
+            "3375 kg ÷ 1000 = 3.375 t"
+          ],
+          "answer": "3375 kg = 3.375 t"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos mL tiene 1 cm³?",
+          "options": [
+            "0.001",
+            "1",
+            "10",
+            "1000"
+          ],
+          "correct": 1,
+          "explanation": "**1 cm³ = 1 mL**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos litros tiene 1 m³?",
+          "options": [
+            "10",
+            "100",
+            "1000",
+            "1 000 000"
+          ],
+          "correct": 2,
+          "explanation": "**1 m³ = 1000 L**."
+        },
+        {
+          "type": "quiz",
+          "question": "1 g/cm³ equivale a…",
+          "options": [
+            "1 kg/m³",
+            "100 kg/m³",
+            "1000 kg/m³",
+            "0.001 kg/m³"
+          ],
+          "correct": 2,
+          "explanation": "**1 g/cm³ = 1000 kg/m³**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos julios tiene 1 cal?",
+          "options": [
+            "1",
+            "4.184",
+            "1000",
+            "3600"
+          ],
+          "correct": 1,
+          "explanation": "**1 cal = 4.184 J**."
+        },
+        {
+          "type": "quiz",
+          "question": "1 atm equivale a…",
+          "options": [
+            "1000 Pa",
+            "101 325 Pa",
+            "133.322 Pa",
+            "1 MPa"
+          ],
+          "correct": 1,
+          "explanation": "**1 atm = 101 325 Pa** (≈ 760 mmHg)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos cm³ hay en 1 m³?",
+          "options": [
+            "100",
+            "1000",
+            "10 000",
+            "1 000 000"
+          ],
+          "correct": 3,
+          "explanation": "(100 cm)³ = **1 000 000 cm³**."
+        },
+        {
+          "type": "quiz",
+          "question": "1 Wh equivale a…",
+          "options": [
+            "60 J",
+            "1000 J",
+            "3600 J",
+            "4184 J"
+          ],
+          "correct": 2,
+          "explanation": "1 W durante 3600 s: **3600 J**."
+        }
+      ]
+    },
+    {
+      "id": "lx-trampas",
+      "title": "Preguntas rápidas y trampas de la unidad",
+      "summary": "Detalles que el profesor suele preguntar para ver si leíste bien.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Cómo leer las preguntas de esta unidad"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Si te piden «clasificar una propiedad», da **las tres** clasificaciones: identificación, cantidad y comportamiento.",
+            "Si en la lista aparece **calor** o **temperatura**, sospecha: según el apunte no son propiedades.",
+            "Si aparece **calor específico** o **calor latente de fusión**, esos sí son propiedades.",
+            "Cambiar de estado es **físico**; transformarse en otra sustancia es **químico**.",
+            "Molécula no implica compuesto: O₂ es un elemento.",
+            "En diferencias de temperatura, 1 °C = 1 K y 1 °C = 1.8 °F."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "quiz",
+          "question": "¿La temperatura es una propiedad de la materia, según el apunte?",
+          "options": [
+            "Sí, intensiva",
+            "Sí, extensiva",
+            "No",
+            "Solo en los gases"
+          ],
+          "correct": 2,
+          "explanation": "El apunte lo dice expresamente: **no** es una propiedad de la materia."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál de estas SÍ es propiedad de la materia?",
+          "options": [
+            "El calor que recibió un bloque",
+            "La temperatura del aula",
+            "El calor específico del cobre",
+            "El tiempo que tardó en hervir"
+          ],
+          "correct": 2,
+          "explanation": "Solo el **calor específico** es un valor característico de la sustancia."
+        },
+        {
+          "type": "quiz",
+          "question": "La densidad es una propiedad…",
+          "options": [
+            "General, extensiva, física",
+            "Específica, intensiva, física",
+            "Específica, intensiva, química",
+            "General, intensiva, física"
+          ],
+          "correct": 1,
+          "explanation": "**Específica, intensiva, física**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿La conductividad eléctrica del cobre es física o química?",
+          "options": [
+            "Física",
+            "Química",
+            "Ninguna",
+            "Ambas"
+          ],
+          "correct": 0,
+          "explanation": "Al conducir corriente el cobre sigue siendo cobre: **física** (ejemplo del apunte)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿La inflamabilidad de la gasolina es física o química?",
+          "options": [
+            "Física",
+            "Química",
+            "Ninguna",
+            "General"
+          ],
+          "correct": 1,
+          "explanation": "Para observarla, la gasolina tiene que arder y transformarse: **química**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál NO es materia?",
+          "options": [
+            "Una gota de agua",
+            "El humo",
+            "El calor",
+            "El aire"
+          ],
+          "correct": 2,
+          "explanation": "El **calor** es energía."
+        },
+        {
+          "type": "quiz",
+          "question": "El hierro se oxida y forma Fe₂O₃. Este fenómeno muestra una propiedad…",
+          "options": [
+            "Física",
+            "Química",
+            "General",
+            "Extensiva"
+          ],
+          "correct": 1,
+          "explanation": "Se forma una sustancia nueva: **química**."
+        },
+        {
+          "type": "quiz",
+          "question": "Fundir hielo es un cambio…",
+          "options": [
+            "Físico",
+            "Químico",
+            "Nuclear",
+            "De composición"
+          ],
+          "correct": 0,
+          "explanation": "Sigue siendo H₂O: **físico**."
+        },
+        {
+          "type": "quiz",
+          "question": "El agua sube de 10 °C a 30 °C. ¿Cuánto es ΔT en °F?",
+          "options": [
+            "20 °F",
+            "36 °F",
+            "68 °F",
+            "86 °F"
+          ],
+          "correct": 1,
+          "explanation": "En diferencias: 20 · 1.8 = **36 °F** (sin sumar 32)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué escala NO acepta valores negativos?",
+          "options": [
+            "Celsius",
+            "Fahrenheit",
+            "Kelvin",
+            "Todas los aceptan"
+          ],
+          "correct": 2,
+          "explanation": "**Kelvin** (y Rankine) empiezan en el cero absoluto."
+        },
+        {
+          "type": "quiz",
+          "question": "¿El volumen es intensivo o extensivo?",
+          "options": [
+            "Intensivo",
+            "Extensivo",
+            "Ninguno",
+            "Depende de la sustancia"
+          ],
+          "correct": 1,
+          "explanation": "Más materia, más volumen: **extensivo**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué tipo de calor se usa al fundir hielo a 0 °C?",
+          "options": [
+            "Sensible",
+            "Latente",
+            "Específico",
+            "Radiante"
+          ],
+          "correct": 1,
+          "explanation": "La temperatura no cambia mientras se funde: **latente**."
+        },
+        {
+          "type": "quiz",
+          "question": "Intensiva es sinónimo de…",
+          "options": [
+            "Extrínseca",
+            "Intrínseca",
+            "General",
+            "Química"
+          ],
+          "correct": 1,
+          "explanation": "Intensiva = **intrínseca**."
+        },
+        {
+          "type": "quiz",
+          "question": "La capacidad calorífica de un cuerpo (no por kilogramo) es…",
+          "options": [
+            "Intensiva",
+            "Extensiva",
+            "No es propiedad",
+            "Química"
+          ],
+          "correct": 1,
+          "explanation": "Un cuerpo más grande necesita más energía para subir 1 °C: **extensiva**. Dividida por la masa da el calor específico, que es intensivo."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué es la porosidad según el apunte?",
+          "options": [
+            "Propiedad específica",
+            "Propiedad general",
+            "Propiedad química",
+            "No es propiedad"
+          ],
+          "correct": 1,
+          "explanation": "El apunte la pone entre las **generales**, junto a masa, peso y volumen."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1800 @@
+{
+  "id": "en01-primeros-pasos",
+  "title": "Primeros pasos (nivel A1)",
+  "description": "Desde cero: sonidos, saludos, el verbo to be, artículos, plurales, números, fechas, posesivos y there is / there are.",
+  "lessons": [
+    {
+      "id": "l01-sonidos",
+      "title": "Cómo suena el inglés: alfabeto y pronunciación",
+      "summary": "Por qué el inglés no se lee como se escribe, el alfabeto y los sonidos que no existen en español.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "En español cada letra suena casi siempre igual. En inglés **no**: la misma letra cambia de sonido según la palabra. Por eso se aprende cada palabra con su sonido, como una pareja inseparable. En esta materia la columna «Suena como» da una aproximación con letras del español; no es exacta, pero sirve para arrancar.",
+          "title": "La idea más importante"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Escucha siempre la palabra real: escribe la palabra en el traductor de Google o en un diccionario en línea y pulsa el altavoz. Repite en voz alta tres veces. Diez minutos diarios valen más que dos horas un solo día.",
+          "title": "Cómo practicar"
+        },
+        {
+          "type": "heading",
+          "text": "El alfabeto"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Letra",
+            "Nombre",
+            "Letra",
+            "Nombre",
+            "Letra",
+            "Nombre"
+          ],
+          "rows": [
+            [
+              "A",
+              "ei",
+              "J",
+              "yei",
+              "S",
+              "es"
+            ],
+            [
+              "B",
+              "bi",
+              "K",
+              "kei",
+              "T",
+              "ti"
+            ],
+            [
+              "C",
+              "si",
+              "L",
+              "el",
+              "U",
+              "iu"
+            ],
+            [
+              "D",
+              "di",
+              "M",
+              "em",
+              "V",
+              "vi"
+            ],
+            [
+              "E",
+              "i",
+              "N",
+              "en",
+              "W",
+              "dábliu"
+            ],
+            [
+              "F",
+              "ef",
+              "O",
+              "ou",
+              "X",
+              "eks"
+            ],
+            [
+              "G",
+              "yi",
+              "P",
+              "pi",
+              "Y",
+              "uái"
+            ],
+            [
+              "H",
+              "eich",
+              "Q",
+              "kiu",
+              "Z",
+              "zi (EE. UU.) / zed (R. U.)"
+            ],
+            [
+              "I",
+              "ái",
+              "R",
+              "ar",
+              "",
+              ""
+            ]
+          ],
+          "caption": "Sirve para deletrear: «How do you spell it?»"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Trampas para hispanohablantes: la **E** se llama «i» y la **I** se llama «ái»; la **A** se llama «ei»; la **G** es «yi» y la **J** es «yei». Al deletrear un correo o un apellido son los errores más frecuentes.",
+          "title": "Cuidado al deletrear"
+        },
+        {
+          "type": "heading",
+          "text": "Sonidos que no existen en español"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sonido",
+            "Cómo hacerlo",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "th suave",
+              "Lengua entre los dientes, soplando (como la z de España)",
+              "think, three, thanks"
+            ],
+            [
+              "th sonora",
+              "Lengua entre los dientes, con voz (parecida a una d suave)",
+              "this, that, the, mother"
+            ],
+            [
+              "sh",
+              "Como para pedir silencio: «shhh»",
+              "she, shop, English"
+            ],
+            [
+              "v",
+              "Dientes de arriba sobre el labio de abajo, con voz (no es b)",
+              "very, five, have"
+            ],
+            [
+              "z",
+              "Una s que vibra, como un zumbido",
+              "zero, is, easy"
+            ],
+            [
+              "h",
+              "Aspirada y suave, como un suspiro (no como la j fuerte)",
+              "house, hello, have"
+            ],
+            [
+              "r",
+              "La lengua no toca el paladar ni vibra",
+              "red, right, car"
+            ],
+            [
+              "y de «yes» / j de «job»",
+              "«yes» suena i-es; «job» suena con una ch con voz",
+              "yes, you / job, just"
+            ],
+            [
+              "Vocal corta y larga",
+              "Cambian el significado",
+              "ship (barco) / sheep (oveja); full / fool"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Las palabras que empiezan con **s + consonante** no llevan «e» delante: se dice «skul» (school), «stiudent» (student), «spein» (Spain), no «eskul».",
+          "title": "Sin la e inicial"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Regla útil",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "La e final casi nunca suena, pero alarga la vocal anterior",
+              "name (neim), time (taim), home (joum)"
+            ],
+            [
+              "«ee» y «ea» suelen sonar i larga",
+              "see, meet, eat, teacher"
+            ],
+            [
+              "«oo» suele sonar u",
+              "food, school, book"
+            ],
+            [
+              "«gh» muchas veces es muda",
+              "night (nait), high (jai), eight (eit)"
+            ],
+            [
+              "«kn»: la k es muda",
+              "know (nou), knife (naif)"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "La letra E se llama en inglés:",
+          "options": [
+            "e",
+            "i",
+            "ei",
+            "ái"
+          ],
+          "correct": 1,
+          "explanation": "E = «i»."
+        },
+        {
+          "type": "quiz",
+          "question": "La letra I se llama:",
+          "options": [
+            "i",
+            "ái",
+            "ei",
+            "yei"
+          ],
+          "correct": 1,
+          "explanation": "I = «ái»."
+        },
+        {
+          "type": "quiz",
+          "question": "«School» se pronuncia aproximadamente:",
+          "options": [
+            "eskul",
+            "skul",
+            "eschol",
+            "shool"
+          ],
+          "correct": 1,
+          "explanation": "Sin e inicial."
+        },
+        {
+          "type": "quiz",
+          "question": "En «night», las letras «gh»:",
+          "options": [
+            "Suenan como j",
+            "Suenan como g",
+            "Son mudas",
+            "Suenan como f"
+          ],
+          "correct": 2,
+          "explanation": "nait."
+        },
+        {
+          "type": "quiz",
+          "question": "Para el sonido «th» de «think», la lengua va:",
+          "options": [
+            "Detrás de los dientes de abajo",
+            "Entre los dientes",
+            "En el paladar",
+            "Quieta"
+          ],
+          "correct": 1,
+          "explanation": "Entre los dientes, soplando."
+        },
+        {
+          "type": "quiz",
+          "question": "La letra J se llama:",
+          "options": [
+            "jota",
+            "yei",
+            "yi",
+            "ei"
+          ],
+          "correct": 1,
+          "explanation": "J = «yei»; G = «yi»."
+        }
+      ]
+    },
+    {
+      "id": "l02-saludos",
+      "title": "Saludos, presentaciones y cortesía",
+      "summary": "Las frases para saludar, presentarte, agradecer y pedir que te repitan.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Suena como",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Hello / Hi",
+              "jelóu / jai",
+              "Hola"
+            ],
+            [
+              "Good morning",
+              "gud mórnin",
+              "Buenos días"
+            ],
+            [
+              "Good afternoon",
+              "gud áfternun",
+              "Buenas tardes"
+            ],
+            [
+              "Good evening",
+              "gud ívnin",
+              "Buenas noches (al llegar)"
+            ],
+            [
+              "Good night",
+              "gud nait",
+              "Buenas noches (al despedirse o ir a dormir)"
+            ],
+            [
+              "Goodbye / Bye",
+              "gudbái / bai",
+              "Adiós"
+            ],
+            [
+              "See you later",
+              "si iu léiter",
+              "Hasta luego"
+            ],
+            [
+              "See you tomorrow",
+              "si iu tumórou",
+              "Hasta mañana"
+            ]
+          ],
+          "caption": "Saludos y despedidas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Suena como",
+            "Español"
+          ],
+          "rows": [
+            [
+              "How are you?",
+              "jáu ar iu",
+              "¿Cómo estás?"
+            ],
+            [
+              "I am fine, thank you. And you?",
+              "ái am fain, zénk iu. And iu",
+              "Estoy bien, gracias. ¿Y tú?"
+            ],
+            [
+              "What is your name?",
+              "uát is ior neim",
+              "¿Cómo te llamas?"
+            ],
+            [
+              "My name is Ana.",
+              "mai neim is Ana",
+              "Me llamo Ana."
+            ],
+            [
+              "Nice to meet you.",
+              "nais tu mit iu",
+              "Mucho gusto."
+            ],
+            [
+              "Where are you from?",
+              "uér ar iu from",
+              "¿De dónde eres?"
+            ],
+            [
+              "I am from Ecuador.",
+              "ái am from Écuador",
+              "Soy de Ecuador."
+            ],
+            [
+              "How old are you?",
+              "jáu ould ar iu",
+              "¿Cuántos años tienes?"
+            ],
+            [
+              "I am twenty years old.",
+              "ái am tuénti íers ould",
+              "Tengo veinte años."
+            ]
+          ],
+          "caption": "Presentarse"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "La edad se dice con **to be**, no con «have»: «I **am** twenty», nunca «I have twenty years». Literalmente: «soy veinte años viejo».",
+          "title": "Error típico"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Suena como",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Please",
+              "plis",
+              "Por favor"
+            ],
+            [
+              "Thank you / Thanks",
+              "zénk iu / zenks",
+              "Gracias"
+            ],
+            [
+              "You are welcome",
+              "iu ar uélcom",
+              "De nada"
+            ],
+            [
+              "Excuse me",
+              "ekskiús mi",
+              "Disculpe (para pedir paso o llamar la atención)"
+            ],
+            [
+              "Sorry",
+              "sóri",
+              "Perdón, lo siento"
+            ],
+            [
+              "Yes / No",
+              "ies / nou",
+              "Sí / No"
+            ],
+            [
+              "I do not understand",
+              "ái du not anderstánd",
+              "No entiendo"
+            ],
+            [
+              "Can you repeat, please?",
+              "kan iu ripít plis",
+              "¿Puedes repetir, por favor?"
+            ],
+            [
+              "How do you say … in English?",
+              "jáu du iu sei … in ínglish",
+              "¿Cómo se dice … en inglés?"
+            ],
+            [
+              "What does … mean?",
+              "uát das … min",
+              "¿Qué significa …?"
+            ]
+          ],
+          "caption": "Cortesía y frases de supervivencia"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En inglés **no existen «tú» y «usted»**: para las dos se usa **you**. La formalidad se marca con las palabras (Good morning, sir / Hi!) y no con el pronombre."
+        },
+        {
+          "type": "quiz",
+          "question": "«Mucho gusto» se dice:",
+          "options": [
+            "Nice to meet you",
+            "How are you",
+            "See you later",
+            "You are welcome"
+          ],
+          "correct": 0,
+          "explanation": "Encantado de conocerte."
+        },
+        {
+          "type": "quiz",
+          "question": "Para decir tu edad usas el verbo:",
+          "options": [
+            "have",
+            "to be",
+            "do",
+            "make"
+          ],
+          "correct": 1,
+          "explanation": "I am twenty years old."
+        },
+        {
+          "type": "quiz",
+          "question": "«De nada» es:",
+          "options": [
+            "Please",
+            "Sorry",
+            "You are welcome",
+            "Excuse me"
+          ],
+          "correct": 2,
+          "explanation": "Respuesta a thank you."
+        },
+        {
+          "type": "quiz",
+          "question": "«Good night» se usa:",
+          "options": [
+            "Al llegar por la noche",
+            "Al despedirse o ir a dormir",
+            "Al mediodía",
+            "En la mañana"
+          ],
+          "correct": 1,
+          "explanation": "Al llegar se dice Good evening."
+        },
+        {
+          "type": "quiz",
+          "question": "«¿De dónde eres?»:",
+          "options": [
+            "Where are you from?",
+            "How are you?",
+            "What is your name?",
+            "How old are you?"
+          ],
+          "correct": 0,
+          "explanation": "Where… from."
+        }
+      ]
+    },
+    {
+      "id": "l03-to-be",
+      "title": "Pronombres personales y el verbo to be",
+      "summary": "Yo, tú, él… y el verbo «ser o estar» en afirmativo, negativo y pregunta, con sus contracciones.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "**To be** significa a la vez «ser» y «estar»: «I am a student» (soy estudiante), «I am at home» (estoy en casa). Es el verbo más usado del idioma y la base de muchos tiempos: aprenderlo bien ahorra problemas después.",
+          "title": "Ser y estar en uno"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Pronombre",
+            "Suena como",
+            "Español",
+            "To be",
+            "Contracción",
+            "Negativo"
+          ],
+          "rows": [
+            [
+              "I",
+              "ái",
+              "yo",
+              "am",
+              "I'm",
+              "I'm not"
+            ],
+            [
+              "you",
+              "iu",
+              "tú / usted",
+              "are",
+              "you're",
+              "you aren't"
+            ],
+            [
+              "he",
+              "ji",
+              "él",
+              "is",
+              "he's",
+              "he isn't"
+            ],
+            [
+              "she",
+              "shi",
+              "ella",
+              "is",
+              "she's",
+              "she isn't"
+            ],
+            [
+              "it",
+              "it",
+              "eso (cosa, animal)",
+              "is",
+              "it's",
+              "it isn't"
+            ],
+            [
+              "we",
+              "uí",
+              "nosotros",
+              "are",
+              "we're",
+              "we aren't"
+            ],
+            [
+              "you",
+              "iu",
+              "ustedes",
+              "are",
+              "you're",
+              "you aren't"
+            ],
+            [
+              "they",
+              "déi",
+              "ellos / ellas",
+              "are",
+              "they're",
+              "they aren't"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En inglés el **sujeto es obligatorio**. En español decimos «Es ingeniero» o «Está lloviendo»; en inglés hay que decir «**He** is an engineer», «**It** is raining». Y «I» (yo) se escribe siempre con mayúscula.",
+          "title": "Nunca omitas el sujeto"
+        },
+        {
+          "type": "heading",
+          "text": "Las tres formas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Forma",
+            "Estructura",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Afirmativa",
+              "sujeto + am / is / are",
+              "She is a student.",
+              "Ella es estudiante."
+            ],
+            [
+              "Negativa",
+              "sujeto + am / is / are + not",
+              "She is not (isn't) a student.",
+              "Ella no es estudiante."
+            ],
+            [
+              "Pregunta",
+              "Am / Is / Are + sujeto …?",
+              "Is she a student?",
+              "¿Es ella estudiante?"
+            ],
+            [
+              "Respuesta corta",
+              "Yes, sujeto + verbo / No, sujeto + verbo + not",
+              "Yes, she is. / No, she isn't.",
+              "Sí. / No."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para preguntar, el verbo y el sujeto **cambian de lugar**: «You are tired» → «**Are you** tired?». En español solo cambiamos la entonación; en inglés hay que invertir.",
+          "title": "La inversión"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "I am a civil engineering student.",
+              "Soy estudiante de ingeniería civil."
+            ],
+            [
+              "We are in class.",
+              "Estamos en clase."
+            ],
+            [
+              "The book is on the table.",
+              "El libro está sobre la mesa."
+            ],
+            [
+              "They are not here.",
+              "Ellos no están aquí."
+            ],
+            [
+              "Are you ready? — Yes, I am.",
+              "¿Estás listo? — Sí."
+            ],
+            [
+              "It is cold today.",
+              "Hace frío hoy."
+            ],
+            [
+              "I am hungry / thirsty / tired.",
+              "Tengo hambre / sed / sueño (estoy cansado)."
+            ]
+          ],
+          "caption": "Ejemplos"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Varias expresiones que en español van con «tener» o «hacer», en inglés van con **to be**: I am hungry (tengo hambre), I am cold (tengo frío), I am 20 (tengo 20 años), I am afraid (tengo miedo), I am right (tengo razón), it is hot (hace calor).",
+          "title": "Tener → to be"
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «She (…) my sister.»",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 1,
+          "explanation": "He / she / it → is."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «We (…) students.»",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 2,
+          "explanation": "We → are."
+        },
+        {
+          "type": "quiz",
+          "question": "La pregunta correcta es:",
+          "options": [
+            "You are tired?",
+            "Are you tired?",
+            "Do you are tired?",
+            "Is you tired?"
+          ],
+          "correct": 1,
+          "explanation": "Inversión verbo–sujeto."
+        },
+        {
+          "type": "quiz",
+          "question": "«Tengo hambre» se dice:",
+          "options": [
+            "I have hungry",
+            "I am hungry",
+            "I do hungry",
+            "I hungry"
+          ],
+          "correct": 1,
+          "explanation": "Con to be."
+        },
+        {
+          "type": "quiz",
+          "question": "La contracción de «they are not» es:",
+          "options": [
+            "they aren't",
+            "they isn't",
+            "they amn't",
+            "they not"
+          ],
+          "correct": 0,
+          "explanation": "are not → aren't."
+        },
+        {
+          "type": "quiz",
+          "question": "«Está lloviendo» se dice:",
+          "options": [
+            "Is raining",
+            "It is raining",
+            "He is raining",
+            "Raining is"
+          ],
+          "correct": 1,
+          "explanation": "El sujeto «it» es obligatorio."
+        }
+      ]
+    },
+    {
+      "id": "l04-articulos-plurales",
+      "title": "Artículos (a, an, the) y plurales",
+      "summary": "Cuándo usar cada artículo, cuándo no usar ninguno y cómo se forman los plurales.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Artículo",
+            "Uso",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "**a**",
+              "Un / una, delante de **sonido** de consonante",
+              "a book, a car, a university (suena «iu»)"
+            ],
+            [
+              "**an**",
+              "Un / una, delante de **sonido** de vocal",
+              "an apple, an engineer, an hour (h muda)"
+            ],
+            [
+              "**the**",
+              "El, la, los, las: algo específico o ya conocido",
+              "the book on the table, the sun"
+            ],
+            [
+              "(ninguno)",
+              "Generalizaciones en plural o incontables",
+              "Dogs are friendly. Water is important."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En inglés los adjetivos y los artículos **no tienen género ni número**: «the» vale para el, la, los y las. Y para hablar en general **no se pone artículo**: «Me gusta el café» = «I like coffee» (no «the coffee»).",
+          "title": "Más simple que en español"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Las profesiones llevan **a / an**: «She is **an** engineer», «I am **a** student». En español no lo ponemos («es ingeniera»); en inglés es obligatorio.",
+          "title": "Profesiones"
+        },
+        {
+          "type": "heading",
+          "text": "Plurales"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Regla",
+            "Singular → plural"
+          ],
+          "rows": [
+            [
+              "General: + s",
+              "book → books; car → cars"
+            ],
+            [
+              "Termina en s, x, z, ch, sh: + es",
+              "bus → buses; box → boxes; watch → watches"
+            ],
+            [
+              "Consonante + y: cambia a ies",
+              "city → cities; country → countries"
+            ],
+            [
+              "Vocal + y: + s",
+              "day → days; boy → boys"
+            ],
+            [
+              "Termina en f / fe: muchas cambian a ves",
+              "knife → knives; leaf → leaves"
+            ],
+            [
+              "Irregulares",
+              "man → men; woman → women; child → children; person → people; foot → feet; tooth → teeth"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Los adjetivos **nunca** llevan plural: «two **big** houses», no «bigs houses». Y van **antes** del sustantivo: «a red car», no «a car red»."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «She is (…) engineer.»",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "(nada)"
+          ],
+          "correct": 1,
+          "explanation": "Sonido de vocal."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «He is (…) university student.»",
+          "options": [
+            "a",
+            "an",
+            "(nada)",
+            "one"
+          ],
+          "correct": 0,
+          "explanation": "University empieza con sonido «iu»."
+        },
+        {
+          "type": "quiz",
+          "question": "El plural de «city» es:",
+          "options": [
+            "citys",
+            "cities",
+            "cityes",
+            "citis"
+          ],
+          "correct": 1,
+          "explanation": "Consonante + y → ies."
+        },
+        {
+          "type": "quiz",
+          "question": "El plural de «child» es:",
+          "options": [
+            "childs",
+            "childes",
+            "children",
+            "childrens"
+          ],
+          "correct": 2,
+          "explanation": "Irregular."
+        },
+        {
+          "type": "quiz",
+          "question": "«Me gusta la música» se dice:",
+          "options": [
+            "I like the music",
+            "I like music",
+            "I like a music",
+            "I like musics"
+          ],
+          "correct": 1,
+          "explanation": "En general, sin artículo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Dos carros rojos»:",
+          "options": [
+            "two cars reds",
+            "two reds cars",
+            "two red cars",
+            "two car red"
+          ],
+          "correct": 2,
+          "explanation": "Adjetivo antes y sin plural."
+        }
+      ]
+    },
+    {
+      "id": "l05-numeros-tiempo",
+      "title": "Números, hora, días, meses y fechas",
+      "summary": "Contar, decir la hora y la fecha, y las preposiciones in, on, at con el tiempo.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "N.º",
+            "Inglés",
+            "N.º",
+            "Inglés",
+            "N.º",
+            "Inglés"
+          ],
+          "rows": [
+            [
+              "0",
+              "zero",
+              "10",
+              "ten",
+              "20",
+              "twenty"
+            ],
+            [
+              "1",
+              "one",
+              "11",
+              "eleven",
+              "30",
+              "thirty"
+            ],
+            [
+              "2",
+              "two",
+              "12",
+              "twelve",
+              "40",
+              "forty"
+            ],
+            [
+              "3",
+              "three",
+              "13",
+              "thirteen",
+              "50",
+              "fifty"
+            ],
+            [
+              "4",
+              "four",
+              "14",
+              "fourteen",
+              "60",
+              "sixty"
+            ],
+            [
+              "5",
+              "five",
+              "15",
+              "fifteen",
+              "70",
+              "seventy"
+            ],
+            [
+              "6",
+              "six",
+              "16",
+              "sixteen",
+              "80",
+              "eighty"
+            ],
+            [
+              "7",
+              "seven",
+              "17",
+              "seventeen",
+              "90",
+              "ninety"
+            ],
+            [
+              "8",
+              "eight",
+              "18",
+              "eighteen",
+              "100",
+              "one hundred"
+            ],
+            [
+              "9",
+              "nine",
+              "19",
+              "nineteen",
+              "1 000",
+              "one thousand"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Diferencia que se oye poco: **thirTEEN** (13, acento al final) frente a **THIRty** (30, acento al inicio). Igual con 14/40, 15/50… Los compuestos llevan guion: twenty-one, forty-five. 1 000 000 = one million.",
+          "title": "Trece o treinta"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Ordinal",
+            "Inglés",
+            "Ordinal",
+            "Inglés"
+          ],
+          "rows": [
+            [
+              "1.º",
+              "first (1st)",
+              "5.º",
+              "fifth (5th)"
+            ],
+            [
+              "2.º",
+              "second (2nd)",
+              "9.º",
+              "ninth (9th)"
+            ],
+            [
+              "3.º",
+              "third (3rd)",
+              "12.º",
+              "twelfth (12th)"
+            ],
+            [
+              "4.º",
+              "fourth (4th)",
+              "20.º",
+              "twentieth (20th)"
+            ]
+          ],
+          "caption": "Se usan en fechas, pisos y posiciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Suena como",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Monday",
+              "mándei",
+              "lunes"
+            ],
+            [
+              "Tuesday",
+              "tiúsdei",
+              "martes"
+            ],
+            [
+              "Wednesday",
+              "uénsdei",
+              "miércoles"
+            ],
+            [
+              "Thursday",
+              "zérsdei",
+              "jueves"
+            ],
+            [
+              "Friday",
+              "fráidei",
+              "viernes"
+            ],
+            [
+              "Saturday",
+              "sáterdei",
+              "sábado"
+            ],
+            [
+              "Sunday",
+              "sándei",
+              "domingo"
+            ]
+          ],
+          "caption": "Días: siempre con mayúscula"
+        },
+        {
+          "type": "text",
+          "text": "**Meses** (también con mayúscula): January, February, March, April, May, June, July, August, September, October, November, December."
+        },
+        {
+          "type": "heading",
+          "text": "La hora"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "What time is it?",
+              "¿Qué hora es?"
+            ],
+            [
+              "It is seven o'clock.",
+              "Son las siete en punto."
+            ],
+            [
+              "It is half past seven. / seven thirty.",
+              "Son las siete y media."
+            ],
+            [
+              "It is a quarter past seven.",
+              "Son las siete y cuarto."
+            ],
+            [
+              "It is a quarter to eight.",
+              "Son las ocho menos cuarto."
+            ],
+            [
+              "It is ten to eight.",
+              "Faltan diez para las ocho."
+            ],
+            [
+              "at 9 a.m. / at 3 p.m.",
+              "a las 9 de la mañana / a las 3 de la tarde"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "In, on, at con el tiempo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Preposición",
+            "Se usa con",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "**at**",
+              "Horas y momentos puntuales",
+              "at 8 o'clock, at noon, at night"
+            ],
+            [
+              "**on**",
+              "Días y fechas",
+              "on Monday, on 14 November, on my birthday"
+            ],
+            [
+              "**in**",
+              "Meses, años, estaciones, partes del día",
+              "in March, in 2026, in summer, in the morning"
+            ]
+          ],
+          "caption": "De lo más pequeño (at) a lo más grande (in)"
+        },
+        {
+          "type": "quiz",
+          "question": "30 se escribe:",
+          "options": [
+            "thirteen",
+            "thirty",
+            "three",
+            "third"
+          ],
+          "correct": 1,
+          "explanation": "Thirteen es 13."
+        },
+        {
+          "type": "quiz",
+          "question": "«El lunes» (un día) es:",
+          "options": [
+            "in Monday",
+            "at Monday",
+            "on Monday",
+            "the Monday"
+          ],
+          "correct": 2,
+          "explanation": "Días → on."
+        },
+        {
+          "type": "quiz",
+          "question": "«En marzo»:",
+          "options": [
+            "on March",
+            "in March",
+            "at March",
+            "to March"
+          ],
+          "correct": 1,
+          "explanation": "Meses → in."
+        },
+        {
+          "type": "quiz",
+          "question": "«A las 8»:",
+          "options": [
+            "in 8",
+            "on 8",
+            "at 8",
+            "to 8"
+          ],
+          "correct": 2,
+          "explanation": "Horas → at."
+        },
+        {
+          "type": "quiz",
+          "question": "«Son las 4:30»:",
+          "options": [
+            "It is half past four",
+            "It is half to four",
+            "It is four and half",
+            "They are four thirty"
+          ],
+          "correct": 0,
+          "explanation": "Half past."
+        },
+        {
+          "type": "quiz",
+          "question": "El ordinal de 3 es:",
+          "options": [
+            "three",
+            "third",
+            "thirty",
+            "threeth"
+          ],
+          "correct": 1,
+          "explanation": "3rd."
+        }
+      ]
+    },
+    {
+      "id": "l06-posesivos",
+      "title": "Demostrativos, posesivos y have",
+      "summary": "This, that, these, those; my, your, his…; el posesivo con apóstrofo y el verbo have.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "Cerca",
+            "Lejos"
+          ],
+          "rows": [
+            [
+              "Singular",
+              "this (este, esta, esto)",
+              "that (ese, esa, aquel)"
+            ],
+            [
+              "Plural",
+              "these (estos, estas)",
+              "those (esos, aquellos)"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Pronombre",
+            "Adjetivo posesivo",
+            "Español",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "I",
+              "my",
+              "mi",
+              "my book"
+            ],
+            [
+              "you",
+              "your",
+              "tu / su",
+              "your house"
+            ],
+            [
+              "he",
+              "his",
+              "su (de él)",
+              "his car"
+            ],
+            [
+              "she",
+              "her",
+              "su (de ella)",
+              "her phone"
+            ],
+            [
+              "it",
+              "its",
+              "su (de eso)",
+              "its color"
+            ],
+            [
+              "we",
+              "our",
+              "nuestro",
+              "our class"
+            ],
+            [
+              "they",
+              "their",
+              "su (de ellos)",
+              "their project"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En español «su» sirve para todo; en inglés depende de **quién posee**: «su carro» es **his** car si es de él, **her** car si es de ella, **their** car si es de ellos. No depende de la cosa poseída.",
+          "title": "Su: his, her o their"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Para decir «de alguien» se agrega **apóstrofo + s** al poseedor: «el carro de Ana» = «Ana**'s** car»; «la casa de mi hermano» = «my brother**'s** house». El poseedor va primero.",
+          "title": "El posesivo sajón"
+        },
+        {
+          "type": "heading",
+          "text": "Have / has (tener)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sujeto",
+            "Afirmativo",
+            "Negativo",
+            "Pregunta"
+          ],
+          "rows": [
+            [
+              "I / you / we / they",
+              "have",
+              "don't have",
+              "Do … have?"
+            ],
+            [
+              "he / she / it",
+              "has",
+              "doesn't have",
+              "Does … have?"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "I have two brothers.",
+              "Tengo dos hermanos."
+            ],
+            [
+              "She has a new laptop.",
+              "Ella tiene una laptop nueva."
+            ],
+            [
+              "We don't have class today.",
+              "No tenemos clase hoy."
+            ],
+            [
+              "Do you have a pen?",
+              "¿Tienes un esfero?"
+            ],
+            [
+              "This is my friend's notebook.",
+              "Este es el cuaderno de mi amigo."
+            ],
+            [
+              "Those are their books.",
+              "Esos son sus libros (de ellos)."
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "«Estos libros»:",
+          "options": [
+            "this books",
+            "these books",
+            "that books",
+            "those book"
+          ],
+          "correct": 1,
+          "explanation": "Plural cercano."
+        },
+        {
+          "type": "quiz",
+          "question": "«Su carro» (de ella):",
+          "options": [
+            "his car",
+            "her car",
+            "its car",
+            "their car"
+          ],
+          "correct": 1,
+          "explanation": "Ella → her."
+        },
+        {
+          "type": "quiz",
+          "question": "«El perro de Pedro»:",
+          "options": [
+            "the dog of Pedro's",
+            "Pedro's dog",
+            "Pedro dog's",
+            "dog Pedro"
+          ],
+          "correct": 1,
+          "explanation": "Poseedor + 's + cosa."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «She (…) a bicycle.»",
+          "options": [
+            "have",
+            "has",
+            "haves",
+            "is have"
+          ],
+          "correct": 1,
+          "explanation": "Tercera persona → has."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «(…) you have a calculator?»",
+          "options": [
+            "Are",
+            "Do",
+            "Does",
+            "Have"
+          ],
+          "correct": 1,
+          "explanation": "Do + you + have."
+        }
+      ]
+    },
+    {
+      "id": "l07-there-is",
+      "title": "There is, there are y preposiciones de lugar",
+      "summary": "Cómo decir «hay» y cómo ubicar las cosas en el espacio.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          "rows": [
+            [
+              "Afirmativo",
+              "There is (There's) a book.",
+              "There are two books."
+            ],
+            [
+              "Negativo",
+              "There isn't a book.",
+              "There aren't any books."
+            ],
+            [
+              "Pregunta",
+              "Is there a book?",
+              "Are there any books?"
+            ],
+            [
+              "Respuesta",
+              "Yes, there is. / No, there isn't.",
+              "Yes, there are. / No, there aren't."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En español «hay» no cambia; en inglés sí: **there is** para una cosa, **there are** para varias. Y no se usa «have» para decir «hay»: «Hay un problema» = «There is a problem».",
+          "title": "Hay: singular o plural"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Suena como",
+            "Español"
+          ],
+          "rows": [
+            [
+              "in",
+              "in",
+              "en, dentro de"
+            ],
+            [
+              "on",
+              "on",
+              "sobre, encima de (tocando)"
+            ],
+            [
+              "under",
+              "ánder",
+              "debajo de"
+            ],
+            [
+              "above / over",
+              "abáv / óuver",
+              "por encima de (sin tocar)"
+            ],
+            [
+              "below",
+              "bilóu",
+              "por debajo de"
+            ],
+            [
+              "next to / beside",
+              "nekst tu / bisáid",
+              "al lado de"
+            ],
+            [
+              "between",
+              "bituín",
+              "entre (dos)"
+            ],
+            [
+              "in front of",
+              "in front ov",
+              "delante de"
+            ],
+            [
+              "behind",
+              "bijáind",
+              "detrás de"
+            ],
+            [
+              "near / far from",
+              "níar / far from",
+              "cerca de / lejos de"
+            ],
+            [
+              "at",
+              "at",
+              "en (un punto: at home, at school)"
+            ]
+          ],
+          "caption": "Preposiciones de lugar"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "There is a bridge over the river.",
+              "Hay un puente sobre el río."
+            ],
+            [
+              "There are thirty students in the classroom.",
+              "Hay treinta estudiantes en el aula."
+            ],
+            [
+              "The calculator is under the notebook.",
+              "La calculadora está debajo del cuaderno."
+            ],
+            [
+              "The lab is between the library and the cafeteria.",
+              "El laboratorio está entre la biblioteca y la cafetería."
+            ],
+            [
+              "Is there a bank near here?",
+              "¿Hay un banco cerca de aquí?"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "«Hay tres columnas»:",
+          "options": [
+            "There is three columns",
+            "There are three columns",
+            "It has three columns",
+            "They are three columns"
+          ],
+          "correct": 1,
+          "explanation": "Plural → there are."
+        },
+        {
+          "type": "quiz",
+          "question": "«Debajo de la mesa»:",
+          "options": [
+            "on the table",
+            "under the table",
+            "behind the table",
+            "in the table"
+          ],
+          "correct": 1,
+          "explanation": "Under."
+        },
+        {
+          "type": "quiz",
+          "question": "«Entre A y B»:",
+          "options": [
+            "between A and B",
+            "behind A and B",
+            "next A and B",
+            "under A and B"
+          ],
+          "correct": 0,
+          "explanation": "Between."
+        },
+        {
+          "type": "quiz",
+          "question": "La pregunta correcta:",
+          "options": [
+            "There is a problem?",
+            "Is there a problem?",
+            "Have a problem?",
+            "Is it a problem there?"
+          ],
+          "correct": 1,
+          "explanation": "Inversión."
+        },
+        {
+          "type": "quiz",
+          "question": "«Delante de»:",
+          "options": [
+            "behind",
+            "in front of",
+            "next to",
+            "above"
+          ],
+          "correct": 1,
+          "explanation": "In front of."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Práctica de traducción: primeros pasos",
+      "summary": "Oraciones para traducir con todo lo de la unidad.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Escribe tu respuesta **en papel o dila en voz alta** antes de ver la solución. Traducir en ambos sentidos es el mejor ejercicio para fijar la gramática.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Presentación",
+          "level": 1,
+          "statement": "Traduce al inglés: «Hola, me llamo Daniela y soy de Cuenca. Tengo diecinueve años.»",
+          "steps": [
+            "Edad con to be: I am nineteen (years old). Nombre de ciudad con mayúscula."
+          ],
+          "answer": "**Hello, my name is Daniela and I am from Cuenca. I am nineteen years old.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Profesión",
+          "level": 1,
+          "statement": "Traduce al inglés: «Mi hermano es ingeniero y mi mamá es profesora.»",
+          "steps": [
+            "Las profesiones llevan a / an: an engineer (vocal), a teacher."
+          ],
+          "answer": "**My brother is an engineer and my mother is a teacher.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Negación y pregunta",
+          "level": 1,
+          "statement": "Traduce al inglés: «Ellos no están en clase. ¿Están en la biblioteca?»",
+          "steps": [
+            "Negación con not; pregunta invirtiendo verbo y sujeto."
+          ],
+          "answer": "**They are not in class. Are they in the library?**"
+        },
+        {
+          "type": "exercise",
+          "title": "Hay",
+          "level": 2,
+          "statement": "Traduce al inglés: «Hay un laboratorio en el segundo piso, pero no hay computadoras.»",
+          "steps": [
+            "There is (singular) y there aren't any (plural negativo). Pisos con on y ordinal."
+          ],
+          "answer": "**There is a laboratory on the second floor, but there are not any computers.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Posesivos",
+          "level": 2,
+          "statement": "Traduce al inglés: «El cuaderno de María está debajo de su mochila.»",
+          "steps": [
+            "Posesivo con 's y «su» de ella = her."
+          ],
+          "answer": "**Maria's notebook is under her backpack.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Fecha y hora",
+          "level": 2,
+          "statement": "Traduce al inglés: «El examen es el viernes a las nueve de la mañana, en diciembre.»",
+          "steps": [
+            "on + día, at + hora, in + mes. Días y meses con mayúscula."
+          ],
+          "answer": "**The exam is on Friday at nine a.m., in December.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Tener",
+          "level": 2,
+          "statement": "Traduce al inglés: «¿Tienes una calculadora? — No, pero mi amigo tiene dos.»",
+          "steps": [
+            "Pregunta con do; tercera persona has."
+          ],
+          "answer": "**Do you have a calculator? — No, but my friend has two.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Sensaciones",
+          "level": 1,
+          "statement": "Traduce al inglés: «Tengo frío y tengo hambre, pero no estoy cansado.»",
+          "steps": [
+            "Sensaciones con to be, no con have."
+          ],
+          "answer": "**I am cold and I am hungry, but I am not tired.**"
+        }
+      ]
+    }
+  ]
+}

@@ -1957,13 +1957,13 @@
     {
       "id": "l08-modelos",
       "title": "Modelos atómicos (línea del tiempo)",
-      "summary": "De Demócrito y Dalton al modelo cuántico actual. Se ampliará con el PDF de clase.",
+      "summary": "Resumen en una tabla. El detalle de cada modelo está en la unidad «Historia de los modelos atómicos».",
       "minutes": 12,
       "blocks": [
         {
           "type": "callout",
           "kind": "nota",
-          "text": "Esta lección se ampliará con el PDF de modelos atómicos de la clase cuando lo agregues a la carpeta de fuentes."
+          "text": "Esta es la tabla resumen. Cada modelo, con su experimento, aportes y limitaciones, está explicado a fondo en la unidad **Historia de los modelos atómicos**."
         },
         {
           "type": "table",
@@ -2077,6 +2077,342 @@
           ],
           "correct": 1,
           "explanation": "Modelo mecánico-cuántico."
+        }
+      ]
+    },
+    {
+      "id": "lx-trampas",
+      "title": "Preguntas rápidas y trampas: el átomo",
+      "summary": "Iones, isótopos, isóbaros, isótonos, especies isoelectrónicas y masas.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Lo que cambia y lo que no"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Si el átomo…",
+            "Protones (Z)",
+            "Electrones",
+            "Neutrones",
+            "A"
+          ],
+          "rows": [
+            [
+              "Pierde electrones (catión)",
+              "Igual",
+              "Disminuyen",
+              "Igual",
+              "Igual"
+            ],
+            [
+              "Gana electrones (anión)",
+              "Igual",
+              "Aumentan",
+              "Igual",
+              "Igual"
+            ],
+            [
+              "Es otro isótopo",
+              "Igual",
+              "Igual (si es neutro)",
+              "Cambian",
+              "Cambia"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Formar un ion **nunca** cambia protones ni neutrones, solo electrones. Fe³⁺ tiene 26 protones y 30 neutrones, igual que el Fe; solo tiene 23 electrones en vez de 26.",
+          "title": "Trampa típica"
+        },
+        {
+          "type": "heading",
+          "text": "Para cada ion: electrones = Z − carga"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Especie",
+            "Z",
+            "Carga",
+            "Electrones"
+          ],
+          "rows": [
+            [
+              "Na⁺",
+              "11",
+              "+1",
+              "11 − 1 = 10"
+            ],
+            [
+              "S²⁻",
+              "16",
+              "−2",
+              "16 + 2 = 18"
+            ],
+            [
+              "Fe³⁺",
+              "26",
+              "+3",
+              "26 − 3 = 23"
+            ],
+            [
+              "N³⁻",
+              "7",
+              "−3",
+              "7 + 3 = 10"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Isótopos, isóbaros, isótonos e isoelectrónicos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Nombre",
+            "Tienen igual",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Isótopos",
+              "Z (mismo elemento)",
+              "¹H, ²H, ³H (protio, deuterio, tritio)"
+            ],
+            [
+              "Isóbaros",
+              "A (distinto elemento)",
+              "⁴⁰Ar y ⁴⁰Ca"
+            ],
+            [
+              "Isótonos",
+              "N (neutrones)",
+              "¹³C y ¹⁴N (ambos 7 neutrones)"
+            ],
+            [
+              "Isoelectrónicos",
+              "Número de electrones",
+              "F⁻, Ne, Na⁺, Mg²⁺ (10 electrones)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Truco: isóto**P**os = igual **P**rotones; isóto**N**os = igual **N**eutrones; isó**B**aros = igual masa (del griego *baros*, peso)."
+        },
+        {
+          "type": "text",
+          "text": "Los isótopos tienen propiedades **químicas iguales** (mismos electrones) y propiedades **físicas diferentes** (distinta masa)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos neutrones tiene ⁵⁶Fe³⁺?",
+          "options": [
+            "23",
+            "26",
+            "30",
+            "33"
+          ],
+          "correct": 2,
+          "explanation": "N = A − Z = 56 − 26 = **30**. La carga no afecta a los neutrones."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones tiene S²⁻ (Z = 16)?",
+          "options": [
+            "14",
+            "16",
+            "18",
+            "32"
+          ],
+          "correct": 2,
+          "explanation": "Ganó 2 electrones: 16 + 2 = **18**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos protones tiene Fe³⁺ (Z = 26)?",
+          "options": [
+            "23",
+            "26",
+            "29",
+            "30"
+          ],
+          "correct": 1,
+          "explanation": "Los protones no cambian: **26**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un catión se forma cuando el átomo…",
+          "options": [
+            "Gana electrones",
+            "Pierde electrones",
+            "Gana protones",
+            "Pierde neutrones"
+          ],
+          "correct": 1,
+          "explanation": "Catión = **cede** electrones y queda positivo."
+        },
+        {
+          "type": "quiz",
+          "question": "⁴⁰Ar y ⁴⁰Ca son…",
+          "options": [
+            "Isótopos",
+            "Isóbaros",
+            "Isótonos",
+            "Isoelectrónicos"
+          ],
+          "correct": 1,
+          "explanation": "Igual A = 40, distinto elemento: **isóbaros**."
+        },
+        {
+          "type": "quiz",
+          "question": "¹³C (Z = 6) y ¹⁴N (Z = 7) son…",
+          "options": [
+            "Isótopos",
+            "Isóbaros",
+            "Isótonos",
+            "Isoelectrónicos"
+          ],
+          "correct": 2,
+          "explanation": "N = 13 − 6 = 7 y 14 − 7 = 7: **isótonos**."
+        },
+        {
+          "type": "quiz",
+          "question": "Na⁺, Ne y F⁻ son…",
+          "options": [
+            "Isótopos",
+            "Isóbaros",
+            "Isótonos",
+            "Isoelectrónicos"
+          ],
+          "correct": 3,
+          "explanation": "Los tres tienen 10 electrones: **isoelectrónicos**."
+        },
+        {
+          "type": "quiz",
+          "question": "Los isótopos de un elemento tienen propiedades químicas…",
+          "options": [
+            "Diferentes",
+            "Iguales",
+            "Opuestas",
+            "Nulas"
+          ],
+          "correct": 1,
+          "explanation": "Mismos electrones: **iguales**. Las físicas sí difieren."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué indica el número másico A?",
+          "options": [
+            "Solo los protones",
+            "Protones + neutrones",
+            "Protones + electrones",
+            "La masa en gramos"
+          ],
+          "correct": 1,
+          "explanation": "**A = Z + N**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántas partículas hay en el núcleo de ²³Na?",
+          "options": [
+            "11",
+            "12",
+            "23",
+            "34"
+          ],
+          "correct": 2,
+          "explanation": "En el núcleo están protones y neutrones: **A = 23**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántas partículas subatómicas en total tiene un átomo neutro de ²³Na (Z = 11)?",
+          "options": [
+            "23",
+            "34",
+            "22",
+            "12"
+          ],
+          "correct": 1,
+          "explanation": "11 p + 12 n + 11 e = **34**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué la masa atómica del carbono es 12.011 y no 12?",
+          "options": [
+            "Por error de medición",
+            "Es el promedio ponderado de sus isótopos según su abundancia",
+            "Por los electrones",
+            "Porque el C-12 pesa 12.011"
+          ],
+          "correct": 1,
+          "explanation": "Es la **media ponderada** de ¹²C, ¹³C y ¹⁴C."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué partícula subatómica tiene la menor masa?",
+          "options": [
+            "Protón",
+            "Neutrón",
+            "Electrón",
+            "Son iguales"
+          ],
+          "correct": 2,
+          "explanation": "El **electrón** (9.11 × 10⁻³¹ kg)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué pesa más, el protón o el neutrón?",
+          "options": [
+            "El protón",
+            "El neutrón, ligeramente",
+            "Pesan exactamente igual",
+            "El electrón"
+          ],
+          "correct": 1,
+          "explanation": "Neutrón 1.674 × 10⁻²⁷ kg, protón 1.673 × 10⁻²⁷ kg: el **neutrón**, apenas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué isótopo es el patrón de la uma?",
+          "options": [
+            "¹H",
+            "¹²C",
+            "¹⁶O",
+            "¹⁴C"
+          ],
+          "correct": 1,
+          "explanation": "1 uma = 1/12 de la masa del **carbono-12**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué volumen ocupa 1 mol de agua líquida?",
+          "options": [
+            "22.4 L",
+            "18 cm³",
+            "1 L",
+            "6.022 × 10²³ cm³"
+          ],
+          "correct": 1,
+          "explanation": "m = 18 g y ρ = 1 g/cm³: **18 cm³**. Los 22.4 L son para gases en CNPT."
+        },
+        {
+          "type": "quiz",
+          "question": "El ¹⁴C es un isótopo…",
+          "options": [
+            "Estable",
+            "Radiactivo",
+            "Isóbaro",
+            "Ion"
+          ],
+          "correct": 1,
+          "explanation": "**Radiactivo**: se transforma y emite radiación. El ¹²C es estable."
         }
       ]
     }

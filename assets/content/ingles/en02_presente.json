@@ -1,0 +1,1322 @@
+{
+  "id": "en02-presente",
+  "title": "El presente y la vida diaria (A1 – A2)",
+  "description": "Present simple y continuous, frecuencia, preguntas, can, cantidades, pronombres objeto y vocabulario cotidiano.",
+  "lessons": [
+    {
+      "id": "l01-present-simple",
+      "title": "Present simple: hábitos y hechos",
+      "summary": "Cómo se forma, la s de la tercera persona y los auxiliares do y does.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El **present simple** se usa para lo que es **siempre o habitualmente** así: rutinas («I study every day»), hechos («Water boils at 100 °C») y horarios («The class starts at 7»). En textos de ingeniería es el tiempo más común, porque describe cómo funcionan las cosas.",
+          "title": "Para qué sirve"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Forma",
+            "I / you / we / they",
+            "he / she / it"
+          ],
+          "rows": [
+            [
+              "Afirmativa",
+              "I work",
+              "She work**s**"
+            ],
+            [
+              "Negativa",
+              "I do not (don't) work",
+              "She does not (doesn't) work"
+            ],
+            [
+              "Pregunta",
+              "Do you work?",
+              "Does she work?"
+            ],
+            [
+              "Respuesta corta",
+              "Yes, I do. / No, I don't.",
+              "Yes, she does. / No, she doesn't."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En **afirmativo**, he / she / it llevan **s** en el verbo: «He work**s**». Pero en negativo y pregunta la s se la lleva el auxiliar (**does**) y el verbo vuelve a su forma base: «Does he **work**?», no «Does he works?».",
+          "title": "La s solo aparece una vez"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Regla de la tercera persona",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "General: + s",
+              "works, plays, reads"
+            ],
+            [
+              "Termina en s, sh, ch, x, o: + es",
+              "watches, goes, does, fixes"
+            ],
+            [
+              "Consonante + y: ies",
+              "study → studies; carry → carries"
+            ],
+            [
+              "Irregular",
+              "have → has"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "**Do / does** son verbos «ayudantes»: no se traducen; solo sirven para armar la negación y la pregunta. Piensa en ellos como el signo «¿» del inglés.",
+          "title": "El auxiliar"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "I study civil engineering.",
+              "Estudio ingeniería civil."
+            ],
+            [
+              "She lives in Cuenca.",
+              "Ella vive en Cuenca."
+            ],
+            [
+              "We don't have class on Saturdays.",
+              "No tenemos clase los sábados."
+            ],
+            [
+              "Does he speak English? — Yes, he does.",
+              "¿Él habla inglés? — Sí."
+            ],
+            [
+              "Steel expands when it is heated.",
+              "El acero se dilata cuando se calienta."
+            ],
+            [
+              "The river flows from north to south.",
+              "El río fluye de norte a sur."
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «She (…) in a construction company.»",
+          "options": [
+            "work",
+            "works",
+            "working",
+            "is work"
+          ],
+          "correct": 1,
+          "explanation": "Tercera persona + s."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «(…) he study at night?»",
+          "options": [
+            "Do",
+            "Does",
+            "Is",
+            "Are"
+          ],
+          "correct": 1,
+          "explanation": "He → does."
+        },
+        {
+          "type": "quiz",
+          "question": "La negación correcta:",
+          "options": [
+            "He don't work",
+            "He doesn't works",
+            "He doesn't work",
+            "He not works"
+          ],
+          "correct": 2,
+          "explanation": "Doesn't + verbo base."
+        },
+        {
+          "type": "quiz",
+          "question": "La tercera persona de «study» es:",
+          "options": [
+            "studys",
+            "studies",
+            "studyes",
+            "study"
+          ],
+          "correct": 1,
+          "explanation": "y → ies."
+        },
+        {
+          "type": "quiz",
+          "question": "El present simple se usa para:",
+          "options": [
+            "Acciones en este momento",
+            "Hábitos y hechos",
+            "El pasado",
+            "Planes ya decididos"
+          ],
+          "correct": 1,
+          "explanation": "Rutinas y verdades generales."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «They (…) coffee.» (negativo)",
+          "options": [
+            "doesn't drink",
+            "don't drink",
+            "aren't drink",
+            "not drink"
+          ],
+          "correct": 1,
+          "explanation": "They → don't."
+        }
+      ]
+    },
+    {
+      "id": "l02-frecuencia-preguntas",
+      "title": "Frecuencia, rutinas y palabras para preguntar",
+      "summary": "Always, usually, never; verbos de la rutina diaria; what, where, when, why, how.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Adverbio",
+            "Suena como",
+            "Español",
+            "Frecuencia"
+          ],
+          "rows": [
+            [
+              "always",
+              "ólueis",
+              "siempre",
+              "100 %"
+            ],
+            [
+              "usually",
+              "iúshuali",
+              "normalmente",
+              "80 %"
+            ],
+            [
+              "often",
+              "ófen",
+              "a menudo",
+              "60 %"
+            ],
+            [
+              "sometimes",
+              "sámtaims",
+              "a veces",
+              "40 %"
+            ],
+            [
+              "rarely / seldom",
+              "rérli / séldom",
+              "rara vez",
+              "10 %"
+            ],
+            [
+              "never",
+              "néver",
+              "nunca",
+              "0 %"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El adverbio va **antes del verbo principal** pero **después de to be**: «I **always** study at night», «She is **always** late». Con «never» el verbo va en afirmativo: «I never drink coffee» (no «I don't never»).",
+          "title": "Posición"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Suena como",
+            "Español"
+          ],
+          "rows": [
+            [
+              "get up",
+              "guet ap",
+              "levantarse"
+            ],
+            [
+              "have breakfast / lunch / dinner",
+              "jav brékfast / lanch / díner",
+              "desayunar / almorzar / cenar"
+            ],
+            [
+              "go to university",
+              "gou tu iunivérsiti",
+              "ir a la universidad"
+            ],
+            [
+              "take the bus",
+              "teik de bas",
+              "tomar el bus"
+            ],
+            [
+              "study",
+              "stádi",
+              "estudiar"
+            ],
+            [
+              "do homework",
+              "du jóumuerk",
+              "hacer los deberes"
+            ],
+            [
+              "work",
+              "uérk",
+              "trabajar"
+            ],
+            [
+              "go home",
+              "gou joum",
+              "ir a casa"
+            ],
+            [
+              "go to bed",
+              "gou tu bed",
+              "acostarse"
+            ]
+          ],
+          "caption": "Rutina diaria"
+        },
+        {
+          "type": "heading",
+          "text": "Palabras para preguntar"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Palabra",
+            "Suena como",
+            "Español",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "What",
+              "uát",
+              "qué / cuál",
+              "What do you study?"
+            ],
+            [
+              "Where",
+              "uér",
+              "dónde",
+              "Where do you live?"
+            ],
+            [
+              "When",
+              "uén",
+              "cuándo",
+              "When does the class start?"
+            ],
+            [
+              "Who",
+              "ju",
+              "quién",
+              "Who is your teacher?"
+            ],
+            [
+              "Why",
+              "uái",
+              "por qué",
+              "Why are you late?"
+            ],
+            [
+              "How",
+              "jáu",
+              "cómo",
+              "How do you go to university?"
+            ],
+            [
+              "How many / much",
+              "jáu méni / mach",
+              "cuántos / cuánto",
+              "How many subjects do you have?"
+            ],
+            [
+              "How often",
+              "jáu ófen",
+              "con qué frecuencia",
+              "How often do you study?"
+            ],
+            [
+              "Which",
+              "uích",
+              "cuál (entre opciones)",
+              "Which book do you prefer?"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "Palabra de pregunta + do / does + sujeto + verbo base + …?",
+          "caption": "El orden de casi todas las preguntas"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "«¿Por qué?» es **Why?** y «porque» es **because**: «Why do you study English? — Because I need it for my career.»"
+        },
+        {
+          "type": "quiz",
+          "question": "Posición correcta:",
+          "options": [
+            "I study always at night",
+            "I always study at night",
+            "Always I study at night",
+            "I study at always night"
+          ],
+          "correct": 1,
+          "explanation": "Antes del verbo principal."
+        },
+        {
+          "type": "quiz",
+          "question": "Con to be:",
+          "options": [
+            "She always is late",
+            "She is always late",
+            "Always she is late",
+            "She is late always is"
+          ],
+          "correct": 1,
+          "explanation": "Después de to be."
+        },
+        {
+          "type": "quiz",
+          "question": "«¿Dónde vives?»:",
+          "options": [
+            "Where you live?",
+            "Where do you live?",
+            "Where are you live?",
+            "Where lives you?"
+          ],
+          "correct": 1,
+          "explanation": "Where + do + sujeto + verbo."
+        },
+        {
+          "type": "quiz",
+          "question": "«¿Con qué frecuencia?»:",
+          "options": [
+            "How many",
+            "How often",
+            "How much",
+            "How long"
+          ],
+          "correct": 1,
+          "explanation": "How often."
+        },
+        {
+          "type": "quiz",
+          "question": "«Nunca llego tarde»:",
+          "options": [
+            "I don't never arrive late",
+            "I never arrive late",
+            "I arrive never late",
+            "Never I arrive late"
+          ],
+          "correct": 1,
+          "explanation": "Never + verbo afirmativo."
+        }
+      ]
+    },
+    {
+      "id": "l03-can-imperativo",
+      "title": "Can, can't y el imperativo",
+      "summary": "Expresar habilidad, permiso y posibilidad; dar instrucciones.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Forma",
+            "Estructura",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Afirmativa",
+              "sujeto + can + verbo base",
+              "I can swim. / She can speak English."
+            ],
+            [
+              "Negativa",
+              "sujeto + cannot (can't) + verbo base",
+              "He can't drive."
+            ],
+            [
+              "Pregunta",
+              "Can + sujeto + verbo base?",
+              "Can you help me?"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Can** es un verbo modal: es **igual para todas las personas** (no lleva s: «she can», nunca «she cans»), **no usa do / does** y va seguido del verbo **sin «to»**: «I can **go**», no «I can to go».",
+          "title": "Reglas de los modales"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Uso",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Habilidad",
+              "I can use AutoCAD.",
+              "Sé usar AutoCAD."
+            ],
+            [
+              "Permiso",
+              "Can I come in?",
+              "¿Puedo pasar?"
+            ],
+            [
+              "Petición",
+              "Can you repeat that, please?",
+              "¿Puedes repetir eso?"
+            ],
+            [
+              "Posibilidad",
+              "This beam can support ten tons.",
+              "Esta viga puede soportar diez toneladas."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "El imperativo"
+        },
+        {
+          "type": "text",
+          "text": "Para dar instrucciones se usa el **verbo base, sin sujeto**. La negación se hace con **Don't**. Es la forma de los manuales, las normas y los procedimientos de laboratorio."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Open the file.",
+              "Abre el archivo."
+            ],
+            [
+              "Measure the distance twice.",
+              "Mide la distancia dos veces."
+            ],
+            [
+              "Don't touch the equipment.",
+              "No toques el equipo."
+            ],
+            [
+              "Wear a helmet at all times.",
+              "Usa casco en todo momento."
+            ],
+            [
+              "Please sit down.",
+              "Por favor, siéntate."
+            ],
+            [
+              "Let's start.",
+              "Empecemos."
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "She cans swim",
+            "She can swims",
+            "She can swim",
+            "She can to swim"
+          ],
+          "correct": 2,
+          "explanation": "Can + verbo base."
+        },
+        {
+          "type": "quiz",
+          "question": "La pregunta:",
+          "options": [
+            "Do you can help me?",
+            "Can you help me?",
+            "You can help me?",
+            "Can you to help me?"
+          ],
+          "correct": 1,
+          "explanation": "Sin do."
+        },
+        {
+          "type": "quiz",
+          "question": "«No abras la puerta»:",
+          "options": [
+            "Not open the door",
+            "Don't open the door",
+            "No open the door",
+            "You don't open the door"
+          ],
+          "correct": 1,
+          "explanation": "Don't + verbo base."
+        },
+        {
+          "type": "quiz",
+          "question": "«Empecemos»:",
+          "options": [
+            "Let's start",
+            "We start",
+            "Start we",
+            "Starting"
+          ],
+          "correct": 0,
+          "explanation": "Let's + verbo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Can I use your pen?» expresa:",
+          "options": [
+            "Habilidad",
+            "Permiso",
+            "Obligación",
+            "Pasado"
+          ],
+          "correct": 1,
+          "explanation": "Pedir permiso."
+        }
+      ]
+    },
+    {
+      "id": "l04-continuous",
+      "title": "Present continuous y su diferencia con el simple",
+      "summary": "Lo que está pasando ahora: to be + verbo con -ing; cuándo usar cada presente.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "sujeto + am / is / are + verbo-ing",
+          "caption": "Present continuous"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Forma",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Afirmativa",
+              "I am studying.",
+              "Estoy estudiando."
+            ],
+            [
+              "Negativa",
+              "She isn't working.",
+              "Ella no está trabajando."
+            ],
+            [
+              "Pregunta",
+              "Are they coming?",
+              "¿Están viniendo?"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Regla del -ing",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "General: + ing",
+              "work → working; read → reading"
+            ],
+            [
+              "Termina en e muda: se quita la e",
+              "write → writing; make → making"
+            ],
+            [
+              "Consonante – vocal – consonante acentuada: se duplica",
+              "run → running; sit → sitting; stop → stopping"
+            ],
+            [
+              "Termina en ie: cambia a y",
+              "lie → lying"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Present simple",
+            "Present continuous"
+          ],
+          "rows": [
+            [
+              "Hábitos, hechos, rutinas",
+              "Lo que ocurre ahora mismo o estos días"
+            ],
+            [
+              "I work in Quito. (trabajo ahí)",
+              "I am working in Quito this week. (temporal)"
+            ],
+            [
+              "She studies every night.",
+              "She is studying now."
+            ],
+            [
+              "Señales: always, every day, usually, never",
+              "Señales: now, right now, at the moment, today, this week"
+            ]
+          ],
+          "caption": "Cuándo usar cada uno"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Algunos verbos **no se usan en continuous** porque expresan estados, no acciones: **know, understand, like, love, want, need, believe, have** (poseer), **be**. Se dice «I **know** the answer», no «I am knowing»; «I **want** a coffee», no «I am wanting».",
+          "title": "Verbos de estado"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "El present continuous también sirve para **planes futuros ya organizados**: «I am meeting my group tomorrow» (mañana me reúno con mi grupo)."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «She (…) a report now.»",
+          "options": [
+            "writes",
+            "is writing",
+            "write",
+            "writing"
+          ],
+          "correct": 1,
+          "explanation": "Ahora → continuous."
+        },
+        {
+          "type": "quiz",
+          "question": "El -ing de «run» es:",
+          "options": [
+            "runing",
+            "running",
+            "runeing",
+            "runs"
+          ],
+          "correct": 1,
+          "explanation": "Se duplica la n."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "I am knowing the answer",
+            "I know the answer",
+            "I knowing the answer",
+            "I am know the answer"
+          ],
+          "correct": 1,
+          "explanation": "Know es verbo de estado."
+        },
+        {
+          "type": "quiz",
+          "question": "«Every day» pide:",
+          "options": [
+            "Present continuous",
+            "Present simple",
+            "Imperativo",
+            "Can"
+          ],
+          "correct": 1,
+          "explanation": "Hábito."
+        },
+        {
+          "type": "quiz",
+          "question": "La pregunta:",
+          "options": [
+            "Do you working?",
+            "Are you working?",
+            "You are working?",
+            "Is you working?"
+          ],
+          "correct": 1,
+          "explanation": "To be + sujeto + -ing."
+        },
+        {
+          "type": "quiz",
+          "question": "El -ing de «make» es:",
+          "options": [
+            "makeing",
+            "making",
+            "makking",
+            "makes"
+          ],
+          "correct": 1,
+          "explanation": "Se quita la e."
+        }
+      ]
+    },
+    {
+      "id": "l05-cantidades",
+      "title": "Contables, incontables y cantidades",
+      "summary": "Some, any, much, many, a lot of, a few, a little.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Los sustantivos **contables** se pueden contar uno por uno (one beam, two beams). Los **incontables** se ven como una masa o un concepto: water, sand, concrete, information, advice, money, time. No tienen plural ni llevan a / an.",
+          "title": "Contable o incontable"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Palabras incontables en inglés que en español sí se cuentan: **information** (no «informations»), **advice** (consejo), **furniture** (muebles), **equipment** (equipo), **research** (investigación), **news**, **homework**. Para contarlas se usa «a piece of»: a piece of information, a piece of equipment.",
+          "title": "Trampas"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Palabra",
+            "Con contables",
+            "Con incontables",
+            "Uso"
+          ],
+          "rows": [
+            [
+              "some",
+              "some books",
+              "some water",
+              "Afirmativas (y ofrecimientos)"
+            ],
+            [
+              "any",
+              "any books",
+              "any water",
+              "Negativas y preguntas"
+            ],
+            [
+              "many",
+              "many books",
+              "—",
+              "Muchos (contables)"
+            ],
+            [
+              "much",
+              "—",
+              "much water",
+              "Mucho (incontables), sobre todo en negativas y preguntas"
+            ],
+            [
+              "a lot of / lots of",
+              "a lot of books",
+              "a lot of water",
+              "Mucho, en general"
+            ],
+            [
+              "a few",
+              "a few books",
+              "—",
+              "Unos pocos"
+            ],
+            [
+              "a little",
+              "—",
+              "a little water",
+              "Un poco"
+            ],
+            [
+              "How many…?",
+              "How many beams?",
+              "—",
+              "¿Cuántos?"
+            ],
+            [
+              "How much…?",
+              "—",
+              "How much concrete?",
+              "¿Cuánto?"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "There is some water in the tank.",
+              "Hay algo de agua en el tanque."
+            ],
+            [
+              "We don't have any cement.",
+              "No tenemos cemento."
+            ],
+            [
+              "How many columns are there?",
+              "¿Cuántas columnas hay?"
+            ],
+            [
+              "How much time do we have?",
+              "¿Cuánto tiempo tenemos?"
+            ],
+            [
+              "I need a little help.",
+              "Necesito un poco de ayuda."
+            ],
+            [
+              "How much does it cost?",
+              "¿Cuánto cuesta?"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "«Information» es:",
+          "options": [
+            "Contable",
+            "Incontable",
+            "Plural",
+            "Un verbo"
+          ],
+          "correct": 1,
+          "explanation": "No lleva s."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «How (…) students are there?»",
+          "options": [
+            "much",
+            "many",
+            "any",
+            "a lot"
+          ],
+          "correct": 1,
+          "explanation": "Contable."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «We don't have (…) time.»",
+          "options": [
+            "some",
+            "many",
+            "much",
+            "a few"
+          ],
+          "correct": 2,
+          "explanation": "Incontable, negativa."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «There are (…) books on the table.»",
+          "options": [
+            "any",
+            "some",
+            "much",
+            "a little"
+          ],
+          "correct": 1,
+          "explanation": "Afirmativa."
+        },
+        {
+          "type": "quiz",
+          "question": "«Un poco de agua»:",
+          "options": [
+            "a few water",
+            "a little water",
+            "many water",
+            "some waters"
+          ],
+          "correct": 1,
+          "explanation": "Incontable."
+        }
+      ]
+    },
+    {
+      "id": "l06-objeto-vocabulario",
+      "title": "Pronombres objeto, adjetivos y vocabulario cotidiano",
+      "summary": "Me, him, her, us, them; adjetivos frecuentes y palabras de todos los días.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Sujeto",
+            "Objeto",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "I",
+              "me",
+              "Help me.",
+              "Ayúdame."
+            ],
+            [
+              "you",
+              "you",
+              "I see you.",
+              "Te veo."
+            ],
+            [
+              "he",
+              "him",
+              "Call him.",
+              "Llámalo."
+            ],
+            [
+              "she",
+              "her",
+              "I know her.",
+              "La conozco."
+            ],
+            [
+              "it",
+              "it",
+              "Open it.",
+              "Ábrelo."
+            ],
+            [
+              "we",
+              "us",
+              "They invited us.",
+              "Nos invitaron."
+            ],
+            [
+              "they",
+              "them",
+              "I need them.",
+              "Los necesito."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El pronombre objeto va **después** del verbo o de la preposición: «I love **her**», «Come with **me**», «Listen to **him**». En español va antes («la quiero»); en inglés, después.",
+          "title": "Posición"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Adjetivo",
+            "Opuesto",
+            "Español"
+          ],
+          "rows": [
+            [
+              "big / large",
+              "small",
+              "grande / pequeño"
+            ],
+            [
+              "long",
+              "short",
+              "largo / corto"
+            ],
+            [
+              "tall / high",
+              "short / low",
+              "alto / bajo"
+            ],
+            [
+              "heavy",
+              "light",
+              "pesado / liviano"
+            ],
+            [
+              "strong",
+              "weak",
+              "fuerte / débil"
+            ],
+            [
+              "fast",
+              "slow",
+              "rápido / lento"
+            ],
+            [
+              "easy",
+              "difficult / hard",
+              "fácil / difícil"
+            ],
+            [
+              "cheap",
+              "expensive",
+              "barato / caro"
+            ],
+            [
+              "new",
+              "old",
+              "nuevo / viejo"
+            ],
+            [
+              "hot",
+              "cold",
+              "caliente / frío"
+            ],
+            [
+              "wide",
+              "narrow",
+              "ancho / angosto"
+            ],
+            [
+              "thick",
+              "thin",
+              "grueso / delgado"
+            ],
+            [
+              "deep",
+              "shallow",
+              "profundo / poco profundo"
+            ],
+            [
+              "safe",
+              "dangerous",
+              "seguro / peligroso"
+            ]
+          ],
+          "caption": "Adjetivos esenciales (varios se usan mucho en ingeniería)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tema",
+            "Palabras"
+          ],
+          "rows": [
+            [
+              "Familia",
+              "mother, father, parents, brother, sister, son, daughter, husband, wife, girlfriend, boyfriend, friend"
+            ],
+            [
+              "Universidad",
+              "class, classroom, teacher / professor, student, subject, exam, grade, homework, semester, library, laboratory, degree"
+            ],
+            [
+              "Casa",
+              "house, room, kitchen, bathroom, bedroom, door, window, floor, wall, roof, stairs"
+            ],
+            [
+              "Ciudad",
+              "street, road, bridge, building, park, bank, hospital, bus stop, station, corner, traffic light"
+            ],
+            [
+              "Comida",
+              "breakfast, lunch, dinner, water, coffee, bread, rice, chicken, meat, fruit, vegetables"
+            ],
+            [
+              "Verbos básicos",
+              "go, come, see, look, hear, listen, say, tell, give, take, make, do, want, need, like, think, know, find, use, buy, pay, start, finish"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Make** y **do** significan «hacer», pero no se intercambian: se **makes** algo que se crea (make a plan, make a mistake, make a decision) y se **does** una actividad o tarea (do homework, do an exercise, do research, do a test).",
+          "title": "Make y do"
+        },
+        {
+          "type": "quiz",
+          "question": "«Llámala»:",
+          "options": [
+            "Call she",
+            "Call her",
+            "Her call",
+            "Call hers"
+          ],
+          "correct": 1,
+          "explanation": "Objeto de she."
+        },
+        {
+          "type": "quiz",
+          "question": "«Ven con nosotros»:",
+          "options": [
+            "Come with we",
+            "Come with us",
+            "Come with our",
+            "Come us with"
+          ],
+          "correct": 1,
+          "explanation": "Objeto de we."
+        },
+        {
+          "type": "quiz",
+          "question": "El opuesto de «wide» es:",
+          "options": [
+            "thin",
+            "narrow",
+            "short",
+            "low"
+          ],
+          "correct": 1,
+          "explanation": "Ancho / angosto."
+        },
+        {
+          "type": "quiz",
+          "question": "«Cometer un error» es:",
+          "options": [
+            "do a mistake",
+            "make a mistake",
+            "have a mistake",
+            "take a mistake"
+          ],
+          "correct": 1,
+          "explanation": "Make."
+        },
+        {
+          "type": "quiz",
+          "question": "«Hacer los deberes» es:",
+          "options": [
+            "make homework",
+            "do homework",
+            "make homeworks",
+            "do the homeworks"
+          ],
+          "correct": 1,
+          "explanation": "Do, e incontable."
+        },
+        {
+          "type": "quiz",
+          "question": "«Deep» significa:",
+          "options": [
+            "ancho",
+            "profundo",
+            "grueso",
+            "pesado"
+          ],
+          "correct": 1,
+          "explanation": "Profundo."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Práctica de traducción: el presente",
+      "summary": "Oraciones con present simple, continuous, can y cantidades.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Escribe tu respuesta **en papel o dila en voz alta** antes de ver la solución. Traducir en ambos sentidos es el mejor ejercicio para fijar la gramática.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Rutina",
+          "level": 1,
+          "statement": "Traduce al inglés: «Me levanto a las seis y tomo el bus a la universidad todos los días.»",
+          "steps": [
+            "Present simple para rutinas; at + hora."
+          ],
+          "answer": "**I get up at six and take the bus to university every day.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Tercera persona",
+          "level": 2,
+          "statement": "Traduce al inglés: «Mi novia estudia cálculo y álgebra lineal, pero no estudia química.»",
+          "steps": [
+            "studies (y → ies); negación con doesn't + verbo base."
+          ],
+          "answer": "**My girlfriend studies calculus and linear algebra, but she doesn't study chemistry.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Pregunta",
+          "level": 2,
+          "statement": "Traduce al inglés: «¿A qué hora empieza la clase de física?»",
+          "steps": [
+            "What time + does + sujeto + verbo base."
+          ],
+          "answer": "**What time does the physics class start?**"
+        },
+        {
+          "type": "exercise",
+          "title": "Ahora",
+          "level": 2,
+          "statement": "Traduce al inglés: «En este momento estamos resolviendo un ejercicio de vigas.»",
+          "steps": [
+            "Present continuous; «a beam exercise»: el sustantivo que describe va antes."
+          ],
+          "answer": "**At the moment we are solving a beam exercise.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Simple y continuous",
+          "level": 3,
+          "statement": "Traduce al inglés: «Normalmente trabajo en casa, pero hoy estoy trabajando en el laboratorio.»",
+          "steps": [
+            "Hábito en simple; situación temporal en continuous."
+          ],
+          "answer": "**I usually work at home, but today I am working in the laboratory.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Can",
+          "level": 1,
+          "statement": "Traduce al inglés: «¿Puedes ayudarme con este problema? No lo entiendo.»",
+          "steps": [
+            "Can + verbo base; understand no va en continuous; objeto «it» obligatorio."
+          ],
+          "answer": "**Can you help me with this problem? I don't understand it.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Cantidades",
+          "level": 2,
+          "statement": "Traduce al inglés: «¿Cuánto cemento necesitamos? No tenemos mucho tiempo.»",
+          "steps": [
+            "Cement y time son incontables: much."
+          ],
+          "answer": "**How much cement do we need? We don't have much time.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Instrucciones",
+          "level": 2,
+          "statement": "Traduce al inglés: «Mide la longitud dos veces y no olvides anotar las unidades.»",
+          "steps": [
+            "Imperativo; negación con don't."
+          ],
+          "answer": "**Measure the length twice and don't forget to write down the units.**"
+        }
+      ]
+    }
+  ]
+}

@@ -2513,6 +2513,650 @@
           "explanation": "Fe²⁺ (ferroso) y Fe³⁺ (férrico)."
         }
       ]
+    },
+    {
+      "id": "lx-trampas",
+      "title": "Preguntas rápidas y trampas: ¿cuántos electrones hay en…?",
+      "summary": "Cómo interpretar «capa», «nivel», «subnivel» y «orbital», con el hierro como ejemplo resuelto.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "El vocabulario exacto"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Palabra",
+            "Qué es",
+            "Se identifica con",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Nivel o capa",
+              "Todo lo que tiene el mismo n",
+              "n",
+              "Nivel 3 = 3s + 3p + 3d"
+            ],
+            [
+              "Subnivel o subcapa",
+              "Un tipo de orbital dentro de un nivel",
+              "n y l",
+              "3d, 4s, 2p"
+            ],
+            [
+              "Orbital",
+              "Una sola «casilla»; máximo 2 electrones",
+              "n, l y ml",
+              "Uno de los cinco orbitales 3d"
+            ],
+            [
+              "Electrón",
+              "Uno concreto",
+              "n, l, ml y ms",
+              "El último electrón del 3d⁶"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Las capas también se nombran con letras: **K** (n = 1), **L** (n = 2), **M** (n = 3), **N** (n = 4), **O** (n = 5), **P** (n = 6) y **Q** (n = 7). Si te preguntan por la «capa M», es el nivel 3 completo."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En sentido estricto **no existe la «capa d»**: d es un **subnivel**. Cuando una pregunta dice «capa d» casi siempre se refiere al subnivel d. Ahora bien, un átomo puede tener **varios** subniveles d (3d, 4d…), y ahí está la ambigüedad.",
+          "title": "El origen de la confusión"
+        },
+        {
+          "type": "heading",
+          "text": "Regla para decidir qué contar"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Si la pregunta dice…",
+            "Cuenta…"
+          ],
+          "rows": [
+            [
+              "«en el subnivel 3d» o «en 3d»",
+              "Solo los electrones de 3d"
+            ],
+            [
+              "«en los subniveles d», «en orbitales d», «en d» (sin número)",
+              "Todos los d juntos: 3d + 4d + 5d…"
+            ],
+            [
+              "«en el nivel 3», «en la capa 3» o «en la capa M»",
+              "Todo n = 3: 3s + 3p + 3d"
+            ],
+            [
+              "«en el último nivel» o «en la capa de valencia»",
+              "Solo el n más alto"
+            ],
+            [
+              "«en el último subnivel» o «electrón diferencial»",
+              "El subnivel que se llenó al final según Moeller"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si la pregunta es ambigua en un examen escrito, escribe tu interpretación en una línea: «Interpreto \"capa d\" como todos los subniveles d: 3d⁶ → 6 electrones». Así el profesor ve tu razonamiento aunque haya pensado otra cosa. En opción múltiple, si solo aparece una de las dos respuestas posibles, esa es.",
+          "title": "Qué hacer si no está claro"
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo resuelto: hierro (Fe, Z = 26)"
+        },
+        {
+          "type": "formula",
+          "expression": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶",
+          "caption": "Configuración del hierro según Moeller"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Pregunta",
+            "Respuesta",
+            "Cómo se cuenta"
+          ],
+          "rows": [
+            [
+              "¿Electrones en el subnivel 3d?",
+              "6",
+              "Solo 3d⁶"
+            ],
+            [
+              "¿Electrones en los subniveles d?",
+              "6",
+              "El hierro solo tiene 3d"
+            ],
+            [
+              "¿Electrones en el nivel 3 (capa M)?",
+              "14",
+              "3s² + 3p⁶ + 3d⁶ = 2 + 6 + 6"
+            ],
+            [
+              "¿Electrones en el último nivel?",
+              "2",
+              "n = 4: solo 4s²"
+            ],
+            [
+              "¿Electrones de valencia (definición del apunte)?",
+              "2",
+              "Los del nivel más externo: 4s²"
+            ],
+            [
+              "¿Electrones en subniveles p?",
+              "12",
+              "2p⁶ + 3p⁶"
+            ],
+            [
+              "¿Electrones en subniveles s?",
+              "8",
+              "1s² + 2s² + 3s² + 4s²"
+            ],
+            [
+              "¿Electrones con l = 2?",
+              "6",
+              "l = 2 es d"
+            ],
+            [
+              "¿Electrones con l = 1?",
+              "12",
+              "l = 1 es p"
+            ],
+            [
+              "¿Último subnivel en llenarse?",
+              "3d",
+              "Según Moeller, 3d va después de 4s"
+            ],
+            [
+              "¿Niveles ocupados?",
+              "4",
+              "n = 1, 2, 3, 4"
+            ],
+            [
+              "¿Subniveles ocupados?",
+              "7",
+              "1s, 2s, 2p, 3s, 3p, 4s, 3d"
+            ],
+            [
+              "¿Orbitales ocupados?",
+              "15",
+              "1 + 1 + 3 + 1 + 3 + 1 + 5"
+            ],
+            [
+              "¿Orbitales llenos?",
+              "11",
+              "Los 10 de los subniveles completos + 1 del 3d"
+            ],
+            [
+              "¿Orbitales semillenos?",
+              "4",
+              "Cuatro del 3d con un solo electrón"
+            ],
+            [
+              "¿Electrones desapareados?",
+              "4",
+              "En 3d⁶: ↑↓ ↑ ↑ ↑ ↑"
+            ],
+            [
+              "¿Electrones con ms = −1/2?",
+              "11",
+              "Uno por cada orbital lleno"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Con la definición del apunte (electrones del nivel más externo) el hierro tiene **2** electrones de valencia. En temas de enlace de metales de transición a veces se cuentan 4s + 3d = 8. Si el profesor usa la definición del apunte, responde 2.",
+          "title": "Valencia en metales de transición"
+        },
+        {
+          "type": "heading",
+          "text": "Otro caso: plata (Ag, Z = 47)"
+        },
+        {
+          "type": "formula",
+          "expression": "[Kr] 5s¹ 4d¹⁰",
+          "caption": "Excepción: un electrón de 5s pasa a 4d"
+        },
+        {
+          "type": "text",
+          "text": "[Kr] incluye 3d¹⁰. Entonces: electrones en **4d** = 10; en **todos los subniveles d** = 3d¹⁰ + 4d¹⁰ = **20**; en el **último nivel** (n = 5) = 1. Aquí la ambigüedad sí cambia la respuesta: 10 o 20."
+        },
+        {
+          "type": "heading",
+          "text": "Iones de metales de transición: primero sale el 4s"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Al formar un catión, los electrones salen primero del nivel **más externo** (el n más alto), no del último que se llenó. Fe²⁺ es **[Ar] 3d⁶** (salen los dos 4s), no [Ar] 4s² 3d⁴. Fe³⁺ es **[Ar] 3d⁵**.",
+          "title": "Trampa de configuración de iones"
+        },
+        {
+          "type": "heading",
+          "text": "Capacidades: no confundir"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Qué",
+            "Fórmula",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Electrones máximos en un nivel",
+              "2n²",
+              "Nivel 3: 18"
+            ],
+            [
+              "Orbitales en un nivel",
+              "n²",
+              "Nivel 3: 9"
+            ],
+            [
+              "Subniveles en un nivel",
+              "n",
+              "Nivel 3: 3 (3s, 3p, 3d)"
+            ],
+            [
+              "Electrones máximos en un subnivel",
+              "2(2l + 1)",
+              "d: 10"
+            ],
+            [
+              "Orbitales en un subnivel",
+              "2l + 1",
+              "d: 5"
+            ],
+            [
+              "Electrones en un orbital",
+              "2",
+              "Siempre, con espines opuestos"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "El nivel 3 **puede** tener 18 electrones, pero en el argón (Z = 18) tiene solo 8, porque el 4s se llena antes que el 3d. La capacidad máxima no es lo mismo que lo que realmente tiene un átomo."
+        },
+        {
+          "type": "heading",
+          "text": "Números cuánticos del último electrón"
+        },
+        {
+          "type": "text",
+          "text": "Convención del apunte: se llena primero cada orbital con espín +1/2 empezando por ml = −l, y luego se aparean con −1/2 empezando otra vez por −l.\nPara el 3d⁶ del hierro: los cinco primeros electrones ocupan ml = −2, −1, 0, +1, +2 con +1/2; el sexto vuelve a ml = −2 con −1/2."
+        },
+        {
+          "type": "formula",
+          "expression": "n = 3, l = 2, ml = −2, ms = −1/2",
+          "caption": "Último electrón del hierro (3d⁶)"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Algunos libros empiezan por ml = +l o asignan −1/2 primero. Usa siempre la convención de tu profesor; con la del apunte, 3p⁴ termina en ml = −1, ms = −1/2.",
+          "title": "Ojo con la convención"
+        },
+        {
+          "type": "quiz",
+          "question": "Fe (Z = 26): ¿cuántos electrones hay en el subnivel 3d?",
+          "options": [
+            "2",
+            "6",
+            "8",
+            "14"
+          ],
+          "correct": 1,
+          "explanation": "3d⁶: **6**."
+        },
+        {
+          "type": "quiz",
+          "question": "Fe (Z = 26): ¿cuántos electrones hay en el nivel 3?",
+          "options": [
+            "6",
+            "8",
+            "14",
+            "18"
+          ],
+          "correct": 2,
+          "explanation": "3s² 3p⁶ 3d⁶ = **14**."
+        },
+        {
+          "type": "quiz",
+          "question": "Fe (Z = 26): ¿cuántos electrones hay en la capa M?",
+          "options": [
+            "2",
+            "8",
+            "14",
+            "18"
+          ],
+          "correct": 2,
+          "explanation": "Capa M = n = 3: **14**."
+        },
+        {
+          "type": "quiz",
+          "question": "Fe (Z = 26): ¿cuántos electrones hay en el último nivel?",
+          "options": [
+            "2",
+            "6",
+            "8",
+            "14"
+          ],
+          "correct": 0,
+          "explanation": "El último nivel es n = 4: 4s² → **2**."
+        },
+        {
+          "type": "quiz",
+          "question": "Ag (Z = 47, [Kr] 5s¹ 4d¹⁰): ¿cuántos electrones hay en total en subniveles d?",
+          "options": [
+            "10",
+            "20",
+            "1",
+            "30"
+          ],
+          "correct": 1,
+          "explanation": "3d¹⁰ (dentro de [Kr]) + 4d¹⁰ = **20**."
+        },
+        {
+          "type": "quiz",
+          "question": "Ag (Z = 47): ¿cuántos electrones hay solo en 4d?",
+          "options": [
+            "10",
+            "20",
+            "1",
+            "9"
+          ],
+          "correct": 0,
+          "explanation": "4d¹⁰: **10**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué capa corresponde a n = 2?",
+          "options": [
+            "K",
+            "L",
+            "M",
+            "N"
+          ],
+          "correct": 1,
+          "explanation": "K = 1, **L = 2**, M = 3, N = 4."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la capacidad máxima del nivel 3?",
+          "options": [
+            "8",
+            "9",
+            "18",
+            "32"
+          ],
+          "correct": 2,
+          "explanation": "2n² = 2 · 9 = **18**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos orbitales tiene el nivel 3?",
+          "options": [
+            "3",
+            "9",
+            "18",
+            "5"
+          ],
+          "correct": 1,
+          "explanation": "n² = **9** (1 s + 3 p + 5 d)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos orbitales tiene un subnivel d?",
+          "options": [
+            "3",
+            "5",
+            "7",
+            "10"
+          ],
+          "correct": 1,
+          "explanation": "2l + 1 = **5**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones caben en un subnivel f?",
+          "options": [
+            "7",
+            "10",
+            "14",
+            "18"
+          ],
+          "correct": 2,
+          "explanation": "2(2·3 + 1) = **14**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones caben como máximo en un orbital?",
+          "options": [
+            "1",
+            "2",
+            "6",
+            "8"
+          ],
+          "correct": 1,
+          "explanation": "**2**, con espines opuestos (Pauli)."
+        },
+        {
+          "type": "quiz",
+          "question": "Fe (Z = 26): ¿cuántos electrones desapareados tiene?",
+          "options": [
+            "0",
+            "2",
+            "4",
+            "6"
+          ],
+          "correct": 2,
+          "explanation": "3d⁶ = ↑↓ ↑ ↑ ↑ ↑: **4**."
+        },
+        {
+          "type": "quiz",
+          "question": "S (Z = 16, 1s² 2s² 2p⁶ 3s² 3p⁴): ¿cuántos electrones desapareados tiene?",
+          "options": [
+            "0",
+            "2",
+            "4",
+            "6"
+          ],
+          "correct": 1,
+          "explanation": "3p⁴ = ↑↓ ↑ ↑: **2**."
+        },
+        {
+          "type": "quiz",
+          "question": "S (Z = 16): ¿cuántos electrones hay en el subnivel 3p?",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "correct": 1,
+          "explanation": "3p⁴: **4**."
+        },
+        {
+          "type": "quiz",
+          "question": "S (Z = 16): ¿cuántos electrones de valencia tiene?",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "16"
+          ],
+          "correct": 2,
+          "explanation": "Nivel 3: 3s² 3p⁴ = **6**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones con l = 1 tiene el neón (1s² 2s² 2p⁶)?",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "10"
+          ],
+          "correct": 2,
+          "explanation": "l = 1 es p: 2p⁶ → **6**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos electrones con n = 2 tiene el neón?",
+          "options": [
+            "2",
+            "6",
+            "8",
+            "10"
+          ],
+          "correct": 2,
+          "explanation": "2s² 2p⁶ = **8**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la configuración de Fe²⁺?",
+          "options": [
+            "[Ar] 4s² 3d⁴",
+            "[Ar] 3d⁶",
+            "[Ar] 4s¹ 3d⁵",
+            "[Ar] 4s² 3d⁶"
+          ],
+          "correct": 1,
+          "explanation": "Salen primero los **4s**: [Ar] 3d⁶."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué subnivel se llena antes, 4s o 3d?",
+          "options": [
+            "3d",
+            "4s",
+            "A la vez",
+            "Depende del elemento"
+          ],
+          "correct": 1,
+          "explanation": "n + l: 4s = 4, 3d = 5. Se llena antes **4s**."
+        },
+        {
+          "type": "quiz",
+          "question": "3d y 4p tienen n + l = 5. ¿Cuál se llena primero?",
+          "options": [
+            "4p",
+            "3d",
+            "A la vez",
+            "Ninguno"
+          ],
+          "correct": 1,
+          "explanation": "Empate en n + l: va primero el de **menor n** → 3d."
+        },
+        {
+          "type": "quiz",
+          "question": "Último electrón de 3d⁶ con la convención del apunte:",
+          "options": [
+            "(3, 2, +2, +1/2)",
+            "(3, 2, −2, −1/2)",
+            "(3, 1, −1, −1/2)",
+            "(4, 2, −2, −1/2)"
+          ],
+          "correct": 1,
+          "explanation": "El sexto electrón se aparea en ml = −2 con −1/2: **(3, 2, −2, −1/2)**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es válido: (3, 3, 0, −1/2) o (5, 1, 0, +1/2)?",
+          "options": [
+            "El primero",
+            "El segundo",
+            "Ambos",
+            "Ninguno"
+          ],
+          "correct": 1,
+          "explanation": "l no puede ser igual a n: el primero es inválido. **(5, 1, 0, +1/2)** es válido."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué principio dice que en un orbital caben máximo 2 electrones de espín opuesto?",
+          "options": [
+            "Aufbau",
+            "Pauli",
+            "Hund",
+            "Heisenberg"
+          ],
+          "correct": 1,
+          "explanation": "Exclusión de **Pauli**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué regla dice que en orbitales de igual energía primero se colocan electrones desapareados?",
+          "options": [
+            "Aufbau",
+            "Pauli",
+            "Hund",
+            "Moeller"
+          ],
+          "correct": 2,
+          "explanation": "Regla de **Hund**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué principio dice que se llenan primero los orbitales de menor energía?",
+          "options": [
+            "Aufbau (mínima energía)",
+            "Pauli",
+            "Hund",
+            "Incertidumbre"
+          ],
+          "correct": 0,
+          "explanation": "**Aufbau**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué números cuánticos describen el orbital (y no el electrón)?",
+          "options": [
+            "Solo n",
+            "n, l y ml",
+            "Solo ms",
+            "l y ms"
+          ],
+          "correct": 1,
+          "explanation": "**n, l y ml** describen el orbital; ms describe el electrón."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué valores puede tomar ms?",
+          "options": [
+            "0 y 1",
+            "+1/2 y −1/2",
+            "−1, 0 y +1",
+            "Cualquier valor"
+          ],
+          "correct": 1,
+          "explanation": "Solo **+1/2 o −1/2**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué forma tiene un orbital p?",
+          "options": [
+            "Esférica",
+            "Bilobular",
+            "Tetralobular",
+            "Compleja"
+          ],
+          "correct": 1,
+          "explanation": "s esférica, **p bilobular**, d tetralobular, f compleja."
+        }
+      ]
     }
   ]
 }

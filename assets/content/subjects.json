@@ -110,15 +110,34 @@
       "icon": "science",
       "color": "#8E24AA",
       "units": [
+        "assets/content/quimica/q00_materia.json",
         "assets/content/quimica/q01_atomo.json",
+        "assets/content/quimica/q01c_modelos.json",
         "assets/content/quimica/q01b_cuantica.json",
         "assets/content/quimica/q02_tabla.json",
         "assets/content/quimica/q03_enlaces.json",
         "assets/content/quimica/q04_geometria.json",
         "assets/content/quimica/q05_agua.json",
-        "assets/content/quimica/q06_materiales.json"
+        "assets/content/quimica/q06_materiales.json",
+        "assets/content/quimica/q07_reacciones.json"
       ],
       "cycle": 3
+    },
+    {
+      "id": "ingles",
+      "name": "Inglés",
+      "description": "Desde cero hasta nivel avanzado, y luego inglés técnico para ingeniería civil: materiales, estructuras, suelos, agua, topografía, obra y redacción.",
+      "icon": "book",
+      "color": "#00897B",
+      "cycle": 0,
+      "units": [
+        "assets/content/ingles/en01_primeros_pasos.json",
+        "assets/content/ingles/en02_presente.json",
+        "assets/content/ingles/en03_pasado_futuro.json",
+        "assets/content/ingles/en04_intermedio.json",
+        "assets/content/ingles/en05_avanzado.json",
+        "assets/content/ingles/en06_tecnico.json"
+      ]
     }
   ]
 }

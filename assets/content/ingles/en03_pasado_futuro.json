@@ -1,0 +1,1374 @@
+{
+  "id": "en03-pasado-futuro",
+  "title": "Pasado, futuro y comparaciones (A2)",
+  "description": "Was y were, past simple con verbos regulares e irregulares, past continuous, las tres formas del futuro, comparativos y conectores.",
+  "lessons": [
+    {
+      "id": "l01-was-were",
+      "title": "El pasado de to be: was y were",
+      "summary": "Era, estaba, fue, estuvo; there was y there were.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Sujeto",
+            "Afirmativo",
+            "Negativo",
+            "Pregunta"
+          ],
+          "rows": [
+            [
+              "I / he / she / it",
+              "was",
+              "wasn't",
+              "Was …?"
+            ],
+            [
+              "you / we / they",
+              "were",
+              "weren't",
+              "Were …?"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "I was at home yesterday.",
+              "Ayer estuve en casa."
+            ],
+            [
+              "The exam was difficult.",
+              "El examen fue difícil."
+            ],
+            [
+              "We were tired.",
+              "Estábamos cansados."
+            ],
+            [
+              "Were you in class? — No, I wasn't.",
+              "¿Estuviste en clase? — No."
+            ],
+            [
+              "There was an earthquake in 2016.",
+              "Hubo un terremoto en 2016."
+            ],
+            [
+              "There were many people.",
+              "Había mucha gente."
+            ],
+            [
+              "I was born in 2006.",
+              "Nací en 2006."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "«Nacer» se dice **to be born**: «I **was born** in Cuenca» (literalmente «fui nacido»). No existe «I borned».",
+          "title": "Nacer"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Suena como",
+            "Español"
+          ],
+          "rows": [
+            [
+              "yesterday",
+              "iésterdei",
+              "ayer"
+            ],
+            [
+              "last night / week / year",
+              "last nait / uík / íer",
+              "anoche / la semana pasada / el año pasado"
+            ],
+            [
+              "two days ago",
+              "tu deis agóu",
+              "hace dos días"
+            ],
+            [
+              "in 2020",
+              "in tuénti tuénti",
+              "en 2020"
+            ],
+            [
+              "then / at that time",
+              "den",
+              "entonces, en esa época"
+            ]
+          ],
+          "caption": "Expresiones de pasado"
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «She (…) at the library yesterday.»",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "be"
+          ],
+          "correct": 0,
+          "explanation": "She → was."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «They (…) late.»",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "did"
+          ],
+          "correct": 1,
+          "explanation": "They → were."
+        },
+        {
+          "type": "quiz",
+          "question": "«Hubo un accidente»:",
+          "options": [
+            "There was an accident",
+            "There were an accident",
+            "It had an accident",
+            "There is an accident"
+          ],
+          "correct": 0,
+          "explanation": "Singular."
+        },
+        {
+          "type": "quiz",
+          "question": "«Nací en Loja»:",
+          "options": [
+            "I born in Loja",
+            "I was born in Loja",
+            "I borned in Loja",
+            "I am born in Loja"
+          ],
+          "correct": 1,
+          "explanation": "To be born en pasado."
+        },
+        {
+          "type": "quiz",
+          "question": "«Hace tres años»:",
+          "options": [
+            "ago three years",
+            "three years ago",
+            "three years before now",
+            "since three years"
+          ],
+          "correct": 1,
+          "explanation": "Tiempo + ago."
+        }
+      ]
+    },
+    {
+      "id": "l02-past-simple",
+      "title": "Past simple: verbos regulares e irregulares",
+      "summary": "Acciones terminadas: la terminación -ed, el auxiliar did y los irregulares más usados.",
+      "minutes": 24,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El **past simple** cuenta acciones **terminadas** en un momento del pasado: «I studied yesterday», «They built the bridge in 1998». Es igual para **todas las personas**: no hay s de tercera persona.",
+          "title": "Para qué sirve"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Forma",
+            "Estructura",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Afirmativa",
+              "sujeto + verbo en pasado",
+              "She worked. / She went."
+            ],
+            [
+              "Negativa",
+              "sujeto + did not (didn't) + verbo base",
+              "She didn't work. / She didn't go."
+            ],
+            [
+              "Pregunta",
+              "Did + sujeto + verbo base?",
+              "Did she work? / Did she go?"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Con **did** el verbo vuelve a la **forma base**: «Did you **go**?», «I didn't **go**». Decir «Did you went?» o «I didn't went» es el error más común: el pasado ya lo marca did.",
+          "title": "Did + forma base"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Regla de los regulares",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "General: + ed",
+              "work → worked; play → played"
+            ],
+            [
+              "Termina en e: + d",
+              "use → used; live → lived"
+            ],
+            [
+              "Consonante + y: ied",
+              "study → studied; carry → carried"
+            ],
+            [
+              "Consonante – vocal – consonante acentuada: duplica",
+              "stop → stopped; plan → planned"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "La -ed suena",
+            "Cuándo",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "t",
+              "Tras sonidos sordos (p, k, s, sh, ch, f)",
+              "worked (uérkt), stopped, finished"
+            ],
+            [
+              "d",
+              "Tras sonidos sonoros y vocales",
+              "played (pleid), lived, used"
+            ],
+            [
+              "id",
+              "Solo tras t o d",
+              "wanted (uóntid), needed, decided"
+            ]
+          ],
+          "caption": "Nunca se pronuncia «ed» completo salvo en el tercer caso"
+        },
+        {
+          "type": "heading",
+          "text": "Irregulares esenciales"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Base",
+            "Pasado",
+            "Participio",
+            "Español"
+          ],
+          "rows": [
+            [
+              "be",
+              "was / were",
+              "been",
+              "ser, estar"
+            ],
+            [
+              "have",
+              "had",
+              "had",
+              "tener"
+            ],
+            [
+              "do",
+              "did",
+              "done",
+              "hacer"
+            ],
+            [
+              "go",
+              "went",
+              "gone",
+              "ir"
+            ],
+            [
+              "come",
+              "came",
+              "come",
+              "venir"
+            ],
+            [
+              "see",
+              "saw",
+              "seen",
+              "ver"
+            ],
+            [
+              "make",
+              "made",
+              "made",
+              "hacer, fabricar"
+            ],
+            [
+              "take",
+              "took",
+              "taken",
+              "tomar, llevar"
+            ],
+            [
+              "get",
+              "got",
+              "got / gotten",
+              "obtener, llegar"
+            ],
+            [
+              "give",
+              "gave",
+              "given",
+              "dar"
+            ],
+            [
+              "know",
+              "knew",
+              "known",
+              "saber, conocer"
+            ],
+            [
+              "think",
+              "thought",
+              "thought",
+              "pensar"
+            ],
+            [
+              "say",
+              "said",
+              "said",
+              "decir"
+            ],
+            [
+              "tell",
+              "told",
+              "told",
+              "contar, decir a alguien"
+            ],
+            [
+              "find",
+              "found",
+              "found",
+              "encontrar"
+            ],
+            [
+              "write",
+              "wrote",
+              "written",
+              "escribir"
+            ],
+            [
+              "read",
+              "read (red)",
+              "read (red)",
+              "leer"
+            ],
+            [
+              "buy",
+              "bought",
+              "bought",
+              "comprar"
+            ],
+            [
+              "build",
+              "built",
+              "built",
+              "construir"
+            ],
+            [
+              "begin",
+              "began",
+              "begun",
+              "empezar"
+            ],
+            [
+              "break",
+              "broke",
+              "broken",
+              "romper"
+            ],
+            [
+              "choose",
+              "chose",
+              "chosen",
+              "elegir"
+            ],
+            [
+              "draw",
+              "drew",
+              "drawn",
+              "dibujar"
+            ],
+            [
+              "fall",
+              "fell",
+              "fallen",
+              "caer"
+            ],
+            [
+              "rise",
+              "rose",
+              "risen",
+              "subir, elevarse"
+            ],
+            [
+              "run",
+              "ran",
+              "run",
+              "correr"
+            ],
+            [
+              "show",
+              "showed",
+              "shown",
+              "mostrar"
+            ],
+            [
+              "spend",
+              "spent",
+              "spent",
+              "gastar, pasar tiempo"
+            ],
+            [
+              "bring",
+              "brought",
+              "brought",
+              "traer"
+            ],
+            [
+              "leave",
+              "left",
+              "left",
+              "salir, dejar"
+            ],
+            [
+              "meet",
+              "met",
+              "met",
+              "conocer, reunirse"
+            ],
+            [
+              "put",
+              "put",
+              "put",
+              "poner"
+            ],
+            [
+              "set",
+              "set",
+              "set",
+              "fijar, establecer"
+            ],
+            [
+              "cut",
+              "cut",
+              "cut",
+              "cortar"
+            ],
+            [
+              "lose",
+              "lost",
+              "lost",
+              "perder"
+            ],
+            [
+              "understand",
+              "understood",
+              "understood",
+              "entender"
+            ]
+          ],
+          "caption": "Apréndelos en grupos de seis; el participio se usa desde la unidad 4"
+        },
+        {
+          "type": "quiz",
+          "question": "El pasado de «go» es:",
+          "options": [
+            "goed",
+            "went",
+            "gone",
+            "goes"
+          ],
+          "correct": 1,
+          "explanation": "Irregular."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "Did you went?",
+            "Did you go?",
+            "Do you went?",
+            "Went you?"
+          ],
+          "correct": 1,
+          "explanation": "Did + base."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "I didn't saw it",
+            "I didn't see it",
+            "I not saw it",
+            "I don't saw it"
+          ],
+          "correct": 1,
+          "explanation": "Didn't + base."
+        },
+        {
+          "type": "quiz",
+          "question": "El pasado de «build» es:",
+          "options": [
+            "builded",
+            "built",
+            "bult",
+            "build"
+          ],
+          "correct": 1,
+          "explanation": "Irregular."
+        },
+        {
+          "type": "quiz",
+          "question": "En «wanted», la terminación suena:",
+          "options": [
+            "t",
+            "d",
+            "id",
+            "No suena"
+          ],
+          "correct": 2,
+          "explanation": "Tras t."
+        },
+        {
+          "type": "quiz",
+          "question": "El pasado de «study» es:",
+          "options": [
+            "studyed",
+            "studied",
+            "studed",
+            "study"
+          ],
+          "correct": 1,
+          "explanation": "y → ied."
+        },
+        {
+          "type": "quiz",
+          "question": "El participio de «write» es:",
+          "options": [
+            "wrote",
+            "writed",
+            "written",
+            "writen"
+          ],
+          "correct": 2,
+          "explanation": "write – wrote – written."
+        }
+      ]
+    },
+    {
+      "id": "l03-past-continuous",
+      "title": "Past continuous y la combinación con el past simple",
+      "summary": "Lo que estaba pasando cuando algo ocurrió: was / were + -ing, when y while.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "sujeto + was / were + verbo-ing",
+          "caption": "Past continuous"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El past continuous es el **telón de fondo** (una acción en desarrollo) y el past simple es **lo que interrumpe**: «I **was studying** when the lights **went** out» (estaba estudiando cuando se fue la luz).",
+          "title": "Fondo e interrupción"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Conector",
+            "Va con",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "when",
+              "La acción corta (past simple)",
+              "We were pouring concrete **when** it started to rain."
+            ],
+            [
+              "while",
+              "La acción larga (past continuous)",
+              "**While** we were measuring, the level fell."
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "What were you doing at 8 p.m.?",
+              "¿Qué estabas haciendo a las 8 p. m.?"
+            ],
+            [
+              "I was working on my project.",
+              "Estaba trabajando en mi proyecto."
+            ],
+            [
+              "They weren't listening.",
+              "No estaban escuchando."
+            ],
+            [
+              "While the truck was reversing, the wall collapsed.",
+              "Mientras el camión retrocedía, el muro colapsó."
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «I (…) when you called.»",
+          "options": [
+            "studied",
+            "was studying",
+            "study",
+            "am studying"
+          ],
+          "correct": 1,
+          "explanation": "Acción en desarrollo."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «While they (…) , it started to rain.»",
+          "options": [
+            "worked",
+            "were working",
+            "work",
+            "are working"
+          ],
+          "correct": 1,
+          "explanation": "While + continuous."
+        },
+        {
+          "type": "quiz",
+          "question": "La acción que interrumpe va en:",
+          "options": [
+            "Past continuous",
+            "Past simple",
+            "Present simple",
+            "Futuro"
+          ],
+          "correct": 1,
+          "explanation": "La corta."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "She were reading",
+            "She was reading",
+            "She was read",
+            "She did reading"
+          ],
+          "correct": 1,
+          "explanation": "She → was + -ing."
+        }
+      ]
+    },
+    {
+      "id": "l04-futuro",
+      "title": "El futuro: will, going to y present continuous",
+      "summary": "Tres maneras de hablar del futuro y cuándo usar cada una.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Forma",
+            "Estructura",
+            "Se usa para",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "**will**",
+              "will + verbo base (negativo: won't)",
+              "Decisiones del momento, predicciones, promesas, hechos futuros",
+              "I'll help you. / It will rain tomorrow."
+            ],
+            [
+              "**be going to**",
+              "am / is / are + going to + verbo base",
+              "Planes ya decididos e intenciones; predicciones con evidencia",
+              "I'm going to study tonight. / Look at the clouds: it's going to rain."
+            ],
+            [
+              "**present continuous**",
+              "am / is / are + verbo-ing",
+              "Citas y planes ya organizados",
+              "We're meeting the client on Friday."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "**Will** = lo decido ahora o lo predigo. **Going to** = ya lo tenía pensado. «The phone is ringing — I'**ll** answer it» (decisión del momento). «I'**m going to** call him later» (ya lo había planeado).",
+          "title": "La diferencia"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Suena como",
+            "Español"
+          ],
+          "rows": [
+            [
+              "tomorrow",
+              "tumórou",
+              "mañana"
+            ],
+            [
+              "next week / month / year",
+              "nekst uík / manz / íer",
+              "la próxima semana / mes / año"
+            ],
+            [
+              "in two days",
+              "in tu deis",
+              "en dos días"
+            ],
+            [
+              "soon",
+              "sun",
+              "pronto"
+            ],
+            [
+              "later",
+              "léiter",
+              "más tarde"
+            ],
+            [
+              "tonight",
+              "tunáit",
+              "esta noche"
+            ]
+          ],
+          "caption": "Expresiones de futuro"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "The project will take six months.",
+              "El proyecto tomará seis meses."
+            ],
+            [
+              "Will you be at the meeting? — Yes, I will.",
+              "¿Estarás en la reunión? — Sí."
+            ],
+            [
+              "We are going to build a retaining wall.",
+              "Vamos a construir un muro de contención."
+            ],
+            [
+              "It won't work.",
+              "No va a funcionar."
+            ],
+            [
+              "I am presenting my project tomorrow.",
+              "Presento mi proyecto mañana."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Después de **when, if, before, after, as soon as** no se usa will, aunque se hable del futuro: «I will call you **when I arrive**» (no «when I will arrive»)."
+        },
+        {
+          "type": "quiz",
+          "question": "Decisión en el momento: «Tengo sed. — Te (…) agua.»",
+          "options": [
+            "I'll bring you",
+            "I'm going to bring you",
+            "I bring you",
+            "I brought you"
+          ],
+          "correct": 0,
+          "explanation": "Will."
+        },
+        {
+          "type": "quiz",
+          "question": "Plan ya decidido:",
+          "options": [
+            "I will study medicine",
+            "I am going to study medicine",
+            "I will studying medicine",
+            "I studied medicine"
+          ],
+          "correct": 1,
+          "explanation": "Going to."
+        },
+        {
+          "type": "quiz",
+          "question": "El negativo de will es:",
+          "options": [
+            "willn't",
+            "won't",
+            "don't will",
+            "not will"
+          ],
+          "correct": 1,
+          "explanation": "Will not."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "I will call you when I will arrive",
+            "I will call you when I arrive",
+            "I call you when I will arrive",
+            "I will call you when I arrived"
+          ],
+          "correct": 1,
+          "explanation": "Tras when, presente."
+        },
+        {
+          "type": "quiz",
+          "question": "«Va a llover (mira las nubes)»:",
+          "options": [
+            "It rains",
+            "It is going to rain",
+            "It rained",
+            "It is rain"
+          ],
+          "correct": 1,
+          "explanation": "Predicción con evidencia."
+        }
+      ]
+    },
+    {
+      "id": "l05-comparativos",
+      "title": "Comparativos y superlativos",
+      "summary": "Más que, menos que, tan… como, el más; formas cortas, largas e irregulares.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo de adjetivo",
+            "Comparativo",
+            "Superlativo",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Corto (1 sílaba)",
+              "+ er + than",
+              "the + est",
+              "tall → taller than → the tallest"
+            ],
+            [
+              "Corto en consonante – vocal – consonante",
+              "duplica + er",
+              "duplica + est",
+              "big → bigger → the biggest"
+            ],
+            [
+              "Termina en y",
+              "ier",
+              "the iest",
+              "heavy → heavier → the heaviest"
+            ],
+            [
+              "Largo (2 o más sílabas)",
+              "more + adjetivo + than",
+              "the most + adjetivo",
+              "expensive → more expensive → the most expensive"
+            ],
+            [
+              "Irregulares",
+              "good → better; bad → worse; far → farther / further",
+              "the best; the worst; the farthest / furthest",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Estructura",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "as + adjetivo + as",
+              "Steel is not as cheap as concrete.",
+              "El acero no es tan barato como el hormigón."
+            ],
+            [
+              "less + adjetivo + than",
+              "This method is less accurate than that one.",
+              "Este método es menos preciso que ese."
+            ],
+            [
+              "the same as",
+              "Beam A is the same as beam B.",
+              "La viga A es igual a la B."
+            ],
+            [
+              "different from",
+              "Clay is different from sand.",
+              "La arcilla es diferente de la arena."
+            ],
+            [
+              "twice as … as",
+              "It is twice as long as the other.",
+              "Es el doble de largo que el otro."
+            ],
+            [
+              "the + comparativo, the + comparativo",
+              "The higher the load, the greater the deflection.",
+              "Cuanto mayor la carga, mayor la deflexión."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Nunca se combinan las dos formas: «more bigger» o «the most tallest» son incorrectas. Es «bigger» o «more expensive», no las dos cosas.",
+          "title": "No dupliques"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Los comparativos son constantes en textos técnicos: «a **stiffer** beam», «a **lower** cost», «**higher** strength», «the **most critical** section», «the **worst**-case scenario»."
+        },
+        {
+          "type": "quiz",
+          "question": "Comparativo de «big»:",
+          "options": [
+            "more big",
+            "bigger",
+            "biger",
+            "biggest"
+          ],
+          "correct": 1,
+          "explanation": "Duplica la g."
+        },
+        {
+          "type": "quiz",
+          "question": "Comparativo de «expensive»:",
+          "options": [
+            "expensiver",
+            "more expensive",
+            "most expensive",
+            "expensivest"
+          ],
+          "correct": 1,
+          "explanation": "Adjetivo largo."
+        },
+        {
+          "type": "quiz",
+          "question": "Superlativo de «good»:",
+          "options": [
+            "the goodest",
+            "the best",
+            "the better",
+            "the most good"
+          ],
+          "correct": 1,
+          "explanation": "Irregular."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "Steel is more stronger than wood",
+            "Steel is stronger than wood",
+            "Steel is strong than wood",
+            "Steel is the stronger than wood"
+          ],
+          "correct": 1,
+          "explanation": "Solo una forma."
+        },
+        {
+          "type": "quiz",
+          "question": "«Tan alto como»:",
+          "options": [
+            "so tall than",
+            "as tall as",
+            "as tall than",
+            "more tall as"
+          ],
+          "correct": 1,
+          "explanation": "As … as."
+        },
+        {
+          "type": "quiz",
+          "question": "Comparativo de «bad»:",
+          "options": [
+            "badder",
+            "worse",
+            "worst",
+            "more bad"
+          ],
+          "correct": 1,
+          "explanation": "Irregular."
+        }
+      ]
+    },
+    {
+      "id": "l06-conectores",
+      "title": "Preposiciones de movimiento y conectores básicos",
+      "summary": "To, from, into, through, across; and, but, because, so, although.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Suena como",
+            "Español"
+          ],
+          "rows": [
+            [
+              "to",
+              "tu",
+              "a, hacia"
+            ],
+            [
+              "from",
+              "from",
+              "de, desde"
+            ],
+            [
+              "into / out of",
+              "íntu / áut ov",
+              "hacia dentro de / hacia fuera de"
+            ],
+            [
+              "through",
+              "zru",
+              "a través de (por dentro)"
+            ],
+            [
+              "across",
+              "acrós",
+              "a través de (de un lado al otro)"
+            ],
+            [
+              "along",
+              "alóng",
+              "a lo largo de"
+            ],
+            [
+              "up / down",
+              "ap / dáun",
+              "hacia arriba / hacia abajo"
+            ],
+            [
+              "over / under",
+              "óuver / ánder",
+              "por encima de / por debajo de"
+            ],
+            [
+              "around",
+              "aráund",
+              "alrededor de"
+            ],
+            [
+              "towards",
+              "tuórds",
+              "en dirección a"
+            ],
+            [
+              "upstream / downstream",
+              "ápstrim / dáunstrim",
+              "aguas arriba / aguas abajo"
+            ]
+          ],
+          "caption": "Preposiciones de movimiento"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Water flows through the pipe.",
+              "El agua fluye por la tubería."
+            ],
+            [
+              "The road runs along the river.",
+              "La vía va a lo largo del río."
+            ],
+            [
+              "They built a bridge across the valley.",
+              "Construyeron un puente que cruza el valle."
+            ],
+            [
+              "The load is transferred from the slab to the beams.",
+              "La carga se transfiere de la losa a las vigas."
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Conector",
+            "Suena como",
+            "Español",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "and",
+              "and",
+              "y",
+              "I study and work."
+            ],
+            [
+              "but",
+              "bat",
+              "pero",
+              "It is cheap but weak."
+            ],
+            [
+              "or",
+              "or",
+              "o",
+              "Tea or coffee?"
+            ],
+            [
+              "because",
+              "bicós",
+              "porque",
+              "It failed because it was overloaded."
+            ],
+            [
+              "so",
+              "sou",
+              "así que, por eso",
+              "It was raining, so we stopped."
+            ],
+            [
+              "although",
+              "oldóu",
+              "aunque",
+              "Although it is expensive, it is safer."
+            ],
+            [
+              "then",
+              "den",
+              "luego",
+              "First measure, then calculate."
+            ],
+            [
+              "also / too",
+              "ólsou / tu",
+              "también",
+              "I also study English. / Me too."
+            ],
+            [
+              "first, second, finally",
+              "ferst, sécond, fáinali",
+              "primero, segundo, finalmente",
+              "First, open the file."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "**Because** da la causa; **so** da la consecuencia: «I was tired, **so** I went home» = «I went home **because** I was tired»."
+        },
+        {
+          "type": "quiz",
+          "question": "«A través de la tubería»:",
+          "options": [
+            "across the pipe",
+            "through the pipe",
+            "along the pipe",
+            "over the pipe"
+          ],
+          "correct": 1,
+          "explanation": "Por dentro."
+        },
+        {
+          "type": "quiz",
+          "question": "«Aguas arriba»:",
+          "options": [
+            "downstream",
+            "upstream",
+            "upwater",
+            "over river"
+          ],
+          "correct": 1,
+          "explanation": "Upstream."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «It was late, (…) we stopped working.»",
+          "options": [
+            "because",
+            "so",
+            "but",
+            "although"
+          ],
+          "correct": 1,
+          "explanation": "Consecuencia."
+        },
+        {
+          "type": "quiz",
+          "question": "«Aunque» es:",
+          "options": [
+            "because",
+            "although",
+            "so",
+            "then"
+          ],
+          "correct": 1,
+          "explanation": "Although."
+        },
+        {
+          "type": "quiz",
+          "question": "«A lo largo del río»:",
+          "options": [
+            "along the river",
+            "across the river",
+            "into the river",
+            "through the river"
+          ],
+          "correct": 0,
+          "explanation": "Along."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Práctica de traducción: pasado y futuro",
+      "summary": "Oraciones que combinan los tiempos de la unidad.",
+      "minutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Escribe tu respuesta **en papel o dila en voz alta** antes de ver la solución. Traducir en ambos sentidos es el mejor ejercicio para fijar la gramática.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Pasado simple",
+          "level": 1,
+          "statement": "Traduce al inglés: «Ayer estudié cinco horas y terminé el informe.»",
+          "steps": [
+            "Regulares con -ed; duración con for."
+          ],
+          "answer": "**Yesterday I studied for five hours and finished the report.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Irregulares",
+          "level": 2,
+          "statement": "Traduce al inglés: «La semana pasada fuimos al río y tomamos muestras de suelo.»",
+          "steps": [
+            "go → went; take → took."
+          ],
+          "answer": "**Last week we went to the river and took soil samples.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Negación y pregunta",
+          "level": 2,
+          "statement": "Traduce al inglés: «¿Viste el correo del profesor? — No, no lo vi.»",
+          "steps": [
+            "Did + verbo base en pregunta y negación."
+          ],
+          "answer": "**Did you see the professor's email? — No, I didn't see it.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Fondo e interrupción",
+          "level": 3,
+          "statement": "Traduce al inglés: «Estábamos midiendo el terreno cuando empezó a llover.»",
+          "steps": [
+            "Past continuous + when + past simple; sujeto «it» obligatorio."
+          ],
+          "answer": "**We were measuring the land when it started to rain.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Futuro planeado",
+          "level": 2,
+          "statement": "Traduce al inglés: «El próximo mes vamos a visitar una obra en Azogues.»",
+          "steps": [
+            "Going to para planes."
+          ],
+          "answer": "**Next month we are going to visit a construction site in Azogues.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Predicción",
+          "level": 2,
+          "statement": "Traduce al inglés: «El puente tomará dos años y costará diez millones de dólares.»",
+          "steps": [
+            "Will para predicciones; «ten million», sin s."
+          ],
+          "answer": "**The bridge will take two years and will cost ten million dollars.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Comparación",
+          "level": 2,
+          "statement": "Traduce al inglés: «El acero es más resistente que la madera, pero es más caro.»",
+          "steps": [
+            "Corto: stronger; largo: more expensive. Sin artículo en generalizaciones."
+          ],
+          "answer": "**Steel is stronger than wood, but it is more expensive.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Superlativo",
+          "level": 3,
+          "statement": "Traduce al inglés: «Esta es la sección más crítica de la viga y la más difícil de analizar.»",
+          "steps": [
+            "Adjetivos largos: the most + adjetivo."
+          ],
+          "answer": "**This is the most critical section of the beam and the most difficult to analyze.**"
+        }
+      ]
+    }
+  ]
+}

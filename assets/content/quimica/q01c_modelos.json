@@ -1,0 +1,1883 @@
+{
+  "id": "q01c-modelos",
+  "title": "Historia de los modelos atómicos",
+  "description": "De Demócrito al modelo cuántico actual: cada modelo, su experimento, sus aportes y limitaciones; Bohr con ejercicios; Hartree-Fock y DFT",
+  "lessons": [
+    {
+      "id": "l01-democrito",
+      "title": "Leucipo y Demócrito: la teoría atomista (s. V a. C.)",
+      "summary": "La primera idea del átomo: filosófica y sin experimentos.",
+      "minutes": 8,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "La idea"
+        },
+        {
+          "type": "text",
+          "text": "En el siglo V a. C., **Leucipo** y su discípulo **Demócrito** propusieron que toda la materia está formada por partículas **indivisibles e indestructibles**: los átomos. La palabra viene del griego *a-tomos*, «sin división»."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Los átomos son eternos e inmutables.",
+            "Se diferencian solo por su **forma, tamaño y disposición**; eso explica la variedad de la materia.",
+            "La realidad son **átomos en movimiento dentro del vacío**. El vacío era necesario para explicar el cambio y el movimiento."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "text",
+          "text": "Esto contradecía a **Parménides**, que negaba la existencia del vacío y del cambio. Para Demócrito el universo es solo átomos (lo que existe) y vacío (lo que no existe)."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Fue una teoría **filosófica y especulativa, sin base experimental**. Quedó olvidada siglos y la retomaron en la Edad Moderna **Gassendi** y **Boyle**.",
+          "title": "Lo que suelen preguntar"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué significa «átomo»?",
+          "options": [
+            "Partícula pequeña",
+            "Sin división",
+            "Esfera",
+            "Lo que existe"
+          ],
+          "correct": 1,
+          "explanation": "Del griego *a-tomos*: **sin división**."
+        },
+        {
+          "type": "quiz",
+          "question": "La teoría de Demócrito era…",
+          "options": [
+            "Experimental",
+            "Filosófica y sin experimentos",
+            "Matemática",
+            "Basada en la electricidad"
+          ],
+          "correct": 1,
+          "explanation": "Era **especulativa**: no tenía base experimental."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién negaba la existencia del vacío?",
+          "options": [
+            "Demócrito",
+            "Leucipo",
+            "Parménides",
+            "Dalton"
+          ],
+          "correct": 2,
+          "explanation": "**Parménides** negaba el vacío y el cambio."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quiénes retomaron el atomismo en la Edad Moderna?",
+          "options": [
+            "Thomson y Rutherford",
+            "Gassendi y Boyle",
+            "Bohr y Sommerfeld",
+            "Aristóteles y Platón"
+          ],
+          "correct": 1,
+          "explanation": "**Gassendi y Boyle**."
+        },
+        {
+          "type": "quiz",
+          "question": "Según Demócrito, ¿en qué se diferencian los átomos?",
+          "options": [
+            "En su carga",
+            "En forma, tamaño y disposición",
+            "En su número de electrones",
+            "En su color"
+          ],
+          "correct": 1,
+          "explanation": "**Forma, tamaño y disposición**."
+        }
+      ]
+    },
+    {
+      "id": "l02-dalton",
+      "title": "Dalton: el primer modelo científico (1803–1808)",
+      "summary": "Postulados, aportes y limitaciones.",
+      "minutes": 10,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "El modelo"
+        },
+        {
+          "type": "text",
+          "text": "**John Dalton** formuló entre 1803 y 1808 la **primera teoría científica** coherente sobre la estructura de la materia. A diferencia de Demócrito, se basó en **observaciones experimentales y leyes químicas** ya establecidas, como la conservación de la masa y las proporciones definidas."
+        },
+        {
+          "type": "heading",
+          "text": "Postulados"
+        },
+        {
+          "type": "list",
+          "items": [
+            "La materia está formada por átomos **indivisibles e indestructibles**.",
+            "Los átomos de un mismo elemento son **idénticos** en masa y propiedades; los de elementos distintos son diferentes.",
+            "Los compuestos se forman combinando átomos de distintos elementos en **proporciones numéricas simples y constantes**.",
+            "En las reacciones los átomos **no se crean ni se destruyen**: solo se reorganizan."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Aportes y limitaciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Aportes",
+            "Limitaciones"
+          ],
+          "rows": [
+            [
+              "Base cuantitativa para la química",
+              "No contemplaba partículas subatómicas"
+            ],
+            [
+              "Concepto de masa atómica",
+              "No explicaba los isótopos (átomos del mismo elemento con distinta masa)"
+            ],
+            [
+              "Fórmulas químicas coherentes",
+              "Su átomo indivisible fue refutado a fines del siglo XIX"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Dalton representaba los átomos como esferas macizas, como bolas de billar.",
+          "title": "Imagen típica"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál fue el primer modelo atómico científico?",
+          "options": [
+            "Demócrito",
+            "Dalton",
+            "Thomson",
+            "Bohr"
+          ],
+          "correct": 1,
+          "explanation": "**Dalton** fue el primero basado en experimentos y leyes químicas."
+        },
+        {
+          "type": "quiz",
+          "question": "Según Dalton, los átomos de un mismo elemento son…",
+          "options": [
+            "Diferentes en masa",
+            "Idénticos en masa y propiedades",
+            "Isótopos",
+            "Divisibles"
+          ],
+          "correct": 1,
+          "explanation": "**Idénticos**. Por eso no podía explicar los isótopos."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué NO podía explicar el modelo de Dalton?",
+          "options": [
+            "La conservación de la masa",
+            "Las proporciones definidas",
+            "Los isótopos",
+            "Las fórmulas químicas"
+          ],
+          "correct": 2,
+          "explanation": "Suponía átomos idénticos por elemento: no explicaba los **isótopos**."
+        },
+        {
+          "type": "quiz",
+          "question": "En una reacción, según Dalton, los átomos…",
+          "options": [
+            "Se destruyen",
+            "Se crean",
+            "Se reorganizan",
+            "Se dividen"
+          ],
+          "correct": 2,
+          "explanation": "No se crean ni se destruyen: se **reorganizan**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué leyes explicaba el modelo de Dalton?",
+          "options": [
+            "Conservación de la masa y proporciones definidas",
+            "Las líneas espectrales",
+            "La radiactividad",
+            "La difracción de electrones"
+          ],
+          "correct": 0,
+          "explanation": "**Conservación de la masa y proporciones definidas**."
+        }
+      ]
+    },
+    {
+      "id": "l03-thomson",
+      "title": "Thomson: el electrón y el «budín de pasas» (1897–1904)",
+      "summary": "El tubo de rayos catódicos paso a paso, la relación e/m y las limitaciones.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "El modelo"
+        },
+        {
+          "type": "text",
+          "text": "**Joseph John Thomson** descubrió el **electrón en 1897** con sus experimentos de rayos catódicos, y en **1904** propuso su modelo. Fue el primero en introducir **partículas subatómicas**: el átomo ya no era indivisible."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Estructura:** una esfera de carga positiva con los electrones incrustados.",
+            "**Distribución:** la carga positiva es continua en toda la esfera y los electrones están dispersos, como «pasas en un pudín».",
+            "**Neutralidad:** las cargas negativas y la positiva se equilibran; el átomo es neutro."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "El experimento de los rayos catódicos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Un tubo de vidrio con **gas a muy baja presión** y dos electrodos: **cátodo (−)** y **ánodo (+)**, conectados a alto voltaje.",
+            "Al aplicar corriente sale del cátodo un haz luminoso hacia el ánodo: el **rayo catódico**.",
+            "Con dos **placas cargadas** el haz se desvía hacia la placa **positiva**: las partículas son **negativas**.",
+            "Con un **imán** el haz también se desvía, pero de otra forma: el campo magnético actúa solo sobre cargas en movimiento y ejerce una fuerza **perpendicular** a su trayectoria, así que el haz se curva.",
+            "Midiendo cuánto se desviaba con ambos campos, calculó la relación **carga/masa (e/m)**. Era muy alta, así que la masa debía ser extremadamente pequeña frente a la del átomo: una partícula nueva, el **electrón**."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Punto en la pantalla",
+            "Qué actúa"
+          ],
+          "rows": [
+            [
+              "A",
+              "Solo el imán (campo magnético)"
+            ],
+            [
+              "B",
+              "Campo eléctrico y magnético equilibrados: el haz sigue recto"
+            ],
+            [
+              "C",
+              "Solo las placas cargadas (campo eléctrico)"
+            ]
+          ],
+          "caption": "Los tres puntos del esquema del tubo."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Thomson midió la relación e/m, no la carga sola. La carga del electrón la midió después **Millikan** con su experimento de la gota de aceite.",
+          "title": "No confundas"
+        },
+        {
+          "type": "heading",
+          "text": "Limitaciones"
+        },
+        {
+          "type": "list",
+          "items": [
+            "No explicaba cómo se distribuían y se mantenían los electrones dentro de la carga positiva.",
+            "No explicaba los **espectros atómicos** (las líneas discretas que emiten los gases excitados).",
+            "No tenía **núcleo**: ese concepto llegó con Rutherford en 1911."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué partícula descubrió Thomson?",
+          "options": [
+            "Protón",
+            "Neutrón",
+            "Electrón",
+            "Núcleo"
+          ],
+          "correct": 2,
+          "explanation": "El **electrón**, en 1897."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cómo se llama informalmente su modelo?",
+          "options": [
+            "Sistema solar",
+            "Budín de pasas",
+            "Bola de billar",
+            "Nube electrónica"
+          ],
+          "correct": 1,
+          "explanation": "**Budín (pudín) de pasas**: electrones incrustados en una esfera positiva."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Hacia qué placa se desviaba el rayo catódico?",
+          "options": [
+            "Hacia la negativa",
+            "Hacia la positiva",
+            "No se desviaba",
+            "Hacia el imán"
+          ],
+          "correct": 1,
+          "explanation": "Hacia la **positiva**: por eso concluyó que las partículas eran negativas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué magnitud calculó Thomson?",
+          "options": [
+            "La masa del electrón",
+            "La carga del electrón",
+            "La relación carga/masa (e/m)",
+            "El radio del átomo"
+          ],
+          "correct": 2,
+          "explanation": "La relación **e/m**. La carga la midió Millikan."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cómo era el gas dentro del tubo?",
+          "options": [
+            "A alta presión",
+            "A muy baja presión",
+            "Líquido",
+            "No había gas"
+          ],
+          "correct": 1,
+          "explanation": "Gas a **muy baja presión**."
+        },
+        {
+          "type": "quiz",
+          "question": "El campo magnético desvía al haz porque…",
+          "options": [
+            "Atrae la carga opuesta",
+            "Ejerce una fuerza perpendicular sobre cargas en movimiento",
+            "Detiene las partículas",
+            "Calienta el gas"
+          ],
+          "correct": 1,
+          "explanation": "Fuerza **perpendicular** a la trayectoria: el haz se curva."
+        },
+        {
+          "type": "quiz",
+          "question": "En la pantalla, el punto donde los dos campos están equilibrados es…",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "Ninguno"
+          ],
+          "correct": 1,
+          "explanation": "**B**: los efectos se anulan y el haz sigue recto."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo derribó la idea de átomo indivisible?",
+          "options": [
+            "Dalton",
+            "Thomson",
+            "Bohr",
+            "Schrödinger"
+          ],
+          "correct": 1,
+          "explanation": "**Thomson**, al descubrir una partícula dentro del átomo."
+        },
+        {
+          "type": "quiz",
+          "question": "Una limitación de Thomson es que…",
+          "options": [
+            "No tenía electrones",
+            "No tenía núcleo ni explicaba los espectros",
+            "Explicaba solo el hidrógeno",
+            "No era neutro"
+          ],
+          "correct": 1,
+          "explanation": "Sin **núcleo** y sin explicación de los **espectros**."
+        }
+      ]
+    },
+    {
+      "id": "l04-rutherford",
+      "title": "Rutherford: el núcleo y el protón (1909–1919)",
+      "summary": "La lámina de oro, los tres resultados, cómo se detectaban las partículas y el descubrimiento del protón.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "El experimento de la lámina de oro"
+        },
+        {
+          "type": "text",
+          "text": "Entre 1909 y 1911, **Ernest Rutherford** con sus colaboradores **Hans Geiger** y **Ernest Marsden** quiso poner a prueba el modelo de Thomson."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Una lámina de **oro** extremadamente delgada.",
+            "Un haz de **partículas alfa** (carga positiva y masa relativamente grande), emitidas por una fuente radiactiva dentro de una caja de plomo con una rendija.",
+            "Alrededor, una pantalla de **sulfuro de zinc**, que emite un pequeño destello cada vez que la golpea una partícula."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Lo que pasó",
+            "Lo que significa"
+          ],
+          "rows": [
+            [
+              "La mayoría atravesó sin desviarse",
+              "El átomo es principalmente **espacio vacío**"
+            ],
+            [
+              "Algunas se desviaron en ángulos pequeños o moderados",
+              "Fueron repelidas por una región **positiva** dentro del átomo"
+            ],
+            [
+              "Muy pocas rebotaron casi hacia atrás",
+              "Existe una región **muy pequeña, densa y positiva**: el núcleo"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "El modelo nuclear"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Un **núcleo** central muy pequeño, denso y positivo, donde está casi toda la masa.",
+            "Los electrones se mueven alrededor del núcleo, en un espacio mayormente vacío.",
+            "Se le llama modelo «planetario» o de «sistema solar»."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "¿Cómo «veían» partículas que nadie podía ver?"
+        },
+        {
+          "type": "text",
+          "text": "No había tecnología para observarlas directamente. Se usaban **métodos indirectos**: se observaban los efectos que dejaban.\nCada destello en el sulfuro de zinc indicaba un impacto. Rutherford los contaba con un **microscopio en una habitación oscura**, anotando cuántos aparecían y en qué dirección.\nPara saber si una partícula tenía carga, se la hacía pasar entre placas cargadas o cerca de imanes. Las partículas alfa se desviaban hacia la placa **negativa**, así que eran **positivas**. Más tarde se supo que una partícula alfa es un **núcleo de helio**: 2 protones y 2 neutrones."
+        },
+        {
+          "type": "heading",
+          "text": "El descubrimiento del protón (transmutación)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Rutherford lanzó partículas alfa contra **gas nitrógeno**.",
+            "En algunos choques aparecían partículas **nuevas** que antes no estaban.",
+            "Recorrían distancias más largas y daban destellos distintos: eran **más livianas** que las alfa.",
+            "En campos eléctricos y magnéticos se desviaban como cargas positivas, pero **más** que las alfa: misma carga positiva, menor masa.",
+            "Su comportamiento coincidía exactamente con el del **núcleo de hidrógeno**. Como el hidrógeno es el átomo más sencillo, ese núcleo era una partícula positiva fundamental presente en todos los núcleos: el **protón** (hacia 1919)."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Limitaciones"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Estabilidad:** según la física clásica, un electrón que gira debería irradiar energía y caer al núcleo; el átomo se destruiría, y eso no ocurre.",
+            "**Espectros:** no explicaba por qué los átomos emiten o absorben energía solo en valores específicos.",
+            "No describía cómo se organizaban los electrones ni qué reglas seguían."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "quiz",
+          "question": "¿De qué metal era la lámina del experimento?",
+          "options": [
+            "Plata",
+            "Oro",
+            "Plomo",
+            "Níquel"
+          ],
+          "correct": 1,
+          "explanation": "Lámina muy delgada de **oro**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué partículas se lanzaron contra la lámina?",
+          "options": [
+            "Electrones",
+            "Neutrones",
+            "Partículas alfa",
+            "Rayos gamma"
+          ],
+          "correct": 2,
+          "explanation": "**Partículas alfa** (positivas)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Con qué sustancia estaba cubierta la pantalla detectora?",
+          "options": [
+            "Sulfuro de zinc",
+            "Parafina",
+            "Berilio",
+            "Polonio"
+          ],
+          "correct": 0,
+          "explanation": "**Sulfuro de zinc**: emite destellos al ser golpeado."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quiénes colaboraron con Rutherford?",
+          "options": [
+            "Bohr y Sommerfeld",
+            "Geiger y Marsden",
+            "Davisson y Germer",
+            "Chadwick y Thomson"
+          ],
+          "correct": 1,
+          "explanation": "**Hans Geiger y Ernest Marsden**."
+        },
+        {
+          "type": "quiz",
+          "question": "La mayoría de partículas atravesó la lámina sin desviarse. ¿Qué indica?",
+          "options": [
+            "Que el núcleo es grande",
+            "Que el átomo es principalmente espacio vacío",
+            "Que el oro es poroso",
+            "Que no hay electrones"
+          ],
+          "correct": 1,
+          "explanation": "El átomo es casi todo **vacío**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué demostró que unas pocas partículas rebotaran?",
+          "options": [
+            "Que los electrones son positivos",
+            "Que hay un núcleo pequeño, denso y positivo",
+            "Que el oro es radiactivo",
+            "Que el átomo es indivisible"
+          ],
+          "correct": 1,
+          "explanation": "Solo un **núcleo** pequeño, denso y positivo podía repelerlas tanto."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué es una partícula alfa?",
+          "options": [
+            "Un electrón rápido",
+            "Un núcleo de helio: 2 protones y 2 neutrones",
+            "Un protón",
+            "Un fotón"
+          ],
+          "correct": 1,
+          "explanation": "**Núcleo de helio**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Contra qué gas lanzó partículas alfa Rutherford para descubrir el protón?",
+          "options": [
+            "Hidrógeno",
+            "Helio",
+            "Nitrógeno",
+            "Oxígeno"
+          ],
+          "correct": 2,
+          "explanation": "Contra **nitrógeno** (experimento de transmutación)."
+        },
+        {
+          "type": "quiz",
+          "question": "Las partículas nuevas coincidían con…",
+          "options": [
+            "Electrones",
+            "Núcleos de hidrógeno",
+            "Núcleos de helio",
+            "Neutrones"
+          ],
+          "correct": 1,
+          "explanation": "Con **núcleos de hidrógeno**: el protón."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la principal limitación del modelo de Rutherford?",
+          "options": [
+            "No tenía núcleo",
+            "No explicaba por qué el electrón no cae al núcleo",
+            "No tenía electrones",
+            "Solo funcionaba para el oro"
+          ],
+          "correct": 1,
+          "explanation": "La **estabilidad**: un electrón girando debería perder energía y caer."
+        }
+      ]
+    },
+    {
+      "id": "l05-bohr",
+      "title": "Bohr: órbitas cuantizadas y espectros (1913)",
+      "summary": "Órbitas estacionarias, la fórmula de la energía, saltos electrónicos y espectros de emisión.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "El problema que resolvió"
+        },
+        {
+          "type": "text",
+          "text": "En el modelo de Rutherford el electrón debería perder energía y colapsar sobre el núcleo. **Niels Bohr** propuso en 1913 que el electrón solo puede girar en ciertas órbitas permitidas, llamadas **órbitas estacionarias**, cada una con una energía fija."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "En una escalera solo puedes pararte en los peldaños, no entre ellos. El electrón de Bohr solo puede estar en ciertas órbitas, no entre ellas. Y mientras está en una de esas órbitas **no emite energía**, así que el átomo no colapsa.",
+          "title": "La escalera"
+        },
+        {
+          "type": "heading",
+          "text": "Espectros de emisión"
+        },
+        {
+          "type": "text",
+          "text": "Cada elemento, al calentarse o excitarse, emite luz solo en ciertos colores: un **espectro de emisión** de líneas, no un arcoíris continuo.\nBohr lo explicó así: cuando el electrón **baja** de una órbita de mayor energía a una de menor energía, libera la diferencia como un **fotón** de luz. La energía del fotón decide su color.\nCada elemento tiene su propio patrón de líneas, como una **huella digital**. Así se identifica un elemento por la luz que emite."
+        },
+        {
+          "type": "text",
+          "text": "El **espectroscopio** funciona así: la muestra se excita en un mechero, la luz pasa por una rendija y un prisma la separa; en la pantalla aparecen líneas de colores sobre fondo oscuro (el sodio, por ejemplo, da una línea amarilla muy marcada)."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Salto del electrón",
+            "Energía",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Sube de nivel (n = 1 → n = 4)",
+              "Absorbe energía",
+              "Excitación"
+            ],
+            [
+              "Baja de nivel (n = 4 → n = 2)",
+              "Emite energía (un fotón)",
+              "Línea del espectro"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "La fórmula de Bohr (átomo de hidrógeno)"
+        },
+        {
+          "type": "formula",
+          "expression": "Eₙ = −13.6 eV / n²",
+          "caption": "n número cuántico principal (1, 2, 3…)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "n",
+            "Eₙ"
+          ],
+          "rows": [
+            [
+              "1",
+              "−13.6 eV"
+            ],
+            [
+              "2",
+              "−3.4 eV"
+            ],
+            [
+              "3",
+              "−1.51 eV"
+            ],
+            [
+              "∞ (electrón libre)",
+              "0 eV"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "La energía es **negativa** porque el electrón está **ligado** al núcleo.",
+            "Más cerca del núcleo (n menor), energía más negativa (más baja).",
+            "Un electrón completamente separado tiene **0 eV**: eso es la **ionización**. Para arrancar el electrón desde n = 1 hacen falta 13.6 eV."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "formula",
+          "expression": "ΔE = Efinal − Einicial",
+          "caption": "Si ΔE es negativo, el átomo perdió energía y emitió un fotón de energía |ΔE|"
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "De n = 2 a n = 1: ΔE = −13.6 − (−3.4) = −10.2 eV. El signo negativo indica que el átomo perdió energía: el fotón emitido tiene **10.2 eV**.",
+          "title": "El ejemplo de clase"
+        },
+        {
+          "type": "formula",
+          "expression": "λ (nm) ≈ 1240 / E (eV)",
+          "caption": "Para pasar la energía del fotón a longitud de onda (hc ≈ 1240 eV·nm)"
+        },
+        {
+          "type": "heading",
+          "text": "Limitaciones"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Solo funciona bien para el **hidrógeno** (átomos de un electrón); no explica los espectros de átomos con varios electrones.",
+            "Trata al electrón como una partícula en órbita fija; luego se supo que también se comporta como onda."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "exercise",
+          "title": "Línea roja del hidrógeno",
+          "level": 2,
+          "statement": "Un electrón del hidrógeno baja de n = 3 a n = 2. ¿Absorbe o emite? ¿Qué energía tiene el fotón y cuál es su longitud de onda?",
+          "steps": [
+            "E₃ = −13.6/9 = −1.51 eV; E₂ = −13.6/4 = −3.40 eV",
+            "ΔE = E₂ − E₃ = −3.40 − (−1.51) = −1.89 eV",
+            "ΔE negativo: el átomo pierde energía, así que **emite** un fotón de 1.89 eV",
+            "λ ≈ 1240 / 1.89 ≈ 656 nm"
+          ],
+          "answer": "Emite un fotón de ≈ 1.89 eV, con λ ≈ 656 nm: es la línea roja del espectro del hidrógeno."
+        },
+        {
+          "type": "exercise",
+          "title": "Absorción de 1 a 3",
+          "level": 2,
+          "statement": "¿Cuánta energía debe absorber un electrón del hidrógeno para pasar de n = 1 a n = 3?",
+          "steps": [
+            "E₁ = −13.6 eV; E₃ = −1.51 eV",
+            "ΔE = E₃ − E₁ = −1.51 − (−13.6) = 12.09 eV",
+            "Es positivo: el átomo absorbe esa energía"
+          ],
+          "answer": "Absorbe ≈ 12.09 eV"
+        },
+        {
+          "type": "exercise",
+          "title": "Ionizar desde n = 2",
+          "level": 1,
+          "statement": "¿Qué energía hace falta para arrancar el electrón del hidrógeno si está en n = 2?",
+          "steps": [
+            "El electrón libre tiene 0 eV; en n = 2 tiene −3.4 eV",
+            "ΔE = 0 − (−3.4) = 3.4 eV"
+          ],
+          "answer": "3.4 eV"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cómo llamó Bohr a las órbitas permitidas?",
+          "options": [
+            "Orbitales",
+            "Órbitas estacionarias",
+            "Órbitas elípticas",
+            "Capas de valencia"
+          ],
+          "correct": 1,
+          "explanation": "**Órbitas estacionarias**: en ellas el electrón no emite energía."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué ocurre cuando un electrón baja de nivel?",
+          "options": [
+            "Absorbe energía",
+            "Emite un fotón",
+            "Se ioniza",
+            "Nada"
+          ],
+          "correct": 1,
+          "explanation": "Libera la diferencia de energía como un **fotón**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la energía del electrón del hidrógeno en n = 2?",
+          "options": [
+            "−13.6 eV",
+            "−6.8 eV",
+            "−3.4 eV",
+            "−1.51 eV"
+          ],
+          "correct": 2,
+          "explanation": "−13.6/4 = **−3.4 eV**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué la energía del electrón es negativa?",
+          "options": [
+            "Por un error de signo",
+            "Porque está ligado al núcleo",
+            "Porque el electrón es negativo",
+            "Porque se mueve rápido"
+          ],
+          "correct": 1,
+          "explanation": "Indica que está **ligado**; el electrón libre tiene 0 eV."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué energía tiene un electrón completamente separado del átomo?",
+          "options": [
+            "−13.6 eV",
+            "13.6 eV",
+            "0 eV",
+            "Infinita"
+          ],
+          "correct": 2,
+          "explanation": "**0 eV**: ionización."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué energía tiene el fotón emitido al pasar de n = 2 a n = 1?",
+          "options": [
+            "3.4 eV",
+            "10.2 eV",
+            "13.6 eV",
+            "17 eV"
+          ],
+          "correct": 1,
+          "explanation": "|−13.6 − (−3.4)| = **10.2 eV**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué fenómeno explicó Bohr que Rutherford no podía?",
+          "options": [
+            "La radiactividad",
+            "Los espectros de líneas del hidrógeno",
+            "La existencia del neutrón",
+            "La difracción"
+          ],
+          "correct": 1,
+          "explanation": "Los **espectros de emisión** del hidrógeno (y la estabilidad)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Para qué átomo funciona bien el modelo de Bohr?",
+          "options": [
+            "Todos",
+            "Solo el hidrógeno (un electrón)",
+            "Los gases nobles",
+            "Los metales"
+          ],
+          "correct": 1,
+          "explanation": "Solo para el **hidrógeno**."
+        },
+        {
+          "type": "quiz",
+          "question": "El espectro de emisión de un elemento es…",
+          "options": [
+            "Continuo como un arcoíris",
+            "Un conjunto de líneas características, como una huella digital",
+            "Igual para todos los elementos",
+            "Invisible"
+          ],
+          "correct": 1,
+          "explanation": "Líneas **discretas y propias** de cada elemento."
+        },
+        {
+          "type": "quiz",
+          "question": "El número n de la fórmula de Bohr es…",
+          "options": [
+            "El número atómico",
+            "El número cuántico principal",
+            "El número de electrones",
+            "El número de masa"
+          ],
+          "correct": 1,
+          "explanation": "El **número cuántico principal**."
+        }
+      ]
+    },
+    {
+      "id": "l06-sommerfeld",
+      "title": "Sommerfeld: órbitas elípticas y estructura fina (1916)",
+      "summary": "Órbitas elípticas, subniveles, el número cuántico secundario y la corrección relativista.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Lo que añadió a Bohr"
+        },
+        {
+          "type": "text",
+          "text": "**Arnold Sommerfeld** amplió en 1916 el modelo de Bohr para explicar detalles de los espectros que Bohr no podía."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Órbitas elípticas:** además de circulares, el electrón puede moverse en órbitas alargadas, acercándose y alejándose del núcleo.",
+            "**Subniveles:** cada nivel de Bohr está formado por varios subniveles con energías ligeramente distintas.",
+            "**Número cuántico secundario (l):** lo introdujo para clasificar la forma de las órbitas y sus subniveles.",
+            "**Corrección relativista:** cuando el electrón se acerca al núcleo en la elipse, se acelera mucho; a velocidades cercanas a la de la luz hay que usar la relatividad especial de Einstein."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "La estructura fina"
+        },
+        {
+          "type": "text",
+          "text": "Con instrumentos más precisos se vio que algunas líneas del espectro que parecían una sola eran en realidad **varias líneas muy próximas**. Eso es la **estructura fina del espectro**.\nSommerfeld no hizo un experimento propio: trabajó con **cálculos teóricos** sobre espectros ya observados por otros. Al añadir las correcciones relativistas, aparecían pequeñas diferencias de energía que explicaban esas líneas divididas."
+        },
+        {
+          "type": "heading",
+          "text": "Limitación"
+        },
+        {
+          "type": "text",
+          "text": "Seguía tratando al electrón como una partícula con **trayectoria definida**. La mecánica cuántica mostró después que el electrón no sigue trayectorias exactas, sino una distribución de probabilidad."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué tipo de órbitas añadió Sommerfeld?",
+          "options": [
+            "Cuadradas",
+            "Elípticas",
+            "Probabilísticas",
+            "Espirales"
+          ],
+          "correct": 1,
+          "explanation": "Órbitas **elípticas** además de circulares."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué número cuántico introdujo Sommerfeld?",
+          "options": [
+            "El principal (n)",
+            "El secundario o azimutal (l)",
+            "El magnético (ml)",
+            "El de espín (ms)"
+          ],
+          "correct": 1,
+          "explanation": "El **secundario (l)**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué explicó la corrección relativista de Sommerfeld?",
+          "options": [
+            "Los isótopos",
+            "La estructura fina del espectro",
+            "La existencia del neutrón",
+            "El color del oro"
+          ],
+          "correct": 1,
+          "explanation": "La **estructura fina**: líneas que en realidad son varias muy próximas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Sommerfeld hizo un experimento propio?",
+          "options": [
+            "Sí, con láminas de oro",
+            "No, hizo cálculos teóricos sobre espectros ya observados",
+            "Sí, con rayos catódicos",
+            "Sí, con cristales de níquel"
+          ],
+          "correct": 1,
+          "explanation": "Trabajó con **cálculos teóricos**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué teoría usó Sommerfeld para corregir el modelo?",
+          "options": [
+            "La relatividad especial de Einstein",
+            "La mecánica de Newton",
+            "La teoría de bandas",
+            "La termodinámica"
+          ],
+          "correct": 0,
+          "explanation": "La **relatividad especial**: el electrón alcanza velocidades muy altas cerca del núcleo."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la limitación del modelo de Sommerfeld?",
+          "options": [
+            "No tenía núcleo",
+            "Seguía usando trayectorias definidas",
+            "Solo tenía un nivel",
+            "No tenía electrones"
+          ],
+          "correct": 1,
+          "explanation": "Seguía pensando en **trayectorias**; la cuántica habla de probabilidades."
+        }
+      ]
+    },
+    {
+      "id": "l07-schrodinger",
+      "title": "Schrödinger y la mecánica cuántica (1926)",
+      "summary": "De Broglie, Davisson y Germer, la función de onda, |ψ|² y el principio de Heisenberg.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "La base: el electrón también es onda"
+        },
+        {
+          "type": "text",
+          "text": "**Louis de Broglie** propuso que los electrones, aunque son partículas, también pueden comportarse como **ondas**.\nLo comprobaron experimentalmente **Clinton Davisson** y **Lester Germer**: dispararon un haz de electrones contra un **cristal de níquel**, cuyos átomos están ordenados en filas regulares. Los electrones no se desviaron todos igual: en algunas direcciones llegaban muchos y en otras muy pocos. Eso es **difracción e interferencia**, un comportamiento típico de las ondas (como dos olas que se refuerzan o se anulan).\nA esta doble naturaleza se la llama **dualidad onda-partícula**."
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**De Broglie** propuso la idea; **Davisson y Germer** la comprobaron. **Schrödinger** construyó el modelo matemático.",
+          "title": "No mezcles los nombres"
+        },
+        {
+          "type": "heading",
+          "text": "El modelo de Schrödinger"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Si el electrón es también onda, ya no se puede imaginar como una bolita en órbita fija.",
+            "Schrödinger creó un modelo matemático basado en ondas que describe las regiones donde es más probable encontrar al electrón: los **orbitales**.",
+            "Ese estado se describe con la **función de onda ψ** (psi).",
+            "ψ sola no es una probabilidad: la probabilidad se obtiene con **|ψ|²**."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Si en una región ψ = 0.2, entonces |ψ|² = 0.04. Si en otra ψ = 0.8, entonces |ψ|² = 0.64. Es más probable encontrar al electrón en la segunda región. Estos valores no son porcentajes, son una medida relativa de probabilidad.",
+          "title": "Cómo leer |ψ|²"
+        },
+        {
+          "type": "heading",
+          "text": "El principio de incertidumbre de Heisenberg"
+        },
+        {
+          "type": "text",
+          "text": "No se puede conocer **al mismo tiempo** y con total precisión la **posición** de un electrón y su **cantidad de movimiento** (p = m · v). Mientras mejor conoces una, peor conoces la otra.\nPor eso no se habla de trayectorias, sino de regiones de probabilidad."
+        },
+        {
+          "type": "heading",
+          "text": "Aportes y limitaciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Aportes",
+            "Limitaciones"
+          ],
+          "rows": [
+            [
+              "Explica la distribución de electrones en átomos complejos",
+              "Las ecuaciones son muy difíciles de resolver con muchos electrones (se usan aproximaciones y computadoras)"
+            ],
+            [
+              "Explica niveles, subniveles y la forma de los orbitales",
+              "La ecuación original no considera la relatividad (importante en átomos pesados)"
+            ],
+            [
+              "Explica los enlaces y el comportamiento químico",
+              "No da una trayectoria exacta, solo probabilidades (es la naturaleza de la cuántica, no un error)"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién propuso que el electrón se comporta también como onda?",
+          "options": [
+            "Schrödinger",
+            "De Broglie",
+            "Heisenberg",
+            "Bohr"
+          ],
+          "correct": 1,
+          "explanation": "**Louis de Broglie**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quiénes comprobaron experimentalmente el comportamiento ondulatorio del electrón?",
+          "options": [
+            "Geiger y Marsden",
+            "Davisson y Germer",
+            "Bohr y Sommerfeld",
+            "Thomson y Millikan"
+          ],
+          "correct": 1,
+          "explanation": "**Davisson y Germer**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Contra qué dispararon electrones Davisson y Germer?",
+          "options": [
+            "Una lámina de oro",
+            "Un cristal de níquel",
+            "Parafina",
+            "Berilio"
+          ],
+          "correct": 1,
+          "explanation": "Un **cristal de níquel**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué fenómeno ondulatorio observaron?",
+          "options": [
+            "Fotoeléctrico",
+            "Difracción e interferencia",
+            "Radiactividad",
+            "Estructura fina"
+          ],
+          "correct": 1,
+          "explanation": "**Difracción e interferencia**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cómo se llaman las regiones de mayor probabilidad de encontrar al electrón?",
+          "options": [
+            "Órbitas",
+            "Orbitales",
+            "Capas",
+            "Núcleos"
+          ],
+          "correct": 1,
+          "explanation": "**Orbitales** (no órbitas)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué letra representa la función de onda?",
+          "options": [
+            "λ",
+            "ψ",
+            "σ",
+            "Δ"
+          ],
+          "correct": 1,
+          "explanation": "**ψ** (psi)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué magnitud da la probabilidad de encontrar al electrón?",
+          "options": [
+            "ψ",
+            "|ψ|²",
+            "1/ψ",
+            "ψ/2"
+          ],
+          "correct": 1,
+          "explanation": "El cuadrado **|ψ|²**."
+        },
+        {
+          "type": "quiz",
+          "question": "Si ψ = 0.8 en una región, ¿cuánto vale |ψ|²?",
+          "options": [
+            "0.8",
+            "0.4",
+            "0.64",
+            "1.6"
+          ],
+          "correct": 2,
+          "explanation": "0.8² = **0.64**."
+        },
+        {
+          "type": "quiz",
+          "question": "El principio de Heisenberg dice que no se pueden conocer a la vez con precisión…",
+          "options": [
+            "La masa y la carga",
+            "La posición y la cantidad de movimiento",
+            "La energía y el espín",
+            "El nivel y el subnivel"
+          ],
+          "correct": 1,
+          "explanation": "**Posición y cantidad de movimiento**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es una limitación de la ecuación original de Schrödinger?",
+          "options": [
+            "No tenía orbitales",
+            "No consideraba los efectos de la relatividad",
+            "Solo funcionaba para el oro",
+            "No usaba ondas"
+          ],
+          "correct": 1,
+          "explanation": "No incluía la **relatividad**, importante en átomos pesados."
+        },
+        {
+          "type": "quiz",
+          "question": "¿En qué año presentó Schrödinger su modelo?",
+          "options": [
+            "1904",
+            "1913",
+            "1916",
+            "1926"
+          ],
+          "correct": 3,
+          "explanation": "**1926**."
+        }
+      ]
+    },
+    {
+      "id": "l08-chadwick",
+      "title": "Chadwick: el descubrimiento del neutrón (1932)",
+      "summary": "El experimento del berilio y la parafina, el razonamiento y las características del neutrón.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "El problema"
+        },
+        {
+          "type": "text",
+          "text": "Ya se sabía que el núcleo tenía protones, pero la **masa** de muchos núcleos era mayor que la suma de sus protones. Debía haber otra partícula en el núcleo."
+        },
+        {
+          "type": "heading",
+          "text": "El experimento"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Una fuente de **polonio** emitía partículas alfa.",
+            "Las partículas alfa chocaban contra una lámina de **berilio**.",
+            "El berilio emitía una radiación **muy penetrante y sin carga**. Al principio se creyó que eran **rayos gamma**.",
+            "Esa radiación se hizo chocar contra **parafina**, que tiene muchísimos átomos de hidrógeno (núcleos de un solo protón).",
+            "De la parafina salían **protones con energía muy alta**, detectados con una cámara de ionización o contador Geiger."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "El razonamiento"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Como dos bolas de billar: si una lanza a la otra a gran velocidad, le transfirió mucha energía.",
+            "Si fueran rayos gamma, necesitarían una energía mucho mayor de la esperada para expulsar así a los protones.",
+            "Se explicaba mucho mejor con **partículas con masa**, que chocan y transfieren gran parte de su energía.",
+            "Esas partículas no se desviaban en campos eléctricos ni magnéticos: **no tenían carga**.",
+            "A partir de los choques calculó que su masa era **aproximadamente la del protón**. La llamó **neutrón**."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "heading",
+          "text": "Características del neutrón"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Detalle"
+          ],
+          "rows": [
+            [
+              "Carga",
+              "Ninguna: no es atraído ni repelido por cargas eléctricas"
+            ],
+            [
+              "Masa",
+              "Muy parecida a la del protón, aunque **ligeramente mayor**"
+            ],
+            [
+              "Estabilidad",
+              "Estable dentro de un núcleo estable; **libre** (fuera del núcleo) es inestable y se desintegra"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Importancia"
+        },
+        {
+          "type": "text",
+          "text": "Permitió entender la estructura del núcleo, la existencia de los **isótopos** (distinto número de neutrones), la **radiactividad** y la **fisión nuclear** (un núcleo pesado como el uranio se divide y libera mucha energía)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué partícula descubrió Chadwick?",
+          "options": [
+            "Protón",
+            "Electrón",
+            "Neutrón",
+            "Positrón"
+          ],
+          "correct": 2,
+          "explanation": "El **neutrón**, en 1932."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Contra qué lámina chocaban las partículas alfa en su experimento?",
+          "options": [
+            "Oro",
+            "Berilio",
+            "Níquel",
+            "Parafina"
+          ],
+          "correct": 1,
+          "explanation": "**Berilio**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué fuente de partículas alfa usó?",
+          "options": [
+            "Uranio",
+            "Radio",
+            "Polonio",
+            "Helio"
+          ],
+          "correct": 2,
+          "explanation": "**Polonio**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué usó parafina?",
+          "options": [
+            "Porque es conductora",
+            "Porque tiene muchos átomos de hidrógeno (protones)",
+            "Porque es radiactiva",
+            "Porque absorbe la luz"
+          ],
+          "correct": 1,
+          "explanation": "Mucho **hidrógeno**: protones fáciles de expulsar y detectar."
+        },
+        {
+          "type": "quiz",
+          "question": "Al principio se pensó que la radiación del berilio era…",
+          "options": [
+            "Electrones",
+            "Rayos gamma",
+            "Protones",
+            "Partículas alfa"
+          ],
+          "correct": 1,
+          "explanation": "**Rayos gamma**, porque tampoco tienen carga."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cómo supo que el neutrón no tenía carga?",
+          "options": [
+            "Por su color",
+            "No se desviaba en campos eléctricos ni magnéticos",
+            "Por su masa",
+            "Porque era invisible"
+          ],
+          "correct": 1,
+          "explanation": "No se **desviaba** en los campos."
+        },
+        {
+          "type": "quiz",
+          "question": "La masa del neutrón comparada con la del protón es…",
+          "options": [
+            "Mucho menor",
+            "Igual exacta",
+            "Ligeramente mayor",
+            "El doble"
+          ],
+          "correct": 2,
+          "explanation": "**Ligeramente mayor**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un neutrón libre (fuera del núcleo) es…",
+          "options": [
+            "Estable para siempre",
+            "Inestable: se desintegra",
+            "Un protón",
+            "Negativo"
+          ],
+          "correct": 1,
+          "explanation": "Libre es **inestable**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué problema motivó la búsqueda del neutrón?",
+          "options": [
+            "Los espectros",
+            "La masa de los núcleos era mayor que la de sus protones",
+            "La estabilidad del electrón",
+            "El color del oro"
+          ],
+          "correct": 1,
+          "explanation": "La **masa** del núcleo no cuadraba."
+        }
+      ]
+    },
+    {
+      "id": "l09-cuantico-actual",
+      "title": "El modelo cuántico actual, Hartree-Fock y DFT",
+      "summary": "Orbitales, el problema de muchos electrones, los métodos aproximados y los efectos relativistas en el oro y el mercurio.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Qué dice el modelo actual"
+        },
+        {
+          "type": "text",
+          "text": "El **modelo cuántico actual** no es obra de un solo científico: reúne los aportes de la mecánica cuántica del siglo XX."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Núcleo con protones y neutrones, rodeado de electrones.",
+            "Los electrones no recorren caminos definidos: tienen propiedades de partícula y de onda.",
+            "En lugar de órbitas hay **orbitales**: zonas de alta probabilidad, no caminos.",
+            "Cada electrón se describe con los **cuatro números cuánticos**: nivel, tipo de orbital, orientación y espín."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "El problema de muchos electrones"
+        },
+        {
+          "type": "text",
+          "text": "En el hidrógeno hay un núcleo y un electrón: el cálculo es exacto. Con varios electrones, cada uno es atraído por el núcleo y **repelido por todos los demás**. Cuantos más electrones, más interacciones, y el problema no tiene solución exacta. Por eso se usan **computadoras y métodos aproximados**."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Método",
+            "Idea",
+            "Palabra clave"
+          ],
+          "rows": [
+            [
+              "Hartree-Fock",
+              "Cada electrón «siente» el **efecto promedio** de los demás electrones, en vez de calcular cada interacción por separado",
+              "Promedio (campo medio)"
+            ],
+            [
+              "Teoría del Funcional de la Densidad (DFT)",
+              "Estudia cómo se **distribuye la densidad electrónica** en el espacio: dónde hay más o menos electrones",
+              "Densidad electrónica"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Si la pregunta habla de «efecto promedio de los demás electrones», la respuesta es **Hartree-Fock**. Si habla de «densidad electrónica», es **DFT**. Ninguno da una solución exacta, pero ambos son suficientemente precisos para estudiar estructura, energía y enlaces.",
+          "title": "Cómo reconocerlos en el examen"
+        },
+        {
+          "type": "heading",
+          "text": "Efectos relativistas en elementos pesados"
+        },
+        {
+          "type": "text",
+          "text": "En átomos con muchos protones, los electrones cercanos al núcleo sufren una atracción enorme y se mueven a una fracción importante de la velocidad de la luz. Hay que corregir las ecuaciones con la relatividad de Einstein, y eso cambia propiedades visibles:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Elemento",
+            "Efecto visible",
+            "Explicación"
+          ],
+          "rows": [
+            [
+              "Oro (Au)",
+              "Color amarillo",
+              "Los efectos relativistas cambian las diferencias de energía entre sus electrones; absorbe parte de la luz **azul** y refleja el resto"
+            ],
+            [
+              "Mercurio (Hg)",
+              "Líquido a temperatura ambiente",
+              "Algunos electrones quedan más atraídos al núcleo y participan menos en la unión entre átomos; la unión es débil"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién desarrolló el modelo cuántico actual?",
+          "options": [
+            "Schrödinger solo",
+            "Bohr",
+            "Ningún científico en particular: reúne muchos aportes del siglo XX",
+            "Chadwick"
+          ],
+          "correct": 2,
+          "explanation": "Es una construcción **colectiva**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué método considera el efecto promedio que los demás electrones ejercen sobre cada uno?",
+          "options": [
+            "DFT",
+            "Hartree-Fock",
+            "Bohr",
+            "Slater"
+          ],
+          "correct": 1,
+          "explanation": "**Hartree-Fock**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué método se basa en la densidad electrónica?",
+          "options": [
+            "Hartree-Fock",
+            "Teoría del Funcional de la Densidad (DFT)",
+            "Moeller",
+            "Rutherford"
+          ],
+          "correct": 1,
+          "explanation": "**DFT**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué se necesitan métodos aproximados en átomos con muchos electrones?",
+          "options": [
+            "Porque no tienen núcleo",
+            "Porque cada electrón se repele con todos los demás y el problema no tiene solución exacta",
+            "Porque los electrones no tienen carga",
+            "Porque no hay orbitales"
+          ],
+          "correct": 1,
+          "explanation": "Las **repulsiones** entre todos los electrones hacen el cálculo inabordable de forma exacta."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Hartree-Fock y DFT dan soluciones exactas?",
+          "options": [
+            "Sí, siempre",
+            "No, pero son suficientemente precisas",
+            "Solo para el hidrógeno",
+            "Solo DFT"
+          ],
+          "correct": 1,
+          "explanation": "Son **aproximaciones** muy útiles."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el oro es amarillo?",
+          "options": [
+            "Por impurezas de cobre",
+            "Por efectos relativistas: absorbe parte de la luz azul",
+            "Porque es radiactivo",
+            "Porque tiene 79 neutrones"
+          ],
+          "correct": 1,
+          "explanation": "**Efectos relativistas**: absorbe azul y refleja amarillo."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué el mercurio es líquido a temperatura ambiente?",
+          "options": [
+            "Porque es un no metal",
+            "Por efectos relativistas que debilitan la unión entre sus átomos",
+            "Porque tiene enlace iónico",
+            "Porque es ligero"
+          ],
+          "correct": 1,
+          "explanation": "**Efectos relativistas**: unión débil entre átomos."
+        },
+        {
+          "type": "quiz",
+          "question": "En el modelo actual, un orbital es…",
+          "options": [
+            "El camino del electrón",
+            "Una región de alta probabilidad de encontrar al electrón",
+            "Una órbita circular",
+            "El núcleo"
+          ],
+          "correct": 1,
+          "explanation": "Región de **probabilidad**, no un camino."
+        }
+      ]
+    },
+    {
+      "id": "lx-linea-tiempo",
+      "title": "Repaso: quién hizo qué",
+      "summary": "Línea del tiempo completa y preguntas de detalle sobre científicos, experimentos y materiales.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Año",
+            "Científico",
+            "Aporte",
+            "Experimento o base",
+            "Limitación"
+          ],
+          "rows": [
+            [
+              "s. V a. C.",
+              "Leucipo y Demócrito",
+              "Átomos indivisibles y vacío",
+              "Ninguno (filosofía)",
+              "Sin base experimental"
+            ],
+            [
+              "1803–1808",
+              "Dalton",
+              "Primer modelo científico; átomos idénticos por elemento",
+              "Leyes de conservación de la masa y proporciones definidas",
+              "Sin subatómicas ni isótopos"
+            ],
+            [
+              "1897–1904",
+              "Thomson",
+              "Electrón; budín de pasas",
+              "Tubo de rayos catódicos; e/m",
+              "Sin núcleo ni espectros"
+            ],
+            [
+              "1909–1911",
+              "Rutherford (con Geiger y Marsden)",
+              "Núcleo; átomo casi vacío",
+              "Lámina de oro, partículas alfa, sulfuro de zinc",
+              "Estabilidad y espectros"
+            ],
+            [
+              "≈1919",
+              "Rutherford",
+              "Protón",
+              "Alfa contra nitrógeno (transmutación)",
+              "—"
+            ],
+            [
+              "1913",
+              "Bohr",
+              "Órbitas estacionarias cuantizadas",
+              "Espectro del hidrógeno; En = −13.6/n²",
+              "Solo hidrógeno"
+            ],
+            [
+              "1916",
+              "Sommerfeld",
+              "Órbitas elípticas, subniveles, número l",
+              "Cálculos teóricos; estructura fina",
+              "Trayectorias definidas"
+            ],
+            [
+              "1924–1927",
+              "De Broglie; Davisson y Germer; Heisenberg",
+              "Dualidad onda-partícula; incertidumbre",
+              "Electrones sobre cristal de níquel",
+              "—"
+            ],
+            [
+              "1926",
+              "Schrödinger",
+              "Orbitales; función de onda ψ",
+              "Modelo matemático ondulatorio",
+              "Difícil con muchos electrones; no relativista"
+            ],
+            [
+              "1932",
+              "Chadwick",
+              "Neutrón",
+              "Polonio, berilio, parafina",
+              "—"
+            ],
+            [
+              "Actual",
+              "Muchos autores",
+              "Orbitales y números cuánticos",
+              "Hartree-Fock, DFT, correcciones relativistas",
+              "Soluciones aproximadas"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Recuerda el orden: Thomson (electrón) → Rutherford (núcleo y protón) → Chadwick (neutrón). Las tres partículas se descubrieron en ese orden.",
+          "title": "Orden de las partículas"
+        },
+        {
+          "type": "quiz",
+          "question": "Ordena el descubrimiento de las partículas:",
+          "options": [
+            "Protón, electrón, neutrón",
+            "Electrón, protón, neutrón",
+            "Neutrón, protón, electrón",
+            "Electrón, neutrón, protón"
+          ],
+          "correct": 1,
+          "explanation": "Electrón (Thomson, 1897) → protón (Rutherford) → neutrón (Chadwick, 1932)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo se asocia a la lámina de oro?",
+          "options": [
+            "Thomson",
+            "Rutherford",
+            "Bohr",
+            "Chadwick"
+          ],
+          "correct": 1,
+          "explanation": "**Rutherford**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo se asocia a la parafina?",
+          "options": [
+            "Rutherford",
+            "Chadwick",
+            "Thomson",
+            "Schrödinger"
+          ],
+          "correct": 1,
+          "explanation": "**Chadwick** (descubrimiento del neutrón)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo se asocia a los rayos catódicos?",
+          "options": [
+            "Dalton",
+            "Thomson",
+            "Bohr",
+            "Sommerfeld"
+          ],
+          "correct": 1,
+          "explanation": "**Thomson**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo introdujo los niveles de energía cuantizados?",
+          "options": [
+            "Rutherford",
+            "Bohr",
+            "Schrödinger",
+            "Dalton"
+          ],
+          "correct": 1,
+          "explanation": "**Bohr**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo introdujo los subniveles?",
+          "options": [
+            "Bohr",
+            "Sommerfeld",
+            "Thomson",
+            "Dalton"
+          ],
+          "correct": 1,
+          "explanation": "**Sommerfeld**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo introdujo los orbitales?",
+          "options": [
+            "Bohr",
+            "Sommerfeld",
+            "Schrödinger",
+            "Rutherford"
+          ],
+          "correct": 2,
+          "explanation": "**Schrödinger** (modelo mecánico-cuántico)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo es el «planetario»?",
+          "options": [
+            "Thomson",
+            "Rutherford",
+            "Dalton",
+            "Schrödinger"
+          ],
+          "correct": 1,
+          "explanation": "**Rutherford**: electrones girando alrededor del núcleo como planetas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué método aproximado se usa hoy para átomos de muchos electrones considerando un efecto promedio?",
+          "options": [
+            "Moeller",
+            "Hartree-Fock",
+            "Slater",
+            "Lewis"
+          ],
+          "correct": 1,
+          "explanation": "**Hartree-Fock**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál fue el primer modelo con partículas subatómicas?",
+          "options": [
+            "Dalton",
+            "Thomson",
+            "Rutherford",
+            "Bohr"
+          ],
+          "correct": 1,
+          "explanation": "**Thomson** (el electrón)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo no tenía ninguna base experimental?",
+          "options": [
+            "Dalton",
+            "Demócrito",
+            "Thomson",
+            "Bohr"
+          ],
+          "correct": 1,
+          "explanation": "**Demócrito** (y Leucipo)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué científico calculó la relación e/m?",
+          "options": [
+            "Millikan",
+            "Thomson",
+            "Rutherford",
+            "Bohr"
+          ],
+          "correct": 1,
+          "explanation": "**Thomson**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué detector usó Chadwick para los protones expulsados?",
+          "options": [
+            "Pantalla de sulfuro de zinc",
+            "Cámara de ionización o contador Geiger",
+            "Espectroscopio",
+            "Microscopio"
+          ],
+          "correct": 1,
+          "explanation": "**Cámara de ionización / contador Geiger**."
+        },
+        {
+          "type": "quiz",
+          "question": "La estructura fina del espectro la explicó…",
+          "options": [
+            "Bohr",
+            "Sommerfeld",
+            "Dalton",
+            "Chadwick"
+          ],
+          "correct": 1,
+          "explanation": "**Sommerfeld**, con correcciones relativistas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué modelo explica por qué el átomo no colapsa?",
+          "options": [
+            "Rutherford",
+            "Bohr",
+            "Thomson",
+            "Dalton"
+          ],
+          "correct": 1,
+          "explanation": "**Bohr**: en las órbitas estacionarias el electrón no irradia."
+        }
+      ]
+    }
+  ]
+}

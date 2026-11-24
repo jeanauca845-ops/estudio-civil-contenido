@@ -1,0 +1,1798 @@
+{
+  "id": "q07-reacciones",
+  "title": "Reacciones químicas, energía y estequiometría",
+  "description": "Final de la materia: tipos de reacciones (síntesis, descomposición, desplazamiento simple y doble), neutralización, precipitación, combustión, redox, balanceo, entalpía, Gibbs y estequiometría",
+  "lessons": [
+    {
+      "id": "l01-concepto",
+      "title": "Qué es una reacción química y cómo se escribe",
+      "summary": "Definición, cambio físico frente a químico, simbología, coeficientes y subíndices.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Definición"
+        },
+        {
+          "type": "text",
+          "text": "Una **reacción química** es una transformación de la materia en la que se **rompen enlaces** y los átomos se **reacomodan** para formar sustancias nuevas, con propiedades diferentes.\nLa **cinética química** estudia la **velocidad** de las reacciones."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Cambio",
+            "Tipo",
+            "Por qué"
+          ],
+          "rows": [
+            [
+              "Fundir hielo",
+              "Físico",
+              "Sigue siendo H₂O"
+            ],
+            [
+              "Disolver sal en agua",
+              "Físico",
+              "La sal se recupera al evaporar"
+            ],
+            [
+              "Oxidación del hierro",
+              "Químico",
+              "Se forma óxido, una sustancia nueva"
+            ],
+            [
+              "Quemar madera",
+              "Químico",
+              "Se forman CO₂, agua y ceniza"
+            ],
+            [
+              "Fraguado del cemento",
+              "Químico",
+              "Se forman silicatos de calcio hidratados"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Señales de que ocurrió una reacción: se desprende un gas, se forma un precipitado, cambia el color, se libera o absorbe calor o luz."
+        },
+        {
+          "type": "heading",
+          "text": "Simbología de las ecuaciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Símbolo",
+            "Significado"
+          ],
+          "rows": [
+            [
+              "+",
+              "Separa reactivos entre sí o productos entre sí"
+            ],
+            [
+              "→",
+              "Produce; reacción irreversible (separa reactivos de productos)"
+            ],
+            [
+              "⇌",
+              "Reacción reversible"
+            ],
+            [
+              "↑",
+              "Se desprende un gas"
+            ],
+            [
+              "↓",
+              "Se forma un precipitado (sólido)"
+            ],
+            [
+              "Δ sobre la flecha",
+              "Se suministra calor"
+            ],
+            [
+              "Pt sobre la flecha",
+              "Catalizador: acelera la reacción sin consumirse"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Coeficientes y subíndices"
+        },
+        {
+          "type": "text",
+          "text": "En **2H₂O**: el **2** de adelante es el **coeficiente estequiométrico** (hay 2 moléculas o 2 moles). El **₂** pequeño es un **subíndice** (cada molécula tiene 2 átomos de H).\nAl balancear solo se cambian **coeficientes**, nunca subíndices: cambiar un subíndice cambia la sustancia (H₂O es agua, H₂O₂ es agua oxigenada)."
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "En 3H₂SO₄ hay: 3 · 2 = 6 átomos de H, 3 · 1 = 3 de S y 3 · 4 = 12 de O.",
+          "title": "Contar átomos"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué indica la flecha hacia abajo (↓) en una ecuación?",
+          "options": [
+            "Desprende gas",
+            "Forma un precipitado",
+            "Absorbe calor",
+            "Es reversible"
+          ],
+          "correct": 1,
+          "explanation": "**↓** = precipitado. ↑ = gas."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué indica ⇌?",
+          "options": [
+            "Irreversible",
+            "Reversible",
+            "Catalizador",
+            "Calor"
+          ],
+          "correct": 1,
+          "explanation": "Reacción **reversible**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un catalizador…",
+          "options": [
+            "Se consume en la reacción",
+            "Acelera la reacción sin consumirse",
+            "Detiene la reacción",
+            "Es un producto"
+          ],
+          "correct": 1,
+          "explanation": "Acelera **sin consumirse**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué estudia la cinética química?",
+          "options": [
+            "La energía de la reacción",
+            "La velocidad de la reacción",
+            "Las masas",
+            "Los isótopos"
+          ],
+          "correct": 1,
+          "explanation": "La **velocidad**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuántos átomos de oxígeno hay en 3H₂SO₄?",
+          "options": [
+            "4",
+            "7",
+            "12",
+            "3"
+          ],
+          "correct": 2,
+          "explanation": "3 · 4 = **12**."
+        },
+        {
+          "type": "quiz",
+          "question": "Al balancear una ecuación se pueden cambiar…",
+          "options": [
+            "Los subíndices",
+            "Los coeficientes",
+            "Ambos",
+            "Ninguno"
+          ],
+          "correct": 1,
+          "explanation": "Solo los **coeficientes**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es un cambio químico?",
+          "options": [
+            "Hervir agua",
+            "Romper un vidrio",
+            "Oxidación de una varilla",
+            "Disolver azúcar"
+          ],
+          "correct": 2,
+          "explanation": "La **oxidación** forma una sustancia nueva."
+        }
+      ]
+    },
+    {
+      "id": "l02-comportamiento",
+      "title": "Síntesis, descomposición, desplazamiento simple y doble",
+      "summary": "Las cuatro reacciones según el comportamiento de los reactivos, cómo reconocerlas y la serie de actividad.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Los cuatro patrones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Patrón",
+            "Idea",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Síntesis (combinación)",
+              "A + B → AB",
+              "Dos o más sustancias forman **una sola**",
+              "2H₂ + O₂ → 2H₂O"
+            ],
+            [
+              "Descomposición",
+              "AB → A + B",
+              "Una sustancia se separa en **dos o más**",
+              "2H₂O → 2H₂ + O₂"
+            ],
+            [
+              "Desplazamiento simple",
+              "A + BC → AC + B",
+              "Un **elemento libre** reemplaza a otro dentro de un compuesto",
+              "Zn + 2HCl → ZnCl₂ + H₂↑"
+            ],
+            [
+              "Desplazamiento doble",
+              "AB + CD → AD + CB",
+              "Dos compuestos **intercambian** sus partes",
+              "AgNO₃ + NaCl → AgCl↓ + NaNO₃"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Cómo reconocerlas rápido"
+        },
+        {
+          "type": "list",
+          "items": [
+            "¿Hay **un solo producto**? → síntesis.",
+            "¿Hay **un solo reactivo**? → descomposición.",
+            "¿Hay un **elemento solo** (Zn, Fe, Cu, Cl₂…) a cada lado? → desplazamiento simple.",
+            "¿Son **dos compuestos** a cada lado que cambiaron de pareja? → desplazamiento doble."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "En el desplazamiento simple, A «expulsa» a B y se queda con C. Como en un baile: A llega solo, separa a la pareja BC, baila con C y B queda solo.\nEn el doble, dos parejas intercambian: AB y CD pasan a AD y CB.",
+          "title": "La analogía del baile"
+        },
+        {
+          "type": "heading",
+          "text": "Más ejemplos para practicar"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Reacción",
+            "Tipo"
+          ],
+          "rows": [
+            [
+              "CaO + H₂O → Ca(OH)₂",
+              "Síntesis (apagado de la cal)"
+            ],
+            [
+              "CaCO₃ → CaO + CO₂ (con Δ)",
+              "Descomposición (calcinación de la caliza para cemento y cal)"
+            ],
+            [
+              "2H₂O₂ → 2H₂O + O₂",
+              "Descomposición"
+            ],
+            [
+              "Fe + CuSO₄ → FeSO₄ + Cu",
+              "Desplazamiento simple"
+            ],
+            [
+              "Cl₂ + 2NaBr → 2NaCl + Br₂",
+              "Desplazamiento simple (un no metal desplaza a otro)"
+            ],
+            [
+              "FeCl₃ + 3NaNO₃ → Fe(NO₃)₃ + 3NaCl",
+              "Desplazamiento doble (ejemplo del apunte)"
+            ],
+            [
+              "HCl + NaOH → NaCl + H₂O",
+              "Desplazamiento doble y también neutralización"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Una misma reacción puede clasificarse de varias formas a la vez: HCl + NaOH es desplazamiento doble (por comportamiento), neutralización (por naturaleza) y exotérmica (por energía). Si te preguntan «según su comportamiento», responde con uno de estos cuatro tipos.",
+          "title": "No son excluyentes"
+        },
+        {
+          "type": "heading",
+          "text": "¿Cuándo ocurre un desplazamiento simple? La serie de actividad"
+        },
+        {
+          "type": "text",
+          "text": "Un metal libre solo desplaza a otro si es **más activo** que él. Orden aproximado, del más al menos activo:"
+        },
+        {
+          "type": "formula",
+          "expression": "K > Na > Ca > Mg > Al > Zn > Fe > Pb > H > Cu > Ag > Au",
+          "caption": "Serie de actividad de los metales"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Zn + HCl sí reacciona: el zinc está antes que el hidrógeno y lo desplaza (sale H₂).",
+            "Cu + HCl **no reacciona**: el cobre está después del hidrógeno.",
+            "Fe + CuSO₄ sí reacciona: el hierro es más activo que el cobre (un clavo en sulfato de cobre se cubre de cobre rojizo).",
+            "El oro casi no reacciona con nada: por eso no se corroe."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "quiz",
+          "question": "A + B → AB es una reacción de…",
+          "options": [
+            "Descomposición",
+            "Síntesis",
+            "Desplazamiento simple",
+            "Desplazamiento doble"
+          ],
+          "correct": 1,
+          "explanation": "Un solo producto: **síntesis**."
+        },
+        {
+          "type": "quiz",
+          "question": "AB → A + B es una reacción de…",
+          "options": [
+            "Síntesis",
+            "Descomposición",
+            "Desplazamiento simple",
+            "Neutralización"
+          ],
+          "correct": 1,
+          "explanation": "Un solo reactivo: **descomposición**."
+        },
+        {
+          "type": "quiz",
+          "question": "A + BC → AC + B es…",
+          "options": [
+            "Síntesis",
+            "Descomposición",
+            "Desplazamiento simple",
+            "Desplazamiento doble"
+          ],
+          "correct": 2,
+          "explanation": "Un elemento libre reemplaza a otro: **desplazamiento simple**."
+        },
+        {
+          "type": "quiz",
+          "question": "AB + CD → AD + CB es…",
+          "options": [
+            "Desplazamiento simple",
+            "Desplazamiento doble",
+            "Síntesis",
+            "Combustión"
+          ],
+          "correct": 1,
+          "explanation": "Intercambio de parejas: **desplazamiento doble**."
+        },
+        {
+          "type": "quiz",
+          "question": "Zn + 2HCl → ZnCl₂ + H₂ es…",
+          "options": [
+            "Síntesis",
+            "Descomposición",
+            "Desplazamiento simple",
+            "Desplazamiento doble"
+          ],
+          "correct": 2,
+          "explanation": "El zinc libre desplaza al hidrógeno: **simple**."
+        },
+        {
+          "type": "quiz",
+          "question": "AgNO₃ + NaCl → AgCl + NaNO₃ es…",
+          "options": [
+            "Desplazamiento simple",
+            "Desplazamiento doble",
+            "Síntesis",
+            "Descomposición"
+          ],
+          "correct": 1,
+          "explanation": "Ag y Na intercambian pareja: **doble** (además de precipitación)."
+        },
+        {
+          "type": "quiz",
+          "question": "CaCO₃ → CaO + CO₂ es…",
+          "options": [
+            "Síntesis",
+            "Descomposición",
+            "Desplazamiento simple",
+            "Neutralización"
+          ],
+          "correct": 1,
+          "explanation": "Un reactivo que se separa: **descomposición**."
+        },
+        {
+          "type": "quiz",
+          "question": "CaO + H₂O → Ca(OH)₂ es…",
+          "options": [
+            "Síntesis",
+            "Descomposición",
+            "Desplazamiento simple",
+            "Desplazamiento doble"
+          ],
+          "correct": 0,
+          "explanation": "Dos reactivos, un producto: **síntesis**."
+        },
+        {
+          "type": "quiz",
+          "question": "Fe + CuSO₄ → FeSO₄ + Cu es…",
+          "options": [
+            "Síntesis",
+            "Desplazamiento simple",
+            "Desplazamiento doble",
+            "Descomposición"
+          ],
+          "correct": 1,
+          "explanation": "El hierro libre desplaza al cobre: **simple**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál de estas NO ocurre?",
+          "options": [
+            "Zn + HCl",
+            "Fe + CuSO₄",
+            "Cu + HCl",
+            "Mg + HCl"
+          ],
+          "correct": 2,
+          "explanation": "El cobre es **menos activo** que el hidrógeno: no lo desplaza."
+        },
+        {
+          "type": "quiz",
+          "question": "2H₂O → 2H₂ + O₂ (electrólisis) es…",
+          "options": [
+            "Síntesis",
+            "Descomposición",
+            "Desplazamiento simple",
+            "Combustión"
+          ],
+          "correct": 1,
+          "explanation": "**Descomposición** (ejemplo del apunte)."
+        },
+        {
+          "type": "quiz",
+          "question": "Cl₂ + 2NaBr → 2NaCl + Br₂ es…",
+          "options": [
+            "Doble",
+            "Simple",
+            "Síntesis",
+            "Descomposición"
+          ],
+          "correct": 1,
+          "explanation": "El cloro libre desplaza al bromo: **simple**."
+        }
+      ]
+    },
+    {
+      "id": "l03-naturaleza",
+      "title": "Neutralización, precipitación y combustión",
+      "summary": "Reacciones según su naturaleza, indicadores ácido-base y combustión total o parcial.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Neutralización"
+        },
+        {
+          "type": "formula",
+          "expression": "Ácido + Base → Sal + Agua",
+          "caption": "El resultado ideal tiene pH = 7"
+        },
+        {
+          "type": "text",
+          "text": "Ejemplo del apunte: Ca(OH)₂ + 2HCl → CaCl₂ + 2H₂O.\nOtro: HCl + NaOH → NaCl + H₂O."
+        },
+        {
+          "type": "heading",
+          "text": "Indicadores ácido-base"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Indicador",
+            "Color en un lado",
+            "Color en el otro"
+          ],
+          "rows": [
+            [
+              "Fenolftaleína",
+              "Rosada con pH > 8.3",
+              "Incolora con pH < 8.3"
+            ],
+            [
+              "Naranja de metilo",
+              "Amarilla con pH > 4.6",
+              "Roja con pH < 4.6"
+            ]
+          ],
+          "caption": "Valores del apunte."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "La fenolftaleína se usa en obra para medir la **carbonatación del concreto**: en el concreto sano (muy básico, pH ≈ 12.5) se pone rosada; en la zona carbonatada (pH bajo) queda incolora, y ahí el acero ya no está protegido.",
+          "title": "Aplicación en ingeniería civil"
+        },
+        {
+          "type": "heading",
+          "text": "Precipitación"
+        },
+        {
+          "type": "text",
+          "text": "Se forma un **sólido insoluble** (precipitado) a partir de disoluciones. Se marca con ↓.\nEjemplo del apunte: AgNO₃ + NaCl → AgCl↓ + NaNO₃. El cloruro de plata aparece como un sólido blanco."
+        },
+        {
+          "type": "heading",
+          "text": "Combustión"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Oxígeno",
+            "Productos",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Total o completa",
+              "Suficiente",
+              "CO₂ y H₂O",
+              "CH₄ + 2O₂ → CO₂ + 2H₂O"
+            ],
+            [
+              "Parcial o incompleta",
+              "Limitado",
+              "CO y H₂O (y a veces hollín, C)",
+              "2CH₄ + 3O₂ → 2CO + 4H₂O"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El **CO** (monóxido de carbono) de la combustión incompleta es muy tóxico y no tiene olor. Por eso los calefones a gas necesitan ventilación.",
+          "title": "Por qué importa"
+        },
+        {
+          "type": "quiz",
+          "question": "Ácido + base produce…",
+          "options": [
+            "Sal y gas",
+            "Sal y agua",
+            "Óxido y agua",
+            "Solo agua"
+          ],
+          "correct": 1,
+          "explanation": "**Sal + agua**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿De qué color es la fenolftaleína con pH 12?",
+          "options": [
+            "Incolora",
+            "Rosada",
+            "Roja",
+            "Amarilla"
+          ],
+          "correct": 1,
+          "explanation": "pH > 8.3: **rosada**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿De qué color es el naranja de metilo con pH 2?",
+          "options": [
+            "Amarillo",
+            "Rojo",
+            "Incoloro",
+            "Rosado"
+          ],
+          "correct": 1,
+          "explanation": "pH < 4.6: **rojo**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué productos da la combustión total de un hidrocarburo?",
+          "options": [
+            "CO y H₂O",
+            "CO₂ y H₂O",
+            "C y H₂",
+            "CO₂ y H₂"
+          ],
+          "correct": 1,
+          "explanation": "**CO₂ y H₂O**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué produce la combustión parcial?",
+          "options": [
+            "CO₂ y H₂O",
+            "CO y H₂O",
+            "O₂ y H₂O",
+            "Solo CO₂"
+          ],
+          "correct": 1,
+          "explanation": "**CO** (con poco oxígeno) y H₂O."
+        },
+        {
+          "type": "quiz",
+          "question": "AgNO₃ + NaCl → AgCl↓ + NaNO₃, por su naturaleza, es de…",
+          "options": [
+            "Neutralización",
+            "Precipitación",
+            "Combustión",
+            "Síntesis"
+          ],
+          "correct": 1,
+          "explanation": "Se forma un sólido: **precipitación**."
+        },
+        {
+          "type": "quiz",
+          "question": "Ca(OH)₂ + 2HCl → CaCl₂ + 2H₂O es de…",
+          "options": [
+            "Precipitación",
+            "Neutralización",
+            "Combustión",
+            "Descomposición"
+          ],
+          "correct": 1,
+          "explanation": "Base + ácido: **neutralización**."
+        }
+      ]
+    },
+    {
+      "id": "l04-redox",
+      "title": "Oxidación y reducción (redox)",
+      "summary": "Números de oxidación, quién se oxida, quién se reduce y los agentes.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Las definiciones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Proceso",
+            "Electrones",
+            "Número de oxidación"
+          ],
+          "rows": [
+            [
+              "Oxidación",
+              "Pierde electrones",
+              "Aumenta"
+            ],
+            [
+              "Reducción",
+              "Gana electrones",
+              "Disminuye"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Reducción es ganar electrones, y como los electrones son negativos, la carga **baja** (se «reduce»). Oxidación es perderlos, y la carga **sube**.",
+          "title": "Para no confundirlas"
+        },
+        {
+          "type": "text",
+          "text": "Siempre van juntas: si alguien pierde electrones, otro los gana. Por eso se llaman **redox**."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término",
+            "Qué hace",
+            "Qué le pasa"
+          ],
+          "rows": [
+            [
+              "Agente reductor",
+              "Da electrones (reduce al otro)",
+              "Se **oxida**"
+            ],
+            [
+              "Agente oxidante",
+              "Quita electrones (oxida al otro)",
+              "Se **reduce**"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "El agente oxidante **se reduce** y el agente reductor **se oxida**. Es la trampa más común del tema.",
+          "title": "Trampa"
+        },
+        {
+          "type": "heading",
+          "text": "Reglas para asignar números de oxidación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Elemento libre (Fe, O₂, Cl₂): **0**.",
+            "Ion simple: su carga (Na⁺ = +1, S²⁻ = −2).",
+            "Oxígeno: casi siempre **−2** (en peróxidos como H₂O₂ es −1).",
+            "Hidrógeno: **+1** con no metales (en hidruros metálicos como NaH es −1).",
+            "Metales alcalinos (grupo 1): +1; alcalinotérreos (grupo 2): +2.",
+            "La suma en un compuesto neutro es **0**; en un ion, igual a su carga."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "exercise",
+          "title": "Números de oxidación",
+          "level": 2,
+          "statement": "Calcula el número de oxidación del elemento marcado: S en H₂SO₄, Mn en KMnO₄, Fe en Fe₂O₃ y N en NH₃.",
+          "steps": [
+            "H₂SO₄: 2(+1) + S + 4(−2) = 0 → S = +6",
+            "KMnO₄: (+1) + Mn + 4(−2) = 0 → Mn = +7",
+            "Fe₂O₃: 2Fe + 3(−2) = 0 → Fe = +3",
+            "NH₃: N + 3(+1) = 0 → N = −3"
+          ],
+          "answer": "S = +6; Mn = +7; Fe = +3; N = −3"
+        },
+        {
+          "type": "exercise",
+          "title": "Identificar oxidación y reducción",
+          "level": 2,
+          "statement": "En Zn + CuSO₄ → ZnSO₄ + Cu, ¿quién se oxida, quién se reduce y cuáles son los agentes?",
+          "steps": [
+            "Zn: pasa de 0 a +2 → pierde 2 electrones → se oxida",
+            "Cu: pasa de +2 (en CuSO₄) a 0 → gana 2 electrones → se reduce",
+            "El Zn es el agente reductor (da electrones); el Cu²⁺ es el agente oxidante (los acepta)",
+            "El ion sulfato (SO₄²⁻) no cambia: es un ion espectador"
+          ],
+          "answer": "Se oxida el Zn (agente reductor); se reduce el Cu²⁺ (agente oxidante)."
+        },
+        {
+          "type": "text",
+          "text": "Corrosión del acero: 4Fe + 3O₂ → 2Fe₂O₃. El hierro pasa de 0 a +3: se **oxida**. El oxígeno pasa de 0 a −2: se **reduce**. Por eso el oxígeno y el agua son los enemigos de las armaduras del concreto."
+        },
+        {
+          "type": "quiz",
+          "question": "La oxidación es…",
+          "options": [
+            "Ganancia de electrones",
+            "Pérdida de electrones",
+            "Ganancia de protones",
+            "Pérdida de neutrones"
+          ],
+          "correct": 1,
+          "explanation": "**Pérdida** de electrones; el número de oxidación sube."
+        },
+        {
+          "type": "quiz",
+          "question": "La reducción es…",
+          "options": [
+            "Pérdida de electrones",
+            "Ganancia de electrones",
+            "Pérdida de oxígeno siempre",
+            "Aumento del número de oxidación"
+          ],
+          "correct": 1,
+          "explanation": "**Ganancia** de electrones; el número de oxidación baja."
+        },
+        {
+          "type": "quiz",
+          "question": "El agente oxidante…",
+          "options": [
+            "Se oxida",
+            "Se reduce",
+            "No cambia",
+            "Pierde electrones"
+          ],
+          "correct": 1,
+          "explanation": "El oxidante **se reduce** (acepta electrones)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el número de oxidación de un elemento libre como el O₂?",
+          "options": [
+            "−2",
+            "0",
+            "+2",
+            "−1"
+          ],
+          "correct": 1,
+          "explanation": "Elemento libre: **0**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el número de oxidación del S en H₂SO₄?",
+          "options": [
+            "+4",
+            "+6",
+            "−2",
+            "+2"
+          ],
+          "correct": 1,
+          "explanation": "2 + S − 8 = 0 → **+6**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el número de oxidación del O en H₂O₂?",
+          "options": [
+            "−2",
+            "−1",
+            "0",
+            "+1"
+          ],
+          "correct": 1,
+          "explanation": "En peróxidos: **−1**."
+        },
+        {
+          "type": "quiz",
+          "question": "En la corrosión 4Fe + 3O₂ → 2Fe₂O₃, el hierro…",
+          "options": [
+            "Se reduce",
+            "Se oxida",
+            "No cambia",
+            "Gana electrones"
+          ],
+          "correct": 1,
+          "explanation": "0 → +3: se **oxida**."
+        },
+        {
+          "type": "quiz",
+          "question": "Un elemento pasa de +2 a 0. ¿Qué le ocurrió?",
+          "options": [
+            "Se oxidó",
+            "Se redujo",
+            "Nada",
+            "Se descompuso"
+          ],
+          "correct": 1,
+          "explanation": "Bajó su número de oxidación: se **redujo** (ganó electrones)."
+        }
+      ]
+    },
+    {
+      "id": "l05-balanceo",
+      "title": "Balanceo de ecuaciones por tanteo",
+      "summary": "Conservación de la masa y el método paso a paso.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Por qué se balancea"
+        },
+        {
+          "type": "text",
+          "text": "Los átomos no se crean ni se destruyen (Dalton, ley de conservación de la masa). Una ecuación está **balanceada** cuando cada elemento tiene el mismo número de átomos a ambos lados."
+        },
+        {
+          "type": "heading",
+          "text": "Método por tanteo"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Escribe las fórmulas correctas y **no toques los subíndices**.",
+            "Balancea primero los **metales**, luego los **no metales**, y deja para el final el **H** y el **O**.",
+            "Ajusta coeficientes y vuelve a contar todos los elementos.",
+            "Si queda un coeficiente fraccionario, multiplica todo por el denominador."
+          ],
+          "ordered": true
+        },
+        {
+          "type": "exercise",
+          "title": "Combustión del metano",
+          "level": 1,
+          "statement": "Balancea: CH₄ + O₂ → CO₂ + H₂O",
+          "steps": [
+            "C: 1 a la izquierda, 1 a la derecha. Ya está",
+            "H: 4 a la izquierda; pon 2 delante del H₂O → 4 a la derecha",
+            "O: a la derecha hay 2 (CO₂) + 2 (2H₂O) = 4; pon 2 delante del O₂"
+          ],
+          "answer": "CH₄ + 2O₂ → CO₂ + 2H₂O"
+        },
+        {
+          "type": "exercise",
+          "title": "Combustión del propano",
+          "level": 2,
+          "statement": "Balancea: C₃H₈ + O₂ → CO₂ + H₂O",
+          "steps": [
+            "C: 3 a la izquierda → 3CO₂",
+            "H: 8 a la izquierda → 4H₂O",
+            "O a la derecha: 3·2 + 4·1 = 10 → 5O₂"
+          ],
+          "answer": "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O"
+        },
+        {
+          "type": "exercise",
+          "title": "Oxidación del aluminio",
+          "level": 2,
+          "statement": "Balancea: Al + O₂ → Al₂O₃",
+          "steps": [
+            "O: 2 a la izquierda y 3 a la derecha; el mínimo común es 6 → 3O₂ y 2Al₂O₃",
+            "Al: a la derecha hay 2·2 = 4 → 4Al"
+          ],
+          "answer": "4Al + 3O₂ → 2Al₂O₃"
+        },
+        {
+          "type": "exercise",
+          "title": "Alto horno",
+          "level": 2,
+          "statement": "Balancea: Fe₂O₃ + CO → Fe + CO₂",
+          "steps": [
+            "Fe: 2 a la izquierda → 2Fe",
+            "O: el Fe₂O₃ aporta 3 oxígenos que pasan al CO₂ (cada CO toma 1 O) → 3CO y 3CO₂",
+            "Comprueba: O izquierda 3 + 3 = 6; derecha 3·2 = 6"
+          ],
+          "answer": "Fe₂O₃ + 3CO → 2Fe + 3CO₂"
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué ley obliga a balancear las ecuaciones?",
+          "options": [
+            "Ley de Avogadro",
+            "Conservación de la masa",
+            "Ley de Hund",
+            "Ley de Hess"
+          ],
+          "correct": 1,
+          "explanation": "Los átomos se **conservan**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué elementos conviene balancear al final?",
+          "options": [
+            "Los metales",
+            "H y O",
+            "El carbono",
+            "Los gases nobles"
+          ],
+          "correct": 1,
+          "explanation": "Se dejan para el final el **H y el O**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el coeficiente del O₂ en la combustión balanceada del propano?",
+          "options": [
+            "2",
+            "3",
+            "5",
+            "7"
+          ],
+          "correct": 2,
+          "explanation": "C₃H₈ + **5**O₂ → 3CO₂ + 4H₂O."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Está balanceada H₂ + O₂ → H₂O?",
+          "options": [
+            "Sí",
+            "No: faltan coeficientes; debe ser 2H₂ + O₂ → 2H₂O",
+            "No: hay que cambiar a H₂O₂",
+            "Sí, si hay calor"
+          ],
+          "correct": 1,
+          "explanation": "Hay 2 O a la izquierda y 1 a la derecha. Balanceada: **2H₂ + O₂ → 2H₂O** (sin tocar subíndices)."
+        }
+      ]
+    },
+    {
+      "id": "l06-entalpia",
+      "title": "Energía de las reacciones: entalpía (ΔH)",
+      "summary": "Endotérmicas y exotérmicas, entalpía de formación y cálculo de ΔH.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Entalpía"
+        },
+        {
+          "type": "formula",
+          "expression": "ΔH = Σ H productos − Σ H reactivos",
+          "caption": "Variación de entalpía de la reacción"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Signo de ΔH",
+            "Qué hace",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Endotérmica",
+              "Positivo (+)",
+              "Absorbe calor del entorno",
+              "Calcinación de la caliza; el entorno se enfría"
+            ],
+            [
+              "Exotérmica",
+              "Negativo (−)",
+              "Libera calor al entorno",
+              "Combustión; fraguado del cemento"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "ejemplo",
+          "text": "Piensa desde el punto de vista del sistema: si la reacción **pierde** energía (la entrega al entorno), su ΔH es negativo. Si **gana** energía, es positivo. Es como tu cuenta bancaria: si pagas, el saldo baja (−).",
+          "title": "Por qué exotérmica es negativa"
+        },
+        {
+          "type": "heading",
+          "text": "Entalpía de formación"
+        },
+        {
+          "type": "text",
+          "text": "La **entalpía estándar de formación** (ΔH°f) es la energía para formar **1 mol** de un compuesto a partir de sus elementos.\nPara los **elementos puros** en su estado natural (N₂, H₂, O₂, Fe…), ΔH°f = **0**."
+        },
+        {
+          "type": "formula",
+          "expression": "ΔH reacción = Σ n · ΔH°f (productos) − Σ n · ΔH°f (reactivos)",
+          "caption": "n son los coeficientes de la ecuación balanceada"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "ΔH°f está dado **por mol**. Si en la ecuación hay 2NH₃, hay que multiplicar por 2. Olvidar los coeficientes es el error más común.",
+          "title": "Multiplica por los coeficientes"
+        },
+        {
+          "type": "exercise",
+          "title": "Síntesis del amoníaco (ejercicio de clase)",
+          "level": 1,
+          "statement": "Determina ΔH de N₂ + 3H₂ → 2NH₃. Dato: ΔH°f del NH₃ gaseoso = −45.94 kJ/mol.",
+          "steps": [
+            "Elementos puros: ΔH°f (N₂) = ΔH°f (H₂) = 0",
+            "ΔH = [2 · (−45.94)] − [0 + 0]",
+            "ΔH = −91.88 kJ"
+          ],
+          "answer": "ΔH = −91.88 kJ: exotérmica."
+        },
+        {
+          "type": "exercise",
+          "title": "Combustión del metano",
+          "level": 2,
+          "statement": "Calcula ΔH de CH₄ + 2O₂ → CO₂ + 2H₂O(l). Datos de tabla (kJ/mol): ΔH°f CH₄ = −74.8; CO₂ = −393.5; H₂O(l) = −285.8.",
+          "steps": [
+            "Productos: 1(−393.5) + 2(−285.8) = −965.1 kJ",
+            "Reactivos: 1(−74.8) + 2(0) = −74.8 kJ",
+            "ΔH = −965.1 − (−74.8) = −890.3 kJ"
+          ],
+          "answer": "ΔH = −890.3 kJ por mol de metano: muy exotérmica (por eso es un buen combustible)."
+        },
+        {
+          "type": "exercise",
+          "title": "Calcinación de la caliza",
+          "level": 2,
+          "statement": "En los hornos de cemento ocurre CaCO₃ → CaO + CO₂. Calcula ΔH. Datos de tabla (kJ/mol): ΔH°f CaCO₃ = −1206.9; CaO = −635.1; CO₂ = −393.5.",
+          "steps": [
+            "Productos: −635.1 + (−393.5) = −1028.6 kJ",
+            "Reactivos: −1206.9 kJ",
+            "ΔH = −1028.6 − (−1206.9) = +178.3 kJ"
+          ],
+          "answer": "ΔH = +178.3 kJ: endotérmica. Hay que calentar mucho el horno para que ocurra."
+        },
+        {
+          "type": "quiz",
+          "question": "Una reacción con ΔH = −120 kJ es…",
+          "options": [
+            "Endotérmica",
+            "Exotérmica",
+            "No espontánea",
+            "Reversible"
+          ],
+          "correct": 1,
+          "explanation": "ΔH negativo: **exotérmica**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una reacción endotérmica…",
+          "options": [
+            "Libera calor",
+            "Absorbe calor",
+            "Tiene ΔH negativo",
+            "Siempre es espontánea"
+          ],
+          "correct": 1,
+          "explanation": "**Absorbe** calor (ΔH > 0)."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuánto vale ΔH°f del O₂ gaseoso?",
+          "options": [
+            "−393.5 kJ/mol",
+            "0",
+            "+100 kJ/mol",
+            "No existe"
+          ],
+          "correct": 1,
+          "explanation": "Elemento puro en su estado natural: **0**."
+        },
+        {
+          "type": "quiz",
+          "question": "ΔH de N₂ + 3H₂ → 2NH₃ (ΔH°f NH₃ = −45.94 kJ/mol) es…",
+          "options": [
+            "−45.94 kJ",
+            "−91.88 kJ",
+            "+91.88 kJ",
+            "−137.82 kJ"
+          ],
+          "correct": 1,
+          "explanation": "2 · (−45.94) = **−91.88 kJ**."
+        },
+        {
+          "type": "quiz",
+          "question": "La combustión es…",
+          "options": [
+            "Endotérmica",
+            "Exotérmica",
+            "Ni una ni otra",
+            "Siempre no espontánea"
+          ],
+          "correct": 1,
+          "explanation": "Libera calor: **exotérmica**."
+        }
+      ]
+    },
+    {
+      "id": "l07-gibbs",
+      "title": "Espontaneidad: entropía y energía libre de Gibbs (ΔG)",
+      "summary": "ΔG = ΔH − TΔS, la tabla de signos y el ejercicio del amoníaco hecho completo.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Entropía"
+        },
+        {
+          "type": "text",
+          "text": "La **entropía (S)** mide el grado de **desorden** molecular."
+        },
+        {
+          "type": "formula",
+          "expression": "ΔS = Σ S productos − Σ S reactivos",
+          "caption": "Multiplicando cada S por su coeficiente"
+        },
+        {
+          "type": "list",
+          "items": [
+            "ΔS > 0: aumenta el desorden (por ejemplo, un sólido que produce un gas).",
+            "ΔS < 0: aumenta el orden (por ejemplo, 4 moles de gas que forman 2)."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Energía libre de Gibbs"
+        },
+        {
+          "type": "formula",
+          "expression": "ΔG = ΔH − T · ΔS",
+          "caption": "T en kelvin"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Signo de ΔG",
+            "Reacción"
+          ],
+          "rows": [
+            [
+              "ΔG < 0 (−)",
+              "Espontánea"
+            ],
+            [
+              "ΔG > 0 (+)",
+              "No espontánea"
+            ],
+            [
+              "ΔG = 0",
+              "En equilibrio"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "ΔH",
+            "ΔS",
+            "ΔG",
+            "Comportamiento"
+          ],
+          "rows": [
+            [
+              "−",
+              "+",
+              "Siempre −",
+              "Siempre espontánea"
+            ],
+            [
+              "+",
+              "−",
+              "Siempre +",
+              "Nunca espontánea"
+            ],
+            [
+              "−",
+              "−",
+              "− a baja T",
+              "Espontánea a bajas temperaturas"
+            ],
+            [
+              "+",
+              "+",
+              "− a alta T",
+              "Espontánea a altas temperaturas"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "expression": "T de cambio = ΔH / ΔS",
+          "caption": "Temperatura a la que ΔG = 0 (cuando ΔH y ΔS tienen el mismo signo)"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "ΔH suele estar en **kJ** y ΔS en **J/K**. Antes de restar, pasa ΔS a kJ/K dividiendo entre 1000. Y la temperatura siempre en **kelvin** (25 °C = 298 K).",
+          "title": "Dos trampas de unidades"
+        },
+        {
+          "type": "exercise",
+          "title": "Espontaneidad del amoníaco",
+          "level": 3,
+          "statement": "¿Es espontánea N₂ + 3H₂ → 2NH₃ a 25 °C? Datos: ΔH = −91.88 kJ; S° N₂ = 191.61; S° H₂ = 130.68; S° NH₃ = 192.77, todos en J/(mol·K).",
+          "steps": [
+            "T = 25 + 273 = 298 K",
+            "ΔS = 2(192.77) − [191.61 + 3(130.68)] = 385.54 − 583.65 = −198.11 J/K",
+            "En kJ: ΔS = −0.19811 kJ/K",
+            "ΔG = −91.88 − 298 · (−0.19811) = −91.88 + 59.04 = −32.84 kJ",
+            "ΔG < 0: espontánea",
+            "Como ΔH y ΔS son negativos, deja de serlo sobre T = ΔH/ΔS = −91.88/−0.19811 ≈ 464 K (unos 191 °C)"
+          ],
+          "answer": "ΔG ≈ −32.8 kJ: espontánea a 25 °C. Por encima de unos 464 K deja de ser espontánea.",
+          "hint": "Multiplica cada entropía por su coeficiente: hay 3 moles de H₂ y 2 de NH₃."
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "En el apunte de clase el ΔS se calculó sin multiplicar por los coeficientes (192.77 − 191.61 − 130.68 = −129.52 J/K) y se obtuvo ΔG = −53.28 kJ. La conclusión es la misma (espontánea), pero el procedimiento correcto usa los coeficientes: 2 moles de NH₃ y 3 de H₂, como en el ejercicio de arriba. Si el profesor lo resolvió así en clase, pregúntale cuál quiere en el examen.",
+          "title": "Diferencia con el apunte"
+        },
+        {
+          "type": "exercise",
+          "title": "¿Por qué el horno de cemento debe estar tan caliente?",
+          "level": 3,
+          "statement": "Para CaCO₃ → CaO + CO₂: ΔH = +178.3 kJ. Datos de tabla, en J/(mol·K): S° CaCO₃ = 92.9; CaO = 38.1; CO₂ = 213.8. ¿Es espontánea a 25 °C? ¿Desde qué temperatura lo es?",
+          "steps": [
+            "ΔS = (38.1 + 213.8) − 92.9 = +159.0 J/K = +0.159 kJ/K",
+            "A 298 K: ΔG = 178.3 − 298 · 0.159 = 178.3 − 47.4 = +130.9 kJ → no espontánea",
+            "ΔH y ΔS positivos: espontánea a alta temperatura",
+            "T = ΔH/ΔS = 178.3 / 0.159 ≈ 1121 K ≈ 848 °C"
+          ],
+          "answer": "No es espontánea a 25 °C (ΔG ≈ +131 kJ). Se vuelve espontánea sobre unos 1121 K (≈ 850 °C): por eso los hornos de cal y cemento trabajan por encima de esa temperatura."
+        },
+        {
+          "type": "quiz",
+          "question": "Una reacción con ΔG = −20 kJ es…",
+          "options": [
+            "No espontánea",
+            "Espontánea",
+            "En equilibrio",
+            "Endotérmica"
+          ],
+          "correct": 1,
+          "explanation": "ΔG negativo: **espontánea**."
+        },
+        {
+          "type": "quiz",
+          "question": "Si ΔH < 0 y ΔS > 0, la reacción es…",
+          "options": [
+            "Nunca espontánea",
+            "Siempre espontánea",
+            "Espontánea solo a alta T",
+            "Espontánea solo a baja T"
+          ],
+          "correct": 1,
+          "explanation": "Ambos favorecen: **siempre espontánea**."
+        },
+        {
+          "type": "quiz",
+          "question": "Si ΔH > 0 y ΔS < 0, la reacción es…",
+          "options": [
+            "Siempre espontánea",
+            "Nunca espontánea",
+            "Espontánea a alta T",
+            "Espontánea a baja T"
+          ],
+          "correct": 1,
+          "explanation": "Ambos en contra: **nunca espontánea**."
+        },
+        {
+          "type": "quiz",
+          "question": "Si ΔH > 0 y ΔS > 0, la reacción es espontánea…",
+          "options": [
+            "Siempre",
+            "Nunca",
+            "A altas temperaturas",
+            "A bajas temperaturas"
+          ],
+          "correct": 2,
+          "explanation": "El término −TΔS gana a **alta T**."
+        },
+        {
+          "type": "quiz",
+          "question": "Si ΔH < 0 y ΔS < 0, la reacción es espontánea…",
+          "options": [
+            "Siempre",
+            "Nunca",
+            "A altas temperaturas",
+            "A bajas temperaturas"
+          ],
+          "correct": 3,
+          "explanation": "A **baja T** domina ΔH negativo."
+        },
+        {
+          "type": "quiz",
+          "question": "La entropía mide…",
+          "options": [
+            "El calor",
+            "El desorden molecular",
+            "La velocidad",
+            "La masa"
+          ],
+          "correct": 1,
+          "explanation": "**Desorden**."
+        },
+        {
+          "type": "quiz",
+          "question": "ΔH = −50 kJ y ΔS = −100 J/K. ¿Cuánto es ΔG a 300 K?",
+          "options": [
+            "−80 kJ",
+            "−20 kJ",
+            "+29 950 kJ",
+            "−50 kJ"
+          ],
+          "correct": 1,
+          "explanation": "ΔS = −0.100 kJ/K → ΔG = −50 − 300(−0.1) = −50 + 30 = **−20 kJ**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿En qué unidad debe ir T en la ecuación de Gibbs?",
+          "options": [
+            "°C",
+            "K",
+            "°F",
+            "Cualquiera"
+          ],
+          "correct": 1,
+          "explanation": "Siempre **kelvin**."
+        }
+      ]
+    },
+    {
+      "id": "l08-estequiometria",
+      "title": "Estequiometría",
+      "summary": "Relaciones molares, de masa, de moléculas y de volumen; reactivo limitante.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Lo que dice una ecuación balanceada"
+        },
+        {
+          "type": "formula",
+          "expression": "N₂ + 3H₂ → 2NH₃"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Relación",
+            "N₂",
+            "H₂",
+            "NH₃"
+          ],
+          "rows": [
+            [
+              "Moles",
+              "1 mol",
+              "3 mol",
+              "2 mol"
+            ],
+            [
+              "Masa",
+              "28 g",
+              "6 g",
+              "34 g"
+            ],
+            [
+              "Moléculas",
+              "1 · 6.022 × 10²³",
+              "3 · 6.022 × 10²³",
+              "2 · 6.022 × 10²³"
+            ],
+            [
+              "Volumen de gas (CNPT)",
+              "22.4 L",
+              "3 · 22.4 L",
+              "2 · 22.4 L"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "La masa se conserva: 28 + 6 = 34 g. Los **moles no** tienen por qué conservarse: 4 moles de reactivos dan 2 de producto.\n**Principio de Avogadro:** 1 mol de cualquier gas en condiciones normales (0 °C y 1 atm) ocupa **22.4 L**. Solo vale para gases."
+        },
+        {
+          "type": "heading",
+          "text": "El camino de cualquier problema"
+        },
+        {
+          "type": "formula",
+          "expression": "gramos de A → moles de A → moles de B → gramos de B",
+          "caption": "Con la masa molar al principio y al final, y los coeficientes en el medio"
+        },
+        {
+          "type": "exercise",
+          "title": "Moléculas y átomos en óxido de hierro (ejercicio de clase)",
+          "level": 1,
+          "statement": "Calcula el número de moléculas de Fe₂O₃ y de átomos de oxígeno en 50 g de Fe₂O₃ (Fe = 56, O = 16).",
+          "steps": [
+            "M = 2(56) + 3(16) = 160 g/mol",
+            "n = 50 / 160 = 0.3125 mol",
+            "Moléculas = 0.3125 · 6.022 × 10²³ = 1.88 × 10²³",
+            "Átomos de O = 3 · 1.88 × 10²³ = 5.65 × 10²³"
+          ],
+          "answer": "1.88 × 10²³ moléculas de Fe₂O₃ y 5.65 × 10²³ átomos de oxígeno."
+        },
+        {
+          "type": "exercise",
+          "title": "Masa a masa",
+          "level": 2,
+          "statement": "¿Cuántos gramos de NH₃ se obtienen con 56 g de N₂ y suficiente H₂?",
+          "steps": [
+            "n(N₂) = 56 / 28 = 2 mol",
+            "Por la ecuación, 1 mol N₂ → 2 mol NH₃; entonces 2 mol N₂ → 4 mol NH₃",
+            "m(NH₃) = 4 · 17 = 68 g"
+          ],
+          "answer": "68 g de NH₃"
+        },
+        {
+          "type": "exercise",
+          "title": "CO₂ del cemento",
+          "level": 2,
+          "statement": "Una cementera calcina 1000 kg de caliza: CaCO₃ → CaO + CO₂. ¿Cuánta cal viva (CaO) y cuánto CO₂ se producen? (Ca = 40, C = 12, O = 16)",
+          "steps": [
+            "M(CaCO₃) = 100 g/mol; M(CaO) = 56; M(CO₂) = 44",
+            "La relación es 1 : 1 : 1 en moles",
+            "n = 1 000 000 g / 100 = 10 000 mol",
+            "CaO: 10 000 · 56 = 560 000 g = 560 kg",
+            "CO₂: 10 000 · 44 = 440 000 g = 440 kg"
+          ],
+          "answer": "560 kg de CaO y 440 kg de CO₂: casi la mitad de la masa de la caliza se va como gas."
+        },
+        {
+          "type": "exercise",
+          "title": "Volumen de gas",
+          "level": 1,
+          "statement": "¿Qué volumen de CO₂ en CNPT produce la combustión completa de 16 g de metano? (CH₄ + 2O₂ → CO₂ + 2H₂O)",
+          "steps": [
+            "M(CH₄) = 12 + 4 = 16 g/mol → n = 1 mol",
+            "1 mol CH₄ → 1 mol CO₂",
+            "V = 1 · 22.4 = 22.4 L"
+          ],
+          "answer": "22.4 L de CO₂"
+        },
+        {
+          "type": "heading",
+          "text": "Reactivo limitante"
+        },
+        {
+          "type": "text",
+          "text": "Si los reactivos no están en la proporción exacta, uno se acaba primero: el **reactivo limitante**. Él decide cuánto producto se forma; el otro sobra (**reactivo en exceso**)."
+        },
+        {
+          "type": "exercise",
+          "title": "Reactivo limitante",
+          "level": 3,
+          "statement": "Se mezclan 28 g de N₂ con 10 g de H₂ para formar NH₃. ¿Cuál es el limitante y cuánto NH₃ se forma?",
+          "steps": [
+            "n(N₂) = 28/28 = 1 mol; n(H₂) = 10/2 = 5 mol",
+            "1 mol de N₂ necesita 3 mol de H₂; hay 5, así que sobra H₂",
+            "Limitante: N₂",
+            "NH₃ = 2 mol · 17 = 34 g",
+            "H₂ sobrante: 5 − 3 = 2 mol = 4 g"
+          ],
+          "answer": "El limitante es el N₂; se forman 34 g de NH₃ y sobran 4 g de H₂.",
+          "hint": "Compara lo que tienes con lo que pide la ecuación, en moles, no en gramos."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué volumen ocupa 1 mol de gas en CNPT?",
+          "options": [
+            "1 L",
+            "18 L",
+            "22.4 L",
+            "6.022 L"
+          ],
+          "correct": 2,
+          "explanation": "**22.4 L**."
+        },
+        {
+          "type": "quiz",
+          "question": "En N₂ + 3H₂ → 2NH₃, ¿cuántos moles de NH₃ salen de 3 mol de H₂?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "6"
+          ],
+          "correct": 1,
+          "explanation": "3 mol H₂ → **2 mol** NH₃."
+        },
+        {
+          "type": "quiz",
+          "question": "En una reacción se conserva siempre…",
+          "options": [
+            "El número de moles",
+            "La masa",
+            "El volumen",
+            "El número de moléculas"
+          ],
+          "correct": 1,
+          "explanation": "La **masa** (28 + 6 = 34 g). Los moles pueden cambiar."
+        },
+        {
+          "type": "quiz",
+          "question": "El reactivo limitante es…",
+          "options": [
+            "El que está en mayor masa",
+            "El que se acaba primero",
+            "El catalizador",
+            "El producto"
+          ],
+          "correct": 1,
+          "explanation": "El que **se acaba primero** y decide el producto."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es la masa molar del Fe₂O₃ (Fe = 56, O = 16)?",
+          "options": [
+            "72",
+            "128",
+            "160",
+            "216"
+          ],
+          "correct": 2,
+          "explanation": "2·56 + 3·16 = **160 g/mol**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Los 22.4 L sirven para el agua líquida?",
+          "options": [
+            "Sí",
+            "No: solo para gases en CNPT",
+            "Solo a 100 °C",
+            "Sí, a cualquier temperatura"
+          ],
+          "correct": 1,
+          "explanation": "Solo para **gases** en condiciones normales."
+        }
+      ]
+    },
+    {
+      "id": "lx-trampas",
+      "title": "Preguntas rápidas y trampas: reacciones",
+      "summary": "Clasificar reacciones, signos y detalles que suelen confundirse.",
+      "minutes": 12,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Resumen para el examen"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Criterio",
+            "Tipos"
+          ],
+          "rows": [
+            [
+              "Comportamiento de los reactivos",
+              "Síntesis, descomposición, desplazamiento simple, desplazamiento doble"
+            ],
+            [
+              "Naturaleza",
+              "Neutralización, precipitación, combustión (total o parcial)"
+            ],
+            [
+              "Transferencia de electrones",
+              "Redox (oxidación y reducción)"
+            ],
+            [
+              "Energía",
+              "Endotérmica (ΔH > 0), exotérmica (ΔH < 0)"
+            ],
+            [
+              "Espontaneidad",
+              "Espontánea (ΔG < 0), no espontánea (ΔG > 0)"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "Según la energía, una reacción puede ser…",
+          "options": [
+            "Síntesis o descomposición",
+            "Endotérmica o exotérmica",
+            "Espontánea o no espontánea",
+            "Simple o doble"
+          ],
+          "correct": 1,
+          "explanation": "Por energía (ΔH): **endotérmica o exotérmica**."
+        },
+        {
+          "type": "quiz",
+          "question": "Según la espontaneidad, se usa…",
+          "options": [
+            "ΔH",
+            "ΔG",
+            "ΔS solo",
+            "El pH"
+          ],
+          "correct": 1,
+          "explanation": "La energía libre de Gibbs **ΔG**."
+        },
+        {
+          "type": "quiz",
+          "question": "Una reacción exotérmica, ¿es siempre espontánea?",
+          "options": [
+            "Sí",
+            "No: depende también de ΔS y de T",
+            "Solo si es combustión",
+            "Nunca"
+          ],
+          "correct": 1,
+          "explanation": "Si ΔS < 0, a temperatura alta puede ser no espontánea. Exotérmica no implica espontánea."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es desplazamiento simple?",
+          "options": [
+            "NaCl + AgNO₃ → AgCl + NaNO₃",
+            "Mg + 2HCl → MgCl₂ + H₂",
+            "2KClO₃ → 2KCl + 3O₂",
+            "S + O₂ → SO₂"
+          ],
+          "correct": 1,
+          "explanation": "Un elemento libre (Mg) desplaza al H: **simple**."
+        },
+        {
+          "type": "quiz",
+          "question": "2KClO₃ → 2KCl + 3O₂ es…",
+          "options": [
+            "Síntesis",
+            "Descomposición",
+            "Simple",
+            "Doble"
+          ],
+          "correct": 1,
+          "explanation": "Un reactivo: **descomposición**."
+        },
+        {
+          "type": "quiz",
+          "question": "S + O₂ → SO₂ es…",
+          "options": [
+            "Síntesis",
+            "Descomposición",
+            "Simple",
+            "Doble"
+          ],
+          "correct": 0,
+          "explanation": "Un producto: **síntesis**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué símbolo indica que se desprende un gas?",
+          "options": [
+            "↓",
+            "↑",
+            "Δ",
+            "⇌"
+          ],
+          "correct": 1,
+          "explanation": "**↑** gas; ↓ precipitado."
+        },
+        {
+          "type": "quiz",
+          "question": "El agente reductor…",
+          "options": [
+            "Se reduce",
+            "Se oxida",
+            "Gana electrones",
+            "No participa"
+          ],
+          "correct": 1,
+          "explanation": "El reductor **se oxida** (cede electrones)."
+        },
+        {
+          "type": "quiz",
+          "question": "ΔH°f de un elemento puro en su estado natural es…",
+          "options": [
+            "Negativa",
+            "Positiva",
+            "Cero",
+            "Depende"
+          ],
+          "correct": 2,
+          "explanation": "**Cero**."
+        },
+        {
+          "type": "quiz",
+          "question": "Si ΔS = −198 J/K, en kJ/K es…",
+          "options": [
+            "−198",
+            "−0.198",
+            "−19.8",
+            "−198 000"
+          ],
+          "correct": 1,
+          "explanation": "Divide entre 1000: **−0.198 kJ/K**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué se forma en la combustión incompleta que no aparece en la completa?",
+          "options": [
+            "CO₂",
+            "H₂O",
+            "CO",
+            "O₂"
+          ],
+          "correct": 2,
+          "explanation": "El **CO** (monóxido de carbono)."
+        },
+        {
+          "type": "quiz",
+          "question": "Fenolftaleína incolora indica…",
+          "options": [
+            "pH > 8.3",
+            "pH < 8.3",
+            "pH = 14",
+            "Una base fuerte"
+          ],
+          "correct": 1,
+          "explanation": "Incolora: **pH < 8.3**."
+        },
+        {
+          "type": "quiz",
+          "question": "HCl + NaOH → NaCl + H₂O es…",
+          "options": [
+            "Solo neutralización",
+            "Solo desplazamiento doble",
+            "Desplazamiento doble y neutralización a la vez",
+            "Síntesis"
+          ],
+          "correct": 2,
+          "explanation": "Las clasificaciones **no se excluyen**."
+        }
+      ]
+    }
+  ]
+}

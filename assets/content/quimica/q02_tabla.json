@@ -1684,6 +1684,286 @@
           "explanation": "Los átomos vibran más y estorban el paso de los electrones."
         }
       ]
+    },
+    {
+      "id": "lx-trampas",
+      "title": "Preguntas rápidas y trampas: la tabla periódica",
+      "summary": "Historia, bloques, tendencias, radios de iones y detalles sueltos del apunte.",
+      "minutes": 15,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Las tendencias en una tabla"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Propiedad",
+            "Aumenta hacia…"
+          ],
+          "rows": [
+            [
+              "Radio atómico",
+              "Abajo y a la izquierda"
+            ],
+            [
+              "Radio iónico",
+              "Abajo y a la izquierda"
+            ],
+            [
+              "Carácter metálico",
+              "Abajo y a la izquierda"
+            ],
+            [
+              "Electronegatividad",
+              "Arriba y a la derecha"
+            ],
+            [
+              "Energía de ionización",
+              "Arriba y a la derecha"
+            ],
+            [
+              "Afinidad electrónica",
+              "Arriba y a la derecha"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Truco: el radio y el carácter metálico van **juntos** (abajo-izquierda). Las otras tres van **al revés** (arriba-derecha). Un átomo grande retiene mal sus electrones: los cede fácil (metálico) y no atrae otros."
+        },
+        {
+          "type": "heading",
+          "text": "Radios de iones"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Catión **menor** que su átomo: pierde electrones y el núcleo atrae más a los que quedan (Li 1.23 Å → Li⁺ 0.68 Å).",
+            "Anión **mayor** que su átomo: los electrones extra se repelen.",
+            "En una serie isoelectrónica, más protones = más pequeño: O²⁻ > F⁻ > Ne > Na⁺ > Mg²⁺."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "heading",
+          "text": "Detalles del apunte"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Döbereiner: **tríadas**. Newlands: **ley de las octavas**. Mendeléyev: ordenó por **masa atómica**. Moseley: ordenó por **número atómico Z** (la tabla moderna).",
+            "Representativos: bloques **s y p**. Transición: bloque **d**. Transición interna: bloque **f** (lantánidos y actínidos, abajo).",
+            "Todos los metales se **oxidan** porque ceden electrones.",
+            "pH menor a 7: ácido; igual a 7: neutro; mayor a 7: básico."
+          ],
+          "ordered": false
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién ordenó los elementos por masa atómica?",
+          "options": [
+            "Moseley",
+            "Mendeléyev",
+            "Newlands",
+            "Döbereiner"
+          ],
+          "correct": 1,
+          "explanation": "**Mendeléyev**. Moseley lo hizo por Z."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién propuso la ley de las octavas?",
+          "options": [
+            "Döbereiner",
+            "Newlands",
+            "Mendeléyev",
+            "Moseley"
+          ],
+          "correct": 1,
+          "explanation": "**Newlands**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién agrupó los elementos en tríadas?",
+          "options": [
+            "Döbereiner",
+            "Newlands",
+            "Moseley",
+            "Bohr"
+          ],
+          "correct": 0,
+          "explanation": "**Döbereiner**."
+        },
+        {
+          "type": "quiz",
+          "question": "La tabla periódica moderna se ordena por…",
+          "options": [
+            "Masa atómica",
+            "Número atómico Z",
+            "Número de neutrones",
+            "Densidad"
+          ],
+          "correct": 1,
+          "explanation": "**Z** (Moseley)."
+        },
+        {
+          "type": "quiz",
+          "question": "Los elementos de transición forman el bloque…",
+          "options": [
+            "s",
+            "p",
+            "d",
+            "f"
+          ],
+          "correct": 2,
+          "explanation": "Bloque **d**."
+        },
+        {
+          "type": "quiz",
+          "question": "Lantánidos y actínidos son elementos de…",
+          "options": [
+            "Transición",
+            "Transición interna (bloque f)",
+            "Representativos",
+            "Gases nobles"
+          ],
+          "correct": 1,
+          "explanation": "**Transición interna**, bloque f."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Hacia dónde aumenta la electronegatividad?",
+          "options": [
+            "Abajo y a la izquierda",
+            "Arriba y a la derecha",
+            "Solo hacia abajo",
+            "No cambia"
+          ],
+          "correct": 1,
+          "explanation": "**Arriba y a la derecha**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Hacia dónde aumenta el radio atómico?",
+          "options": [
+            "Arriba y a la derecha",
+            "Abajo y a la izquierda",
+            "Solo a la derecha",
+            "No cambia"
+          ],
+          "correct": 1,
+          "explanation": "**Abajo y a la izquierda**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién es más grande, Na o Na⁺?",
+          "options": [
+            "Na",
+            "Na⁺",
+            "Iguales",
+            "Depende"
+          ],
+          "correct": 0,
+          "explanation": "El catión es menor: **Na** es más grande."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Quién es más grande, Cl o Cl⁻?",
+          "options": [
+            "Cl",
+            "Cl⁻",
+            "Iguales",
+            "Depende"
+          ],
+          "correct": 1,
+          "explanation": "El anión es mayor: **Cl⁻**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el más pequeño: O²⁻, F⁻, Na⁺, Mg²⁺ (todos con 10 electrones)?",
+          "options": [
+            "O²⁻",
+            "F⁻",
+            "Na⁺",
+            "Mg²⁺"
+          ],
+          "correct": 3,
+          "explanation": "Más protones con los mismos electrones: **Mg²⁺** (12 protones)."
+        },
+        {
+          "type": "quiz",
+          "question": "Los metales tienen energía de ionización…",
+          "options": [
+            "Alta",
+            "Baja",
+            "Nula",
+            "Infinita"
+          ],
+          "correct": 1,
+          "explanation": "**Baja**: ceden electrones con facilidad."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué todos los metales se oxidan, según el apunte?",
+          "options": [
+            "Porque ganan electrones",
+            "Porque ceden electrones",
+            "Porque tienen neutrones",
+            "Porque son densos"
+          ],
+          "correct": 1,
+          "explanation": "Oxidación = **ceder** electrones."
+        },
+        {
+          "type": "quiz",
+          "question": "Una solución con pH 3 es…",
+          "options": [
+            "Básica",
+            "Neutra",
+            "Ácida",
+            "Salina"
+          ],
+          "correct": 2,
+          "explanation": "Menor a 7: **ácida**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué tienen los no metales comparados con los metales?",
+          "options": [
+            "Radio grande y baja electronegatividad",
+            "Radio pequeño y alta electronegatividad",
+            "Pocos electrones de valencia",
+            "Baja Zef"
+          ],
+          "correct": 1,
+          "explanation": "No metales: **radio pequeño, Zef alta, electronegatividad alta**."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Qué contribución tiene en Slater un electrón del mismo grupo (ns, np)?",
+          "options": [
+            "0.30",
+            "0.35",
+            "0.85",
+            "1.00"
+          ],
+          "correct": 1,
+          "explanation": "**0.35** (0.30 si es el grupo 1s)."
+        },
+        {
+          "type": "quiz",
+          "question": "Zef del flúor (Z = 9) para un electrón de valencia, con Slater:",
+          "options": [
+            "5.20",
+            "5.85",
+            "3.80",
+            "9.00"
+          ],
+          "correct": 0,
+          "explanation": "σ = 6(0.35) + 2(0.85) = 3.80 → Zef = 9 − 3.80 = **5.20**."
+        }
+      ]
     }
   ]
 }

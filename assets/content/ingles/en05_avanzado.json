@@ -1,0 +1,1298 @@
+{
+  "id": "en05-avanzado",
+  "title": "Nivel avanzado (B2 – C1)",
+  "description": "Tiempos narrativos, condicionales del pasado, estilo indirecto, deducción, pasiva avanzada, conectores académicos y formación de palabras.",
+  "lessons": [
+    {
+      "id": "l01-past-perfect",
+      "title": "Past perfect y otros tiempos perfectos",
+      "summary": "El pasado del pasado, el future perfect y los perfect continuous.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "had + participio pasado",
+          "caption": "Past perfect: lo que ya había ocurrido antes de otro momento del pasado"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Si cuentas dos hechos del pasado y uno ocurrió **antes** que el otro, el más antiguo va en past perfect: «When we arrived, the concrete **had** already **set**» (cuando llegamos, el hormigón ya había fraguado).",
+          "title": "El pasado del pasado"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tiempo",
+            "Estructura",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Past perfect",
+              "had + participio",
+              "The wall had cracked before the earthquake.",
+              "El muro se había agrietado antes del sismo."
+            ],
+            [
+              "Past perfect continuous",
+              "had been + -ing",
+              "It had been raining for three days.",
+              "Había estado lloviendo durante tres días."
+            ],
+            [
+              "Present perfect continuous",
+              "have / has been + -ing",
+              "We have been working on this since Monday.",
+              "Llevamos trabajando en esto desde el lunes."
+            ],
+            [
+              "Future perfect",
+              "will have + participio",
+              "By June we will have finished the foundations.",
+              "Para junio habremos terminado las cimentaciones."
+            ],
+            [
+              "Future continuous",
+              "will be + -ing",
+              "At noon I will be presenting.",
+              "Al mediodía estaré presentando."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Con **by + momento** («para…») casi siempre va un tiempo perfecto: «By 2030 the city **will have built** the new plant»; «By the time we arrived, they **had left**»."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El **perfect continuous** subraya la **duración** o que la actividad sigue: «I **have been studying** for three hours» (llevo tres horas estudiando y sigo). El perfect simple subraya el **resultado**: «I **have studied** three chapters».",
+          "title": "Duración frente a resultado"
+        },
+        {
+          "type": "quiz",
+          "question": "«When I arrived, the meeting (…) .»",
+          "options": [
+            "has started",
+            "had started",
+            "starts",
+            "will start"
+          ],
+          "correct": 1,
+          "explanation": "Anterior a otro pasado."
+        },
+        {
+          "type": "quiz",
+          "question": "«By next year, I (…) .»",
+          "options": [
+            "will graduate already",
+            "will have graduated",
+            "have graduated",
+            "had graduated"
+          ],
+          "correct": 1,
+          "explanation": "Future perfect."
+        },
+        {
+          "type": "quiz",
+          "question": "«Llevo dos horas esperando»:",
+          "options": [
+            "I wait for two hours",
+            "I have been waiting for two hours",
+            "I am waiting since two hours",
+            "I had wait two hours"
+          ],
+          "correct": 1,
+          "explanation": "Present perfect continuous."
+        },
+        {
+          "type": "quiz",
+          "question": "El past perfect se forma con:",
+          "options": [
+            "have + participio",
+            "had + participio",
+            "was + -ing",
+            "will have + participio"
+          ],
+          "correct": 1,
+          "explanation": "Had."
+        },
+        {
+          "type": "quiz",
+          "question": "«It had been raining» significa:",
+          "options": [
+            "Ha estado lloviendo",
+            "Había estado lloviendo",
+            "Estará lloviendo",
+            "Llovió"
+          ],
+          "correct": 1,
+          "explanation": "Past perfect continuous."
+        }
+      ]
+    },
+    {
+      "id": "l02-tercer-condicional",
+      "title": "Tercer condicional, mixtos y wish",
+      "summary": "Hablar de lo que habría pasado, y expresar deseos y arrepentimientos.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Estructura",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "**Tercero**",
+              "If + past perfect, would have + participio",
+              "If they had checked the soil, the wall would not have failed.",
+              "Si hubieran revisado el suelo, el muro no habría fallado."
+            ],
+            [
+              "Mixto (pasado → presente)",
+              "If + past perfect, would + verbo",
+              "If I had studied engineering, I would be an engineer now.",
+              "Si hubiera estudiado ingeniería, ahora sería ingeniero."
+            ],
+            [
+              "Mixto (presente → pasado)",
+              "If + pasado, would have + participio",
+              "If I were taller, I would have joined the team.",
+              "Si fuera más alto, me habría unido al equipo."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El tercer condicional habla de un pasado que **ya no se puede cambiar**: es el condicional de los análisis de fallas («si se hubiera…, no habría…»). Variantes: **could have** (habría podido) y **might have** (quizá habría).",
+          "title": "El pasado imposible"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Estructura",
+            "Expresa",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "wish + pasado",
+              "Deseo sobre el presente",
+              "I wish I had more time. (ojalá tuviera)"
+            ],
+            [
+              "wish + past perfect",
+              "Arrepentimiento sobre el pasado",
+              "I wish I had studied more. (ojalá hubiera estudiado)"
+            ],
+            [
+              "wish + would",
+              "Queja sobre algo que quiero que cambie",
+              "I wish it would stop raining."
+            ],
+            [
+              "if only",
+              "Igual que wish, más enfático",
+              "If only we had measured it twice."
+            ],
+            [
+              "should have + participio",
+              "Lo que debió hacerse",
+              "We should have checked the drawings."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Forma culta con inversión, frecuente en textos formales: «**Had** the load **been** smaller, the beam would not have failed» = «If the load had been smaller…»."
+        },
+        {
+          "type": "quiz",
+          "question": "«If I had known, I (…) you.»",
+          "options": [
+            "would tell",
+            "would have told",
+            "will tell",
+            "told"
+          ],
+          "correct": 1,
+          "explanation": "Tercer condicional."
+        },
+        {
+          "type": "quiz",
+          "question": "«I wish I (…) more time.» (presente)",
+          "options": [
+            "have",
+            "had",
+            "will have",
+            "would had"
+          ],
+          "correct": 1,
+          "explanation": "Wish + pasado."
+        },
+        {
+          "type": "quiz",
+          "question": "«Debimos revisar los planos»:",
+          "options": [
+            "We must checked the drawings",
+            "We should have checked the drawings",
+            "We should check the drawings",
+            "We had to checked"
+          ],
+          "correct": 1,
+          "explanation": "Should have + participio."
+        },
+        {
+          "type": "quiz",
+          "question": "El tercer condicional se refiere a:",
+          "options": [
+            "Un futuro probable",
+            "Un pasado que no ocurrió",
+            "Un hábito",
+            "Una ley física"
+          ],
+          "correct": 1,
+          "explanation": "Hipótesis sobre el pasado."
+        },
+        {
+          "type": "quiz",
+          "question": "«Had we known…» equivale a:",
+          "options": [
+            "When we knew",
+            "If we had known",
+            "We had known",
+            "Because we knew"
+          ],
+          "correct": 1,
+          "explanation": "Inversión formal."
+        }
+      ]
+    },
+    {
+      "id": "l03-reported",
+      "title": "Estilo indirecto (reported speech)",
+      "summary": "Contar lo que otro dijo: cambios de tiempo, de pronombres y de expresiones de tiempo.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Al contar lo que alguien dijo, el verbo suele **retroceder un tiempo**: presente → pasado; pasado → past perfect; will → would. Es lo que se usa en actas de reunión, correos e informes: «The client said that the budget **was** limited».",
+          "title": "Un paso atrás"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Estilo directo",
+            "Estilo indirecto"
+          ],
+          "rows": [
+            [
+              "\"I am tired.\"",
+              "He said (that) he **was** tired."
+            ],
+            [
+              "\"We are working.\"",
+              "They said they **were working**."
+            ],
+            [
+              "\"I finished the report.\"",
+              "She said she **had finished** the report."
+            ],
+            [
+              "\"I have seen it.\"",
+              "He said he **had seen** it."
+            ],
+            [
+              "\"I will call you.\"",
+              "She said she **would call** me."
+            ],
+            [
+              "\"I can help.\"",
+              "He said he **could help**."
+            ],
+            [
+              "\"You must wait.\"",
+              "She said I **had to** wait."
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Estructura",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Pregunta sí / no",
+              "asked + if / whether + sujeto + verbo",
+              "He asked if I was ready."
+            ],
+            [
+              "Pregunta con wh-",
+              "asked + wh- + sujeto + verbo (sin inversión)",
+              "She asked where I lived."
+            ],
+            [
+              "Orden o petición",
+              "told / asked + persona + to + verbo",
+              "The supervisor told us to stop."
+            ],
+            [
+              "Orden negativa",
+              "told + persona + not to + verbo",
+              "He told me not to touch it."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En la pregunta indirecta **no hay inversión ni auxiliar do**: «She asked where I **lived**», no «where did I live». Y **say** no lleva persona («He said that…») mientras que **tell** sí («He told **me** that…»).",
+          "title": "Errores comunes"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Verbos para informar",
+            "Uso"
+          ],
+          "rows": [
+            [
+              "state, report, claim, argue, suggest, conclude, point out, note, explain, confirm, propose, recommend",
+              "Son los verbos de los artículos y los informes: «The authors **conclude** that…», «The report **states** that…», «Smith (2020) **argues** that…»"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "\"I am busy.\" → He said he (…) busy.",
+          "options": [
+            "is",
+            "was",
+            "were",
+            "be"
+          ],
+          "correct": 1,
+          "explanation": "Presente → pasado."
+        },
+        {
+          "type": "quiz",
+          "question": "\"I will come.\" → She said she (…) come.",
+          "options": [
+            "will",
+            "would",
+            "can",
+            "shall"
+          ],
+          "correct": 1,
+          "explanation": "Will → would."
+        },
+        {
+          "type": "quiz",
+          "question": "\"Where do you work?\" → He asked me where (…) .",
+          "options": [
+            "did I work",
+            "I worked",
+            "do I work",
+            "I work did"
+          ],
+          "correct": 1,
+          "explanation": "Sin inversión."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "He said me that…",
+            "He told me that…",
+            "He told that me…",
+            "He said to that…"
+          ],
+          "correct": 1,
+          "explanation": "Tell + persona."
+        },
+        {
+          "type": "quiz",
+          "question": "\"Don't move.\" → He told me (…) .",
+          "options": [
+            "to not move",
+            "not to move",
+            "don't move",
+            "not move"
+          ],
+          "correct": 1,
+          "explanation": "Not to + verbo."
+        }
+      ]
+    },
+    {
+      "id": "l04-deduccion",
+      "title": "Deducción, certeza y matices",
+      "summary": "Must be, can't be, might have; cómo expresar cuán seguro estás, algo esencial al interpretar resultados.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Grado de certeza",
+            "Presente",
+            "Pasado",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Casi seguro que sí",
+              "must + verbo",
+              "must have + participio",
+              "The crack must have been caused by settlement."
+            ],
+            [
+              "Posible",
+              "may / might / could + verbo",
+              "may / might / could have + participio",
+              "The failure might have been due to fatigue."
+            ],
+            [
+              "Casi seguro que no",
+              "can't + verbo",
+              "can't / couldn't have + participio",
+              "It can't have been the wind."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "En ciencia e ingeniería rara vez se afirma algo de forma absoluta. Se **matiza** (en inglés, *hedging*): «The results **suggest** that…», «This **may** be due to…», «It **appears** that…», «It is **likely** that…». Afirmar sin matices algo que no está demostrado se considera un error de redacción.",
+          "title": "Matizar es de buen científico"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Expresión",
+            "Español",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "It is likely / unlikely that…",
+              "Es probable / improbable que…",
+              "It is likely that the soil is saturated."
+            ],
+            [
+              "It seems / appears that…",
+              "Parece que…",
+              "It appears that the model overestimates the flow."
+            ],
+            [
+              "The results suggest / indicate that…",
+              "Los resultados sugieren / indican que…",
+              "The results suggest a linear relationship."
+            ],
+            [
+              "approximately, roughly, about",
+              "aproximadamente",
+              "approximately 25 mm"
+            ],
+            [
+              "tend to",
+              "tender a",
+              "Clays tend to swell."
+            ],
+            [
+              "to some extent",
+              "hasta cierto punto",
+              "This is true to some extent."
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "«Debe de haber sido el asentamiento»:",
+          "options": [
+            "It must be the settlement",
+            "It must have been the settlement",
+            "It must to be the settlement",
+            "It had to being"
+          ],
+          "correct": 1,
+          "explanation": "Deducción sobre el pasado."
+        },
+        {
+          "type": "quiz",
+          "question": "«No puede haber sido el viento»:",
+          "options": [
+            "It can't have been the wind",
+            "It mustn't have been the wind",
+            "It can't be been the wind",
+            "It doesn't can be"
+          ],
+          "correct": 0,
+          "explanation": "Can't have + participio."
+        },
+        {
+          "type": "quiz",
+          "question": "«The results suggest that…» es un ejemplo de:",
+          "options": [
+            "Orden",
+            "Matización (hedging)",
+            "Pregunta",
+            "Voz activa informal"
+          ],
+          "correct": 1,
+          "explanation": "Afirmación prudente."
+        },
+        {
+          "type": "quiz",
+          "question": "«It is likely that» significa:",
+          "options": [
+            "Es imposible que",
+            "Es probable que",
+            "Es obligatorio que",
+            "Es cierto que"
+          ],
+          "correct": 1,
+          "explanation": "Probable."
+        }
+      ]
+    },
+    {
+      "id": "l05-pasiva-avanzada",
+      "title": "Pasiva avanzada y construcciones impersonales",
+      "summary": "It is said that, be supposed to, causativo (have something done) y pasivas con dos objetos.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Construcción",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "It + pasiva + that",
+              "It is known that concrete is weak in tension.",
+              "Se sabe que el hormigón es débil a tracción."
+            ],
+            [
+              "Sujeto + pasiva + to + verbo",
+              "Concrete is known to be weak in tension.",
+              "Se sabe que el hormigón es débil a tracción."
+            ],
+            [
+              "It is assumed / believed / expected / reported / estimated that…",
+              "It is assumed that the beam is simply supported.",
+              "Se supone que la viga está simplemente apoyada."
+            ],
+            [
+              "be supposed to",
+              "The pump is supposed to start automatically.",
+              "Se supone que la bomba arranca sola."
+            ],
+            [
+              "be required to / be allowed to",
+              "Contractors are required to submit a schedule.",
+              "Los contratistas deben presentar un cronograma."
+            ],
+            [
+              "**Causativo:** have / get + objeto + participio",
+              "We had the soil tested.",
+              "Mandamos a ensayar el suelo."
+            ],
+            [
+              "Pasiva con preposición",
+              "The problem was dealt with.",
+              "Se resolvió el problema."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El **causativo** dice que otra persona hace algo por ti: «I **had** my laptop **repaired**» (me repararon la laptop; yo no la reparé). En obra es habitual: «The client **had** the structure **inspected**».",
+          "title": "Mandar a hacer"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "Frases hechas de los artículos: «It **is assumed** that…» (se asume), «It **should be noted** that…» (cabe señalar), «It **can be concluded** that…» (se puede concluir), «As **can be seen** in Figure 3…» (como se ve en la figura 3), «The values **were found to be**…» (se encontró que los valores eran…).",
+          "title": "Fórmulas de artículos"
+        },
+        {
+          "type": "quiz",
+          "question": "«Se asume que la viga es rígida»:",
+          "options": [
+            "It assumes that the beam is rigid",
+            "It is assumed that the beam is rigid",
+            "The beam assumes rigid",
+            "It is assume that"
+          ],
+          "correct": 1,
+          "explanation": "It + pasiva + that."
+        },
+        {
+          "type": "quiz",
+          "question": "«Mandamos a pintar la casa»:",
+          "options": [
+            "We painted the house",
+            "We had the house painted",
+            "We had painted the house",
+            "We have paint the house"
+          ],
+          "correct": 1,
+          "explanation": "Causativo."
+        },
+        {
+          "type": "quiz",
+          "question": "«It should be noted that» significa:",
+          "options": [
+            "Debería anotarse",
+            "Cabe señalar que",
+            "Hay que firmar",
+            "Se nota mucho"
+          ],
+          "correct": 1,
+          "explanation": "Fórmula académica."
+        },
+        {
+          "type": "quiz",
+          "question": "«Concrete is known to be weak in tension» equivale a:",
+          "options": [
+            "It is known that concrete is weak in tension",
+            "Concrete knows it is weak",
+            "They know concrete",
+            "Concrete was weak"
+          ],
+          "correct": 0,
+          "explanation": "Dos formas de la misma idea."
+        }
+      ]
+    },
+    {
+      "id": "l06-conectores-academicos",
+      "title": "Conectores formales y escritura académica",
+      "summary": "Las palabras que unen ideas en un informe o un artículo, y las reglas del registro formal.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Función",
+            "Conectores",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Añadir",
+              "in addition, furthermore, moreover, besides, also",
+              "Furthermore, the cost is lower."
+            ],
+            [
+              "Contrastar",
+              "however, nevertheless, on the other hand, whereas, while, in contrast",
+              "The first method is faster; however, it is less accurate."
+            ],
+            [
+              "Concesión",
+              "although, even though, despite, in spite of",
+              "Despite the rain, the work continued."
+            ],
+            [
+              "Causa",
+              "because, since, as, due to, owing to, because of",
+              "The road was closed due to a landslide."
+            ],
+            [
+              "Consecuencia",
+              "therefore, thus, hence, consequently, as a result",
+              "The load exceeded the capacity; therefore, the beam failed."
+            ],
+            [
+              "Propósito",
+              "in order to, so as to, so that",
+              "Samples were taken in order to determine the density."
+            ],
+            [
+              "Ejemplo",
+              "for example, for instance, such as, e.g.",
+              "Fine soils, such as clay and silt, …"
+            ],
+            [
+              "Aclarar",
+              "that is, i.e., in other words, namely",
+              "The structure is statically determinate, i.e., it can be solved with equilibrium alone."
+            ],
+            [
+              "Ordenar",
+              "first, then, next, subsequently, finally",
+              "Subsequently, the specimens were cured."
+            ],
+            [
+              "Concluir",
+              "in conclusion, to sum up, overall, in summary",
+              "In conclusion, the proposed design is feasible."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Despite** e **in spite of** van seguidos de sustantivo o -ing, nunca de una oración completa: «Despite **the cost**» / «Despite **being** expensive». **Although** sí va con oración: «Although **it is** expensive». Y **due to** va con sustantivo: «due to **the rain**», no «due to it rained».",
+          "title": "Qué sigue a cada conector"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Informal",
+            "Formal"
+          ],
+          "rows": [
+            [
+              "a lot of",
+              "many, a great deal of, a large number of"
+            ],
+            [
+              "big",
+              "large, significant, considerable"
+            ],
+            [
+              "get",
+              "obtain, become, receive"
+            ],
+            [
+              "show",
+              "demonstrate, illustrate, indicate"
+            ],
+            [
+              "use",
+              "employ, apply, utilise"
+            ],
+            [
+              "need",
+              "require"
+            ],
+            [
+              "about",
+              "approximately, regarding"
+            ],
+            [
+              "so",
+              "therefore, thus"
+            ],
+            [
+              "but",
+              "however"
+            ],
+            [
+              "don't, can't, it's",
+              "do not, cannot, it is (sin contracciones)"
+            ],
+            [
+              "I think",
+              "it is considered that / the results suggest"
+            ]
+          ],
+          "caption": "Registro"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Abreviaturas latinas: **e.g.** = por ejemplo; **i.e.** = es decir; **etc.** = etcétera; **et al.** = y otros (autores); **vs.** = frente a; **cf.** = compárese; **approx.** = aproximadamente."
+        },
+        {
+          "type": "quiz",
+          "question": "«However» significa:",
+          "options": [
+            "además",
+            "sin embargo",
+            "por lo tanto",
+            "por ejemplo"
+          ],
+          "correct": 1,
+          "explanation": "Contraste."
+        },
+        {
+          "type": "quiz",
+          "question": "«Therefore» significa:",
+          "options": [
+            "sin embargo",
+            "por lo tanto",
+            "aunque",
+            "además"
+          ],
+          "correct": 1,
+          "explanation": "Consecuencia."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "Despite it rained, we worked",
+            "Despite the rain, we worked",
+            "Despite of the rain, we worked",
+            "Despite rained, we worked"
+          ],
+          "correct": 1,
+          "explanation": "Despite + sustantivo."
+        },
+        {
+          "type": "quiz",
+          "question": "«i.e.» significa:",
+          "options": [
+            "por ejemplo",
+            "es decir",
+            "y otros",
+            "etcétera"
+          ],
+          "correct": 1,
+          "explanation": "Id est."
+        },
+        {
+          "type": "quiz",
+          "question": "La versión formal de «a lot of» es:",
+          "options": [
+            "lots of",
+            "a large number of",
+            "plenty",
+            "tons of"
+          ],
+          "correct": 1,
+          "explanation": "Registro académico."
+        },
+        {
+          "type": "quiz",
+          "question": "«In order to» expresa:",
+          "options": [
+            "Causa",
+            "Propósito",
+            "Contraste",
+            "Ejemplo"
+          ],
+          "correct": 1,
+          "explanation": "Para."
+        },
+        {
+          "type": "quiz",
+          "question": "«Whereas» se usa para:",
+          "options": [
+            "Añadir",
+            "Contrastar",
+            "Concluir",
+            "Ejemplificar"
+          ],
+          "correct": 1,
+          "explanation": "Mientras que."
+        }
+      ]
+    },
+    {
+      "id": "l07-formacion-palabras",
+      "title": "Formación de palabras, falsos amigos y cadenas de sustantivos",
+      "summary": "Prefijos y sufijos para deducir significados, palabras que engañan y cómo leer «reinforced concrete beam design».",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Prefijo",
+            "Significado",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "un-, in-, im-, non-",
+              "negación",
+              "unstable, incomplete, impossible, non-linear"
+            ],
+            [
+              "re-",
+              "otra vez",
+              "rebuild, redesign, reinforce"
+            ],
+            [
+              "over- / under-",
+              "exceso / defecto",
+              "overload, overestimate / underestimate, underground"
+            ],
+            [
+              "pre- / post-",
+              "antes / después",
+              "prestressed, precast / post-tensioned"
+            ],
+            [
+              "mis-",
+              "mal",
+              "misalign, miscalculate"
+            ],
+            [
+              "sub- / super-",
+              "debajo / encima",
+              "subsoil, substructure / superstructure"
+            ],
+            [
+              "inter- / intra-",
+              "entre / dentro",
+              "interaction, interface"
+            ],
+            [
+              "semi-, multi-, bi-",
+              "medio, muchos, dos",
+              "semicircular, multi-storey, biaxial"
+            ],
+            [
+              "de- / dis-",
+              "quitar, invertir",
+              "deform, dewatering, displacement"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sufijo",
+            "Forma",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "-tion, -sion, -ment, -ance, -ity, -ness",
+              "Sustantivos",
+              "deflection, tension, settlement, resistance, density, stiffness"
+            ],
+            [
+              "-er, -or, -ist",
+              "Persona o aparato",
+              "engineer, contractor, surveyor, geologist"
+            ],
+            [
+              "-al, -ic, -ous, -ive, -able",
+              "Adjetivos",
+              "structural, elastic, porous, cohesive, reliable"
+            ],
+            [
+              "-less / -ful",
+              "Sin / con",
+              "weightless, useless / useful"
+            ],
+            [
+              "-ly",
+              "Adverbios",
+              "slowly, approximately, respectively"
+            ],
+            [
+              "-ize / -ise, -ify, -en",
+              "Verbos",
+              "minimize, stabilize, simplify, strengthen, widen"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Con estos patrones se multiplican las palabras que entiendes: **strong** (fuerte) → **strength** (resistencia) → **strengthen** (reforzar); **wide** → **width** → **widen**; **deep** → **depth** → **deepen**; **long** → **length** → **lengthen**; **high** → **height** → **heighten**.",
+          "title": "Familias de palabras"
+        },
+        {
+          "type": "heading",
+          "text": "Falsos amigos"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Parece",
+            "Significa en realidad",
+            "El «parecido» se dice"
+          ],
+          "rows": [
+            [
+              "actually",
+              "actualmente",
+              "en realidad",
+              "currently, at present"
+            ],
+            [
+              "eventually",
+              "eventualmente",
+              "finalmente, con el tiempo",
+              "possibly"
+            ],
+            [
+              "library",
+              "librería",
+              "biblioteca",
+              "bookshop"
+            ],
+            [
+              "assist",
+              "asistir (ir)",
+              "ayudar",
+              "attend"
+            ],
+            [
+              "attend",
+              "atender",
+              "asistir a",
+              "serve, deal with"
+            ],
+            [
+              "realize",
+              "realizar",
+              "darse cuenta",
+              "carry out, perform"
+            ],
+            [
+              "sensible",
+              "sensible",
+              "sensato",
+              "sensitive"
+            ],
+            [
+              "resume",
+              "resumir",
+              "reanudar",
+              "summarize"
+            ],
+            [
+              "support",
+              "soportar (aguantar)",
+              "apoyar, sostener; apoyo",
+              "bear, stand"
+            ],
+            [
+              "discuss",
+              "discutir (pelear)",
+              "tratar, analizar",
+              "argue"
+            ],
+            [
+              "billion",
+              "billón",
+              "mil millones (10⁹)",
+              "trillion = 10¹²"
+            ],
+            [
+              "plant",
+              "planta (de dibujo)",
+              "planta industrial o vegetal",
+              "plan view, floor plan"
+            ],
+            [
+              "cement / concrete",
+              "cemento / concreto",
+              "cemento (el polvo) / hormigón",
+              "—"
+            ],
+            [
+              "topic",
+              "tópico",
+              "tema",
+              "cliché"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Cadenas de sustantivos"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El inglés técnico apila sustantivos sin preposiciones. Se leen **de derecha a izquierda**: la última palabra es la cosa; las anteriores dicen de qué tipo es.\n«reinforced concrete **beam design**» = diseño de vigas de hormigón armado.\n«soil **bearing capacity**» = capacidad portante del suelo.\n«flood risk **assessment report**» = informe de evaluación del riesgo de inundación.",
+          "title": "Leer de atrás hacia adelante"
+        },
+        {
+          "type": "quiz",
+          "question": "«Unstable» significa:",
+          "options": [
+            "estable",
+            "inestable",
+            "muy estable",
+            "estabilizar"
+          ],
+          "correct": 1,
+          "explanation": "Prefijo un-."
+        },
+        {
+          "type": "quiz",
+          "question": "El sustantivo de «strong» es:",
+          "options": [
+            "strongness",
+            "strength",
+            "strongth",
+            "strengthen"
+          ],
+          "correct": 1,
+          "explanation": "Resistencia."
+        },
+        {
+          "type": "quiz",
+          "question": "«Actually» significa:",
+          "options": [
+            "actualmente",
+            "en realidad",
+            "actuar",
+            "activamente"
+          ],
+          "correct": 1,
+          "explanation": "Falso amigo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Eventually» significa:",
+          "options": [
+            "eventualmente",
+            "finalmente",
+            "quizá",
+            "en un evento"
+          ],
+          "correct": 1,
+          "explanation": "Con el tiempo."
+        },
+        {
+          "type": "quiz",
+          "question": "«Soil bearing capacity» es:",
+          "options": [
+            "Suelo que carga capacidad",
+            "Capacidad portante del suelo",
+            "Capacidad de cargar suelo",
+            "Suelo capaz"
+          ],
+          "correct": 1,
+          "explanation": "Se lee de derecha a izquierda."
+        },
+        {
+          "type": "quiz",
+          "question": "«Overestimate» significa:",
+          "options": [
+            "subestimar",
+            "sobrestimar",
+            "estimar de nuevo",
+            "no estimar"
+          ],
+          "correct": 1,
+          "explanation": "Over- = exceso."
+        },
+        {
+          "type": "quiz",
+          "question": "«Billion» en inglés es:",
+          "options": [
+            "Un millón de millones",
+            "Mil millones",
+            "Cien millones",
+            "Un millón"
+          ],
+          "correct": 1,
+          "explanation": "10⁹."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Práctica de traducción: nivel avanzado",
+      "summary": "Oraciones del nivel de un informe o artículo técnico.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Escribe tu respuesta **en papel o dila en voz alta** antes de ver la solución. Traducir en ambos sentidos es el mejor ejercicio para fijar la gramática.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Past perfect",
+          "level": 3,
+          "statement": "Traduce al inglés: «Cuando el inspector llegó, los obreros ya habían retirado el encofrado.»",
+          "steps": [
+            "La acción anterior va en past perfect."
+          ],
+          "answer": "**When the inspector arrived, the workers had already removed the formwork.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Tercer condicional",
+          "level": 3,
+          "statement": "Traduce al inglés: «Si hubieran compactado bien el relleno, la vía no se habría hundido.»",
+          "steps": [
+            "If + past perfect, would have + participio."
+          ],
+          "answer": "**If they had compacted the fill properly, the road would not have subsided.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Estilo indirecto",
+          "level": 3,
+          "statement": "Traduce al inglés: «El cliente dijo que el presupuesto era limitado y preguntó cuándo terminaríamos.»",
+          "steps": [
+            "Retroceso de tiempos; pregunta indirecta sin inversión."
+          ],
+          "answer": "**The client said that the budget was limited and asked when we would finish.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Deducción",
+          "level": 3,
+          "statement": "Traduce al inglés: «La grieta debe de haber sido causada por un asentamiento diferencial.»",
+          "steps": [
+            "Must have been + participio (deducción en pasiva)."
+          ],
+          "answer": "**The crack must have been caused by differential settlement.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Impersonal",
+          "level": 3,
+          "statement": "Traduce al inglés: «Se asume que el material es homogéneo y que las deformaciones son pequeñas.»",
+          "steps": [
+            "It is assumed that…"
+          ],
+          "answer": "**It is assumed that the material is homogeneous and that the strains are small.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Conectores",
+          "level": 3,
+          "statement": "Traduce al inglés: «A pesar del costo, se eligió el acero; por lo tanto, el plazo se redujo.»",
+          "steps": [
+            "Despite + sustantivo; therefore tras punto y coma; pasiva."
+          ],
+          "answer": "**Despite the cost, steel was chosen; therefore, the schedule was shortened.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Matización",
+          "level": 3,
+          "statement": "Traduce al inglés: «Los resultados sugieren que la resistencia podría aumentar con el tiempo de curado.»",
+          "steps": [
+            "Suggest that… may: afirmación prudente."
+          ],
+          "answer": "**The results suggest that the strength may increase with curing time.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Cadena de sustantivos",
+          "level": 3,
+          "statement": "Traduce al inglés: «Informe de evaluación de la estabilidad de taludes de la vía»",
+          "steps": [
+            "Se construye de derecha a izquierda: lo último es el núcleo (report)."
+          ],
+          "answer": "**Road slope stability assessment report**"
+        }
+      ]
+    }
+  ]
+}

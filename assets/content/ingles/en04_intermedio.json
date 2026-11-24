@@ -1,0 +1,1368 @@
+{
+  "id": "en04-intermedio",
+  "title": "Nivel intermedio (B1)",
+  "description": "Present perfect, modales, condicionales, voz pasiva, oraciones de relativo, gerundio e infinitivo y phrasal verbs.",
+  "lessons": [
+    {
+      "id": "l01-present-perfect",
+      "title": "Present perfect: el pasado que toca el presente",
+      "summary": "Have / has + participio; ever, never, already, yet, just, for y since; diferencia con el past simple.",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "sujeto + have / has + participio pasado",
+          "caption": "I have finished. / She has gone."
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El **present perfect** es un puente entre pasado y presente: la acción ocurrió antes, pero **importa ahora** o **sigue hasta ahora**. «I **have lost** my keys» (las perdí y sigo sin ellas). No dice **cuándo**: si dices cuándo, usas past simple.",
+          "title": "La idea"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Uso",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Experiencias de vida (sin decir cuándo)",
+              "I have visited Quito. / Have you ever used ArcGIS?",
+              "He visitado Quito. / ¿Alguna vez has usado ArcGIS?"
+            ],
+            [
+              "Acción reciente con resultado ahora",
+              "She has just finished the report.",
+              "Acaba de terminar el informe."
+            ],
+            [
+              "Algo que empezó y continúa",
+              "I have studied here for two years. / since 2024.",
+              "Estudio aquí desde hace dos años / desde 2024."
+            ],
+            [
+              "Cambios y logros",
+              "Prices have increased.",
+              "Los precios han aumentado."
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Palabra",
+            "Significado",
+            "Posición",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "ever",
+              "alguna vez",
+              "En preguntas, antes del participio",
+              "Have you ever been to Peru?"
+            ],
+            [
+              "never",
+              "nunca",
+              "Antes del participio",
+              "I have never seen snow."
+            ],
+            [
+              "already",
+              "ya",
+              "Antes del participio",
+              "We have already measured it."
+            ],
+            [
+              "yet",
+              "ya (preguntas) / todavía (negativas)",
+              "Al final",
+              "Have you finished yet? / I haven't finished yet."
+            ],
+            [
+              "just",
+              "acabar de",
+              "Antes del participio",
+              "He has just arrived."
+            ],
+            [
+              "for",
+              "durante (un período)",
+              "for + duración",
+              "for three years, for a long time"
+            ],
+            [
+              "since",
+              "desde (un momento)",
+              "since + punto de inicio",
+              "since 2020, since Monday"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Past simple",
+            "Present perfect"
+          ],
+          "rows": [
+            [
+              "Momento terminado y **dicho**: yesterday, last year, in 2020, two days ago",
+              "Momento no dicho, o período que llega hasta ahora: ever, never, already, yet, for, since, today, this week"
+            ],
+            [
+              "I finished the project **yesterday**.",
+              "I have finished the project. (ya está listo)"
+            ],
+            [
+              "She lived in Loja for two years. (ya no vive ahí)",
+              "She has lived in Loja for two years. (todavía vive ahí)"
+            ],
+            [
+              "Did you see the email this morning?",
+              "Have you seen the email? (¿ya lo viste?)"
+            ]
+          ],
+          "caption": "La comparación que más preguntan"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En español decimos «vivo aquí **desde hace** tres años» con presente. En inglés es **present perfect**: «I **have lived** here **for** three years», nunca «I live here since three years».",
+          "title": "Desde hace"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "**Been** y **gone**: «He has **been** to Quito» (fue y volvió); «He has **gone** to Quito» (fue y sigue allá)."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «I (…) never (…) sushi.»",
+          "options": [
+            "have / eaten",
+            "has / ate",
+            "did / eat",
+            "have / ate"
+          ],
+          "correct": 0,
+          "explanation": "Have + participio."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «She has worked here (…) 2022.»",
+          "options": [
+            "for",
+            "since",
+            "ago",
+            "during"
+          ],
+          "correct": 1,
+          "explanation": "Punto de inicio."
+        },
+        {
+          "type": "quiz",
+          "question": "Completa: «We have known each other (…) five years.»",
+          "options": [
+            "for",
+            "since",
+            "from",
+            "ago"
+          ],
+          "correct": 0,
+          "explanation": "Duración."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "I have seen him yesterday",
+            "I saw him yesterday",
+            "I have saw him yesterday",
+            "I seen him yesterday"
+          ],
+          "correct": 1,
+          "explanation": "Con «yesterday», past simple."
+        },
+        {
+          "type": "quiz",
+          "question": "«Todavía no he terminado»:",
+          "options": [
+            "I haven't finished yet",
+            "I didn't finished yet",
+            "I haven't finished already",
+            "I not finished yet"
+          ],
+          "correct": 0,
+          "explanation": "Yet al final, en negativa."
+        },
+        {
+          "type": "quiz",
+          "question": "«Acaba de llegar»:",
+          "options": [
+            "He has just arrived",
+            "He just has arrive",
+            "He is just arrive",
+            "He did just arrived"
+          ],
+          "correct": 0,
+          "explanation": "Just + participio."
+        },
+        {
+          "type": "quiz",
+          "question": "«Vivo aquí desde hace tres años»:",
+          "options": [
+            "I live here since three years",
+            "I have lived here for three years",
+            "I am living here since three years ago",
+            "I lived here for three years ago"
+          ],
+          "correct": 1,
+          "explanation": "Present perfect + for."
+        }
+      ]
+    },
+    {
+      "id": "l02-modales",
+      "title": "Verbos modales: obligación, consejo, posibilidad y permiso",
+      "summary": "Must, have to, should, may, might, could y sus negativos, que no significan lo mismo.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Modal",
+            "Significado",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "**must**",
+              "Obligación fuerte (del hablante o de una norma)",
+              "Workers must wear helmets.",
+              "Los trabajadores deben usar casco."
+            ],
+            [
+              "**have to**",
+              "Obligación (externa); se conjuga y tiene todos los tiempos",
+              "I have to finish this today. / I had to wait.",
+              "Tengo que terminar esto hoy. / Tuve que esperar."
+            ],
+            [
+              "**mustn't**",
+              "**Prohibición**",
+              "You mustn't enter without permission.",
+              "No debes entrar sin permiso."
+            ],
+            [
+              "**don't have to**",
+              "**No es necesario** (pero puedes)",
+              "You don't have to come tomorrow.",
+              "No tienes que venir mañana."
+            ],
+            [
+              "**should / ought to**",
+              "Consejo, recomendación",
+              "You should check the units.",
+              "Deberías revisar las unidades."
+            ],
+            [
+              "**may**",
+              "Posibilidad; permiso formal",
+              "The slope may fail. / May I come in?",
+              "El talud puede fallar. / ¿Puedo pasar?"
+            ],
+            [
+              "**might**",
+              "Posibilidad menor",
+              "It might rain later.",
+              "Quizá llueva más tarde."
+            ],
+            [
+              "**could**",
+              "Pasado de can; posibilidad; petición cortés",
+              "I could swim at five. / Could you help me?",
+              "Sabía nadar a los cinco. / ¿Podrías ayudarme?"
+            ],
+            [
+              "**would**",
+              "Condicional; petición u ofrecimiento cortés",
+              "I would like a coffee. / Would you mind…?",
+              "Quisiera un café. / ¿Le importaría…?"
+            ],
+            [
+              "**shall**",
+              "Obligación en normas y contratos",
+              "The contractor shall provide…",
+              "El contratista deberá proporcionar…"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "**Mustn't** y **don't have to** son muy distintos: «You **mustn't** touch it» = está prohibido. «You **don't have to** touch it» = no hace falta. Confundirlos en una norma de seguridad cambia todo el sentido.",
+          "title": "Prohibido no es innecesario"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Todos los modales van con el **verbo base sin «to»** (excepto have to y ought to) y **no llevan s** en tercera persona: «She **should study**», no «She shoulds to study».",
+          "title": "Reglas comunes"
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En normas y especificaciones técnicas en inglés: **shall** = obligatorio; **should** = recomendado; **may** = permitido; **can** = es posible. Saber esto es indispensable para leer un código de diseño o un contrato.",
+          "title": "El lenguaje de las normas"
+        },
+        {
+          "type": "quiz",
+          "question": "«Está prohibido fumar»:",
+          "options": [
+            "You don't have to smoke",
+            "You mustn't smoke",
+            "You shouldn't to smoke",
+            "You might not smoke"
+          ],
+          "correct": 1,
+          "explanation": "Prohibición."
+        },
+        {
+          "type": "quiz",
+          "question": "«No es necesario que vengas»:",
+          "options": [
+            "You mustn't come",
+            "You don't have to come",
+            "You can't come",
+            "You shouldn't come"
+          ],
+          "correct": 1,
+          "explanation": "Ausencia de obligación."
+        },
+        {
+          "type": "quiz",
+          "question": "Consejo:",
+          "options": [
+            "You should rest",
+            "You must to rest",
+            "You should to rest",
+            "You shoulds rest"
+          ],
+          "correct": 0,
+          "explanation": "Should + base."
+        },
+        {
+          "type": "quiz",
+          "question": "«Tuve que esperar»:",
+          "options": [
+            "I must wait",
+            "I had to wait",
+            "I musted wait",
+            "I have to waited"
+          ],
+          "correct": 1,
+          "explanation": "Pasado de obligación: had to."
+        },
+        {
+          "type": "quiz",
+          "question": "En una norma, «shall» indica:",
+          "options": [
+            "Recomendación",
+            "Obligación",
+            "Permiso",
+            "Posibilidad"
+          ],
+          "correct": 1,
+          "explanation": "Requisito obligatorio."
+        },
+        {
+          "type": "quiz",
+          "question": "«Quizá llueva»:",
+          "options": [
+            "It must rain",
+            "It might rain",
+            "It shall rain",
+            "It has to rain"
+          ],
+          "correct": 1,
+          "explanation": "Posibilidad."
+        }
+      ]
+    },
+    {
+      "id": "l03-condicionales",
+      "title": "Condicionales cero, primero y segundo",
+      "summary": "Hechos, situaciones probables y situaciones imaginarias con if.",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Tipo",
+            "Estructura",
+            "Uso",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "**Cero**",
+              "If + presente, presente",
+              "Leyes y hechos que siempre se cumplen",
+              "If you heat steel, it expands."
+            ],
+            [
+              "**Primero**",
+              "If + presente, will + verbo",
+              "Situación real o probable en el futuro",
+              "If it rains, we will stop the work."
+            ],
+            [
+              "**Segundo**",
+              "If + pasado, would + verbo",
+              "Situación imaginaria o poco probable (presente o futuro)",
+              "If I had more time, I would study more."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El **cero** es una ley («siempre que»). El **primero** es un plan con condición («si pasa esto, haré aquello»). El **segundo** es un sueño o una hipótesis («si fuera…, haría…»): aunque usa el pasado, **no habla del pasado**.",
+          "title": "Tres grados de realidad"
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Después de **if** nunca va will ni would: «If it **rains**…», no «If it will rain…»; «If I **had**…», no «If I would have…». En el segundo condicional, con to be se usa **were** para todas las personas: «If I **were** you, I would check it again».",
+          "title": "Sin will ni would tras if"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Otros conectores",
+            "Significado",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "unless",
+              "a menos que (= if not)",
+              "The wall will fail unless we reinforce it."
+            ],
+            [
+              "as long as / provided that",
+              "siempre que, con tal de que",
+              "You can use it as long as you return it."
+            ],
+            [
+              "in case",
+              "por si",
+              "Take an umbrella in case it rains."
+            ],
+            [
+              "when",
+              "cuando (seguro que pasará)",
+              "When the concrete sets, we will remove the formwork."
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "If the load increases, the deflection increases.",
+              "Si la carga aumenta, la deflexión aumenta."
+            ],
+            [
+              "If we finish early, we will go home.",
+              "Si terminamos temprano, iremos a casa."
+            ],
+            [
+              "If I were the engineer, I would change the design.",
+              "Si yo fuera el ingeniero, cambiaría el diseño."
+            ],
+            [
+              "What would you do if the soil were weaker?",
+              "¿Qué harías si el suelo fuera más débil?"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "«If you mix blue and yellow, you (…) green.»",
+          "options": [
+            "get",
+            "will got",
+            "would get",
+            "got"
+          ],
+          "correct": 0,
+          "explanation": "Condicional cero."
+        },
+        {
+          "type": "quiz",
+          "question": "«If it rains tomorrow, we (…) at home.»",
+          "options": [
+            "stay",
+            "will stay",
+            "would stay",
+            "stayed"
+          ],
+          "correct": 1,
+          "explanation": "Primer condicional."
+        },
+        {
+          "type": "quiz",
+          "question": "«If I (…) rich, I would travel.»",
+          "options": [
+            "am",
+            "will be",
+            "were",
+            "would be"
+          ],
+          "correct": 2,
+          "explanation": "Segundo condicional."
+        },
+        {
+          "type": "quiz",
+          "question": "Correcto:",
+          "options": [
+            "If it will rain, we will stop",
+            "If it rains, we will stop",
+            "If it rains, we stopped",
+            "If it rain, we will stop"
+          ],
+          "correct": 1,
+          "explanation": "Presente tras if."
+        },
+        {
+          "type": "quiz",
+          "question": "«Unless» significa:",
+          "options": [
+            "porque",
+            "a menos que",
+            "aunque",
+            "mientras"
+          ],
+          "correct": 1,
+          "explanation": "If not."
+        },
+        {
+          "type": "quiz",
+          "question": "El segundo condicional expresa algo:",
+          "options": [
+            "Seguro",
+            "Imaginario o poco probable",
+            "Del pasado",
+            "Habitual"
+          ],
+          "correct": 1,
+          "explanation": "Hipotético."
+        }
+      ]
+    },
+    {
+      "id": "l04-pasiva",
+      "title": "La voz pasiva: el idioma de los textos técnicos",
+      "summary": "Cómo se forma, cuándo se usa y por qué domina los informes, manuales y artículos de ingeniería.",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "formula",
+          "expression": "sujeto (lo que recibe la acción) + to be (en el tiempo que toque) + participio pasado  (+ by + agente)"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "En la voz activa importa **quién hace**: «The workers poured the concrete». En la pasiva importa **qué se hizo**: «The concrete **was poured**». En ciencia e ingeniería casi nunca interesa quién, sino el proceso y el resultado; por eso la mayoría de los textos técnicos están en pasiva.",
+          "title": "Por qué existe"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tiempo",
+            "Activa",
+            "Pasiva"
+          ],
+          "rows": [
+            [
+              "Present simple",
+              "They test the samples.",
+              "The samples **are tested**."
+            ],
+            [
+              "Past simple",
+              "They tested the samples.",
+              "The samples **were tested**."
+            ],
+            [
+              "Present continuous",
+              "They are testing the samples.",
+              "The samples **are being tested**."
+            ],
+            [
+              "Present perfect",
+              "They have tested the samples.",
+              "The samples **have been tested**."
+            ],
+            [
+              "Futuro",
+              "They will test the samples.",
+              "The samples **will be tested**."
+            ],
+            [
+              "Con modal",
+              "They must test the samples.",
+              "The samples **must be tested**."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "En español preferimos el «se»: «**Se midió** la deflexión», «**Se utilizan** barras de acero». En inglés eso es pasiva: «The deflection **was measured**», «Steel bars **are used**». Cada vez que pienses «se + verbo», piensa en pasiva.",
+          "title": "El «se» español"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "The bridge was built in 1998.",
+              "El puente fue construido (se construyó) en 1998."
+            ],
+            [
+              "Concrete is made of cement, water, sand and gravel.",
+              "El hormigón se hace con cemento, agua, arena y grava."
+            ],
+            [
+              "The loads are transferred to the foundation.",
+              "Las cargas se transfieren a la cimentación."
+            ],
+            [
+              "The results are shown in Table 2.",
+              "Los resultados se muestran en la Tabla 2."
+            ],
+            [
+              "The specimens were cured for 28 days.",
+              "Las probetas se curaron durante 28 días."
+            ],
+            [
+              "It can be seen that the slope increases.",
+              "Se puede ver que la pendiente aumenta."
+            ],
+            [
+              "The structure was designed by a local firm.",
+              "La estructura fue diseñada por una empresa local."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "El agente («by…») se menciona solo cuando aporta información. En la mayoría de los casos se omite."
+        },
+        {
+          "type": "quiz",
+          "question": "Pasiva de «They build houses»:",
+          "options": [
+            "Houses are built",
+            "Houses is built",
+            "Houses are build",
+            "Houses built"
+          ],
+          "correct": 0,
+          "explanation": "To be + participio."
+        },
+        {
+          "type": "quiz",
+          "question": "Pasiva en pasado: «The test (…) yesterday.»",
+          "options": [
+            "is performed",
+            "was performed",
+            "performed",
+            "has performed"
+          ],
+          "correct": 1,
+          "explanation": "Was + participio."
+        },
+        {
+          "type": "quiz",
+          "question": "«Se midió la temperatura»:",
+          "options": [
+            "The temperature measured",
+            "The temperature was measured",
+            "It measured the temperature",
+            "The temperature is measure"
+          ],
+          "correct": 1,
+          "explanation": "Se + verbo → pasiva."
+        },
+        {
+          "type": "quiz",
+          "question": "Con modal: «The beam (…) reinforced.»",
+          "options": [
+            "must be",
+            "must is",
+            "must been",
+            "must to be"
+          ],
+          "correct": 0,
+          "explanation": "Modal + be + participio."
+        },
+        {
+          "type": "quiz",
+          "question": "La pasiva se usa en textos técnicos porque:",
+          "options": [
+            "Es más corta",
+            "Importa la acción y no quién la hace",
+            "Es más informal",
+            "Evita los verbos"
+          ],
+          "correct": 1,
+          "explanation": "Foco en el proceso."
+        },
+        {
+          "type": "quiz",
+          "question": "«The samples have (…) tested.»",
+          "options": [
+            "be",
+            "been",
+            "being",
+            "was"
+          ],
+          "correct": 1,
+          "explanation": "Present perfect pasivo."
+        }
+      ]
+    },
+    {
+      "id": "l05-relativas",
+      "title": "Oraciones de relativo: who, which, that, where, whose",
+      "summary": "Unir dos ideas para dar información sobre una persona, cosa o lugar.",
+      "minutes": 14,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Pronombre",
+            "Se refiere a",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "who",
+              "Personas",
+              "The engineer who designed the bridge…",
+              "El ingeniero que diseñó el puente…"
+            ],
+            [
+              "which",
+              "Cosas",
+              "The beam which failed…",
+              "La viga que falló…"
+            ],
+            [
+              "that",
+              "Personas o cosas (informal, sin comas)",
+              "The software that we use…",
+              "El programa que usamos…"
+            ],
+            [
+              "where",
+              "Lugares",
+              "The site where we work…",
+              "La obra donde trabajamos…"
+            ],
+            [
+              "whose",
+              "Posesión",
+              "The student whose project won…",
+              "El estudiante cuyo proyecto ganó…"
+            ],
+            [
+              "when",
+              "Tiempo",
+              "The year when it was built…",
+              "El año en que se construyó…"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Hay dos tipos. La **especificativa** dice de cuál hablamos y va **sin comas**: «The beam that failed was B3». La **explicativa** agrega un dato extra y va **entre comas** (y no admite that): «Beam B3, which was built in 1990, failed».",
+          "title": "Con comas o sin comas"
+        },
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Si el relativo es el **objeto** de la oración, se puede omitir: «The method (that) we used» = el método que usamos. Es muy frecuente en inglés hablado y escrito."
+        },
+        {
+          "type": "callout",
+          "kind": "ingenieria",
+          "text": "En textos técnicos son comunes las relativas reducidas con participio: «the loads **acting** on the beam» (las cargas que actúan sobre la viga), «the method **described** above» (el método descrito arriba), «the data **obtained** from the test».",
+          "title": "Relativas reducidas"
+        },
+        {
+          "type": "quiz",
+          "question": "«The man (…) lives next door is an architect.»",
+          "options": [
+            "which",
+            "who",
+            "where",
+            "whose"
+          ],
+          "correct": 1,
+          "explanation": "Persona."
+        },
+        {
+          "type": "quiz",
+          "question": "«The city (…) I was born is small.»",
+          "options": [
+            "which",
+            "who",
+            "where",
+            "whose"
+          ],
+          "correct": 2,
+          "explanation": "Lugar."
+        },
+        {
+          "type": "quiz",
+          "question": "«The student (…) laptop was stolen…»",
+          "options": [
+            "who",
+            "which",
+            "whose",
+            "that"
+          ],
+          "correct": 2,
+          "explanation": "Posesión."
+        },
+        {
+          "type": "quiz",
+          "question": "«The loads acting on the beam» significa:",
+          "options": [
+            "Las cargas actuando la viga",
+            "Las cargas que actúan sobre la viga",
+            "Las cargas actuaron la viga",
+            "Cargar la viga"
+          ],
+          "correct": 1,
+          "explanation": "Relativa reducida."
+        },
+        {
+          "type": "quiz",
+          "question": "En una relativa entre comas no se puede usar:",
+          "options": [
+            "which",
+            "who",
+            "that",
+            "where"
+          ],
+          "correct": 2,
+          "explanation": "That solo en especificativas."
+        }
+      ]
+    },
+    {
+      "id": "l06-gerundio-infinitivo",
+      "title": "Gerundio o infinitivo",
+      "summary": "Qué verbos van seguidos de -ing, cuáles de to, y el -ing tras preposiciones.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "Seguidos de **-ing**",
+            "Seguidos de **to + verbo**",
+            "De ambos (sin cambio importante)"
+          ],
+          "rows": [
+            [
+              "enjoy, finish, avoid, consider, suggest, keep, mind, practise, risk, involve",
+              "want, need, decide, plan, hope, expect, agree, promise, learn, manage, fail, tend",
+              "start, begin, continue, like, love, prefer, hate"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Inglés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "I enjoy solving problems.",
+              "Disfruto resolver problemas."
+            ],
+            [
+              "We finished measuring at noon.",
+              "Terminamos de medir al mediodía."
+            ],
+            [
+              "Avoid using wet aggregates.",
+              "Evite usar áridos húmedos."
+            ],
+            [
+              "I want to learn English.",
+              "Quiero aprender inglés."
+            ],
+            [
+              "We decided to change the design.",
+              "Decidimos cambiar el diseño."
+            ],
+            [
+              "The beam failed to support the load.",
+              "La viga no logró soportar la carga."
+            ],
+            [
+              "It started raining / to rain.",
+              "Empezó a llover."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "kind": "importante",
+          "text": "Después de una **preposición** el verbo va siempre en **-ing**: «before **starting**», «after **pouring** the concrete», «by **adding** water», «without **checking**», «I am interested in **learning**», «instead of **using**». En español usamos infinitivo («antes de empezar»); en inglés, -ing.",
+          "title": "Preposición + -ing"
+        },
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "El -ing también funciona como **sujeto** (como un sustantivo): «**Swimming** is healthy», «**Surveying** requires precision» (la topografía requiere precisión).",
+          "title": "El -ing como sustantivo"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Cambian de significado",
+            "-ing",
+            "to"
+          ],
+          "rows": [
+            [
+              "stop",
+              "I stopped smoking. (dejé de fumar)",
+              "I stopped to smoke. (paré para fumar)"
+            ],
+            [
+              "remember",
+              "I remember locking it. (recuerdo haberlo hecho)",
+              "Remember to lock it. (acuérdate de hacerlo)"
+            ],
+            [
+              "try",
+              "Try adding more water. (prueba a ver)",
+              "Try to finish today. (esfuérzate)"
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "«I enjoy (…) English.»",
+          "options": [
+            "to study",
+            "studying",
+            "study",
+            "studied"
+          ],
+          "correct": 1,
+          "explanation": "Enjoy + -ing."
+        },
+        {
+          "type": "quiz",
+          "question": "«We decided (…) the project.»",
+          "options": [
+            "changing",
+            "to change",
+            "change",
+            "changed"
+          ],
+          "correct": 1,
+          "explanation": "Decide + to."
+        },
+        {
+          "type": "quiz",
+          "question": "«Before (…) , check the equipment.»",
+          "options": [
+            "to start",
+            "start",
+            "starting",
+            "started"
+          ],
+          "correct": 2,
+          "explanation": "Preposición + -ing."
+        },
+        {
+          "type": "quiz",
+          "question": "«I am interested in (…) .»",
+          "options": [
+            "to learn",
+            "learning",
+            "learn",
+            "learned"
+          ],
+          "correct": 1,
+          "explanation": "In + -ing."
+        },
+        {
+          "type": "quiz",
+          "question": "«I stopped to rest» significa:",
+          "options": [
+            "Dejé de descansar",
+            "Paré para descansar",
+            "Seguí descansando",
+            "Nunca descansé"
+          ],
+          "correct": 1,
+          "explanation": "Stop + to = propósito."
+        }
+      ]
+    },
+    {
+      "id": "l07-phrasal",
+      "title": "Phrasal verbs frecuentes y used to",
+      "summary": "Verbos con partícula que cambian de significado, y cómo hablar de hábitos del pasado.",
+      "minutes": 16,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "concepto",
+          "text": "Un **phrasal verb** es un verbo más una partícula (up, down, out, off, on…) que juntos significan algo nuevo. «Give» es dar, pero «give **up**» es rendirse. No se deducen: se aprenden como vocabulario. En textos técnicos formales se prefiere el verbo de origen latino (carry out → perform; find out → determine).",
+          "title": "Qué son"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Phrasal verb",
+            "Español",
+            "Equivalente formal",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "carry out",
+              "llevar a cabo",
+              "perform, conduct",
+              "We carried out three tests."
+            ],
+            [
+              "find out",
+              "averiguar",
+              "determine, discover",
+              "We need to find out the cause."
+            ],
+            [
+              "work out",
+              "calcular, resolver",
+              "calculate, solve",
+              "Work out the reactions."
+            ],
+            [
+              "set up",
+              "montar, instalar",
+              "install, establish",
+              "Set up the total station."
+            ],
+            [
+              "turn on / off",
+              "encender / apagar",
+              "activate / deactivate",
+              "Turn off the pump."
+            ],
+            [
+              "fill in / out",
+              "llenar (un formulario)",
+              "complete",
+              "Fill in the form."
+            ],
+            [
+              "look for",
+              "buscar",
+              "search, seek",
+              "I am looking for my notes."
+            ],
+            [
+              "look up",
+              "consultar (en un libro o internet)",
+              "consult",
+              "Look up the value in the table."
+            ],
+            [
+              "point out",
+              "señalar",
+              "indicate",
+              "He pointed out a mistake."
+            ],
+            [
+              "break down",
+              "averiarse; desglosar",
+              "fail; analyse",
+              "The machine broke down."
+            ],
+            [
+              "run out of",
+              "quedarse sin",
+              "exhaust",
+              "We ran out of cement."
+            ],
+            [
+              "put off",
+              "posponer",
+              "postpone",
+              "They put off the meeting."
+            ],
+            [
+              "give up",
+              "rendirse, dejar",
+              "abandon",
+              "Don't give up."
+            ],
+            [
+              "go on",
+              "continuar",
+              "continue",
+              "Go on, please."
+            ],
+            [
+              "take into account",
+              "tener en cuenta",
+              "consider",
+              "Take the wind load into account."
+            ],
+            [
+              "deal with",
+              "tratar, ocuparse de",
+              "address, handle",
+              "This chapter deals with soils."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Used to"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Estructura",
+            "Significado",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "used to + verbo base",
+              "Hábito o estado del pasado que ya no existe",
+              "I used to play football. (antes jugaba)"
+            ],
+            [
+              "be used to + -ing / sustantivo",
+              "Estar acostumbrado a",
+              "I am used to working at night."
+            ],
+            [
+              "get used to + -ing / sustantivo",
+              "Acostumbrarse a",
+              "You will get used to the software."
+            ]
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "«Carry out a test» significa:",
+          "options": [
+            "Cancelar un ensayo",
+            "Realizar un ensayo",
+            "Repetir un ensayo",
+            "Cargar un ensayo"
+          ],
+          "correct": 1,
+          "explanation": "Llevar a cabo."
+        },
+        {
+          "type": "quiz",
+          "question": "«We ran out of time» significa:",
+          "options": [
+            "Corrimos a tiempo",
+            "Nos quedamos sin tiempo",
+            "Llegamos a tiempo",
+            "Ganamos tiempo"
+          ],
+          "correct": 1,
+          "explanation": "Run out of."
+        },
+        {
+          "type": "quiz",
+          "question": "El equivalente formal de «find out» es:",
+          "options": [
+            "determine",
+            "postpone",
+            "install",
+            "continue"
+          ],
+          "correct": 0,
+          "explanation": "Averiguar."
+        },
+        {
+          "type": "quiz",
+          "question": "«Antes vivía en Loja»:",
+          "options": [
+            "I am used to live in Loja",
+            "I used to live in Loja",
+            "I use to living in Loja",
+            "I was used live in Loja"
+          ],
+          "correct": 1,
+          "explanation": "Used to + base."
+        },
+        {
+          "type": "quiz",
+          "question": "«Estoy acostumbrado a estudiar de noche»:",
+          "options": [
+            "I used to study at night",
+            "I am used to studying at night",
+            "I am used to study at night",
+            "I use to studying at night"
+          ],
+          "correct": 1,
+          "explanation": "Be used to + -ing."
+        },
+        {
+          "type": "quiz",
+          "question": "«Take into account» significa:",
+          "options": [
+            "Tomar una cuenta",
+            "Tener en cuenta",
+            "Pagar la cuenta",
+            "Contar"
+          ],
+          "correct": 1,
+          "explanation": "Considerar."
+        }
+      ]
+    },
+    {
+      "id": "lx-ejercicios",
+      "title": "Práctica de traducción: nivel intermedio",
+      "summary": "Present perfect, modales, condicionales y, sobre todo, voz pasiva.",
+      "minutes": 30,
+      "blocks": [
+        {
+          "type": "callout",
+          "kind": "nota",
+          "text": "Escribe tu respuesta **en papel o dila en voz alta** antes de ver la solución. Traducir en ambos sentidos es el mejor ejercicio para fijar la gramática.",
+          "title": "Cómo usar esta lección"
+        },
+        {
+          "type": "exercise",
+          "title": "Present perfect",
+          "level": 2,
+          "statement": "Traduce al inglés: «Hemos terminado los cálculos, pero todavía no hemos dibujado los planos.»",
+          "steps": [
+            "Have + participio (draw → drawn); yet al final de la negativa."
+          ],
+          "answer": "**We have finished the calculations, but we haven't drawn the drawings yet.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Desde hace",
+          "level": 2,
+          "statement": "Traduce al inglés: «Estudio inglés desde hace seis meses.»",
+          "steps": [
+            "Present perfect + for (duración)."
+          ],
+          "answer": "**I have studied English for six months.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Obligación y prohibición",
+          "level": 2,
+          "statement": "Traduce al inglés: «Debes usar casco, pero no es necesario que traigas tu computadora.»",
+          "steps": [
+            "Must = obligación; don't have to = no hace falta."
+          ],
+          "answer": "**You must wear a helmet, but you don't have to bring your computer.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Primer condicional",
+          "level": 2,
+          "statement": "Traduce al inglés: «Si el suelo es débil, usaremos pilotes.»",
+          "steps": [
+            "If + presente, will + verbo."
+          ],
+          "answer": "**If the soil is weak, we will use piles.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Segundo condicional",
+          "level": 3,
+          "statement": "Traduce al inglés: «Si tuviéramos más presupuesto, construiríamos un puente más largo.»",
+          "steps": [
+            "If + pasado, would + verbo."
+          ],
+          "answer": "**If we had a bigger budget, we would build a longer bridge.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Pasiva en presente",
+          "level": 2,
+          "statement": "Traduce al inglés: «El hormigón se mezcla en la obra y se vierte en el encofrado.»",
+          "steps": [
+            "Se + verbo → pasiva: is mixed, (is) poured."
+          ],
+          "answer": "**The concrete is mixed on site and poured into the formwork.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Pasiva en pasado",
+          "level": 3,
+          "statement": "Traduce al inglés: «Las muestras se tomaron a tres metros de profundidad y se analizaron en el laboratorio.»",
+          "steps": [
+            "Were + participio (take → taken)."
+          ],
+          "answer": "**The samples were taken at a depth of three metres and were analysed in the laboratory.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Pasiva con modal",
+          "level": 3,
+          "statement": "Traduce al inglés: «La pendiente debe revisarse antes de empezar la excavación.»",
+          "steps": [
+            "Must be + participio; before + -ing."
+          ],
+          "answer": "**The slope must be checked before starting the excavation.**"
+        },
+        {
+          "type": "exercise",
+          "title": "Relativa",
+          "level": 3,
+          "statement": "Traduce al inglés: «El ingeniero que diseñó la presa trabaja en la empresa donde hice mis prácticas.»",
+          "steps": [
+            "Who para personas, where para lugares."
+          ],
+          "answer": "**The engineer who designed the dam works at the company where I did my internship.**"
+        }
+      ]
+    }
+  ]
+}
