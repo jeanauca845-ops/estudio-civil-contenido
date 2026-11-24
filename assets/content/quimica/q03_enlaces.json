@@ -117,7 +117,13 @@
             "Son del mismo elemento"
           ],
           "correct": 1,
-          "explanation": "El enlace hace al sistema más estable: **libera** energía."
+          "explanation": "El enlace hace al sistema más estable: **libera** energía.",
+          "why": [
+            "Si absorbieran energía, el sistema quedaría menos estable y no se unirían.",
+            "",
+            "Los protones no cambian al formar enlaces.",
+            "Átomos de elementos distintos también se unen (H₂O, NaCl)."
+          ]
         },
         {
           "type": "quiz",
@@ -129,7 +135,13 @@
             "Los electrones 1s"
           ],
           "correct": 2,
-          "explanation": "Los de **valencia**."
+          "explanation": "Los de **valencia**.",
+          "why": [
+            "Los protones están en el núcleo y no participan en el enlace.",
+            "Los neutrones no tienen carga ni participan.",
+            "",
+            "Los electrones 1s son internos (salvo en H y He) y no participan."
+          ]
         },
         {
           "type": "quiz",
@@ -141,7 +153,13 @@
             "No hay interacción"
           ],
           "correct": 1,
-          "explanation": "Mínimo de energía."
+          "explanation": "Mínimo de energía.",
+          "why": [
+            "Donde la repulsión es máxima los átomos se separan.",
+            "",
+            "Los núcleos nunca se tocan: se repelen.",
+            "A esa distancia hay mucha interacción; es donde la energía es mínima."
+          ]
         },
         {
           "type": "quiz",
@@ -153,7 +171,13 @@
             "Gravitatorias"
           ],
           "correct": 1,
-          "explanation": "**Intra** = dentro."
+          "explanation": "**Intra** = dentro.",
+          "why": [
+            "Las intermoleculares actúan entre moléculas distintas.",
+            "",
+            "Las nucleares actúan dentro del núcleo.",
+            "La gravedad es insignificante a esa escala."
+          ]
         },
         {
           "type": "quiz",
@@ -165,7 +189,13 @@
             "Hay electrones de valencia"
           ],
           "correct": 1,
-          "explanation": "Definición de clase."
+          "explanation": "Definición de clase.",
+          "why": [
+            "Cuando se igualan se forma el enlace (energía mínima).",
+            "",
+            "Si liberan energía se forma el enlace.",
+            "Tener electrones de valencia permite el enlace; no lo impide."
+          ]
         }
       ]
     },
@@ -310,7 +340,13 @@
             "8"
           ],
           "correct": 1,
-          "explanation": "Grupo 15: **5 puntos**."
+          "explanation": "Grupo 15: **5 puntos**.",
+          "why": [
+            "3 son los electrones del 2p; faltan los 2 del 2s.",
+            "",
+            "7 tiene el flúor.",
+            "8 es el octeto que busca alcanzar."
+          ]
         },
         {
           "type": "quiz",
@@ -322,7 +358,13 @@
             "Sexteto"
           ],
           "correct": 1,
-          "explanation": "Como el helio."
+          "explanation": "Como el helio.",
+          "why": [
+            "El hidrógeno solo tiene el nivel 1, que admite 2 electrones.",
+            "",
+            "No existe una regla del «cuarteto».",
+            "El sexteto es el caso del boro."
+          ]
         },
         {
           "type": "quiz",
@@ -334,7 +376,13 @@
             "Diez electrones"
           ],
           "correct": 1,
-          "explanation": "Octeto incompleto: **sexteto**."
+          "explanation": "Octeto incompleto: **sexteto**.",
+          "why": [
+            "Al boro le faltan 2 electrones para el octeto.",
+            "",
+            "El dueto es propio del hidrógeno.",
+            "10 sería un octeto expandido; el boro no lo hace."
+          ]
         },
         {
           "type": "quiz",
@@ -346,7 +394,13 @@
             "Berilio"
           ],
           "correct": 1,
-          "explanation": "Periodo 3: S en SF₆ tiene 12."
+          "explanation": "Periodo 3: S en SF₆ tiene 12.",
+          "why": [
+            "El carbono está en el periodo 2: no tiene orbitales d disponibles.",
+            "",
+            "El hidrógeno solo admite 2 electrones.",
+            "El berilio queda con menos de 8, no con más."
+          ]
         },
         {
           "type": "quiz",
@@ -358,7 +412,13 @@
             "Pauling"
           ],
           "correct": 1,
-          "explanation": "**Gilbert Lewis**."
+          "explanation": "**Gilbert Lewis**.",
+          "why": [
+            "Mendeléiev ordenó la tabla periódica.",
+            "",
+            "Bohr propuso un modelo atómico.",
+            "Pauling creó la escala de electronegatividad."
+          ]
         },
         {
           "type": "quiz",
@@ -370,7 +430,13 @@
             "22"
           ],
           "correct": 1,
-          "explanation": "4 + 6 + 6 = **16**."
+          "explanation": "4 + 6 + 6 = **16**.",
+          "why": [
+            "12 sería contar mal el carbono o un oxígeno.",
+            "",
+            "18 sobra: C (4) + 2·O (6) = 16.",
+            "22 es el número de protones del CO₂, no sus electrones de valencia."
+          ]
         },
         {
           "type": "quiz",
@@ -382,7 +448,13 @@
             "Azufre"
           ],
           "correct": 1,
-          "explanation": "El H solo forma un enlace."
+          "explanation": "El H solo forma un enlace.",
+          "why": [
+            "El carbono es el central típico (CH₄, CO₂).",
+            "",
+            "El nitrógeno es central en el NH₃.",
+            "El azufre es central en el SO₂ y el H₂SO₄."
+          ]
         }
       ]
     },
@@ -467,7 +539,13 @@
             "Apolar"
           ],
           "correct": 1,
-          "explanation": "Transferencia de electrones."
+          "explanation": "Transferencia de electrones.",
+          "why": [
+            "Covalente es entre no metales.",
+            "",
+            "Metálico es entre metales.",
+            "«Apolar» es un tipo de covalente, entre átomos de electronegatividad igual o parecida."
+          ]
         },
         {
           "type": "quiz",
@@ -479,7 +557,13 @@
             "0: apolar"
           ],
           "correct": 0,
-          "explanation": "3,0 − 2,1 = **0,9**."
+          "explanation": "3,0 − 2,1 = **0,9**.",
+          "why": [
+            "",
+            "El valor 0.9 es correcto, pero el enlace iónico requiere ΔEN mayor a 1.7.",
+            "5.1 sale de sumar; ΔEN es la resta: 3.0 − 2.1.",
+            "Las electronegatividades son distintas, así que ΔEN no es 0."
+          ]
         },
         {
           "type": "quiz",
@@ -491,7 +575,13 @@
             "Metálico"
           ],
           "correct": 2,
-          "explanation": "≥ 1,7 → **iónico**."
+          "explanation": "≥ 1,7 → **iónico**.",
+          "why": [
+            "Apolar es ΔEN menor a 0.4.",
+            "Polar es ΔEN entre 0.4 y 1.7.",
+            "",
+            "Metálico es entre metales; no se clasifica por ΔEN."
+          ]
         },
         {
           "type": "quiz",
@@ -503,7 +593,13 @@
             "Dativo"
           ],
           "correct": 2,
-          "explanation": "Entre átomos metálicos."
+          "explanation": "Entre átomos metálicos.",
+          "why": [
+            "El cobre es un solo elemento metálico; no hay cationes y aniones distintos.",
+            "No es covalente: los electrones no están en pares fijos.",
+            "",
+            "El dativo es un tipo de covalente."
+          ]
         },
         {
           "type": "quiz",
@@ -515,7 +611,13 @@
             "Metálico"
           ],
           "correct": 2,
-          "explanation": "ΔEN = 0,35 < 0,4."
+          "explanation": "ΔEN = 0,35 < 0,4.",
+          "why": [
+            "ΔEN = 0.35, muy lejos de 1.7.",
+            "Polar requiere ΔEN de 0.4 o más; aquí es 0.35.",
+            "",
+            "El carbono y el hidrógeno no son metales."
+          ]
         }
       ]
     },
@@ -671,7 +773,13 @@
             "No participan"
           ],
           "correct": 1,
-          "explanation": "Uno gana y otro pierde."
+          "explanation": "Uno gana y otro pierde.",
+          "why": [
+            "Compartir es propio del enlace covalente.",
+            "",
+            "Deslocalizar es propio del enlace metálico.",
+            "Los electrones son los protagonistas del enlace."
+          ]
         },
         {
           "type": "quiz",
@@ -683,7 +791,13 @@
             "5,0"
           ],
           "correct": 1,
-          "explanation": "4,0 − 1,0 = **3,0**."
+          "explanation": "4,0 − 1,0 = **3,0**.",
+          "why": [
+            "1.0 es la electronegatividad del Li.",
+            "",
+            "4.0 es la del F.",
+            "5.0 sale de sumar; ΔEN es la resta."
+          ]
         },
         {
           "type": "quiz",
@@ -695,7 +809,13 @@
             "Hidrógeno"
           ],
           "correct": 1,
-          "explanation": "1s²: **helio**."
+          "explanation": "1s²: **helio**.",
+          "why": [
+            "El neón tiene 10 electrones; el Li⁺ tiene 2.",
+            "",
+            "El argón tiene 18.",
+            "El hidrógeno tiene 1 electrón; el Li⁺ tiene 2, como el helio."
+          ]
         },
         {
           "type": "quiz",
@@ -707,7 +827,13 @@
             "Por casualidad"
           ],
           "correct": 1,
-          "explanation": "2 Na⁺ compensan un O²⁻."
+          "explanation": "2 Na⁺ compensan un O²⁻.",
+          "why": [
+            "El oxígeno gana electrones, no los cede.",
+            "",
+            "El sodio tiene 1 electrón de valencia.",
+            "Las fórmulas iónicas salen del balance de cargas."
+          ]
         },
         {
           "type": "quiz",
@@ -719,7 +845,13 @@
             "Solo con luz"
           ],
           "correct": 1,
-          "explanation": "Conduce fundido o disuelto."
+          "explanation": "Conduce fundido o disuelto.",
+          "why": [
+            "En el sólido los iones no se mueven.",
+            "",
+            "La temperatura baja no lo vuelve conductor.",
+            "La luz no lo vuelve conductor."
+          ]
         },
         {
           "type": "quiz",
@@ -731,7 +863,13 @@
             "No funden"
           ],
           "correct": 1,
-          "explanation": "Hay que vencer la red cristalina."
+          "explanation": "Hay que vencer la red cristalina.",
+          "why": [
+            "Las atracciones entre iones son muy fuertes.",
+            "",
+            "Son mucho más altos que los de los covalentes moleculares.",
+            "Sí funden, a temperaturas altas."
+          ]
         },
         {
           "type": "quiz",
@@ -743,7 +881,13 @@
             "AlO₂"
           ],
           "correct": 1,
-          "explanation": "Cruce de cargas: **Al₂O₃** (+6 − 6 = 0)."
+          "explanation": "Cruce de cargas: **Al₂O₃** (+6 − 6 = 0).",
+          "why": [
+            "Las cargas no se compensan: +3 − 2 = +1.",
+            "",
+            "3(+3) + 2(−2) = +5: no es neutro.",
+            "+3 + 2(−2) = −1: no es neutro."
+          ]
         },
         {
           "type": "quiz",
@@ -755,7 +899,13 @@
             "Aniones"
           ],
           "correct": 1,
-          "explanation": "Ceden electrones → cationes."
+          "explanation": "Ceden electrones → cationes.",
+          "why": [
+            "Reciben electrones los no metales.",
+            "",
+            "En el enlace quedan como cationes, no neutros.",
+            "Los aniones son negativos; el metal queda positivo."
+          ]
         }
       ]
     },
@@ -889,7 +1039,13 @@
             "Electrones deslocalizados"
           ],
           "correct": 1,
-          "explanation": "**Compartición**."
+          "explanation": "**Compartición**.",
+          "why": [
+            "La transferencia es propia del enlace iónico.",
+            "",
+            "La atracción entre iones es el enlace iónico.",
+            "Los electrones deslocalizados son del enlace metálico."
+          ]
         },
         {
           "type": "quiz",
@@ -901,7 +1057,13 @@
             "8"
           ],
           "correct": 1,
-          "explanation": "2 pares = **4 electrones**."
+          "explanation": "2 pares = **4 electrones**.",
+          "why": [
+            "2 electrones son un enlace simple.",
+            "",
+            "6 electrones son un enlace triple.",
+            "8 no corresponde a ningún enlace común."
+          ]
         },
         {
           "type": "quiz",
@@ -913,7 +1075,13 @@
             "Iónico"
           ],
           "correct": 2,
-          "explanation": ":N≡N:"
+          "explanation": ":N≡N:",
+          "why": [
+            "Con un enlace simple a cada N le faltarían electrones para el octeto.",
+            "Con doble, también le faltarían.",
+            "",
+            "Los dos átomos son iguales: no puede ser iónico."
+          ]
         },
         {
           "type": "quiz",
@@ -925,7 +1093,13 @@
             "Todos igual"
           ],
           "correct": 2,
-          "explanation": "Más pares = más fuerte y corto."
+          "explanation": "Más pares = más fuerte y corto.",
+          "why": [
+            "El simple es el más débil.",
+            "El doble es más fuerte que el simple, pero menos que el triple.",
+            "",
+            "La fuerza crece con el número de enlaces."
+          ]
         },
         {
           "type": "quiz",
@@ -937,7 +1111,13 @@
             "Infinitos"
           ],
           "correct": 1,
-          "explanation": "Fuerzas intermoleculares débiles."
+          "explanation": "Fuerzas intermoleculares débiles.",
+          "why": [
+            "Es al revés: los iónicos tienen puntos de fusión más altos.",
+            "",
+            "No son iguales.",
+            "Todos funden a alguna temperatura."
+          ]
         },
         {
           "type": "quiz",
@@ -949,7 +1129,13 @@
             "Porque es sólida"
           ],
           "correct": 1,
-          "explanation": "Conduce cuando tiene sales disueltas."
+          "explanation": "Conduce cuando tiene sales disueltas.",
+          "why": [
+            "El agua pura casi no tiene iones libres.",
+            "",
+            "El agua no es metálica.",
+            "El agua líquida tampoco conduce bien."
+          ]
         },
         {
           "type": "quiz",
@@ -961,7 +1147,13 @@
             "14 electrones"
           ],
           "correct": 1,
-          "explanation": "Comparte un par: octeto."
+          "explanation": "Comparte un par: octeto.",
+          "why": [
+            "7 son los que tiene el cloro solo; al compartir llega a 8.",
+            "",
+            "2 es el dueto del hidrógeno.",
+            "14 son los electrones de valencia de toda la molécula."
+          ]
         }
       ]
     },
@@ -1041,7 +1233,13 @@
             "Ambos"
           ],
           "correct": 1,
-          "explanation": "El Cl es más electronegativo: **δ−**."
+          "explanation": "El Cl es más electronegativo: **δ−**.",
+          "why": [
+            "El H es menos electronegativo y queda δ+.",
+            "",
+            "Sí hay carga parcial, porque el enlace es polar.",
+            "Una carga parcial es negativa y la otra positiva."
+          ]
         },
         {
           "type": "quiz",
@@ -1053,7 +1251,13 @@
             "Iones"
           ],
           "correct": 1,
-          "explanation": "Compartición equitativa."
+          "explanation": "Compartición equitativa.",
+          "why": [
+            "Con ΔEN grande el enlace es polar o iónico.",
+            "",
+            "Un metal con un no metal forma enlace iónico.",
+            "Los iones forman enlace iónico."
+          ]
         },
         {
           "type": "quiz",
@@ -1065,7 +1269,13 @@
             "5,64"
           ],
           "correct": 1,
-          "explanation": "3,44 − 2,20 = **1,24** → polar."
+          "explanation": "3,44 − 2,20 = **1,24** → polar.",
+          "why": [
+            "0.35 es el ΔEN del C–H.",
+            "",
+            "2.0 no sale de la resta: 3.44 − 2.20 = 1.24.",
+            "5.64 sale de sumar."
+          ]
         },
         {
           "type": "quiz",
@@ -1077,7 +1287,13 @@
             "Ausencia de electrones"
           ],
           "correct": 1,
-          "explanation": "Rojo = **alta densidad**."
+          "explanation": "Rojo = **alta densidad**.",
+          "why": [
+            "La baja densidad (δ+) suele verse en azul.",
+            "",
+            "El color indica densidad electrónica, no iones.",
+            "El rojo indica más electrones, no ausencia."
+          ]
         },
         {
           "type": "quiz",
@@ -1089,7 +1305,13 @@
             "O=O"
           ],
           "correct": 2,
-          "explanation": "Átomos distintos con ΔEN 0,9: compartición desigual."
+          "explanation": "Átomos distintos con ΔEN 0,9: compartición desigual.",
+          "why": [
+            "Son dos átomos iguales: ΔEN = 0.",
+            "Son dos átomos iguales: apolar.",
+            "",
+            "Son dos átomos iguales: apolar."
+          ]
         }
       ]
     },
@@ -1213,7 +1435,13 @@
             "Ningún átomo"
           ],
           "correct": 1,
-          "explanation": "Definición."
+          "explanation": "Definición.",
+          "why": [
+            "Si cada uno aporta un electrón, es covalente normal.",
+            "",
+            "El núcleo no aporta electrones al enlace.",
+            "Siempre alguien aporta el par."
+          ]
         },
         {
           "type": "quiz",
@@ -1225,7 +1453,13 @@
             "Ninguno"
           ],
           "correct": 1,
-          "explanation": "El **N** con su par libre."
+          "explanation": "El **N** con su par libre.",
+          "why": [
+            "El H⁺ no tiene electrones: es el que acepta.",
+            "",
+            "Los H del NH₃ ya están enlazados y no tienen pares libres.",
+            "El nitrógeno dona su par libre."
+          ]
         },
         {
           "type": "quiz",
@@ -1237,7 +1471,13 @@
             "10 protones y 11 electrones"
           ],
           "correct": 1,
-          "explanation": "Por eso carga +1."
+          "explanation": "Por eso carga +1.",
+          "why": [
+            "El NH₄⁺ tiene 11 protones (7 + 4); y si tuviera igual número de protones y electrones, sería neutro.",
+            "",
+            "Igual número sería neutro; el NH₄⁺ tiene carga +1.",
+            "Más electrones que protones sería un anión."
+          ]
         },
         {
           "type": "quiz",
@@ -1249,7 +1489,13 @@
             "Porque es iónico"
           ],
           "correct": 1,
-          "explanation": "Le faltan 2 para el octeto."
+          "explanation": "Le faltan 2 para el octeto.",
+          "why": [
+            "El boro está en el periodo 2: no expande el octeto.",
+            "",
+            "El flúor es un no metal.",
+            "El BF₃ es covalente."
+          ]
         },
         {
           "type": "quiz",
@@ -1261,7 +1507,13 @@
             "Se rompe solo"
           ],
           "correct": 1,
-          "explanation": "Indistinguible."
+          "explanation": "Indistinguible.",
+          "why": [
+            "Una vez formado, no se distingue de los otros.",
+            "",
+            "Es covalente.",
+            "Es estable."
+          ]
         },
         {
           "type": "quiz",
@@ -1273,7 +1525,13 @@
             "Son triples"
           ],
           "correct": 1,
-          "explanation": "Resonancia."
+          "explanation": "Resonancia.",
+          "why": [
+            "La estructura real es un promedio (resonancia), no un enlace simple y uno doble fijos.",
+            "",
+            "Son covalentes.",
+            "No son triples."
+          ]
         }
       ]
     },
@@ -1351,7 +1609,13 @@
             "Iones aislados"
           ],
           "correct": 2,
-          "explanation": "Mar de electrones."
+          "explanation": "Mar de electrones.",
+          "why": [
+            "La transferencia es del enlace iónico.",
+            "Los pares fijos son del enlace covalente.",
+            "",
+            "Los iones están en una red rodeada de electrones, no aislados."
+          ]
         },
         {
           "type": "quiz",
@@ -1363,7 +1627,13 @@
             "Aluminio"
           ],
           "correct": 1,
-          "explanation": "**Mercurio**."
+          "explanation": "**Mercurio**.",
+          "why": [
+            "El hierro funde a unos 1538 °C.",
+            "",
+            "El cobre funde a unos 1085 °C.",
+            "El aluminio funde a unos 660 °C."
+          ]
         },
         {
           "type": "quiz",
@@ -1375,7 +1645,13 @@
             "Son gases"
           ],
           "correct": 1,
-          "explanation": "No se rompe la unión."
+          "explanation": "No se rompe la unión.",
+          "why": [
+            "El enlace en un metal es metálico, no iónico.",
+            "",
+            "Los metales tienen muchos electrones libres.",
+            "Los metales son casi todos sólidos."
+          ]
         },
         {
           "type": "quiz",
@@ -1387,7 +1663,13 @@
             "Los iones negativos"
           ],
           "correct": 1,
-          "explanation": "El mar de electrones."
+          "explanation": "El mar de electrones.",
+          "why": [
+            "Los protones están fijos en los núcleos.",
+            "",
+            "Los neutrones no tienen carga.",
+            "En un metal no hay iones negativos."
+          ]
         },
         {
           "type": "quiz",
@@ -1399,7 +1681,13 @@
             "Aislantes"
           ],
           "correct": 1,
-          "explanation": "Según la clase."
+          "explanation": "Según la clase.",
+          "why": [
+            "Los metales no se disuelven en agua (los muy reactivos reaccionan con ella, que es otra cosa).",
+            "",
+            "Casi todos son sólidos.",
+            "Son buenos conductores."
+          ]
         }
       ]
     },
@@ -1481,7 +1769,13 @@
             "Están separadas por 5 eV"
           ],
           "correct": 1,
-          "explanation": "Sin brecha."
+          "explanation": "Sin brecha.",
+          "why": [
+            "Muy separadas es el caso de un aislante.",
+            "",
+            "Las bandas existen en todos los sólidos.",
+            "Una brecha de unos 5 eV es típica de un aislante."
+          ]
         },
         {
           "type": "quiz",
@@ -1493,7 +1787,13 @@
             "Negativa"
           ],
           "correct": 2,
-          "explanation": "Los electrones no pueden saltar."
+          "explanation": "Los electrones no pueden saltar.",
+          "why": [
+            "La brecha nula corresponde a un conductor.",
+            "La brecha pequeña es propia de un semiconductor.",
+            "",
+            "No existe una brecha negativa; lo que hay es superposición."
+          ]
         },
         {
           "type": "quiz",
@@ -1505,7 +1805,13 @@
             "La geometría molecular"
           ],
           "correct": 1,
-          "explanation": "Definición de clase."
+          "explanation": "Definición de clase.",
+          "why": [
+            "La masa no tiene que ver con las bandas.",
+            "",
+            "Los isótopos no tienen que ver.",
+            "La geometría la explica el modelo RPECV."
+          ]
         },
         {
           "type": "quiz",
@@ -1517,7 +1823,13 @@
             "Se anula"
           ],
           "correct": 1,
-          "explanation": "Más electrones saltan la brecha."
+          "explanation": "Más electrones saltan la brecha.",
+          "why": [
+            "Disminuye en los metales, no en los semiconductores.",
+            "",
+            "Sí cambia: más electrones saltan a la banda de conducción.",
+            "No se anula; aumenta."
+          ]
         }
       ]
     },
@@ -1668,7 +1980,13 @@
             "8 electrones de valencia"
           ],
           "correct": 1,
-          "explanation": "Grupo 14: **4**."
+          "explanation": "Grupo 14: **4**.",
+          "why": [
+            "3 tienen el boro y el aluminio.",
+            "",
+            "5 tiene el fósforo.",
+            "8 sería el octeto."
+          ]
         },
         {
           "type": "quiz",
@@ -1680,7 +1998,13 @@
             "Galio"
           ],
           "correct": 1,
-          "explanation": "Grupo V (5 e⁻): **P, As, Sb**."
+          "explanation": "Grupo V (5 e⁻): **P, As, Sb**.",
+          "why": [
+            "El boro tiene 3 electrones de valencia: da tipo P.",
+            "",
+            "El aluminio tiene 3 electrones de valencia: da tipo P.",
+            "El galio tiene 3 electrones de valencia: da tipo P."
+          ]
         },
         {
           "type": "quiz",
@@ -1692,7 +2016,13 @@
             "Neutrones"
           ],
           "correct": 1,
-          "explanation": "El dopante del grupo III deja **huecos**."
+          "explanation": "El dopante del grupo III deja **huecos**.",
+          "why": [
+            "Los electrones son mayoritarios en el tipo N.",
+            "",
+            "Los protones no se mueven.",
+            "Los neutrones no son portadores."
+          ]
         },
         {
           "type": "quiz",
@@ -1704,7 +2034,13 @@
             "Se vuelve metal"
           ],
           "correct": 1,
-          "explanation": "Conducción intrínseca."
+          "explanation": "Conducción intrínseca.",
+          "why": [
+            "Sí pasa algo: los electrones saltan.",
+            "",
+            "Los protones no cambian.",
+            "Sigue siendo un semiconductor."
+          ]
         },
         {
           "type": "quiz",
@@ -1716,7 +2052,13 @@
             "Variable"
           ],
           "correct": 2,
-          "explanation": "Sigue siendo **neutro**."
+          "explanation": "Sigue siendo **neutro**.",
+          "why": [
+            "El dopante es un átomo neutro: el material no queda cargado.",
+            "Tampoco queda positivo.",
+            "",
+            "Es siempre neutra."
+          ]
         },
         {
           "type": "quiz",
@@ -1728,7 +2070,13 @@
             "Igual a la del Si"
           ],
           "correct": 1,
-          "explanation": "Muy baja concentración."
+          "explanation": "Muy baja concentración.",
+          "why": [
+            "El 50 % sería una aleación, no un dopaje.",
+            "",
+            "Uno de cada dos sería muchísimo; el dopaje es en trazas.",
+            "Es una cantidad ínfima comparada con el silicio."
+          ]
         },
         {
           "type": "quiz",
@@ -1740,7 +2088,13 @@
             "Un protón real"
           ],
           "correct": 1,
-          "explanation": "Ausencia de electrón = carga +."
+          "explanation": "Ausencia de electrón = carga +.",
+          "why": [
+            "El hueco es la falta de un electrón: se comporta como positivo.",
+            "",
+            "No tiene que ver con el neutrón.",
+            "No es un protón real; es una carga positiva efectiva."
+          ]
         }
       ]
     },
@@ -1824,7 +2178,13 @@
             "Ninguna"
           ],
           "correct": 2,
-          "explanation": "Electrones libres."
+          "explanation": "Electrones libres.",
+          "why": [
+            "Los iónicos sólidos tienen los iones fijos.",
+            "Los covalentes no tienen cargas libres.",
+            "",
+            "Los metálicos sí conducen."
+          ]
         },
         {
           "type": "quiz",
@@ -1836,7 +2196,13 @@
             "Tiene puentes de hidrógeno"
           ],
           "correct": 1,
-          "explanation": "Red covalente gigante."
+          "explanation": "Red covalente gigante.",
+          "why": [
+            "El SiO₂ no es iónico: Si y O son no metales.",
+            "",
+            "No es metálico.",
+            "Los puentes de hidrógeno son débiles y no explicarían un punto de fusión tan alto."
+          ]
         },
         {
           "type": "quiz",
@@ -1848,7 +2214,13 @@
             "Dativo"
           ],
           "correct": 1,
-          "explanation": "Metal + no metal."
+          "explanation": "Metal + no metal.",
+          "why": [
+            "Li es un metal y O un no metal: no es covalente.",
+            "",
+            "Tiene un no metal (O).",
+            "El dativo es covalente."
+          ]
         },
         {
           "type": "quiz",
@@ -1860,7 +2232,13 @@
             "El mercurio"
           ],
           "correct": 1,
-          "explanation": "Grafito: excepción."
+          "explanation": "Grafito: excepción.",
+          "why": [
+            "Los metales son conductores.",
+            "",
+            "Los iónicos fundidos conducen.",
+            "El mercurio es un metal conductor."
+          ]
         }
       ]
     }

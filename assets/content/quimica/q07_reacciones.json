@@ -121,7 +121,13 @@
             "Es reversible"
           ],
           "correct": 1,
-          "explanation": "**↓** = precipitado. ↑ = gas."
+          "explanation": "**↓** = precipitado. ↑ = gas.",
+          "why": [
+            "El gas se indica con ↑.",
+            "",
+            "El calor se indica con Δ.",
+            "La reacción reversible se indica con ⇌."
+          ]
         },
         {
           "type": "quiz",
@@ -133,7 +139,13 @@
             "Calor"
           ],
           "correct": 1,
-          "explanation": "Reacción **reversible**."
+          "explanation": "Reacción **reversible**.",
+          "why": [
+            "La irreversible se indica con →.",
+            "",
+            "El catalizador se escribe sobre la flecha.",
+            "El calor se indica con Δ."
+          ]
         },
         {
           "type": "quiz",
@@ -145,7 +157,13 @@
             "Es un producto"
           ],
           "correct": 1,
-          "explanation": "Acelera **sin consumirse**."
+          "explanation": "Acelera **sin consumirse**.",
+          "why": [
+            "El catalizador se recupera intacto al final.",
+            "",
+            "Lo que hace es acelerarla.",
+            "No aparece entre los productos."
+          ]
         },
         {
           "type": "quiz",
@@ -157,7 +175,13 @@
             "Los isótopos"
           ],
           "correct": 1,
-          "explanation": "La **velocidad**."
+          "explanation": "La **velocidad**.",
+          "why": [
+            "La energía la estudia la termoquímica (ΔH, ΔG).",
+            "",
+            "Las masas son tema de la estequiometría.",
+            "Los isótopos no son tema de la cinética."
+          ]
         },
         {
           "type": "quiz",
@@ -169,7 +193,13 @@
             "3"
           ],
           "correct": 2,
-          "explanation": "3 · 4 = **12**."
+          "explanation": "3 · 4 = **12**.",
+          "why": [
+            "4 son los átomos de una sola molécula; hay 3 moléculas.",
+            "7 son todos los átomos de una molécula (2 + 1 + 4).",
+            "",
+            "3 es el coeficiente, no los oxígenos."
+          ]
         },
         {
           "type": "quiz",
@@ -181,7 +211,13 @@
             "Ninguno"
           ],
           "correct": 1,
-          "explanation": "Solo los **coeficientes**."
+          "explanation": "Solo los **coeficientes**.",
+          "why": [
+            "Cambiar un subíndice cambia la sustancia (H₂O frente a H₂O₂).",
+            "",
+            "Los subíndices nunca se tocan.",
+            "Los coeficientes sí se cambian."
+          ]
         },
         {
           "type": "quiz",
@@ -193,7 +229,13 @@
             "Disolver azúcar"
           ],
           "correct": 2,
-          "explanation": "La **oxidación** forma una sustancia nueva."
+          "explanation": "La **oxidación** forma una sustancia nueva.",
+          "why": [
+            "Al hervir, el agua sigue siendo H₂O: es físico.",
+            "El vidrio roto sigue siendo vidrio.",
+            "",
+            "El azúcar disuelto sigue siendo azúcar: se recupera al evaporar."
+          ]
         }
       ]
     },
@@ -342,7 +384,13 @@
             "Desplazamiento doble"
           ],
           "correct": 1,
-          "explanation": "Un solo producto: **síntesis**."
+          "explanation": "Un solo producto: **síntesis**.",
+          "why": [
+            "Descomposición es al revés: AB → A + B.",
+            "",
+            "En el desplazamiento simple hay dos productos.",
+            "En el doble hay dos compuestos de cada lado."
+          ]
         },
         {
           "type": "quiz",
@@ -354,7 +402,13 @@
             "Neutralización"
           ],
           "correct": 1,
-          "explanation": "Un solo reactivo: **descomposición**."
+          "explanation": "Un solo reactivo: **descomposición**.",
+          "why": [
+            "Síntesis es al revés.",
+            "",
+            "En el desplazamiento simple hay dos reactivos.",
+            "La neutralización es ácido + base."
+          ]
         },
         {
           "type": "quiz",
@@ -366,7 +420,13 @@
             "Desplazamiento doble"
           ],
           "correct": 2,
-          "explanation": "Un elemento libre reemplaza a otro: **desplazamiento simple**."
+          "explanation": "Un elemento libre reemplaza a otro: **desplazamiento simple**.",
+          "why": [
+            "La síntesis tiene un solo producto.",
+            "La descomposición tiene un solo reactivo.",
+            "",
+            "En el doble no hay elementos libres."
+          ]
         },
         {
           "type": "quiz",
@@ -378,7 +438,13 @@
             "Combustión"
           ],
           "correct": 1,
-          "explanation": "Intercambio de parejas: **desplazamiento doble**."
+          "explanation": "Intercambio de parejas: **desplazamiento doble**.",
+          "why": [
+            "En el simple hay un elemento libre.",
+            "",
+            "La síntesis tiene un solo producto.",
+            "La combustión es con O₂ y da CO₂ y H₂O."
+          ]
         },
         {
           "type": "quiz",
@@ -390,7 +456,13 @@
             "Desplazamiento doble"
           ],
           "correct": 2,
-          "explanation": "El zinc libre desplaza al hidrógeno: **simple**."
+          "explanation": "El zinc libre desplaza al hidrógeno: **simple**.",
+          "why": [
+            "Hay dos productos.",
+            "Hay dos reactivos.",
+            "",
+            "El Zn es un elemento libre, no un compuesto."
+          ]
         },
         {
           "type": "quiz",
@@ -402,7 +474,13 @@
             "Descomposición"
           ],
           "correct": 1,
-          "explanation": "Ag y Na intercambian pareja: **doble** (además de precipitación)."
+          "explanation": "Ag y Na intercambian pareja: **doble** (además de precipitación).",
+          "why": [
+            "No hay ningún elemento libre: los cuatro son compuestos.",
+            "",
+            "Hay dos productos.",
+            "Hay dos reactivos."
+          ]
         },
         {
           "type": "quiz",
@@ -414,7 +492,13 @@
             "Neutralización"
           ],
           "correct": 1,
-          "explanation": "Un reactivo que se separa: **descomposición**."
+          "explanation": "Un reactivo que se separa: **descomposición**.",
+          "why": [
+            "Hay un solo reactivo y dos productos.",
+            "",
+            "No hay un elemento libre.",
+            "No es ácido con base."
+          ]
         },
         {
           "type": "quiz",
@@ -426,7 +510,13 @@
             "Desplazamiento doble"
           ],
           "correct": 0,
-          "explanation": "Dos reactivos, un producto: **síntesis**."
+          "explanation": "Dos reactivos, un producto: **síntesis**.",
+          "why": [
+            "",
+            "Hay dos reactivos y un solo producto.",
+            "No hay un elemento libre.",
+            "Hay un solo producto."
+          ]
         },
         {
           "type": "quiz",
@@ -438,7 +528,13 @@
             "Descomposición"
           ],
           "correct": 1,
-          "explanation": "El hierro libre desplaza al cobre: **simple**."
+          "explanation": "El hierro libre desplaza al cobre: **simple**.",
+          "why": [
+            "Hay dos productos.",
+            "",
+            "El Fe es un elemento libre.",
+            "Hay dos reactivos."
+          ]
         },
         {
           "type": "quiz",
@@ -450,7 +546,13 @@
             "Mg + HCl"
           ],
           "correct": 2,
-          "explanation": "El cobre es **menos activo** que el hidrógeno: no lo desplaza."
+          "explanation": "El cobre es **menos activo** que el hidrógeno: no lo desplaza.",
+          "why": [
+            "El Zn está antes que el H en la serie de actividad: sí lo desplaza.",
+            "El Fe es más activo que el Cu: sí lo desplaza.",
+            "",
+            "El Mg es muy activo: sí desplaza al H."
+          ]
         },
         {
           "type": "quiz",
@@ -462,7 +564,13 @@
             "Combustión"
           ],
           "correct": 1,
-          "explanation": "**Descomposición** (ejemplo del apunte)."
+          "explanation": "**Descomposición** (ejemplo del apunte).",
+          "why": [
+            "Un reactivo da dos productos: no es síntesis.",
+            "",
+            "No hay un elemento libre como reactivo.",
+            "La combustión necesita O₂ como reactivo; aquí el O₂ es un producto."
+          ]
         },
         {
           "type": "quiz",
@@ -474,7 +582,13 @@
             "Descomposición"
           ],
           "correct": 1,
-          "explanation": "El cloro libre desplaza al bromo: **simple**."
+          "explanation": "El cloro libre desplaza al bromo: **simple**.",
+          "why": [
+            "El Cl₂ es un elemento libre, así que no es doble.",
+            "",
+            "Hay dos productos.",
+            "Hay dos reactivos."
+          ]
         }
       ]
     },
@@ -579,7 +693,13 @@
             "Solo agua"
           ],
           "correct": 1,
-          "explanation": "**Sal + agua**."
+          "explanation": "**Sal + agua**.",
+          "why": [
+            "Una neutralización no desprende gas.",
+            "",
+            "El óxido no es producto de la neutralización.",
+            "Falta la sal."
+          ]
         },
         {
           "type": "quiz",
@@ -591,7 +711,13 @@
             "Amarilla"
           ],
           "correct": 1,
-          "explanation": "pH > 8.3: **rosada**."
+          "explanation": "pH > 8.3: **rosada**.",
+          "why": [
+            "La fenolftaleína es incolora con pH < 8.3.",
+            "",
+            "Rojo es el color del naranja de metilo en medio ácido.",
+            "Amarillo es el naranja de metilo con pH > 4.6."
+          ]
         },
         {
           "type": "quiz",
@@ -603,7 +729,13 @@
             "Rosado"
           ],
           "correct": 1,
-          "explanation": "pH < 4.6: **rojo**."
+          "explanation": "pH < 4.6: **rojo**.",
+          "why": [
+            "El amarillo es con pH > 4.6.",
+            "",
+            "El naranja de metilo no queda incoloro.",
+            "Rosado es la fenolftaleína en medio básico."
+          ]
         },
         {
           "type": "quiz",
@@ -615,7 +747,13 @@
             "CO₂ y H₂"
           ],
           "correct": 1,
-          "explanation": "**CO₂ y H₂O**."
+          "explanation": "**CO₂ y H₂O**.",
+          "why": [
+            "El CO es de la combustión parcial.",
+            "",
+            "No se separan los elementos.",
+            "El hidrógeno queda en el agua, no como H₂."
+          ]
         },
         {
           "type": "quiz",
@@ -627,7 +765,13 @@
             "Solo CO₂"
           ],
           "correct": 1,
-          "explanation": "**CO** (con poco oxígeno) y H₂O."
+          "explanation": "**CO** (con poco oxígeno) y H₂O.",
+          "why": [
+            "CO₂ es de la combustión total.",
+            "",
+            "El O₂ es un reactivo, no un producto.",
+            "Falta el agua, y el CO₂ es de la combustión total."
+          ]
         },
         {
           "type": "quiz",
@@ -639,7 +783,13 @@
             "Síntesis"
           ],
           "correct": 1,
-          "explanation": "Se forma un sólido: **precipitación**."
+          "explanation": "Se forma un sólido: **precipitación**.",
+          "why": [
+            "No es ácido con base.",
+            "",
+            "No hay combustible ni O₂.",
+            "Hay dos productos."
+          ]
         },
         {
           "type": "quiz",
@@ -651,7 +801,13 @@
             "Descomposición"
           ],
           "correct": 1,
-          "explanation": "Base + ácido: **neutralización**."
+          "explanation": "Base + ácido: **neutralización**.",
+          "why": [
+            "No se forma un sólido.",
+            "",
+            "No hay O₂ ni combustible.",
+            "Hay dos reactivos."
+          ]
         }
       ]
     },
@@ -777,7 +933,13 @@
             "Pérdida de neutrones"
           ],
           "correct": 1,
-          "explanation": "**Pérdida** de electrones; el número de oxidación sube."
+          "explanation": "**Pérdida** de electrones; el número de oxidación sube.",
+          "why": [
+            "Ganar electrones es reducirse.",
+            "",
+            "Los protones no cambian en una reacción química.",
+            "Los neutrones no participan."
+          ]
         },
         {
           "type": "quiz",
@@ -789,7 +951,13 @@
             "Aumento del número de oxidación"
           ],
           "correct": 1,
-          "explanation": "**Ganancia** de electrones; el número de oxidación baja."
+          "explanation": "**Ganancia** de electrones; el número de oxidación baja.",
+          "why": [
+            "Perder electrones es oxidarse.",
+            "",
+            "A veces pierde oxígeno, pero la definición es ganar electrones.",
+            "Al reducirse el número de oxidación baja."
+          ]
         },
         {
           "type": "quiz",
@@ -801,7 +969,13 @@
             "Pierde electrones"
           ],
           "correct": 1,
-          "explanation": "El oxidante **se reduce** (acepta electrones)."
+          "explanation": "El oxidante **se reduce** (acepta electrones).",
+          "why": [
+            "El que se oxida es el agente reductor.",
+            "",
+            "Sí cambia: gana electrones.",
+            "El que pierde electrones es el reductor."
+          ]
         },
         {
           "type": "quiz",
@@ -813,7 +987,13 @@
             "−1"
           ],
           "correct": 1,
-          "explanation": "Elemento libre: **0**."
+          "explanation": "Elemento libre: **0**.",
+          "why": [
+            "−2 es el oxígeno en compuestos.",
+            "",
+            "+2 no aplica a un elemento libre.",
+            "−1 es el oxígeno en peróxidos."
+          ]
         },
         {
           "type": "quiz",
@@ -825,7 +1005,13 @@
             "+2"
           ],
           "correct": 1,
-          "explanation": "2 + S − 8 = 0 → **+6**."
+          "explanation": "2 + S − 8 = 0 → **+6**.",
+          "why": [
+            "+4 es el S en el SO₂.",
+            "",
+            "−2 es el S en sulfuros como el H₂S.",
+            "+2 no cumple 2 + S − 8 = 0."
+          ]
         },
         {
           "type": "quiz",
@@ -837,7 +1023,13 @@
             "+1"
           ],
           "correct": 1,
-          "explanation": "En peróxidos: **−1**."
+          "explanation": "En peróxidos: **−1**.",
+          "why": [
+            "−2 es el oxígeno normal, pero en peróxidos es −1.",
+            "",
+            "0 sería oxígeno libre.",
+            "El oxígeno no es +1 en el agua oxigenada."
+          ]
         },
         {
           "type": "quiz",
@@ -849,7 +1041,13 @@
             "Gana electrones"
           ],
           "correct": 1,
-          "explanation": "0 → +3: se **oxida**."
+          "explanation": "0 → +3: se **oxida**.",
+          "why": [
+            "Pasa de 0 a +3: pierde electrones.",
+            "",
+            "Sí cambia.",
+            "Pierde electrones, no los gana."
+          ]
         },
         {
           "type": "quiz",
@@ -861,7 +1059,13 @@
             "Se descompuso"
           ],
           "correct": 1,
-          "explanation": "Bajó su número de oxidación: se **redujo** (ganó electrones)."
+          "explanation": "Bajó su número de oxidación: se **redujo** (ganó electrones).",
+          "why": [
+            "Oxidarse es subir el número de oxidación.",
+            "",
+            "Sí cambió.",
+            "Descomponerse es otra clasificación."
+          ]
         }
       ]
     },
@@ -950,7 +1154,13 @@
             "Ley de Hess"
           ],
           "correct": 1,
-          "explanation": "Los átomos se **conservan**."
+          "explanation": "Los átomos se **conservan**.",
+          "why": [
+            "Avogadro trata del volumen de los gases.",
+            "",
+            "Hund trata los electrones en orbitales.",
+            "Hess trata de sumar entalpías."
+          ]
         },
         {
           "type": "quiz",
@@ -962,7 +1172,13 @@
             "Los gases nobles"
           ],
           "correct": 1,
-          "explanation": "Se dejan para el final el **H y el O**."
+          "explanation": "Se dejan para el final el **H y el O**.",
+          "why": [
+            "Los metales conviene balancearlos primero.",
+            "",
+            "El carbono se balancea antes que H y O.",
+            "Los gases nobles casi no reaccionan."
+          ]
         },
         {
           "type": "quiz",
@@ -974,7 +1190,13 @@
             "7"
           ],
           "correct": 2,
-          "explanation": "C₃H₈ + **5**O₂ → 3CO₂ + 4H₂O."
+          "explanation": "C₃H₈ + **5**O₂ → 3CO₂ + 4H₂O.",
+          "why": [
+            "Con 2 O₂ no alcanzan los 10 oxígenos que hay a la derecha.",
+            "3 es el coeficiente del CO₂.",
+            "",
+            "7 sobra: a la derecha hay 10 oxígenos, así que son 5 O₂."
+          ]
         },
         {
           "type": "quiz",
@@ -986,7 +1208,13 @@
             "Sí, si hay calor"
           ],
           "correct": 1,
-          "explanation": "Hay 2 O a la izquierda y 1 a la derecha. Balanceada: **2H₂ + O₂ → 2H₂O** (sin tocar subíndices)."
+          "explanation": "Hay 2 O a la izquierda y 1 a la derecha. Balanceada: **2H₂ + O₂ → 2H₂O** (sin tocar subíndices).",
+          "why": [
+            "Hay 2 O a la izquierda y 1 a la derecha.",
+            "",
+            "No se cambian subíndices: eso cambiaría la sustancia.",
+            "El calor no cambia el número de átomos."
+          ]
         }
       ]
     },
@@ -1099,7 +1327,13 @@
             "Reversible"
           ],
           "correct": 1,
-          "explanation": "ΔH negativo: **exotérmica**."
+          "explanation": "ΔH negativo: **exotérmica**.",
+          "why": [
+            "Endotérmica tiene ΔH positivo.",
+            "",
+            "La espontaneidad la decide ΔG, no ΔH.",
+            "El signo de ΔH no indica si es reversible."
+          ]
         },
         {
           "type": "quiz",
@@ -1111,7 +1345,13 @@
             "Siempre es espontánea"
           ],
           "correct": 1,
-          "explanation": "**Absorbe** calor (ΔH > 0)."
+          "explanation": "**Absorbe** calor (ΔH > 0).",
+          "why": [
+            "Liberar calor es ser exotérmica.",
+            "",
+            "ΔH negativo es exotérmica.",
+            "Puede no ser espontánea: depende de ΔG."
+          ]
         },
         {
           "type": "quiz",
@@ -1123,7 +1363,13 @@
             "No existe"
           ],
           "correct": 1,
-          "explanation": "Elemento puro en su estado natural: **0**."
+          "explanation": "Elemento puro en su estado natural: **0**.",
+          "why": [
+            "−393.5 kJ/mol es la entalpía de formación del CO₂.",
+            "",
+            "Los elementos puros valen 0.",
+            "Sí existe: es 0 por convenio."
+          ]
         },
         {
           "type": "quiz",
@@ -1135,7 +1381,13 @@
             "−137.82 kJ"
           ],
           "correct": 1,
-          "explanation": "2 · (−45.94) = **−91.88 kJ**."
+          "explanation": "2 · (−45.94) = **−91.88 kJ**.",
+          "why": [
+            "−45.94 kJ es por 1 mol; la ecuación forma 2.",
+            "",
+            "El signo es negativo: la reacción es exotérmica.",
+            "−137.82 kJ sería multiplicar por 3."
+          ]
         },
         {
           "type": "quiz",
@@ -1147,7 +1399,13 @@
             "Siempre no espontánea"
           ],
           "correct": 1,
-          "explanation": "Libera calor: **exotérmica**."
+          "explanation": "Libera calor: **exotérmica**.",
+          "why": [
+            "La combustión libera calor.",
+            "",
+            "Siempre libera calor.",
+            "La combustión es espontánea una vez iniciada."
+          ]
         }
       ]
     },
@@ -1299,7 +1557,13 @@
             "Endotérmica"
           ],
           "correct": 1,
-          "explanation": "ΔG negativo: **espontánea**."
+          "explanation": "ΔG negativo: **espontánea**.",
+          "why": [
+            "ΔG negativo significa espontánea.",
+            "",
+            "El equilibrio es ΔG = 0.",
+            "ΔG no indica si es endotérmica; eso lo dice ΔH."
+          ]
         },
         {
           "type": "quiz",
@@ -1311,7 +1575,13 @@
             "Espontánea solo a baja T"
           ],
           "correct": 1,
-          "explanation": "Ambos favorecen: **siempre espontánea**."
+          "explanation": "Ambos favorecen: **siempre espontánea**.",
+          "why": [
+            "Ambos signos favorecen la espontaneidad.",
+            "",
+            "Es espontánea a cualquier temperatura, no solo alta.",
+            "Es espontánea a cualquier temperatura, no solo baja."
+          ]
         },
         {
           "type": "quiz",
@@ -1323,7 +1593,13 @@
             "Espontánea a baja T"
           ],
           "correct": 1,
-          "explanation": "Ambos en contra: **nunca espontánea**."
+          "explanation": "Ambos en contra: **nunca espontánea**.",
+          "why": [
+            "Ambos signos están en contra.",
+            "",
+            "A alta T, −TΔS es positivo y empeora.",
+            "A baja T, ΔH positivo sigue mandando."
+          ]
         },
         {
           "type": "quiz",
@@ -1335,7 +1611,13 @@
             "A bajas temperaturas"
           ],
           "correct": 2,
-          "explanation": "El término −TΔS gana a **alta T**."
+          "explanation": "El término −TΔS gana a **alta T**.",
+          "why": [
+            "A baja T domina ΔH positivo: no es espontánea.",
+            "A alta T sí lo es.",
+            "",
+            "A baja T domina ΔH positivo."
+          ]
         },
         {
           "type": "quiz",
@@ -1347,7 +1629,13 @@
             "A bajas temperaturas"
           ],
           "correct": 3,
-          "explanation": "A **baja T** domina ΔH negativo."
+          "explanation": "A **baja T** domina ΔH negativo.",
+          "why": [
+            "A alta T domina −TΔS, que es positivo.",
+            "A baja T sí lo es.",
+            "A alta T deja de serlo.",
+            ""
+          ]
         },
         {
           "type": "quiz",
@@ -1359,7 +1647,13 @@
             "La masa"
           ],
           "correct": 1,
-          "explanation": "**Desorden**."
+          "explanation": "**Desorden**.",
+          "why": [
+            "El calor es energía en tránsito.",
+            "",
+            "La velocidad la estudia la cinética.",
+            "La masa no tiene que ver."
+          ]
         },
         {
           "type": "quiz",
@@ -1371,7 +1665,13 @@
             "−50 kJ"
           ],
           "correct": 1,
-          "explanation": "ΔS = −0.100 kJ/K → ΔG = −50 − 300(−0.1) = −50 + 30 = **−20 kJ**."
+          "explanation": "ΔS = −0.100 kJ/K → ΔG = −50 − 300(−0.1) = −50 + 30 = **−20 kJ**.",
+          "why": [
+            "−80 sale de restar en lugar de sumar: −50 − 300(−0.1) = −50 + 30.",
+            "",
+            "+29 950 sale de no pasar ΔS a kJ/K.",
+            "−50 ignora el término TΔS."
+          ]
         },
         {
           "type": "quiz",
@@ -1383,7 +1683,13 @@
             "Cualquiera"
           ],
           "correct": 1,
-          "explanation": "Siempre **kelvin**."
+          "explanation": "Siempre **kelvin**.",
+          "why": [
+            "En °C la fórmula da resultados erróneos.",
+            "",
+            "°F no se usa.",
+            "Siempre en kelvin."
+          ]
         }
       ]
     },
@@ -1533,7 +1839,13 @@
             "6.022 L"
           ],
           "correct": 2,
-          "explanation": "**22.4 L**."
+          "explanation": "**22.4 L**.",
+          "why": [
+            "1 L no es el volumen molar.",
+            "18 L confunde con los 18 g/mol del agua.",
+            "",
+            "6.022 L confunde con el número de Avogadro."
+          ]
         },
         {
           "type": "quiz",
@@ -1545,7 +1857,13 @@
             "6"
           ],
           "correct": 1,
-          "explanation": "3 mol H₂ → **2 mol** NH₃."
+          "explanation": "3 mol H₂ → **2 mol** NH₃.",
+          "why": [
+            "1 mol de NH₃ sale de 1.5 mol de H₂.",
+            "",
+            "3 es lo que hay de H₂, no lo que sale de NH₃.",
+            "6 sería multiplicar en lugar de usar la relación 3 : 2."
+          ]
         },
         {
           "type": "quiz",
@@ -1557,7 +1875,13 @@
             "El número de moléculas"
           ],
           "correct": 1,
-          "explanation": "La **masa** (28 + 6 = 34 g). Los moles pueden cambiar."
+          "explanation": "La **masa** (28 + 6 = 34 g). Los moles pueden cambiar.",
+          "why": [
+            "Los moles pueden cambiar (4 a 2 en el NH₃).",
+            "",
+            "El volumen puede cambiar.",
+            "Las moléculas pueden cambiar."
+          ]
         },
         {
           "type": "quiz",
@@ -1569,7 +1893,13 @@
             "El producto"
           ],
           "correct": 1,
-          "explanation": "El que **se acaba primero** y decide el producto."
+          "explanation": "El que **se acaba primero** y decide el producto.",
+          "why": [
+            "La masa no decide; deciden los moles comparados con la ecuación.",
+            "",
+            "El catalizador no se consume.",
+            "El limitante es un reactivo."
+          ]
         },
         {
           "type": "quiz",
@@ -1581,7 +1911,13 @@
             "216"
           ],
           "correct": 2,
-          "explanation": "2·56 + 3·16 = **160 g/mol**."
+          "explanation": "2·56 + 3·16 = **160 g/mol**.",
+          "why": [
+            "72 sería 56 + 16.",
+            "128 sale de 2·56 + 16.",
+            "",
+            "216 sale de 3·56 + 3·16."
+          ]
         },
         {
           "type": "quiz",
@@ -1593,7 +1929,13 @@
             "Sí, a cualquier temperatura"
           ],
           "correct": 1,
-          "explanation": "Solo para **gases** en condiciones normales."
+          "explanation": "Solo para **gases** en condiciones normales.",
+          "why": [
+            "El agua líquida ocupa mucho menos: 18 mL por mol.",
+            "",
+            "A 100 °C ya no son condiciones normales.",
+            "Solo vale para gases a 0 °C y 1 atm."
+          ]
         }
       ]
     },
@@ -1646,7 +1988,13 @@
             "Simple o doble"
           ],
           "correct": 1,
-          "explanation": "Por energía (ΔH): **endotérmica o exotérmica**."
+          "explanation": "Por energía (ΔH): **endotérmica o exotérmica**.",
+          "why": [
+            "Síntesis o descomposición es según el comportamiento.",
+            "",
+            "Espontánea o no espontánea es según ΔG.",
+            "Simple o doble es según el comportamiento."
+          ]
         },
         {
           "type": "quiz",
@@ -1658,7 +2006,13 @@
             "El pH"
           ],
           "correct": 1,
-          "explanation": "La energía libre de Gibbs **ΔG**."
+          "explanation": "La energía libre de Gibbs **ΔG**.",
+          "why": [
+            "ΔH indica la energía (endotérmica o exotérmica).",
+            "",
+            "ΔS solo no basta: hay que combinarlo con ΔH y T.",
+            "El pH mide la acidez."
+          ]
         },
         {
           "type": "quiz",
@@ -1670,7 +2024,13 @@
             "Nunca"
           ],
           "correct": 1,
-          "explanation": "Si ΔS < 0, a temperatura alta puede ser no espontánea. Exotérmica no implica espontánea."
+          "explanation": "Si ΔS < 0, a temperatura alta puede ser no espontánea. Exotérmica no implica espontánea.",
+          "why": [
+            "No siempre: depende de ΔS y T.",
+            "",
+            "No depende de que sea combustión.",
+            "Muchas exotérmicas sí son espontáneas."
+          ]
         },
         {
           "type": "quiz",
@@ -1682,7 +2042,13 @@
             "S + O₂ → SO₂"
           ],
           "correct": 1,
-          "explanation": "Un elemento libre (Mg) desplaza al H: **simple**."
+          "explanation": "Un elemento libre (Mg) desplaza al H: **simple**.",
+          "why": [
+            "Es doble: no hay un elemento libre.",
+            "",
+            "Es descomposición: un solo reactivo.",
+            "Es síntesis: un solo producto."
+          ]
         },
         {
           "type": "quiz",
@@ -1694,7 +2060,13 @@
             "Doble"
           ],
           "correct": 1,
-          "explanation": "Un reactivo: **descomposición**."
+          "explanation": "Un reactivo: **descomposición**.",
+          "why": [
+            "Un reactivo da dos productos: no es síntesis.",
+            "",
+            "No hay un elemento libre como reactivo.",
+            "Hay un solo reactivo."
+          ]
         },
         {
           "type": "quiz",
@@ -1706,7 +2078,13 @@
             "Doble"
           ],
           "correct": 0,
-          "explanation": "Un producto: **síntesis**."
+          "explanation": "Un producto: **síntesis**.",
+          "why": [
+            "",
+            "Hay dos reactivos.",
+            "Hay un solo producto.",
+            "Hay un solo producto."
+          ]
         },
         {
           "type": "quiz",
@@ -1718,7 +2096,13 @@
             "⇌"
           ],
           "correct": 1,
-          "explanation": "**↑** gas; ↓ precipitado."
+          "explanation": "**↑** gas; ↓ precipitado.",
+          "why": [
+            "↓ indica un precipitado.",
+            "",
+            "Δ indica calor.",
+            "⇌ indica una reacción reversible."
+          ]
         },
         {
           "type": "quiz",
@@ -1730,7 +2114,13 @@
             "No participa"
           ],
           "correct": 1,
-          "explanation": "El reductor **se oxida** (cede electrones)."
+          "explanation": "El reductor **se oxida** (cede electrones).",
+          "why": [
+            "El que se reduce es el oxidante.",
+            "",
+            "El reductor pierde electrones.",
+            "Sí participa: cede electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -1742,7 +2132,13 @@
             "Depende"
           ],
           "correct": 2,
-          "explanation": "**Cero**."
+          "explanation": "**Cero**.",
+          "why": [
+            "Es cero por convenio.",
+            "Es cero.",
+            "",
+            "No depende."
+          ]
         },
         {
           "type": "quiz",
@@ -1754,7 +2150,13 @@
             "−198 000"
           ],
           "correct": 1,
-          "explanation": "Divide entre 1000: **−0.198 kJ/K**."
+          "explanation": "Divide entre 1000: **−0.198 kJ/K**.",
+          "why": [
+            "Falta dividir entre 1000.",
+            "",
+            "Se divide entre 1000, no entre 10.",
+            "Eso es multiplicar por 1000."
+          ]
         },
         {
           "type": "quiz",
@@ -1766,7 +2168,13 @@
             "O₂"
           ],
           "correct": 2,
-          "explanation": "El **CO** (monóxido de carbono)."
+          "explanation": "El **CO** (monóxido de carbono).",
+          "why": [
+            "El CO₂ es de la combustión completa.",
+            "El agua aparece en ambas.",
+            "",
+            "El O₂ es un reactivo."
+          ]
         },
         {
           "type": "quiz",
@@ -1778,7 +2186,13 @@
             "Una base fuerte"
           ],
           "correct": 1,
-          "explanation": "Incolora: **pH < 8.3**."
+          "explanation": "Incolora: **pH < 8.3**.",
+          "why": [
+            "Con pH mayor a 8.3 sería rosada.",
+            "",
+            "Con pH 14 sería rosada.",
+            "Una base fuerte la pone rosada."
+          ]
         },
         {
           "type": "quiz",
@@ -1790,7 +2204,13 @@
             "Síntesis"
           ],
           "correct": 2,
-          "explanation": "Las clasificaciones **no se excluyen**."
+          "explanation": "Las clasificaciones **no se excluyen**.",
+          "why": [
+            "También es doble.",
+            "También es neutralización.",
+            "",
+            "Hay dos productos."
+          ]
         }
       ]
     }

@@ -133,7 +133,13 @@
             "La configuración electrónica"
           ],
           "correct": 1,
-          "explanation": "Geometría por repulsión de grupos de electrones."
+          "explanation": "Geometría por repulsión de grupos de electrones.",
+          "why": [
+            "La masa molecular se calcula con las masas atómicas.",
+            "",
+            "El tipo de enlace lo indica la diferencia de electronegatividad.",
+            "La configuración electrónica es del átomo, no de la molécula."
+          ]
         },
         {
           "type": "quiz",
@@ -145,7 +151,13 @@
             "Tetraédrica"
           ],
           "correct": 1,
-          "explanation": "2 grupos sin pares libres: **lineal**, 180°."
+          "explanation": "2 grupos sin pares libres: **lineal**, 180°.",
+          "why": [
+            "Angular requeriría pares libres en el Be, y no los tiene.",
+            "",
+            "Trigonal plana necesita 3 grupos; el Be tiene 2.",
+            "Tetraédrica necesita 4 grupos."
+          ]
         },
         {
           "type": "quiz",
@@ -157,7 +169,13 @@
             "120°"
           ],
           "correct": 2,
-          "explanation": "Tetraédrico: **109,5°**."
+          "explanation": "Tetraédrico: **109,5°**.",
+          "why": [
+            "90° corresponde a geometrías octaédricas o cuadradas.",
+            "104.5° es el ángulo del agua (con 2 pares libres).",
+            "",
+            "120° es el de la trigonal plana."
+          ]
         },
         {
           "type": "quiz",
@@ -169,7 +187,13 @@
             "Piramidal"
           ],
           "correct": 1,
-          "explanation": "2 enlaces + 2 pares libres: **angular** 104,5°."
+          "explanation": "2 enlaces + 2 pares libres: **angular** 104,5°.",
+          "why": [
+            "Sería lineal sin pares libres; el O tiene 2.",
+            "",
+            "Tetraédrica es la disposición de los grupos, pero la forma de la molécula (contando solo átomos) es angular.",
+            "Piramidal es el NH₃ (1 par libre)."
+          ]
         },
         {
           "type": "quiz",
@@ -181,7 +205,13 @@
             "5 grupos"
           ],
           "correct": 1,
-          "explanation": "Geometría **piramidal trigonal**."
+          "explanation": "Geometría **piramidal trigonal**.",
+          "why": [
+            "Faltaría contar el par libre.",
+            "",
+            "2 grupos sería lineal.",
+            "5 grupos sería bipiramidal."
+          ]
         },
         {
           "type": "quiz",
@@ -193,7 +223,13 @@
             "No cuenta"
           ],
           "correct": 1,
-          "explanation": "Por eso el CO₂ es lineal."
+          "explanation": "Por eso el CO₂ es lineal.",
+          "why": [
+            "En RPECV un enlace múltiple cuenta como una sola región.",
+            "",
+            "Cuenta como un grupo entero.",
+            "Sí cuenta."
+          ]
         },
         {
           "type": "quiz",
@@ -205,7 +241,13 @@
             "Porque tiene enlaces dobles"
           ],
           "correct": 1,
-          "explanation": "Pares libres > pares enlazantes en repulsión."
+          "explanation": "Pares libres > pares enlazantes en repulsión.",
+          "why": [
+            "El ángulo no depende del tamaño del O, sino de los pares libres.",
+            "",
+            "El agua es covalente.",
+            "El agua tiene enlaces simples."
+          ]
         },
         {
           "type": "quiz",
@@ -217,7 +259,13 @@
             "Lineal"
           ],
           "correct": 1,
-          "explanation": "3 grupos sin pares libres: 120°."
+          "explanation": "3 grupos sin pares libres: 120°.",
+          "why": [
+            "Piramidal requiere un par libre; el B no tiene.",
+            "",
+            "Angular requiere pares libres.",
+            "Lineal requiere 2 grupos; el B tiene 3."
+          ]
         }
       ]
     },
@@ -395,7 +443,13 @@
             "sp³d"
           ],
           "correct": 2,
-          "explanation": "4 grupos → **sp³**."
+          "explanation": "4 grupos → **sp³**.",
+          "why": [
+            "sp es para 2 grupos (lineal).",
+            "sp² es para 3 grupos (trigonal).",
+            "",
+            "sp³d es para 5 grupos."
+          ]
         },
         {
           "type": "quiz",
@@ -407,7 +461,13 @@
             "Cuadrada plana"
           ],
           "correct": 2,
-          "explanation": "6 grupos: **octaédrica**, 90°."
+          "explanation": "6 grupos: **octaédrica**, 90°.",
+          "why": [
+            "Tetraédrica es con 4 grupos.",
+            "Bipiramidal trigonal es con 5.",
+            "",
+            "Cuadrada plana es con 4 enlaces y 2 pares libres."
+          ]
         },
         {
           "type": "quiz",
@@ -419,7 +479,13 @@
             "Octaédrica"
           ],
           "correct": 1,
-          "explanation": "Los dos pares libres quedan opuestos."
+          "explanation": "Los dos pares libres quedan opuestos.",
+          "why": [
+            "Tetraédrica tendría 4 grupos sin pares libres.",
+            "",
+            "Piramidal cuadrada es con 5 enlaces y 1 par libre.",
+            "Octaédrica es la disposición de los 6 grupos; la forma de la molécula es cuadrada plana."
+          ]
         },
         {
           "type": "quiz",
@@ -431,7 +497,13 @@
             "Tetraédrica"
           ],
           "correct": 1,
-          "explanation": "5 grupos: 90°, 120°, 180°."
+          "explanation": "5 grupos: 90°, 120°, 180°.",
+          "why": [
+            "Octaédrica es con 6 grupos.",
+            "",
+            "Forma de T es con 3 enlaces y 2 pares libres.",
+            "Tetraédrica es con 4 grupos."
+          ]
         },
         {
           "type": "quiz",
@@ -443,7 +515,13 @@
             "sp³d²"
           ],
           "correct": 1,
-          "explanation": "1 s + 2 p."
+          "explanation": "1 s + 2 p.",
+          "why": [
+            "sp es para 2 grupos.",
+            "",
+            "sp³ es para 4 grupos.",
+            "sp³d² es para 6 grupos."
+          ]
         },
         {
           "type": "quiz",
@@ -455,7 +533,13 @@
             "Lineal"
           ],
           "correct": 2,
-          "explanation": "3 enlazantes + 2 libres."
+          "explanation": "3 enlazantes + 2 libres.",
+          "why": [
+            "Trigonal plana sería sin pares libres; el Cl tiene 2.",
+            "Piramidal es con 3 enlaces y 1 par libre.",
+            "",
+            "Lineal es con 2 enlaces y 3 pares libres."
+          ]
         },
         {
           "type": "quiz",
@@ -467,7 +551,13 @@
             "El diamante tiene huecos"
           ],
           "correct": 0,
-          "explanation": "Láminas sp² con nube π deslocalizada."
+          "explanation": "Láminas sp² con nube π deslocalizada.",
+          "why": [
+            "",
+            "El diamante es covalente, no metálico.",
+            "El grafito es carbono puro, covalente.",
+            "El diamante tiene todos sus electrones fijos en enlaces sp³; los «huecos» son de los semiconductores."
+          ]
         }
       ]
     },
@@ -607,7 +697,13 @@
             "Metálica"
           ],
           "correct": 1,
-          "explanation": "μ = 0 → apolar."
+          "explanation": "μ = 0 → apolar.",
+          "why": [
+            "Polar es cuando la suma no se anula.",
+            "",
+            "Iónica se refiere al tipo de enlace.",
+            "Metálica no aplica a moléculas."
+          ]
         },
         {
           "type": "quiz",
@@ -619,7 +715,13 @@
             "Porque es iónico"
           ],
           "correct": 1,
-          "explanation": "Geometría simétrica."
+          "explanation": "Geometría simétrica.",
+          "why": [
+            "Sí tiene enlaces: dos dobles C=O.",
+            "",
+            "El O es más electronegativo que el C.",
+            "El CO₂ es covalente."
+          ]
         },
         {
           "type": "quiz",
@@ -631,7 +733,13 @@
             "Arriba"
           ],
           "correct": 1,
-          "explanation": "Hacia la carga δ−."
+          "explanation": "Hacia la carga δ−.",
+          "why": [
+            "Es al revés: apunta al más electronegativo, donde se acumula la carga negativa.",
+            "",
+            "Apunta hacia un átomo, no al centro.",
+            "La dirección depende de los átomos, no de «arriba»."
+          ]
         },
         {
           "type": "quiz",
@@ -643,7 +751,13 @@
             "CH₄"
           ],
           "correct": 2,
-          "explanation": "Angular: los dipolos no se anulan."
+          "explanation": "Angular: los dipolos no se anulan.",
+          "why": [
+            "El CO₂ es lineal: sus dipolos se anulan.",
+            "El BF₃ es trigonal plano y simétrico: se anulan.",
+            "",
+            "El CH₄ es tetraédrico y simétrico: se anulan."
+          ]
         },
         {
           "type": "quiz",
@@ -655,7 +769,13 @@
             "Metálico"
           ],
           "correct": 1,
-          "explanation": "Según la diapositiva."
+          "explanation": "Según la diapositiva.",
+          "why": [
+            "El C=O polar no se compensa con los C–H.",
+            "",
+            "Es covalente.",
+            "No tiene metales."
+          ]
         },
         {
           "type": "quiz",
@@ -667,7 +787,13 @@
             "Del color"
           ],
           "correct": 1,
-          "explanation": "Ambas cosas."
+          "explanation": "Ambas cosas.",
+          "why": [
+            "La masa no influye en la polaridad.",
+            "",
+            "El número de átomos no basta: importa la forma.",
+            "El color no tiene que ver."
+          ]
         },
         {
           "type": "quiz",
@@ -679,7 +805,13 @@
             "1,85 D"
           ],
           "correct": 0,
-          "explanation": "Átomos idénticos."
+          "explanation": "Átomos idénticos.",
+          "why": [
+            "",
+            "Dos átomos iguales no forman dipolo.",
+            "No puede ser infinito.",
+            "1.85 D es el momento dipolar del agua."
+          ]
         }
       ]
     },
@@ -839,7 +971,13 @@
             "La masa del núcleo"
           ],
           "correct": 1,
-          "explanation": "Fusión, ebullición, solubilidad…"
+          "explanation": "Fusión, ebullición, solubilidad…",
+          "why": [
+            "Las propiedades químicas dependen de los enlaces internos.",
+            "",
+            "El número atómico es de cada átomo.",
+            "La masa del núcleo no depende de las fuerzas entre moléculas."
+          ]
         },
         {
           "type": "quiz",
@@ -851,7 +989,13 @@
             "Metálicas"
           ],
           "correct": 1,
-          "explanation": "Iones con el dipolo del agua."
+          "explanation": "Iones con el dipolo del agua.",
+          "why": [
+            "London actúa entre moléculas apolares.",
+            "",
+            "El NaCl se disuelve en iones, no en moléculas apolares.",
+            "No hay metales en la disolución."
+          ]
         },
         {
           "type": "quiz",
@@ -863,7 +1007,13 @@
             "Metales"
           ],
           "correct": 1,
-          "explanation": "Átomos pequeños y muy electronegativos."
+          "explanation": "Átomos pequeños y muy electronegativos.",
+          "why": [
+            "C, S y Cl no son lo bastante electronegativos y pequeños.",
+            "",
+            "Solo con F, O o N.",
+            "Los metales no forman puentes de hidrógeno."
+          ]
         },
         {
           "type": "quiz",
@@ -875,7 +1025,13 @@
             "Ion-dipolo"
           ],
           "correct": 2,
-          "explanation": "**London**."
+          "explanation": "**London**.",
+          "why": [
+            "El puente de hidrógeno necesita moléculas polares con H–F, H–O o H–N.",
+            "Dipolo-dipolo necesita moléculas polares.",
+            "",
+            "Ion-dipolo necesita iones."
+          ]
         },
         {
           "type": "quiz",
@@ -887,7 +1043,13 @@
             "Iónicas"
           ],
           "correct": 1,
-          "explanation": "El agua polariza al O₂."
+          "explanation": "El agua polariza al O₂.",
+          "why": [
+            "El O₂ no es un ion.",
+            "",
+            "No hay metales.",
+            "El O₂ y el agua no forman enlaces iónicos."
+          ]
         },
         {
           "type": "quiz",
@@ -899,7 +1061,13 @@
             "Dipolo-dipolo"
           ],
           "correct": 1,
-          "explanation": "Dipolos instantáneos."
+          "explanation": "Dipolos instantáneos.",
+          "why": [
+            "El puente de hidrógeno solo aparece con H–F, H–O o H–N.",
+            "",
+            "Ion-dipolo solo aparece con iones.",
+            "Dipolo-dipolo solo entre moléculas polares."
+          ]
         },
         {
           "type": "quiz",
@@ -911,7 +1079,13 @@
             "Por la gravedad"
           ],
           "correct": 1,
-          "explanation": "El S no forma puentes de hidrógeno fuertes."
+          "explanation": "El S no forma puentes de hidrógeno fuertes.",
+          "why": [
+            "El H₂S es más pesado (34 g/mol) que el agua (18).",
+            "",
+            "El agua es covalente.",
+            "La gravedad no explica la diferencia."
+          ]
         },
         {
           "type": "quiz",
@@ -923,7 +1097,13 @@
             "Dipolo inducido"
           ],
           "correct": 2,
-          "explanation": "Según la tabla de clase."
+          "explanation": "Según la tabla de clase.",
+          "why": [
+            "London es la más débil.",
+            "Dipolo-dipolo es más débil que ion-dipolo.",
+            "",
+            "El dipolo inducido es débil."
+          ]
         },
         {
           "type": "quiz",
@@ -935,7 +1115,13 @@
             "Los enlaces iónicos"
           ],
           "correct": 1,
-          "explanation": "Fuerzas **inter**moleculares."
+          "explanation": "Fuerzas **inter**moleculares.",
+          "why": [
+            "Los enlaces O–H no se rompen: el vapor sigue siendo H₂O.",
+            "",
+            "Los núcleos no cambian.",
+            "El agua no tiene enlaces iónicos."
+          ]
         }
       ]
     }

@@ -107,7 +107,13 @@
             "Moseley"
           ],
           "correct": 1,
-          "explanation": "**Döbereiner** (1829)."
+          "explanation": "**Döbereiner** (1829).",
+          "why": [
+            "Newlands propuso la ley de las octavas.",
+            "",
+            "Mendeléiev ordenó por masa atómica y dejó huecos.",
+            "Moseley ordenó por número atómico."
+          ]
         },
         {
           "type": "quiz",
@@ -119,7 +125,13 @@
             "Moseley"
           ],
           "correct": 1,
-          "explanation": "**Newlands** (1864): las propiedades se repiten cada 8 elementos."
+          "explanation": "**Newlands** (1864): las propiedades se repiten cada 8 elementos.",
+          "why": [
+            "Döbereiner propuso las tríadas.",
+            "",
+            "Mendeléiev hizo la tabla por masa atómica con huecos.",
+            "Moseley ordenó por Z."
+          ]
         },
         {
           "type": "quiz",
@@ -131,7 +143,13 @@
             "Dalton"
           ],
           "correct": 2,
-          "explanation": "**Mendeléiev** (1869) y predijo Ga, Ge y Sc."
+          "explanation": "**Mendeléiev** (1869) y predijo Ga, Ge y Sc.",
+          "why": [
+            "Moseley reordenó por Z, pero los huecos ya los había dejado Mendeléiev.",
+            "Newlands no dejó espacios: forzó los elementos en grupos de ocho.",
+            "",
+            "Dalton propuso un modelo atómico, no una tabla periódica."
+          ]
         },
         {
           "type": "quiz",
@@ -143,7 +161,13 @@
             "El color"
           ],
           "correct": 1,
-          "explanation": "El **número atómico**, gracias a los espectros de rayos X."
+          "explanation": "El **número atómico**, gracias a los espectros de rayos X.",
+          "why": [
+            "La masa atómica fue el criterio de Mendeléiev.",
+            "",
+            "La densidad no ordena la tabla.",
+            "El color no es un criterio de ordenamiento."
+          ]
         },
         {
           "type": "quiz",
@@ -155,7 +179,13 @@
             "Igual a la del Ba"
           ],
           "correct": 1,
-          "explanation": "(40,1 + 137,3)/2 = 88,7 ≈ 87,6."
+          "explanation": "(40,1 + 137,3)/2 = 88,7 ≈ 87,6.",
+          "why": [
+            "La suma sería mucho mayor que la masa del Ba.",
+            "",
+            "El Sr es intermedio entre Ca y Ba, no el doble del Ca.",
+            "El Ba es el más pesado de los tres."
+          ]
         },
         {
           "type": "quiz",
@@ -167,7 +197,13 @@
             "Que la masa crece siempre"
           ],
           "correct": 1,
-          "explanation": "Definición de clase."
+          "explanation": "Definición de clase.",
+          "why": [
+            "No se refiere a fechas de descubrimiento.",
+            "",
+            "Los elementos son distintos; se parecen por grupos.",
+            "La masa crece casi siempre, pero eso no es la periodicidad."
+          ]
         }
       ]
     },
@@ -299,7 +335,13 @@
             "118"
           ],
           "correct": 2,
-          "explanation": "**18 grupos**, 7 periodos."
+          "explanation": "**18 grupos**, 7 periodos.",
+          "why": [
+            "7 son los periodos (filas).",
+            "8 era el número de grupos de la tabla antigua (A y B).",
+            "",
+            "118 son los elementos conocidos."
+          ]
         },
         {
           "type": "quiz",
@@ -311,7 +353,13 @@
             "f"
           ],
           "correct": 2,
-          "explanation": "Grupos 3 a 12: bloque **d**."
+          "explanation": "Grupos 3 a 12: bloque **d**.",
+          "why": [
+            "El bloque s son los grupos 1 y 2.",
+            "El bloque p son los grupos 13 a 18.",
+            "",
+            "El bloque f son los lantánidos y actínidos."
+          ]
         },
         {
           "type": "quiz",
@@ -323,7 +371,13 @@
             "Porque no son elementos"
           ],
           "correct": 1,
-          "explanation": "Su lugar real está en los periodos 6 y 7."
+          "explanation": "Su lugar real está en los periodos 6 y 7.",
+          "why": [
+            "La mayoría son sólidos metálicos.",
+            "",
+            "Sí tienen electrones, y llenan el subnivel f.",
+            "Son elementos como cualquier otro."
+          ]
         },
         {
           "type": "quiz",
@@ -335,7 +389,13 @@
             "Gas noble"
           ],
           "correct": 2,
-          "explanation": "**Metaloide**: base de los semiconductores."
+          "explanation": "**Metaloide**: base de los semiconductores.",
+          "why": [
+            "No es un metal: es semiconductor y quebradizo.",
+            "Conduce algo de electricidad (semiconductor), cosa que no hacen los no metales típicos.",
+            "",
+            "Es sólido; los gases nobles son el grupo 18."
+          ]
         },
         {
           "type": "quiz",
@@ -347,7 +407,13 @@
             "Lantánidos"
           ],
           "correct": 1,
-          "explanation": "Bloques s y p."
+          "explanation": "Bloques s y p.",
+          "why": [
+            "Del 3 al 12 son los de transición.",
+            "",
+            "El 18 es solo una parte de los representativos.",
+            "Los lantánidos son de transición interna."
+          ]
         },
         {
           "type": "quiz",
@@ -359,7 +425,13 @@
             "No conducen"
           ],
           "correct": 1,
-          "explanation": "Ej. Fe²⁺/Fe³⁺, Cu⁺/Cu²⁺."
+          "explanation": "Ej. Fe²⁺/Fe³⁺, Cu⁺/Cu²⁺.",
+          "why": [
+            "Lo típico de la transición es tener varios estados de oxidación.",
+            "",
+            "Son casi todos sólidos (el mercurio es líquido).",
+            "Conducen muy bien la electricidad."
+          ]
         }
       ]
     },
@@ -577,7 +649,13 @@
             "Su grupo"
           ],
           "correct": 1,
-          "explanation": "Na: n = 3 → periodo 3."
+          "explanation": "Na: n = 3 → periodo 3.",
+          "why": [
+            "Los electrones de valencia indican el grupo, no el periodo.",
+            "",
+            "Los neutrones no tienen relación con la posición.",
+            "El grupo y el periodo son cosas distintas."
+          ]
         },
         {
           "type": "quiz",
@@ -589,7 +667,13 @@
             "Grupo 6, periodo 2"
           ],
           "correct": 1,
-          "explanation": "6 de valencia en bloque p → 10 + 6 = **16**; n = 3 → **periodo 3** (es el azufre)."
+          "explanation": "6 de valencia en bloque p → 10 + 6 = **16**; n = 3 → **periodo 3** (es el azufre).",
+          "why": [
+            "4 son los electrones del 3p, pero el grupo se cuenta con 3s² 3p⁴ = 6 de valencia → grupo 16.",
+            "",
+            "Termina en n = 3, no en n = 4.",
+            "El periodo es 3, no 2; y 6 sería la numeración antigua (VIA)."
+          ]
         },
         {
           "type": "quiz",
@@ -601,7 +685,13 @@
             "18"
           ],
           "correct": 2,
-          "explanation": "Grupo **17**: «formadores de sales»."
+          "explanation": "Grupo **17**: «formadores de sales».",
+          "why": [
+            "El grupo 1 son los alcalinos.",
+            "El grupo 2 son los alcalinotérreos.",
+            "",
+            "El grupo 18 son los gases nobles."
+          ]
         },
         {
           "type": "quiz",
@@ -613,7 +703,13 @@
             "Metal de la tierra"
           ],
           "correct": 1,
-          "explanation": "Del griego: **formadores de sales**."
+          "explanation": "Del griego: **formadores de sales**.",
+          "why": [
+            "«Formador de ácidos» sería oxígeno (oxígeno significa «formador de ácidos»).",
+            "",
+            "Los gases nobles son el grupo 18.",
+            "«Tierra» se refiere a los alcalinotérreos."
+          ]
         },
         {
           "type": "quiz",
@@ -625,7 +721,13 @@
             "No forman compuestos"
           ],
           "correct": 1,
-          "explanation": "Por eso «anfi-»: de ambos tipos."
+          "explanation": "Por eso «anfi-»: de ambos tipos.",
+          "why": [
+            "No solo ácidos: también forman óxidos básicos con metales.",
+            "",
+            "No solo básicos.",
+            "Forman muchísimos compuestos (óxidos, sulfuros…)."
+          ]
         },
         {
           "type": "quiz",
@@ -637,7 +739,13 @@
             "Isótopos"
           ],
           "correct": 1,
-          "explanation": "Valores al formar compuestos."
+          "explanation": "Valores al formar compuestos.",
+          "why": [
+            "La electronegatividad es un solo número (3.0 para el cloro).",
+            "",
+            "La configuración se escribe con subniveles.",
+            "Los isótopos se indican con números másicos."
+          ]
         },
         {
           "type": "quiz",
@@ -649,7 +757,13 @@
             "14"
           ],
           "correct": 1,
-          "explanation": "Bloque s con 2 de valencia: grupo **2** (es el calcio)."
+          "explanation": "Bloque s con 2 de valencia: grupo **2** (es el calcio).",
+          "why": [
+            "El grupo 1 terminaría en s¹.",
+            "",
+            "El grupo 12 terminaría en 4s² 3d¹⁰.",
+            "El grupo 14 terminaría en p²."
+          ]
         }
       ]
     },
@@ -831,7 +945,13 @@
             "La electronegatividad"
           ],
           "correct": 1,
-          "explanation": "Efecto pantalla de los electrones internos."
+          "explanation": "Efecto pantalla de los electrones internos.",
+          "why": [
+            "El número de protones es Z.",
+            "",
+            "Los neutrones no apantallan.",
+            "La electronegatividad es otra propiedad."
+          ]
         },
         {
           "type": "quiz",
@@ -843,7 +963,13 @@
             "Los electrones de otro átomo"
           ],
           "correct": 1,
-          "explanation": "Los internos «tapan» la carga del núcleo."
+          "explanation": "Los internos «tapan» la carga del núcleo.",
+          "why": [
+            "Los protones son los que atraen, no los que apantallan.",
+            "",
+            "Los neutrones no tienen carga y no apantallan.",
+            "El apantallamiento es dentro del mismo átomo."
+          ]
         },
         {
           "type": "quiz",
@@ -855,7 +981,13 @@
             "1,00"
           ],
           "correct": 1,
-          "explanation": "**0,35** (0,30 solo en 1s)."
+          "explanation": "**0,35** (0,30 solo en 1s).",
+          "why": [
+            "0.30 es solo para el grupo 1s.",
+            "",
+            "0.85 es para los electrones del nivel n − 1.",
+            "1.00 es para los niveles n − 2 o inferiores."
+          ]
         },
         {
           "type": "quiz",
@@ -867,7 +999,13 @@
             "0"
           ],
           "correct": 1,
-          "explanation": "Capa n − 1: **0,85**."
+          "explanation": "Capa n − 1: **0,85**.",
+          "why": [
+            "0.35 es para electrones del mismo grupo (n = 3).",
+            "",
+            "1.00 es para n − 2 o inferiores (el 1s).",
+            "Los electrones interiores sí apantallan; 0 es para los de grupos superiores."
+          ]
         },
         {
           "type": "quiz",
@@ -879,7 +1017,13 @@
             "11"
           ],
           "correct": 1,
-          "explanation": "σ = 8·0,85 + 2 = 8,8 → Zef = **2,2**."
+          "explanation": "σ = 8·0,85 + 2 = 8,8 → Zef = **2,2**.",
+          "why": [
+            "1.0 no sale del cálculo: σ = 8(0.85) + 2(1.00) = 8.8.",
+            "",
+            "8.8 es σ, no Zef.",
+            "11 es Z, sin restar el apantallamiento."
+          ]
         },
         {
           "type": "quiz",
@@ -891,7 +1035,13 @@
             "Se anula"
           ],
           "correct": 1,
-          "explanation": "Aumenta Z y el apantallamiento crece poco."
+          "explanation": "Aumenta Z y el apantallamiento crece poco.",
+          "why": [
+            "Disminuye sería al revés: Z aumenta más que el apantallamiento.",
+            "",
+            "Sí cambia: aumenta.",
+            "Nunca se anula: siempre queda atracción."
+          ]
         },
         {
           "type": "quiz",
@@ -903,7 +1053,13 @@
             "7,00"
           ],
           "correct": 0,
-          "explanation": "σ = 6·0,35 + 2·0,85 = 3,8 → **5,2**."
+          "explanation": "σ = 6·0,35 + 2·0,85 = 3,8 → **5,2**.",
+          "why": [
+            "",
+            "9 es Z, sin restar σ.",
+            "3.80 es σ, no Zef.",
+            "7 sería restar solo los 2 electrones internos; hay que aplicar Slater."
+          ]
         }
       ]
     },
@@ -1006,7 +1162,13 @@
             "Se hace cero"
           ],
           "correct": 1,
-          "explanation": "Se añade un nivel n más alto."
+          "explanation": "Se añade un nivel n más alto.",
+          "why": [
+            "Al bajar se agregan niveles: el radio aumenta.",
+            "",
+            "Sí cambia: aumenta.",
+            "El radio nunca es cero."
+          ]
         },
         {
           "type": "quiz",
@@ -1018,7 +1180,13 @@
             "Aumenta y luego disminuye"
           ],
           "correct": 1,
-          "explanation": "Aumenta la carga nuclear efectiva."
+          "explanation": "Aumenta la carga nuclear efectiva.",
+          "why": [
+            "Hacia la derecha aumenta Zef y los electrones se acercan: disminuye.",
+            "",
+            "Sí cambia: disminuye.",
+            "La tendencia general es solo disminuir."
+          ]
         },
         {
           "type": "quiz",
@@ -1030,7 +1198,13 @@
             "Mg"
           ],
           "correct": 0,
-          "explanation": "Mismo periodo: el de la izquierda, **Na**."
+          "explanation": "Mismo periodo: el de la izquierda, **Na**.",
+          "why": [
+            "",
+            "El Cl está a la derecha del periodo: es más pequeño.",
+            "El Ar está al final del periodo.",
+            "El Mg está a la derecha del Na."
+          ]
         },
         {
           "type": "quiz",
@@ -1042,7 +1216,13 @@
             "Depende de la temperatura"
           ],
           "correct": 1,
-          "explanation": "Cationes **menores**: 1,23 → 0,68 Å."
+          "explanation": "Cationes **menores**: 1,23 → 0,68 Å.",
+          "why": [
+            "Al perder electrones se contrae.",
+            "",
+            "Pierde su capa externa: es más pequeño.",
+            "El radio iónico no depende de la temperatura de esa forma."
+          ]
         },
         {
           "type": "quiz",
@@ -1054,7 +1234,13 @@
             "Un catión"
           ],
           "correct": 1,
-          "explanation": "Aniones **mayores**: 0,64 → 1,36 Å."
+          "explanation": "Aniones **mayores**: 0,64 → 1,36 Å.",
+          "why": [
+            "Al ganar un electrón crece.",
+            "",
+            "Gana un electrón: es más grande.",
+            "F⁻ es un anión."
+          ]
         },
         {
           "type": "quiz",
@@ -1066,7 +1252,13 @@
             "0,375 Å"
           ],
           "correct": 1,
-          "explanation": "La mitad: **0,75 Å**."
+          "explanation": "La mitad: **0,75 Å**.",
+          "why": [
+            "1.5 Å es la distancia entre núcleos, no el radio.",
+            "",
+            "3 Å es el doble de la distancia.",
+            "0.375 Å es la cuarta parte; el radio es la mitad."
+          ]
         },
         {
           "type": "quiz",
@@ -1078,7 +1270,13 @@
             "Al³⁺"
           ],
           "correct": 3,
-          "explanation": "Mayor Z (13) con 10 electrones: **Al³⁺**."
+          "explanation": "Mayor Z (13) con 10 electrones: **Al³⁺**.",
+          "why": [
+            "O²⁻ es el más grande: tiene menos protones (8).",
+            "F⁻ tiene 9 protones, menos que el Al³⁺.",
+            "Na⁺ tiene 11 protones, menos que el Al³⁺ (13).",
+            ""
+          ]
         }
       ]
     },
@@ -1353,7 +1551,13 @@
             "Francio"
           ],
           "correct": 2,
-          "explanation": "**F** = 4,0."
+          "explanation": "**F** = 4,0.",
+          "why": [
+            "El oxígeno es el segundo (3.5).",
+            "El cloro tiene 3.0.",
+            "",
+            "El francio es de los menos electronegativos."
+          ]
         },
         {
           "type": "quiz",
@@ -1365,7 +1569,13 @@
             "Sin energía"
           ],
           "correct": 1,
-          "explanation": "Hay que **suministrar** energía para arrancar el electrón."
+          "explanation": "Hay que **suministrar** energía para arrancar el electrón.",
+          "why": [
+            "Exotérmico sería liberar energía; arrancar un electrón requiere energía.",
+            "",
+            "No es nuclear: no cambia el núcleo.",
+            "Siempre requiere energía."
+          ]
         },
         {
           "type": "quiz",
@@ -1377,7 +1587,13 @@
             "O"
           ],
           "correct": 2,
-          "explanation": "EI muy baja (≈ 376 kJ/mol)."
+          "explanation": "EI muy baja (≈ 376 kJ/mol).",
+          "why": [
+            "El helio tiene la energía de ionización más alta.",
+            "El flúor forma aniones.",
+            "",
+            "El oxígeno forma aniones."
+          ]
         },
         {
           "type": "quiz",
@@ -1389,7 +1605,13 @@
             "Un isótopo"
           ],
           "correct": 1,
-          "explanation": "El átomo **captura** un electrón."
+          "explanation": "El átomo **captura** un electrón.",
+          "why": [
+            "El catión se forma al perder electrones (energía de ionización).",
+            "",
+            "El átomo neutro es el de partida.",
+            "Los isótopos no se forman ganando electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -1401,7 +1623,13 @@
             "2372 kJ/mol"
           ],
           "correct": 1,
-          "explanation": "No aceptan electrones: **0**."
+          "explanation": "No aceptan electrones: **0**.",
+          "why": [
+            "Al contrario: los gases nobles no captan electrones.",
+            "",
+            "−330 kJ/mol es del orden de la afinidad del cloro.",
+            "2372 kJ/mol es la energía de ionización del helio."
+          ]
         },
         {
           "type": "quiz",
@@ -1413,7 +1641,13 @@
             "Se duplica"
           ],
           "correct": 1,
-          "explanation": "El electrón está más lejos del núcleo: más fácil de arrancar."
+          "explanation": "El electrón está más lejos del núcleo: más fácil de arrancar.",
+          "why": [
+            "Al bajar el electrón está más lejos: cuesta menos arrancarlo.",
+            "",
+            "Sí cambia: disminuye.",
+            "No hay una regla de duplicarse."
+          ]
         },
         {
           "type": "quiz",
@@ -1425,7 +1659,13 @@
             "Porque su afinidad es cero"
           ],
           "correct": 0,
-          "explanation": "EI₂ ≈ 4562 kJ/mol frente a EI₁ = 496."
+          "explanation": "EI₂ ≈ 4562 kJ/mol frente a EI₁ = 496.",
+          "why": [
+            "",
+            "El sodio tiene 1 electrón de valencia, no 2.",
+            "El sodio es un metal sólido.",
+            "La afinidad tiene que ver con ganar electrones, no con perderlos."
+          ]
         },
         {
           "type": "quiz",
@@ -1437,7 +1677,13 @@
             "1,0 y 4,0"
           ],
           "correct": 0,
-          "explanation": "F 4,0; Li 1,0 (diferencia 3,0: enlace iónico en LiF)."
+          "explanation": "F 4,0; Li 1,0 (diferencia 3,0: enlace iónico en LiF).",
+          "why": [
+            "",
+            "3.5 es el oxígeno.",
+            "2.1 es el hidrógeno; además el orden está mal.",
+            "Está al revés: el flúor es 4.0 y el litio 1.0."
+          ]
         }
       ]
     },
@@ -1609,7 +1855,13 @@
             "No tiene tendencia"
           ],
           "correct": 1,
-          "explanation": "Igual que el radio atómico."
+          "explanation": "Igual que el radio atómico.",
+          "why": [
+            "Hacia arriba y a la derecha aumenta la electronegatividad.",
+            "",
+            "También aumenta hacia abajo.",
+            "Sí tiene tendencia."
+          ]
         },
         {
           "type": "quiz",
@@ -1621,7 +1873,13 @@
             "Muchos electrones de valencia"
           ],
           "correct": 1,
-          "explanation": "Pierden electrones con facilidad."
+          "explanation": "Pierden electrones con facilidad.",
+          "why": [
+            "Los metales tienen energía de ionización baja.",
+            "",
+            "La afinidad alta es de los no metales.",
+            "Los metales tienen pocos electrones de valencia."
+          ]
         },
         {
           "type": "quiz",
@@ -1633,7 +1891,13 @@
             "Fósforo"
           ],
           "correct": 1,
-          "explanation": "Excepción de la tabla: el **grafito**."
+          "explanation": "Excepción de la tabla: el **grafito**.",
+          "why": [
+            "El azufre es aislante.",
+            "",
+            "El oxígeno es aislante.",
+            "El fósforo es aislante."
+          ]
         },
         {
           "type": "quiz",
@@ -1645,7 +1909,13 @@
             "Sodio"
           ],
           "correct": 2,
-          "explanation": "**Mercurio**; Ga y Cs funden cerca de 30 °C."
+          "explanation": "**Mercurio**; Ga y Cs funden cerca de 30 °C.",
+          "why": [
+            "El galio se funde a unos 30 °C: es sólido a temperatura ambiente.",
+            "El cesio se funde a unos 28 °C.",
+            "",
+            "El sodio es sólido."
+          ]
         },
         {
           "type": "quiz",
@@ -1657,7 +1927,13 @@
             "Afinidad electrónica"
           ],
           "correct": 2,
-          "explanation": "El radio aumenta hacia abajo-izquierda."
+          "explanation": "El radio aumenta hacia abajo-izquierda.",
+          "why": [
+            "La electronegatividad sí aumenta hacia arriba y a la derecha.",
+            "La energía de ionización sí aumenta.",
+            "",
+            "La afinidad electrónica sí aumenta."
+          ]
         },
         {
           "type": "quiz",
@@ -1669,7 +1945,13 @@
             "Brillantes"
           ],
           "correct": 1,
-          "explanation": "Quebradizos."
+          "explanation": "Quebradizos.",
+          "why": [
+            "La maleabilidad es propia de los metales.",
+            "",
+            "La ductilidad es propia de los metales.",
+            "El brillo es propio de los metales."
+          ]
         },
         {
           "type": "quiz",
@@ -1681,7 +1963,13 @@
             "Se vuelve infinita"
           ],
           "correct": 1,
-          "explanation": "Los átomos vibran más y estorban el paso de los electrones."
+          "explanation": "Los átomos vibran más y estorban el paso de los electrones.",
+          "why": [
+            "En los metales, más temperatura significa más vibración de los átomos, que frena a los electrones.",
+            "",
+            "Sí cambia: disminuye.",
+            "No aumenta; disminuye."
+          ]
         }
       ]
     },
@@ -1769,7 +2057,13 @@
             "Döbereiner"
           ],
           "correct": 1,
-          "explanation": "**Mendeléyev**. Moseley lo hizo por Z."
+          "explanation": "**Mendeléyev**. Moseley lo hizo por Z.",
+          "why": [
+            "Moseley ordenó por Z.",
+            "",
+            "Newlands propuso las octavas.",
+            "Döbereiner propuso las tríadas."
+          ]
         },
         {
           "type": "quiz",
@@ -1781,7 +2075,13 @@
             "Moseley"
           ],
           "correct": 1,
-          "explanation": "**Newlands**."
+          "explanation": "**Newlands**.",
+          "why": [
+            "Döbereiner propuso las tríadas.",
+            "",
+            "Mendeléyev ordenó por masa atómica.",
+            "Moseley ordenó por Z."
+          ]
         },
         {
           "type": "quiz",
@@ -1793,7 +2093,13 @@
             "Bohr"
           ],
           "correct": 0,
-          "explanation": "**Döbereiner**."
+          "explanation": "**Döbereiner**.",
+          "why": [
+            "",
+            "Newlands propuso las octavas.",
+            "Moseley ordenó por Z.",
+            "Bohr propuso un modelo atómico."
+          ]
         },
         {
           "type": "quiz",
@@ -1805,7 +2111,13 @@
             "Densidad"
           ],
           "correct": 1,
-          "explanation": "**Z** (Moseley)."
+          "explanation": "**Z** (Moseley).",
+          "why": [
+            "La masa atómica era el criterio de Mendeléyev.",
+            "",
+            "Los neutrones no ordenan la tabla.",
+            "La densidad no ordena la tabla."
+          ]
         },
         {
           "type": "quiz",
@@ -1817,7 +2129,13 @@
             "f"
           ],
           "correct": 2,
-          "explanation": "Bloque **d**."
+          "explanation": "Bloque **d**.",
+          "why": [
+            "El bloque s son los grupos 1 y 2.",
+            "El bloque p son los grupos 13 a 18.",
+            "",
+            "El bloque f es la transición interna."
+          ]
         },
         {
           "type": "quiz",
@@ -1829,7 +2147,13 @@
             "Gases nobles"
           ],
           "correct": 1,
-          "explanation": "**Transición interna**, bloque f."
+          "explanation": "**Transición interna**, bloque f.",
+          "why": [
+            "Los de transición son el bloque d.",
+            "",
+            "Los representativos son los bloques s y p.",
+            "Los gases nobles son el grupo 18."
+          ]
         },
         {
           "type": "quiz",
@@ -1841,7 +2165,13 @@
             "No cambia"
           ],
           "correct": 1,
-          "explanation": "**Arriba y a la derecha**."
+          "explanation": "**Arriba y a la derecha**.",
+          "why": [
+            "Ahí aumentan el radio y el carácter metálico.",
+            "",
+            "También aumenta hacia arriba, no hacia abajo.",
+            "Sí cambia."
+          ]
         },
         {
           "type": "quiz",
@@ -1853,7 +2183,13 @@
             "No cambia"
           ],
           "correct": 1,
-          "explanation": "**Abajo y a la izquierda**."
+          "explanation": "**Abajo y a la izquierda**.",
+          "why": [
+            "Ahí aumenta la electronegatividad.",
+            "",
+            "También aumenta hacia abajo, y hacia la derecha disminuye.",
+            "Sí cambia."
+          ]
         },
         {
           "type": "quiz",
@@ -1865,7 +2201,13 @@
             "Depende"
           ],
           "correct": 0,
-          "explanation": "El catión es menor: **Na** es más grande."
+          "explanation": "El catión es menor: **Na** es más grande.",
+          "why": [
+            "",
+            "El catión es más pequeño que su átomo.",
+            "No son iguales: el Na⁺ perdió su capa externa.",
+            "Siempre el catión es menor."
+          ]
         },
         {
           "type": "quiz",
@@ -1877,7 +2219,13 @@
             "Depende"
           ],
           "correct": 1,
-          "explanation": "El anión es mayor: **Cl⁻**."
+          "explanation": "El anión es mayor: **Cl⁻**.",
+          "why": [
+            "Cl⁻ ganó un electrón y es más grande.",
+            "",
+            "No son iguales.",
+            "Siempre el anión es mayor."
+          ]
         },
         {
           "type": "quiz",
@@ -1889,7 +2237,13 @@
             "Mg²⁺"
           ],
           "correct": 3,
-          "explanation": "Más protones con los mismos electrones: **Mg²⁺** (12 protones)."
+          "explanation": "Más protones con los mismos electrones: **Mg²⁺** (12 protones).",
+          "why": [
+            "O²⁻ es el más grande: solo 8 protones.",
+            "F⁻ tiene 9 protones.",
+            "Na⁺ tiene 11 protones, menos que el Mg²⁺.",
+            ""
+          ]
         },
         {
           "type": "quiz",
@@ -1901,7 +2255,13 @@
             "Infinita"
           ],
           "correct": 1,
-          "explanation": "**Baja**: ceden electrones con facilidad."
+          "explanation": "**Baja**: ceden electrones con facilidad.",
+          "why": [
+            "Alta es la de los no metales.",
+            "",
+            "Siempre hace falta algo de energía.",
+            "Es baja, no infinita."
+          ]
         },
         {
           "type": "quiz",
@@ -1913,7 +2273,13 @@
             "Porque son densos"
           ],
           "correct": 1,
-          "explanation": "Oxidación = **ceder** electrones."
+          "explanation": "Oxidación = **ceder** electrones.",
+          "why": [
+            "Ganar electrones es reducirse, no oxidarse.",
+            "",
+            "Los neutrones no tienen que ver con la oxidación.",
+            "La densidad no tiene que ver."
+          ]
         },
         {
           "type": "quiz",
@@ -1925,7 +2291,13 @@
             "Salina"
           ],
           "correct": 2,
-          "explanation": "Menor a 7: **ácida**."
+          "explanation": "Menor a 7: **ácida**.",
+          "why": [
+            "Básica es mayor a 7.",
+            "Neutra es 7.",
+            "",
+            "«Salina» no es una categoría de la escala de pH."
+          ]
         },
         {
           "type": "quiz",
@@ -1937,7 +2309,13 @@
             "Baja Zef"
           ],
           "correct": 1,
-          "explanation": "No metales: **radio pequeño, Zef alta, electronegatividad alta**."
+          "explanation": "No metales: **radio pequeño, Zef alta, electronegatividad alta**.",
+          "why": [
+            "Eso describe a los metales.",
+            "",
+            "Los no metales tienen muchos electrones de valencia.",
+            "Los no metales tienen Zef alta."
+          ]
         },
         {
           "type": "quiz",
@@ -1949,7 +2327,13 @@
             "1.00"
           ],
           "correct": 1,
-          "explanation": "**0.35** (0.30 si es el grupo 1s)."
+          "explanation": "**0.35** (0.30 si es el grupo 1s).",
+          "why": [
+            "0.30 es solo para el grupo 1s.",
+            "",
+            "0.85 es para el nivel n − 1.",
+            "1.00 es para n − 2 o inferiores."
+          ]
         },
         {
           "type": "quiz",
@@ -1961,7 +2345,13 @@
             "9.00"
           ],
           "correct": 0,
-          "explanation": "σ = 6(0.35) + 2(0.85) = 3.80 → Zef = 9 − 3.80 = **5.20**."
+          "explanation": "σ = 6(0.35) + 2(0.85) = 3.80 → Zef = 9 − 3.80 = **5.20**.",
+          "why": [
+            "",
+            "5.85 es la Zef del neón, no del flúor.",
+            "3.80 es σ, no Zef.",
+            "9.00 es Z, sin restar σ."
+          ]
         }
       ]
     }

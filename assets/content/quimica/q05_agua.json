@@ -43,7 +43,13 @@
             "Porque la molécula es lineal"
           ],
           "correct": 1,
-          "explanation": "La repulsión par libre–par enlazante es mayor que entre pares enlazantes: los hidrógenos se acercan entre sí."
+          "explanation": "La repulsión par libre–par enlazante es mayor que entre pares enlazantes: los hidrógenos se acercan entre sí.",
+          "why": [
+            "El hidrógeno es el átomo más pequeño.",
+            "",
+            "El agua es covalente.",
+            "El agua es angular, no lineal."
+          ]
         },
         {
           "type": "quiz",
@@ -55,7 +61,13 @@
             "90°"
           ],
           "correct": 2,
-          "explanation": "Dos pares libres comprimen el ángulo: **104,5°**."
+          "explanation": "Dos pares libres comprimen el ángulo: **104,5°**.",
+          "why": [
+            "180° sería lineal.",
+            "120° es trigonal plana.",
+            "",
+            "90° no corresponde al agua."
+          ]
         },
         {
           "type": "quiz",
@@ -67,7 +79,13 @@
             "8 puentes de hidrógeno"
           ],
           "correct": 2,
-          "explanation": "2 como donadora (H) y 2 como aceptora (pares libres): **4**."
+          "explanation": "2 como donadora (H) y 2 como aceptora (pares libres): **4**.",
+          "why": [
+            "Puede más: 2 con sus H y 2 con sus pares libres.",
+            "2 son solo los que forman sus H; faltan los de sus pares libres.",
+            "",
+            "Tiene solo 2 H y 2 pares libres: máximo 4."
+          ]
         }
       ]
     },
@@ -153,7 +171,13 @@
             "Es 100 veces mayor"
           ],
           "correct": 2,
-          "explanation": "h es **inversamente proporcional** al radio: radio 10 veces menor → ascenso **10 veces mayor**. Por eso los limos y arcillas mantienen humedad muy por encima del nivel freático."
+          "explanation": "h es **inversamente proporcional** al radio: radio 10 veces menor → ascenso **10 veces mayor**. Por eso los limos y arcillas mantienen humedad muy por encima del nivel freático.",
+          "why": [
+            "h es inversamente proporcional a r: menor radio, mayor ascenso.",
+            "El radio sí está en la fórmula.",
+            "",
+            "La dependencia es 1/r, no 1/r²."
+          ]
         },
         {
           "type": "quiz",
@@ -165,7 +189,13 @@
             "Porque aumenta la tensión superficial"
           ],
           "correct": 1,
-          "explanation": "Más energía cinética → las moléculas rompen con facilidad los puentes de hidrógeno que frenan el flujo."
+          "explanation": "Más energía cinética → las moléculas rompen con facilidad los puentes de hidrógeno que frenan el flujo.",
+          "why": [
+            "El agua caliente es menos densa, y la densidad no explica la viscosidad.",
+            "",
+            "Los O–H son enlaces covalentes y no se rompen al calentar.",
+            "La tensión superficial disminuye con la temperatura."
+          ]
         },
         {
           "type": "quiz",
@@ -177,7 +207,13 @@
             "Su pH"
           ],
           "correct": 1,
-          "explanation": "Parte del calor se usa en romper **puentes de hidrógeno**."
+          "explanation": "Parte del calor se usa en romper **puentes de hidrógeno**.",
+          "why": [
+            "La masa molar del agua es pequeña.",
+            "",
+            "El color no tiene relación.",
+            "El pH no tiene relación."
+          ]
         }
       ]
     },
@@ -233,7 +269,13 @@
             "pH 7, neutra"
           ],
           "correct": 0,
-          "explanation": "pH = −log(10⁻⁹) = **9** > 7: **básica**. (El hormigón tiene pH > 12,5: muy básico.)"
+          "explanation": "pH = −log(10⁻⁹) = **9** > 7: **básica**. (El hormigón tiene pH > 12,5: muy básico.)",
+          "why": [
+            "",
+            "pH 9 es mayor a 7: es básica, no ácida.",
+            "pH = −log(10⁻⁹) = 9, no 5.",
+            "Neutra sería [H₃O⁺] = 10⁻⁷."
+          ]
         },
         {
           "type": "quiz",
@@ -245,7 +287,13 @@
             "Oxidante"
           ],
           "correct": 1,
-          "explanation": "El agua **cede** un H⁺ al amoníaco y queda como OH⁻: actúa como **ácido** de Brønsted."
+          "explanation": "El agua **cede** un H⁺ al amoníaco y queda como OH⁻: actúa como **ácido** de Brønsted.",
+          "why": [
+            "El agua cede un H⁺ al NH₃: actúa como ácido.",
+            "",
+            "El agua participa en la reacción.",
+            "No hay cambio de números de oxidación."
+          ]
         },
         {
           "type": "quiz",
@@ -257,7 +305,13 @@
             "Es un metal"
           ],
           "correct": 1,
-          "explanation": "Puede donar o aceptar H⁺."
+          "explanation": "Puede donar o aceptar H⁺.",
+          "why": [
+            "El agua reacciona con ácidos y con bases.",
+            "",
+            "Puede ser ácido o base según con quién reaccione.",
+            "El agua no es un metal."
+          ]
         },
         {
           "type": "quiz",
@@ -269,7 +323,13 @@
             "5,6"
           ],
           "correct": 1,
-          "explanation": "[H⁺] = 10⁻⁷ mol/L → **pH 7**."
+          "explanation": "[H⁺] = 10⁻⁷ mol/L → **pH 7**.",
+          "why": [
+            "pH 0 es muy ácido.",
+            "",
+            "pH 14 es muy básico.",
+            "5.6 es el pH típico de la lluvia (por el CO₂ disuelto)."
+          ]
         }
       ]
     },
@@ -319,7 +379,13 @@
             "Porque sus enlaces O–H son más largos"
           ],
           "correct": 1,
-          "explanation": "En el hielo cada molécula se une a 4 vecinas en una red hexagonal con mucho espacio libre: **menor densidad** que el líquido."
+          "explanation": "En el hielo cada molécula se une a 4 vecinas en una red hexagonal con mucho espacio libre: **menor densidad** que el líquido.",
+          "why": [
+            "El hielo puro también flota.",
+            "",
+            "Ser más frío no explica la densidad.",
+            "Los O–H son casi iguales; la diferencia está en la red de puentes de hidrógeno."
+          ]
         },
         {
           "type": "quiz",
@@ -331,7 +397,13 @@
             "100 °C"
           ],
           "correct": 1,
-          "explanation": "A **4 °C** (≈ 1,000 g/cm³)."
+          "explanation": "A **4 °C** (≈ 1,000 g/cm³).",
+          "why": [
+            "A 0 °C el agua ya es menos densa que a 4 °C.",
+            "",
+            "A 25 °C es menos densa.",
+            "A 100 °C es mucho menos densa."
+          ]
         },
         {
           "type": "quiz",
@@ -343,7 +415,13 @@
             "Por la tensión superficial"
           ],
           "correct": 1,
-          "explanation": "Estructura hexagonal **abierta**."
+          "explanation": "Estructura hexagonal **abierta**.",
+          "why": [
+            "El hielo puro también flota.",
+            "",
+            "Si fuera más denso, se hundiría.",
+            "La tensión superficial no explica que flote."
+          ]
         }
       ]
     },
@@ -408,7 +486,13 @@
             "Para reducir el pH"
           ],
           "correct": 1,
-          "explanation": "El cemento **reacciona** con el agua (hidratación); si esta se evapora antes de tiempo, la resistencia final baja y aparecen fisuras por retracción."
+          "explanation": "El cemento **reacciona** con el agua (hidratación); si esta se evapora antes de tiempo, la resistencia final baja y aparecen fisuras por retracción.",
+          "why": [
+            "No es para enfriarlo.",
+            "",
+            "No se disuelve el cemento sobrante.",
+            "No se busca bajar el pH; un pH alto protege al acero."
+          ]
         },
         {
           "type": "quiz",
@@ -420,7 +504,13 @@
             "Ningún efecto"
           ],
           "correct": 1,
-          "explanation": "Más relación agua/cemento → más poros, **menos resistencia**."
+          "explanation": "Más relación agua/cemento → más poros, **menos resistencia**.",
+          "why": [
+            "Más agua significa menos resistencia.",
+            "",
+            "El fraguado no se acelera.",
+            "Sí tiene efecto, y negativo."
+          ]
         },
         {
           "type": "quiz",
@@ -432,7 +522,13 @@
             "Rocas sanas"
           ],
           "correct": 2,
-          "explanation": "Poros más finos → mayor altura capilar."
+          "explanation": "Poros más finos → mayor altura capilar.",
+          "why": [
+            "Las gravas tienen poros grandes: ascenso pequeño.",
+            "Las arenas gruesas tienen poros grandes.",
+            "",
+            "Una roca sana casi no tiene poros conectados."
+          ]
         }
       ]
     }

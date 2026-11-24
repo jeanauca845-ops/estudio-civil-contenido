@@ -73,7 +73,13 @@
             "El C₄AF"
           ],
           "correct": 1,
-          "explanation": "El **gel C-S-H** es la red amorfa que une las partículas y da cohesión y resistencia."
+          "explanation": "El **gel C-S-H** es la red amorfa que une las partículas y da cohesión y resistencia.",
+          "why": [
+            "La portlandita aporta alcalinidad, pero poca resistencia.",
+            "",
+            "El yeso solo regula el fraguado.",
+            "El C₄AF es una fase del clínker, no un producto de la hidratación."
+          ]
         },
         {
           "type": "quiz",
@@ -85,7 +91,13 @@
             "Porque el cemento es ácido"
           ],
           "correct": 1,
-          "explanation": "La alcalinidad de la portlandita **pasiva** el acero. Se pierde por carbonatación o por cloruros."
+          "explanation": "La alcalinidad de la portlandita **pasiva** el acero. Se pierde por carbonatación o por cloruros.",
+          "why": [
+            "El hormigón sí tiene agua en sus poros.",
+            "",
+            "El acero de refuerzo común no es inoxidable.",
+            "El cemento hidratado es muy básico, no ácido."
+          ]
         },
         {
           "type": "quiz",
@@ -97,7 +109,13 @@
             "Clínker"
           ],
           "correct": 1,
-          "explanation": "El **silicato cálcico hidratado** (C-S-H)."
+          "explanation": "El **silicato cálcico hidratado** (C-S-H).",
+          "why": [
+            "La portlandita aporta alcalinidad, no la resistencia principal.",
+            "",
+            "El yeso regula el fraguado.",
+            "El clínker es la materia prima, no el producto de la hidratación."
+          ]
         }
       ]
     },
@@ -157,7 +175,13 @@
             "Porque el zinc es un no metal"
           ],
           "correct": 1,
-          "explanation": "El zinc cede electrones con más facilidad que el hierro: se corroe **primero** y protege al acero."
+          "explanation": "El zinc cede electrones con más facilidad que el hierro: se corroe **primero** y protege al acero.",
+          "why": [
+            "El zinc es menos noble (más activo) que el hierro.",
+            "",
+            "El zinc es un metal conductor.",
+            "El zinc es un metal."
+          ]
         },
         {
           "type": "quiz",
@@ -169,7 +193,13 @@
             "Combustión"
           ],
           "correct": 1,
-          "explanation": "Fe → Fe²⁺ + 2e⁻: **oxidación**."
+          "explanation": "Fe → Fe²⁺ + 2e⁻: **oxidación**.",
+          "why": [
+            "No hay ácido con base.",
+            "",
+            "El óxido no se forma como un precipitado en disolución.",
+            "No es una combustión: no hay llama ni combustible orgánico."
+          ]
         },
         {
           "type": "quiz",
@@ -181,7 +211,13 @@
             "Estaño"
           ],
           "correct": 1,
-          "explanation": "El **zinc** se oxida antes que el hierro (protección de sacrificio)."
+          "explanation": "El **zinc** se oxida antes que el hierro (protección de sacrificio).",
+          "why": [
+            "El cobre es más noble que el hierro: aceleraría la corrosión si se raya.",
+            "",
+            "El plomo no es el metal del galvanizado.",
+            "El estaño se usa en la hojalata, no en el galvanizado."
+          ]
         }
       ]
     },
@@ -277,7 +313,13 @@
             "Porque tiene plomo"
           ],
           "correct": 1,
-          "explanation": "El templado no cambia la química: crea **esfuerzos residuales de compresión** en la superficie, donde empiezan las grietas."
+          "explanation": "El templado no cambia la química: crea **esfuerzos residuales de compresión** en la superficie, donde empiezan las grietas.",
+          "why": [
+            "La composición es la misma.",
+            "",
+            "El vidrio es amorfo, no cristalino.",
+            "El plomo es del cristal de plomo, no del templado."
+          ]
         },
         {
           "type": "quiz",
@@ -289,7 +331,13 @@
             "Cl⁻"
           ],
           "correct": 1,
-          "explanation": "El **Ca²⁺**, de carga doble, sustituye a los cationes monovalentes y comprime la doble capa de las arcillas."
+          "explanation": "El **Ca²⁺**, de carga doble, sustituye a los cationes monovalentes y comprime la doble capa de las arcillas.",
+          "why": [
+            "El Na⁺ es monovalente y dispersa las arcillas.",
+            "",
+            "El OH⁻ sube el pH, pero no es el que flocula.",
+            "El Cl⁻ no viene de la cal."
+          ]
         },
         {
           "type": "quiz",
@@ -301,7 +349,13 @@
             "Hierro"
           ],
           "correct": 1,
-          "explanation": "Vidrio sodo-cálcico: ≈ 70 % **SiO₂**."
+          "explanation": "Vidrio sodo-cálcico: ≈ 70 % **SiO₂**.",
+          "why": [
+            "El carbonato de calcio es materia prima, pero no el componente principal.",
+            "",
+            "La alúmina es minoritaria.",
+            "El vidrio no es metálico."
+          ]
         }
       ]
     },
@@ -376,7 +430,13 @@
             "Porque refleja la luz"
           ],
           "correct": 1,
-          "explanation": "La energía del fuego se usa para **evaporar el agua** ligada a la red: la temperatura del otro lado se mantiene cerca de 100 °C."
+          "explanation": "La energía del fuego se usa para **evaporar el agua** ligada a la red: la temperatura del otro lado se mantiene cerca de 100 °C.",
+          "why": [
+            "El yeso no es combustible.",
+            "",
+            "El yeso no es metálico.",
+            "No funciona por reflejar luz."
+          ]
         },
         {
           "type": "quiz",
@@ -388,7 +448,13 @@
             "El carbono intersticial"
           ],
           "correct": 1,
-          "explanation": "La **pasivación** forma casi al instante una capa nanométrica, densa e impermeable de Al₂O₃."
+          "explanation": "La **pasivación** forma casi al instante una capa nanométrica, densa e impermeable de Al₂O₃.",
+          "why": [
+            "El zinc es para el acero galvanizado.",
+            "",
+            "La densidad no protege de la corrosión.",
+            "El carbono es del acero, no del aluminio."
+          ]
         },
         {
           "type": "quiz",
@@ -400,7 +466,13 @@
             "Refleja la luz"
           ],
           "correct": 1,
-          "explanation": "CaSO₄·2H₂O pierde agua y consume energía."
+          "explanation": "CaSO₄·2H₂O pierde agua y consume energía.",
+          "why": [
+            "El yeso sí se calienta, pero lentamente.",
+            "",
+            "No es metálico.",
+            "No funciona por reflejar luz."
+          ]
         }
       ]
     },
@@ -475,7 +547,13 @@
             "Lo convierte en un material cristalino"
           ],
           "correct": 1,
-          "explanation": "El SBS absorbe maltenos, se hincha y forma una **red elastomérica**: más resistencia al ahuellamiento y a la fisuración térmica."
+          "explanation": "El SBS absorbe maltenos, se hincha y forma una **red elastomérica**: más resistencia al ahuellamiento y a la fisuración térmica.",
+          "why": [
+            "El asfalto sigue siendo insoluble en agua.",
+            "",
+            "El SBS es un polímero; no aporta azufre.",
+            "El SBS no cristaliza el asfalto."
+          ]
         },
         {
           "type": "quiz",
@@ -487,7 +565,13 @@
             "Porque no tienen carbono"
           ],
           "correct": 1,
-          "explanation": "El alto contenido de **cloro** libera HCl al descomponerse, que actúa como supresor de la llama."
+          "explanation": "El alto contenido de **cloro** libera HCl al descomponerse, que actúa como supresor de la llama.",
+          "why": [
+            "El PVC no contiene agua.",
+            "",
+            "El PVC es un polímero, no un metal.",
+            "El PVC sí tiene carbono; lo que le da la propiedad es el cloro."
+          ]
         },
         {
           "type": "quiz",
@@ -499,7 +583,13 @@
             "El olor"
           ],
           "correct": 1,
-          "explanation": "El polímero SBS da **elasticidad**."
+          "explanation": "El polímero SBS da **elasticidad**.",
+          "why": [
+            "El color no mejora con el SBS.",
+            "",
+            "La densidad casi no cambia.",
+            "El olor no tiene que ver con el SBS."
+          ]
         }
       ]
     }

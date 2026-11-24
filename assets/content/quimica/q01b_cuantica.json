@@ -81,7 +81,13 @@
             "7"
           ],
           "correct": 2,
-          "explanation": "n, ℓ, mℓ y ms."
+          "explanation": "n, ℓ, mℓ y ms.",
+          "why": [
+            "Con 2 números faltarían la orientación del orbital y el espín.",
+            "Tres números (n, ℓ, mℓ) describen el orbital; falta ms para el electrón.",
+            "",
+            "No hay 7 números cuánticos; quizás lo confundes con los 7 niveles."
+          ]
         },
         {
           "type": "quiz",
@@ -93,7 +99,13 @@
             "Los cuatro"
           ],
           "correct": 0,
-          "explanation": "ms describe al electrón, no al orbital."
+          "explanation": "ms describe al electrón, no al orbital.",
+          "why": [
+            "",
+            "n solo da el nivel; faltan la forma (ℓ) y la orientación (mℓ).",
+            "ms describe al electrón, no al orbital.",
+            "ms es propio del electrón, no del orbital."
+          ]
         },
         {
           "type": "quiz",
@@ -105,7 +117,13 @@
             "Contar neutrones"
           ],
           "correct": 1,
-          "explanation": "Su solución define los orbitales atómicos."
+          "explanation": "Su solución define los orbitales atómicos.",
+          "why": [
+            "La masa del átomo depende del núcleo; ψ describe al electrón.",
+            "",
+            "La carga del núcleo es Z; ψ no la mide.",
+            "Los neutrones se cuentan con A − Z; ψ no tiene que ver."
+          ]
         },
         {
           "type": "quiz",
@@ -117,7 +135,13 @@
             "Pauli"
           ],
           "correct": 1,
-          "explanation": "**Erwin Schrödinger**, 1926."
+          "explanation": "**Erwin Schrödinger**, 1926.",
+          "why": [
+            "Bohr propuso las órbitas cuantizadas (1913), no una ecuación de onda.",
+            "",
+            "Dalton propuso átomos macizos (1803).",
+            "Pauli formuló el principio de exclusión."
+          ]
         }
       ]
     },
@@ -284,7 +308,13 @@
             "9"
           ],
           "correct": 1,
-          "explanation": "2·3² = **18**."
+          "explanation": "2·3² = **18**.",
+          "why": [
+            "8 es lo que suele haber en la última capa (octeto), no la capacidad del nivel 3.",
+            "",
+            "2n² con n = 4 da 32.",
+            "9 son los orbitales del nivel 3 (n²), no los electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -296,7 +326,13 @@
             "No cambia nada"
           ],
           "correct": 2,
-          "explanation": "Mayor n → mayor energía y mayor tamaño."
+          "explanation": "Mayor n → mayor energía y mayor tamaño.",
+          "why": [
+            "Es al revés: a mayor n, mayor energía.",
+            "A mayor n, el electrón está más lejos del núcleo.",
+            "",
+            "Sí cambian: aumentan la energía y la distancia."
+          ]
         },
         {
           "type": "quiz",
@@ -308,7 +344,13 @@
             "Cambia de átomo"
           ],
           "correct": 1,
-          "explanation": "Regresa a menor energía: **emite** (luz)."
+          "explanation": "Regresa a menor energía: **emite** (luz).",
+          "why": [
+            "Absorbe cuando sube de nivel; aquí baja.",
+            "",
+            "El electrón no pierde masa: emite un fotón.",
+            "El electrón sigue en el mismo átomo."
+          ]
         },
         {
           "type": "quiz",
@@ -320,7 +362,13 @@
             "n = 4"
           ],
           "correct": 1,
-          "explanation": "K = 1, **L = 2**, M = 3, N = 4."
+          "explanation": "K = 1, **L = 2**, M = 3, N = 4.",
+          "why": [
+            "n = 1 es la capa K.",
+            "",
+            "n = 3 es la capa M.",
+            "n = 4 es la capa N."
+          ]
         },
         {
           "type": "quiz",
@@ -332,7 +380,13 @@
             "50"
           ],
           "correct": 2,
-          "explanation": "2·4² = **32**."
+          "explanation": "2·4² = **32**.",
+          "why": [
+            "16 son los orbitales del nivel 4 (n²), no los electrones.",
+            "18 es la capacidad del nivel 3.",
+            "",
+            "50 es la capacidad del nivel 5."
+          ]
         }
       ]
     },
@@ -526,7 +580,13 @@
             "Solo 3"
           ],
           "correct": 1,
-          "explanation": "ℓ = 0 hasta n − 1 = **0, 1, 2**."
+          "explanation": "ℓ = 0 hasta n − 1 = **0, 1, 2**.",
+          "why": [
+            "ℓ llega solo hasta n − 1; ℓ = 3 no se permite con n = 3.",
+            "",
+            "ℓ empieza en 0, no en 1.",
+            "ℓ no puede ser igual a n."
+          ]
         },
         {
           "type": "quiz",
@@ -538,7 +598,13 @@
             "f"
           ],
           "correct": 2,
-          "explanation": "0 s, 1 p, **2 d**, 3 f."
+          "explanation": "0 s, 1 p, **2 d**, 3 f.",
+          "why": [
+            "s es ℓ = 0.",
+            "p es ℓ = 1.",
+            "",
+            "f es ℓ = 3."
+          ]
         },
         {
           "type": "quiz",
@@ -550,7 +616,13 @@
             "Solo en iones"
           ],
           "correct": 1,
-          "explanation": "d requiere ℓ = 2 ≤ n − 1 → n ≥ 3."
+          "explanation": "d requiere ℓ = 2 ≤ n − 1 → n ≥ 3.",
+          "why": [
+            "ℓ = 2 (d) necesita n ≥ 3.",
+            "",
+            "La regla vale para todos los elementos.",
+            "Tampoco en iones: los d empiezan en n = 3."
+          ]
         },
         {
           "type": "quiz",
@@ -562,7 +634,13 @@
             "Compleja"
           ],
           "correct": 1,
-          "explanation": "**Esférica**."
+          "explanation": "**Esférica**.",
+          "why": [
+            "Bilobular es la forma del orbital p.",
+            "",
+            "El trébol (tetralobular) es el orbital d.",
+            "Compleja es la forma del orbital f."
+          ]
         },
         {
           "type": "quiz",
@@ -574,7 +652,13 @@
             "18"
           ],
           "correct": 2,
-          "explanation": "2(2·3 + 1) = **14**."
+          "explanation": "2(2·3 + 1) = **14**.",
+          "why": [
+            "6 es la capacidad del subnivel p.",
+            "10 es la del subnivel d.",
+            "",
+            "18 es la capacidad del nivel 3, no de un subnivel."
+          ]
         },
         {
           "type": "quiz",
@@ -586,7 +670,13 @@
             "f"
           ],
           "correct": 3,
-          "explanation": "s < p < d < **f**."
+          "explanation": "s < p < d < **f**.",
+          "why": [
+            "s es el subnivel de menor energía del nivel.",
+            "p tiene menos energía que d y f.",
+            "d tiene menos energía que f.",
+            ""
+          ]
         },
         {
           "type": "quiz",
@@ -598,7 +688,13 @@
             "De mℓ"
           ],
           "correct": 1,
-          "explanation": "Del principal y del secundario."
+          "explanation": "Del principal y del secundario.",
+          "why": [
+            "Solo de n vale para el hidrógeno (un electrón); con varios, también influye ℓ.",
+            "",
+            "ms no cambia la energía del subnivel.",
+            "mℓ indica la orientación; los orbitales de un mismo subnivel tienen igual energía."
+          ]
         }
       ]
     },
@@ -822,7 +918,13 @@
             "−2, +2"
           ],
           "correct": 2,
-          "explanation": "De −ℓ a +ℓ: **5 valores**."
+          "explanation": "De −ℓ a +ℓ: **5 valores**.",
+          "why": [
+            "mℓ también toma valores negativos: va de −ℓ a +ℓ.",
+            "−1, 0, +1 corresponde a ℓ = 1 (p).",
+            "",
+            "Faltan los valores intermedios −1, 0 y +1."
+          ]
         },
         {
           "type": "quiz",
@@ -834,7 +936,13 @@
             "7"
           ],
           "correct": 1,
-          "explanation": "mℓ = −1, 0, +1: **px, py, pz**."
+          "explanation": "mℓ = −1, 0, +1: **px, py, pz**.",
+          "why": [
+            "Un orbital por subnivel es el caso del s.",
+            "",
+            "5 orbitales tiene el d.",
+            "7 orbitales tiene el f."
+          ]
         },
         {
           "type": "quiz",
@@ -846,7 +954,13 @@
             "4"
           ],
           "correct": 2,
-          "explanation": "Requieren ℓ = 2 → **n ≥ 3**."
+          "explanation": "Requieren ℓ = 2 → **n ≥ 3**.",
+          "why": [
+            "En n = 1 solo existe el 1s.",
+            "En n = 2 solo existen 2s y 2p.",
+            "",
+            "Desde n = 3 ya hay 3d; el 4d no es el primero."
+          ]
         },
         {
           "type": "quiz",
@@ -858,7 +972,13 @@
             "32"
           ],
           "correct": 2,
-          "explanation": "n² = **16** (1 + 3 + 5 + 7)."
+          "explanation": "n² = **16** (1 + 3 + 5 + 7).",
+          "why": [
+            "4 son los subniveles del nivel 4 (s, p, d, f), no los orbitales.",
+            "8 no sale de ninguna regla; los orbitales son n².",
+            "",
+            "32 son los electrones máximos (2n²), no los orbitales."
+          ]
         },
         {
           "type": "quiz",
@@ -870,7 +990,13 @@
             "El tamaño del nivel"
           ],
           "correct": 1,
-          "explanation": "La forma la da ℓ; la orientación, **mℓ**."
+          "explanation": "La forma la da ℓ; la orientación, **mℓ**.",
+          "why": [
+            "La forma la da ℓ.",
+            "",
+            "El espín lo da ms.",
+            "El tamaño y la energía los da n."
+          ]
         },
         {
           "type": "quiz",
@@ -882,7 +1008,13 @@
             "14"
           ],
           "correct": 2,
-          "explanation": "2·3 + 1 = **7** (14 es el número de electrones)."
+          "explanation": "2·3 + 1 = **7** (14 es el número de electrones).",
+          "why": [
+            "3 orbitales tiene el p.",
+            "5 orbitales tiene el d.",
+            "",
+            "14 son los electrones del f, no los orbitales."
+          ]
         }
       ]
     },
@@ -988,7 +1120,13 @@
             "Cualquier número"
           ],
           "correct": 1,
-          "explanation": "Solo **+½ y −½**."
+          "explanation": "Solo **+½ y −½**.",
+          "why": [
+            "0 y 1 no son valores de espín.",
+            "",
+            "−1, 0, +1 son valores de mℓ para un p.",
+            "Solo hay dos valores posibles."
+          ]
         },
         {
           "type": "quiz",
@@ -1000,7 +1138,13 @@
             "8"
           ],
           "correct": 1,
-          "explanation": "Pauli: **2**, con espines opuestos."
+          "explanation": "Pauli: **2**, con espines opuestos.",
+          "why": [
+            "Caben dos, con espines opuestos.",
+            "",
+            "6 es la capacidad de un subnivel p (3 orbitales).",
+            "8 es el octeto, no un orbital."
+          ]
         },
         {
           "type": "quiz",
@@ -1012,7 +1156,13 @@
             "Al nivel"
           ],
           "correct": 1,
-          "explanation": "Es una propiedad del **electrón**."
+          "explanation": "Es una propiedad del **electrón**.",
+          "why": [
+            "El orbital lo describen n, ℓ y mℓ.",
+            "",
+            "El espín es del electrón, no del núcleo.",
+            "El nivel lo describe n."
+          ]
         },
         {
           "type": "quiz",
@@ -1024,7 +1174,13 @@
             "Solo para ms = +½"
           ],
           "correct": 1,
-          "explanation": "No es una rotación clásica."
+          "explanation": "No es una rotación clásica.",
+          "why": [
+            "No es un giro literal: es una propiedad cuántica sin equivalente clásico.",
+            "",
+            "Es igual en todos los átomos.",
+            "Ninguno de los dos valores es un giro literal."
+          ]
         }
       ]
     },
@@ -1249,7 +1405,13 @@
             "(3, 2, 0, −½)"
           ],
           "correct": 1,
-          "explanation": "3 ↑ y 2 ↓: el 5.º es ↓ en mℓ = 0 → **(3, 1, 0, −½)**."
+          "explanation": "3 ↑ y 2 ↓: el 5.º es ↓ en mℓ = 0 → **(3, 1, 0, −½)**.",
+          "why": [
+            "(3, 1, −1, −½) es el último electrón de 3p⁴: el cuarto se aparea en −1.",
+            "",
+            "(3, 1, +1, +½) es el último de 3p³.",
+            "ℓ = 2 sería d, no p."
+          ]
         },
         {
           "type": "quiz",
@@ -1261,7 +1423,13 @@
             "(4, 2, +2, +½)"
           ],
           "correct": 0,
-          "explanation": "Primer electrón ↑ en mℓ = −2."
+          "explanation": "Primer electrón ↑ en mℓ = −2.",
+          "why": [
+            "",
+            "Con un solo electrón se usa el primer orbital, mℓ = −2, no 0.",
+            "ℓ = 1 sería p, no d.",
+            "+2 sería el quinto electrón de 4d (4d⁵)."
+          ]
         },
         {
           "type": "quiz",
@@ -1273,7 +1441,13 @@
             "{1, 0, 0, +½}"
           ],
           "correct": 2,
-          "explanation": "ℓ = 2 no puede darse con n = 2."
+          "explanation": "ℓ = 2 no puede darse con n = 2.",
+          "why": [
+            "Válida: ℓ = 1 < n = 2 y mℓ = 0 está entre −1 y +1.",
+            "Válida: ℓ = 2 < 3 y mℓ = 1 está entre −2 y +2.",
+            "",
+            "Válida: es el electrón del 1s."
+          ]
         },
         {
           "type": "quiz",
@@ -1285,7 +1459,13 @@
             "{2, 0, 0, +½}"
           ],
           "correct": 1,
-          "explanation": "Con ℓ = 1, mℓ solo puede ser −1, 0, +1."
+          "explanation": "Con ℓ = 1, mℓ solo puede ser −1, 0, +1.",
+          "why": [
+            "Válida: es un electrón del 4s.",
+            "",
+            "Válida: ℓ = 3 < 5 y mℓ = −3 está permitido.",
+            "Válida: es un electrón del 2s."
+          ]
         },
         {
           "type": "quiz",
@@ -1297,7 +1477,13 @@
             "El número de orbitales"
           ],
           "correct": 2,
-          "explanation": "Superíndice = electrones."
+          "explanation": "Superíndice = electrones.",
+          "why": [
+            "El nivel es el 4.",
+            "El subnivel es la letra d.",
+            "",
+            "Los orbitales de un d son siempre 5; el exponente cuenta electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -1309,7 +1495,13 @@
             "(6, 2, −2, −½)"
           ],
           "correct": 0,
-          "explanation": "Solución de clase: 5 ↑, el 6.º ↓ en mℓ = −2."
+          "explanation": "Solución de clase: 5 ↑, el 6.º ↓ en mℓ = −2.",
+          "why": [
+            "",
+            "El sexto electrón no va en +1: se aparea en el primer orbital, −2.",
+            "mℓ = 0 sería el octavo electrón.",
+            "El nivel es 5, no 6."
+          ]
         },
         {
           "type": "quiz",
@@ -1321,7 +1513,13 @@
             "(4, 2, 0, −½)"
           ],
           "correct": 1,
-          "explanation": "Solución de clase."
+          "explanation": "Solución de clase.",
+          "why": [
+            "(4, 3, +3, +½) es el séptimo electrón (4f⁷).",
+            "",
+            "(4, 3, −3, −½) es el octavo electrón (4f⁸).",
+            "ℓ = 2 sería d, no f."
+          ]
         }
       ]
     },
@@ -1542,7 +1740,13 @@
             "Moeller"
           ],
           "correct": 2,
-          "explanation": "**Regla de Hund**."
+          "explanation": "**Regla de Hund**.",
+          "why": [
+            "Aufbau dice que se llenan primero los orbitales de menor energía.",
+            "Pauli dice que caben 2 electrones por orbital con espín opuesto.",
+            "",
+            "Moeller es el diagrama del orden de llenado."
+          ]
         },
         {
           "type": "quiz",
@@ -1554,7 +1758,13 @@
             "↑ ↓ ↑"
           ],
           "correct": 1,
-          "explanation": "Hund: uno por orbital, espines paralelos."
+          "explanation": "Hund: uno por orbital, espines paralelos.",
+          "why": [
+            "Viola la regla de Hund: hay un orbital vacío y se apareó antes de tiempo.",
+            "",
+            "Viola la regla de Hund y además deja un orbital vacío.",
+            "Los espines desapareados deben ser paralelos (todos ↑)."
+          ]
         },
         {
           "type": "quiz",
@@ -1566,7 +1776,13 @@
             "(2, 0, 0, −½)"
           ],
           "correct": 1,
-          "explanation": "Primer ↓ del 2p, en mℓ = −1."
+          "explanation": "Primer ↓ del 2p, en mℓ = −1.",
+          "why": [
+            "(2, 1, +1, +½) es el electrón 7.",
+            "",
+            "(3, 0, 0, +½) es el electrón 11 (3s¹).",
+            "(2, 0, 0, −½) es el electrón 4 (2s²)."
+          ]
         },
         {
           "type": "quiz",
@@ -1578,7 +1794,13 @@
             "El núcleo atrae a los electrones"
           ],
           "correct": 1,
-          "explanation": "Mínima energía."
+          "explanation": "Mínima energía.",
+          "why": [
+            "Ese es el principio de exclusión de Pauli.",
+            "",
+            "Eso no es Aufbau; el apareamiento lo regula Hund.",
+            "Es cierto, pero no es lo que dice el principio de Aufbau."
+          ]
         },
         {
           "type": "quiz",
@@ -1590,7 +1812,13 @@
             "Porque tiene 8 electrones de valencia"
           ],
           "correct": 1,
-          "explanation": "Al perderlo queda con la configuración del neón."
+          "explanation": "Al perderlo queda con la configuración del neón.",
+          "why": [
+            "Ganar un electrón formaría Na⁻, no Na⁺.",
+            "",
+            "Los protones no cambian al formar un ion.",
+            "El sodio tiene 1 electrón de valencia (3s¹), no 8."
+          ]
         }
       ]
     },
@@ -1928,7 +2156,13 @@
             "5s"
           ],
           "correct": 1,
-          "explanation": "Orden de Moeller: … 4s → **3d** → 4p."
+          "explanation": "Orden de Moeller: … 4s → **3d** → 4p.",
+          "why": [
+            "4p (n + ℓ = 5) va después de 3d, porque 3d tiene menor n.",
+            "",
+            "4d (n + ℓ = 6) va mucho después.",
+            "5s (n + ℓ = 5) va después de 4p."
+          ]
         },
         {
           "type": "quiz",
@@ -1940,7 +2174,13 @@
             "1s² 2s² 2p⁶ 3s² 3p⁵ 4s²"
           ],
           "correct": 1,
-          "explanation": "4s (n + ℓ = 4) antes que 3d (5)."
+          "explanation": "4s (n + ℓ = 4) antes que 3d (5).",
+          "why": [
+            "El 4s se llena antes que el 3d (n + ℓ: 4 frente a 5).",
+            "",
+            "El 3p solo admite 6 electrones.",
+            "El 3p⁵ no está completo; el 4s no se llena antes de completar 3p."
+          ]
         },
         {
           "type": "quiz",
@@ -1952,7 +2192,13 @@
             "3"
           ],
           "correct": 2,
-          "explanation": "7 + 3 = **10** → 1s² 2s² 2p⁶."
+          "explanation": "7 + 3 = **10** → 1s² 2s² 2p⁶.",
+          "why": [
+            "7 son los electrones del N neutro; 3− significa que ganó 3.",
+            "4 sería si hubiera perdido 3.",
+            "",
+            "3 es la carga, no los electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -1964,7 +2210,13 @@
             "8"
           ],
           "correct": 2,
-          "explanation": "5 + 2 = **7**."
+          "explanation": "5 + 2 = **7**.",
+          "why": [
+            "5 es solo n; falta sumar ℓ = 2.",
+            "6 corresponde a ℓ = 1 (5p).",
+            "",
+            "8 corresponde a ℓ = 3 (5f)."
+          ]
         },
         {
           "type": "quiz",
@@ -1976,7 +2228,13 @@
             "[Ne] 3p⁷"
           ],
           "correct": 0,
-          "explanation": "Ne tiene 10; faltan 7: 3s² 3p⁵."
+          "explanation": "Ne tiene 10; faltan 7: 3s² 3p⁵.",
+          "why": [
+            "",
+            "[Ar] ya tiene 18 electrones; el cloro tiene 17.",
+            "[He] solo cubre 1s²; faltarían 2s² 2p⁶.",
+            "El 3p admite máximo 6 electrones, y además falta el 3s²."
+          ]
         },
         {
           "type": "quiz",
@@ -1988,7 +2246,13 @@
             "[Ar] 4s² 3d⁶"
           ],
           "correct": 1,
-          "explanation": "Pierde los 2 electrones del 4s."
+          "explanation": "Pierde los 2 electrones del 4s.",
+          "why": [
+            "Al ionizar salen primero los electrones del 4s, no del 3d.",
+            "",
+            "Sale primero todo el 4s, no un electrón de cada subnivel.",
+            "Esa es la configuración del Fe neutro, con 26 electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -2000,7 +2264,13 @@
             "El Ne"
           ],
           "correct": 1,
-          "explanation": "18 electrones: 1s² 2s² 2p⁶ 3s² 3p⁶ = **argón**."
+          "explanation": "18 electrones: 1s² 2s² 2p⁶ 3s² 3p⁶ = **argón**.",
+          "why": [
+            "El Ca neutro tiene 20 electrones; el Ca²⁺ tiene 18.",
+            "",
+            "El K tiene 19 electrones.",
+            "El Ne tiene 10 electrones."
+          ]
         }
       ]
     },
@@ -2148,7 +2418,13 @@
             "[Ar] 4s² 3d¹⁰"
           ],
           "correct": 1,
-          "explanation": "d⁹ → **d¹⁰**: un electrón del 4s pasa al 3d."
+          "explanation": "d⁹ → **d¹⁰**: un electrón del 4s pasa al 3d.",
+          "why": [
+            "Esa es la configuración teórica; en la realidad un electrón pasa a 3d.",
+            "",
+            "El 3d solo admite 10 electrones.",
+            "Tendría 30 electrones; el cobre tiene 29."
+          ]
         },
         {
           "type": "quiz",
@@ -2160,7 +2436,13 @@
             "[Ar] 4s⁰ 3d⁶"
           ],
           "correct": 1,
-          "explanation": "d⁴ → **d⁵** (semilleno)."
+          "explanation": "d⁴ → **d⁵** (semilleno).",
+          "why": [
+            "Esa es la teórica; d⁴ promueve un electrón y queda d⁵.",
+            "",
+            "Eso movería los dos electrones del 4s al 3d; el cromo solo mueve uno y queda 4s¹ 3d⁵.",
+            "Es lo mismo que [Ar] 3d⁶: vacía el 4s, y el cromo solo promueve un electrón."
+          ]
         },
         {
           "type": "quiz",
@@ -2172,7 +2454,13 @@
             "s¹ o s²"
           ],
           "correct": 1,
-          "explanation": "d⁴ y d⁹."
+          "explanation": "d⁴ y d⁹.",
+          "why": [
+            "d¹ y d² no buscan un subnivel semilleno ni lleno.",
+            "",
+            "Las excepciones del apunte son del bloque d, no del p.",
+            "s¹ y s² no son la señal; lo es el d⁴ o d⁹ que quedaría."
+          ]
         },
         {
           "type": "quiz",
@@ -2184,7 +2472,13 @@
             "Zinc"
           ],
           "correct": 1,
-          "explanation": "Ag: [Kr] 5s¹ 4d¹⁰ (misma columna)."
+          "explanation": "Ag: [Kr] 5s¹ 4d¹⁰ (misma columna).",
+          "why": [
+            "El hierro (3d⁶) no es una excepción.",
+            "",
+            "El cromo sigue el patrón d⁴ → d⁵, no el del cobre (d⁹ → d¹⁰).",
+            "El zinc ya tiene 3d¹⁰ con 4s²: no es excepción."
+          ]
         },
         {
           "type": "quiz",
@@ -2196,7 +2490,13 @@
             "Porque se vuelve un gas noble"
           ],
           "correct": 1,
-          "explanation": "Semilleno (d⁵) o lleno (d¹⁰) = mayor estabilidad."
+          "explanation": "Semilleno (d⁵) o lleno (d¹⁰) = mayor estabilidad.",
+          "why": [
+            "Los protones no cambian con la configuración.",
+            "",
+            "La configuración no cambia la masa.",
+            "d⁵ no es configuración de gas noble."
+          ]
         }
       ]
     },
@@ -2438,7 +2738,13 @@
             "8"
           ],
           "correct": 2,
-          "explanation": "2s² 2p⁴ → **6**."
+          "explanation": "2s² 2p⁴ → **6**.",
+          "why": [
+            "2 son los electrones del 2s; faltan los 4 del 2p.",
+            "4 son los del 2p; faltan los 2 del 2s.",
+            "",
+            "8 es el octeto que quiere alcanzar, no lo que tiene."
+          ]
         },
         {
           "type": "quiz",
@@ -2450,7 +2756,13 @@
             "2 electrones de valencia"
           ],
           "correct": 1,
-          "explanation": "Nivel 3: 2 + 3 = **5**."
+          "explanation": "Nivel 3: 2 + 3 = **5**.",
+          "why": [
+            "Faltan los 2 electrones del 3s; los de valencia son todos los del nivel 3.",
+            "",
+            "15 es el total de electrones (Z).",
+            "Faltan los 3 electrones del 3p."
+          ]
         },
         {
           "type": "quiz",
@@ -2462,7 +2774,13 @@
             "K"
           ],
           "correct": 2,
-          "explanation": "Gas noble: 3s² 3p⁶."
+          "explanation": "Gas noble: 3s² 3p⁶.",
+          "why": [
+            "El flúor tiene 7 electrones de valencia: le falta uno.",
+            "El oxígeno tiene 6: le faltan dos.",
+            "",
+            "El potasio tiene 1 electrón de valencia (4s¹)."
+          ]
         },
         {
           "type": "quiz",
@@ -2474,7 +2792,13 @@
             "Los neutrones"
           ],
           "correct": 1,
-          "explanation": "Solo los de **valencia**."
+          "explanation": "Solo los de **valencia**.",
+          "why": [
+            "Solo se dibujan los de valencia.",
+            "",
+            "Los protones están en el núcleo y no se dibujan.",
+            "Los neutrones no participan en el enlace."
+          ]
         },
         {
           "type": "quiz",
@@ -2486,7 +2810,13 @@
             "8"
           ],
           "correct": 1,
-          "explanation": "Grupo 17 → **7**."
+          "explanation": "Grupo 17 → **7**.",
+          "why": [
+            "1 electrón de valencia tienen los del grupo 1.",
+            "",
+            "17 es el número de grupo, no los electrones.",
+            "8 tienen los gases nobles (grupo 18)."
+          ]
         },
         {
           "type": "quiz",
@@ -2498,7 +2828,13 @@
             "No puede"
           ],
           "correct": 1,
-          "explanation": "K⁺ queda como el argón."
+          "explanation": "K⁺ queda como el argón.",
+          "why": [
+            "Es mucho más fácil perder 1 electrón que ganar 7.",
+            "",
+            "El potasio tiende a formar enlace iónico cediendo su electrón, no a compartirlo.",
+            "Sí puede: al perder el 4s¹ queda como el argón."
+          ]
         },
         {
           "type": "quiz",
@@ -2510,7 +2846,13 @@
             "+4 y +6"
           ],
           "correct": 1,
-          "explanation": "Fe²⁺ (ferroso) y Fe³⁺ (férrico)."
+          "explanation": "Fe²⁺ (ferroso) y Fe³⁺ (férrico).",
+          "why": [
+            "+1 no es un estado común del hierro.",
+            "",
+            "Los estados negativos son de los no metales; el hierro es metal.",
+            "+4 y +6 son muy raros en el hierro; los comunes son +2 y +3."
+          ]
         }
       ]
     },
@@ -2818,7 +3160,13 @@
             "14"
           ],
           "correct": 1,
-          "explanation": "3d⁶: **6**."
+          "explanation": "3d⁶: **6**.",
+          "why": [
+            "2 son los electrones del 4s.",
+            "",
+            "8 sería 4s + 3d juntos.",
+            "14 son todos los del nivel 3 (3s + 3p + 3d)."
+          ]
         },
         {
           "type": "quiz",
@@ -2830,7 +3178,13 @@
             "18"
           ],
           "correct": 2,
-          "explanation": "3s² 3p⁶ 3d⁶ = **14**."
+          "explanation": "3s² 3p⁶ 3d⁶ = **14**.",
+          "why": [
+            "6 son solo los del 3d.",
+            "8 son solo 3s + 3p; falta el 3d.",
+            "",
+            "18 es la capacidad máxima del nivel 3, no lo que tiene el hierro."
+          ]
         },
         {
           "type": "quiz",
@@ -2842,7 +3196,13 @@
             "18"
           ],
           "correct": 2,
-          "explanation": "Capa M = n = 3: **14**."
+          "explanation": "Capa M = n = 3: **14**.",
+          "why": [
+            "2 son los de la capa N (n = 4).",
+            "8 son 3s + 3p; falta el 3d.",
+            "",
+            "18 es la capacidad máxima de la capa M."
+          ]
         },
         {
           "type": "quiz",
@@ -2854,7 +3214,13 @@
             "14"
           ],
           "correct": 0,
-          "explanation": "El último nivel es n = 4: 4s² → **2**."
+          "explanation": "El último nivel es n = 4: 4s² → **2**.",
+          "why": [
+            "",
+            "6 son los del 3d, que está en el nivel 3.",
+            "8 sería contar 4s + 3d, pero el 3d está en el nivel 3.",
+            "14 son los del nivel 3."
+          ]
         },
         {
           "type": "quiz",
@@ -2866,7 +3232,13 @@
             "30"
           ],
           "correct": 1,
-          "explanation": "3d¹⁰ (dentro de [Kr]) + 4d¹⁰ = **20**."
+          "explanation": "3d¹⁰ (dentro de [Kr]) + 4d¹⁰ = **20**.",
+          "why": [
+            "10 son solo los del 4d; el [Kr] incluye 3d¹⁰.",
+            "",
+            "1 es el electrón del 5s.",
+            "30 tendría que incluir un 5d, que la plata no tiene."
+          ]
         },
         {
           "type": "quiz",
@@ -2878,7 +3250,13 @@
             "9"
           ],
           "correct": 0,
-          "explanation": "4d¹⁰: **10**."
+          "explanation": "4d¹⁰: **10**.",
+          "why": [
+            "",
+            "20 son 3d + 4d juntos.",
+            "1 es el electrón del 5s.",
+            "9 sería sin la excepción; la plata queda en 4d¹⁰."
+          ]
         },
         {
           "type": "quiz",
@@ -2890,7 +3268,13 @@
             "N"
           ],
           "correct": 1,
-          "explanation": "K = 1, **L = 2**, M = 3, N = 4."
+          "explanation": "K = 1, **L = 2**, M = 3, N = 4.",
+          "why": [
+            "K es n = 1.",
+            "",
+            "M es n = 3.",
+            "N es n = 4."
+          ]
         },
         {
           "type": "quiz",
@@ -2902,7 +3286,13 @@
             "32"
           ],
           "correct": 2,
-          "explanation": "2n² = 2 · 9 = **18**."
+          "explanation": "2n² = 2 · 9 = **18**.",
+          "why": [
+            "8 es lo que tiene el argón en el nivel 3, no la capacidad máxima.",
+            "9 son los orbitales (n²).",
+            "",
+            "32 es la capacidad del nivel 4."
+          ]
         },
         {
           "type": "quiz",
@@ -2914,7 +3304,13 @@
             "5"
           ],
           "correct": 1,
-          "explanation": "n² = **9** (1 s + 3 p + 5 d)."
+          "explanation": "n² = **9** (1 s + 3 p + 5 d).",
+          "why": [
+            "3 son los subniveles (3s, 3p, 3d).",
+            "",
+            "18 son los electrones máximos.",
+            "5 son solo los orbitales d."
+          ]
         },
         {
           "type": "quiz",
@@ -2926,7 +3322,13 @@
             "10"
           ],
           "correct": 1,
-          "explanation": "2l + 1 = **5**."
+          "explanation": "2l + 1 = **5**.",
+          "why": [
+            "3 son los orbitales p.",
+            "",
+            "7 son los orbitales f.",
+            "10 son los electrones del d, no los orbitales."
+          ]
         },
         {
           "type": "quiz",
@@ -2938,7 +3340,13 @@
             "18"
           ],
           "correct": 2,
-          "explanation": "2(2·3 + 1) = **14**."
+          "explanation": "2(2·3 + 1) = **14**.",
+          "why": [
+            "7 son los orbitales f, no los electrones.",
+            "10 es la capacidad del d.",
+            "",
+            "18 es la capacidad del nivel 3."
+          ]
         },
         {
           "type": "quiz",
@@ -2950,7 +3358,13 @@
             "8"
           ],
           "correct": 1,
-          "explanation": "**2**, con espines opuestos (Pauli)."
+          "explanation": "**2**, con espines opuestos (Pauli).",
+          "why": [
+            "Caben dos, uno con cada espín.",
+            "",
+            "6 es un subnivel p.",
+            "8 es el octeto."
+          ]
         },
         {
           "type": "quiz",
@@ -2962,7 +3376,13 @@
             "6"
           ],
           "correct": 2,
-          "explanation": "3d⁶ = ↑↓ ↑ ↑ ↑ ↑: **4**."
+          "explanation": "3d⁶ = ↑↓ ↑ ↑ ↑ ↑: **4**.",
+          "why": [
+            "El 3d⁶ no está completo: tiene 4 orbitales con un solo electrón.",
+            "2 sería si el 3d tuviera 8 electrones.",
+            "",
+            "6 serían todos los del 3d, pero uno de los orbitales tiene 2."
+          ]
         },
         {
           "type": "quiz",
@@ -2974,7 +3394,13 @@
             "6"
           ],
           "correct": 1,
-          "explanation": "3p⁴ = ↑↓ ↑ ↑: **2**."
+          "explanation": "3p⁴ = ↑↓ ↑ ↑: **2**.",
+          "why": [
+            "El 3p⁴ no está completo.",
+            "",
+            "4 son los electrones del 3p, pero dos están apareados.",
+            "6 son los de valencia."
+          ]
         },
         {
           "type": "quiz",
@@ -2986,7 +3412,13 @@
             "8"
           ],
           "correct": 1,
-          "explanation": "3p⁴: **4**."
+          "explanation": "3p⁴: **4**.",
+          "why": [
+            "2 son los del 3s.",
+            "",
+            "6 sería el 3p lleno (argón).",
+            "8 es el octeto."
+          ]
         },
         {
           "type": "quiz",
@@ -2998,7 +3430,13 @@
             "16"
           ],
           "correct": 2,
-          "explanation": "Nivel 3: 3s² 3p⁴ = **6**."
+          "explanation": "Nivel 3: 3s² 3p⁴ = **6**.",
+          "why": [
+            "2 son solo los del 3s.",
+            "4 son solo los del 3p.",
+            "",
+            "16 son todos los electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -3010,7 +3448,13 @@
             "10"
           ],
           "correct": 2,
-          "explanation": "l = 1 es p: 2p⁶ → **6**."
+          "explanation": "l = 1 es p: 2p⁶ → **6**.",
+          "why": [
+            "2 son los del 2s (ℓ = 0).",
+            "4 no sale de ninguna cuenta del neón.",
+            "",
+            "10 son todos los electrones, no solo los p."
+          ]
         },
         {
           "type": "quiz",
@@ -3022,7 +3466,13 @@
             "10"
           ],
           "correct": 2,
-          "explanation": "2s² 2p⁶ = **8**."
+          "explanation": "2s² 2p⁶ = **8**.",
+          "why": [
+            "2 son solo los del 2s.",
+            "6 son solo los del 2p.",
+            "",
+            "10 son todos los electrones, incluido el 1s."
+          ]
         },
         {
           "type": "quiz",
@@ -3034,7 +3484,13 @@
             "[Ar] 4s² 3d⁶"
           ],
           "correct": 1,
-          "explanation": "Salen primero los **4s**: [Ar] 3d⁶."
+          "explanation": "Salen primero los **4s**: [Ar] 3d⁶.",
+          "why": [
+            "Al ionizar salen primero los 4s, no los 3d.",
+            "",
+            "Salen los dos 4s, no uno de cada subnivel.",
+            "Esa es la configuración del Fe neutro."
+          ]
         },
         {
           "type": "quiz",
@@ -3046,7 +3502,13 @@
             "Depende del elemento"
           ],
           "correct": 1,
-          "explanation": "n + l: 4s = 4, 3d = 5. Se llena antes **4s**."
+          "explanation": "n + l: 4s = 4, 3d = 5. Se llena antes **4s**.",
+          "why": [
+            "El 3d tiene n + ℓ = 5, más que el 4s (4).",
+            "",
+            "No: el 4s tiene menor n + ℓ.",
+            "El orden de Moeller es el mismo para todos."
+          ]
         },
         {
           "type": "quiz",
@@ -3058,7 +3520,13 @@
             "Ninguno"
           ],
           "correct": 1,
-          "explanation": "Empate en n + l: va primero el de **menor n** → 3d."
+          "explanation": "Empate en n + l: va primero el de **menor n** → 3d.",
+          "why": [
+            "En el empate de n + ℓ va primero el de menor n, que es 3d.",
+            "",
+            "No: se desempata por n.",
+            "Los dos se llenan; primero el 3d."
+          ]
         },
         {
           "type": "quiz",
@@ -3070,7 +3538,13 @@
             "(4, 2, −2, −1/2)"
           ],
           "correct": 1,
-          "explanation": "El sexto electrón se aparea en ml = −2 con −1/2: **(3, 2, −2, −1/2)**."
+          "explanation": "El sexto electrón se aparea en ml = −2 con −1/2: **(3, 2, −2, −1/2)**.",
+          "why": [
+            "+2 es el quinto electrón, con +1/2; el sexto vuelve a −2.",
+            "",
+            "ℓ = 1 sería p, no d.",
+            "El nivel es 3, no 4."
+          ]
         },
         {
           "type": "quiz",
@@ -3082,7 +3556,13 @@
             "Ninguno"
           ],
           "correct": 1,
-          "explanation": "l no puede ser igual a n: el primero es inválido. **(5, 1, 0, +1/2)** es válido."
+          "explanation": "l no puede ser igual a n: el primero es inválido. **(5, 1, 0, +1/2)** es válido.",
+          "why": [
+            "En el primero ℓ = n, y ℓ solo llega a n − 1.",
+            "",
+            "El primero no es válido.",
+            "El segundo sí es válido."
+          ]
         },
         {
           "type": "quiz",
@@ -3094,7 +3574,13 @@
             "Heisenberg"
           ],
           "correct": 1,
-          "explanation": "Exclusión de **Pauli**."
+          "explanation": "Exclusión de **Pauli**.",
+          "why": [
+            "Aufbau trata el orden de llenado por energía.",
+            "",
+            "Hund trata cómo se reparten en orbitales de igual energía.",
+            "Heisenberg es la incertidumbre entre posición y cantidad de movimiento."
+          ]
         },
         {
           "type": "quiz",
@@ -3106,7 +3592,13 @@
             "Moeller"
           ],
           "correct": 2,
-          "explanation": "Regla de **Hund**."
+          "explanation": "Regla de **Hund**.",
+          "why": [
+            "Aufbau es el orden de energía.",
+            "Pauli es el máximo de 2 por orbital.",
+            "",
+            "Moeller es el diagrama del orden de llenado."
+          ]
         },
         {
           "type": "quiz",
@@ -3118,7 +3610,13 @@
             "Incertidumbre"
           ],
           "correct": 0,
-          "explanation": "**Aufbau**."
+          "explanation": "**Aufbau**.",
+          "why": [
+            "",
+            "Pauli es el máximo de 2 electrones por orbital.",
+            "Hund es el reparto en orbitales de igual energía.",
+            "La incertidumbre es de Heisenberg y no trata del llenado."
+          ]
         },
         {
           "type": "quiz",
@@ -3130,7 +3628,13 @@
             "l y ms"
           ],
           "correct": 1,
-          "explanation": "**n, l y ml** describen el orbital; ms describe el electrón."
+          "explanation": "**n, l y ml** describen el orbital; ms describe el electrón.",
+          "why": [
+            "n solo da el nivel; faltan ℓ y mℓ.",
+            "",
+            "ms es del electrón, no del orbital.",
+            "ms describe al electrón."
+          ]
         },
         {
           "type": "quiz",
@@ -3142,7 +3646,13 @@
             "Cualquier valor"
           ],
           "correct": 1,
-          "explanation": "Solo **+1/2 o −1/2**."
+          "explanation": "Solo **+1/2 o −1/2**.",
+          "why": [
+            "0 y 1 no son valores de espín.",
+            "",
+            "−1, 0, +1 son valores de mℓ para p.",
+            "Solo hay dos valores."
+          ]
         },
         {
           "type": "quiz",
@@ -3154,7 +3664,13 @@
             "Compleja"
           ],
           "correct": 1,
-          "explanation": "s esférica, **p bilobular**, d tetralobular, f compleja."
+          "explanation": "s esférica, **p bilobular**, d tetralobular, f compleja.",
+          "why": [
+            "Esférica es el orbital s.",
+            "",
+            "Tetralobular es el orbital d.",
+            "Compleja es el orbital f."
+          ]
         }
       ]
     }

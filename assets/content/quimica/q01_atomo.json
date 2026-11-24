@@ -113,7 +113,13 @@
             "Núcleo"
           ],
           "correct": 1,
-          "explanation": "Del griego **a** (sin) y **tomos** (división)."
+          "explanation": "Del griego **a** (sin) y **tomos** (división).",
+          "why": [
+            "«Pequeño» describe al átomo, pero no es lo que significa la palabra: *a-tomos* quiere decir sin división.",
+            "",
+            "La carga no tiene que ver con el nombre; además, el átomo neutro no tiene carga neta.",
+            "El núcleo es solo una parte del átomo, no el significado de la palabra."
+          ]
         },
         {
           "type": "quiz",
@@ -125,7 +131,13 @@
             "El núcleo con sus protones"
           ],
           "correct": 1,
-          "explanation": "Definición textual de la clase."
+          "explanation": "Definición textual de la clase.",
+          "why": [
+            "Un átomo neutro no tiene carga neta, y las partículas cargadas más pequeñas son el electrón o los quarks, no el átomo.",
+            "",
+            "Es al revés: las moléculas están formadas por átomos.",
+            "El núcleo es solo una parte del átomo; faltan los electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -137,7 +149,13 @@
             "Los electrones de valencia"
           ],
           "correct": 1,
-          "explanation": "El **núcleo** (protones + neutrones)."
+          "explanation": "El **núcleo** (protones + neutrones).",
+          "why": [
+            "La corteza tiene los electrones, que casi no pesan (unas 1836 veces menos que un protón).",
+            "",
+            "Los orbitales p son regiones de la corteza; ahí hay electrones, que aportan muy poca masa.",
+            "Los electrones de valencia están en la corteza y casi no tienen masa."
+          ]
         },
         {
           "type": "quiz",
@@ -149,7 +167,13 @@
             "Los quarks"
           ],
           "correct": 1,
-          "explanation": "La corteza casi no tiene masa pero ocupa casi todo el volumen."
+          "explanation": "La corteza casi no tiene masa pero ocupa casi todo el volumen.",
+          "why": [
+            "El núcleo es diminuto (unas 100 000 veces más pequeño que el átomo): concentra la masa, no el volumen.",
+            "",
+            "Los neutrones están dentro del núcleo, que ocupa muy poco espacio.",
+            "Los quarks están dentro de protones y neutrones, en el núcleo; no dan el volumen."
+          ]
         },
         {
           "type": "quiz",
@@ -161,7 +185,13 @@
             "Solo los protones"
           ],
           "correct": 1,
-          "explanation": "Las partículas del núcleo."
+          "explanation": "Las partículas del núcleo.",
+          "why": [
+            "Los electrones están en la corteza, no en el núcleo; nucleón significa «partícula del núcleo».",
+            "",
+            "Los electrones no son nucleones porque no están en el núcleo.",
+            "Faltan los neutrones, que también están en el núcleo."
+          ]
         },
         {
           "type": "quiz",
@@ -173,7 +203,13 @@
             "El campo magnético terrestre"
           ],
           "correct": 1,
-          "explanation": "Las **fuerzas nucleares** son muy intensas a distancias muy cortas."
+          "explanation": "Las **fuerzas nucleares** son muy intensas a distancias muy cortas.",
+          "why": [
+            "La gravedad entre partículas tan pequeñas es muchísimo más débil que la repulsión eléctrica; no podría sujetarlas.",
+            "",
+            "Los electrones están fuera del núcleo y además son negativos; no son los que unen a los protones.",
+            "El campo terrestre no actúa dentro del núcleo; lo que une a los nucleones es la fuerza nuclear fuerte."
+          ]
         },
         {
           "type": "quiz",
@@ -185,7 +221,13 @@
             "Tienen carga positiva"
           ],
           "correct": 1,
-          "explanation": "El modelo actual es una **nube de probabilidad**."
+          "explanation": "El modelo actual es una **nube de probabilidad**.",
+          "why": [
+            "Las órbitas fijas son del modelo de Bohr; el modelo actual habla de orbitales, regiones de probabilidad.",
+            "",
+            "Los electrones están en la corteza; en el núcleo están protones y neutrones.",
+            "Los electrones tienen carga negativa; la positiva es del protón."
+          ]
         }
       ]
     },
@@ -463,7 +505,13 @@
             "+1"
           ],
           "correct": 2,
-          "explanation": "up: **+2/3**; down: −1/3."
+          "explanation": "up: **+2/3**; down: −1/3.",
+          "why": [
+            "−1/3 es la carga del quark down, no del up.",
+            "+1/3 no es la carga de ningún quark del protón ni del neutrón.",
+            "",
+            "+1 es la carga del protón entero (uud), no de un solo quark."
+          ]
         },
         {
           "type": "quiz",
@@ -475,7 +523,13 @@
             "Un electrón y un neutrón"
           ],
           "correct": 1,
-          "explanation": "uud: +2/3 + 2/3 − 1/3 = **+1**."
+          "explanation": "uud: +2/3 + 2/3 − 1/3 = **+1**.",
+          "why": [
+            "Dos down y un up (udd) es el neutrón: −1/3 −1/3 +2/3 = 0.",
+            "",
+            "Tres up darían carga +2 (+2/3 · 3); el protón tiene +1.",
+            "El protón no contiene electrones ni neutrones; está hecho de quarks."
+          ]
         },
         {
           "type": "quiz",
@@ -487,7 +541,13 @@
             "ddd"
           ],
           "correct": 1,
-          "explanation": "udd: +2/3 − 1/3 − 1/3 = **0**."
+          "explanation": "udd: +2/3 − 1/3 − 1/3 = **0**.",
+          "why": [
+            "uud es el protón: +2/3 +2/3 −1/3 = +1.",
+            "",
+            "uuu daría carga +2; el neutrón tiene carga 0.",
+            "ddd daría carga −1; el neutrón es neutro."
+          ]
         },
         {
           "type": "quiz",
@@ -499,7 +559,13 @@
             "Son solo los fotones"
           ],
           "correct": 1,
-          "explanation": "Fermiones = materia (quarks y leptones); bosones = fuerzas."
+          "explanation": "Fermiones = materia (quarks y leptones); bosones = fuerzas.",
+          "why": [
+            "Los que transmiten las fuerzas son los bosones, no los fermiones.",
+            "",
+            "Los fermiones sí tienen masa (el electrón, los quarks).",
+            "El fotón es un bosón, no un fermión."
+          ]
         },
         {
           "type": "quiz",
@@ -511,7 +577,13 @@
             "Nucleones"
           ],
           "correct": 1,
-          "explanation": "Es un **leptón** con carga −1."
+          "explanation": "Es un **leptón** con carga −1.",
+          "why": [
+            "Los quarks forman protones y neutrones; el electrón no está hecho de quarks.",
+            "",
+            "Los bosones transmiten fuerzas; el electrón es una partícula de materia.",
+            "Nucleones son protones y neutrones; el electrón no está en el núcleo."
+          ]
         },
         {
           "type": "quiz",
@@ -523,7 +595,13 @@
             "Higgs"
           ],
           "correct": 1,
-          "explanation": "El **fotón** (γ)."
+          "explanation": "El **fotón** (γ).",
+          "why": [
+            "El gluón transmite la fuerza nuclear fuerte.",
+            "",
+            "El bosón W transmite la fuerza nuclear débil.",
+            "El bosón de Higgs da masa a las partículas; no transmite el electromagnetismo."
+          ]
         },
         {
           "type": "quiz",
@@ -535,7 +613,13 @@
             "1,6·10⁻¹⁹ kg"
           ],
           "correct": 1,
-          "explanation": "9,11·10⁻³¹ kg (1,6·10⁻¹⁹ es su carga en coulombs, no su masa)."
+          "explanation": "9,11·10⁻³¹ kg (1,6·10⁻¹⁹ es su carga en coulombs, no su masa).",
+          "why": [
+            "1.673 × 10⁻²⁷ kg es la masa del protón.",
+            "",
+            "1.674 × 10⁻²⁷ kg es la masa del neutrón.",
+            "1.6 × 10⁻¹⁹ es la carga del electrón en culombios, no su masa."
+          ]
         },
         {
           "type": "quiz",
@@ -547,7 +631,13 @@
             "Tiene dos masas"
           ],
           "correct": 1,
-          "explanation": "Dualidad onda–partícula."
+          "explanation": "Dualidad onda–partícula.",
+          "why": [
+            "El electrón tiene una sola carga (−1); dual se refiere a su comportamiento.",
+            "",
+            "El electrón no está en dos núcleos a la vez.",
+            "Tiene una sola masa; la dualidad es onda-partícula."
+          ]
         }
       ]
     },
@@ -802,7 +892,13 @@
             "46"
           ],
           "correct": 1,
-          "explanation": "N = A − Z = 31 − 15 = **16** (es el fósforo)."
+          "explanation": "N = A − Z = 31 − 15 = **16** (es el fósforo).",
+          "why": [
+            "15 es Z, el número de protones, no los neutrones.",
+            "",
+            "31 es A, la suma de protones y neutrones.",
+            "46 sale de sumar Z + A; los neutrones se obtienen restando: N = A − Z."
+          ]
         },
         {
           "type": "quiz",
@@ -814,7 +910,13 @@
             "El número de niveles"
           ],
           "correct": 1,
-          "explanation": "Z = número de **protones**."
+          "explanation": "Z = número de **protones**.",
+          "why": [
+            "Los neutrones se obtienen con N = A − Z; Z no los indica.",
+            "",
+            "La masa la da A (aproximadamente), no Z.",
+            "Los niveles dependen de la configuración electrónica, no los cuenta Z."
+          ]
         },
         {
           "type": "quiz",
@@ -826,7 +928,13 @@
             "82"
           ],
           "correct": 0,
-          "explanation": "Neutro: e⁻ = Z = **26**."
+          "explanation": "Neutro: e⁻ = Z = **26**.",
+          "why": [
+            "",
+            "30 son los neutrones (56 − 26), no los electrones.",
+            "56 es A, protones + neutrones.",
+            "82 es 56 + 26, una suma sin sentido aquí."
+          ]
         },
         {
           "type": "quiz",
@@ -838,7 +946,13 @@
             "28"
           ],
           "correct": 2,
-          "explanation": "A es el número de arriba: **19**."
+          "explanation": "A es el número de arriba: **19**.",
+          "why": [
+            "9 es Z (el número de abajo), el número de protones.",
+            "10 son los neutrones (19 − 9).",
+            "",
+            "28 es 19 + 9; el número másico ya es el de arriba, 19."
+          ]
         },
         {
           "type": "quiz",
@@ -850,7 +964,13 @@
             "Menor que Z"
           ],
           "correct": 1,
-          "explanation": "Cuenta partículas: siempre **entero**."
+          "explanation": "Cuenta partículas: siempre **entero**.",
+          "why": [
+            "A cuenta partículas enteras (protones y neutrones), así que no puede ser decimal; decimal es la masa atómica promedio.",
+            "",
+            "A solo es igual a Z en el hidrógeno-1, que no tiene neutrones.",
+            "A = Z + N, así que siempre es mayor o igual que Z."
+          ]
         },
         {
           "type": "quiz",
@@ -862,7 +982,13 @@
             "64"
           ],
           "correct": 2,
-          "explanation": "A ≈ 64 → N = 64 − 29 = **35**."
+          "explanation": "A ≈ 64 → N = 64 − 29 = **35**.",
+          "why": [
+            "29 es Z, los protones.",
+            "34 sale de restar 63 − 29; hay que redondear 63.55 a 64 antes de restar.",
+            "",
+            "64 es A redondeado, no los neutrones."
+          ]
         },
         {
           "type": "quiz",
@@ -874,7 +1000,13 @@
             "10"
           ],
           "correct": 1,
-          "explanation": "Z = 20 (calcio), A = 20 + 20 = **40**."
+          "explanation": "Z = 20 (calcio), A = 20 + 20 = **40**.",
+          "why": [
+            "20 son solo los protones (o solo los neutrones); A los suma.",
+            "",
+            "60 suma también los electrones, que no cuentan en A.",
+            "10 no corresponde a ninguna cuenta; A = 20 + 20."
+          ]
         }
       ]
     },
@@ -1099,7 +1231,13 @@
             "Pierde neutrones"
           ],
           "correct": 1,
-          "explanation": "Pierde electrones → queda con carga **positiva**."
+          "explanation": "Pierde electrones → queda con carga **positiva**.",
+          "why": [
+            "Ganar electrones forma un anión (negativo).",
+            "",
+            "Los protones no cambian al formar un ion; si cambiaran, sería otro elemento.",
+            "Los neutrones no participan en la formación de iones."
+          ]
         },
         {
           "type": "quiz",
@@ -1111,7 +1249,13 @@
             "32"
           ],
           "correct": 2,
-          "explanation": "Gana 2: 16 + 2 = **18**."
+          "explanation": "Gana 2: 16 + 2 = **18**.",
+          "why": [
+            "14 sería si hubiera perdido 2 electrones; la carga 2− indica que ganó 2.",
+            "16 son los protones (o los electrones del átomo neutro).",
+            "",
+            "32 es el número másico del azufre, no sus electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -1123,7 +1267,13 @@
             "30"
           ],
           "correct": 0,
-          "explanation": "Pierde 3: 26 − 3 = **23**."
+          "explanation": "Pierde 3: 26 − 3 = **23**.",
+          "why": [
+            "",
+            "26 son los electrones del Fe neutro; el 3+ indica que perdió 3.",
+            "29 sería si hubiera ganado 3, pero la carga es positiva.",
+            "30 son los neutrones del ⁵⁶Fe."
+          ]
         },
         {
           "type": "quiz",
@@ -1135,7 +1285,13 @@
             "El número másico"
           ],
           "correct": 2,
-          "explanation": "Solo se pierde **un electrón**; Z, A y N no cambian."
+          "explanation": "Solo se pierde **un electrón**; Z, A y N no cambian.",
+          "why": [
+            "Los protones definen el elemento; si cambiaran ya no sería potasio.",
+            "Los neutrones no cambian al formar iones.",
+            "",
+            "A = protones + neutrones, y ninguno de los dos cambia."
+          ]
         },
         {
           "type": "quiz",
@@ -1147,7 +1303,13 @@
             "S⁻"
           ],
           "correct": 1,
-          "explanation": "Z = 17 (cloro) con un electrón extra: **Cl⁻**."
+          "explanation": "Z = 17 (cloro) con un electrón extra: **Cl⁻**.",
+          "why": [
+            "Cl⁺ tendría 16 electrones (uno menos que los protones).",
+            "",
+            "El argón tiene 18 protones; con 17 protones es cloro.",
+            "El azufre tiene 16 protones; con 17 es cloro."
+          ]
         },
         {
           "type": "quiz",
@@ -1159,7 +1321,13 @@
             "K⁺"
           ],
           "correct": 3,
-          "explanation": "K⁺ tiene 18 electrones (como el argón)."
+          "explanation": "K⁺ tiene 18 electrones (como el argón).",
+          "why": [
+            "Na⁺ tiene 11 − 1 = 10 electrones, igual que el neón.",
+            "O²⁻ tiene 8 + 2 = 10 electrones, igual que el neón.",
+            "Mg²⁺ tiene 12 − 2 = 10 electrones, igual que el neón.",
+            ""
+          ]
         },
         {
           "type": "quiz",
@@ -1171,7 +1339,13 @@
             "Ningún electrón"
           ],
           "correct": 1,
-          "explanation": "Mayor cantidad de cargas **negativas**."
+          "explanation": "Mayor cantidad de cargas **negativas**.",
+          "why": [
+            "Más protones que electrones es un catión (positivo).",
+            "",
+            "Igual número es un átomo neutro, no un ion.",
+            "Un anión tiene electrones de sobra, no ninguno."
+          ]
         }
       ]
     },
@@ -1340,7 +1514,13 @@
             "Masa"
           ],
           "correct": 2,
-          "explanation": "Mismo **Z**, distinto A."
+          "explanation": "Mismo **Z**, distinto A.",
+          "why": [
+            "Los isótopos se diferencian justamente en los neutrones.",
+            "A cambia entre isótopos porque cambian los neutrones.",
+            "",
+            "La masa cambia porque tienen distinto número de neutrones."
+          ]
         },
         {
           "type": "quiz",
@@ -1352,7 +1532,13 @@
             "3"
           ],
           "correct": 2,
-          "explanation": "1 protón + **2 neutrones** = masa 3."
+          "explanation": "1 protón + **2 neutrones** = masa 3.",
+          "why": [
+            "0 neutrones es el protio (¹H).",
+            "1 neutrón es el deuterio (²H).",
+            "",
+            "El tritio es ³H: A = 3 y Z = 1, así que N = 2, no 3."
+          ]
         },
         {
           "type": "quiz",
@@ -1364,7 +1550,13 @@
             "Depende del isótopo"
           ],
           "correct": 1,
-          "explanation": "Tienen los mismos electrones: **iguales**."
+          "explanation": "Tienen los mismos electrones: **iguales**.",
+          "why": [
+            "Las propiedades químicas dependen de los electrones, que son los mismos en todos los isótopos.",
+            "",
+            "No hay nada «opuesto»: tienen los mismos electrones.",
+            "No dependen del isótopo: los electrones son iguales en todos."
+          ]
         },
         {
           "type": "quiz",
@@ -1376,7 +1568,13 @@
             "Su edad"
           ],
           "correct": 1,
-          "explanation": "Definición de clase."
+          "explanation": "Definición de clase.",
+          "why": [
+            "Un átomo individual no tiene una duración fija; la vida media es una propiedad estadística de una muestra.",
+            "",
+            "No es la mitad de la masa del isótopo, sino el tiempo en que se desintegra la mitad de la muestra.",
+            "No es la edad del isótopo, es un tiempo característico de desintegración."
+          ]
         },
         {
           "type": "quiz",
@@ -1388,7 +1586,13 @@
             "Del carbono"
           ],
           "correct": 1,
-          "explanation": "Se produce en reactores; se usa en medicina nuclear."
+          "explanation": "Se produce en reactores; se usa en medicina nuclear.",
+          "why": [
+            "El tecnecio no tiene isótopos estables; el ⁹⁹ᵐTc se produce artificialmente.",
+            "",
+            "Es tecnecio (Z = 43), no hidrógeno.",
+            "Es tecnecio, no carbono."
+          ]
         },
         {
           "type": "quiz",
@@ -1400,7 +1604,13 @@
             "Helio"
           ],
           "correct": 0,
-          "explanation": "El **protio** (99,99 %)."
+          "explanation": "El **protio** (99,99 %).",
+          "why": [
+            "",
+            "El deuterio es muy escaso (alrededor de 0.015 %).",
+            "El tritio es radiactivo y casi no existe en la naturaleza.",
+            "El helio es otro elemento, no un isótopo del hidrógeno."
+          ]
         },
         {
           "type": "quiz",
@@ -1412,7 +1622,13 @@
             "Porque son radiactivos"
           ],
           "correct": 1,
-          "explanation": "La tabla se ordena por **Z**."
+          "explanation": "La tabla se ordena por **Z**.",
+          "why": [
+            "Tienen masas distintas (12, 13 y 14 uma).",
+            "",
+            "Tienen distinto número de neutrones (6, 7 y 8).",
+            "Solo el ¹⁴C es radiactivo; la casilla depende de Z."
+          ]
         }
       ]
     },
@@ -1629,7 +1845,13 @@
             "Porque incluyen los electrones"
           ],
           "correct": 1,
-          "explanation": "Son **promedios ponderados**."
+          "explanation": "Son **promedios ponderados**.",
+          "why": [
+            "Las mediciones actuales son muy precisas; el decimal viene del promedio de isótopos.",
+            "",
+            "Los neutrones son partículas enteras; no pesan «decimales».",
+            "La masa de los electrones es despreciable y no explica los decimales."
+          ]
         },
         {
           "type": "quiz",
@@ -1641,7 +1863,13 @@
             "24,99 uma"
           ],
           "correct": 1,
-          "explanation": "24·0,7899 + 25·0,10 + 26·0,1101 = **24,32 uma**."
+          "explanation": "24·0,7899 + 25·0,10 + 26·0,1101 = **24,32 uma**.",
+          "why": [
+            "24.00 sería si solo existiera el ²⁴Mg; hay que ponderar con el 25 y el 26.",
+            "",
+            "25.00 es la masa del ²⁵Mg, que es solo el 10 %.",
+            "24.99 no sale del cálculo: 24(0.7899) + 25(0.1) + 26(0.1101) = 24.32."
+          ]
         },
         {
           "type": "quiz",
@@ -1653,7 +1881,13 @@
             "11,0 uma"
           ],
           "correct": 2,
-          "explanation": "10·0,2 + 11·0,8 = **10,8 uma** (es el boro)."
+          "explanation": "10·0,2 + 11·0,8 = **10,8 uma** (es el boro).",
+          "why": [
+            "10.2 sale si inviertes los porcentajes (80 % de 10 y 20 % de 11).",
+            "10.5 es el promedio simple, sin ponderar por abundancia.",
+            "",
+            "11.0 sería si solo existiera el isótopo de 11 uma."
+          ]
         },
         {
           "type": "quiz",
@@ -1665,7 +1899,13 @@
             "No se puede saber"
           ],
           "correct": 0,
-          "explanation": "El promedio está más cerca de 35."
+          "explanation": "El promedio está más cerca de 35.",
+          "why": [
+            "",
+            "Si abundara más el ³⁷Cl, el promedio estaría más cerca de 37.",
+            "Si fueran iguales, el promedio sería 36.",
+            "Sí se puede saber: el promedio (35.45) está más cerca de 35."
+          ]
         },
         {
           "type": "quiz",
@@ -1677,7 +1917,13 @@
             "28,55 uma"
           ],
           "correct": 1,
-          "explanation": "28·0,9223 + 29·0,0467 + 30·0,031 = **28,11 uma**."
+          "explanation": "28·0,9223 + 29·0,0467 + 30·0,031 = **28,11 uma**.",
+          "why": [
+            "28.00 sería si solo existiera el ²⁸Si.",
+            "",
+            "29.00 es la masa del ²⁹Si, que es solo el 4.67 %.",
+            "28.55 no sale del cálculo; con los datos da 28.11."
+          ]
         },
         {
           "type": "quiz",
@@ -1689,7 +1935,13 @@
             "7,5 %"
           ],
           "correct": 0,
-          "explanation": "6x + 7(1 − x) = 6,94 → x = **0,06** (es el litio)."
+          "explanation": "6x + 7(1 − x) = 6,94 → x = **0,06** (es el litio).",
+          "why": [
+            "",
+            "Si fuera 50 %, el promedio sería 6.5.",
+            "94 % es la abundancia del isótopo de 7 uma; el de 6 tiene el 6 %.",
+            "7.5 % no cumple 6x + 7(1 − x) = 6.94; despejando, x = 0.06."
+          ]
         }
       ]
     },
@@ -1866,7 +2118,13 @@
             "12 g"
           ],
           "correct": 1,
-          "explanation": "1/12 de la masa del ¹²C = **1,66·10⁻²⁴ g**."
+          "explanation": "1/12 de la masa del ¹²C = **1,66·10⁻²⁴ g**.",
+          "why": [
+            "1 g es la masa de 1 mol de uma, no de una sola uma.",
+            "",
+            "6.022 × 10²³ es el número de Avogadro, no una masa.",
+            "12 g es la masa de 1 mol de ¹²C."
+          ]
         },
         {
           "type": "quiz",
@@ -1878,7 +2136,13 @@
             "¹⁴C"
           ],
           "correct": 2,
-          "explanation": "Al **¹²C** se le asignan exactamente 12 uma."
+          "explanation": "Al **¹²C** se le asignan exactamente 12 uma.",
+          "why": [
+            "El hidrógeno no es el patrón actual de la uma.",
+            "El oxígeno-16 se usó como patrón antes, pero hoy es el carbono-12.",
+            "",
+            "El ¹⁴C es radiactivo; el patrón es el ¹²C."
+          ]
         },
         {
           "type": "quiz",
@@ -1890,7 +2154,13 @@
             "12"
           ],
           "correct": 1,
-          "explanation": "Número de **Avogadro**."
+          "explanation": "Número de **Avogadro**.",
+          "why": [
+            "18 es la masa molar del agua en g/mol, no el número de moléculas.",
+            "",
+            "1.66 × 10⁻²⁴ es el valor de 1 uma en gramos.",
+            "12 son los gramos en 1 mol de ¹²C."
+          ]
         },
         {
           "type": "quiz",
@@ -1902,7 +2172,13 @@
             "44 mol"
           ],
           "correct": 2,
-          "explanation": "n = 88/44 = **2 mol**."
+          "explanation": "n = 88/44 = **2 mol**.",
+          "why": [
+            "0.5 mol sería con 22 g.",
+            "1 mol serían 44 g.",
+            "",
+            "44 es la masa molar, no los moles: n = 88/44 = 2."
+          ]
         },
         {
           "type": "quiz",
@@ -1914,7 +2190,13 @@
             "moles"
           ],
           "correct": 1,
-          "explanation": "Es la masa real: **gramos**."
+          "explanation": "Es la masa real: **gramos**.",
+          "why": [
+            "La uma es para la masa relativa; la absoluta se da en gramos.",
+            "",
+            "g/mol es la unidad de la masa molar.",
+            "Los moles cuentan cantidad de sustancia, no masa."
+          ]
         },
         {
           "type": "quiz",
@@ -1926,7 +2208,13 @@
             "La masa absoluta"
           ],
           "correct": 1,
-          "explanation": "A cuenta nucleones."
+          "explanation": "A cuenta nucleones.",
+          "why": [
+            "La masa atómica relativa es un promedio y casi siempre tiene decimales.",
+            "",
+            "La masa molar sale de las masas atómicas y suele ser decimal.",
+            "La masa absoluta es un número muy pequeño en gramos, con decimales."
+          ]
         },
         {
           "type": "quiz",
@@ -1938,7 +2226,13 @@
             "6,022·10²³ g"
           ],
           "correct": 2,
-          "explanation": "m = 2 × 58,44 = **116,88 g**."
+          "explanation": "m = 2 × 58,44 = **116,88 g**.",
+          "why": [
+            "29.22 g es medio mol.",
+            "58.44 g es un solo mol.",
+            "",
+            "6.022 × 10²³ es un número de partículas, no una masa."
+          ]
         },
         {
           "type": "quiz",
@@ -1950,7 +2244,13 @@
             "Un mol pesa 1 g"
           ],
           "correct": 1,
-          "explanation": "1 mol = NA partículas."
+          "explanation": "1 mol = NA partículas.",
+          "why": [
+            "Una sola molécula pesa muchísimo menos: unos 3 × 10⁻²³ g.",
+            "",
+            "18 moléculas pesan una cantidad ínfima, no 1 g.",
+            "Un mol de agua pesa 18 g, no 1 g."
+          ]
         }
       ]
     },
@@ -2040,7 +2340,13 @@
             "Bohr"
           ],
           "correct": 3,
-          "explanation": "**Bohr** (1913)."
+          "explanation": "**Bohr** (1913).",
+          "why": [
+            "Dalton imaginó átomos macizos, sin niveles de energía.",
+            "Thomson propuso el budín de pasas, sin niveles.",
+            "Rutherford propuso el núcleo, pero no niveles cuantizados; esa fue la mejora de Bohr.",
+            ""
+          ]
         },
         {
           "type": "quiz",
@@ -2052,7 +2358,13 @@
             "Espectro de Bohr"
           ],
           "correct": 1,
-          "explanation": "Partículas alfa desviadas: **Rutherford** (1911)."
+          "explanation": "Partículas alfa desviadas: **Rutherford** (1911).",
+          "why": [
+            "Los rayos catódicos demostraron el electrón, no el núcleo.",
+            "",
+            "La gota de aceite midió la carga del electrón.",
+            "El espectro sirvió a Bohr para los niveles de energía, no para descubrir el núcleo."
+          ]
         },
         {
           "type": "quiz",
@@ -2064,7 +2376,13 @@
             "Bohr"
           ],
           "correct": 1,
-          "explanation": "**Thomson** (1897), con los rayos catódicos."
+          "explanation": "**Thomson** (1897), con los rayos catódicos.",
+          "why": [
+            "Dalton consideraba al átomo indivisible; no conocía el electrón.",
+            "",
+            "Chadwick descubrió el neutrón en 1932.",
+            "Bohr propuso los niveles de energía en 1913."
+          ]
         },
         {
           "type": "quiz",
@@ -2076,7 +2394,13 @@
             "Un budín de pasas"
           ],
           "correct": 1,
-          "explanation": "Modelo mecánico-cuántico."
+          "explanation": "Modelo mecánico-cuántico.",
+          "why": [
+            "Las órbitas fijas son del modelo de Bohr, ya superado.",
+            "",
+            "Las esferas indivisibles son del modelo de Dalton.",
+            "El budín de pasas es el modelo de Thomson."
+          ]
         }
       ]
     },
@@ -2220,7 +2544,13 @@
             "33"
           ],
           "correct": 2,
-          "explanation": "N = A − Z = 56 − 26 = **30**. La carga no afecta a los neutrones."
+          "explanation": "N = A − Z = 56 − 26 = **30**. La carga no afecta a los neutrones.",
+          "why": [
+            "23 son los electrones del Fe³⁺, no los neutrones.",
+            "26 son los protones.",
+            "",
+            "33 no sale de ninguna cuenta; la carga no cambia los neutrones: 56 − 26 = 30."
+          ]
         },
         {
           "type": "quiz",
@@ -2232,7 +2562,13 @@
             "32"
           ],
           "correct": 2,
-          "explanation": "Ganó 2 electrones: 16 + 2 = **18**."
+          "explanation": "Ganó 2 electrones: 16 + 2 = **18**.",
+          "why": [
+            "14 sería si perdiera 2 electrones; 2− significa que ganó 2.",
+            "16 son los protones del azufre.",
+            "",
+            "32 es el número másico."
+          ]
         },
         {
           "type": "quiz",
@@ -2244,7 +2580,13 @@
             "30"
           ],
           "correct": 1,
-          "explanation": "Los protones no cambian: **26**."
+          "explanation": "Los protones no cambian: **26**.",
+          "why": [
+            "23 son los electrones; los protones no cambian al formar el ion.",
+            "",
+            "29 sería sumando la carga, pero los protones nunca cambian.",
+            "30 son los neutrones del ⁵⁶Fe."
+          ]
         },
         {
           "type": "quiz",
@@ -2256,7 +2598,13 @@
             "Pierde neutrones"
           ],
           "correct": 1,
-          "explanation": "Catión = **cede** electrones y queda positivo."
+          "explanation": "Catión = **cede** electrones y queda positivo.",
+          "why": [
+            "Ganar electrones forma un anión.",
+            "",
+            "Los protones no cambian al formar un ion.",
+            "Los neutrones no intervienen."
+          ]
         },
         {
           "type": "quiz",
@@ -2268,7 +2616,13 @@
             "Isoelectrónicos"
           ],
           "correct": 1,
-          "explanation": "Igual A = 40, distinto elemento: **isóbaros**."
+          "explanation": "Igual A = 40, distinto elemento: **isóbaros**.",
+          "why": [
+            "Isótopos son del mismo elemento (igual Z); Ar (18) y Ca (20) son distintos.",
+            "",
+            "Isótonos tienen igual número de neutrones: Ar tiene 22 y Ca 20.",
+            "Isoelectrónicos tienen igual número de electrones: 18 y 20 no lo son."
+          ]
         },
         {
           "type": "quiz",
@@ -2280,7 +2634,13 @@
             "Isoelectrónicos"
           ],
           "correct": 2,
-          "explanation": "N = 13 − 6 = 7 y 14 − 7 = 7: **isótonos**."
+          "explanation": "N = 13 − 6 = 7 y 14 − 7 = 7: **isótonos**.",
+          "why": [
+            "No son el mismo elemento (Z = 6 y Z = 7).",
+            "Tienen distinto A (13 y 14).",
+            "",
+            "Tienen distinto número de electrones (6 y 7)."
+          ]
         },
         {
           "type": "quiz",
@@ -2292,7 +2652,13 @@
             "Isoelectrónicos"
           ],
           "correct": 3,
-          "explanation": "Los tres tienen 10 electrones: **isoelectrónicos**."
+          "explanation": "Los tres tienen 10 electrones: **isoelectrónicos**.",
+          "why": [
+            "Son elementos distintos, no isótopos.",
+            "Tienen distinto A (23, 20 y 19).",
+            "Tienen distintos neutrones (12, 10 y 10); lo que comparten son los 10 electrones.",
+            ""
+          ]
         },
         {
           "type": "quiz",
@@ -2304,7 +2670,13 @@
             "Nulas"
           ],
           "correct": 1,
-          "explanation": "Mismos electrones: **iguales**. Las físicas sí difieren."
+          "explanation": "Mismos electrones: **iguales**. Las físicas sí difieren.",
+          "why": [
+            "Tienen los mismos electrones, así que reaccionan igual.",
+            "",
+            "No hay propiedades «opuestas»: reaccionan igual.",
+            "Todos los isótopos tienen propiedades químicas; son iguales entre sí."
+          ]
         },
         {
           "type": "quiz",
@@ -2316,7 +2688,13 @@
             "La masa en gramos"
           ],
           "correct": 1,
-          "explanation": "**A = Z + N**."
+          "explanation": "**A = Z + N**.",
+          "why": [
+            "Solo los protones es Z, no A.",
+            "",
+            "Los electrones no cuentan en A.",
+            "A es un número de partículas, no una masa en gramos."
+          ]
         },
         {
           "type": "quiz",
@@ -2328,7 +2706,13 @@
             "34"
           ],
           "correct": 2,
-          "explanation": "En el núcleo están protones y neutrones: **A = 23**."
+          "explanation": "En el núcleo están protones y neutrones: **A = 23**.",
+          "why": [
+            "11 son solo los protones.",
+            "12 son solo los neutrones.",
+            "",
+            "34 incluye los electrones, que no están en el núcleo."
+          ]
         },
         {
           "type": "quiz",
@@ -2340,7 +2724,13 @@
             "12"
           ],
           "correct": 1,
-          "explanation": "11 p + 12 n + 11 e = **34**."
+          "explanation": "11 p + 12 n + 11 e = **34**.",
+          "why": [
+            "23 son solo las partículas del núcleo; faltan los 11 electrones.",
+            "",
+            "22 son protones + electrones; faltan los 12 neutrones.",
+            "12 son solo los neutrones."
+          ]
         },
         {
           "type": "quiz",
@@ -2352,7 +2742,13 @@
             "Porque el C-12 pesa 12.011"
           ],
           "correct": 1,
-          "explanation": "Es la **media ponderada** de ¹²C, ¹³C y ¹⁴C."
+          "explanation": "Es la **media ponderada** de ¹²C, ¹³C y ¹⁴C.",
+          "why": [
+            "No es un error: es el promedio ponderado de los isótopos.",
+            "",
+            "La masa de los electrones es despreciable.",
+            "El ¹²C pesa exactamente 12 uma por definición."
+          ]
         },
         {
           "type": "quiz",
@@ -2364,7 +2760,13 @@
             "Son iguales"
           ],
           "correct": 2,
-          "explanation": "El **electrón** (9.11 × 10⁻³¹ kg)."
+          "explanation": "El **electrón** (9.11 × 10⁻³¹ kg).",
+          "why": [
+            "El protón pesa unas 1836 veces más que el electrón.",
+            "El neutrón pesa todavía un poco más que el protón.",
+            "",
+            "No son iguales: el electrón es muchísimo más liviano."
+          ]
         },
         {
           "type": "quiz",
@@ -2376,7 +2778,13 @@
             "El electrón"
           ],
           "correct": 1,
-          "explanation": "Neutrón 1.674 × 10⁻²⁷ kg, protón 1.673 × 10⁻²⁷ kg: el **neutrón**, apenas."
+          "explanation": "Neutrón 1.674 × 10⁻²⁷ kg, protón 1.673 × 10⁻²⁷ kg: el **neutrón**, apenas.",
+          "why": [
+            "El protón pesa 1.673 × 10⁻²⁷ kg y el neutrón 1.674 × 10⁻²⁷ kg: el neutrón pesa un poco más.",
+            "",
+            "Casi iguales, pero el neutrón es ligeramente más pesado.",
+            "El electrón es la partícula más liviana de las tres."
+          ]
         },
         {
           "type": "quiz",
@@ -2388,7 +2796,13 @@
             "¹⁴C"
           ],
           "correct": 1,
-          "explanation": "1 uma = 1/12 de la masa del **carbono-12**."
+          "explanation": "1 uma = 1/12 de la masa del **carbono-12**.",
+          "why": [
+            "El hidrógeno no es el patrón.",
+            "",
+            "El ¹⁶O se usó antes; hoy el patrón es el ¹²C.",
+            "El ¹⁴C es radiactivo; el patrón es el ¹²C."
+          ]
         },
         {
           "type": "quiz",
@@ -2400,7 +2814,13 @@
             "6.022 × 10²³ cm³"
           ],
           "correct": 1,
-          "explanation": "m = 18 g y ρ = 1 g/cm³: **18 cm³**. Los 22.4 L son para gases en CNPT."
+          "explanation": "m = 18 g y ρ = 1 g/cm³: **18 cm³**. Los 22.4 L son para gases en CNPT.",
+          "why": [
+            "22.4 L es el volumen de 1 mol de gas en CNPT; el agua aquí es líquida.",
+            "",
+            "1 L de agua son unos 55.5 moles, no uno.",
+            "Ese número es Avogadro, que cuenta moléculas, no centímetros cúbicos."
+          ]
         },
         {
           "type": "quiz",
@@ -2412,7 +2832,13 @@
             "Ion"
           ],
           "correct": 1,
-          "explanation": "**Radiactivo**: se transforma y emite radiación. El ¹²C es estable."
+          "explanation": "**Radiactivo**: se transforma y emite radiación. El ¹²C es estable.",
+          "why": [
+            "El estable es el ¹²C; el ¹⁴C se desintegra.",
+            "",
+            "Isóbaro es una relación entre dos núclidos de igual A, no un tipo de isótopo.",
+            "Un ion tiene carga; el ¹⁴C neutro no la tiene."
+          ]
         }
       ]
     }

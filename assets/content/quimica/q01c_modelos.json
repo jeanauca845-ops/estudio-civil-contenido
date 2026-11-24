@@ -46,7 +46,13 @@
             "Lo que existe"
           ],
           "correct": 1,
-          "explanation": "Del griego *a-tomos*: **sin división**."
+          "explanation": "Del griego *a-tomos*: **sin división**.",
+          "why": [
+            "Que sea pequeño es cierto, pero la palabra griega *a-tomos* significa «sin división».",
+            "",
+            "La forma no tiene que ver con el nombre.",
+            "«Lo que existe» es cómo llamaba Demócrito a los átomos, frente al vacío; no es el significado de la palabra."
+          ]
         },
         {
           "type": "quiz",
@@ -58,7 +64,13 @@
             "Basada en la electricidad"
           ],
           "correct": 1,
-          "explanation": "Era **especulativa**: no tenía base experimental."
+          "explanation": "Era **especulativa**: no tenía base experimental.",
+          "why": [
+            "No hizo ningún experimento; esa fue la gran diferencia con Dalton.",
+            "",
+            "No tenía desarrollo matemático; era razonamiento filosófico.",
+            "En el siglo V a. C. no se conocía la electricidad."
+          ]
         },
         {
           "type": "quiz",
@@ -70,7 +82,13 @@
             "Dalton"
           ],
           "correct": 2,
-          "explanation": "**Parménides** negaba el vacío y el cambio."
+          "explanation": "**Parménides** negaba el vacío y el cambio.",
+          "why": [
+            "Demócrito defendía el vacío: para él el universo era átomos y vacío.",
+            "Leucipo, maestro de Demócrito, también defendía el vacío.",
+            "",
+            "Dalton vivió más de dos mil años después."
+          ]
         },
         {
           "type": "quiz",
@@ -82,7 +100,13 @@
             "Aristóteles y Platón"
           ],
           "correct": 1,
-          "explanation": "**Gassendi y Boyle**."
+          "explanation": "**Gassendi y Boyle**.",
+          "why": [
+            "Thomson y Rutherford trabajaron a fines del siglo XIX y comienzos del XX, ya con experimentos.",
+            "",
+            "Bohr y Sommerfeld son del siglo XX.",
+            "Aristóteles y Platón eran filósofos griegos y no defendían el atomismo."
+          ]
         },
         {
           "type": "quiz",
@@ -94,7 +118,13 @@
             "En su color"
           ],
           "correct": 1,
-          "explanation": "**Forma, tamaño y disposición**."
+          "explanation": "**Forma, tamaño y disposición**.",
+          "why": [
+            "Demócrito no conocía la carga eléctrica.",
+            "",
+            "Los electrones se descubrieron en 1897.",
+            "No hablaba de colores, sino de forma, tamaño y disposición."
+          ]
         }
       ]
     },
@@ -167,7 +197,13 @@
             "Bohr"
           ],
           "correct": 1,
-          "explanation": "**Dalton** fue el primero basado en experimentos y leyes químicas."
+          "explanation": "**Dalton** fue el primero basado en experimentos y leyes químicas.",
+          "why": [
+            "Demócrito fue el primero en hablar del átomo, pero sin experimentos: no era científico.",
+            "",
+            "Thomson es posterior (1904).",
+            "Bohr es de 1913."
+          ]
         },
         {
           "type": "quiz",
@@ -179,7 +215,13 @@
             "Divisibles"
           ],
           "correct": 1,
-          "explanation": "**Idénticos**. Por eso no podía explicar los isótopos."
+          "explanation": "**Idénticos**. Por eso no podía explicar los isótopos.",
+          "why": [
+            "Dalton decía lo contrario: idénticos. Los isótopos se descubrieron después.",
+            "",
+            "Dalton no conocía los isótopos.",
+            "Para Dalton el átomo era indivisible."
+          ]
         },
         {
           "type": "quiz",
@@ -191,7 +233,13 @@
             "Las fórmulas químicas"
           ],
           "correct": 2,
-          "explanation": "Suponía átomos idénticos por elemento: no explicaba los **isótopos**."
+          "explanation": "Suponía átomos idénticos por elemento: no explicaba los **isótopos**.",
+          "why": [
+            "La conservación de la masa sí la explicaba: los átomos solo se reorganizan.",
+            "Las proporciones definidas sí las explicaba: los átomos se combinan en números enteros.",
+            "",
+            "Las fórmulas químicas fueron uno de sus aportes."
+          ]
         },
         {
           "type": "quiz",
@@ -203,7 +251,13 @@
             "Se dividen"
           ],
           "correct": 2,
-          "explanation": "No se crean ni se destruyen: se **reorganizan**."
+          "explanation": "No se crean ni se destruyen: se **reorganizan**.",
+          "why": [
+            "Según Dalton los átomos no se destruyen.",
+            "Tampoco se crean.",
+            "",
+            "Para Dalton el átomo era indivisible."
+          ]
         },
         {
           "type": "quiz",
@@ -215,7 +269,13 @@
             "La difracción de electrones"
           ],
           "correct": 0,
-          "explanation": "**Conservación de la masa y proporciones definidas**."
+          "explanation": "**Conservación de la masa y proporciones definidas**.",
+          "why": [
+            "",
+            "Las líneas espectrales las explicó Bohr.",
+            "La radiactividad se descubrió a fines del siglo XIX.",
+            "La difracción de electrones la observaron Davisson y Germer en el siglo XX."
+          ]
         }
       ]
     },
@@ -308,7 +368,13 @@
             "Núcleo"
           ],
           "correct": 2,
-          "explanation": "El **electrón**, en 1897."
+          "explanation": "El **electrón**, en 1897.",
+          "why": [
+            "El protón lo descubrió Rutherford.",
+            "El neutrón lo descubrió Chadwick en 1932.",
+            "",
+            "El núcleo lo descubrió Rutherford en 1911."
+          ]
         },
         {
           "type": "quiz",
@@ -320,7 +386,13 @@
             "Nube electrónica"
           ],
           "correct": 1,
-          "explanation": "**Budín (pudín) de pasas**: electrones incrustados en una esfera positiva."
+          "explanation": "**Budín (pudín) de pasas**: electrones incrustados en una esfera positiva.",
+          "why": [
+            "«Sistema solar» o planetario es el modelo de Rutherford.",
+            "",
+            "«Bola de billar» describe el átomo macizo de Dalton.",
+            "«Nube electrónica» es el modelo cuántico actual."
+          ]
         },
         {
           "type": "quiz",
@@ -332,7 +404,13 @@
             "Hacia el imán"
           ],
           "correct": 1,
-          "explanation": "Hacia la **positiva**: por eso concluyó que las partículas eran negativas."
+          "explanation": "Hacia la **positiva**: por eso concluyó que las partículas eran negativas.",
+          "why": [
+            "Iba hacia la positiva: cargas opuestas se atraen.",
+            "",
+            "Sí se desviaba; por eso supo que tenía carga.",
+            "El imán también lo desviaba, pero la pregunta es sobre las placas cargadas."
+          ]
         },
         {
           "type": "quiz",
@@ -344,7 +422,13 @@
             "El radio del átomo"
           ],
           "correct": 2,
-          "explanation": "La relación **e/m**. La carga la midió Millikan."
+          "explanation": "La relación **e/m**. La carga la midió Millikan.",
+          "why": [
+            "La masa sola no la midió; obtuvo la relación e/m.",
+            "La carga la midió después Millikan con la gota de aceite.",
+            "",
+            "El radio del átomo no se obtenía con este experimento."
+          ]
         },
         {
           "type": "quiz",
@@ -356,7 +440,13 @@
             "No había gas"
           ],
           "correct": 1,
-          "explanation": "Gas a **muy baja presión**."
+          "explanation": "Gas a **muy baja presión**.",
+          "why": [
+            "A alta presión no se forma el haz de rayos catódicos.",
+            "",
+            "Era un gas, no un líquido.",
+            "Sí había gas, a muy baja presión."
+          ]
         },
         {
           "type": "quiz",
@@ -368,7 +458,13 @@
             "Calienta el gas"
           ],
           "correct": 1,
-          "explanation": "Fuerza **perpendicular** a la trayectoria: el haz se curva."
+          "explanation": "Fuerza **perpendicular** a la trayectoria: el haz se curva.",
+          "why": [
+            "Eso describe el campo eléctrico de las placas.",
+            "",
+            "El campo magnético no detiene las partículas: las curva.",
+            "El imán no calienta el gas."
+          ]
         },
         {
           "type": "quiz",
@@ -380,7 +476,13 @@
             "Ninguno"
           ],
           "correct": 1,
-          "explanation": "**B**: los efectos se anulan y el haz sigue recto."
+          "explanation": "**B**: los efectos se anulan y el haz sigue recto.",
+          "why": [
+            "A es el punto donde solo actúa el imán.",
+            "",
+            "C es el punto donde solo actúan las placas.",
+            "Sí hay uno: B, donde el haz sigue recto."
+          ]
         },
         {
           "type": "quiz",
@@ -392,7 +494,13 @@
             "Schrödinger"
           ],
           "correct": 1,
-          "explanation": "**Thomson**, al descubrir una partícula dentro del átomo."
+          "explanation": "**Thomson**, al descubrir una partícula dentro del átomo.",
+          "why": [
+            "Dalton decía justamente que el átomo era indivisible.",
+            "",
+            "Bohr es posterior; para entonces ya se sabía que el átomo era divisible.",
+            "Schrödinger es de 1926."
+          ]
         },
         {
           "type": "quiz",
@@ -404,7 +512,13 @@
             "No era neutro"
           ],
           "correct": 1,
-          "explanation": "Sin **núcleo** y sin explicación de los **espectros**."
+          "explanation": "Sin **núcleo** y sin explicación de los **espectros**.",
+          "why": [
+            "Sí tenía electrones: fue su gran aporte.",
+            "",
+            "«Solo el hidrógeno» es la limitación del modelo de Bohr.",
+            "Sí era neutro: las cargas positivas y negativas se compensaban."
+          ]
         }
       ]
     },
@@ -511,7 +625,13 @@
             "Níquel"
           ],
           "correct": 1,
-          "explanation": "Lámina muy delgada de **oro**."
+          "explanation": "Lámina muy delgada de **oro**.",
+          "why": [
+            "La plata no fue el metal usado.",
+            "",
+            "La caja de la fuente era de plomo, pero la lámina era de oro.",
+            "El níquel es el del experimento de Davisson y Germer."
+          ]
         },
         {
           "type": "quiz",
@@ -523,7 +643,13 @@
             "Rayos gamma"
           ],
           "correct": 2,
-          "explanation": "**Partículas alfa** (positivas)."
+          "explanation": "**Partículas alfa** (positivas).",
+          "why": [
+            "Los electrones son muy livianos y no habrían dado ese resultado.",
+            "El neutrón aún no se conocía (1932).",
+            "",
+            "Los rayos gamma no tienen carga ni masa: no los repelería un núcleo positivo."
+          ]
         },
         {
           "type": "quiz",
@@ -535,7 +661,13 @@
             "Polonio"
           ],
           "correct": 0,
-          "explanation": "**Sulfuro de zinc**: emite destellos al ser golpeado."
+          "explanation": "**Sulfuro de zinc**: emite destellos al ser golpeado.",
+          "why": [
+            "",
+            "La parafina es del experimento de Chadwick.",
+            "El berilio es de Chadwick.",
+            "El polonio era la fuente de partículas alfa de Chadwick."
+          ]
         },
         {
           "type": "quiz",
@@ -547,7 +679,13 @@
             "Chadwick y Thomson"
           ],
           "correct": 1,
-          "explanation": "**Hans Geiger y Ernest Marsden**."
+          "explanation": "**Hans Geiger y Ernest Marsden**.",
+          "why": [
+            "Bohr y Sommerfeld propusieron modelos posteriores.",
+            "",
+            "Davisson y Germer comprobaron la dualidad del electrón.",
+            "Chadwick fue alumno de Rutherford, pero no colaboró en la lámina de oro; Thomson fue su maestro."
+          ]
         },
         {
           "type": "quiz",
@@ -559,7 +697,13 @@
             "Que no hay electrones"
           ],
           "correct": 1,
-          "explanation": "El átomo es casi todo **vacío**."
+          "explanation": "El átomo es casi todo **vacío**.",
+          "why": [
+            "Si el núcleo fuera grande, muchas más partículas se habrían desviado.",
+            "",
+            "El resultado se debe a la estructura del átomo, no a poros del oro.",
+            "Sí hay electrones, pero son tan livianos que no desvían a las partículas alfa."
+          ]
         },
         {
           "type": "quiz",
@@ -571,7 +715,13 @@
             "Que el átomo es indivisible"
           ],
           "correct": 1,
-          "explanation": "Solo un **núcleo** pequeño, denso y positivo podía repelerlas tanto."
+          "explanation": "Solo un **núcleo** pequeño, denso y positivo podía repelerlas tanto.",
+          "why": [
+            "Los electrones son negativos.",
+            "",
+            "El oro no es radiactivo; la fuente radiactiva era otra.",
+            "Al contrario: mostró que el átomo tiene estructura interna."
+          ]
         },
         {
           "type": "quiz",
@@ -583,7 +733,13 @@
             "Un fotón"
           ],
           "correct": 1,
-          "explanation": "**Núcleo de helio**."
+          "explanation": "**Núcleo de helio**.",
+          "why": [
+            "Una partícula alfa es positiva y pesada; un electrón es negativo y liviano.",
+            "",
+            "Un protón tiene la mitad de la carga y una cuarta parte de la masa de una alfa.",
+            "Un fotón es luz, sin masa ni carga."
+          ]
         },
         {
           "type": "quiz",
@@ -595,7 +751,13 @@
             "Oxígeno"
           ],
           "correct": 2,
-          "explanation": "Contra **nitrógeno** (experimento de transmutación)."
+          "explanation": "Contra **nitrógeno** (experimento de transmutación).",
+          "why": [
+            "El hidrógeno era lo que aparecía, no el gas usado.",
+            "El helio es la propia partícula alfa.",
+            "",
+            "El oxígeno no fue el gas del experimento."
+          ]
         },
         {
           "type": "quiz",
@@ -607,7 +769,13 @@
             "Neutrones"
           ],
           "correct": 1,
-          "explanation": "Con **núcleos de hidrógeno**: el protón."
+          "explanation": "Con **núcleos de hidrógeno**: el protón.",
+          "why": [
+            "Se desviaban como cargas positivas; los electrones son negativos.",
+            "",
+            "Eran más livianas que las alfa, que son núcleos de helio.",
+            "No tenían carga cero: se desviaban en los campos."
+          ]
         },
         {
           "type": "quiz",
@@ -619,7 +787,13 @@
             "Solo funcionaba para el oro"
           ],
           "correct": 1,
-          "explanation": "La **estabilidad**: un electrón girando debería perder energía y caer."
+          "explanation": "La **estabilidad**: un electrón girando debería perder energía y caer.",
+          "why": [
+            "Su gran aporte fue justamente el núcleo.",
+            "",
+            "Sí tenía electrones alrededor del núcleo.",
+            "El oro fue solo el material del experimento; el modelo se aplicaba a todos los átomos."
+          ]
         }
       ]
     },
@@ -792,7 +966,13 @@
             "Capas de valencia"
           ],
           "correct": 1,
-          "explanation": "**Órbitas estacionarias**: en ellas el electrón no emite energía."
+          "explanation": "**Órbitas estacionarias**: en ellas el electrón no emite energía.",
+          "why": [
+            "«Orbitales» es del modelo de Schrödinger.",
+            "",
+            "Las órbitas elípticas las añadió Sommerfeld.",
+            "«Capa de valencia» se refiere a la capa más externa, no al nombre que les dio Bohr."
+          ]
         },
         {
           "type": "quiz",
@@ -804,7 +984,13 @@
             "Nada"
           ],
           "correct": 1,
-          "explanation": "Libera la diferencia de energía como un **fotón**."
+          "explanation": "Libera la diferencia de energía como un **fotón**.",
+          "why": [
+            "Absorbe energía cuando sube de nivel.",
+            "",
+            "La ionización es cuando el electrón escapa del átomo; aquí solo baja de nivel.",
+            "Al bajar libera la diferencia de energía como luz."
+          ]
         },
         {
           "type": "quiz",
@@ -816,7 +1002,13 @@
             "−1.51 eV"
           ],
           "correct": 2,
-          "explanation": "−13.6/4 = **−3.4 eV**."
+          "explanation": "−13.6/4 = **−3.4 eV**.",
+          "why": [
+            "−13.6 eV es la energía en n = 1.",
+            "−6.8 sería dividir entre 2, pero la fórmula divide entre n² = 4.",
+            "",
+            "−1.51 eV es la energía en n = 3."
+          ]
         },
         {
           "type": "quiz",
@@ -828,7 +1020,13 @@
             "Porque se mueve rápido"
           ],
           "correct": 1,
-          "explanation": "Indica que está **ligado**; el electrón libre tiene 0 eV."
+          "explanation": "Indica que está **ligado**; el electrón libre tiene 0 eV.",
+          "why": [
+            "No es un error: el signo indica que está ligado.",
+            "",
+            "La carga del electrón no da el signo de su energía.",
+            "La velocidad no determina el signo."
+          ]
         },
         {
           "type": "quiz",
@@ -840,7 +1038,13 @@
             "Infinita"
           ],
           "correct": 2,
-          "explanation": "**0 eV**: ionización."
+          "explanation": "**0 eV**: ionización.",
+          "why": [
+            "−13.6 eV es la energía en n = 1, el electrón más ligado.",
+            "13.6 eV es la energía necesaria para ionizar desde n = 1, no la energía del electrón libre.",
+            "",
+            "El electrón libre tiene 0 eV por convenio."
+          ]
         },
         {
           "type": "quiz",
@@ -852,7 +1056,13 @@
             "17 eV"
           ],
           "correct": 1,
-          "explanation": "|−13.6 − (−3.4)| = **10.2 eV**."
+          "explanation": "|−13.6 − (−3.4)| = **10.2 eV**.",
+          "why": [
+            "3.4 eV es lo que se necesita para ionizar desde n = 2.",
+            "",
+            "13.6 eV es la ionización desde n = 1.",
+            "17 eV sale de sumar 13.6 + 3.4; hay que restar."
+          ]
         },
         {
           "type": "quiz",
@@ -864,7 +1074,13 @@
             "La difracción"
           ],
           "correct": 1,
-          "explanation": "Los **espectros de emisión** del hidrógeno (y la estabilidad)."
+          "explanation": "Los **espectros de emisión** del hidrógeno (y la estabilidad).",
+          "why": [
+            "La radiactividad no la explicó Bohr.",
+            "",
+            "El neutrón lo descubrió Chadwick.",
+            "La difracción de electrones es de Davisson y Germer."
+          ]
         },
         {
           "type": "quiz",
@@ -876,7 +1092,13 @@
             "Los metales"
           ],
           "correct": 1,
-          "explanation": "Solo para el **hidrógeno**."
+          "explanation": "Solo para el **hidrógeno**.",
+          "why": [
+            "Con más de un electrón el modelo falla.",
+            "",
+            "Los gases nobles tienen muchos electrones.",
+            "Los metales tienen muchos electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -888,7 +1110,13 @@
             "Invisible"
           ],
           "correct": 1,
-          "explanation": "Líneas **discretas y propias** de cada elemento."
+          "explanation": "Líneas **discretas y propias** de cada elemento.",
+          "why": [
+            "El espectro de emisión de un gas es de líneas, no continuo.",
+            "",
+            "Cada elemento tiene su propio patrón, como una huella digital.",
+            "Muchas líneas son de luz visible."
+          ]
         },
         {
           "type": "quiz",
@@ -900,7 +1128,13 @@
             "El número de masa"
           ],
           "correct": 1,
-          "explanation": "El **número cuántico principal**."
+          "explanation": "El **número cuántico principal**.",
+          "why": [
+            "El número atómico es Z.",
+            "",
+            "El número de electrones no aparece en la fórmula.",
+            "El número de masa es A."
+          ]
         }
       ]
     },
@@ -954,7 +1188,13 @@
             "Espirales"
           ],
           "correct": 1,
-          "explanation": "Órbitas **elípticas** además de circulares."
+          "explanation": "Órbitas **elípticas** además de circulares.",
+          "why": [
+            "No hay órbitas cuadradas en ningún modelo.",
+            "",
+            "La probabilidad llega con Schrödinger.",
+            "Las espirales serían el electrón cayendo al núcleo, justo lo que no ocurre."
+          ]
         },
         {
           "type": "quiz",
@@ -966,7 +1206,13 @@
             "El de espín (ms)"
           ],
           "correct": 1,
-          "explanation": "El **secundario (l)**."
+          "explanation": "El **secundario (l)**.",
+          "why": [
+            "n ya estaba en el modelo de Bohr.",
+            "",
+            "mℓ se añadió después para explicar el efecto de los campos magnéticos.",
+            "El espín se propuso en 1925."
+          ]
         },
         {
           "type": "quiz",
@@ -978,7 +1224,13 @@
             "El color del oro"
           ],
           "correct": 1,
-          "explanation": "La **estructura fina**: líneas que en realidad son varias muy próximas."
+          "explanation": "La **estructura fina**: líneas que en realidad son varias muy próximas.",
+          "why": [
+            "Los isótopos se explican con el neutrón.",
+            "",
+            "El neutrón se descubrió en 1932.",
+            "El color del oro se explica con la química cuántica relativista moderna."
+          ]
         },
         {
           "type": "quiz",
@@ -990,7 +1242,13 @@
             "Sí, con cristales de níquel"
           ],
           "correct": 1,
-          "explanation": "Trabajó con **cálculos teóricos**."
+          "explanation": "Trabajó con **cálculos teóricos**.",
+          "why": [
+            "La lámina de oro es de Rutherford.",
+            "",
+            "Los rayos catódicos son de Thomson.",
+            "Los cristales de níquel son de Davisson y Germer."
+          ]
         },
         {
           "type": "quiz",
@@ -1002,7 +1260,13 @@
             "La termodinámica"
           ],
           "correct": 0,
-          "explanation": "La **relatividad especial**: el electrón alcanza velocidades muy altas cerca del núcleo."
+          "explanation": "La **relatividad especial**: el electrón alcanza velocidades muy altas cerca del núcleo.",
+          "why": [
+            "",
+            "Newton no basta a velocidades cercanas a la de la luz.",
+            "La teoría de bandas es posterior y explica la conducción en sólidos.",
+            "La termodinámica no se usó para la estructura fina."
+          ]
         },
         {
           "type": "quiz",
@@ -1014,7 +1278,13 @@
             "No tenía electrones"
           ],
           "correct": 1,
-          "explanation": "Seguía pensando en **trayectorias**; la cuántica habla de probabilidades."
+          "explanation": "Seguía pensando en **trayectorias**; la cuántica habla de probabilidades.",
+          "why": [
+            "Sí tenía núcleo, heredado de Rutherford.",
+            "",
+            "Tenía varios niveles y además subniveles.",
+            "Sí tenía electrones."
+          ]
         }
       ]
     },
@@ -1101,7 +1371,13 @@
             "Bohr"
           ],
           "correct": 1,
-          "explanation": "**Louis de Broglie**."
+          "explanation": "**Louis de Broglie**.",
+          "why": [
+            "Schrödinger usó la idea, pero la propuso De Broglie.",
+            "",
+            "Heisenberg formuló la incertidumbre.",
+            "Bohr trataba al electrón como partícula en órbita."
+          ]
         },
         {
           "type": "quiz",
@@ -1113,7 +1389,13 @@
             "Thomson y Millikan"
           ],
           "correct": 1,
-          "explanation": "**Davisson y Germer**."
+          "explanation": "**Davisson y Germer**.",
+          "why": [
+            "Geiger y Marsden trabajaron con Rutherford en la lámina de oro.",
+            "",
+            "Bohr y Sommerfeld son modelos teóricos.",
+            "Thomson descubrió el electrón y Millikan midió su carga."
+          ]
         },
         {
           "type": "quiz",
@@ -1125,7 +1407,13 @@
             "Berilio"
           ],
           "correct": 1,
-          "explanation": "Un **cristal de níquel**."
+          "explanation": "Un **cristal de níquel**.",
+          "why": [
+            "La lámina de oro es de Rutherford.",
+            "",
+            "La parafina es de Chadwick.",
+            "El berilio es de Chadwick."
+          ]
         },
         {
           "type": "quiz",
@@ -1137,7 +1425,13 @@
             "Estructura fina"
           ],
           "correct": 1,
-          "explanation": "**Difracción e interferencia**."
+          "explanation": "**Difracción e interferencia**.",
+          "why": [
+            "El efecto fotoeléctrico es de la luz que arranca electrones (Einstein).",
+            "",
+            "La radiactividad no tiene que ver.",
+            "La estructura fina es de Sommerfeld."
+          ]
         },
         {
           "type": "quiz",
@@ -1149,7 +1443,13 @@
             "Núcleos"
           ],
           "correct": 1,
-          "explanation": "**Orbitales** (no órbitas)."
+          "explanation": "**Orbitales** (no órbitas).",
+          "why": [
+            "Las órbitas son trayectorias definidas (Bohr).",
+            "",
+            "La capa es todo un nivel de energía.",
+            "El núcleo es el centro del átomo."
+          ]
         },
         {
           "type": "quiz",
@@ -1161,7 +1461,13 @@
             "Δ"
           ],
           "correct": 1,
-          "explanation": "**ψ** (psi)."
+          "explanation": "**ψ** (psi).",
+          "why": [
+            "λ es la longitud de onda.",
+            "",
+            "σ es la constante de apantallamiento de Slater.",
+            "Δ indica una variación."
+          ]
         },
         {
           "type": "quiz",
@@ -1173,7 +1479,13 @@
             "ψ/2"
           ],
           "correct": 1,
-          "explanation": "El cuadrado **|ψ|²**."
+          "explanation": "El cuadrado **|ψ|²**.",
+          "why": [
+            "ψ sola no es una probabilidad; hay que elevarla al cuadrado.",
+            "",
+            "La probabilidad es |ψ|², no 1/ψ.",
+            "La probabilidad es |ψ|², no ψ/2."
+          ]
         },
         {
           "type": "quiz",
@@ -1185,7 +1497,13 @@
             "1.6"
           ],
           "correct": 2,
-          "explanation": "0.8² = **0.64**."
+          "explanation": "0.8² = **0.64**.",
+          "why": [
+            "0.8 es ψ; falta elevar al cuadrado.",
+            "0.4 es la mitad, no el cuadrado.",
+            "",
+            "1.6 es el doble, no el cuadrado."
+          ]
         },
         {
           "type": "quiz",
@@ -1197,7 +1515,13 @@
             "El nivel y el subnivel"
           ],
           "correct": 1,
-          "explanation": "**Posición y cantidad de movimiento**."
+          "explanation": "**Posición y cantidad de movimiento**.",
+          "why": [
+            "La masa y la carga del electrón se conocen con precisión.",
+            "",
+            "El principio no trata de la energía y el espín.",
+            "El nivel y el subnivel se conocen a la vez (n y ℓ)."
+          ]
         },
         {
           "type": "quiz",
@@ -1209,7 +1533,13 @@
             "No usaba ondas"
           ],
           "correct": 1,
-          "explanation": "No incluía la **relatividad**, importante en átomos pesados."
+          "explanation": "No incluía la **relatividad**, importante en átomos pesados.",
+          "why": [
+            "Los orbitales salen justamente de su ecuación.",
+            "",
+            "Se aplica a todos los átomos.",
+            "Es un modelo basado en ondas."
+          ]
         },
         {
           "type": "quiz",
@@ -1221,7 +1551,13 @@
             "1926"
           ],
           "correct": 3,
-          "explanation": "**1926**."
+          "explanation": "**1926**.",
+          "why": [
+            "1904 es el modelo de Thomson.",
+            "1913 es el modelo de Bohr.",
+            "1916 es el modelo de Sommerfeld.",
+            ""
+          ]
         }
       ]
     },
@@ -1312,7 +1648,13 @@
             "Positrón"
           ],
           "correct": 2,
-          "explanation": "El **neutrón**, en 1932."
+          "explanation": "El **neutrón**, en 1932.",
+          "why": [
+            "El protón lo descubrió Rutherford.",
+            "El electrón lo descubrió Thomson.",
+            "",
+            "El positrón lo descubrió Anderson; no es parte del átomo."
+          ]
         },
         {
           "type": "quiz",
@@ -1324,7 +1666,13 @@
             "Parafina"
           ],
           "correct": 1,
-          "explanation": "**Berilio**."
+          "explanation": "**Berilio**.",
+          "why": [
+            "El oro es de Rutherford.",
+            "",
+            "El níquel es de Davisson y Germer.",
+            "La parafina estaba después, para recibir la radiación del berilio."
+          ]
         },
         {
           "type": "quiz",
@@ -1336,7 +1684,13 @@
             "Helio"
           ],
           "correct": 2,
-          "explanation": "**Polonio**."
+          "explanation": "**Polonio**.",
+          "why": [
+            "El uranio no fue la fuente.",
+            "El radio no fue la fuente.",
+            "",
+            "El helio es el contenido de la partícula alfa, no la fuente."
+          ]
         },
         {
           "type": "quiz",
@@ -1348,7 +1702,13 @@
             "Porque absorbe la luz"
           ],
           "correct": 1,
-          "explanation": "Mucho **hidrógeno**: protones fáciles de expulsar y detectar."
+          "explanation": "Mucho **hidrógeno**: protones fáciles de expulsar y detectar.",
+          "why": [
+            "La parafina es aislante.",
+            "",
+            "La parafina no es radiactiva.",
+            "Se eligió por su hidrógeno, no por la luz."
+          ]
         },
         {
           "type": "quiz",
@@ -1360,7 +1720,13 @@
             "Partículas alfa"
           ],
           "correct": 1,
-          "explanation": "**Rayos gamma**, porque tampoco tienen carga."
+          "explanation": "**Rayos gamma**, porque tampoco tienen carga.",
+          "why": [
+            "Los electrones tienen carga, y la radiación no tenía.",
+            "",
+            "Los protones tienen carga, y la radiación no tenía.",
+            "Las partículas alfa eran las que chocaban con el berilio, no lo que salía."
+          ]
         },
         {
           "type": "quiz",
@@ -1372,7 +1738,13 @@
             "Porque era invisible"
           ],
           "correct": 1,
-          "explanation": "No se **desviaba** en los campos."
+          "explanation": "No se **desviaba** en los campos.",
+          "why": [
+            "Las partículas no se ven, y el color no indica la carga.",
+            "",
+            "La masa la dedujo de los choques, pero no dice nada de la carga.",
+            "Ninguna partícula se ve; la prueba fue la falta de desviación."
+          ]
         },
         {
           "type": "quiz",
@@ -1384,7 +1756,13 @@
             "El doble"
           ],
           "correct": 2,
-          "explanation": "**Ligeramente mayor**."
+          "explanation": "**Ligeramente mayor**.",
+          "why": [
+            "Si fuera mucho menor, no podría lanzar protones con tanta energía.",
+            "Son casi iguales, pero el neutrón es un poco más pesado.",
+            "",
+            "Es casi igual a la del protón, no el doble."
+          ]
         },
         {
           "type": "quiz",
@@ -1396,7 +1774,13 @@
             "Negativo"
           ],
           "correct": 1,
-          "explanation": "Libre es **inestable**."
+          "explanation": "Libre es **inestable**.",
+          "why": [
+            "Solo dentro de un núcleo estable es estable.",
+            "",
+            "Se desintegra (y uno de los productos es un protón), pero un neutrón no es un protón.",
+            "El neutrón no tiene carga."
+          ]
         },
         {
           "type": "quiz",
@@ -1408,7 +1792,13 @@
             "El color del oro"
           ],
           "correct": 1,
-          "explanation": "La **masa** del núcleo no cuadraba."
+          "explanation": "La **masa** del núcleo no cuadraba.",
+          "why": [
+            "Los espectros los explicaron Bohr y Sommerfeld.",
+            "",
+            "La estabilidad del electrón la trató Bohr.",
+            "El color del oro se explicó mucho después."
+          ]
         }
       ]
     },
@@ -1508,7 +1898,13 @@
             "Chadwick"
           ],
           "correct": 2,
-          "explanation": "Es una construcción **colectiva**."
+          "explanation": "Es una construcción **colectiva**.",
+          "why": [
+            "Schrödinger aportó la ecuación, pero el modelo actual reúne muchos aportes.",
+            "Bohr propuso un modelo de órbitas ya superado.",
+            "",
+            "Chadwick aportó el neutrón, no el modelo completo."
+          ]
         },
         {
           "type": "quiz",
@@ -1520,7 +1916,13 @@
             "Slater"
           ],
           "correct": 1,
-          "explanation": "**Hartree-Fock**."
+          "explanation": "**Hartree-Fock**.",
+          "why": [
+            "DFT se basa en la densidad electrónica, no en un efecto promedio.",
+            "",
+            "Bohr no tiene un método para muchos electrones.",
+            "Slater es un método para calcular la carga nuclear efectiva, no un método cuántico computacional."
+          ]
         },
         {
           "type": "quiz",
@@ -1532,7 +1934,13 @@
             "Rutherford"
           ],
           "correct": 1,
-          "explanation": "**DFT**."
+          "explanation": "**DFT**.",
+          "why": [
+            "Hartree-Fock usa el efecto promedio de los demás electrones.",
+            "",
+            "Moeller es el diagrama del orden de llenado.",
+            "Rutherford no tiene que ver con métodos de cálculo."
+          ]
         },
         {
           "type": "quiz",
@@ -1544,7 +1952,13 @@
             "Porque no hay orbitales"
           ],
           "correct": 1,
-          "explanation": "Las **repulsiones** entre todos los electrones hacen el cálculo inabordable de forma exacta."
+          "explanation": "Las **repulsiones** entre todos los electrones hacen el cálculo inabordable de forma exacta.",
+          "why": [
+            "Todos los átomos tienen núcleo.",
+            "",
+            "Los electrones sí tienen carga, y por eso se repelen.",
+            "Sí hay orbitales."
+          ]
         },
         {
           "type": "quiz",
@@ -1556,7 +1970,13 @@
             "Solo DFT"
           ],
           "correct": 1,
-          "explanation": "Son **aproximaciones** muy útiles."
+          "explanation": "Son **aproximaciones** muy útiles.",
+          "why": [
+            "Son aproximaciones.",
+            "",
+            "Para el hidrógeno ya hay solución exacta y no se necesitan.",
+            "Ninguno de los dos es exacto."
+          ]
         },
         {
           "type": "quiz",
@@ -1568,7 +1988,13 @@
             "Porque tiene 79 neutrones"
           ],
           "correct": 1,
-          "explanation": "**Efectos relativistas**: absorbe azul y refleja amarillo."
+          "explanation": "**Efectos relativistas**: absorbe azul y refleja amarillo.",
+          "why": [
+            "El oro puro también es amarillo.",
+            "",
+            "El oro no es radiactivo.",
+            "El número de neutrones no da el color."
+          ]
         },
         {
           "type": "quiz",
@@ -1580,7 +2006,13 @@
             "Porque es ligero"
           ],
           "correct": 1,
-          "explanation": "**Efectos relativistas**: unión débil entre átomos."
+          "explanation": "**Efectos relativistas**: unión débil entre átomos.",
+          "why": [
+            "El mercurio es un metal.",
+            "",
+            "La unión entre sus átomos es metálica, no iónica.",
+            "El mercurio es muy denso."
+          ]
         },
         {
           "type": "quiz",
@@ -1592,7 +2024,13 @@
             "El núcleo"
           ],
           "correct": 1,
-          "explanation": "Región de **probabilidad**, no un camino."
+          "explanation": "Región de **probabilidad**, no un camino.",
+          "why": [
+            "El orbital no es un camino.",
+            "",
+            "Las órbitas circulares son del modelo de Bohr.",
+            "El núcleo es el centro del átomo."
+          ]
         }
       ]
     },
@@ -1707,7 +2145,13 @@
             "Electrón, neutrón, protón"
           ],
           "correct": 1,
-          "explanation": "Electrón (Thomson, 1897) → protón (Rutherford) → neutrón (Chadwick, 1932)."
+          "explanation": "Electrón (Thomson, 1897) → protón (Rutherford) → neutrón (Chadwick, 1932).",
+          "why": [
+            "El electrón (1897) se descubrió antes que el protón.",
+            "",
+            "El neutrón (1932) fue el último.",
+            "El neutrón se descubrió después del protón."
+          ]
         },
         {
           "type": "quiz",
@@ -1719,7 +2163,13 @@
             "Chadwick"
           ],
           "correct": 1,
-          "explanation": "**Rutherford**."
+          "explanation": "**Rutherford**.",
+          "why": [
+            "Thomson usó rayos catódicos.",
+            "",
+            "Bohr se basó en el espectro del hidrógeno.",
+            "Chadwick usó berilio y parafina."
+          ]
         },
         {
           "type": "quiz",
@@ -1731,7 +2181,13 @@
             "Schrödinger"
           ],
           "correct": 1,
-          "explanation": "**Chadwick** (descubrimiento del neutrón)."
+          "explanation": "**Chadwick** (descubrimiento del neutrón).",
+          "why": [
+            "Rutherford usó la lámina de oro.",
+            "",
+            "Thomson usó rayos catódicos.",
+            "Schrödinger hizo un modelo matemático."
+          ]
         },
         {
           "type": "quiz",
@@ -1743,7 +2199,13 @@
             "Sommerfeld"
           ],
           "correct": 1,
-          "explanation": "**Thomson**."
+          "explanation": "**Thomson**.",
+          "why": [
+            "Dalton no tenía experimentos con electricidad.",
+            "",
+            "Bohr usó espectros.",
+            "Sommerfeld hizo cálculos teóricos."
+          ]
         },
         {
           "type": "quiz",
@@ -1755,7 +2217,13 @@
             "Dalton"
           ],
           "correct": 1,
-          "explanation": "**Bohr**."
+          "explanation": "**Bohr**.",
+          "why": [
+            "Rutherford tenía electrones girando sin niveles.",
+            "",
+            "Schrödinger usa niveles, pero los cuantizados los introdujo Bohr.",
+            "Dalton no tenía electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -1767,7 +2235,13 @@
             "Dalton"
           ],
           "correct": 1,
-          "explanation": "**Sommerfeld**."
+          "explanation": "**Sommerfeld**.",
+          "why": [
+            "Bohr tenía solo niveles.",
+            "",
+            "Thomson no tenía niveles.",
+            "Dalton no tenía electrones."
+          ]
         },
         {
           "type": "quiz",
@@ -1779,7 +2253,13 @@
             "Rutherford"
           ],
           "correct": 2,
-          "explanation": "**Schrödinger** (modelo mecánico-cuántico)."
+          "explanation": "**Schrödinger** (modelo mecánico-cuántico).",
+          "why": [
+            "Bohr usaba órbitas.",
+            "Sommerfeld usaba órbitas elípticas.",
+            "",
+            "Rutherford no tenía orbitales."
+          ]
         },
         {
           "type": "quiz",
@@ -1791,7 +2271,13 @@
             "Schrödinger"
           ],
           "correct": 1,
-          "explanation": "**Rutherford**: electrones girando alrededor del núcleo como planetas."
+          "explanation": "**Rutherford**: electrones girando alrededor del núcleo como planetas.",
+          "why": [
+            "Thomson es el budín de pasas.",
+            "",
+            "Dalton es la esfera maciza.",
+            "Schrödinger es la nube de probabilidad."
+          ]
         },
         {
           "type": "quiz",
@@ -1803,7 +2289,13 @@
             "Lewis"
           ],
           "correct": 1,
-          "explanation": "**Hartree-Fock**."
+          "explanation": "**Hartree-Fock**.",
+          "why": [
+            "Moeller es el diagrama de llenado.",
+            "",
+            "Slater calcula la carga nuclear efectiva.",
+            "Lewis representa los electrones de valencia."
+          ]
         },
         {
           "type": "quiz",
@@ -1815,7 +2307,13 @@
             "Bohr"
           ],
           "correct": 1,
-          "explanation": "**Thomson** (el electrón)."
+          "explanation": "**Thomson** (el electrón).",
+          "why": [
+            "Dalton tenía átomos indivisibles.",
+            "",
+            "Rutherford añadió el núcleo, pero el electrón ya lo había introducido Thomson.",
+            "Bohr es posterior."
+          ]
         },
         {
           "type": "quiz",
@@ -1827,7 +2325,13 @@
             "Bohr"
           ],
           "correct": 1,
-          "explanation": "**Demócrito** (y Leucipo)."
+          "explanation": "**Demócrito** (y Leucipo).",
+          "why": [
+            "Dalton se basó en leyes experimentales.",
+            "",
+            "Thomson hizo experimentos con rayos catódicos.",
+            "Bohr se basó en los espectros medidos."
+          ]
         },
         {
           "type": "quiz",
@@ -1839,7 +2343,13 @@
             "Bohr"
           ],
           "correct": 1,
-          "explanation": "**Thomson**."
+          "explanation": "**Thomson**.",
+          "why": [
+            "Millikan midió la carga, no e/m.",
+            "",
+            "Rutherford trabajó con partículas alfa.",
+            "Bohr no midió e/m."
+          ]
         },
         {
           "type": "quiz",
@@ -1851,7 +2361,13 @@
             "Microscopio"
           ],
           "correct": 1,
-          "explanation": "**Cámara de ionización / contador Geiger**."
+          "explanation": "**Cámara de ionización / contador Geiger**.",
+          "why": [
+            "El sulfuro de zinc lo usó Rutherford.",
+            "",
+            "El espectroscopio sirve para la luz.",
+            "Rutherford contaba destellos con un microscopio; Chadwick usó una cámara de ionización."
+          ]
         },
         {
           "type": "quiz",
@@ -1863,7 +2379,13 @@
             "Chadwick"
           ],
           "correct": 1,
-          "explanation": "**Sommerfeld**, con correcciones relativistas."
+          "explanation": "**Sommerfeld**, con correcciones relativistas.",
+          "why": [
+            "Bohr no explicaba la estructura fina.",
+            "",
+            "Dalton no tenía electrones.",
+            "Chadwick descubrió el neutrón."
+          ]
         },
         {
           "type": "quiz",
@@ -1875,7 +2397,13 @@
             "Dalton"
           ],
           "correct": 1,
-          "explanation": "**Bohr**: en las órbitas estacionarias el electrón no irradia."
+          "explanation": "**Bohr**: en las órbitas estacionarias el electrón no irradia.",
+          "why": [
+            "Rutherford no lo explicaba: era su limitación.",
+            "",
+            "Thomson no tenía órbitas.",
+            "Dalton no tenía electrones."
+          ]
         }
       ]
     }
